@@ -1,0 +1,51 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('projects', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+
+            //$table->bigIncrements('id');
+            $table->string('title');
+            $table->integer('places');
+            $table->unsignedBiginteger('state_id');
+            $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade');
+            $table->unsignedBiginteger('supervisor_id'); // supervisor_id
+            $table->foreign('supervisor_id')->references('id')->on('supervisors')->onDelete('cascade');
+            $table->unsignedBiginteger('type_id'); // type_id
+            $table->foreign('type_id')->references('id')->on('types')->onDelete('cascade');
+            $table->string('goal');
+            $table->string('idea');
+            $table->tinyInteger('difficulty');
+            $table->date('date_start');
+            $table->date('date_end');
+            $table->string('requirements');
+            $table->string('customer');
+            $table->string('expected_result');
+            $table->string('additional_inf')->nullable();
+            $table->string('result')->nullable();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('projects');
+    }
+};
