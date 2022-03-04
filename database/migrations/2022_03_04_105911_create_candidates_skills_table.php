@@ -16,6 +16,13 @@ return new class extends Migration
         Schema::create('candidates_skills', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            //$table->primary(['id_skill', 'id_candidate']);
+            $table->unsignedBigInteger('id_skill');
+            $table->unsignedBigInteger('id_candidate');
+
+            $table->foreign('id_skill')->references('id')->on('skills')->onDelete('cascade');
+            $table->foreign('id_candidate')->references('id')->on('candidates')->onDelete('cascade');
         });
     }
 

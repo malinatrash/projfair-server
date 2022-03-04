@@ -16,6 +16,18 @@ return new class extends Migration
         Schema::create('participations', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            // $table->bigIncrements('id');
+
+            $table->unsignedBigInteger('id_project');
+            $table->unsignedBigInteger('id_candidate');
+            $table->unsignedBigInteger('id_state');
+
+            $table->foreign('id_project')->references('id')->on('projects')->onDelete('cascade');
+            $table->foreign('id_candidate')->references('id')->on('candidates')->onDelete('cascade');
+            $table->foreign('id_state')->references('id')->on('state_participations')->onDelete('cascade');
+
+            $table->string('motivation');
         });
     }
 

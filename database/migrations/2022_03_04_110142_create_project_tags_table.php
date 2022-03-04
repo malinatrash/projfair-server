@@ -16,6 +16,14 @@ return new class extends Migration
         Schema::create('project_tags', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            // $table->primary(['project_id','tag_id']);
+            $table->unsignedBigInteger('project_id');
+            $table->unsignedBigInteger('tag_id');
+            $table->foreign('project_id')->references('id')->on('projects')
+                ->onDelete('cascade');
+            $table->foreign('tag_id')->references('id')->on('tags')
+                ->onDelete('cascade');
         });
     }
 
