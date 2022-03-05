@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 // Route::group(['namespace' => 'Supervisor'], function () {
+
 //     Route::post('/register', 'RegisterController'); // Register Supervisor
 //     Route::post('/login', 'LoginController'); // Login Supervisor
 

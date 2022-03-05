@@ -23,9 +23,9 @@ return new class extends Migration
             $table->unsignedBigInteger('id_candidate');
             $table->unsignedBigInteger('id_state');
 
-            $table->foreign('id_project')->references('id')->on('projects')->onDelete('cascade');
-            $table->foreign('id_candidate')->references('id')->on('candidates')->onDelete('cascade');
-            $table->foreign('id_state')->references('id')->on('state_participations')->onDelete('cascade');
+            $table->foreign('id_project')->on('projects')->references('id')->onDelete('cascade');
+            $table->foreign('id_candidate')->on('candidates')->references('id')->onDelete('cascade');
+            $table->foreign('id_state')->on('state_participations')->references('id')->onDelete('cascade');
 
             $table->string('motivation');
         });

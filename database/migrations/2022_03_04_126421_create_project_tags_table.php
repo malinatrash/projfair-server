@@ -17,12 +17,13 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            // $table->primary(['project_id','tag_id']);
             $table->unsignedBigInteger('project_id');
             $table->unsignedBigInteger('tag_id');
-            $table->foreign('project_id')->references('id')->on('projects')
+
+            //FK
+            $table->foreign('project_id')->on('projects')->references('id')
                 ->onDelete('cascade');
-            $table->foreign('tag_id')->references('id')->on('tags')
+            $table->foreign('tag_id')->on('tags')->references('id')
                 ->onDelete('cascade');
         });
     }

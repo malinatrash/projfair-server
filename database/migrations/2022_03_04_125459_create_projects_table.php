@@ -20,12 +20,6 @@ return new class extends Migration
             //$table->bigIncrements('id');
             $table->string('title');
             $table->integer('places');
-            $table->unsignedBiginteger('state_id');
-            $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade');
-            $table->unsignedBiginteger('supervisor_id'); // supervisor_id
-            $table->foreign('supervisor_id')->references('id')->on('supervisors')->onDelete('cascade');
-            $table->unsignedBiginteger('type_id'); // type_id
-            $table->foreign('type_id')->references('id')->on('types')->onDelete('cascade');
             $table->string('goal');
             $table->string('idea');
             $table->tinyInteger('difficulty');
@@ -36,6 +30,15 @@ return new class extends Migration
             $table->string('expected_result');
             $table->string('additional_inf')->nullable();
             $table->string('result')->nullable();
+
+            $table->unsignedBiginteger('state_id');
+            $table->unsignedBiginteger('supervisor_id');
+            $table->unsignedBiginteger('type_id');
+
+            //FK
+            $table->foreign('state_id')->on('states')->references('id')->onDelete('cascade');
+            $table->foreign('supervisor_id')->on('supervisors')->references('id')->onDelete('cascade');
+            $table->foreign('type_id')->on('types')->references('id')->onDelete('cascade');
         });
     }
 
