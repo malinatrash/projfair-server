@@ -10,4 +10,9 @@ class Candidate extends Model
     use HasFactory;
 
     protected $guarded = false;
+
+    public function skills()
+    {
+        return $this->belongsToMany(Skill::class);
+    }
 }

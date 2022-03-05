@@ -10,4 +10,9 @@ class StateParticipation extends Model
     use HasFactory;
 
     protected $guarded = false;
+
+    public function participations()
+    {
+        return $this->hasMany(Participation::class);
+    }
 }

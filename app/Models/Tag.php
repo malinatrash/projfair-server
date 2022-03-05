@@ -10,4 +10,9 @@ class Tag extends Model
     use HasFactory;
 
     protected $guarded = false;
+
+    public function projects()
+    {
+        return $this->belongsToMany(Project::class);
+    }
 }

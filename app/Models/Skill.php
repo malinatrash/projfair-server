@@ -10,4 +10,9 @@ class Skill extends Model
     use HasFactory;
 
     protected $guarded = false;
+
+    public function candidates()
+    {
+        return $this->belongsToMany(Candidate::class);
+    }
 }
