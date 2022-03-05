@@ -17,11 +17,11 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->unsignedBigInteger('id_skill');
-            $table->unsignedBigInteger('id_candidate');
+            $table->unsignedBigInteger('skill_id');
+            $table->unsignedBigInteger('candidate_id');
 
-            $table->foreign('id_skill')->on('skills')->references('id')->onDelete('cascade');
-            $table->foreign('id_candidate')->on('candidates')->references('id')->onDelete('cascade');
+            $table->foreign('skill_id')->on('skills')->references('id')->onDelete('cascade');
+            $table->foreign('candidate_id')->on('candidates')->references('id')->onDelete('cascade');
         });
     }
 
