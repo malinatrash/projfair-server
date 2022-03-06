@@ -6,11 +6,10 @@ use App\Http\Controllers\Controller;
 use App\Models\Type;
 use Illuminate\Http\Request;
 
-class IndexController extends Controller
+class ShowController extends Controller
 {
-    public function __invoke()
+    public function __invoke(Type $type)
     {
-        $types = Type::all();
-        return $types;
+        return $type;
     }
 }

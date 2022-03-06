@@ -24,26 +24,26 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $skills = Skill::factory(10)->create();
-        $candidates = Candidate::factory(10)->create();
-        Type::factory(2)->create();
-        Supervisor::factory(2)->create();
-        StateParticipation::factory(2)->create();
-        State::factory(2)->create();
+        $skills = Skill::factory(100)->create();
+        $candidates = Candidate::factory(100)->create();
+        Type::factory(20)->create();
+        Supervisor::factory(20)->create();
+        StateParticipation::factory(20)->create();
+        State::factory(3)->create();
 
-        $tags = Tag::factory(5)->create();
-        $projects = Project::factory(2)->create();
+        $tags = Tag::factory(50)->create();
+        $projects = Project::factory(200)->create();
 
         foreach ($projects as $project) {
-            $tagsIds = $tags->random(3)->pluck('id');
+            $tagsIds = $tags->random(10)->pluck('id');
             $project->tags()->attach($tagsIds);
         }
 
         foreach ($candidates as $candidate) {
-            $skillsIds = $skills->random(3)->pluck('id');
+            $skillsIds = $skills->random(15)->pluck('id');
             $candidate->skills()->attach($skillsIds);
         }
 
-        Participation::factory(10)->create();
+        Participation::factory(100)->create();
     }
 }

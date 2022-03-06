@@ -6,11 +6,11 @@ use App\Http\Controllers\Controller;
 use App\Models\Type;
 use Illuminate\Http\Request;
 
-class IndexController extends Controller
+class DeleteController extends Controller
 {
-    public function __invoke()
+    public function __invoke(Type $type)
     {
-        $types = Type::all();
-        return $types;
+        $type->delete();
+        return response([]);
     }
 }
