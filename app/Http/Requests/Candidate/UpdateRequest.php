@@ -27,9 +27,9 @@ class UpdateRequest extends FormRequest
             'fio' => 'string',
             'about' => 'string',
             'email' => 'string',
-            'numz' => 'string',
+            'numz' => 'integer',
             'phone' => 'string',
-            'course' => 'string',
+            'course' => 'integer',
             'training_group' => 'string',
 
             'skill_ids' => 'nullable|array',

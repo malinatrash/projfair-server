@@ -25,10 +25,10 @@ class UpdateRequest extends FormRequest
     {
         return [
             'title' => 'string',
-            'places' => '',
+            'places' => 'integer',
             'goal' => 'string',
             'idea' => 'string',
-            'difficulty' => '',
+            'difficulty' => 'integer',
             'date_start' => 'string',
             'date_end' => 'string',
             'requirements' => 'string',
