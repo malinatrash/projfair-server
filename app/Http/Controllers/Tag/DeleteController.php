@@ -6,11 +6,11 @@ use App\Http\Controllers\Controller;
 use App\Models\Tag;
 use Illuminate\Http\Request;
 
-class IndexController extends Controller
+class DeleteController extends Controller
 {
-    public function __invoke()
+    public function __invoke(Tag $tag)
     {
-        $tags = Tag::all();
-        return $tags;
+        $tag->delete();
+        return response([]);
     }
 }

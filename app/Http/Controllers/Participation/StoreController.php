@@ -1,17 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Supervisor;
+namespace App\Http\Controllers\Participation;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Supervisor\StoreRequest;
-use App\Models\Supervisor;
+use App\Http\Requests\Participation\StoreRequest;
+use App\Models\Participation;
 use Illuminate\Http\Request;
 
 class StoreController extends Controller
 {
     public function __invoke(StoreRequest $request)
     {
-        Supervisor::create($request);
+        $data = $request->validated();
+        Participation::create($data);
         return response([]);
     }
 }

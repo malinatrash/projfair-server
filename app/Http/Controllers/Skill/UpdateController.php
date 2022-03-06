@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Tag;
+namespace App\Http\Controllers\Skill;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Tag\UpdateRequest;
-use App\Models\Tag;
+use App\Http\Requests\Skill\UpdateRequest;
+use App\Models\Skill;
 use Illuminate\Http\Request;
 
 class UpdateController extends Controller
 {
-    public function __invoke(UpdateRequest $request, Tag $tag)
+    public function __invoke(UpdateRequest $request, Skill $skill)
     {
         $data = $request->validated();
-        $tag->update($data);
+        $skill->update($data);
         return response([]);
     }
 }

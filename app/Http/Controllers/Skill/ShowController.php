@@ -6,11 +6,10 @@ use App\Http\Controllers\Controller;
 use App\Models\Skill;
 use Illuminate\Http\Request;
 
-class IndexController extends Controller
+class ShowController extends Controller
 {
-    public function __invoke()
+    public function __invoke(Skill $skill)
     {
-        $skills = Skill::all();
-        return $skills;
+        return $skill;
     }
 }

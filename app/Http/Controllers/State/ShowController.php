@@ -6,11 +6,10 @@ use App\Http\Controllers\Controller;
 use App\Models\State;
 use Illuminate\Http\Request;
 
-class IndexController extends Controller
+class ShowController extends Controller
 {
-    public function __invoke()
+    public function __invoke(State $state)
     {
-        $states = State::all();
-        return $states();
+        return $state;
     }
 }
