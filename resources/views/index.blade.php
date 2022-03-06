@@ -13,7 +13,6 @@
 </head>
 
 <body class="antialiased">
-    <h1>Тест</h1>
     <div id="app"></div>
 </body>
 
