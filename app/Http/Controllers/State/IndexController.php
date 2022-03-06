@@ -11,6 +11,6 @@ class IndexController extends Controller
     public function __invoke()
     {
         $states = State::all();
-        return $states();
+        return $states;
     }
 }
