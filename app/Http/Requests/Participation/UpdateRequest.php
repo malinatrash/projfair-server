@@ -24,7 +24,8 @@ class UpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'motivation' => 'string',
+            'priority' => 'integer',
+            'review' => 'string',
 
             'project_id' => 'required|integer|projects:projects,id',
             'candidate_id' => 'required|integer|exists:candidates,id',

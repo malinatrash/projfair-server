@@ -20,7 +20,8 @@ class ParticipationFactory extends Factory
     public function definition()
     {
         return [
-            'motivation' => $this->faker->sentence(),
+            'priority' => $this->faker->randomDigit,
+            'review' => $this->faker->sentence(),
             'project_id' => Project::get()->random()->id,
             'candidate_id' => Candidate::get()->random()->id,
             'state_id' => StateParticipation::get()->random()->id,

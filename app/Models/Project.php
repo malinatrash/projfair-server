@@ -11,9 +11,9 @@ class Project extends Model
 
     protected $guarded = false;
 
-    public function tags()
+    public function skills()
     {
-        return $this->belongsToMany(Tag::class);
+        return $this->belongsToMany(Skill::class);
     }
 
     public function candidates()

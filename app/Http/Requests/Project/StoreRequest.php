@@ -41,8 +41,8 @@ class StoreRequest extends FormRequest
             'supervisor_id' => 'required|integer|exists:supervisors,id',
             'type_id' => 'required|integer|exists:types,id',
 
-            'tag_ids' => 'nullable|array',
-            'tag_ids.*' => 'nullable|integer|exists:tags,id',
+            'skill_ids' => 'nullable|array',
+            'skill_ids.*' => 'nullable|integer|exists:skills,id',
         ];
     }
 }

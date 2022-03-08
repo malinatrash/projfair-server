@@ -31,12 +31,11 @@ class DatabaseSeeder extends Seeder
         StateParticipation::factory(20)->create();
         State::factory(3)->create();
 
-        $tags = Tag::factory(50)->create();
         $projects = Project::factory(200)->create();
 
         foreach ($projects as $project) {
-            $tagsIds = $tags->random(10)->pluck('id');
-            $project->tags()->attach($tagsIds);
+            $tagsIds = $skills->random(10)->pluck('id');
+            $project->skills()->attach($tagsIds);
         }
 
         foreach ($candidates as $candidate) {

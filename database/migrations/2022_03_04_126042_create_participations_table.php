@@ -16,7 +16,8 @@ return new class extends Migration
         Schema::create('participations', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('motivation');
+            $table->integer('priority');
+            $table->string('review');
 
             $table->unsignedBigInteger('project_id');
             $table->unsignedBigInteger('candidate_id');
