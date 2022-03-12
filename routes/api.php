@@ -28,15 +28,13 @@ Route::group(['namespace' => 'Supervisor', 'prefix' => 'supervisors'], function 
 Route::group(['namespace' => 'Project', 'prefix' => 'projects'], function () {
     Route::post('/', 'StoreController');
     Route::get('/', 'IndexController');
+    Route::get('/filter', 'FilterController');
     Route::get('/{project}', 'ShowController');
     Route::patch('/{project}', 'UpdateController');
     Route::delete('/{project}', 'DeleteController');
 
     // Route::post('/project', 'Api\v1\ProjectController@store'); // Add project
     // Route::get('/supervisorprojects', 'Api\v1\ProjectController@supervisorProjects'); // Get supervisor's project
-    // Route::get('/projects', 'Api\v1\ProjectController@index');
-    // Route::get('/projects/{id}', 'Api\v1\ProjectController@getById')->where('id', '[0-9]+');
-    // Route::get('/projects/filter', 'Api\v1\ProjectController@filter');
     // Route::post('/supervisor/projects', 'Api\v1\ProjectController@create');
     // Route::put('/supervisor/projects/{id}', 'Api\v1\ProjectController@update')->where('id', '[0-9]+');
 });
