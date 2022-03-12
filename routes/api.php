@@ -67,7 +67,7 @@ Route::group(['namespace' => 'Skill', 'prefix' => 'skills'], function () {
 
 Route::group(['namespace' => 'Participation', 'prefix' => 'participations'], function () {
     Route::post('/', 'StoreController');
-    Route::get('/', 'IndexController');
+    // Route::get('/', 'IndexController');
     Route::get('/{participation}', 'ShowController');
     Route::patch('/{participation}', 'UpdateController');
     Route::delete('/{participation}', 'DeleteController');
@@ -77,6 +77,9 @@ Route::group(['namespace' => 'Participation', 'prefix' => 'participations'], fun
 
 Route::get('/candidate', 'Candidate\\MeController')->middleware(ApiAuth::class); //Получить инфу о себе студенте
 Route::put('/candidate', 'Candidate\\MeController')->middleware(ApiAuth::class); //Получить инфу о себе студенте
+Route::get('/candidate/skills', 'Candidate\\SkillsController')->middleware(ApiAuth::class); //Получить инфу о себе студенте
+Route::get('/participations', 'Candidate\\ParticipationsController')->middleware(ApiAuth::class); //Получить инфу о себе студенте
+Route::get('/participations/projects', 'Candidate\\ProjectsController')->middleware(ApiAuth::class); //Получить инфу о себе студенте
 
 Route::group(['namespace' => 'Candidate', 'prefix' => 'candidates'], function () {
     Route::post('/', 'StoreController');
