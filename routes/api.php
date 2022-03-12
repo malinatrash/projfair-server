@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\ApiAuth;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['namespace' => 'Supervisor', 'prefix' => 'supervisors'], function () {
