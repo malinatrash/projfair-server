@@ -40,13 +40,7 @@ Route::group(['namespace' => 'Project', 'prefix' => 'projects'], function () {
     // Route::put('/supervisor/projects/{id}', 'Api\v1\ProjectController@update')->where('id', '[0-9]+');
 });
 
-Route::group(['namespace' => 'Tag', 'prefix' => 'tags'], function () {
-    Route::post('/', 'StoreController');
-    Route::get('/', 'IndexController');
-    Route::get('/{tag}', 'ShowController');
-    Route::patch('/{tag}', 'UpdateController');
-    Route::delete('/{tag}', 'DeleteController');
-});
+
 
 Route::group(['namespace' => 'Type', 'prefix' => 'types'], function () {
     Route::post('/', 'StoreController');
