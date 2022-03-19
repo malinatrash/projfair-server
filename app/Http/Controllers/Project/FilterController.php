@@ -29,14 +29,14 @@ class FilterController extends Controller
 
     public function __invoke(Request $request)
     {
-        $data = Project::all();
+        $data = Project::with('skills', 'type', 'state', 'supervisor')->get();
 
 
         $inputTypes = $this->stringToArray($request->input('type'));
         $inputState = $this->stringToArray($request->input('state'));
         $inputSupervisors = $this->stringToArray($request->input('supervisor'));
         $inputDiff = $this->stringToArray($request->input('difficulty'));
-        $inputTags = $this->stringToArray($request->input('tags'));
+
         //фильтрация по типу
         $types = array_map(function ($value) {
             return intval($value);

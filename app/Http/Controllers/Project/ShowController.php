@@ -10,6 +10,11 @@ class ShowController extends Controller
 {
     public function __invoke(Project $project)
     {
+
+        $project['skills'] = $project->skills;
+        $project['state'] = $project->state;
+        $project['supervisor'] = $project->supervisor;
+        $project['type'] = $project->type;
         return $project;
     }
 }

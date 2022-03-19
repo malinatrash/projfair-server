@@ -10,19 +10,11 @@ class IndexController extends Controller
 {
     public function __invoke()
     {
-        // $projects = Project::all();
-        // return $projects;
-
         $dataAll = Project::join('states', 'states.id', '=', 'projects.state_id')->where('states.state', '!=', 'Обработка')->get();
         $projectCount = count($dataAll);
-
-        $data = Project::join('states', 'states.id', '=', 'projects.state_id')->where('states.state', '!=', 'Обработка')
-            ->orderBy('updated_at', 'DESC')->select('projects.*')->orderBy('id', 'desc')->simplePaginate(7);
-
-        $data->makeHidden(['state_id', 'supervisor_id', 'type_id']);
-        $data = $data->toArray()['data'];
-
-
-        return response()->json(['data' => $data, 'projectCount' => $projectCount])->setStatusCode(200, 'Paginating 7 projects');
+        $projects = Project::with('skills', 'type', 'state', 'supervisor')->simplePaginate(7)->getCollection();
+        $projects->makeHidden(['state_id', 'supervisor_id', 'type_id']);
+        $projects = $projects;
+        return response()->json(['data' => $projects, 'projectCount' => $projectCount])->setStatusCode(200, 'Paginating 7 projects');
     }
 }
