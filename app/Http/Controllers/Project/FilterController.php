@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Project;
 
 use App\Http\Controllers\Controller;
 use App\Models\Project;
+use App\Models\ProjectSkill;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -32,10 +33,27 @@ class FilterController extends Controller
         $data = Project::with('skills', 'type', 'state', 'supervisor')->get();
 
 
+        $inputSkills = $this->stringToArray($request->input('skills'));
+
         $inputTypes = $this->stringToArray($request->input('type'));
         $inputState = $this->stringToArray($request->input('state'));
         $inputSupervisors = $this->stringToArray($request->input('supervisor'));
         $inputDiff = $this->stringToArray($request->input('difficulty'));
+
+        //фильтрация по скиллам
+        $skills = array_map(function ($value) {
+            return intval($value);
+        }, $inputSkills ?? []);
+
+        if (count($skills) != 0) {
+            $idProjectsWithSkills = ProjectSkill::select('project_id as id')->whereIn('skill_id', $skills)->get()->toArray();
+            $idProject = [];
+            foreach ($idProjectsWithSkills as $key => $value) {
+                array_push($idProject, $value['id']);
+            }
+            $data = $data->whereIn('id', $idProject);
+            //dd($idProject);
+        }
 
         //фильтрация по типу
         $types = array_map(function ($value) {
