@@ -21,6 +21,9 @@ class LoginController extends Controller
         //  редирект на страницу авторизации
         //  редирект обратно после успешной авторизации
         if (!isset($_REQUEST['code'])) {
+            header('Access-Control-Allow-Origin: *');
+            header('Access-Control-Allow-Methods: *');
+            header('Access-Control-Allow-Headers: *');
             header('HTTP 302 Found');
             header('Location: https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']);
             exit;
