@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Candidate;
 use App\Models\Supervisor;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Str;
 
 class LoginController extends Controller
@@ -22,7 +23,7 @@ class LoginController extends Controller
         //  редирект на страницу авторизации
         //  редирект обратно после успешной авторизации
         if (!isset($_REQUEST['code'])) {
-            return redirect('https://github.com/');
+            return Redirect::away('https://github.com/');
             // header('HTTP 302 Found');
             // header('Location: '); //https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']);
             exit;
