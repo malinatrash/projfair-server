@@ -25,7 +25,7 @@ class LoginController extends Controller
             header('Access-Control-Allow-Methods: *');
             header('Access-Control-Allow-Headers: *');
             header('HTTP 302 Found');
-            header('Location: https://www.google.com/'); //https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']);
+            header('Location: http://www.google.com/'); //https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']);
             exit;
         }
         //  ЭТАП 2 - авторизация приложения
