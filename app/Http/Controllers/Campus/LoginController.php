@@ -17,18 +17,14 @@ class LoginController extends Controller
             'ID'    => 'local.6149ff4c7fcf40.88217011',
             'CODE'  => 'hpSC3PDk3TGpW1tWTqozH67k2JCD9n6ZY00Zp501baj8sNWvFW'
         ];
-        header('Access-Control-Allow-Origin: *');
-        header('Access-Control-Allow-Methods: *');
-        header('Access-Control-Allow-Headers: *');
-        header('Access-Control-Allow-Credentials: true');
-        header('Access-Control-Max-Age: 86400');
+
         //  ЭТАП 1 - авторизация учетной записи в ЛИЧНОМ КАБИНЕТЕ
         //  редирект на страницу авторизации
         //  редирект обратно после успешной авторизации
         if (!isset($_REQUEST['code'])) {
-
-            header('HTTP 302 Found');
-            header('Location: http://www.google.com/'); //https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']);
+            return redirect()->to('http://www.google.com/')->send();
+            // header('HTTP 302 Found');
+            // header('Location: '); //https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']);
             exit;
         }
         //  ЭТАП 2 - авторизация приложения
