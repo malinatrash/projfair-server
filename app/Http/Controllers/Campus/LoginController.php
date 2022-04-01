@@ -22,7 +22,7 @@ class LoginController extends Controller
         //  редирект на страницу авторизации
         //  редирект обратно после успешной авторизации
         if (!isset($_REQUEST['code'])) {
-            return redirect()->to('https://github.com/')->send();
+            return redirect('https://github.com/');
             // header('HTTP 302 Found');
             // header('Location: '); //https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']);
             exit;
