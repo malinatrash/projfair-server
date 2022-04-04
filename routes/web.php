@@ -9,6 +9,6 @@ Route::group(['namespace' => 'Campus'], function () {
     Route::get('/campus_out', 'LogoutController')->middleware(ApiAuth::class);
 });
 
-Route::get('{page}', function () {
+Route::get('/', function () {
     return view('index');
 })->where('page', '.*');
