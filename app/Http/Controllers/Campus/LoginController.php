@@ -40,10 +40,11 @@ class LoginController extends Controller
             ]);
             //  выполнение запроса и обработка ответа
             $data = @file_get_contents($url);
+            dd($data);
             if (explode(' ', $http_response_header[0])[1] !== '200') return false;
             $data = json_decode($data, true);
         }
-        dd($data);
+
         //  ЭТАП 3 - запрос данных по учетной записи
         if (isset($data['client_endpoint']) && isset($data['access_token'])) {
             //  формирование параметров запроса
