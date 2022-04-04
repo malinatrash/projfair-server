@@ -26,7 +26,7 @@ class LoginController extends Controller
             //return redirect()->away('http://exmple.com');
 
             header('HTTP 302 Found');
-            return 'Location: https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']; //);
+            return 'https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']; //);
             exit;
         }
 
