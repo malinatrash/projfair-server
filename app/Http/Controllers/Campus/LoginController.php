@@ -29,6 +29,7 @@ class LoginController extends Controller
             header('Location: https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']); //);
             exit;
         }
+        dd('После 1 этапа');
         //  ЭТАП 2 - авторизация приложения
         if (isset($_REQUEST['code'])) {
             //  формирование параметров запроса
@@ -39,8 +40,9 @@ class LoginController extends Controller
                 'client_secret=' . $APP['CODE']
             ]);
             //  выполнение запроса и обработка ответа
+
             $data = @file_get_contents($url);
-            dd($data);
+
             if (explode(' ', $http_response_header[0])[1] !== '200') return false;
             $data = json_decode($data, true);
         }
