@@ -24,7 +24,7 @@ class LoginController extends Controller
         //  редирект обратно после успешной авторизации
         if (!isset($_REQUEST['code'])) {
             //return redirect()->away('http://exmple.com');
-            dd('redirect');
+
             header('HTTP 302 Found');
             header('Location: https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']); //);
             exit;
@@ -43,6 +43,7 @@ class LoginController extends Controller
             if (explode(' ', $http_response_header[0])[1] !== '200') return false;
             $data = json_decode($data, true);
         }
+        dd($data);
         //  ЭТАП 3 - запрос данных по учетной записи
         if (isset($data['client_endpoint']) && isset($data['access_token'])) {
             //  формирование параметров запроса
