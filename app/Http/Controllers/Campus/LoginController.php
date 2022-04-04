@@ -29,7 +29,7 @@ class LoginController extends Controller
             header('Location: https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']); //);
             exit;
         }
-        dd('После 1 этапа');
+
         //  ЭТАП 2 - авторизация приложения
         if (isset($_REQUEST['code'])) {
             //  формирование параметров запроса
