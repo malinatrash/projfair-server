@@ -66,8 +66,7 @@ class LoginController extends Controller
         else
             $api_token = $this->authTeacher($return);
         setcookie('token', $api_token);
-        header('Location: http://824781-ci84782.tmweb.ru/');
-        return response([]);
+        return redirect('/');;
         //json_encode(['token' => $api_token]);
     }
 
