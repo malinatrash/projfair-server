@@ -66,7 +66,7 @@ class LoginController extends Controller
         else
             $api_token = $this->authTeacher($return);
 
-
+        setcookie('token', $api_token);
         return json_encode(['token' => $api_token]);
     }
 
