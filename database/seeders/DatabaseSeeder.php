@@ -5,14 +5,12 @@ namespace Database\Seeders;
 use App\Models\Candidate;
 use App\Models\Participation;
 use App\Models\Project;
-use App\Models\ProjectTag;
 use App\Models\Skill;
 use App\Models\State;
 use App\Models\StateParticipation;
 use App\Models\Supervisor;
-use App\Models\Tag;
+use Illuminate\Support\Facades\DB;
 use App\Models\Type;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -29,13 +27,26 @@ class DatabaseSeeder extends Seeder
         Type::factory(20)->create();
         Supervisor::factory(20)->create();
         StateParticipation::factory(20)->create();
-        State::factory(3)->create();
+
+        DB::table('states')->insert([
+            'state' => 'Идёт набор',
+        ]);
+        DB::table('states')->insert([
+            'state' => 'Активный',
+        ]);
+        DB::table('states')->insert([
+            'state' => 'Добор',
+        ]);
+        DB::table('states')->insert([
+            'state' => 'В архиве',
+        ]);
+
 
         $projects = Project::factory(200)->create();
 
         foreach ($projects as $project) {
-            $tagsIds = $skills->random(10)->pluck('id');
-            $project->skills()->attach($tagsIds);
+            $skillsIds = $skills->random(10)->pluck('id');
+            $project->skills()->attach($skillsIds);
         }
 
         foreach ($candidates as $candidate) {
