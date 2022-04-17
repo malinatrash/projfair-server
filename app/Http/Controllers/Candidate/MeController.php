@@ -14,7 +14,7 @@ class MeController extends Controller
     {
         $token = $request->get('api_token');
         $id = Candidate::where('api_token', $token)->select('id')->get()[0]['id'];
-
+        dd($id);
         $id_finalState = StateParticipation::where('state', 'Завершил')->select('id')->get()[0]['id'];
 
         $candidate = Candidate::where('api_token', $token)->get()[0];
