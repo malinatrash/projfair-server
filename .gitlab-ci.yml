@@ -1,1 +1,19 @@
 stages:
+  - build
+  - deploy
+
+variables:
+  REGISTRY: "registry.gitlab.com/coolsheff131/projectfair"
+
+before_script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+
+app_build:
+  stage: build
+  tags:
+    - build
+  only:
+    - develop
+  script:
+    - docker build --build-arg NODE_ENV="dev" -t "$REGISTRY/dev/app:$CI_COMMIT_SHA" -f ./_docker/gitlab/app/Dockerfile .
+    - docker push "$REGISTRY/dev/app:$CI_COMMIT_SHA"
