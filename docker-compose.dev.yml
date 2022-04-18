@@ -38,7 +38,7 @@ services:
     volumes:
       - ./tmp/db:/var/lib/mysql
     environment:
-        MYSQL_DATABASE: laravel
+        MYSQL_DATABASE: projectfair
         MYSQL_ROOT_PASSWORD: root
     ports:
       - 3306:3306
