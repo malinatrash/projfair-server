@@ -36,3 +36,4 @@ dev_deploy:
     - docker exec ${CONTAINER_PREFIX}_app php artisan cache:clear
     - docker exec ${CONTAINER_PREFIX}_app php artisan config:cache
     - docker exec ${CONTAINER_PREFIX}_app php artisan route:cache
+    - docker exec ${CONTAINER_PREFIX}_app chmod 777 -R storage/
