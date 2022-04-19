@@ -45,8 +45,7 @@ prod_deploy:
   tags:
     - prod
   only:
-    - tags
-  when: manual
+    - master
   script:
     - export CONTAINER_PREFIX=project
     - docker stop $(docker ps -a | grep ${CONTAINER_PREFIX}_ | awk '{print $1}') || true
