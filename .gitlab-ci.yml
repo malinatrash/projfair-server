@@ -11,7 +11,7 @@ before_script:
 app_build:
   stage: build
   tags:
-    - dev
+    - build
   only:
     - master
     - tags
