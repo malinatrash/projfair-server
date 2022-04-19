@@ -14,6 +14,7 @@ app_build:
     - build
   only:
     - master
+    - tags
   script:
     - docker build --build-arg NODE_ENV="dev" -t "$REGISTRY/dev/app:$CI_COMMIT_SHA" -f ./_docker/gitlab/app/Dockerfile .
     - docker push "$REGISTRY/dev/app:$CI_COMMIT_SHA"
@@ -30,6 +31,28 @@ dev_deploy:
     - docker rm $(docker ps -a | grep ${CONTAINER_PREFIX}_ | awk '{print $1}') || true
     - docker volume rm $(docker volume ls | grep ${CONTAINER_PREFIX}_ | awk '{print $2}') || true
     - docker-compose -p $CONTAINER_PREFIX -f docker-compose.dev.yml up -d
+    - docker exec ${CONTAINER_PREFIX}_app composer update
+    - docker exec ${CONTAINER_PREFIX}_app composer install
+    - docker exec ${CONTAINER_PREFIX}_app php artisan migrate
+    - docker exec ${CONTAINER_PREFIX}_app php artisan cache:clear
+    - docker exec ${CONTAINER_PREFIX}_app php artisan config:cache
+    - docker exec ${CONTAINER_PREFIX}_app php artisan route:cache
+    - docker exec ${CONTAINER_PREFIX}_app php artisan db:seed
+    - docker exec ${CONTAINER_PREFIX}_app chmod 777 -R storage/
+
+prod_deploy:
+  stage: deploy
+  tags:
+    - prod
+  only:
+    - tags
+  when: manual
+  script:
+    - export CONTAINER_PREFIX=project
+    - docker stop $(docker ps -a | grep ${CONTAINER_PREFIX}_ | awk '{print $1}') || true
+    - docker rm $(docker ps -a | grep ${CONTAINER_PREFIX}_ | awk '{print $1}') || true
+    - docker volume rm $(docker volume ls | grep ${CONTAINER_PREFIX}_ | awk '{print $2}') || true
+    - docker-compose -p $CONTAINER_PREFIX -f docker-compose.prod.yml up -d
     - docker exec ${CONTAINER_PREFIX}_app composer update
     - docker exec ${CONTAINER_PREFIX}_app composer install
     - docker exec ${CONTAINER_PREFIX}_app php artisan migrate
