@@ -22,7 +22,7 @@ app_build:
 dev_deploy:
   stage: deploy
   tags:
-    - cicd
+    - dev
   only:
     - master
   script:
