@@ -13,16 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('skills', function (Blueprint $table) {
+        Schema::create('skill_categories', function (Blueprint $table) {
             $table->id();
-            $table->string('skill');
-
+            $table->string('name');
             $table->timestamps();
-
-            $table->unsignedBiginteger('skillCategory_id');
-
-            //FK
-            $table->foreign('skillCategory_id')->on('skill_categories')->references('id')->onDelete('cascade');
         });
     }
 
@@ -33,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('skills');
+        Schema::dropIfExists('skill_categories');
     }
 };
