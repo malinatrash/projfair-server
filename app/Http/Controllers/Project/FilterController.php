@@ -40,6 +40,8 @@ class FilterController extends Controller
         $inputSupervisors = $this->stringToArray($request->input('supervisor'));
         $inputDiff = $this->stringToArray($request->input('difficulty'));
 
+        $inputSpecialities = $this->stringToArray($request->input('specialties'));
+
         //фильтрация по скиллам
         $skills = array_map(function ($value) {
             return intval($value);

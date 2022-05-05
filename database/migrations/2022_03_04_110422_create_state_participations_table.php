@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('state_participations', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
 
             $table->string('state');
         });

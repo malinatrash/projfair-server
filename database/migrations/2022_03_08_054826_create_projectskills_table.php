@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('project_skill', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
 
             $table->unsignedBigInteger('skill_id');
             $table->unsignedBigInteger('project_id');

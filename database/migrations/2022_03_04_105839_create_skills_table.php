@@ -16,11 +16,7 @@ return new class extends Migration
         Schema::create('skills', function (Blueprint $table) {
             $table->id();
             $table->string('skill');
-
-            $table->timestamps();
-
             $table->unsignedBiginteger('skillCategory_id');
-
             //FK
             $table->foreign('skillCategory_id')->on('skill_categories')->references('id')->onDelete('cascade');
         });
