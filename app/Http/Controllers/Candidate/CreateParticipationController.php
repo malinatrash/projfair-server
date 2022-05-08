@@ -23,34 +23,15 @@ class CreateParticipationController extends Controller
             return response()->json(['error' => 'Заявка на этот проект уже есть'], 400);
         }
 
-        if (!Project::where('id', $id_project)->get()->count()) {
-            return response()->json(['error' => 'Project not found'], 400);
-        }
-
-        $part_id = Participation::create([
+        Participation::create([
             'priority' => $request['priority'],
 
             'id_project' => $id_project,
             'id_candidate' => $id,
-            'id_state' => StateParticipation::where('state', 'Ожидание рассмотрения')->select('id')->get()->toArray()[0]['id'],
+            'id_state' => 0,
         ])->id;
 
-        foreach ($request['skills'] as $skill) {
-            if (!is_int($skill)) {
-                return response()->json(
-                    [
-                        'status' => false,
-                        'message' => 'Массив скиллов содержит не число'
-                    ],
-                    400
-                );
-            }
 
-            // ParticipationsSkill::create([
-            //     'id_skill' => $skill,
-            //     'id_participation' =>  $part_id
-            // ]);
-        }
 
         return response()->json(['status' => 'OK'], 200);
     }

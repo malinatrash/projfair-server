@@ -26,8 +26,6 @@ class StoreRequest extends FormRequest
         return [
             'priority' => 'integer',
 
-            'project_id' => 'required|integer|projects:projects,id',
-            'candidate_id' => 'required|integer|exists:candidates,id',
             // 'review' => 'string',
             // 'state_id' => 'required|integer|exists:state_participations,id',
         ];

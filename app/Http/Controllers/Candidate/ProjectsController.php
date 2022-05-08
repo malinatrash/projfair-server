@@ -16,13 +16,6 @@ class ProjectsController extends Controller
 
         $data = Participation::where('id_candidate', $id);
 
-        //студент участвует|Завершил|Исключен
-        $data = $data->whereIn('id_state', [2, 3, 6]);
-        $data = $data->simplePaginate(7);
-        $data->makeHidden(['id_project', 'id_candidate', 'date']);
-
-        $data = $data->toArray()['data'];
-
-        return response()->json($data, 200);
+        return $data;
     }
 }

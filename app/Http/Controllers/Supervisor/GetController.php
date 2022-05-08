@@ -12,7 +12,9 @@ class GetController extends Controller
     {
         $token = $request->get('api_token');
         $data = Supervisor::where('api_token', $token)->get()[0];
-
+        if (!$data) {
+            return response('Не найдего', 404);
+        }
         return response()->json($data, 200);
     }
 }

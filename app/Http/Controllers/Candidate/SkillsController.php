@@ -17,9 +17,6 @@ class SkillsController extends Controller
         $data = CandidatesSkill::join('skills', 'skills.id', '=', 'candidates_skills.id_skill')
             ->where('id_candidate', $id)->select('skills.id', 'skills.skill')->get();
 
-        return [
-            'common' => [],
-            'personal' => $data
-        ];
+        return $data;
     }
 }

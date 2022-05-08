@@ -22,7 +22,7 @@ class ParticipationsController extends Controller
             array_push($id_projects, $project['id']);
         }
 
-        $data = Participation::whereIn('id_project', $id_projects)->where('id_state', 1)->get();
+        $data = Participation::whereIn('id_project', $id_projects)->get();
 
         foreach ($data as $key => $value) {
             $fio = Candidate::where('id', $value['id_candidate'])->select('fio')->get()[0]['fio'];

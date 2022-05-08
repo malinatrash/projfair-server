@@ -26,7 +26,9 @@ class MeUpdateRequest extends FormRequest
         return [
             'about' => 'required|string',
             'phone' => 'required|string',
-            'skills' => 'present|array|min:0'
+
+            'skill_ids' => 'nullable|array',
+            'skill_ids.*' => 'nullable|integer|exists:skills,id',
         ];
     }
 }
