@@ -48,11 +48,11 @@ Route::group(['namespace' => 'Skill', 'prefix' => 'skills'], function () {
 });
 
 Route::group(['namespace' => 'Participation', 'prefix' => 'participations'], function () {
-    Route::post('/', 'StoreController');
+    //Route::post('/', 'StoreController');
     // Route::get('/', 'IndexController');
     Route::get('/{participation}', 'ShowController');
     Route::patch('/{participation}', 'UpdateController');
-    Route::delete('/{participation}', 'DeleteController');
+    //Route::delete('/{participation}', 'DeleteController');
 });
 
 Route::post('/supervisor/projects', 'Supervisor\\CreateProjectController')->middleware(ApiAuth::class);
@@ -66,7 +66,7 @@ Route::put('/candidate', 'Candidate\\MeController')->middleware(ApiAuth::class);
 Route::get('/candidate', 'Candidate\\MeController')->middleware(ApiAuth::class);
 Route::get('/supervisor/participation', 'Supervisor\\ParticipationsController')->middleware(ApiAuth::class);
 Route::get('/supervisor/participation/{id}', 'Supervisor\\GetParticipationByIdController')->where('id', '[0-9]+')->middleware(ApiAuth::class);
-Route::get('/supervisor/projects/{id}/participation', 'Supervisor\\ParticipationsOnProjectController')->where('id', '[0-9]+')->middleware(ApiAuth::class);
+//Route::get('/supervisor/projects/{id}/participation', 'Supervisor\\ParticipationsOnProjectController')->where('id', '[0-9]+')->middleware(ApiAuth::class);
 Route::get('/supervisor/student/{id}', 'Supervisor\\GetCandidateByIdController')->where('id', '[0-9]+')->middleware(ApiAuth::class);
 Route::get('/supervisor', 'Supervisor\\GetController')->middleware(ApiAuth::class);
 Route::put('/supervisor', 'Supervisor\\UpdateController')->middleware(ApiAuth::class);

@@ -21,14 +21,15 @@ return new class extends Migration
             $table->string('title');
             $table->integer('places');
             $table->string('goal');
-            $table->string('idea');
+            $table->string('description');
             $table->tinyInteger('difficulty');
             $table->date('date_start');
             $table->date('date_end');
             $table->string('requirements');
-            $table->string('customer');
-            $table->string('expected_result');
+            $table->string('customer')->nullable();
             $table->string('additional_inf')->nullable();
+            $table->string('product_result');
+            $table->string('study_result');
             $table->string('result')->nullable();
 
             $table->unsignedBiginteger('state_id');
