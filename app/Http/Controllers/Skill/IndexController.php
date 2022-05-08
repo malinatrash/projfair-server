@@ -18,7 +18,7 @@ class IndexController extends Controller
         return [
             'skills' => $skills,
             'specialties' => $specialities,
-            'general' => $skillCategories
+            'skillCategories' => $skillCategories
         ];
     }
 }
