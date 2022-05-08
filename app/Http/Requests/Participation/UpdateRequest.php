@@ -25,11 +25,6 @@ class UpdateRequest extends FormRequest
     {
         return [
             'priority' => 'integer',
-            'review' => 'string',
-
-            'project_id' => 'required|integer|projects:projects,id',
-            'candidate_id' => 'required|integer|exists:candidates,id',
-            'state_id' => 'required|integer|exists:state_participations,id',
         ];
     }
 }

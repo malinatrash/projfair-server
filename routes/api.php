@@ -54,7 +54,9 @@ Route::group(['namespace' => 'Participation', 'prefix' => 'participations'], fun
     Route::patch('/{participation}', 'UpdateController');
     //Route::delete('/{participation}', 'DeleteController');
 });
-
+Route::get('/participations', 'Candidate\\ParticipationsController')->middleware(ApiAuth::class);
+Route::delete('/participations/{id}', 'Candidate\\DeleteParticipationController')->middleware(ApiAuth::class);
+Route::post('/participations/{id}', 'Candidate\\CreateParticipationController')->middleware(ApiAuth::class);
 Route::get('/participations_deadline', 'Participation\\DeadLineController');
 
 
@@ -75,9 +77,7 @@ Route::get('/supervisor', 'Supervisor\\GetController')->middleware(ApiAuth::clas
 Route::put('/supervisor', 'Supervisor\\UpdateController')->middleware(ApiAuth::class);
 
 
-Route::get('/participations', 'Candidate\\ParticipationsController')->middleware(ApiAuth::class);
-Route::delete('/participations/{id}', 'Candidate\\DeleteParticipationController')->middleware(ApiAuth::class);
-Route::post('/participations/{id}', 'Candidate\\CreateParticipationController')->middleware(ApiAuth::class);
+
 
 Route::group(['namespace' => 'Candidate', 'prefix' => 'candidates'], function () {
     Route::post('/', 'StoreController');

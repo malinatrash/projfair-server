@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->integer('priority');
-            $table->string('review');
+            $table->string('review')->nullable();
 
             $table->unsignedBigInteger('project_id');
             $table->unsignedBigInteger('candidate_id');

@@ -12,7 +12,9 @@ class UpdateController extends Controller
     public function __invoke(UpdateRequest $request, Participation $participation)
     {
         $data = $request->validated();
-        $participation->update($data);
-        return response([]);
+        $participation->update([
+            'priority' => $data['priority']
+        ]);
+        return $participation;
     }
 }
