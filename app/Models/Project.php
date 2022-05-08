@@ -16,6 +16,11 @@ class Project extends Model
         return $this->belongsToMany(Skill::class);
     }
 
+    public function specialities()
+    {
+        return $this->belongsToMany(Speciality::class);
+    }
+
     public function candidates()
     {
         return $this->hasMany(Participation::class, 'project_id');

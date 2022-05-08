@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Project;
 use App\Http\Controllers\Controller;
 use App\Models\Project;
 use App\Models\ProjectSkill;
+use App\Models\ProjectSpeciality;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -30,17 +31,32 @@ class FilterController extends Controller
 
     public function __invoke(Request $request)
     {
-        $data = Project::with('skills', 'type', 'state', 'supervisor')->get();
+        $data = Project::with('skills', 'specialities', 'type', 'state', 'supervisor')->get();
 
 
         $inputSkills = $this->stringToArray($request->input('skills'));
+        $inputSpecialities = $this->stringToArray($request->input('specialties'));
 
         $inputTypes = $this->stringToArray($request->input('type'));
         $inputState = $this->stringToArray($request->input('state'));
         $inputSupervisors = $this->stringToArray($request->input('supervisor'));
         $inputDiff = $this->stringToArray($request->input('difficulty'));
 
-        $inputSpecialities = $this->stringToArray($request->input('specialties'));
+
+        //фильтрация по специальностям
+        $specialities = array_map(function ($value) {
+            return intval($value);
+        }, $inputSpecialities ?? []);
+
+        if (count($specialities) != 0) {
+            $idProjectsWithSpecialities = ProjectSpeciality::select('project_id as id')->whereIn('speciality_id', $specialities)->get()->toArray();
+            $idProject = [];
+            foreach ($idProjectsWithSpecialities as $key => $value) {
+                array_push($idProject, $value['id']);
+            }
+            $data = $data->whereIn('id', $idProject);
+            //dd($idProject);
+        }
 
         //фильтрация по скиллам
         $skills = array_map(function ($value) {

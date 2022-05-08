@@ -30,7 +30,7 @@ return new class extends Migration
             $table->string('additional_inf')->nullable();
             $table->string('product_result');
             $table->string('study_result');
-            $table->string('result')->nullable();
+
 
             $table->unsignedBiginteger('state_id');
             $table->unsignedBiginteger('supervisor_id');
