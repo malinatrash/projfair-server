@@ -55,6 +55,9 @@ Route::group(['namespace' => 'Participation', 'prefix' => 'participations'], fun
     //Route::delete('/{participation}', 'DeleteController');
 });
 
+Route::get('/participations_deadline', 'Participation\\DeadLineController');
+
+
 Route::post('/supervisor/projects', 'Supervisor\\CreateProjectController')->middleware(ApiAuth::class);
 Route::get('/supervisor/projects', 'Supervisor\\ProjectsController')->middleware(ApiAuth::class);
 Route::put('/supervisor/projects/{id}', 'Supervisor\\UpdateProjectController')->where('id', '[0-9]+')->middleware(ApiAuth::class);
