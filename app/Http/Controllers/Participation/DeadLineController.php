@@ -12,6 +12,10 @@ class DeadLineController extends Controller
     public function __invoke()
     {
         $deadline = ParticipationDeadLine::find(1);
+        if (!$deadline) {
+            return response('Дедлайн не назначен', 404);
+        }
+
         return $deadline->deadline;
     }
 }

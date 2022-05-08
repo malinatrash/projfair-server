@@ -27,15 +27,16 @@ class UpdateRequest extends FormRequest
             'title' => 'string',
             'places' => 'integer',
             'goal' => 'string',
-            'idea' => 'string',
+            'description' => 'string',
             'difficulty' => 'integer',
             'date_start' => 'string',
             'date_end' => 'string',
             'requirements' => 'string',
-            'customer' => 'string',
-            'expected_result' => 'string',
-            'additional_inf' => 'string',
-            'result' => 'string',
+            'customer' => 'string|nullable',
+            'product_result' => 'string',
+            'study_result' => 'string',
+            'additional_inf' => 'string|nullable',
+
 
             'state_id' => 'required|integer|exists:states,id',
             'supervisor_id' => 'required|integer|exists:supervisors,id',
@@ -43,6 +44,9 @@ class UpdateRequest extends FormRequest
 
             'skill_ids' => 'nullable|array',
             'skill_ids.*' => 'nullable|integer|exists:skills,id',
+
+            'speciality_ids' => 'nullable|array',
+            'speciality_ids.*' => 'nullable|integer|exists:specialities,id',
         ];
     }
 }
