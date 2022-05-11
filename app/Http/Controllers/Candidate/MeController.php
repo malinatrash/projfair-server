@@ -16,6 +16,10 @@ class MeController extends Controller
         $token = $request->get('api_token');
         // $id = Candidate::where('api_token', $token)->select('id')->get()[0]['id'];
         // $id_finalState = StateParticipation::where('state', 'Завершил')->select('id')->get()[0]['id'];
+        $candidate = Candidate::where('api_token', $token)->get();
+        if (!$candidate) {
+            return response('API токен кандидата не найден', 404);
+        }
         $candidate = Candidate::where('api_token', $token)->get()[0];
         return $candidate;
         // $participation = Participation::select('id_project')->where('id_candidate', $id)->where('id_state', $id_finalState)->pluck('id_project');
