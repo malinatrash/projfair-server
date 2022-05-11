@@ -174,6 +174,23 @@ class DatabaseSeeder extends Seeder
 
         ]);
 
+        DB::table('project_skill')->insert([
+            'skill_id' => '1',
+            'project_id' => '1',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '1',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '3',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '4',
+            'project_id' => '2',
+        ]);
+
         // $projects = Project::factory(200)->create();
 
         // foreach ($projects as $project) {
