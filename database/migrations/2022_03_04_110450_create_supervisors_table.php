@@ -19,6 +19,7 @@ return new class extends Migration
 
             $table->string('fio');
             $table->string('email');
+            $table->string('about');
             $table->string('api_token')->nullable();
             $table->string('position');
         });
