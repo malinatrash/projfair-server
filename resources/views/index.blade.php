@@ -7,9 +7,10 @@
 
     <title>Laravel</title>
 
-    <script type="module" crossorigin src="{{ asset('assets/index.0256c957.js') }}"></script>
-    <link rel="modulepreload" href="{{ asset('assets/vendor.b1e86581.js') }}">
-    <link rel="stylesheet" href="{{ asset('assets/index.2acfb5d8.css') }}">
+    <script type="module" crossorigin src="{{ asset('assets/index.93c56609.js') }}"></script>
+    <link rel="modulepreload" href="{{ asset('assets/vendor.bde10b0a.js') }}">
+    <link rel="stylesheet" href="{{ asset('assets/index.0e650290.css') }}">
+
 </head>
 
 <body class="antialiased">

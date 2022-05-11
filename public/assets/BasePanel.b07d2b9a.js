@@ -1,1 +1,0 @@
-import{_ as a}from"./index.0256c957.js";import{d as o,a as r,f as t,e as n,g as c,n as _}from"./vendor.b1e86581.js";const l={class:"project-panel"},d=o({props:{cols:{default:1}},setup(e){return(s,p)=>(r(),t("div",l,[n("div",{class:_(["row",`row-${e.cols}`])},[c(s.$slots,"default",{},void 0,!0)],2)]))}});var v=a(d,[["__scopeId","data-v-14b73ca8"]]);export{v as B};
