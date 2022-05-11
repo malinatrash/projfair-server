@@ -87,5 +87,5 @@ Route::group(['namespace' => 'Candidate', 'prefix' => 'candidates'], function ()
     //Route::patch('/{candidate}', 'UpdateController');
     //Route::delete('/{candidate}', 'DeleteController');
 });
-Route::put('/candidate', 'Candidate\\MeController')->middleware(ApiAuth::class);
-Route::get('/candidate', 'Candidate\\MeUpdateController')->middleware(ApiAuth::class);
+Route::put('/candidate', 'Candidate\\MeUpdateController')->middleware(ApiAuth::class);
+Route::get('/candidate', 'Candidate\\MeController')->middleware(ApiAuth::class);
