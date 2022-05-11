@@ -56,16 +56,19 @@ class DatabaseSeeder extends Seeder
             'fio' => 'Лукьянов Никита Дмитриевич',
             'email' => 'ijsjpp@gmail.com',
             'position' => 'Руководитель проекта',
+            'about' => 'Руководитель проекта',
         ]);
         DB::table('supervisors')->insert([
             'fio' => 'Аршинский Вадим Леонидович',
             'email' => 'апапап@gmail.com',
             'position' => 'Руководитель проекта',
+            'about' => 'Руководитель проекта',
         ]);
         DB::table('supervisors')->insert([
             'fio' => 'Осипова Елизавета Алексеевна',
             'email' => 'укукуку@gmail.com',
             'position' => 'Руководитель проекта',
+            'about' => 'Руководитель проекта',
         ]);
 
         DB::table('state_participations')->insert([
