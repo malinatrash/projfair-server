@@ -13,18 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('candidates', function (Blueprint $table) {
+        Schema::create('speciality_courses', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-
-            $table->string('fio');
-            $table->string('about');
-            $table->string('email');
-            $table->string('numz');
-            $table->string('phone');
+            $table->unsignedBigInteger('speciality_id');
             $table->integer('course');
-            $table->string('training_group');
-            $table->string('api_token')->nullable();
+
+            $table->foreign('speciality_id')->on('specialities')->references('id')->onDelete('cascade');
         });
     }
 
@@ -35,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('candidates');
+        Schema::dropIfExists('speciality_courses');
     }
 };

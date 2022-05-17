@@ -56,20 +56,102 @@ class DatabaseSeeder extends Seeder
             'fio' => 'Лукьянов Никита Дмитриевич',
             'email' => 'ijsjpp@gmail.com',
             'position' => 'Руководитель проекта',
-            'about' => 'Руководитель проекта',
+            'about' => '',
         ]);
+
         DB::table('supervisors')->insert([
             'fio' => 'Аршинский Вадим Леонидович',
-            'email' => 'апапап@gmail.com',
+            'email' => 'arshinskyv@mail.ru',
+            'position' => 'Доцент',
+            'about' => 'Руководитель центра программной инженерии',
+        ]);
+
+        DB::table('supervisors')->insert([
+            'fio' => 'Чернышенко Марина Сергеевна',
+            'email' => 'karo_m@mail.ru',
             'position' => 'Руководитель проекта',
             'about' => 'Руководитель проекта',
         ]);
         DB::table('supervisors')->insert([
-            'fio' => 'Осипова Елизавета Алексеевна',
-            'email' => 'укукуку@gmail.com',
+            'fio' => 'Осипова Ирина Михайловна',
+            'email' => 'phenka@mail.ru',
             'position' => 'Руководитель проекта',
             'about' => 'Руководитель проекта',
         ]);
+        DB::table('supervisors')->insert([
+            'fio' => 'Наумова Татьяна Александровна',
+            'email' => 'Tanya_n80@list.ru',
+            'position' => 'Руководитель проекта',
+            'about' => 'руководитель проекта',
+        ]);
+        DB::table('supervisors')->insert([
+            'fio' => 'Баяскаланова Туяна Александровна ',
+            'email' => 'Dama83@mail.ru ',
+            'position' => 'руководитель проекта',
+            'about' => 'руководитель проекта',
+        ]);
+        DB::table('supervisors')->insert([
+            'fio' => 'Другова Елена Сергеевна',
+            'email' => 'Alena-svetlaya@mail.ru',
+            'position' => 'Руководитель проекта',
+            'about' => 'Руководитель проекта',
+        ]);
+        DB::table('supervisors')->insert([
+            'fio' => 'Бельская Ольга Герасимовна',
+            'email' => 'olgabelskaya@mail.ru',
+            'position' => 'Руководитель проекта',
+            'about' => 'Руководитель проекта',
+        ]);
+        DB::table('supervisors')->insert([
+            'fio' => 'Днепровская Марина Анатольевна',
+            'email' => 'mariosky@rambler.ru',
+            'position' => 'Руководитель проекта',
+            'about' => 'Руководитель проекта',
+        ]);
+        DB::table('supervisors')->insert([
+            'fio' => 'Красноярова Елена Викторовна',
+            'email' => 'Krasnoyarova.65@mail.ru',
+            'position' => 'Руководитель проекта',
+            'about' => 'Руководитель проекта',
+        ]);
+        DB::table('supervisors')->insert([
+            'fio' => 'Мушинский Михаил Адеилович',
+            'email' => 'mushinskiy@mail.ru',
+            'position' => 'Руководитель проекта',
+            'about' => 'Руководитель проекта',
+        ]);
+        DB::table('supervisors')->insert([
+            'fio' => 'Пахаруков Александр Анатольевич',
+            'email' => 'paharukov@mail.ru',
+            'position' => 'Руководитель проекта',
+            'about' => 'Руководитель проекта',
+        ]);
+        DB::table('supervisors')->insert([
+            'fio' => 'Самусевич Алексей Геннадьевич',
+            'email' => 'Samusevich79@mail.ru',
+            'position' => 'Руководитель проекта',
+            'about' => 'Руководитель проекта',
+        ]);
+        DB::table('supervisors')->insert([
+            'fio' => 'Степаненко Ольга Геннадьевна',
+            'email' => 'Ols-tep@yandex.ru',
+            'position' => '� уководитель проекта',
+            'about' => '� уководитель проекта',
+        ]);
+        DB::table('supervisors')->insert([
+            'fio' => 'Туркова Валентина Николаевна',
+            'email' => 'Nikolaevna_ur@mail.ru',
+            'position' => 'Руководитель проекта',
+            'about' => 'Руководитель проекта',
+        ]);
+        DB::table('supervisors')->insert([
+            'fio' => 'Чердакова Лариса Анатольевна',
+            'email' => 'l.docent@mail.ru',
+            'position' => 'Руководитель проекта',
+            'about' => 'Руководитель проекта',
+        ]);
+
+
 
         DB::table('state_participations')->insert([
             'state' => 'Идёт набор',
@@ -85,19 +167,19 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('specialities')->insert([
-            'name' => 'ИСТ-19-1',
+            'name' => 'ИСТ',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ИСТ-19-2',
+            'name' => 'ИСТ',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'АСУ-19-1',
+            'name' => 'АСУ',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ЭВМ-19-1',
+            'name' => 'ЭВМ',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ИБ-19-1',
+            'name' => 'ИБ',
         ]);
 
         DB::table('skill_categories')->insert([
