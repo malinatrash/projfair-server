@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Candidate;
 use App\Models\Participation;
 use App\Models\StateParticipation;
+use App\Models\Supervisor;
 use Illuminate\Http\Request;
 
 class MeController extends Controller
@@ -16,12 +17,23 @@ class MeController extends Controller
         $token = $request->get('api_token');
         // $id = Candidate::where('api_token', $token)->select('id')->get()[0]['id'];
         // $id_finalState = StateParticipation::where('state', 'Завершил')->select('id')->get()[0]['id'];
-        $candidate = Candidate::where('api_token', $token)->get();
-        if (!$candidate) {
-            return response('API токен кандидата не найден', 404);
+        $user = Candidate::where('api_token', $token)->get();
+
+
+        if (!$user->isEmpty()) {
+            $candidate = $user[0];
+            $candidate['is_student'] = true;
+            return  response($candidate, 200);
         }
-        $candidate = Candidate::where('api_token', $token)->get()[0];
-        return $candidate;
+
+        $user = Supervisor::where('api_token', $token)->get();
+        if (!$user->isEmpty()) {
+            $supervisor = $user[0];
+            $supervisor['is_student'] = false;
+            return response($supervisor, 202);
+        }
+        return response('API токен не найден', 404);
+
         // $participation = Participation::select('id_project')->where('id_candidate', $id)->where('id_state', $id_finalState)->pluck('id_project');
         // $candidate['experience'] = $participation;
 
