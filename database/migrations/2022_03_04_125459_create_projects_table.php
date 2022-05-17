@@ -20,16 +20,16 @@ return new class extends Migration
             //$table->bigIncrements('id');
             $table->string('title');
             $table->integer('places');
-            $table->string('goal');
-            $table->string('description');
+            $table->longText('goal');
+            $table->longText('description');
             $table->tinyInteger('difficulty');
             $table->date('date_start');
             $table->date('date_end');
-            $table->string('requirements');
+            $table->longText('requirements');
             $table->string('customer')->nullable();
-            $table->string('additional_inf')->nullable();
-            $table->string('product_result');
-            $table->string('study_result');
+            $table->longText('additional_inf')->nullable();
+            $table->longText('product_result');
+            $table->longText('study_result');
 
 
             $table->unsignedBiginteger('state_id');
