@@ -1,0 +1,1 @@
+import{_ as n}from"./index.8ed2e248.js";import{a as r,f as d,e as a,g as s}from"./vendor.bde10b0a.js";const o={},t={class:"container"},_={class:"aside"};function i(e,c){return r(),d("div",t,[a("aside",_,[s(e.$slots,"sidebar",{},void 0,!0)]),a("div",null,[s(e.$slots,"main",{},void 0,!0)])])}var f=n(o,[["render",i],["__scopeId","data-v-65a97dda"]]);export{f as S};

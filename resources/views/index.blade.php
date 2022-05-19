@@ -7,7 +7,7 @@
 
     <title>Laravel</title>
 
-    <script type="module" crossorigin src="{{ asset('assets/index.93c56609.js') }}"></script>
+    <script type="module" crossorigin src="{{ asset('assets/index.8ed2e248.js') }}"></script>
     <link rel="modulepreload" href="{{ asset('assets/vendor.bde10b0a.js') }}">
     <link rel="stylesheet" href="{{ asset('assets/index.0e650290.css') }}">
 

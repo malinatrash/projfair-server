@@ -1,1 +1,0 @@
-import{_ as a}from"./index.93c56609.js";import{a as s,f as _,g as n}from"./vendor.bde10b0a.js";const r={},t={class:"panel"};function o(e,d){return s(),_("div",t,[n(e.$slots,"default",{},void 0,!0)])}var f=a(r,[["render",o],["__scopeId","data-v-260da14e"]]);export{f as B};
