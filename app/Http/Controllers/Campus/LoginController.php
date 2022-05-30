@@ -61,7 +61,7 @@ class LoginController extends Controller
         }
 
         $api_token = null;
-
+        setcookie('is_student', $return['is_student']);
         if ($return['is_student'])
             $api_token = $this->authStudent($return);
         else
