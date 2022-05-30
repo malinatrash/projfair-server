@@ -22,7 +22,10 @@ class CreateParticipationController extends Controller
         if (Participation::where('candidate_id', $id)->where('project_id', $id_project)->get()->count() != 0) {
             return response()->json(['error' => 'Заявка на этот проект уже есть'], 400);
         }
-
+        $data =  $request->json()->all();
+        $bodyContent = $request->getContent();
+        $priority = json_decode($bodyContent)->priority;
+        //dd(json_decode($bodyContent)->priority);
         Participation::create([
             'priority' => $request['priority'],
 
