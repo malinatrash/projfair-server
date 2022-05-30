@@ -154,17 +154,17 @@ class DatabaseSeeder extends Seeder
 
 
         DB::table('state_participations')->insert([
-            'state' => 'Идёт набор',
+            'state' => 'На распределении',
         ]);
         DB::table('state_participations')->insert([
-            'state' => 'Активный',
+            'state' => 'Учавствует',
         ]);
         DB::table('state_participations')->insert([
-            'state' => 'Добор',
+            'state' => 'Архив',
         ]);
-        DB::table('state_participations')->insert([
-            'state' => 'В архиве',
-        ]);
+        // DB::table('state_participations')->insert([
+        //     'state' => 'В архиве',
+        // ]);
 
         DB::table('specialities')->insert([
             'name' => 'ИСТ',
