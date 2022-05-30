@@ -19,9 +19,9 @@ class ApiAuth
      */
     public function handle(Request $request, Closure $next)
     {
-        $token = $request->header(self::API_KEY_HEADER);
+        $token = $request->header(self::API_KEY_HEADER) ?? $request->cookie('token');
 
-        if ($token == null || (Candidate::where('api_token', $token) == null) && Supervisor::where('api_token', $token)) {
+        if ($token == null || (Candidate::where('api_token', $token) == null) && Supervisor::where('api_token', $token) == null) {
             abort(403, 'Access denied');
         }
 
