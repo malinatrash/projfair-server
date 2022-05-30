@@ -19,15 +19,15 @@ class CreateParticipationController extends Controller
         $token = $request->get('api_token');
         $id = Candidate::where('api_token', $token)->select('id')->get()[0]['id'];
 
-        if (Participation::where('id_candidate', $id)->where('id_project', $id_project)->get()->count() != 0) {
+        if (Participation::where('candidate_id', $id)->where('project_id', $id_project)->get()->count() != 0) {
             return response()->json(['error' => 'Заявка на этот проект уже есть'], 400);
         }
 
         Participation::create([
             'priority' => $request['priority'],
 
-            'id_project' => $id_project,
-            'id_candidate' => $id,
+            'project_id' => $id_project,
+            'candidate_id' => $id,
             'id_state' => 0,
         ])->id;
 
