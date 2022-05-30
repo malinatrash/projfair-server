@@ -66,7 +66,7 @@ class LoginController extends Controller
             $api_token = $this->authStudent($return);
         else
             $api_token = $this->authTeacher($return);
-        setcookie('token', $api_token);
+        setcookie('token', $api_token, ['httponly' => true]);
         return redirect('/');;
         //json_encode(['token' => $api_token]);
     }
