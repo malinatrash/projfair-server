@@ -14,7 +14,7 @@ class ParticipationsController extends Controller
         $token = $request->get('api_token');
         $id = Candidate::where('api_token', $token)->select('id')->get()[0]['id'];
 
-        $data = Participation::where('id_candidate', $id)->get();
+        $data = Participation::where('candidate_id', $id)->get();
         return $data;
     }
 }
