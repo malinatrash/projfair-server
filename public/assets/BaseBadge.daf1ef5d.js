@@ -1,0 +1,1 @@
+import{_ as s}from"./index.d1e51cad.js";import{c as a,i as _,j as r}from"./vendor.38f2e4e5.js";const d={},t={class:"badge"};function o(e,c){return a(),_("div",t,[r(e.$slots,"default",{},void 0,!0)])}var f=s(d,[["render",o],["__scopeId","data-v-6645b90c"]]);export{f as B};
