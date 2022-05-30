@@ -15,7 +15,8 @@ class MeController extends Controller
 
     public function __invoke(Request $request)
     {
-        $token = $request->header(self::API_KEY_HEADER);
+        $token = $request->cookie('token');
+        //$token = $request->header(self::API_KEY_HEADER);
         // dd($request);
         //$token = $request->get('api_token');
         // $id = Candidate::where('api_token', $token)->select('id')->get()[0]['id'];
