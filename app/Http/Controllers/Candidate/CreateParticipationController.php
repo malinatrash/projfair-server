@@ -28,7 +28,7 @@ class CreateParticipationController extends Controller
 
             'project_id' => $id_project,
             'candidate_id' => $id,
-            'id_state' => 0,
+            'state_id' => 0,
         ])->id;
 
 
