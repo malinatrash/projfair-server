@@ -13,6 +13,6 @@ class Group extends Model
 
     public function specialityCourse()
     {
-        return $this->belongsTo(SpecialityCourse::class);
+        return $this->belongsTo(SpecialityCourse::class, 'specialityCourse_id');
     }
 }

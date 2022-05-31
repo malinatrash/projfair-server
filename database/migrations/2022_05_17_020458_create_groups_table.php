@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('groups', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('specialityCouse_id');
+            $table->unsignedBigInteger('specialityCourse_id');
             $table->string('name');
 
-            $table->foreign('specialityCouse_id')->on('speciality_courses')->references('id')->onDelete('cascade');
+            $table->foreign('specialityCourse_id')->on('speciality_courses')->references('id')->onDelete('cascade');
         });
     }
 
