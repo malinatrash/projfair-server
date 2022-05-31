@@ -10,6 +10,7 @@ class ShowController extends Controller
 {
     public function __invoke(Institute $institute)
     {
+        //dd($institute);
         return $institute;
     }
 }

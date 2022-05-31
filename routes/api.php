@@ -90,6 +90,8 @@ Route::group(['namespace' => 'Candidate', 'prefix' => 'candidates'], function ()
 
 Route::group(['namespace' => 'Institute', 'prefix' => 'institutes'], function () {
     Route::get('/', 'IndexController');
+    Route::get('/getBySpecialityName/{specialityName}', 'GetBySpecialityController');
+    Route::get('/isInSameInstitute/{specialityName1}/{specialityName2}', 'SameInstituteController');
     Route::get('/{institute}', 'ShowController');;
 });
 Route::put('/candidate', 'Candidate\\MeUpdateController')->middleware(ApiAuth::class);
