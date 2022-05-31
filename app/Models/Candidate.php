@@ -15,4 +15,9 @@ class Candidate extends Model
     {
         return $this->belongsToMany(Skill::class);
     }
+
+    public function group()
+    {
+        return $this->belongsTo(Group::class);
+    }
 }
