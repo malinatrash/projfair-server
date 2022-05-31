@@ -12,7 +12,7 @@ class IndexController extends Controller
     {
         $dataAll = Project::join('states', 'states.id', '=', 'projects.state_id')->where('states.state', '!=', 'Обработка')->get();
         $projectCount = count($dataAll);
-        $projects = Project::with('skills', 'type', 'state', 'supervisor')->simplePaginate(7)->getCollection();
+        $projects = Project::with('skills', 'specialities', 'type', 'state', 'supervisor')->simplePaginate(7)->getCollection();
         $projects->makeHidden(['state_id', 'supervisor_id', 'type_id']);
         $projects = $projects;
         return response()->json(['data' => $projects, 'projectCount' => $projectCount])->setStatusCode(200, 'Paginating 7 projects');

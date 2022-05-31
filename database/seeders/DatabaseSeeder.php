@@ -30,448 +30,599 @@ class DatabaseSeeder extends Seeder
         //Supervisor::factory(20)->create();
         //StateParticipation::factory(20)->create();
 
+        DB::table('institutes')->insert([
+            'name' => 'ТЕСТ',
+        ]);
+
         DB::table('specialities')->insert([
             'name' => 'НГДСз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГИСиРФ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'РМ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГИС',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'РФ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГЭ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГМ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГМз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'НБ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'НБз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИГ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГГ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГГз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МД',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ОПз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ОП',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГО',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГОз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГП',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГПз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'СДМ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'СДМз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'РГ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'СМ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'СМз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'СУЗ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'РТз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭПЭБ',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭПЭБз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГА',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГАз',
+            'institute_id' => '1'
         ]);
 
         DB::table('specialities')->insert([
             'name' => 'АМб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АТбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АТбп',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АТМб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АСУб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АСУбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ААбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АДб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АДбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АСб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭТбп',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ДСб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АРб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АРбв',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'РРб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'РРбп',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'БЖТбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'БТПб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'НДбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'НДб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ВВб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ВВбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭВМб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭВМбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГСХб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГСХбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГСХбп',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГМФб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГРб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЮРГб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЮРГбв',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЖРб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЖРбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЖКб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИРб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИРбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИНС',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИСТб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИСМб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИИКб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'КНбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'КНб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИБб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'НМб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЛИМб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЛИМбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МБб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МДБб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МЦб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МЦбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МИРб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МЭб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МЭбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИФб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МРб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МТб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МТбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МТбп',
+            'institute_id' => '1'
         ]);
 
         DB::table('specialities')->insert([
             'name' => 'УСТб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'УТСбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ООСб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИСТбп',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ПМб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ПМбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'БТб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ПГСб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ПГСбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'РДб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'РДбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АТПб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АТПбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭПАб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ДИб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'СРбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭСТб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ТЭбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ТВб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ТВбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭЛб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭЛбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭЛбп',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'КТбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ММб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ТПб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ТПбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ТХб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЮРУб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИНб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'УКб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'УКбп',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'УКбпз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'УПб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'УПбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИЭб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ФКб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ФКбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ХТОб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ХТбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ХТТб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ХТТбп',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭИб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭТЭКб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭПОб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭПОбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭУНб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭУНбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'НДДб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'НДДбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭСб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭСбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭЛТбп',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭАПЭб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭАПб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭПб',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭПбз',
+            'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭЭЗбп',
+            'institute_id' => '1'
         ]);
 
 

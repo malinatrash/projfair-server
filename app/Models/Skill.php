@@ -20,4 +20,9 @@ class Skill extends Model
     {
         return $this->belongsToMany(Project::class);
     }
+
+    public function skillCategory()
+    {
+        return $this->belongsTo(SkillCategory::class);
+    }
 }

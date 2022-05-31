@@ -14,4 +14,9 @@ class Speciality extends Model
     {
         return $this->belongsToMany(Project::class);
     }
+
+    public function institute()
+    {
+        return $this->belongsTo(Institute::class);
+    }
 }

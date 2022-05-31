@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Controllers\Tag;
+namespace App\Http\Controllers\Institute;
 
 use App\Http\Controllers\Controller;
-use App\Models\Tag;
+use App\Models\Institute;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
     public function __invoke()
     {
-        $tags = Tag::all();
-        return $tags;
+        $institutes = Institute::all();
+        return $institutes;
     }
 }
