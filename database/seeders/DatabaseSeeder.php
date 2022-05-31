@@ -125,355 +125,353 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('specialities')->insert([
-            'name' => 'РђРњР±',
+            'name' => 'АМб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђРўР±Р·',
+            'name' => 'АТбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђРўР±Рї',
+            'name' => 'АТбп',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђРўРњР±',
+            'name' => 'АТМб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђРЎРЈР±',
+            'name' => 'АСУб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђРЎРЈР±Р·',
+            'name' => 'АСУбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђРђР±Р·',
+            'name' => 'ААбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђР”Р±',
+            'name' => 'АДб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђР”Р±Р·',
+            'name' => 'АДбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђРЎР±',
+            'name' => 'АСб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РўР±Рї',
+            'name' => 'ЭТбп',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р”РЎР±',
+            'name' => 'ДСб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђР Р±',
+            'name' => 'АРб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђР Р±РІ',
+            'name' => 'АРбв',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р Р Р±',
+            'name' => 'РРб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р Р Р±Рї',
+            'name' => 'РРбп',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р‘Р–РўР±Р·',
+            'name' => 'БЖТбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р‘РўРџР±',
+            'name' => 'БТПб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РќР”Р±Р·',
+            'name' => 'НДбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РќР”Р±',
+            'name' => 'НДб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р’Р’Р±',
+            'name' => 'ВВб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р’Р’Р±Р·',
+            'name' => 'ВВбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­Р’РњР±',
+            'name' => 'ЭВМб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­Р’РњР±Р·',
+            'name' => 'ЭВМбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р“РЎРҐР±',
+            'name' => 'ГСХб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р“РЎРҐР±Р·',
+            'name' => 'ГСХбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р“РЎРҐР±Рї',
+            'name' => 'ГСХбп',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р“РњР¤Р±',
+            'name' => 'ГМФб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р“Р Р±',
+            'name' => 'ГРб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р®Р Р“Р±',
+            'name' => 'ЮРГб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р®Р Р“Р±РІ',
+            'name' => 'ЮРГбв',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р–Р Р±',
+            'name' => 'ЖРб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р–Р Р±Р·',
+            'name' => 'ЖРбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р–РљР±',
+            'name' => 'ЖКб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РР Р±',
+            'name' => 'ИРб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РР Р±Р·',
+            'name' => 'ИРбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РРќРЎ',
+            'name' => 'ИНС',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РРЎРўР±',
+            'name' => 'ИСТб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РРЎРњР±',
+            'name' => 'ИСМб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РРРљР±',
+            'name' => 'ИИКб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РљРќР±Р·',
+            'name' => 'КНбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РљРќР±',
+            'name' => 'КНб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РР‘Р±',
+            'name' => 'ИБб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РќРњР±',
+            'name' => 'НМб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р›РРњР±',
+            'name' => 'ЛИМб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р›РРњР±Р·',
+            'name' => 'ЛИМбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РњР‘Р±',
+            'name' => 'МБб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РњР”Р‘Р±',
+            'name' => 'МДБб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РњР¦Р±',
+            'name' => 'МЦб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РњР¦Р±Р·',
+            'name' => 'МЦбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РњРР Р±',
+            'name' => 'МИРб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РњР­Р±',
+            'name' => 'МЭб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РњР­Р±Р·',
+            'name' => 'МЭбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РР¤Р±',
+            'name' => 'ИФб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РњР Р±',
+            'name' => 'МРб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РњРўР±',
+            'name' => 'МТб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РњРўР±Р·',
+            'name' => 'МТбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РњРўР±Рї',
+            'name' => 'МТбп',
         ]);
+
         DB::table('specialities')->insert([
-            'name' => 'РР‘Р±',
+            'name' => 'УСТб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РЈРЎРўР±',
+            'name' => 'УТСбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РЈРўРЎР±Р·',
+            'name' => 'ООСб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РћРћРЎР±',
+            'name' => 'ИСТбп',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РРЎРўР±Рї',
+            'name' => 'ПМб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РџРњР±',
+            'name' => 'ПМбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РџРњР±Р·',
+            'name' => 'БТб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р‘РўР±',
+            'name' => 'ПГСб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РџР“РЎР±',
+            'name' => 'ПГСбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РџР“РЎР±Р·',
+            'name' => 'РДб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р Р”Р±',
+            'name' => 'РДбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р Р”Р±Р·',
+            'name' => 'АТПб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђРўРџР±',
+            'name' => 'АТПбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РђРўРџР±Р·',
+            'name' => 'ЭПАб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РџРђР±',
+            'name' => 'ДИб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р”РР±',
+            'name' => 'СРбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РЎР Р±Р·',
+            'name' => 'ЭСТб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РЎРўР±',
+            'name' => 'ТЭбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РўР­Р±Р·',
+            'name' => 'ТВб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РўР’Р±',
+            'name' => 'ТВбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РўР’Р±Р·',
+            'name' => 'ЭЛб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­Р›Р±',
+            'name' => 'ЭЛбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­Р›Р±Р·',
+            'name' => 'ЭЛбп',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­Р›Р±Рї',
+            'name' => 'КТбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РљРўР±Р·',
+            'name' => 'ММб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РњРњР±',
+            'name' => 'ТПб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РўРџР±',
+            'name' => 'ТПбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РўРџР±Р·',
+            'name' => 'ТХб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РўРҐР±',
+            'name' => 'ЮРУб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р®Р РЈР±',
+            'name' => 'ИНб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РРќР±',
+            'name' => 'УКб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РЈРљР±',
+            'name' => 'УКбп',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РЈРљР±Рї',
+            'name' => 'УКбпз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РЈРљР±РїР·',
+            'name' => 'УПб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РЈРџР±',
+            'name' => 'УПбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РЈРџР±Р·',
+            'name' => 'ИЭб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РР­Р±',
+            'name' => 'ФКб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р¤РљР±',
+            'name' => 'ФКбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р¤РљР±Р·',
+            'name' => 'ХТОб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РҐРўРћР±',
+            'name' => 'ХТбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РҐРўР±Р·',
+            'name' => 'ХТТб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РҐРўРўР±',
+            'name' => 'ХТТбп',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РҐРўРўР±Рї',
+            'name' => 'ЭИб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РР±',
+            'name' => 'ЭТЭКб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РўР­РљР±',
+            'name' => 'ЭПОб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РџРћР±',
+            'name' => 'ЭПОбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РџРћР±Р·',
+            'name' => 'ЭУНб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РЈРќР±',
+            'name' => 'ЭУНбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РЈРќР±Р·',
+            'name' => 'НДДб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РќР”Р”Р±',
+            'name' => 'НДДбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РќР”Р”Р±Р·',
+            'name' => 'ЭСб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РЎР±',
+            'name' => 'ЭСбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РЎР±Р·',
+            'name' => 'ЭЛТбп',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­Р›РўР±Рї',
+            'name' => 'ЭАПЭб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РђРџР­Р±',
+            'name' => 'ЭАПб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РђРџР±',
+            'name' => 'ЭПб',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РџР±',
+            'name' => 'ЭПбз',
         ]);
         DB::table('specialities')->insert([
-            'name' => 'Р­РџР±Р·',
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'Р­Р­Р—Р±Рї',
+            'name' => 'ЭЭЗбп',
         ]);
 
 
@@ -604,7 +602,7 @@ class DatabaseSeeder extends Seeder
             'state' => 'На распределении',
         ]);
         DB::table('state_participations')->insert([
-            'state' => 'Учавствует',
+            'state' => 'Участвует',
         ]);
         DB::table('state_participations')->insert([
             'state' => 'Архив',
@@ -613,21 +611,7 @@ class DatabaseSeeder extends Seeder
         //     'state' => 'В архиве',
         // ]);
 
-        DB::table('specialities')->insert([
-            'name' => 'ИСТ',
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ИСТ',
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'АСУ',
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ЭВМ',
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ИБ',
-        ]);
+
 
         DB::table('skill_categories')->insert([
             'name' => 'Математика',
@@ -1139,6 +1123,7 @@ class DatabaseSeeder extends Seeder
             'numz' => 'Мы не поняли что это, но это varchar',
             'phone' => '8-800-555-35-35',
             'course' => '3',
+            'api_token' => '1',
             'training_group' => 'ИСТ-19-2',
 
         ]);
