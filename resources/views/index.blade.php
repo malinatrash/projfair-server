@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ярмарка проектов ИРНИТУ</title>
+    <title>Ярмарка проектов Славы Колосова</title>
 
     <script type="module" crossorigin src="{{ asset('assets/index.96319ba4.js') }}"></script>
     <link rel="modulepreload" href="{{ asset('assets/vendor.38f2e4e5.js') }}">
