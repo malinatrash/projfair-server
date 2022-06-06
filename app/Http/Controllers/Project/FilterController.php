@@ -156,7 +156,7 @@ class FilterController extends Controller
         $data = $data->toArray()['data'];
         foreach ($data as &$d) {
 
-            if ($d['supervisors']) {
+            if (isset($d['supervisors'])) {
                 $d['supervisors'] = explode(",", $d['supervisors']);
             }
         }
