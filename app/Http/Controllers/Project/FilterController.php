@@ -149,11 +149,17 @@ class FilterController extends Controller
 
         $page = intval($request->input('page')) ?? 1;
         $projectCount = count($data);
+
         $data = $this->paginate($data, 7, $page);
         $data->makeHidden(['state_id', 'supervisor_id', 'type_id']);
 
         $data = $data->toArray()['data'];
+        foreach ($data as &$d) {
 
+            if ($d['supervisors']) {
+                $d['supervisors'] = explode(",", $d['supervisors']);
+            }
+        }
 
         $dataArr = [];
         foreach ($data as $key => $value) {

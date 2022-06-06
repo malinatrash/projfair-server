@@ -30,10 +30,11 @@ return new class extends Migration
             $table->longText('additional_inf')->nullable();
             $table->longText('product_result');
             $table->longText('study_result');
+            $table->longText('supervisors')->nullable();
 
 
             $table->unsignedBiginteger('state_id');
-            $table->unsignedBiginteger('supervisor_id');
+            $table->unsignedBiginteger('supervisor_id')->nullable();
             $table->unsignedBiginteger('type_id');
 
             //FK

@@ -842,7 +842,7 @@ class DatabaseSeeder extends Seeder
         ',
             'product_result' => 'Автоматизированная «дорожная карта» подготовки и проведения мероприятий в ИРНИТУ, адаптированная под разные их виды',
             'state_id' => '2',
-            'supervisor_id' => '3',
+            'supervisors' => 'A,B,C,D',
             'type_id' => '1',
         ]);
         DB::table('projects')->insert([
