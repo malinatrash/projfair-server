@@ -7,9 +7,9 @@
 
     <title>Ярмарка проектов ИРНИТУ</title>
 
-    <script type="module" crossorigin src="{{ asset('assets/index.96319ba4.js') }}"></script>
-    <link rel="modulepreload" href="{{ asset('assets/vendor.38f2e4e5.js') }}">
-    <link rel="stylesheet" href="{{ asset('assets/index.3b736275.css') }}">
+    <script type="module" crossorigin src="{{ asset('assets/index.f38283d3.js') }}"></script>
+    <link rel="modulepreload" href="{{ asset('assets/vendor.64eb15d0.js') }}">
+    <link rel="stylesheet" href="{{ asset('assets/index.81e20124.css') }}">
 
 </head>
 
