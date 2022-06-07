@@ -26,7 +26,7 @@ return new class extends Migration
             $table->date('date_start');
             $table->date('date_end');
             $table->longText('requirements');
-            $table->string('customer')->nullable();
+            $table->longText('customer')->nullable();
             $table->longText('additional_inf')->nullable();
             $table->longText('product_result');
             $table->longText('study_result');

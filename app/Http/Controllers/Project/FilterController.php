@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Project;
 
 use App\Http\Controllers\Controller;
+use App\Models\Candidate;
 use App\Models\Project;
 use App\Models\ProjectSkill;
 use App\Models\ProjectSpeciality;
+use App\Models\Speciality;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -31,7 +33,37 @@ class FilterController extends Controller
 
     public function __invoke(Request $request)
     {
-        $data = Project::with('skills', 'specialities', 'type', 'state', 'supervisor')->get();
+        $token = $request->cookie('token');
+        $candidateSpeciality = null;
+        if ($token != null) {
+            $candidates = Candidate::where('api_token', $token)->get();
+
+            if (count($candidates) != 0) {
+                $candidate = $candidates[0];
+                $candidateSpeciality = explode("-", $candidate['training_group'])[0];
+            }
+        }
+        $data = Project::with('skills', 'specialities', 'type', 'state', 'supervisor')->get();;
+        if ($candidateSpeciality != null) {
+
+
+            $specilities = Speciality::where('name', $candidateSpeciality)->get();
+            if (count($specilities) == 0) {
+                return response('Не найдено', 404);
+            }
+            $specility1 = $specilities[0];
+            $specilitiesInInstitute = $specility1->institute->specialities;
+            $specilitiesInInstituteIds = $specilitiesInInstitute->pluck('id')->toArray();
+
+
+            $idProjectsWithSpecialities = ProjectSpeciality::select('project_id as id')->whereIn('speciality_id', $specilitiesInInstituteIds)->get()->toArray();
+            $idProject = [];
+            foreach ($idProjectsWithSpecialities as $key => $value) {
+                array_push($idProject, $value['id']);
+            }
+            $data = $data->whereIn('id', $idProject);
+        }
+
 
 
         $inputSkills = $this->stringToArray($request->input('skills'));
