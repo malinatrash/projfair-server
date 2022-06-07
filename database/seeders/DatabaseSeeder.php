@@ -295,10 +295,6 @@ class DatabaseSeeder extends Seeder
             'name' => 'МТбп',
             'institute_id' => '1'
         ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИБб',
-        //     'institute_id' => '4'
-        // ]);
         DB::table('specialities')->insert([
             'name' => 'УСТб',
             'institute_id' => '5'
@@ -655,2374 +651,8 @@ class DatabaseSeeder extends Seeder
             'name' => 'ГАз',
             'institute_id' => '2'
         ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АМб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТбп',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТМб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АСУб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АСУбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ААбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АДб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АСб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭТбп',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ДСб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АРб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АРбв',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РРб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РРбп',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'БЖТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'БТПб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ВВб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ВВбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭВМб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭВМбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГСХб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГСХбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГСХбп',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГМФб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГРб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЮРГб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЮРГбв',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЖРб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЖРбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЖКб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИРб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИРбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИНС',
-        //     'institute_id' => '9'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИСТб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИСМб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИИКб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'КНбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'КНб',
-        //     'institute_id' => '5'
-        // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ИБб',
-        // //     'institute_id' => '4'
-        // // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НМб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЛИМб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЛИМбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МБб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МДБб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЦб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЦбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МИРб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЭб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЭбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИФб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МРб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МТб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МТбп',
-        //     'institute_id' => '1'
-        // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ИБб',
-        // //     'institute_id' => '4'
-        // // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УСТб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УТСбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ООСб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИСТбп',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПМб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПМбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'БТб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПГСб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПГСбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РДб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТПб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПАб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ДИб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СРбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭСТб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТЭбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТВб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТВбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛбп',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'КТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ММб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТПб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТХб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЮРУб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИНб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УКб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УКбп',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УКбпз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УПб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИЭб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ФКб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ФКбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТОб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТТб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТТбп',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭИб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭТЭКб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПОб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПОбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭУНб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭУНбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДДб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭСб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭСбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛТбп',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭАПЭб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭАПб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЭЗбп',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НГДСз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГИСиРФ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РМ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГИС',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РФ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГЭ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГМ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГМз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НБ',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НБз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИГ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГГ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГГз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МД',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ОПз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ОП',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГО',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГОз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГП',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГПз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СДМ',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СДМз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РГ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СМ',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СМз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СУЗ',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РТз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПЭБ',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПЭБз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГА',
-        //     'institute_id' => '6'
-        // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ГАз',
-        // //     'institute_id' => '2'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АМб',
-        // //     'institute_id' => '1'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АТбз',
-        // //     'institute_id' => '2'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АТбп',
-        // //     'institute_id' => '3'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АТМб',
-        // //     'institute_id' => '1'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АСУб',
-        // //     'institute_id' => '4'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АСУбз',
-        // //     'institute_id' => '2'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ААбз',
-        // //     'institute_id' => '2'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АДб',
-        // //     'institute_id' => '5'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АДбз',
-        // //     'institute_id' => '2'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АСб',
-        // //     'institute_id' => '1'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ЭТбп',
-        // //     'institute_id' => '1'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ДСб',
-        // //     'institute_id' => '5'
-        // // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АРб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АРбв',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РРб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РРбп',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'БЖТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'БТПб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ВВб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ВВбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭВМб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭВМбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГСХб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГСХбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГСХбп',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГМФб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГРб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЮРГб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЮРГбв',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЖРб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЖРбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЖКб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИРб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИРбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИНС',
-        //     'institute_id' => '9'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИСТб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИСМб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИИКб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'КНбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'КНб',
-        //     'institute_id' => '5'
-        // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ИБб',
-        // //     'institute_id' => '4'
-        // // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НМб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЛИМб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЛИМбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МБб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МДБб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЦб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЦбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МИРб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЭб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЭбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИФб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МРб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МТб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МТбп',
-        //     'institute_id' => '1'
-        // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ИБб',
-        // //     'institute_id' => '4'
-        // // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УСТб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УТСбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ООСб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИСТбп',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПМб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПМбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'БТб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПГСб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПГСбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РДб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТПб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПАб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ДИб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СРбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭСТб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТЭбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТВб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТВбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛбп',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'КТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ММб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТПб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТХб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЮРУб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИНб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УКб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УКбп',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УКбпз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УПб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИЭб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ФКб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ФКбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТОб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТТб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТТбп',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭИб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭТЭКб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПОб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПОбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭУНб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭУНбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДДб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭСб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭСбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛТбп',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭАПЭб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭАПб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЭЗбп',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НГДСз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГИСиРФ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РМ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГИС',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РФ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГЭ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГМ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГМз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НБ',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НБз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИГ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГГ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГГз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МД',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ОПз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ОП',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГО',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГОз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГП',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГПз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СДМ',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СДМз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РГ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СМ',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СМз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СУЗ',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РТз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПЭБ',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПЭБз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГА',
-        //     'institute_id' => '6'
-        // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ГАз',
-        // //     'institute_id' => '2'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АМб',
-        // //     'institute_id' => '1'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АТбз',
-        // //     'institute_id' => '2'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АТбп',
-        // //     'institute_id' => '3'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АТМб',
-        // //     'institute_id' => '1'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АСУб',
-        // //     'institute_id' => '4'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АСУбз',
-        // //     'institute_id' => '2'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ААбз',
-        // //     'institute_id' => '2'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АДб',
-        // //     'institute_id' => '5'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АДбз',
-        // //     'institute_id' => '2'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'АСб',
-        // //     'institute_id' => '1'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ЭТбп',
-        // //     'institute_id' => '1'
-        // // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ДСб',
-        // //     'institute_id' => '5'
-        // // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АРб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АРбв',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РРб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РРбп',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'БЖТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'БТПб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ВВб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ВВбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭВМб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭВМбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГСХб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГСХбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГСХбп',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГМФб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГРб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЮРГб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЮРГбв',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЖРб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЖРбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЖКб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИРб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИРбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИНС',
-        //     'institute_id' => '9'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИСТб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИСМб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИИКб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'КНбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'КНб',
-        //     'institute_id' => '5'
-        // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ИБб',
-        // //     'institute_id' => '4'
-        // // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НМб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЛИМб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЛИМбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МБб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МДБб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЦб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЦбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МИРб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЭб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЭбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИФб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МРб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МТб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МТбп',
-        //     'institute_id' => '1'
-        // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ИБб',
-        // //     'institute_id' => '4'
-        // // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УСТб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УТСбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ООСб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИСТбп',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПМб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПМбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'БТб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПГСб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПГСбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РДб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТПб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПАб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ДИб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СРбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭСТб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТЭбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТВб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТВбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛбп',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'КТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ММб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТПб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТХб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЮРУб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИНб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УКб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УКбп',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УКбпз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УПб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИЭб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ФКб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ФКбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТОб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТТб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТТбп',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭИб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭТЭКб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПОб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПОбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭУНб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭУНбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДДб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭСб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭСбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛТбп',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭАПЭб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭАПб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЭЗбп',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НГДСз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГИСиРФ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РМ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГИС',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РФ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГЭ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГМ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГМз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НБ',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НБз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИГ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГГ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГГз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МД',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ОПз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ОП',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГО',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГОз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГП',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГПз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СДМ',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СДМз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РГ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СМ',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СМз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СУЗ',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РТз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПЭБ',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПЭБз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГА',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГАз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АМб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТбп',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТМб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АСУб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АСУбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ААбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АДб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АСб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭТбп',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ДСб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АРб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АРбв',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РРб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РРбп',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'БЖТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'БТПб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ВВб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ВВбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭВМб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭВМбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГСХб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГСХбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГСХбп',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГМФб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГРб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЮРГб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЮРГбв',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЖРб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЖРбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЖКб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИРб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИРбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИНС',
-        //     'institute_id' => '9'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИСТб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИСМб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИИКб',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'КНбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'КНб',
-        //     'institute_id' => '5'
-        // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ИБб',
-        // //     'institute_id' => '4'
-        // // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НМб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЛИМб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЛИМбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МБб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МДБб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЦб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЦбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МИРб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЭб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МЭбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИФб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МРб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МТб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МТбп',
-        //     'institute_id' => '1'
-        // ]);
-        // // DB::table('specialities')->insert([
-        // //     'name' => 'ИБб',
-        // //     'institute_id' => '4'
-        // // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УСТб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УТСбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ООСб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИСТбп',
-        //     'institute_id' => '4'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПМб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПМбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'БТб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПГСб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ПГСбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РДб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТПб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'АТПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПАб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ДИб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СРбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭСТб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТЭбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТВб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТВбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛбп',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'КТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ММб',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТПб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ТХб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЮРУб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИНб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УКб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УКбп',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УКбпз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УПб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'УПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИЭб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ФКб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ФКбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТОб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТТб',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ХТТбп',
-        //     'institute_id' => '3'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭИб',
-        //     'institute_id' => '8'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭТЭКб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПОб',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПОбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭУНб',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭУНбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДДб',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НДДбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭСб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭСбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЛТбп',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭАПЭб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭАПб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПб',
-        //     'institute_id' => '10'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПбз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭЭЗбп',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НГДСз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГИСиРФ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РМ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГИС',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РФ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГЭ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГМ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГМз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НБ',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'НБз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ИГ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГГ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГГз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'МД',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ОПз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ОП',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГО',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГОз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГП',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГПз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СДМ',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СДМз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РГ',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СМ',
-        //     'institute_id' => '1'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СМз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'СУЗ',
-        //     'institute_id' => '5'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'РТз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПЭБ',
-        //     'institute_id' => '7'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ЭПЭБз',
-        //     'institute_id' => '2'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГА',
-        //     'institute_id' => '6'
-        // ]);
-        // DB::table('specialities')->insert([
-        //     'name' => 'ГАз',
-        //     'institute_id' => '2'
-        // ]);
+
+
 
 
 
@@ -3171,1117 +801,64 @@ class DatabaseSeeder extends Seeder
             'name' => 'Навыки',
         ]);
         DB::table('skills')->insert([
-            ['skill' => 'Unity 3d',  'skillCategory_id' => '1'],
-            ['skill' => 'Blender',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'C++',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД и информационных систем',  'skillCategory_id' => '1'],
-            ['skill' => 'Анализ бизнес-процессов',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'TensorFlow',  'skillCategory_id' => '1'],
-            ['skill' => 'Keras',  'skillCategory_id' => '1'],
-            ['skill' => 'Gensim',  'skillCategory_id' => '1'],
-            ['skill' => 'Pandas',  'skillCategory_id' => '1'],
-            ['skill' => 'Numpy',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Trello',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
-            ['skill' => 'SVM)',  'skillCategory_id' => '1'],
-            ['skill' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Java',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'AnyLogic',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'С++',  'skillCategory_id' => '1'],
-            ['skill' => 'С#',  'skillCategory_id' => '1'],
-            ['skill' => 'PostgreSQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Visual Studio',  'skillCategory_id' => '1'],
-            ['skill' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
-            ['skill' => 'Unity 3d',  'skillCategory_id' => '1'],
-            ['skill' => 'Blender',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'C++',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД и информационных систем',  'skillCategory_id' => '1'],
-            ['skill' => 'Анализ бизнес-процессов',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'TensorFlow',  'skillCategory_id' => '1'],
-            ['skill' => 'Keras',  'skillCategory_id' => '1'],
-            ['skill' => 'Gensim',  'skillCategory_id' => '1'],
-            ['skill' => 'Pandas',  'skillCategory_id' => '1'],
-            ['skill' => 'Numpy',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Trello',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
-            ['skill' => 'SVM)',  'skillCategory_id' => '1'],
-            ['skill' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Java',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'AnyLogic',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'С++',  'skillCategory_id' => '1'],
-            ['skill' => 'С#',  'skillCategory_id' => '1'],
-            ['skill' => 'PostgreSQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Visual Studio',  'skillCategory_id' => '1'],
-            ['skill' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
-            ['skill' => 'Unity 3d',  'skillCategory_id' => '1'],
-            ['skill' => 'Blender',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'C++',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД и информационных систем',  'skillCategory_id' => '1'],
-            ['skill' => 'Анализ бизнес-процессов',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'TensorFlow',  'skillCategory_id' => '1'],
-            ['skill' => 'Keras',  'skillCategory_id' => '1'],
-            ['skill' => 'Gensim',  'skillCategory_id' => '1'],
-            ['skill' => 'Pandas',  'skillCategory_id' => '1'],
-            ['skill' => 'Numpy',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Trello',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
-            ['skill' => 'SVM)',  'skillCategory_id' => '1'],
-            ['skill' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Java',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'AnyLogic',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'С++',  'skillCategory_id' => '1'],
-            ['skill' => 'С#',  'skillCategory_id' => '1'],
-            ['skill' => 'PostgreSQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Visual Studio',  'skillCategory_id' => '1'],
-            ['skill' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
-            ['skill' => 'Unity 3d',  'skillCategory_id' => '1'],
-            ['skill' => 'Blender',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'C++',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД и информационных систем',  'skillCategory_id' => '1'],
-            ['skill' => 'Анализ бизнес-процессов',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'TensorFlow',  'skillCategory_id' => '1'],
-            ['skill' => 'Keras',  'skillCategory_id' => '1'],
-            ['skill' => 'Gensim',  'skillCategory_id' => '1'],
-            ['skill' => 'Pandas',  'skillCategory_id' => '1'],
-            ['skill' => 'Numpy',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Trello',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
-            ['skill' => 'SVM)',  'skillCategory_id' => '1'],
-            ['skill' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Java',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'AnyLogic',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'С++',  'skillCategory_id' => '1'],
-            ['skill' => 'С#',  'skillCategory_id' => '1'],
-            ['skill' => 'PostgreSQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Visual Studio',  'skillCategory_id' => '1'],
-            ['skill' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
-            ['skill' => 'Unity 3d',  'skillCategory_id' => '1'],
-            ['skill' => 'Blender',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'C++',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД и информационных систем',  'skillCategory_id' => '1'],
-            ['skill' => 'Анализ бизнес-процессов',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'TensorFlow',  'skillCategory_id' => '1'],
-            ['skill' => 'Keras',  'skillCategory_id' => '1'],
-            ['skill' => 'Gensim',  'skillCategory_id' => '1'],
-            ['skill' => 'Pandas',  'skillCategory_id' => '1'],
-            ['skill' => 'Numpy',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Trello',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
-            ['skill' => 'SVM)',  'skillCategory_id' => '1'],
-            ['skill' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Java',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'AnyLogic',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'С++',  'skillCategory_id' => '1'],
-            ['skill' => 'С#',  'skillCategory_id' => '1'],
-            ['skill' => 'PostgreSQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Visual Studio',  'skillCategory_id' => '1'],
-            ['skill' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
-            ['skill' => 'Unity 3d',  'skillCategory_id' => '1'],
-            ['skill' => 'Blender',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'C++',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД и информационных систем',  'skillCategory_id' => '1'],
-            ['skill' => 'Анализ бизнес-процессов',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'TensorFlow',  'skillCategory_id' => '1'],
-            ['skill' => 'Keras',  'skillCategory_id' => '1'],
-            ['skill' => 'Gensim',  'skillCategory_id' => '1'],
-            ['skill' => 'Pandas',  'skillCategory_id' => '1'],
-            ['skill' => 'Numpy',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Trello',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
-            ['skill' => 'SVM)',  'skillCategory_id' => '1'],
-            ['skill' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Java',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'AnyLogic',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'С++',  'skillCategory_id' => '1'],
-            ['skill' => 'С#',  'skillCategory_id' => '1'],
-            ['skill' => 'PostgreSQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Visual Studio',  'skillCategory_id' => '1'],
-            ['skill' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
-            ['skill' => 'Unity 3d',  'skillCategory_id' => '1'],
-            ['skill' => 'Blender',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'C++',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД и информационных систем',  'skillCategory_id' => '1'],
-            ['skill' => 'Анализ бизнес-процессов',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'TensorFlow',  'skillCategory_id' => '1'],
-            ['skill' => 'Keras',  'skillCategory_id' => '1'],
-            ['skill' => 'Gensim',  'skillCategory_id' => '1'],
-            ['skill' => 'Pandas',  'skillCategory_id' => '1'],
-            ['skill' => 'Numpy',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Trello',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
-            ['skill' => 'SVM)',  'skillCategory_id' => '1'],
-            ['skill' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Java',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'AnyLogic',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'С++',  'skillCategory_id' => '1'],
-            ['skill' => 'С#',  'skillCategory_id' => '1'],
-            ['skill' => 'PostgreSQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Visual Studio',  'skillCategory_id' => '1'],
-            ['skill' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
-            ['skill' => 'Unity 3d',  'skillCategory_id' => '1'],
-            ['skill' => 'Blender',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'C++',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД и информационных систем',  'skillCategory_id' => '1'],
-            ['skill' => 'Анализ бизнес-процессов',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'TensorFlow',  'skillCategory_id' => '1'],
-            ['skill' => 'Keras',  'skillCategory_id' => '1'],
-            ['skill' => 'Gensim',  'skillCategory_id' => '1'],
-            ['skill' => 'Pandas',  'skillCategory_id' => '1'],
-            ['skill' => 'Numpy',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Trello',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
-            ['skill' => 'SVM)',  'skillCategory_id' => '1'],
-            ['skill' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Java',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'AnyLogic',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'С++',  'skillCategory_id' => '1'],
-            ['skill' => 'С#',  'skillCategory_id' => '1'],
-            ['skill' => 'PostgreSQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Visual Studio',  'skillCategory_id' => '1'],
-            ['skill' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
-            ['skill' => 'Unity 3d',  'skillCategory_id' => '1'],
-            ['skill' => 'Blender',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'C++',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД и информационных систем',  'skillCategory_id' => '1'],
-            ['skill' => 'Анализ бизнес-процессов',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'TensorFlow',  'skillCategory_id' => '1'],
-            ['skill' => 'Keras',  'skillCategory_id' => '1'],
-            ['skill' => 'Gensim',  'skillCategory_id' => '1'],
-            ['skill' => 'Pandas',  'skillCategory_id' => '1'],
-            ['skill' => 'Numpy',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Trello',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
-            ['skill' => 'SVM)',  'skillCategory_id' => '1'],
-            ['skill' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Java',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'AnyLogic',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'С++',  'skillCategory_id' => '1'],
-            ['skill' => 'С#',  'skillCategory_id' => '1'],
-            ['skill' => 'PostgreSQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Visual Studio',  'skillCategory_id' => '1'],
-            ['skill' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
-            ['skill' => 'Unity 3d',  'skillCategory_id' => '1'],
-            ['skill' => 'Blender',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'C++',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД и информационных систем',  'skillCategory_id' => '1'],
-            ['skill' => 'Анализ бизнес-процессов',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'TensorFlow',  'skillCategory_id' => '1'],
-            ['skill' => 'Keras',  'skillCategory_id' => '1'],
-            ['skill' => 'Gensim',  'skillCategory_id' => '1'],
-            ['skill' => 'Pandas',  'skillCategory_id' => '1'],
-            ['skill' => 'Numpy',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Trello',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
-            ['skill' => 'SVM)',  'skillCategory_id' => '1'],
-            ['skill' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Java',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'AnyLogic',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'С++',  'skillCategory_id' => '1'],
-            ['skill' => 'С#',  'skillCategory_id' => '1'],
-            ['skill' => 'PostgreSQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Visual Studio',  'skillCategory_id' => '1'],
-            ['skill' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
-            ['skill' => 'Unity 3d',  'skillCategory_id' => '1'],
-            ['skill' => 'Blender',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'C++',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД и информационных систем',  'skillCategory_id' => '1'],
-            ['skill' => 'Анализ бизнес-процессов',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'Laravel',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Nginx',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Vue',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'TensorFlow',  'skillCategory_id' => '1'],
-            ['skill' => 'Keras',  'skillCategory_id' => '1'],
-            ['skill' => 'Gensim',  'skillCategory_id' => '1'],
-            ['skill' => 'Pandas',  'skillCategory_id' => '1'],
-            ['skill' => 'Numpy',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'Trello',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
-            ['skill' => 'SVM)',  'skillCategory_id' => '1'],
-            ['skill' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Java',  'skillCategory_id' => '1'],
-            ['skill' => 'Python',  'skillCategory_id' => '1'],
-            ['skill' => 'AnyLogic',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'С++',  'skillCategory_id' => '1'],
-            ['skill' => 'С#',  'skillCategory_id' => '1'],
-            ['skill' => 'PostgreSQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Linux',  'skillCategory_id' => '1'],
-            ['skill' => 'Git',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Visual Studio',  'skillCategory_id' => '1'],
-            ['skill' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
-            ['skill' => 'MySQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JavaScript',  'skillCategory_id' => '1'],
-            ['skill' => 'HTML',  'skillCategory_id' => '1'],
-            ['skill' => 'CSS',  'skillCategory_id' => '1'],
-            ['skill' => 'Android',  'skillCategory_id' => '1'],
-            ['skill' => 'Kotlin',  'skillCategory_id' => '1'],
-            ['skill' => 'SQL',  'skillCategory_id' => '1'],
-            ['skill' => 'JSON',  'skillCategory_id' => '1'],
-            ['skill' => 'Figma',  'skillCategory_id' => '1'],
-            ['skill' => 'Проектирование БД',  'skillCategory_id' => '1'],
-            ['skill' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
-            ['skill' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
-            ['skill' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
+            ['name' => 'PHP',  'skillCategory_id' => '1'],
+            ['name' => 'Linux',  'skillCategory_id' => '1'],
+            ['name' => 'Git',  'skillCategory_id' => '1'],
+            ['name' => 'JavaScript',  'skillCategory_id' => '1'],
+            ['name' => 'HTML',  'skillCategory_id' => '1'],
+            ['name' => 'CSS',  'skillCategory_id' => '1'],
+            ['name' => 'SQL',  'skillCategory_id' => '1'],
+            ['name' => 'JSON',  'skillCategory_id' => '1'],
+            ['name' => 'Проектирование БД и информационных систем',  'skillCategory_id' => '1'],
+            ['name' => 'Анализ бизнес-процессов',  'skillCategory_id' => '1'],
+            ['name' => 'Разработка руководства пользователя',  'skillCategory_id' => '1'],
+            ['name' => 'Laravel',  'skillCategory_id' => '1'],
+            ['name' => 'MySQL',  'skillCategory_id' => '1'],
+            ['name' => 'Nginx',  'skillCategory_id' => '1'],
+            ['name' => 'Vue',  'skillCategory_id' => '1'],
+            ['name' => 'Android',  'skillCategory_id' => '1'],
+            ['name' => 'Kotlin',  'skillCategory_id' => '1'],
+            ['name' => 'Figma',  'skillCategory_id' => '1'],
+            ['name' => 'Проектирование БД',  'skillCategory_id' => '1'],
+            ['name' => 'Удалённое управление ОС',  'skillCategory_id' => '1'],
+            ['name' => 'Python',  'skillCategory_id' => '1'],
+            ['name' => 'TensorFlow',  'skillCategory_id' => '1'],
+            ['name' => 'Keras',  'skillCategory_id' => '1'],
+            ['name' => 'Gensim',  'skillCategory_id' => '1'],
+            ['name' => 'Pandas',  'skillCategory_id' => '1'],
+            ['name' => 'Numpy',  'skillCategory_id' => '1'],
+            ['name' => 'Trello',  'skillCategory_id' => '1'],
+            ['name' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
+            ['name' => 'SVM)',  'skillCategory_id' => '1'],
+            ['name' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
+            ['name' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
+            ['name' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
+            ['name' => 'Java',  'skillCategory_id' => '1'],
+            ['name' => 'AnyLogic',  'skillCategory_id' => '1'],
+            ['name' => 'С++',  'skillCategory_id' => '1'],
+            ['name' => 'С#',  'skillCategory_id' => '1'],
+            ['name' => 'PostgreSQL',  'skillCategory_id' => '1'],
+            ['name' => 'Visual Studio',  'skillCategory_id' => '1'],
+            ['name' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
+            ['name' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
+            ['name' => 'Аналогичные ранее изученным',  'skillCategory_id' => '1'],
+            ['name' => 'Задачи и их решения ясно и точно в терминах',  'skillCategory_id' => '1'],
+            ['name' => 'Понятных для профессиональной аудитории',  'skillCategory_id' => '1'],
+            ['name' => 'Как в письменной',  'skillCategory_id' => '1'],
+            ['name' => 'Ethernet',  'skillCategory_id' => '1'],
+            ['name' => 'Удалённое',  'skillCategory_id' => '1'],
+            ['name' => 'Работа с БД',  'skillCategory_id' => '1'],
+            ['name' => '1С',  'skillCategory_id' => '1'],
+            ['name' => 'Управление ОС',  'skillCategory_id' => '1'],
+            ['name' => 'Arduino. ',  'skillCategory_id' => '1'],
+            ['name' => 'LoRa',  'skillCategory_id' => '1'],
+            ['name' => 'Wi-Fi',  'skillCategory_id' => '1'],
+            ['name' => 'Bluetooth',  'skillCategory_id' => '1'],
+            ['name' => 'Разработка руководства пользователя ',  'skillCategory_id' => '1'],
+            ['name' => 'Языки программирования JavaScript',  'skillCategory_id' => '1'],
+            ['name' => 'Java + MySQL',  'skillCategory_id' => '1'],
+            ['name' => 'ФЗ-63',  'skillCategory_id' => '1'],
+            ['name' => '«Битрикс» ',  'skillCategory_id' => '1'],
         ]);
         // DB::table('skill_categories')->insert([
         //             'name' => 'Навыки',
@@ -4305,29 +882,8 @@ class DatabaseSeeder extends Seeder
 
 
 
-        DB::table('projects')->insert([
-            'title' => 'Разработка цифрового двойника авиастроительного предприятия с применение VR (unity)',
-            'places' => '15',
-            'goal' => 'Создание цифрового двойника производственного помещения в образовательном сегменте позволит обеспечить доступные инструменты для пользователей и дополнить обучающие программы интерактивным визуальным контентом. Погружение студентов в производственную атмосферу, без физического присутствия на производстве.',
-            'description' => 'В настоящее время имеется следующий задел по проекту: разработано 1 станция виртуальной сборки, виртуализированы 3 лабораторных работ. 
-В рамках данного проекта планируется масштабировать виртуальные цеха авиастроительного предприятия, доработать имеющийся сценарий агрегатно-сборочных работ.
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Иркутский авиазавод, применение современных ИТ инструментов для цифровизации производств',
-            'study_result' => 'Знания: принципы работы с gamedev
-Умения: читать и составлять техническую документа. 
-Навыки: работа с графическими редакторами, создание и реализация сценария
-',
-            'product_result' => 'Создан симулятор (тренажер), содержащий следующие функции:
-1. Знакомство с конструкцией авиационных узлов и агрегатов (членение агрегатов и узлов)
-2. Монтаж и ППР сборочного приспособления (доработка существующего функционала)',
-            'state_id' => '1',
-            'supervisors' => 'Говорков Алексей Сергеевич',
-            'type_id' => '1',
-        ]);
+
+
         DB::table('projects')->insert([
             'title' => 'Разработка цифрового следа обучающего ИРНИТУ (на примере студента института ИТиАД)',
             'places' => '15',
@@ -4560,6 +1116,259 @@ https://os.kaspersky.ru/development/education
 ',
             'state_id' => '1',
             'supervisors' => 'Маринов Александр Андреевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Программное обеспечение для автоматической оценки стабильности особо ответственных технологических процессов (ООТП) изготовления авиационных деталей',
+            'places' => '15',
+            'goal' => 'Создание программного модуля, предназначенного для автоматической оценки стабильности ООТП на основе анализа объективных параметров, полученных при выполнении технологических операций',
+            'description' => 'При контроле качественного выполнения ООТП используются нормативные параметры, заданные в определенном диапазоне. Повышения стабильности достигается сужением такого диапазона и требует непрерывного улучшения по результатам контроля. В процессе работы необходимо разработать математический аппарат и программное обеспечение для контроля стабильности. ',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'ИАЗ',
+            'study_result' => 'Знать: основы разработки и контроля технологической документации при изготовлении деталей на машиностроительных предприятиях
+Уметь: использовать инструменты разработки ПО.
+Владеть: навыками программирования
+',
+            'product_result' => 'Программный модуль',
+            'state_id' => '1',
+            'supervisors' => 'Мироненко Владимир Витальевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Поиск применения камеры с аппаратным распознавание государственных регистрационных номеров',
+            'places' => '15',
+            'goal' => 'Создание комплексного решения для поддержки и реализации проекта дополнительного обучения «Академия ИТ»',
+            'description' => 'В распоряжении ООО «ИНК» имеется несколько десятков Ethernet камер с аппаратный распознавание номер машин, данные камеры сняты с автоматических шлагбаумов. В результате реализации проекта необходимо определить места установки камер на объектах ООО «ИНК» и как использовать данные получаемые с камер для процессов цифровизации перемещения автотранспортных средств',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'ООО «ИНК»',
+            'study_result' => 'Знания: принципы работы с Ethernet камерами, принципы запроса информации с камер, маршрутизация данных с использование различных протоколов.
+Умения: читать и составлять техническую документацию с использованием стандартов UML, работать с get и post запросами, работа с API и базами данных
+Навыки: работа  администрирование Linux, работа с IDE, разработка back и front
+',
+            'product_result' => 'Определение мест установки камер, определение параметров необходимой инструкторы (питание, канал связи), реализации программного обеспечения для взаимодействия с камерами',
+            'state_id' => '1',
+            'supervisors' => 'Кононенко Роман Владимирович ',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка системы учета посещения занятий студентами',
+            'places' => '15',
+            'goal' => 'Разработка и интеграция автоматической системы учета посещаемости студентами занятий',
+            'description' => 'Разработка системы учета посещения занятий студентами, способной в автоматическом режиме согласно существующей БД используя карту-пропуск студента идентифицировать ФИО студента время входа и время выхода студента из аудитории, сопоставлять расписание с ФИО студента',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Дирекция института ИТиАД',
+            'study_result' => 'Знания: принципы работы с модулями RFID, Wi-FI, Bluetooth, принципы запроса информации с сервера, маршрутизация данных с использование различных протоколов.
+Умения: читать и составлять техническую документацию, работать с get и post запросами, работа с API и базами данных, работа с Arduino
+Навыки: работа администрирование Linux, работа с IDE, разработка принципиальной схемы устройства, пайка, коркусирование устройства
+',
+            'product_result' => 'Автономное устройство считывание карт-пропусков в возможность подключения к локальной сети ИРНИТУ и работой с сервером.',
+            'state_id' => '1',
+            'supervisors' => 'Кононенко Роман Владимирович ',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Система трекинга руководства компаний на удаленных промышленных объектах',
+            'places' => '15',
+            'goal' => 'Создание программно-аппаратного комплекса для отслеживания положения людей (10-15 человек) на удаленных промышленных объектах.',
+            'description' => 'При посещении удаленных промышленных объектах (на объектах отсутствует покрытие сети сотовой связи) руководящим составом компании, необходимо отслеживать положение каждого участника группы на объекте. Так как между объектами группа перемещается на вертолете, то время сбора всех участников группы возле вертолета является критически важным, так как вертолет следует согласно полетному расписанию. Знание местонахождения каждого участника группы на промышленном объекте позволяет сопровождающему группы оперативно находить их на объекте',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'ООО «ИНК»',
+            'study_result' => 'Знания: GPS, Bluetooth, Wi-Fi, LoRa, построение беспроводной сети передачи данных
+Умения: читать и составлять техническую документацию, проектирование и разработка печатных плат, разработка Android приложений.
+Навыки: работа администрирование Android, работа с IDE, программирование микроконтроллеров
+',
+            'product_result' => 'Носимое устройства трекинга и мобильный пост отображение положения трекеров.',
+            'state_id' => '1',
+            'supervisors' => 'Кононенко Роман Владимирович ',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Система, уменьшая очереди на заправочных пунктах ООО "ИНК"',
+            'places' => '15',
+            'goal' => 'Создание цифрового продукта, который позволит уменьшит очереди на заправочных пунктах ООО «ИНК»',
+            'description' => 'В результате не рационального распределения автотранспортных средств по времени заправки, на заправочных пунктах возникают очереди на заправку или отсутствие машин для заправки. Необходим спроектировать и создать цифровой продукт который позволит избежать пиков заправки и выровнять в течении дня нагрузку на заправочный пункт.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'ООО «ИНК»',
+            'study_result' => 'Знания: GPS, Bluetooth, Wi-Fi, LoRa, построение беспроводной сети передачи данных
+Умения: читать и составлять техническую документацию, проектирование и разработка печатных плат, разработка Android приложений.
+Навыки: работа администрирование Android, работа с IDE, программирование микроконтроллеров
+',
+            'product_result' => 'Прототип программного продукта для выравнивания загрузки заправочного пункта.',
+            'state_id' => '1',
+            'supervisors' => 'Кононенко Роман Владимирович ',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Экосистема для клиентов IT-компании',
+            'places' => '15',
+            'goal' => 'Разработка цифрового сервиса для клиентов IT-компании',
+            'description' => 'Требуется создать единый цифровой сервис – экосистему - для взаимодействия клиентов с IT-компанией, с помощью которого будут реализованы внешний документооборот, учет наработки, доп. продажи, интеграция сторонних сервисов и систем',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Институт информационных технологий и анализа данных',
+            'study_result' => 'Знания: Языки программирования JavaScript, HTML, CSS, PHP 
+Умения: Разработка fronend и backend 
+Навыки: Тестирование цифрового продукта , его отладка и запуск
+',
+            'product_result' => 'Личный кабинет клиента на цифровом сервисе, SPA приложение',
+            'state_id' => '1',
+            'supervisors' => 'Говорков Алексей Сергеевич ',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => ' Автоматизация и цифровизация процесса учета выпущенной продукции мукомольного производства',
+            'places' => '15',
+            'goal' => 'Подсчет количества выбоя муки и цифровизация процесса складского учета',
+            'description' => 'Требуется автоматизировать процессы взвешивания и распределения сырья (зерно) на мукомольном производстве в г.Улан-Удэ (Бурятия), а также систему их контроля. Интегрировать систему складского учета с ПО установленного оборудования. С помощью цифровой технологии – интернет вещей – оптимизировать указанные процессы.',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Институт информационных технологий и анализа данных',
+            'study_result' => 'Знания: языки программирования JavaScript, HTML, CSS, PHP 
+Умения: Разработка fronend и backend 
+Навыки: Тестирование программного продукта , его отладка и запуск
+',
+            'product_result' => 'ПО для подсчета количества выбоя муки',
+            'state_id' => '1',
+            'supervisors' => 'Говорков Алексей Сергеевич ',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Система учета активности абитуриентов ИРНИТУ',
+            'places' => '15',
+            'goal' => 'Разработка программы сопровождения профориентационных активностей  школьников до потенциального абитуриента ИРНИТУ',
+            'description' => 'Разработка БД школьников для приемной кампании ИРНИТУ получает и видит их выбор направлений подготовки по заинтересованности и активности участия. 
+
+Данные на вход:
+1. При регистрации каждый школьник записывает:
+- ФИО;
+- контактные данные;
+- образовательную организацию;
+- класс;
+- школьник выбирает мероприятия/курсы/программы.
+
+Необходимо получить на выходе:
+- Личный кабинет у каждого школьника;
+- Списки школьников, зарегистрированных на мероприятия/курсы/программы с возможностью выгрузки;
+- Список школьников, окончившие курсы/программы, посетившие мероприятия по направлениям подготовки с индивидуальными бонусами с возможностью выгрузки;
+- Рейтинг школьников с их бонусами по направлениям подготовки;
+- Создание/добавление новых мероприятий в течение года;
+- Школьник и администратор в любой момент могут видеть список пройденных мероприятий/курсов/программ с полученными бонусами;
+- Афиша предстоящих мероприятий для школьников в хронологии с бонусами за их посещение;
+- Афиша предстоящих мероприятий для школьников по форматам работы (например, курсы, день открытых дверей, профессиональные пробы, летние школы)  и направлениям подготовки (траекториям) с бонусами за их посещение;
+- постоянно видимые ссылки на сайт ИРНИТУ, группу VK, телеграмм чат-бот, техподдержку.
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'УМОУ и РОП, ЦПК',
+            'study_result' => '',
+            'product_result' => 'Программа - web-сайт и БД, в которой школьники регистрируются на разные профориентационные активности и программы довузовской подготовки ИРНИТУ и "зарабатывают" активностью бонусы. Бонусы переводятся в баллы индивидуальных достижений для поступления в наш университет по программе "Успешный абитуриент". ',
+            'state_id' => '1',
+            'supervisors' => 'Шведина Светлана Александровна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Электронный учебный журнал образовательных курсов программы «Сетевой лицей ИРНИТУ',
+            'places' => '15',
+            'goal' => 'Разработка программы сопровождения учебного процесса профильной сетевой образовательной программы ИРНИТУ и партнерских школ «Сетевой лицей ИРНИТУ»',
+            'description' => 'Web-сайт и БД, в которой администратор вводит данные о школьниках и преподавателях с их предметами. У преподавателей есть доступ к журналам с учебными группами, в которых они имеют возможность проставлять посещение учеников и оценки за работу на занятии.
+Администратор должен иметь возможность получения журнала посещаемости по каждой школе по-отдельности.
+Данные на вход
+Администратор изначально заполняет данные по школьникам и преподавателям, в соответствии с таблицами:
+id ФИО Школа Класс Предмет по выбору №1 Предмет по выбору №2
+           
+ 
+id ФИО Наименование предмета Уровень Время Количество (человек в классе)
+           
+Выходные документы
+Решение должно иметь возможность формирования отчёта в приведённом виде:
+id ФИО учеников Наименование предмета Посещение/ Оценка Дата
+         
+Также формирование ведомости, по успеваемости школьников, просмотр домашних заданий по нажатию на кнопку «Просмотреть ДЗ» с возможностью добавлять темы занятий и прикрепление файлов (ссылок) на материалы занятий.
+Работать в программе могут преподаватели и администратор.
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'УМОУ и РОП, Центр довузовской подготовки и профориентационной работы',
+            'study_result' => '',
+            'product_result' => 'Произвести разработку веб-сайта и БД для учета посещаемости школьников факультативных занятий по программе «Сетевой лицей ИРНИТУ», с возможностью получения отчётов посещаемости и успеваемости школьников по каждой школе и классу.',
+            'state_id' => '1',
+            'supervisors' => 'Шведина Светлана Александровна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Система техподдержки сервисов ИРНИТУ',
+            'places' => '15',
+            'goal' => 'Разработка модулей обработки заявок на работы специалистов по вопросам электропитания, тепло и водоснабжения на основе информационной системы «Кампус» по адресу https://int.istu.edu/',
+            'description' => 'Разработка инструмента для формирования, обработки и контроля исполнения  заявок на работы специалистов по вопросам электропитания, тепло и водоснабжения. 
+
+Заказчик – все сотрудники ИРНИТУ, имеющие право на формирование  заявок для решения вопросов административно-хозяйственного характера:
+Исполнители:
+Служба главного инженера ИРНИТУ
+Служба главного энергетика ИРНИТУ
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Служба главного инженера, Служба главного энергетика ИРНИТУ',
+            'study_result' => 'Знания: язык программирования PHP
+Умения: Формирование модуля на платформе «Битрикс»
+Навыки: 
+',
+            'product_result' => 'Программа – подразделы модуля информационной системы «Кампус» по формированию заявок.',
+            'state_id' => '1',
+            'supervisors' => 'Жуков А.В.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка веб форм для Центра Карьеры ',
+            'places' => '15',
+            'goal' => 'Повышение управляемости и контроля изменений ИТ-инфраструктуры ИРНИТУ',
+            'description' => 'Использование единой системы баз данных автоматизированной информационной системы ИРНИТУ позволит органично встроить информационную систему «Центра карьеры ИРНИТУ» в существующий комплекс автоматизированных систем подразделений и автоматизирует изменения взаимосвязанных используемых полей и таблиц. 
+Что в свою очередь позволит автоматически контролировать:  
+• Учет и изменение статуса заключенного договора с внешней организацией, обеспечивающей прохождение производственной и преддипломной практики; 
+• прикрепления к нему перечня студентов 
+• прикрепления к нему преподавателя – руководителя практики; 
+• учет учебной нагрузки на преподавателя по руководству производственной/преддипломной практики;
+дополнение рейтинга студента параметрами прохождения производственной и преддипломной практики.
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Управление информатизации ИРНИТУ',
+            'study_result' => 'Повышение уровня практических знаний по направлению «Вычислительные машины, комплексы, системы и сети».',
+            'product_result' => 'Автоматический  контроль:  
+• Учета и изменения статуса заключенного договора с внешней организацией, обеспечивающей прохождение производственной и преддипломной практики; 
+• прикрепления к нему перечня студентов 
+• прикрепления к нему преподавателя – руководителя практики; 
+• учет учебной нагрузки на преподавателя по руководству производственной/преддипломной практики;
+',
+            'state_id' => '1',
+            'supervisors' => 'Аношко Алексей Федорович',
             'type_id' => '1',
         ]);
         DB::table('projects')->insert([
@@ -7760,6 +4569,8 @@ Case-in , Международный нефтегазовый, кейс ESG
 
 
 
+
+
         DB::table('project_skill')->insert([
             'skill_id' => '1',
             'project_id' => '1',
@@ -7781,27 +4592,31 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '1',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '3',
-            'project_id' => '2',
+            'skill_id' => '6',
+            'project_id' => '1',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '7',
-            'project_id' => '2',
+            'project_id' => '1',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '8',
-            'project_id' => '2',
+            'project_id' => '1',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '9',
-            'project_id' => '2',
+            'project_id' => '1',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '10',
-            'project_id' => '2',
+            'project_id' => '1',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '11',
+            'project_id' => '1',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '1',
             'project_id' => '2',
         ]);
         DB::table('project_skill')->insert([
@@ -7817,15 +4632,115 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '2',
         ]);
         DB::table('project_skill')->insert([
+            'skill_id' => '2',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '3',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
             'skill_id' => '15',
             'project_id' => '2',
         ]);
         DB::table('project_skill')->insert([
+            'skill_id' => '4',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
             'skill_id' => '16',
             'project_id' => '2',
         ]);
         DB::table('project_skill')->insert([
+            'skill_id' => '17',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '7',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '8',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '18',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '19',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '20',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '11',
+            'project_id' => '2',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '1',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '12',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '13',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '14',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '2',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
             'skill_id' => '3',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '15',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '4',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '16',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '17',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '7',
+            'project_id' => '3',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '8',
             'project_id' => '3',
         ]);
         DB::table('project_skill')->insert([
@@ -7841,67 +4756,47 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '3',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '7',
-            'project_id' => '3',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '8',
-            'project_id' => '3',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '23',
-            'project_id' => '3',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '9',
-            'project_id' => '3',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '10',
-            'project_id' => '3',
-        ]);
-        DB::table('project_skill')->insert([
             'skill_id' => '11',
             'project_id' => '3',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '27',
-            'project_id' => '3',
+            'skill_id' => '21',
+            'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '28',
-            'project_id' => '3',
+            'skill_id' => '22',
+            'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '12',
-            'project_id' => '3',
+            'skill_id' => '23',
+            'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '13',
-            'project_id' => '3',
+            'skill_id' => '24',
+            'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '31',
-            'project_id' => '3',
+            'skill_id' => '25',
+            'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '5',
-            'project_id' => '3',
+            'skill_id' => '26',
+            'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '33',
-            'project_id' => '3',
+            'skill_id' => '2',
+            'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '16',
-            'project_id' => '3',
+            'skill_id' => '8',
+            'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '3',
             'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '18',
+            'skill_id' => '27',
             'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
@@ -7909,27 +4804,19 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
+            'skill_id' => '28',
+            'project_id' => '4',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '29',
+            'project_id' => '4',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '30',
+            'project_id' => '4',
+        ]);
+        DB::table('project_skill')->insert([
             'skill_id' => '20',
-            'project_id' => '4',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '7',
-            'project_id' => '4',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '8',
-            'project_id' => '4',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '23',
-            'project_id' => '4',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '9',
-            'project_id' => '4',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '10',
             'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
@@ -7937,233 +4824,490 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '27',
-            'project_id' => '4',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '28',
-            'project_id' => '4',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '12',
-            'project_id' => '4',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '13',
-            'project_id' => '4',
-        ]);
-        DB::table('project_skill')->insert([
             'skill_id' => '31',
-            'project_id' => '4',
+            'project_id' => '6',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '5',
-            'project_id' => '4',
+            'skill_id' => '11',
+            'project_id' => '6',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '32',
+            'project_id' => '7',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '19',
+            'project_id' => '7',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '20',
+            'project_id' => '7',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '11',
+            'project_id' => '7',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '33',
-            'project_id' => '4',
+            'project_id' => '8',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '21',
+            'project_id' => '8',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '34',
+            'project_id' => '8',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '19',
+            'project_id' => '8',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '35',
+            'project_id' => '9',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '36',
+            'project_id' => '9',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '37',
+            'project_id' => '9',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '2',
+            'project_id' => '9',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '3',
+            'project_id' => '9',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '7',
+            'project_id' => '9',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '19',
+            'project_id' => '9',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '11',
+            'project_id' => '9',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '38',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '39',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '13',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '4',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '10',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '16',
-            'project_id' => '4',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '17',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '7',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '8',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '18',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '19',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '20',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '11',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '40',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '41',
+            'project_id' => '11',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '42',
+            'project_id' => '11',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '43',
+            'project_id' => '11',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '44',
+            'project_id' => '11',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '2',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '3',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '16',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '35',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '36',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '21',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '45',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '8',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '19',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '46',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '47',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '48',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '49',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '11',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '2',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '3',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '16',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '35',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '36',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '21',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '45',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '8',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '19',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '46',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '47',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '48',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '49',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '11',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '50',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '51',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '52',
+            'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '53',
-            'project_id' => '5',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '2',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '3',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '16',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '35',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '36',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '21',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '45',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '8',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '19',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '46',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '47',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '48',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '49',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '11',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '51',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '52',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '53',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '2',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '3',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '16',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '35',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '36',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '21',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '45',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '8',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '19',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '46',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '47',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '48',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '49',
+            'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '54',
-            'project_id' => '5',
+            'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '55',
-            'project_id' => '5',
+            'project_id' => '16',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '16',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '16',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '1',
+            'project_id' => '16',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '55',
+            'project_id' => '17',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '17',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '17',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '1',
+            'project_id' => '17',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '56',
-            'project_id' => '5',
+            'project_id' => '20',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '1',
+            'project_id' => '21',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '57',
-            'project_id' => '5',
+            'project_id' => '21',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '58',
-            'project_id' => '5',
+            'project_id' => '21',
         ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '7',
-            'project_id' => '5',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '13',
-            'project_id' => '5',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '8',
-            'project_id' => '5',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '62',
-            'project_id' => '5',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '5',
-            'project_id' => '5',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '64',
-            'project_id' => '5',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '65',
-            'project_id' => '5',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '66',
-            'project_id' => '5',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '33',
-            'project_id' => '5',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '16',
-            'project_id' => '5',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '69',
-            'project_id' => '7',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '16',
-            'project_id' => '7',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '71',
-            'project_id' => '8',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '5',
-            'project_id' => '8',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '33',
-            'project_id' => '8',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '16',
-            'project_id' => '8',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '75',
-            'project_id' => '9',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '53',
-            'project_id' => '9',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '77',
-            'project_id' => '9',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '5',
-            'project_id' => '9',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '79',
-            'project_id' => '10',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '80',
-            'project_id' => '10',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '81',
-            'project_id' => '10',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '7',
-            'project_id' => '10',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '8',
-            'project_id' => '10',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '12',
-            'project_id' => '10',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '5',
-            'project_id' => '10',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '16',
-            'project_id' => '10',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '87',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '88',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '19',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '9',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '10',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '11',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '27',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '28',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '12',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '13',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '31',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '5',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '33',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '16',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '101',
-            'project_id' => '11',
-        ]);
+
+
+
+
+
 
         DB::table('project_speciality')->insert([
             'speciality_id' => '38',
@@ -8178,1505 +5322,1622 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '1',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
             'speciality_id' => '23',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '5',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '5',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
-            'project_id' => '5',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
-            'project_id' => '5',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '7',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '7',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
-            'project_id' => '7',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
-            'project_id' => '7',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '8',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '8',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
-            'project_id' => '8',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
-            'project_id' => '8',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '9',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
-            'project_id' => '9',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '10',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '10',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
-            'project_id' => '10',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
-            'project_id' => '10',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '64',
             'project_id' => '1',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '64',
+            'speciality_id' => '38',
             'project_id' => '2',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '93',
+            'speciality_id' => '39',
             'project_id' => '2',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '64',
+            'speciality_id' => '5',
+            'project_id' => '2',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '2',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
             'project_id' => '3',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '93',
+            'speciality_id' => '38',
             'project_id' => '3',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '3',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '3',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '4',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '4',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '4',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '4',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '5',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '5',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '5',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '5',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '6',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '6',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '6',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '6',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '7',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '7',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '7',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '7',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '8',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '8',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '9',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '9',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '9',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '9',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '10',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '10',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '10',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '40',
+            'project_id' => '11',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '12',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '12',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '12',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '12',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '13',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '13',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '13',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '13',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '14',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '14',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '14',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '14',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '15',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '15',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '15',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '15',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '16',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '16',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '43',
+            'project_id' => '16',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '43',
+            'project_id' => '16',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '17',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '17',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '43',
+            'project_id' => '17',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '43',
+            'project_id' => '17',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '18',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '19',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '20',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '20',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '21',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '21',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '21',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '63',
+            'project_id' => '22',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '63',
+            'project_id' => '23',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '92',
+            'project_id' => '23',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '63',
+            'project_id' => '24',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '92',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '28',
-            'project_id' => '3',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '52',
-            'project_id' => '3',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '53',
-            'project_id' => '3',
+            'project_id' => '24',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '95',
-            'project_id' => '3',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '96',
-            'project_id' => '3',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '97',
-            'project_id' => '3',
+            'speciality_id' => '102',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '103',
-            'project_id' => '3',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '104',
-            'project_id' => '3',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '105',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
-            'project_id' => '3',
+            'speciality_id' => '87',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '30',
-            'project_id' => '3',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '31',
-            'project_id' => '3',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '32',
-            'project_id' => '3',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '33',
-            'project_id' => '3',
+            'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '34',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '64',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '93',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '104',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
-            'project_id' => '5',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
-            'project_id' => '7',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
-            'project_id' => '8',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
-            'project_id' => '9',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
-            'project_id' => '10',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '10',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '12',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '13',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
-            'project_id' => '13',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '126',
-            'project_id' => '13',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '14',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '15',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '31',
-            'project_id' => '15',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
-            'project_id' => '15',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '16',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '31',
-            'project_id' => '16',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
-            'project_id' => '16',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '31',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '126',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '145',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '19',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
-            'project_id' => '19',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '96',
-            'project_id' => '20',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '96',
-            'project_id' => '21',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '96',
-            'project_id' => '22',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '96',
-            'project_id' => '23',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '47',
             'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '96',
+            'speciality_id' => '63',
             'project_id' => '25',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '47',
-            'project_id' => '26',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '96',
-            'project_id' => '27',
+            'speciality_id' => '92',
+            'project_id' => '25',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '103',
+            'project_id' => '25',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '32',
+            'project_id' => '26',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '32',
+            'project_id' => '27',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '32',
             'project_id' => '28',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '62',
-            'project_id' => '28',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '28',
+            'speciality_id' => '32',
             'project_id' => '29',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '96',
-            'project_id' => '29',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '145',
-            'project_id' => '29',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '28',
+            'speciality_id' => '32',
             'project_id' => '30',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '96',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '145',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '28',
+            'speciality_id' => '87',
             'project_id' => '31',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '47',
+            'speciality_id' => '30',
+            'project_id' => '31',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '30',
             'project_id' => '32',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '47',
+            'speciality_id' => '30',
             'project_id' => '33',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '45',
-            'project_id' => '1',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '1',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '11',
-            'project_id' => '1',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '45',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '11',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '45',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '11',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '138',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '5',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '138',
-            'project_id' => '5',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
-            'project_id' => '5',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '5',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '138',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '1',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '138',
-            'project_id' => '7',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '138',
-            'project_id' => '8',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '138',
-            'project_id' => '9',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '141',
-            'project_id' => '10',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '10',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '141',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '1',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '141',
-            'project_id' => '12',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '12',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '12',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '12',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '141',
-            'project_id' => '13',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '13',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '13',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '13',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '14',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '141',
-            'project_id' => '15',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '15',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '141',
-            'project_id' => '16',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '16',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '1',
-            'project_id' => '19',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '19',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '19',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '19',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '20',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '20',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '20',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '141',
-            'project_id' => '20',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '1',
-            'project_id' => '21',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '21',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '21',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '21',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '22',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '22',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '23',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '23',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '141',
-            'project_id' => '23',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '141',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '25',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
-            'project_id' => '25',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '25',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '26',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
-            'project_id' => '26',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '26',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '27',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
-            'project_id' => '27',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '27',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '28',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
-            'project_id' => '28',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '28',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '29',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
-            'project_id' => '29',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '29',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '1',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '3',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '141',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '141',
-            'project_id' => '31',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '31',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '138',
-            'project_id' => '31',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '141',
-            'project_id' => '32',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '32',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '32',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '32',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '49',
-            'project_id' => '1',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '49',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '49',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '5',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '7',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '90',
-            'project_id' => '8',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '90',
-            'project_id' => '9',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '89',
-            'project_id' => '10',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '54',
-            'project_id' => '10',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '89',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '89',
-            'project_id' => '12',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '85',
-            'project_id' => '13',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '85',
-            'project_id' => '14',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '85',
-            'project_id' => '15',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '85',
-            'project_id' => '16',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '85',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '98',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '100',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '98',
-            'project_id' => '19',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '100',
-            'project_id' => '19',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '85',
-            'project_id' => '19',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '98',
-            'project_id' => '20',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '100',
-            'project_id' => '20',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '85',
-            'project_id' => '20',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '98',
-            'project_id' => '21',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '100',
-            'project_id' => '21',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '21',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '98',
-            'project_id' => '22',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '100',
-            'project_id' => '22',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '35',
-            'project_id' => '22',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '98',
-            'project_id' => '23',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '100',
-            'project_id' => '23',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '35',
-            'project_id' => '23',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '98',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '100',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '100',
-            'project_id' => '25',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '69',
-            'project_id' => '26',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '54',
-            'project_id' => '26',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '69',
-            'project_id' => '27',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '54',
-            'project_id' => '27',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '69',
-            'project_id' => '28',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '54',
-            'project_id' => '28',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '69',
-            'project_id' => '29',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '54',
-            'project_id' => '29',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '44',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '44',
-            'project_id' => '31',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '44',
-            'project_id' => '32',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '134',
-            'project_id' => '1',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '136',
-            'project_id' => '1',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '134',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '136',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '129',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '121',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '122',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '2',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '134',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '136',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '129',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '124',
-            'project_id' => '3',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '129',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '4',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '129',
-            'project_id' => '5',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '129',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '6',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
-            'project_id' => '7',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '129',
-            'project_id' => '7',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
-            'project_id' => '7',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '7',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
-            'project_id' => '8',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '129',
-            'project_id' => '8',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
-            'project_id' => '8',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '8',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
-            'project_id' => '9',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '124',
-            'project_id' => '10',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '147',
-            'project_id' => '10',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '124',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '147',
-            'project_id' => '11',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '124',
-            'project_id' => '12',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '147',
-            'project_id' => '12',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '124',
-            'project_id' => '13',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '147',
-            'project_id' => '13',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '121',
-            'project_id' => '14',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '122',
-            'project_id' => '14',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
-            'project_id' => '14',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '14',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
-            'project_id' => '15',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '15',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '121',
-            'project_id' => '16',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '122',
-            'project_id' => '16',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '16',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
-            'project_id' => '16',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '16',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '121',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '122',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '62',
-            'project_id' => '17',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '121',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '122',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '18',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '121',
-            'project_id' => '19',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '122',
-            'project_id' => '19',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '19',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '108',
-            'project_id' => '20',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '21',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '108',
-            'project_id' => '21',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '22',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '108',
-            'project_id' => '22',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '23',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '108',
-            'project_id' => '23',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '108',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '25',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '108',
-            'project_id' => '25',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '26',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '108',
-            'project_id' => '26',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '27',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '108',
-            'project_id' => '27',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '28',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '108',
-            'project_id' => '28',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '29',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '108',
-            'project_id' => '29',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '31',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '108',
-            'project_id' => '31',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '133',
-            'project_id' => '32',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '62',
-            'project_id' => '32',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '62',
-            'project_id' => '33',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '133',
+            'speciality_id' => '30',
             'project_id' => '34',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '62',
+            'speciality_id' => '87',
             'project_id' => '34',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '125',
             'project_id' => '34',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '133',
+            'speciality_id' => '30',
             'project_id' => '35',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '62',
-            'project_id' => '35',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
+            'speciality_id' => '30',
             'project_id' => '36',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '62',
+            'speciality_id' => '31',
             'project_id' => '36',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '136',
+            'speciality_id' => '87',
             'project_id' => '36',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '123',
-            'project_id' => '36',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '134',
-            'project_id' => '36',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
+            'speciality_id' => '30',
             'project_id' => '37',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
+            'speciality_id' => '31',
+            'project_id' => '37',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '87',
+            'project_id' => '37',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '31',
             'project_id' => '38',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '62',
-            'project_id' => '38',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '136',
-            'project_id' => '38',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '123',
-            'project_id' => '38',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '134',
-            'project_id' => '38',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
+            'speciality_id' => '30',
             'project_id' => '39',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
+            'speciality_id' => '87',
             'project_id' => '39',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
-            'project_id' => '40',
+            'speciality_id' => '125',
+            'project_id' => '39',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '124',
-            'project_id' => '40',
+            'speciality_id' => '144',
+            'project_id' => '39',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '147',
-            'project_id' => '40',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '40',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '108',
+            'speciality_id' => '30',
             'project_id' => '40',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '87',
+            'project_id' => '40',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '95',
             'project_id' => '41',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
+            'speciality_id' => '95',
             'project_id' => '42',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
+            'speciality_id' => '95',
             'project_id' => '43',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
-            'project_id' => '43',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
+            'speciality_id' => '95',
             'project_id' => '44',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
+            'speciality_id' => '47',
             'project_id' => '45',
         ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '95',
+            'project_id' => '46',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '47',
+            'project_id' => '47',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '95',
+            'project_id' => '48',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '102',
+            'project_id' => '49',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '61',
+            'project_id' => '49',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '28',
+            'project_id' => '50',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '95',
+            'project_id' => '50',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '144',
+            'project_id' => '50',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '28',
+            'project_id' => '51',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '95',
+            'project_id' => '51',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '144',
+            'project_id' => '51',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '28',
+            'project_id' => '52',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '47',
+            'project_id' => '53',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '47',
+            'project_id' => '54',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '45',
+            'project_id' => '55',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '10',
+            'project_id' => '55',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '11',
+            'project_id' => '55',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '45',
+            'project_id' => '56',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '10',
+            'project_id' => '56',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '11',
+            'project_id' => '56',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '45',
+            'project_id' => '57',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '10',
+            'project_id' => '57',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '11',
+            'project_id' => '57',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '10',
+            'project_id' => '58',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '137',
+            'project_id' => '58',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '10',
+            'project_id' => '59',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '137',
+            'project_id' => '59',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '51',
+            'project_id' => '59',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '59',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '10',
+            'project_id' => '60',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '137',
+            'project_id' => '60',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '51',
+            'project_id' => '60',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '60',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '4',
+            'project_id' => '60',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '70',
+            'project_id' => '60',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '1',
+            'project_id' => '60',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '137',
+            'project_id' => '61',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '137',
+            'project_id' => '62',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '137',
+            'project_id' => '63',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '140',
+            'project_id' => '64',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '64',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '140',
+            'project_id' => '65',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '65',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '65',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '4',
+            'project_id' => '65',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '1',
+            'project_id' => '65',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '51',
+            'project_id' => '65',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '65',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '140',
+            'project_id' => '66',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '66',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '66',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '4',
+            'project_id' => '66',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '140',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '4',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '68',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '140',
+            'project_id' => '69',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '69',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '140',
+            'project_id' => '70',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '70',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '71',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '4',
+            'project_id' => '71',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '51',
+            'project_id' => '71',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '56',
+            'project_id' => '71',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '71',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '72',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '4',
+            'project_id' => '72',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '1',
+            'project_id' => '73',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '73',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '73',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '73',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '74',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '4',
+            'project_id' => '74',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '74',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '140',
+            'project_id' => '74',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '1',
+            'project_id' => '75',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '75',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '75',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '75',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '76',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '56',
+            'project_id' => '76',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '77',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '4',
+            'project_id' => '77',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '140',
+            'project_id' => '77',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '78',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '4',
+            'project_id' => '78',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '140',
+            'project_id' => '78',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '79',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '51',
+            'project_id' => '79',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '4',
+            'project_id' => '79',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '56',
+            'project_id' => '80',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '80',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '80',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '56',
+            'project_id' => '81',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '81',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '81',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '56',
+            'project_id' => '82',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '82',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '82',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '56',
+            'project_id' => '83',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '83',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '83',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '84',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '1',
+            'project_id' => '84',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '84',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '4',
+            'project_id' => '84',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '70',
+            'project_id' => '84',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '51',
+            'project_id' => '84',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '84',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '140',
+            'project_id' => '84',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '140',
+            'project_id' => '85',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '85',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '137',
+            'project_id' => '85',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '140',
+            'project_id' => '86',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '86',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '86',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '10',
+            'project_id' => '86',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '49',
+            'project_id' => '87',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '49',
+            'project_id' => '88',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '49',
+            'project_id' => '89',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '70',
+            'project_id' => '90',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '70',
+            'project_id' => '91',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '70',
+            'project_id' => '92',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '70',
+            'project_id' => '93',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '89',
+            'project_id' => '94',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '89',
+            'project_id' => '95',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '88',
+            'project_id' => '96',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '54',
+            'project_id' => '96',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '88',
+            'project_id' => '97',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '88',
+            'project_id' => '98',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '84',
+            'project_id' => '99',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '84',
+            'project_id' => '100',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '84',
+            'project_id' => '101',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '84',
+            'project_id' => '102',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '84',
+            'project_id' => '103',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '97',
+            'project_id' => '104',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '99',
+            'project_id' => '104',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '97',
+            'project_id' => '105',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '99',
+            'project_id' => '105',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '84',
+            'project_id' => '105',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '97',
+            'project_id' => '106',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '99',
+            'project_id' => '106',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '84',
+            'project_id' => '106',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '97',
+            'project_id' => '107',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '99',
+            'project_id' => '107',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '70',
+            'project_id' => '107',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '97',
+            'project_id' => '108',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '99',
+            'project_id' => '108',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '35',
+            'project_id' => '108',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '97',
+            'project_id' => '109',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '99',
+            'project_id' => '109',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '35',
+            'project_id' => '109',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '97',
+            'project_id' => '110',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '99',
+            'project_id' => '110',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '99',
+            'project_id' => '111',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '68',
+            'project_id' => '112',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '54',
+            'project_id' => '112',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '68',
+            'project_id' => '113',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '54',
+            'project_id' => '113',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '68',
+            'project_id' => '114',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '54',
+            'project_id' => '114',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '68',
+            'project_id' => '115',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '54',
+            'project_id' => '115',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '44',
+            'project_id' => '116',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '44',
+            'project_id' => '117',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '44',
+            'project_id' => '118',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '133',
+            'project_id' => '119',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '135',
+            'project_id' => '119',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '133',
+            'project_id' => '120',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '135',
+            'project_id' => '120',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '128',
+            'project_id' => '120',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '120',
+            'project_id' => '120',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '121',
+            'project_id' => '120',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '118',
+            'project_id' => '120',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '133',
+            'project_id' => '121',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '135',
+            'project_id' => '121',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '128',
+            'project_id' => '121',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '123',
+            'project_id' => '121',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '128',
+            'project_id' => '122',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '127',
+            'project_id' => '122',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '118',
+            'project_id' => '122',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '128',
+            'project_id' => '123',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '127',
+            'project_id' => '124',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '128',
+            'project_id' => '124',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '119',
+            'project_id' => '124',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '139',
+            'project_id' => '124',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '127',
+            'project_id' => '125',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '128',
+            'project_id' => '125',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '119',
+            'project_id' => '125',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '139',
+            'project_id' => '125',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '127',
+            'project_id' => '126',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '128',
+            'project_id' => '126',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '119',
+            'project_id' => '126',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '139',
+            'project_id' => '126',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '127',
+            'project_id' => '127',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '123',
+            'project_id' => '128',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '146',
+            'project_id' => '128',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '123',
+            'project_id' => '129',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '146',
+            'project_id' => '129',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '123',
+            'project_id' => '130',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '146',
+            'project_id' => '130',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '123',
+            'project_id' => '131',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '146',
+            'project_id' => '131',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '120',
+            'project_id' => '132',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '121',
+            'project_id' => '132',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '119',
+            'project_id' => '132',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '118',
+            'project_id' => '132',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '119',
+            'project_id' => '133',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '139',
+            'project_id' => '133',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '120',
+            'project_id' => '134',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '121',
+            'project_id' => '134',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '118',
+            'project_id' => '134',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '119',
+            'project_id' => '134',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '139',
+            'project_id' => '134',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '120',
+            'project_id' => '135',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '121',
+            'project_id' => '135',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '118',
+            'project_id' => '135',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '119',
+            'project_id' => '135',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '139',
+            'project_id' => '135',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
+            'project_id' => '135',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '61',
+            'project_id' => '135',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '120',
+            'project_id' => '136',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '121',
+            'project_id' => '136',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '118',
+            'project_id' => '136',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '119',
+            'project_id' => '136',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '139',
+            'project_id' => '136',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '120',
+            'project_id' => '137',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '121',
+            'project_id' => '137',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '118',
+            'project_id' => '137',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '107',
+            'project_id' => '138',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '139',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '107',
+            'project_id' => '139',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '140',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '107',
+            'project_id' => '140',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '141',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '107',
+            'project_id' => '141',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '142',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '107',
+            'project_id' => '142',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '143',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '107',
+            'project_id' => '143',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '144',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '107',
+            'project_id' => '144',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '145',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '107',
+            'project_id' => '145',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '146',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '107',
+            'project_id' => '146',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '147',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '107',
+            'project_id' => '147',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '148',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '149',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '107',
+            'project_id' => '149',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '132',
+            'project_id' => '150',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '61',
+            'project_id' => '150',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '61',
+            'project_id' => '151',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '132',
+            'project_id' => '152',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '61',
+            'project_id' => '152',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '152',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '132',
+            'project_id' => '153',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '61',
+            'project_id' => '153',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
+            'project_id' => '154',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '61',
+            'project_id' => '154',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '135',
+            'project_id' => '154',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '122',
+            'project_id' => '154',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '133',
+            'project_id' => '154',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
+            'project_id' => '155',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
+            'project_id' => '156',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '61',
+            'project_id' => '156',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '135',
+            'project_id' => '156',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '122',
+            'project_id' => '156',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '133',
+            'project_id' => '156',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
+            'project_id' => '157',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '127',
+            'project_id' => '157',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
+            'project_id' => '158',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '123',
+            'project_id' => '158',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '146',
+            'project_id' => '158',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '158',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '107',
+            'project_id' => '158',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '86',
+            'project_id' => '159',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '86',
+            'project_id' => '160',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '86',
+            'project_id' => '161',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
+            'project_id' => '161',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '86',
+            'project_id' => '162',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '86',
+            'project_id' => '163',
+        ]);
+
 
 
         DB::table('candidates')->insert([
@@ -9687,7 +6948,7 @@ Case-in , Международный нефтегазовый, кейс ESG
             'phone' => '8-800-555-35-35',
             'course' => '3',
             'api_token' => '1',
-            'training_group' => 'ИСТ-19-2',
+            'training_group' => 'ИСТб-19-2',
 
         ]);
 

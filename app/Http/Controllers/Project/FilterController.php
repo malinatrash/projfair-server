@@ -120,11 +120,11 @@ class FilterController extends Controller
             $data = $data->whereIn('state_id', $states);
 
         //фильтрация по руководителю
-        $supervisors = array_map(function ($value) {
-            return intval($value);
-        }, $inputSupervisors ?? []);
-        if (count($supervisors) != 0)
-            $data = $data->whereIn('supervisor_id', $supervisors);
+        // $supervisors = array_map(function ($value) {
+        //     return intval($value);
+        // }, $inputSupervisors ?? []);
+        // if (count($supervisors) != 0)
+        //     $data = $data->whereIn('supervisor_id', $supervisors);
 
         //фильтрация по сложности
         $difficulty = array_map(function ($value) {
