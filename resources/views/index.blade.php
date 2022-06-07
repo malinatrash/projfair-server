@@ -7,8 +7,8 @@
 
     <title>Ярмарка проектов Славы Колосова</title>
 
-    <script type="module" crossorigin src="{{ asset('assets/index.f38283d3.js') }}"></script>
-    <link rel="modulepreload" href="{{ asset('assets/vendor.64eb15d0.js') }}">
+    <script type="module" crossorigin src="{{ asset('assets/index.bc2880d9.js') }}"></script>
+    <link rel="modulepreload" href="{{ asset('assets/vendor.af3187d6.js') }}">
     <link rel="stylesheet" href="{{ asset('assets/index.81e20124.css') }}">
 
 </head>

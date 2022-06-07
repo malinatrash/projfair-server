@@ -24,6 +24,7 @@ class ApiAuth
         if ($token == null || (Candidate::where('api_token', $token) == null) && Supervisor::where('api_token', $token) == null) {
             $token = $request->cookie('token');
             if ($token == null || (Candidate::where('api_token', $token) == null) && Supervisor::where('api_token', $token) == null) {
+
                 abort(403, 'Access denied');
             }
         }
