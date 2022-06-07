@@ -68,12 +68,8 @@ class DatabaseSeeder extends Seeder
             'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'АТбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
             'name' => 'АТбп',
-            'institute_id' => '3'
+            'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АТМб',
@@ -81,23 +77,11 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('specialities')->insert([
             'name' => 'АСУб',
-            'institute_id' => '4'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'АСУбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ААбз',
-            'institute_id' => '2'
+            'institute_id' => '3'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АДб',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'АДбз',
-            'institute_id' => '2'
+            'institute_id' => '4'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АСб',
@@ -109,158 +93,110 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('specialities')->insert([
             'name' => 'ДСб',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'АРб',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'АРбв',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'РРб',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'РРбп',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'БЖТбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'БТПб',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'НДбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'НДб',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ВВб',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ВВбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ЭВМб',
             'institute_id' => '4'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ЭВМбз',
-            'institute_id' => '2'
+            'name' => 'АРб',
+            'institute_id' => '4'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ГСХб',
+            'name' => 'РРб',
+            'institute_id' => '4'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'РРбп',
+            'institute_id' => '4'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'БТПб',
             'institute_id' => '5'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ГСХбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ГСХбп',
+            'name' => 'НДб',
             'institute_id' => '5'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ГМФб',
-            'institute_id' => '7'
+            'name' => 'ВВб',
+            'institute_id' => '4'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ГРб',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ЮРГб',
-            'institute_id' => '7'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ЮРГбв',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ЖРб',
-            'institute_id' => '7'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ЖРбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ЖКб',
-            'institute_id' => '8'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ИРб',
+            'name' => 'ЭВМб',
             'institute_id' => '3'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ИРбз',
+            'name' => 'ГСХб',
+            'institute_id' => '4'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ГСХбп',
+            'institute_id' => '4'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ГМФб',
+            'institute_id' => '6'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ГРб',
+            'institute_id' => '4'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ЮРГб',
+            'institute_id' => '6'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ЖРб',
+            'institute_id' => '6'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ЖКб',
+            'institute_id' => '7'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ИРб',
             'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИНС',
-            'institute_id' => '9'
+            'institute_id' => '8'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИСТб',
-            'institute_id' => '4'
+            'institute_id' => '3'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИСМб',
-            'institute_id' => '4'
+            'institute_id' => '3'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИИКб',
-            'institute_id' => '4'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'КНбз',
-            'institute_id' => '2'
+            'institute_id' => '3'
         ]);
         DB::table('specialities')->insert([
             'name' => 'КНб',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ИБб',
             'institute_id' => '4'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'НМб',
+            'name' => 'ИБб',
             'institute_id' => '3'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'НМб',
+            'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЛИМб',
             'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ЛИМбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
             'name' => 'МБб',
-            'institute_id' => '7'
+            'institute_id' => '6'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МДБб',
-            'institute_id' => '8'
+            'institute_id' => '7'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МЦб',
-            'institute_id' => '3'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'МЦбз',
             'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
@@ -269,15 +205,11 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('specialities')->insert([
             'name' => 'МЭб',
-            'institute_id' => '7'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'МЭбз',
-            'institute_id' => '2'
+            'institute_id' => '6'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИФб',
-            'institute_id' => '3'
+            'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'МРб',
@@ -288,108 +220,64 @@ class DatabaseSeeder extends Seeder
             'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'МТбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
             'name' => 'МТбп',
             'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
             'name' => 'УСТб',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'УТСбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ООСб',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ИСТбп',
             'institute_id' => '4'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ПМб',
-            'institute_id' => '7'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ПМбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'БТб',
-            'institute_id' => '3'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ПГСб',
+            'name' => 'ООСб',
             'institute_id' => '5'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ПГСбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'РДб',
+            'name' => 'ИСТбп',
             'institute_id' => '3'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'РДбз',
+            'name' => 'ПМб',
+            'institute_id' => '6'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'БТб',
+            'institute_id' => '2'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ПГСб',
+            'institute_id' => '4'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'РДб',
             'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'АТПб',
-            'institute_id' => '3'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'АТПбз',
             'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭПАб',
-            'institute_id' => '8'
+            'institute_id' => '7'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ДИб',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'СРбз',
-            'institute_id' => '2'
+            'institute_id' => '4'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭСТб',
-            'institute_id' => '10'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ТЭбз',
-            'institute_id' => '2'
+            'institute_id' => '9'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ТВб',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ТВбз',
-            'institute_id' => '2'
+            'institute_id' => '4'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭЛб',
             'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ЭЛбз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
             'name' => 'ЭЛбп',
             'institute_id' => '1'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'КТбз',
-            'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ММб',
@@ -397,259 +285,171 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('specialities')->insert([
             'name' => 'ТПб',
-            'institute_id' => '3'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ТПбз',
             'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ТХб',
-            'institute_id' => '6'
+            'institute_id' => '5'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЮРУб',
-            'institute_id' => '7'
+            'institute_id' => '6'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИНб',
-            'institute_id' => '3'
+            'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'УКб',
-            'institute_id' => '3'
+            'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'УКбп',
-            'institute_id' => '3'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'УКбпз',
             'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'УПб',
-            'institute_id' => '7'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'УПбз',
-            'institute_id' => '2'
+            'institute_id' => '6'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ИЭб',
-            'institute_id' => '8'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ФКб',
             'institute_id' => '7'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ФКбз',
-            'institute_id' => '2'
+            'name' => 'ФКб',
+            'institute_id' => '6'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ХТОб',
-            'institute_id' => '3'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ХТбз',
             'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ХТТб',
-            'institute_id' => '3'
+            'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ХТТбп',
-            'institute_id' => '3'
+            'institute_id' => '2'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭИб',
-            'institute_id' => '8'
+            'institute_id' => '7'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭТЭКб',
-            'institute_id' => '7'
+            'institute_id' => '6'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭПОб',
-            'institute_id' => '7'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ЭПОбз',
-            'institute_id' => '2'
+            'institute_id' => '6'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭУНб',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ЭУНбз',
-            'institute_id' => '2'
+            'institute_id' => '4'
         ]);
         DB::table('specialities')->insert([
             'name' => 'НДДб',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'НДДбз',
-            'institute_id' => '2'
+            'institute_id' => '5'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭСб',
-            'institute_id' => '10'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ЭСбз',
-            'institute_id' => '2'
+            'institute_id' => '9'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭЛТбп',
-            'institute_id' => '10'
+            'institute_id' => '9'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭАПЭб',
-            'institute_id' => '10'
+            'institute_id' => '9'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭАПб',
-            'institute_id' => '10'
+            'institute_id' => '9'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭПб',
-            'institute_id' => '10'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ЭПбз',
-            'institute_id' => '2'
+            'institute_id' => '9'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭЭЗбп',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'НГДСз',
-            'institute_id' => '2'
+            'institute_id' => '4'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГИСиРФ',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'РМ',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ГИС',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'РФ',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ГЭ',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ГМ',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ГМз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'НБ',
-            'institute_id' => '7'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'НБз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ИГ',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ГГ',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ГГз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'МД',
             'institute_id' => '5'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ОПз',
-            'institute_id' => '2'
+            'name' => 'РМ',
+            'institute_id' => '5'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ГИС',
+            'institute_id' => '5'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'РФ',
+            'institute_id' => '5'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ГЭ',
+            'institute_id' => '5'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ГМ',
+            'institute_id' => '5'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'НБ',
+            'institute_id' => '6'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ИГ',
+            'institute_id' => '5'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'ГГ',
+            'institute_id' => '5'
+        ]);
+        DB::table('specialities')->insert([
+            'name' => 'МД',
+            'institute_id' => '4'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ОП',
-            'institute_id' => '6'
+            'institute_id' => '5'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГО',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ГОз',
-            'institute_id' => '2'
+            'institute_id' => '5'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ГП',
-            'institute_id' => '6'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ГПз',
-            'institute_id' => '2'
+            'institute_id' => '5'
         ]);
         DB::table('specialities')->insert([
             'name' => 'СДМ',
             'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'СДМз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
             'name' => 'РГ',
-            'institute_id' => '6'
+            'institute_id' => '5'
         ]);
         DB::table('specialities')->insert([
             'name' => 'СМ',
             'institute_id' => '1'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'СМз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
             'name' => 'СУЗ',
-            'institute_id' => '5'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'РТз',
-            'institute_id' => '2'
+            'institute_id' => '4'
         ]);
         DB::table('specialities')->insert([
             'name' => 'ЭПЭБ',
-            'institute_id' => '7'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ЭПЭБз',
-            'institute_id' => '2'
-        ]);
-        DB::table('specialities')->insert([
-            'name' => 'ГА',
             'institute_id' => '6'
         ]);
         DB::table('specialities')->insert([
-            'name' => 'ГАз',
-            'institute_id' => '2'
+            'name' => 'ГА',
+            'institute_id' => '5'
         ]);
 
 
@@ -828,9 +628,12 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Pandas',  'skillCategory_id' => '1'],
             ['name' => 'Numpy',  'skillCategory_id' => '1'],
             ['name' => 'Trello',  'skillCategory_id' => '1'],
-            ['name' => 'Машинное обучение (DNN',  'skillCategory_id' => '1'],
-            ['name' => 'SVM)',  'skillCategory_id' => '1'],
+            ['name' => 'Dropbox',  'skillCategory_id' => '1'],
+            ['name' => 'Объектно-ориентированное программирование',  'skillCategory_id' => '1'],
+            ['name' => 'Машинное обучение (DNN, SVM)',  'skillCategory_id' => '1'],
             ['name' => 'Обработка естественного языка (NLP)',  'skillCategory_id' => '1'],
+            ['name' => 'Основы высшей математики и математической статистики',  'skillCategory_id' => '1'],
+            ['name' => 'Элементарные навыки программирования на языке Python',  'skillCategory_id' => '1'],
             ['name' => 'Проектирование АСОИиУ',  'skillCategory_id' => '1'],
             ['name' => 'Базовые знания языков Java/C#/python',  'skillCategory_id' => '1'],
             ['name' => 'Java',  'skillCategory_id' => '1'],
@@ -839,12 +642,19 @@ class DatabaseSeeder extends Seeder
             ['name' => 'С#',  'skillCategory_id' => '1'],
             ['name' => 'PostgreSQL',  'skillCategory_id' => '1'],
             ['name' => 'Visual Studio',  'skillCategory_id' => '1'],
-            ['name' => 'VC++ Express. PHP',  'skillCategory_id' => '1'],
-            ['name' => 'Работа с виртуальной машиной (Virtual Box',  'skillCategory_id' => '1'],
-            ['name' => 'Аналогичные ранее изученным',  'skillCategory_id' => '1'],
-            ['name' => 'Задачи и их решения ясно и точно в терминах',  'skillCategory_id' => '1'],
-            ['name' => 'Понятных для профессиональной аудитории',  'skillCategory_id' => '1'],
-            ['name' => 'Как в письменной',  'skillCategory_id' => '1'],
+            ['name' => 'VC++ Express',  'skillCategory_id' => '1'],
+            ['name' => 'Работа с виртуальной машиной (Virtual Box, Virtual PC 2007 –  свободный доступ «бесплатные»).',  'skillCategory_id' => '1'],
+            ['name' => 'Имеет знания базовых математических дисциплин и проявлять высокую степень их понимания',  'skillCategory_id' => '1'],
+            ['name' => 'Умеет решать математические задачи, аналогичные ранее изученным, но более высокого уровня сложности',  'skillCategory_id' => '1'],
+            ['name' => 'Обладает способностью к применению знаний на практике, в том числе умением составлять математические модели типовых профессиональных задач и находить способы их решений, интерпретировать профессиональный (физический) смысл полученного математического результата',  'skillCategory_id' => '1'],
+            ['name' => 'Умеет представлять математические утверждения и их доказательства, задачи и их решения ясно и точно в терминах, понятных для профессиональной аудитории, как в письменной, так и устной форме',  'skillCategory_id' => '1'],
+            ['name' => 'Обладает математическим мышлением, математической культурой как частью профессиональной и общечеловеческой культуры',  'skillCategory_id' => '1'],
+            ['name' => 'Используя соответствующие структуры данных и алгоритмы получает обобщённый/объектно-ориентированный код, в котором инкапсулированы и нужным образом выделены те аспекты задачи, которые могут измениться',  'skillCategory_id' => '1'],
+            ['name' => 'Способен представлять и проектировать сложные системы из множества продуктов с интеграцией с внешними системами',  'skillCategory_id' => '1'],
+            ['name' => 'Способен понимать и сообщать мысли/архитектурные идеи/спецификации в непротиворечивой форме и в общении ориентируется на контекст (на понимание собеседниками друг друга). Может обучать других',  'skillCategory_id' => '1'],
+            ['name' => 'Способен предложить лучшие альтернативы предлагаемым решениям исходя из личного опыта',  'skillCategory_id' => '1'],
+            ['name' => 'Экспериментирует с предварительными версиями программ, создаёт пробные новые решения',  'skillCategory_id' => '1'],
+            ['name' => 'Знание английского B1',  'skillCategory_id' => '1'],
             ['name' => 'Ethernet',  'skillCategory_id' => '1'],
             ['name' => 'Удалённое',  'skillCategory_id' => '1'],
             ['name' => 'Работа с БД',  'skillCategory_id' => '1'],
@@ -855,11 +665,154 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Wi-Fi',  'skillCategory_id' => '1'],
             ['name' => 'Bluetooth',  'skillCategory_id' => '1'],
             ['name' => 'Разработка руководства пользователя ',  'skillCategory_id' => '1'],
-            ['name' => 'Языки программирования JavaScript',  'skillCategory_id' => '1'],
-            ['name' => 'Java + MySQL',  'skillCategory_id' => '1'],
+            ['name' => 'Обеспечение технологического стека – знания и умение программировать',  'skillCategory_id' => '1'],
+            ['name' => 'Для фронтенда: React.js + дизайн и web-дизайн',  'skillCategory_id' => '1'],
+            ['name' => 'Для бэкэнда: Java + PostgreSQL',  'skillCategory_id' => '1'],
+            ['name' => 'Обеспечение технологического стека – знания и умение программировать в:1)MSSQL2)C#3)ASP.NET',  'skillCategory_id' => '1'],
+            ['name' => 'Для фронтенда: PHP + дизайн и web-дизайн',  'skillCategory_id' => '1'],
+            ['name' => 'Для бэкэнда: PHP, Java + MySQL',  'skillCategory_id' => '1'],
             ['name' => 'ФЗ-63',  'skillCategory_id' => '1'],
             ['name' => '«Битрикс» ',  'skillCategory_id' => '1'],
+            ['name' => 'SimInTech',  'skillCategory_id' => '1'],
+            ['name' => 'Universal Mechanism',  'skillCategory_id' => '1'],
+            ['name' => 'Proteus',  'skillCategory_id' => '1'],
+            ['name' => 'Invertor',  'skillCategory_id' => '1'],
+            ['name' => 'Kompas 3D ',  'skillCategory_id' => '1'],
+            ['name' => 'Microsoft Windows',  'skillCategory_id' => '1'],
+            ['name' => 'Microsoft Office',  'skillCategory_id' => '1'],
+            ['name' => 'PTC_MathCAD',  'skillCategory_id' => '1'],
+            ['name' => 'Excel Link concurrent AcademicEdition',  'skillCategory_id' => '1'],
+            ['name' => 'КОМПАС-3D',  'skillCategory_id' => '1'],
+            ['name' => 'Знание основ сопротивления материалов',  'skillCategory_id' => '1'],
+            ['name' => 'Желание работать на 3d-принтере',  'skillCategory_id' => '1'],
+            ['name' => 'Желание работать в CAD/CAE – системах ',  'skillCategory_id' => '1'],
+            ['name' => 'Знания  CAD программ',  'skillCategory_id' => '1'],
+            ['name' => 'Основы программирования',  'skillCategory_id' => '1'],
+            ['name' => 'Основы  термодинамики  теплопередачи',  'skillCategory_id' => '1'],
+            ['name' => 'Siemens Femap',  'skillCategory_id' => '1'],
+            ['name' => 'Excel',  'skillCategory_id' => '1'],
+            ['name' => 'Понимание основ линейной алгебры ',  'skillCategory_id' => '1'],
+            ['name' => 'ЭЛб19',  'skillCategory_id' => '1'],
+            ['name' => 'Знание основ гидравлики',  'skillCategory_id' => '1'],
+            ['name' => 'Умение читать гидросхемы',  'skillCategory_id' => '1'],
+            ['name' => 'NX',  'skillCategory_id' => '1'],
+            ['name' => 'FloEFD',  'skillCategory_id' => '1'],
+            ['name' => 'Mathlab Simulink',  'skillCategory_id' => '1'],
+            ['name' => 'Конструирование и проектирование изделий',  'skillCategory_id' => '1'],
+            ['name' => 'Моделирование в Siemens NX',  'skillCategory_id' => '1'],
+            ['name' => 'Siemens NX',  'skillCategory_id' => '1'],
+            ['name' => 'Умение работать с композиционными материалами',  'skillCategory_id' => '1'],
+            ['name' => 'Начальные навыки конструирования и проектирования изделий в области машиностроения с применением САПР',  'skillCategory_id' => '1'],
+            ['name' => 'Знания в области станков, инструмента',  'skillCategory_id' => '1'],
+            ['name' => 'Материаловедения и сварочных технологий',  'skillCategory_id' => '1'],
+            ['name' => 'Конструирование и проектирование изделий ',  'skillCategory_id' => '1'],
+            ['name' => 'ЧПУ',  'skillCategory_id' => '1'],
+            ['name' => 'Mach3',  'skillCategory_id' => '1'],
+            ['name' => 'PLCM',  'skillCategory_id' => '1'],
+            ['name' => '3Д печать',  'skillCategory_id' => '1'],
+            ['name' => 'Cura',  'skillCategory_id' => '1'],
+            ['name' => 'Знания в области материаловедения',  'skillCategory_id' => '1'],
+            ['name' => 'Сварочных технологий',  'skillCategory_id' => '1'],
+            ['name' => 'Начальные навыки конструирования и проектирования изделий в области машиностроения ',  'skillCategory_id' => '1'],
+            ['name' => 'Сварочно-наплавочных технологий',  'skillCategory_id' => '1'],
+            ['name' => 'Знания в области материаловедения, сварочных технологий, начальные навыки конструирования и проектирования изделий в области машиностроения с применением САПР',  'skillCategory_id' => '1'],
+            ['name' => 'Навыки работы на компьютере на уровне уверенного пользователя',  'skillCategory_id' => '1'],
+            ['name' => 'Навыки работы в графических редакторах',  'skillCategory_id' => '1'],
+            ['name' => 'MS Office',  'skillCategory_id' => '1'],
+            ['name' => 'Навыки анализа и интерпретации данных',  'skillCategory_id' => '1'],
+            ['name' => 'Активная позиция',  'skillCategory_id' => '1'],
+            ['name' => 'Творческие навыки',  'skillCategory_id' => '1'],
+            ['name' => 'Желание работать в коллективе',  'skillCategory_id' => '1'],
+            ['name' => 'Знание программ по обработке и монтажу видео',  'skillCategory_id' => '1'],
+            ['name' => 'Базовые знания и умения в области бизнес-планирования',  'skillCategory_id' => '1'],
+            ['name' => 'Базовые знания и умения в области страхового дела',  'skillCategory_id' => '1'],
+            ['name' => 'Знание китайского языка',  'skillCategory_id' => '1'],
+            ['name' => 'Базовые знания и умения в области банковского дела',  'skillCategory_id' => '1'],
+            ['name' => 'Базовые знания и умения в области макроэкономики, региональной экономики и финансов',  'skillCategory_id' => '1'],
+            ['name' => 'Знания экономических основ системы государственного управления бюджетным процессом',  'skillCategory_id' => '1'],
+            ['name' => 'Знать основные ресурсные ограничения проекта',  'skillCategory_id' => '1'],
+            ['name' => 'Знать основные требования к представлению результатов проекта',  'skillCategory_id' => '1'],
+            ['name' => 'Уметь выполнять критический анализ и сформулировать перечень недостающих знаний, необходимых для достижения целей',  'skillCategory_id' => '1'],
+            ['name' => 'Уметь использовать различные инструменты поиска и анализа информации',  'skillCategory_id' => '1'],
+            ['name' => 'Уметь критически оценивать полученные результаты',  'skillCategory_id' => '1'],
+            ['name' => 'Уметь определять внутренний и внешний круг стейкхолдеров для проектной команды',  'skillCategory_id' => '1'],
+            ['name' => 'Уметь определять круг задач и решать их в соответствии со своей ролевой позицией',  'skillCategory_id' => '1'],
+            ['name' => 'Уметь подготовить результаты',  'skillCategory_id' => '1'],
+            ['name' => 'Уметь пользоваться основными инструментами организации рефлексии',  'skillCategory_id' => '1'],
+            ['name' => 'Уметь спланировать и реализовать проект с учетом ресурсных ограничений и требований к результату проекта',  'skillCategory_id' => '1'],
+            ['name' => 'Владеть навыками на основе полученной первичной информации сформировать комплексное понимание предмета изучения',  'skillCategory_id' => '1'],
+            ['name' => 'Владеть навыками презентации результатов проекта',  'skillCategory_id' => '1'],
+            ['name' => 'Владеть навыками определения задач и соотнесения их с ролевыми позициями',  'skillCategory_id' => '1'],
+            ['name' => 'Владеть навыками четкого формулирования запроса на поиск новых знаний',  'skillCategory_id' => '1'],
+            ['name' => 'Владеть навыками выполнения системного анализа полученной информации, выделения «дефицитов» знаний и формулирования запроса на поиск новой информации',  'skillCategory_id' => '1'],
+            ['name' => 'Владеть навыками самоанализа и может оценить личный вклад в достигнутых результатах',  'skillCategory_id' => '1'],
+            ['name' => 'Владеть навыками социального взаимодействия как с членами команды, так и с внешними стейкхолдерами',  'skillCategory_id' => '1'],
+            ['name' => 'Знать основы горных работ и вычислительной техники',  'skillCategory_id' => '1'],
+            ['name' => 'Auto CAD',  'skillCategory_id' => '1'],
+            ['name' => 'Datamine',  'skillCategory_id' => '1'],
+            ['name' => 'Знание геодезии',  'skillCategory_id' => '1'],
+            ['name' => 'Основ маркшейдерского дела',  'skillCategory_id' => '1'],
+            ['name' => 'Геофизики',  'skillCategory_id' => '1'],
+            ['name' => 'ГИС-систем',  'skillCategory_id' => '1'],
+            ['name' => 'ДДЗ',  'skillCategory_id' => '1'],
+            ['name' => 'Основ археологии',  'skillCategory_id' => '1'],
+            ['name' => 'Знание рудной геологии, геодезии, основ маркшейдерского дела, основ горного дела',  'skillCategory_id' => '1'],
+            ['name' => 'Навыки работы с геодезическими приборами и ПК',  'skillCategory_id' => '1'],
+            ['name' => 'Аэрофотосъемки',  'skillCategory_id' => '1'],
+            ['name' => 'Фотограмметрии',  'skillCategory_id' => '1'],
+            ['name' => 'Навыки программирования логических контроллеров',  'skillCategory_id' => '1'],
+            ['name' => 'Физико-математическая и геологическая подготовка, владение компьютерными технологиями в рамках вузовской программы.',  'skillCategory_id' => '1'],
+            ['name' => 'Навыки проведения стратиграфических исследований (анализ, расчленения, корреляция стратиграфических разрезов и составления стратиграфических схем, колонок)',  'skillCategory_id' => '1'],
+            ['name' => 'Matlab (Simulink)',  'skillCategory_id' => '1'],
+            ['name' => 'Студент НДб20',  'skillCategory_id' => '1'],
+            ['name' => 'Студент НДДб20',  'skillCategory_id' => '1'],
+            ['name' => 'Студент НДб19',  'skillCategory_id' => '1'],
+            ['name' => 'Дисциплинированность',  'skillCategory_id' => '1'],
+            ['name' => 'Способность проявлять инициативу',  'skillCategory_id' => '1'],
+            ['name' => 'Предлагать нестандартные варианты решения задач',  'skillCategory_id' => '1'],
+            ['name' => 'Синтезировать научные и технологические тезисы из разрозненных данных',  'skillCategory_id' => '1'],
+            ['name' => 'Желание развиваться и развивать науку и технику',  'skillCategory_id' => '1'],
+            ['name' => 'Умение работать не только головой, но и руками',  'skillCategory_id' => '1'],
+            ['name' => 'Умение работать в команде и нести ответственность за свою часть проекта',  'skillCategory_id' => '1'],
+            ['name' => 'Знание методов обращения с отходами',  'skillCategory_id' => '1'],
+            ['name' => 'Навыки работы с перерабатывающим оборудованием',  'skillCategory_id' => '1'],
+            ['name' => 'Основы обогащения минерального сырья',  'skillCategory_id' => '1'],
+            ['name' => 'Навыки работы в любых графических редакторах',  'skillCategory_id' => '1'],
+            ['name' => 'Знание английского языка на уровне «Intermediate»',  'skillCategory_id' => '1'],
+            ['name' => 'MS Word',  'skillCategory_id' => '1'],
+            ['name' => 'MS Excel',  'skillCategory_id' => '1'],
+            ['name' => 'MS PowerPoint',  'skillCategory_id' => '1'],
+            ['name' => 'Курс минералогии',  'skillCategory_id' => '1'],
+            ['name' => 'Курс физики',  'skillCategory_id' => '1'],
+            ['name' => 'Курс высшей математики',  'skillCategory_id' => '1'],
+            ['name' => 'Умение работать с петрографическим микроскопом',  'skillCategory_id' => '1'],
+            ['name' => 'Знания в области проектирования систем автоматизации',  'skillCategory_id' => '1'],
+            ['name' => 'CodeSys',  'skillCategory_id' => '1'],
+            ['name' => 'Знания в области создания интегрированных систем управления',  'skillCategory_id' => '1'],
+            ['name' => 'Знание основ программирования и алгоритмизации',  'skillCategory_id' => '1'],
+            ['name' => 'Верстка на языке HTML/CSS',  'skillCategory_id' => '1'],
+            ['name' => 'Разработка прототипа сайта (figma)',  'skillCategory_id' => '1'],
+            ['name' => 'Разработка бизнес-моделей',  'skillCategory_id' => '1'],
+            ['name' => 'CAE',  'skillCategory_id' => '1'],
+            ['name' => 'Nastran',  'skillCategory_id' => '1'],
+            ['name' => 'Эрудиция по вопросам медицины',  'skillCategory_id' => '1'],
+            ['name' => 'Знание медико-биологических требований и санитарных норм качества пищевой продукции',  'skillCategory_id' => '1'],
+            ['name' => 'Знание системы менеджмента безопасности пищевой продукции ',  'skillCategory_id' => '1'],
+            ['name' => 'Знание пищевой микробиологии',  'skillCategory_id' => '1'],
+            ['name' => 'Знание системы менеджмента безопасности пищевой продукции',  'skillCategory_id' => '1'],
+            ['name' => 'Умение работать: с химической посудой',  'skillCategory_id' => '1'],
+            ['name' => 'Знания ГОСТовских методик определения характеристик масел',  'skillCategory_id' => '1'],
+            ['name' => 'Работа со спецоборудованием',  'skillCategory_id' => '1'],
+            ['name' => 'Химическими веществами',  'skillCategory_id' => '1'],
+            ['name' => 'Работа с технической, нормативной, научной и патентной  литературой',  'skillCategory_id' => '1'],
+            ['name' => 'Умение работать: с химической посудой, спецоборудованием, химическими веществами, с технической литературой',  'skillCategory_id' => '1'],
+            ['name' => 'Знание физико-химии наночастиц',  'skillCategory_id' => '1'],
+            ['name' => 'Наноматериалов',  'skillCategory_id' => '1'],
+            ['name' => 'Знание органической химии, химии полимеров',  'skillCategory_id' => '1'],
+            ['name' => 'Знание химии поверхностных явлений и дисперсных систем',  'skillCategory_id' => '1'],
+            ['name' => 'Знание физико-химии наночастиц, наноматериалов.',  'skillCategory_id' => '1'],
         ]);
+
         // DB::table('skill_categories')->insert([
         //             'name' => 'Навыки',
         //         ]);
@@ -1369,6 +1322,858 @@ id ФИО учеников Наименование предмета Посещ�
 ',
             'state_id' => '1',
             'supervisors' => 'Аношко Алексей Федорович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка проекта введения на улично-дорожной сети приоритетного движения городского маршрутного пассажирского транспорта общего пользования на примере г. Иркутска',
+            'places' => '15',
+            'goal' => 'Повышение качества транспортных услуг для населения города за счет приоритетного комплексного развития транспорта общего пользования (снижение затрат времени на совершение ежедневных регулярных поездок пассажиров маршрутного транспорта за счет предоставления ему приоритета при движении по улично-дорожной сети и стимулирования отказа от использования индивидуальных автомобилей)',
+            'description' => 'Высокий в настоящее время и продолжающий увеличиваться уровень автомобилизации (количество автомобилей на 1 тысячу жителей) приводит к возникновению транспортных проблем для жителей и гостей крупных городов. Это прежде всего возникновение заторов (пробок), что приводит к увеличению времени и затрат на поездки, транспортной усталости, снижает безопасность дорожного движения, обуславливает повышенные выбросы вредных веществ. Это усугубляется еще и отставанием развития транспортной инфраструктуры: улицы, дороги, остановочные пункты, транспортно-пересадочные узлы и т.п. В этих условиях в крупных городах необходимо разработать мероприятия по решению вышеуказанных проблем. Среди большого комплекса мер важнейшее значение будет иметь предоставление приоритета на улицах городов для маршрутного пассажирского транспорта общего пользования. Очень важно проводить это в сочетании с политикой стимулирования отказа от использования индивидуального транспорта для ежедневных поездок прежде всего по трудовым целям',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: инструменты поиска информации по теме исследования; основные требования к представлению результатов проекта; особенности основных и смежных ролевых позиций.
+Умения: формулировать цели и задачи исследования; планировать и организовывать свою деятельность на основе приоритетов и поставленных целей; использовать инструменты поиска информации; выделить из массива информации ключевые моменты; решать задачи в соответствии с ролевой позицией, переключиться на свою смежную ролевую позицию.
+Навыки: формулирования запроса на поиск новых знаний и информации; анализа информации с целью выделения требуемого знания и формирования комплексного понимания предмета изучения; выполнения системного анализа информации по теме проекта, выделения «дефицитов» знаний и формулирования запроса на поиск новой информации; презентации результатов проекта; самоанализа и оценки личного вклада в достигнутые результаты; социального взаимодействия как с членами команды, так и с внешними стейкхолдерами
+',
+            'product_result' => 'Предложения для городских властей по введению приоритетного движения на улично-дорожной сети для маршрутного пассажирского транспорта общего пользования, основанные на исследовании характеристик транспортных и пассажирских потоков',
+            'state_id' => '1',
+            'supervisors' => 'Колганов С.В.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка цифровых моделей транспортной инфраструктуры города и агломерации',
+            'places' => '15',
+            'goal' => 'Повышение качества транспортного планирования городских агломераций на основе разработки цифровых моделей транспортной инфраструктуры',
+            'description' => 'Одной из основных проблем формирования устойчивых городов и их агломераций является отсутствие качественного транспортного планирования в связке с территориальным планированием. В связи с этим необходимо решение ряда комплексных задач, связанных с освоением современных инструментов в области транспортного планирования и технологий учета влияния характеристик использования городских территорий на формирование транспортного спроса. Рассматриваемый проект на целен на разработку подходов по повышению скорости и качества задач интегрированного территориального и транспортного планирования с применением транспортного моделирования',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Разработка транспортной модели Иркутска и Иркутской агломерации (хоз. договорные работы в области транспортного планирования и организации дорожного движения)',
+            'study_result' => 'Знания: инструменты поиска информации по теме исследования; основные требования к представлению результатов проекта; особенности основных и смежных ролевых позиций.
+Умения: формулировать цели и задачи исследования; планировать и организовывать свою деятельность на основе приоритетов и поставленных целей; использовать инструменты поиска информации; выделить из массива информации ключевые моменты; решать задачи в соответствии с ролевой позицией, переключиться на свою смежную ролевую позицию.
+Навыки: формулирования запроса на поиск новых знаний и информации; анализа информации с целью выделения требуемого знания и формирования комплексного понимания предмета изучения; выполнения системного анализа информации по теме проекта, выделения «дефицитов» знаний и формулирования запроса на поиск новой информации; презентации результатов проекта; самоанализа и оценки личного вклада в достигнутые результаты; социального взаимодействия как с членами команды, так и с внешними стейкхолдерами
+',
+            'product_result' => 'Предложения по развитию подходов к оценке транспортного моделирования и оценке транспортного спроса',
+            'state_id' => '1',
+            'supervisors' => 'Левашев А.Г.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка проекта совершенствования методики расчета цены муниципального контракта при осуществлении закупок в сфере регулярных перевозок пассажиров на примере г. Иркутска',
+            'places' => '15',
+            'goal' => 'Совершенствование методики расчета начальной (максимальной) цены контракта (НМЦК), а также цены контракта, заключаемого с единственным поставщиком (подрядчиком, исполнителем), для закупок в сфере регулярных перевозок пассажиров на основе учета технико-эксплуатационных параметров маршрутов перевозчика, а также создание соответствующего программного продукта',
+            'description' => 'Начальная (максимальная) цена контракта (НМЦК) — это предельное значение цены, которое указывается в извещении и документации о проведении закупки с приглашением принять в ней участие. Заказчик обязан в полной мере обосновать цену, чтобы провести закупку. Менять условия уже заключенного контракта в большинстве случаев нельзя. Но очень часто при проведении расчета НМЦК возникают проблемы. Первое, цена может быть занижена. Это может привести к тому, что процедура закупки просто не состоится, так как никто не будет заключать контракт себе в убыток. Если такой контракт все-таки будет заключен, то это будет недобросовестный перевозчик, который не выполнит условия контракта по заявленной цене, либо будет занижено качество поставляемого товара, или предоставляемых услуг. Второе, может возникнуть ситуация, когда НМЦК, наоборот, будет завышена. Это в свою очередь приведет к неэффективному расходу средств бюджета. Третье, стоимость устанавливается некорректно, из-за технических проблем (ошибок в расчетах; неправильном использовании положений методических рекомендаций; ошибок при анализе рынка, когда он проанализирован не полностью; использовании некорректных исходных данных)',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: характеристик подвижного состава и методики расчета и технико-эксплуатационных показателей на регулярных маршрутах.
+Навыки: проведения обследования пассажиропотоков и расчёта технико-эксплуатационных показателей на регулярных маршрутах; владения методикой обработки результатов исследования; составления базы данных по результатам обследования пассажиропотоков и разработки программного продукт; владения методикой расчёта НМЦК
+',
+            'product_result' => 'Отчет и программный продукт с исходными данными по регулярным маршрутам для муниципальных властей по расчету начальной (максимальной) цены контракта, а также цены контракта, заключаемого с единственным поставщиком, для закупок в сфере регулярных перевозок пассажиров',
+            'state_id' => '1',
+            'supervisors' => 'Яценко С.А.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Повышение углеродной нейтральности автомобилей с дизельными двигателями и их эксплуатационные свойства',
+            'places' => '15',
+            'goal' => 'Снижение выбросов вредных веществ и диоксида углерода с выбросами автомобильных двигателей',
+            'description' => 'Снижение выбросов вредных веществ и диоксида углерода с отработавшими газами является серьезной проблемой современности. Переход на электротранспорт в целом в настоящий момент не решает проблему снижения выбросов диоксида углерода, т.к. многие станции по выработке электроэнергии являются тепловыми, работающими на углеводородном топливе или каменном угле. Одним из путей снижения техногенной нагрузки в переходном периоде является применение возобновляемых топлив, которые могут быть растительного происхождения, а также являются продуктом утилизации бытовых отходов и др. При этом углеродный баланс нарушается меньше, а экологическая составляющая повышается.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: методики выполнения расчетов двигателей внутреннего сгорания; влияния рабочих процессов на динамику двигателя и на технико-экономические показатели работы
+Умения: проводить испытания двигателей и автомобилей; проводить экспериментальные исследования
+Навыки: расчета параметров технического состояния транспортных средств и сравнение их с требованиями нормативных правовых документов в отношении технического состояния транспортных средств; определения качества технологических жидкостей и эксплуатационных материалов
+',
+            'product_result' => 'Топливные композиции (состав возобновляемых топлив); экспериментальные данные в виде отчета и статьи с полученными результатами ',
+            'state_id' => '1',
+            'supervisors' => 'Кривцов Сергей Николаевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка конструкции стенда для исследования характеристик шин в дорожных условиях',
+            'places' => '15',
+            'goal' => 'Разработка конструкции стенда для исследования характеристик шин в дорожных условиях для создания алгоритма управления антиблокировочной системой (АБС) колёсных транспортных средств (КТС).',
+            'description' => 'Безопасность КТС во многом определяется сложными электронными и мехатронными системами, которые широко используются в современных автомобилях. Одной из таких систем является АБС, принцип работы которой построен на поддержании допустимого скольжения колеса в области максимального коэффициента сцепления шины автомобильного колеса с поверхностью дороги без его снижения в область неустойчивости КТС. Изменение коэффициента сцепления шины с опорной поверхностью от изменения проскальзывания колеса является основной зависимостью, в соответствии с которой осуществляется управления АБС. Однако, эта зависимость в значительной степени меняется от типа опорной поверхности, формы протектора шины, её материала и т.п. Применение аналитических методов для синтеза алгоритма управления АБС весьма проблематично, в связи с тем, что объект управления в точке экстремума теряет устойчивость, таким образом правее максимума управление в обычном смысле становится невозможным. В процессе движения КТС невозможно точно определить линейную скорость его кузова, а соответственно и проскальзывание колёс, что затрудняет определение коэффициента сцепления. Если довести колесо до момента предблокирования, возникнет существенное снижение бокового коэффициента сцепления, и, как следствие, потеря устойчивости КТС. Особенно это опасно на покрытии с различным коэффициентом сцепления по боковым колёсам КТС. Всё это приводит к тому, что возникает необходимость разработки алгоритма распознавания типа опорной поверхности под каждым колесом КТС и его управления. Компания Bosch, являющаяся лидером в разработке мехатронных систем, ведут работы по созданию алгоритма действий по калибровке систем АБС без изучения непосредственно взаимодействия шины, используя какие-то пороговые коэффициенты. Отечественными компаниями, такими, как Группа ГАЗ, АвтоВАЗ, и научными организациями ведутся работы по исследовании процесса взаимодействия автомобильного колеса с эластичной шиной на различных опорных поверхностях (сухой асфальт, мокрый, лед, снег и т.п). Результаты этих исследований позволят построить математический аппарат алгоритма адаптивного управления АБС с поддержанием удовлетворительной управляемости КТС. Для решения этой задачи необходимо разработать стенд для исследования характеристик шин в дорожных условиях.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Ориентировочно грант РНФ, заявка № 22-79-00166, зарегистрирована: 09.03.2022 г.; электронный документ подписан: 10.03.2022 г. Совместно с кафедрой «Автомобили и тракторы» Института Транспортных систем, НГТУ им. Р.Е. Алексеева',
+            'study_result' => 'Знания: устройства и принципа работы современных мехатронных систем активной безопасности КТС; устройства и принципов работы дополнительного технологического и испытательного оборудования;
+рациональных методов эффективной эксплуатации, а также технологических процессов поддержания и восстановления работоспособности подвижного состава автотранспортных средств, их агрегатов, механизмов, узлов.
+Умения: разрабатывать структурные и кинематические схемы систем технологического и испытательного оборудования; проводить диагностирование и контроль технического состояния мехатронных систем подвижного состава автотранспортных средств.
+Навыки: проведения испытаний электронных систем КТС; проведения контроля технического состояния и диагностики подвижного состава автотранспортных средств, их агрегатов, механизмов, узлов.
+',
+            'product_result' => 'Комплект конструкторской документации для создания опытного образца стенда для исследования характеристик шин в дорожных условиях',
+            'state_id' => '1',
+            'supervisors' => 'Яньков Олег Сергеевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка программного комплекса для управления диагностическим гибридным стендом с беговыми барабанами',
+            'places' => '15',
+            'goal' => 'Разработка программного комплекса (ПК) для регистрации, контроля, обработки и сохранения диагностической информации, полученной при испытании колёсных транспортных средств(КТС) на стенде с беговыми барабанами, а также для управления электронными системами стенда.',
+            'description' => 'В настоящее время диагностику и контроль технического состояния как традиционных, так и беспилотных КТС, в том числе с электрическими и гибридными силовыми установками, с автоматизированными агрегатами и интеллектуальными системами осуществляют при помощи сканеров и, как правило, в дорожных условиях. Однако, исследования, проведённые ранее, убедительно показывает наличие системных проблем при определении их технического состояния. Обусловлено это во многом тем, что уровень конструктивной сложности традиционных и беспилотных КТС непрерывно растет. При этом требования к безопасности КТС постоянно ужесточаются. Поэтому качество контроля технического состояния КТС во многом определяет безопасность автомобильного транспорта. Для контроля технического состояния КТС давно уже недостаточно применения электронных сканеров, поскольку они не дают полного объема необходимой информации: о безопасности, о техническом состоянии их агрегатов и систем, о мощностных характеристиках, о техническом состоянии ходовой части и подвески, а также об эффективности работы их интеллектуальных систем.
+Для эффективного контроля современных КТС требуется наукоемкое оборудование, способное обеспечивать контролируемым КТС заданные тестовые режимы – «разгон», «торможение», «боковой занос», «движение под нагрузкой» и пр. Использовать для этих целей современные стенды нет возможности по причине того, что они морально устарели, либо имеют очень высокую стоимость. К тому же практически все современные стенды являются зарубежными. Существующие стенды для контроля КТС имеют ограниченный функционал. Для качественного контроля КТС измерение силовых и кинематических параметров необходимо проводить индивидуально на каждом колесе колёсных транспортных средств с достаточной точностью. Для этого необходимо создать корректные тестовые воздействия, при которых колёсное транспортное средство на стенде будет функционировать как в реальных дорожных условиях. Для решения вышеперечисленных проблем на кафедре Автомобильного транспорта был разработан и изготовлен опытный образец стенда, представляющий собой диагностическое стендовое оборудование, которое способно реализовать высокоэффективные методы контроля технического состояния современных КТС. Опытный образец имеет сложные механические, электрические и пневматические системы, электронные системы измерения контролируемых параметров и системы управления стендом. Функционирование стенда сопровождается большим количеством контролируемых, измеряемых и управляющих параметров процесса испытания автомобиля, которые должны быть обработаны одновременно. Поэтому для его полноценной эксплуатации остро стоит вопрос о разработке ПК, способного управлять стендом, а также регистрировать, контролировать, обрабатывать и сохранять диагностическую и контрольную информацию, полученную при испытании КТС.
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Ориентировочно грант РНФ, заявка № 22-79-00166, зарегистрирована: 09.03.2022 г.; электронный документ подписан: 10.03.2022 г.',
+            'study_result' => 'Знания: устройства и принципа работы средств технического диагностирования; устройства и принципов работы дополнительного технологического оборудования; рациональных методов эффективной эксплуатации, а также технологических процессов поддержания и восстановления работоспособности подвижного состава автотранспортных средств, их агрегатов, механизмов, узлов.
+Умения: разрабатывать структурные, электрические и кинематические схемы систем технологического оборудования; проводить диагностирование и контроль технического состояния подвижного состава автотранспортных средств.
+Навыки: проведения испытаний электронных систем технологического оборудования; проведения контроля технического состояния и диагностики подвижного состава автотранспортных средств, их агрегатов, механизмов, узлов.
+',
+            'product_result' => 'Комплекс программ (ПК), входящий в состав диагностического оборудования.',
+            'state_id' => '1',
+            'supervisors' => 'Яньков Олег Сергеевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка стенда и методики для исследования смазывающих свойств нефтепродуктов',
+            'places' => '15',
+            'goal' => 'Изучение смазывающих свойств нефтепродуктов и разработка методики исследования смазывающих свойств нефтепродуктов',
+            'description' => 'Все знают, что смазочные материалы изменяют свои характеристики в процессе работы, так как оно подвергается высокому давлению, температуре и многим другим факторам. На сегодняшний день производство смазочных материалов происходит одновременно с совершенствованием машин. В связи с современной тенденцией понижения выбросов вредных веществ в окружающую среду, а также экономии смазочных материалов выдвигают жесткие требования к качеству смазочных материалов.
+Смазочные материалы в машинах выполняют множество ролей: уменьшение и защиту от сухого трения, защита от возникновения коррозии, за счет антикоррозионных присадок, охлаждение трущихся деталей и вывод продуктов износа.
+В наше время, существует множество различных брендов смазочных материалов, обладающих различными противозадирными и противоизносными свойствами. Поэтому для различных типов машин с различными свойствами среды, подходят разные виды смазочных материалов с разными присадками.
+Поэтому существует проблема – снижение износа поверхностей, подвергающихся трению и нагрузкам. Это позволит продлить срок эксплуатации деталей механизмов, сделает их более долговечными и надежными. В ряде случаев смазки применяются не только для снижения износа, но  и для предотвращения трения и заклинивания смежных поверхностей. Благодаря своей пластичности и составу эти мазки защищают от проникновения агрессивных веществ, газов и паров. Также практически все консистентные смазки отличаются антикоррозионными свойствами и т.д. Необходимо расширять сырьевую базу и увеличивать рабочий диапазон применения пластичных смазок.
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'ООО «ПолитехГидравлика»',
+            'study_result' => 'Знания: методология исследования
+Умения: исследовать свойства нефтепродуктов
+Навыки: правильно подходить к выбору гсм
+',
+            'product_result' => 'Масла, пластичные смазки, топлива с заданными смазывающими свойствами. Позволит расширить характеристики данных нефтепродуктов.',
+            'state_id' => '1',
+            'supervisors' => 'Стрельников Александр Николаевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Изучение свойств  материалов масляных фильтров
+Изучение свойств  фильтрующих материалов применяемых в масляных фильтрах
+',
+            'places' => '15',
+            'goal' => 'Разработка методики исследования свойств материалов и определение (Изучение) качеств материалов масляных фильтров',
+            'description' => 'В рамках международных стандартов к масляным фильтрам предъявляется немало требований: Фильтрующие элементы к ним должны соответствовать требованиям настоящего стандарта и конструкторской документации (КД), утвержденной в установленном порядке. Полнота отсевов фильтров и фильтрующих элементов должна быть не менее 25 %. Зависимость тонкости отсева от полноты ГОСТ Р 53844—2010 4.3 Ресурс фильтрующего элемента до замены (для 1 категории условий эксплуатации) по ГОСТ 21624 устанавливают в руководстве (инструкции) по эксплуатации автомобиля, при этом он должен быть не менее 250 ч работы двигателя. Гидравлическое сопротивление фильтрующего элемента и перепускного клапана, определяемое из их гидравлических характеристик при заданном расходе масла, должно быть не больше значения, указанного в КД. Фильтрующий элемент должен выдерживать без разрушения повышенный перепад давления (АР), равный не менее 2,0 АР начала открытия перепускного клапана фильтра. Фильтры должны выдерживать без нарушения давление не менее 3 Рном. Давление начала открытия перепускного клапана должно находиться в пределах, установленных требованиями КД. Фильтрующие элементы должны быть вибростойкими к пульсации давления и сохранять работоспособность при температурах от минус 50 °С до плюс 135 °С. Фильтрующие элементы, их уплотнения и другие детали должны быть масло-, бензо-, водостойкими. Материалы, используемые для изготовления фильтров и их элементов, не должны выделять в поток фильтруемого масла составляющих компонентов. 
+В наше время, существует множество различных брендов фильтрующих материалов, обладающих различными свойствами, но не все отвечающие определенным требованиям. Поэтому для различных типов машин работающих в различными средах и на различных режимах, требуются фильтрующие элементы отвечающие определенным требованиям
+Поэтому существует проблема- подбор фильтрующего элемента отвечающего определенным требованиям
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'ООО «Тимбермаш Байкал»',
+            'study_result' => 'Знания: методология исследования
+Умения: исследовать совйства фильтрующего материала
+Навыки: правильно подходить к выбору фильтрующего элемента
+',
+            'product_result' => 'Полученные результаты исследования позволят правильно подбирать фильтрующий элемент для определенного вида оборудования',
+            'state_id' => '1',
+            'supervisors' => 'Стрельников Александр Николаевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка резонансного виброгрохота',
+            'places' => '15',
+            'goal' => 'Повышение энергоэффективности виброгрохота',
+            'description' => 'В сырьевых и перерабатывающих отраслях промышленности для транспортирования и переработки различных сыпучих и кусковых материалов широко применяются вибрационные транспортно-технологические машины (ВТТМ). Самой представительной группой ВТТМ являются вибрационные грохоты. Традиционные виброгрохоты с дебалансным, кинематическим и электромагнитным приводами имеют невысокие технические и эксплуатационные показатели. Значительная часть вибрационного оборудования, выполняющего данные технологические операции, требует больших затрат энергии. Кроме этого имеется ряд проблем с самой обработкой материалов, в частности разделение и сортировка труднопросеиваемых материалов, самоочистка сит, дезинтеграция агломератов.
+Большинство конструкций современных вибрационных грохотов для возбуждения колебаний используют дебалансные вибраторы и зарезонансный режим работы. В колебательной системе таких машин циркулирует большая реактивная мощность, необходимая для преодоления инерционных сил, что снижает их энергетическую эффективность.
+ Повышение производительности и снижения энергетических затрат вибрационного грохота возможно благодаря явлению резонанса. В резонансном режиме работы вибрационной машины упругие и инерционные силы взаимно уравновешиваются, при этом энергия вибровозбудителя расходуется только на преодоление диссипативных сил, а рабочий орган совершает движение, близкое к собственному. 
+Основной трудностью практического использования резонансных вибрационных машин является высокая чувствительность к изменению технологической нагрузки и параметров колебательной системы. Нелинейность технологической нагрузки препятствует решению проблемы стабилизации резонансного режима работы машин при вынужденных колебаниях даже при помощи средств автоматической подстройки. 
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: расширенные знания в области вибрационной техники
+Умения: умение реализовать теоретические знания в конкретном проекте
+Навыки: навыки работы в творческом коллективе 
+',
+            'product_result' => 'Физическая модель резонансного виброгрохота. Результаты экспериментальных исследований. Методики расчета резонансного виброгрохота. ',
+            'state_id' => '1',
+            'supervisors' => 'Зедгенизов В.Г.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Исследование проблем прочности деталей, изготовленных с применением цифровых производственных технологий',
+            'places' => '15',
+            'goal' => '1)Разработать образцы для исследования проблем прочности деталей, выполненных с помощью 3D – печати. 2)Сформировать корректные расчётные схемы авиационного узла в цифровом формате, позволяющие получить достоверную оценку параметров прочности и жёсткости узла ',
+            'description' => 'Передовые технологии производственных процессов невозможны без их цифровизации. Это актуально для авиастроения, автомобилестроения, энергетической отрасли, приборостроения, медицины и др. Многие задачи в этих случаях позволяют решить аддитивные технологии (3d-печать). Они позволяют получать детали практически любой геометрической формы и габаритов. Появилась возможность трансформации сборочной единицы в деталь. В противовес традиционным вычитающим и формообразующим технологиям с помощью 3d-печати деталь «выращивают». Весь этот процесс определяется цифровой моделью изготавливаемой детали. Одной из наиболее привлекательных технологий 3d-печати является FDM-печать. Она применяется как в прототипировании, так и при изготовлении рабочих деталей. Однако, чтобы получить несущую деталь с помощью FDM-печати, нужно суметь рассчитать её на прочность. А для этого необходимо знать как на прочность влияют свойства материала печати, параметры печати, шаблон печати, процент заполнения детали и т.д. Ответы на эти вопросы можно получить, научившись работать на 3D-принтере; изучив поведение деталей, изготовленных на нём, под действием нагрузок. Для изучения поведения деталей нужны натурные и численные эксперименты. Натурные эксперименты, как правило, проводят на образцах. Значит надо изготовить с помощью FDM-печати образцы и провести их испытание на специальном оборудовании. Как правило, в качестве материала для FDM-печати применяют термопластики, композитные термопластики. Поскольку, требований к форме таких образцов пока нет, их надо разработать. Численные эксперименты требуют формирования адекватных моделей в CAD/CAE – системах (Femap, ANSYS, FIDESYS, Siemens NX, КОМПАС-3D, и др.). Под «адекватными моделями» понимаются модели, которые достоверно отображают в цифровой среде поведение реальной детали под действием реальной нагрузки. В частности, необходимо построить в цифровой среде модель натурных испытаний FDM-образцов.
+Однако, исследование прочности деталей, изготовленных с помощью традиционных технологий, не утратило своей актуальности. Основная часть конструкции самолёта образована деталями, изготовленными с помощью таких технологий. Конструкция самолёта представляет собой весьма сложную и многокомпонентную структуру, взаимное влияние между её элементами (деталями) непростое и меняется в зависимости от изменения режима работы конструкции (режима полёта, наземного режима). При этом должна обеспечиваться их прочность. Случаев нагружения одной и той же детали несколько и не все они являются явными. Следовательно, без применения цифровизации процессов исследования в сочетании с натурными испытаниями получить ответы на вопросы о причинах разрушения такой детали и разработке рекомендаций для её оптимизации очень сложно или невозможно. Под цифровизацией процессов исследования понимается применение CAD/CAE – систем. В частности, необходимо построить в цифровой среде достоверную модель реального объекта исследования; на основе её анализа сделать заключение о причинах потери прочности и дать рекомендации об устранении этих причин.
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Иркутский авиационный завод',
+            'study_result' => 'Знания: об аддитивных технологиях применительно к изготовлению несущих деталей, с заданными механическими характеристиками; о методах расчёта авиационных деталей на прочность
+Умения: работать на 3d-принтере; определять значения параметров напряжённо-деформированного состояния реальных деталей
+Навыки: проведения натурных экспериментов для определения характеристик прочности и жёсткости; построения цифровых моделей исследуемых деталей
+',
+            'product_result' => '1. Образцы для экспериментальных исследований характеристик прочности и жёсткости деталей, изготовленных с применением FDM-печати. 2. Формирование электронной модели узла, позволяющей системно оценить параметры прочности и жёсткости с целью оптимизации конструкции узла. Фиксация материала осуществляется в форме электронной модели, сформированной в автоматизированной среде инженерного анализа и соответствующей пояснительной записке с соответствующими описаниями',
+            'state_id' => '1',
+            'supervisors' => 'Распопина Вера Борисовна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Анализ инноваций проектирования и производства беспилотных систем.',
+            'places' => '15',
+            'goal' => 'Проектирование и анализ технологических процессов производства БПЛА',
+            'description' => 'В настоящее время в мире в различные производства внедряется большое количество инноваций. В России внедрение осложняется необходимостью импортозамещения. К различным российским компаниям, в основном связанным с оборонным и ресурсодобывающим секторами применяются санкции, причем по продуктам, на которых в компаниях реализованы различные технологические процессы основной деятельности, В частности, это касается систем инженерного анализа и технически сложного оборудования и комплектующих. На все это накладывается  необходимость завершения текущих проектов в приемлемые сроки.
+К подобным инновациям можно отнести:
+Новые производственные технологии, к которым, например можно отнести моделирование, аддитивные технологии, которые  позволяют сократить время от идеи до реального моделирования, сократить стоимости изготовление деталей.
+Внедрение новых материалов (композиционные материалы) которые зачастую требуют создания новых специфических технологических процессов и уникального оборудования.
+Внедрение элементов искусственного интеллекта, работы с большими данными и облачные сервисы влекут за собой повышение эффективности эксплуатации изделий и производственного оборудования, повышение производительности труда, сокращение времени на поиск нужных решений
+Виртуальная и дополненная реальность позволяет на этапе электронного моделирования улучшить структурирование и качество производственных операций, сократить количество 
+дефектов за счет предварительной проработки производственных процессов
+Робототехника, сенсорика и автоматизация проектирования и проведения технологических процессов  позволяют сократить, временя производства изделий, получать стабильные результаты выполняемых операций без присутствия человека.
+Таким образом, в  рамках проекта, в зависимости от состава команды и ее возможностей будут реализовываться следующие направления:
+беспилотные системы;
+аддитивные технологии;
+оборудование инновационных технологических процессов;
+технология композиционных материалов;
+робототехника;
+автоматизированные системы;
+контроллеры и их программирование. 
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знать: основы  принципов построения технологических процессов основных производств и изделий и тенденции их развития; основные программные продукты подготовки и разработки технологических процессов и изделий. 
+Уметь: проводить анализ перспективных технологических процессов и изделий
+Владеть навыками работы в программных продуктах, достаточных для проведения работ по анализу и подготовке технологических процессов и разработке изделий. 
+',
+            'product_result' => 'Подготовленная заявка участия в конкурсе на получение финансирования. ',
+            'state_id' => '1',
+            'supervisors' => 'Дебердеев Евгений Масутович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка воздухо-воздушного теплообменника СКВ современного самолета',
+            'places' => '15',
+            'goal' => 'Разработка рекомендаций по совершенствованию конструкции воздухо-воздушных теплообменников СКВ на основе инженерных расчетов теплообменных аппаратов с целью повышения их  эффективности,  надежности и эксплуатационного ресурса',
+            'description' => 'В настоящее время вопросам теплообмена и его интенсификации в теплообменниках посвящены многие теоретические и экспериментальные работы. Однако усовершенствованные конструкции новых поколений авиационных турбин требуют поиска новейших более конструктивных решений, которые обеспечивали бы увеличение ресурса существующих двигателей и улучшение характеристик перспективных двигателей новых поколений.
+В процессе проектирования рассчитывают массовые расходы теплоносителей, определяют температуры нагревающей и охлаждающей среды, коэффициенты теплопередачи и поверхность теплообмена и эффективность данного теплообменного аппарата, рассчитываются потери давления в аппарате. 
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Иркутский авиационный завод',
+            'study_result' => 'Знать: основные понятия и определения тепломассообмена; методы проведения инженерных расчётов теплообменных аппаратов.
+Уметь: формулировать математические задачи для теплообменных аппаратов в дифференциальной и интегральной формах.
+Владеть навыками и методами расчетов теплообменных аппаратов.
+',
+            'product_result' => 'Проект воздухо-воздушного теплообменника СКВ на основе инженерных расчетов теплообменных аппаратов',
+            'state_id' => '1',
+            'supervisors' => 'Молокова Светлана Васильевна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Прогнозирование времени задержки прибытия авиационных рейсов с помощью машинного обучения',
+            'places' => '15',
+            'goal' => 'Разработка математической, обучаемой предиктивной модели, позволяющей по различным данным о текущей погоде, состоянию и загруженности аэропорта, и др. предсказать возможную задержку прибытия авиационного рейса и причины ее возникновения. ',
+            'description' => 'В настоящее время ведутся активные работы по части применения методов машинного обучения и искусственного интеллекта для различных задач предсказательной аналитики. Крупный международный аэропорт в год может принять до 15 миллионов пассажиров, обслужить до 160 тысяч взлетно-посадочных операций. В таких условиях особенно остро стоит вопрос автоматизации процессов распределения воздушного и наземного трафика, регламентных работ и прочих функций с целью повышения эффективности и снижения аварийности. Генерирующиеся в процессе работы аэропорта массивы данных могут стать базой для построения различных предиктивных моделей, которые обладают высокой предсказательной силой. Результаты работы этих моделей могут быть в свою очередь использованы для информирования персонала аэропорта о возможных проблемах, пассажиров о возможных неудобствах и для понимания необходимых путей для решения данных проблем',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Международный Аэропорт Иркутск',
+            'study_result' => 'Знать: основные модели машинного обучения, методы их построения и валидации результатов
+Уметь: работать с большими данными (Big Data) и применять полученную в ходе анализа информацию для решения прикладных инженерных задач
+Владеть навыками и методами создания и тренировки различных моделей машинного обучения 
+',
+            'product_result' => 'Математическая модель прогнозирования времени задержки прибытия авиационных рейсов ',
+            'state_id' => '1',
+            'supervisors' => 'Груздев Александр Сергеевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Оборудование для наземной эксплуатации авиационной техники (только для ЭЛб19)',
+            'places' => '15',
+            'goal' => 'Разработка аванпроекта оборудования для наземной эксплуатации авиационной техники (авиационных систем) с применением методов и средств инженерного анализа',
+            'description' => 'Данный проект направлен на совершенствование технологии эксплуатации авиационной техники. частности, предполагается разработка проекта средств наземной эксплуатации (гидростендового и иного оборудования) с улучшенными характеристиками. Наземное оборудование – неотъемлемая часть комплекса для эксплуатации любого воздушного судна. От того, насколько наземное оборудование будет соответствовать современным требованиям по функциональности, эргономике, стоимости, и ряду других параметров, зависит в конечном счёте и стоимость эксплуатации самой авиационной техники, и, как следствие, её конкурентность на авиационном рынке. ',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'АО «Авиакомпания «Ангара»',
+            'study_result' => 'Знания: о методах анализа систем по различным критериям
+Навыки: выполнения схем  и моделей систем.
+',
+            'product_result' => 'Модель или схема наземного оборудования (гидростенда или иного оборудования).',
+            'state_id' => '1',
+            'supervisors' => 'Бобарика Игорь Олегович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Оптимизация авиационных гидросистем с учётом технологии их обслуживания при эксплуатации',
+            'places' => '15',
+            'goal' => 'Обоснование необходимости и определение путей модернизации авиационных систем с учётом эксплуатационной истории с применением современных средств инженерного анализа и предиктивной аналитики',
+            'description' => 'Данный проект направлен на совершенствование авиационной техники, характеристик её бортовых систем. В частности, рассматривается возможность оптимизации разветвлённых трубопроводных систем, а это все гидравлические, топливные, пневматические системы, без которых не может существовать ни один современный самолёт. Все системы тесно сплетены между собой, а их характеристики обеспечивают характеристики всего самолёта в целом. Знать бортовые системы, принципы их работы, видеть возможности для их совершенствования и модернизации, разрабатывать и предлагать конкретные решения – значит быть настоящим авиационным инженером!',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'АО «Авиакомпания «Ангара»',
+            'study_result' => 'Знания: о методах анализа систем по различным критериям
+Навыки: выполнения многофакторной оптимизации систем.
+',
+            'product_result' => 'Модель бортовой системы с элементами многофакторной оптимизации.',
+            'state_id' => '1',
+            'supervisors' => 'Бобарика Игорь Олегович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Цифровой двойник цеха агрегатно-сборочных работ',
+            'places' => '15',
+            'goal' => 'Создание твердотельных 3D моделей, предназначенных для создания виртуальной модели цеха агрегатно-сборочных работ, используемых для изготовления авиационных деталей',
+            'description' => 'Создание цифрового двойника производственного помещения в образовательном сегменте позволит обеспечить доступные инструменты для пользователей и дополнить обучающие программы интерактивным визуальным контентом. Погружение студентов в производственную атмосферу, без физического присутствия на производстве.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знать основные технологические процессы изготовления авиационных деталей
+Уметь составлять технологические процессы
+Знание основ конструкции сборочных приспособлений
+
+Знать основные инструменты создания 3D моделей в системе NX
+Уметь использовать инструменты моделирования с заданием физико-механических свойств материала 
+',
+            'product_result' => 'Электронные модели авиационных узлов собираемые в сборочных приспособлениях, которые в дальнейшем будут интегрированы в программный модуль цифрового двойника',
+            'state_id' => '1',
+            'supervisors' => 'Фокин Игорь Владимирович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Конструкция и система управления навесными модулями настольного станка с ЧПУ',
+            'places' => '15',
+            'goal' => 'Разработка навесного модуля для работы тангенциальным ножом илт терморезака/нихромового ножа резки композитных материалов и системы управления ими при реализации программы импортозамещения',
+            'description' => 'Разработанный проект должен предполагать получение новых возможностей для существующего средства технологического оснащения - настольного станка. Это возможность установить новый инструмент, разработать систему для его управления.',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Проект "Твой ход", направление "Двигаю прогресс"',
+            'study_result' => 'Знания: основы проектирования типовых узлов и систем для станков с ЧПУ
+Умения: выполнять конструирование узлов механических приводов и электрических плат, в том числе и с помощью ЭВМ
+Навыки: прототипирования и моделирования
+',
+            'product_result' => 'Модель, макет',
+            'state_id' => '1',
+            'supervisors' => 'Казимиров Денис Юрьевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Предварительная оценка машинного времени обработки заготовительно-штамповочной оснастки',
+            'places' => '15',
+            'goal' => 'Создание классификатора изделий по геометрическим особенностям, влияющим на машинное время обработки заготовительно-штамповочной оснастки, и вычисление соответствующих поправочных коэффициентов',
+            'description' => 'Заготовительно-штамповочное производство в авиационной промышленности имеет немаловажное значение, так как листовая штамповка используется для изготовления многих деталей. Оснастка заготовительно-штамповочного производства уникальная для каждого изделия. Внесение изменений в конструкцию детали требует изменения модели оснастки и изготовления нового образца, часто в кратчайшие сроки. Внесение нового приоритетного изделия в цеховое расписание требует его перестроения, для чего необходимо знать машинное время. Традиционно, машинное время вычисляется при помощи встроенных функций Unigraphics NX, но для этого требуется написание управляющей программы, что занимает значительное время. Для повышения гибкости производства целесообразно применить метод предварительной оценки машинного времени на основе скорости удаления материала. Для более точного приближения результата к реальному необходимо ввести коэффициенты, учитывающие геометрические особенности изделия и динамические характеристики оборудования, что требует проведения экспериментальных исследований.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Конкурс «Твой Ход», направление «Двигаю прогресс».
+https://tvoyhod.online/
+',
+            'study_result' => 'Знания: виды продукции, выпускаемой в цехах изготовления заготовительно-штамповочной оснастки, методики оценки машинного времени.
+Умения: работа в среде Unigraphics NX, анализ геометрической информации.
+Навыки: поиск информации, анализ информации с целью выделения требуемого знания, формирование комплексного понимания предмета изучения на основе полученной информации, системный анализ полученной информации, выделение «дефицитов» знаний и формулирование запроса на поиск новой информации.
+',
+            'product_result' => 'Методика оценки машинного времени на основе классификатора изделий и скорости удаления материала, позволяющая в краткие сроки позволить предоставить данные по машинному времени для перестроения цехового расписания',
+            'state_id' => '1',
+            'supervisors' => 'Исаченко Алексей Сергеевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Лопасти воздушного винта из композиционного материала',
+            'places' => '15',
+            'goal' => 'Разработка технологии изготовления лопасти воздушного винта из композиционного материала для водной техники (аэролодка)',
+            'description' => 'Исследование и анализ существующих геометрий лопастей для водной техники (аэролодка). Разработка геометрии лопасти в программной среде Siemens NX. Проектирование специализированной оснастки для изготовления прототипа лопасти из композиционных материалов методом вакуумной инфузии. Изготовление и подготовка оснастки. Создание прототипа лопасти из композиционного материала.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'ООО «ИРКУТ – АЭРО»',
+            'study_result' => 'Знания: основы проектирования типовых узлов и деталей машин; основы проектирования типовых узлов и деталей машин
+Умения: выполнять конструирование типовых узлов и деталей машин, в том числе и с помощью CAD-технологий
+Навыки: выполнения инженерных и компьютерных расчётов, способами представления и анализа результатов; 
+',
+            'product_result' => 'Прототип лопасти воздушного винта из композиционного материала',
+            'state_id' => '1',
+            'supervisors' => 'Чащин Николай Сергеевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка и изготовление лабораторного комплекса и исследование процесса комбинированного формообразования подкреплённых панелей самолётов',
+            'places' => '15',
+            'goal' => 'Опытная отработка импортонезависимой технологии формообразования крупногабаритных панелей сложной формы  ',
+            'description' => 'Панели крыла представляют собой обводообразующие детали с гладкой наружной (аэродинамической) поверхностью. Внутренний набор деталей типа панелей содержит такие конструктивные элементы как карманы, люки с окантовками и подкрепляющие рёбра различных сечений, расположенные в продольном или в поперечном направлениях. 
+По геометрической форме панели и обшивки представляют собой совокупность линейчатых поверхностей с направляющими переменной кривизны, участков двойной и знакопеременной кривизны (зон перегиба) с закруткой сечений.
+Основными технологическими операциями получения требуемой формы деталей является дробеударное формообразование с последующей зачисткой, а так же раскатка и посадка ребер.
+В рамках проектных работ будет разработано, изготовлено и испытано следующее оборудование:
+- лабораторная установка для обработки методами раскатки роликами и посадки;
+- лабораторная установка для дробеударного формообразования и зачистки абразивными лепестковыми кругами.
+Также планируется проведение опытных работ на образцах с целью отработки технологии формообразования подкреплённых панелей
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'ПАО «Электромеханика»',
+            'study_result' => 'Знать: основные технологические процессы формообразования и правки крупногабаритных маложестких деталей.
+Уметь: проектировать специальное оборудование для реализации технологии формообразования и правки крупногабаритных маложестких деталей.
+Навыки: проектирование в Siemens NX; слесарные и сборочные работы.
+',
+            'product_result' => 'Лабораторные стенды для отработки технологии формообразования деталей пита подкреплённых панелей из алюминиевых сплавов',
+            'state_id' => '1',
+            'supervisors' => 'Пашков Александр Андреевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Изготовление корпусных деталей беспилотных летательных аппаратов',
+            'places' => '15',
+            'goal' => 'Разработка технологии изготовления корпусных деталей беспилотных летательных аппаратов',
+            'description' => 'Исследование и анализ существующих корпусных деталей беспилотных летательных аппаратов. Разработка модели корпуса в программной среде Siemens NX. Проектирование специализированной оснастки для изготовления прототипа деталей корпуса из композиционных материалов методом вакуумной инфузии. Изготовление и подготовка оснастки. Создание прототипа детали корпуса.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: основы проектирования типовых узлов и деталей машин; основы проектирования типовых узлов и деталей машин
+Умения: выполнять конструирование типовых узлов и деталей машин, в том числе и с помощью CAD-технологий
+Навыки: выполнения инженерных и компьютерных расчётов, способами представления и анализа результатов; 
+',
+            'product_result' => 'Прототип детали корпуса беспилотных летательных аппаратов',
+            'state_id' => '1',
+            'supervisors' => 'Иванов Юрий Николаевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка оптимальных характеристик конструкции механизма перемещения садовых и строительных грузов весом до 250 кг. ',
+            'places' => '15',
+            'goal' => 'Разработка работающего устройства перемещения грузов',
+            'description' => 'Изготовленное устройство перемещения грузов должно облегчить труд пожилого контингента на дачном участке или строителей при ремонтных и строительных работах с небольшими объёмами работ. Изготовлению должно предшествовать комплекс расчетных и технологических задач, позволяющие обеспечить точное воспроизведение в действующем образце всех заложенных параметров. В рамках проекта будут освоены CAD системы, позволяющие обеспечить точное воспроизведение рассчитанного изделия. Полученные чертежи, с трёхмерной модели, позволят изготовить в металле детали на станках токарно-фрезерной группы. Для этого будет изучен инструмент и станки, подобран материал для изготовления деталей. Изучены критерии и приборы для оценки качества деталей ( шероховатость, размерных допусков и погрешностей формы, определение твёрдости, методы закалки и т.д.).',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: Изучение CAD системы трёхмерного моделирования. Систему допусков и посадок. Методы определения твёрдости материалов и пути их достижения. Знать устройство и возможности металлорежущих станков, методы обработки материалов.
+Умения :Работать в CAD системе трёхмерного моделирования, уметь создавать детали и сборочные единицы. На основе 3D модели создавать чертежи деталей. Для изготовления деталей подбирать необходимое оборудование, инструмент и режимы резания.
+Навыки: Рациональная работа CAD системе. Работа на металлорежущих станках. Работа с приборами оценивающие  качество поверхности.
+',
+            'product_result' => 'Готовое изделие для перемещения грузов',
+            'state_id' => '1',
+            'supervisors' => 'Дрожжин Сергей Николаевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка и изготовление  опытной партии многофункциональных пильных станков на модульном принципе',
+            'places' => '15',
+            'goal' => 'Разработка рабочей и эксплуатационной документации многофункциональных пильных станков,  организация производства ',
+            'description' => 'Многофункциональность станков обеспечивается за счет быстрой смены режущего инструмента (пильные диски для разных материалов), изменение режимов резания, наличие  сменных контейнеров для сбора разных отходов и использования специальных сменных модулей. Модульный принцип реализован в разделении конструкции станка на отдельные модули по технологическим и конструктивным свойствам. Разделение на модули является важной задачей и решается синтезом сложных систем, определения числа оптимальных функций каждого модуля. 
+Производство пильных станков не требует сложных технологий и дорогостоящего оборудования, высокой квалификации рабочих, что подтверждается изготовлением 4х станков силами студентов в рамках выпускной работы. Модульный принцип позволяет распределить изготовление модулей на небольших предприятиях и среди индивидуальных предпринимателей, а общую сборку и испытание проводить на базе лабораторий ИрНИТУ. Расчетная стоимость производства пильного станка составляет на 2021г. 16363руб., что позволяет говорить об возможном получении прибыли при условии стоимости подобных станков на рынке 20-40тыс. руб.. Потребителями станка на рынке в первую очередь являются индивидуальные предприниматели, строительные фирмы, малые предприятия и др.. Для повышения качества, производительности и обеспечения взаимозаменяемости модулей в лаборатории спроектированы и изготовлены специальные сборочные приспособления для каждого модуля.
+Технические решения заложенные в конструкции пильного станка имеют большой потенциал при его использовании и совершенствовании конструкции самого станка
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Патент ИрНИТУ на изобретение №2709064 «Модульный многофункциональный пильный станок» 2019г',
+            'study_result' => 'Знать: основы проектирования станочного оборудования на модульном принципе, технологические процессы изготовления деталей, сборки узлов( модулей) и общей сборки станков.
+Уметь: проектировать станочное оборудование, приспособлений разного назначения.
+Навыки: проектирование в Siemens NX; слесарные и сборочные работы.
+',
+            'product_result' => 'Рабочая конструкторская документация, технология изготовления и готовые станки для реализации',
+            'state_id' => '1',
+            'supervisors' => 'Москвитин Виктор Николаевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка эскизного проекта СВП «Марс 7000», проектирование отдельных узлов и элементов ',
+            'places' => '15',
+            'goal' => 'Создание судов на воздушной подушке для использования в условиях крайнего Севера для нужд нефтегазовой добывающей отрасли ',
+            'description' => 'В ОКБ имени Алексеева г.Нижний Новгород разработаны и изготовлены суда на воздушной подушке разных типов и грузоподъемности. Наиболее эффективным является «Марс2000и3000» Данные аппараты рассчитаны на перевозку 20 или 30 человек. Аппараты в теплое время эксплуатируют на водных акваториях, а в зимнее время на льду и снежном покрове. Они оснащены двумя дизельными двигателями, которые обеспечивают скорость движения 50- 70 км/час.
+Для повышения грузоподъемности и скорости необходимо снижение массы конструкции корпуса и двигателей, а также повышение мощности привода. Важным фактором эффективного использования в условиях крайнего севера возможность эксплуатации при температурах минус 40-50град. Требования заказчика иметь разные модификации аппаратов: пассажирский, грузовой и грузо-пассажирский с грузовой нагрузкой более 5-10Тс.
+В 2021-2022г. автором разработаны два проекта в виде технического предложения «Марс300» и «Марс7000» с турбо вальными газотурбинными двигателями, которые позволяют в два раза увеличить мощности привода, уменьшить массу конструкции, увеличить скорость до 90 км/час, поднять грузоподъемность до 7000кг. Важным достоинством ГТД малый вес, долговечность и высокая надежность при эксплуатации при низких температурах. Конструкция аппаратов относится к сложными ответственным транспортным средствам, включает в себя множество уникальных устройств(редукторы, силовые передачи, системы управления и т.д.). 
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'ОКБ имени Алексеева г.Нижний Новгород',
+            'study_result' => 'Знать: основы проектирования сложных и ответственных конструкций транспортных систем, технологические процессы изготовления деталей, сборки узлов( модулей) и общей сборки.
+Уметь: Разрабатывать  сборочные и деталиировочные чертежи, строить КЭМ 
+Навыки: проектирование в Siemens NX;.
+',
+            'product_result' => 'Рабочая конструкторская документация, технология изготовления элементов конструкций и систем',
+            'state_id' => '1',
+            'supervisors' => 'Москвитин Виктор Николаевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Снежный 3Д принтер',
+            'places' => '15',
+            'goal' => 'Разработка и сборка 3Д принтера способного печатать снегом',
+            'description' => 'В зимний период в Иркутской области выпадает много снега, разработка устройства которое позволит печатать из снега различные объекты практического и художественного смысла',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'ИРНИТУ ректорат',
+            'study_result' => 'Знания: системы ЧПУ, шаговые двигателя
+Умения: Конфигурация систем с ЧПУ
+Навыки: подготовка моделей к 3Д печати, физика процесса 3Д печати
+',
+            'product_result' => 'Прототип 3Д принтера, печатающего снегом',
+            'state_id' => '1',
+            'supervisors' => 'Кононенко Роман Владимирович ',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка бобинной технологии сварки с перемешиванием',
+            'places' => '15',
+            'goal' => 'Опытная отработка технологии сварки трением с перемешиванием с использованием бобинного инструмента (инструмента с двумя заплечиками)  ',
+            'description' => 'Традиционные технологические процессы сварки обладают целым рядом недостатков, которые в свою очередь отсутствует при использовании сварки с трением с перемешиванием (СТП). Особый интерес вызывают современные способы СТП, которые позволяют повысить качество соединений, получаемых с применением этой технологии. Одним из таких способов расширения технологических возможностей СТП является сварка с использованием бобинного инструмента (инструмента с двумя заплечиками).  
+В рамках проектных работ будет спроектированы, изготовлены и испытаны средства технологического оснащения процесса: сварочные приспособления, сварочный инструмент.
+В рамках проекта также планируется проведение опытных работ на образцах с целью отработки технологии бобинной сварки трением с перемешиванием.
+',
+            'difficulty' => '1',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знать: основные технологические особенности сварки трением с перемешиванием
+Уметь: проектировать специальное технологическое оборудование для реализации технологии СТП.
+Навыки: проектирование с использованием программных продуктов САD, CAE; слесарные и сборочные работы.
+',
+            'product_result' => 'Приспособления и инструмент для реализации исследуемой технологии бобинной сварки трением с перемешиванием',
+            'state_id' => '1',
+            'supervisors' => 'Тютрин Николай Орестович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка технологии изготовления алюминиевых труб с внутренним антифрикционным покрытием',
+            'places' => '15',
+            'goal' => 'Опытная отработка импортозамещающей технологии производства алюминиевых труб для производства гильз пневмоцилиндров с повышенными эксплуатационными свойствами рабочей поверхности   ',
+            'description' => 'Алюминиевые трубы для производства гильз пневмоцилиндров используются российскими производителями пневмооборудования, а также приобретаются эксплуатирующими организациями в ремонтных целях. При этом в Российской Федерации такая продукция не производится и приобретается за рубежом (производители – предприятия европейских стран и КНР). Традиционная технология изготовления труб для изготовления гильз пневмоцилиндров – прессование. Она отличается высокой себестоимостью, приводящей к завышенной цене готового продукта. Кроме того, изготовленные таким способом гильзы не имеют износостойкого слоя. В этой связи проект, направленный на создание технологии производства импортозамещающей продукции с повышенным ресурсом путём её изготовления центробежным литьём, является актуальным.
+В рамках работ будет спроектированы, изготовлены и испытаны средства технологического оснащения процесса: вращающаяся изложница, плавильно-разливочный модуль.
+В рамках проекта также планируется производство опытных образцов и испытание их эксплуатационных свойств.
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знать: основные технологические особенности литейных и сварочно-наплавочных технологий
+Уметь: проектировать специальное технологическое оборудование для реализации технологии СТП.
+Навыки: проектирование с использованием программных продуктов САD, CAE; слесарные и сборочные работы.
+',
+            'product_result' => 'Опытная технологическая оснастка для реализации технологии производства алюминиевых труб методом центробежного литья с нанесением антифрикционных покрытий',
+            'state_id' => '1',
+            'supervisors' => 'Тютрин Николай Орестович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Определение показателей качества металлоконструкций, изготавливаемых аддитивными комбинированными технологиями ',
+            'places' => '15',
+            'goal' => 'Опытная отработка  методик и технологий определения показателей качества изделий, изготавливаемых аддитивными методами',
+            'description' => 'Изготовленные с применением аддитивных технологий металлические детали и изделия  могут обеспечить значительное снижение веса и повышение производительности в различных отраслях промышленности. Внедрению аддитивных технологий в производство должно предшествовать решение комплекса технологических задач, позволяющих обеспечить точные и воспроизводимые характеристики изделий. В рамках проекта будут освоены различные методики определения характеристик изделий, а также  основы технологии  их аддитивного производства',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знать: показатели качества металлоконструкций, изготавливаемых аддитивными технологиями и методы их определения
+Уметь: проводить комплекс необходимых исследований для  определения основных характеристик  изделий, полученных 
+Навыки: работ с использованием САПР, приборами и оборудованием для исследований 
+',
+            'product_result' => 'Методики оценки качества изделий при послойном аддитивном выращивании',
+            'state_id' => '1',
+            'supervisors' => 'Астафьева Наталья Анатольевна ',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Обработка поверхности изделий из конструкционных материалов концентрированными источниками нагрева ',
+            'places' => '15',
+            'goal' => 'Получение особых свойств поверхностных слоёв изделий из конструкционных материалов при воздействии концентрированными источниками нагрева',
+            'description' => 'Проблема совершенствования технологических методов упрочнения конструкционных материалов является  актуальной  на сегодняшний день. Данный проект направлен на исследование фазовых и структурных превращений в конструкционных материалах после воздействия концентрированных источников нагрева и разработка комбинированных технологий поверхностного упрочнения с использованием плазменного и лазерного источника, обеспечивающих высокий уровень физико-механических свойств поверхностного слоя. Для этого необходимо провести комплексные исследования взаимосвязи структуры и свойств исследуемых материалов  с различной исходной микроструктурой в зонах лазерного и плазменного воздействия, сформированных при различных вариантах, условиях и энергетических параметрах непрерывного излучения, используемого с целью достижения термического упрочнения, легирования и наплавки.',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знать: методы обработки поверхности изделий из конструкционных материалов концентрированными источниками нагрев, методы исследования структуры и свойств матеоиалов;
+Уметь: проводить комплекс необходимых исследований для  установления взаимосвязей структуры и свойств исследуемых материалов  с различной исходной микроструктурой в зонах лазерного и плазменного воздействия, сформированных при различных вариантах, условиях и энергетических параметрах непрерывного излучения;
+Навыки: работы с  приборами и оборудованием для исследований, оборудованием для упрочнения, легирования и наплавки .
+',
+            'product_result' => 'Комбинированная технология поверхностного упрочнения ( легирования, наплавки)',
+            'state_id' => '1',
+            'supervisors' => 'Астафьева Наталья Анатольевна ',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка методологии реверс- инжиниринга деталей ',
+            'places' => '15',
+            'goal' => 'Создание методологии разработки электронных моделей изделий методом обратного (реверсного) инжиниринга.',
+            'description' => 'Под реверс-инжинирингом понимают процесс создания конструкторской документации на основе снятия данных с реального изделия.  В отличие от традиционных методов, метод обратного сканирования позволяет значительно сократить сроки разработки и удешевить процесс. 
+В условиях, когда предприятия столкнулись с необходимостью импортозамещения, разработка электронных моделей изделий, полностью подходящих под требования заказчика, весьма актуальна. 
+В настоящее время в ИрНИТУ поступают заказы от предприятий различного профиля на создание графического пакета документации на детали. 
+Обучающиеся, решившие принять участие в данном проекте,  на реальных заказах от АО «АНХК» пройдут весь путь от трехмерного сканирования деталей  до создания  рабочей документации.
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'АО «АНХК»',
+            'study_result' => 'Знания: методов снятия  и обработки графической информации с образца изделия
+Умения: продумывать последовательность обработки графической информации об объекте с целью максимально эффективного создания его модели
+Навыки: работы с 3d сканером, обработки результатов сканирования, работы с графическим ПО для создания электронной модели изделия 
+',
+            'product_result' => 'Создание электронных моделей деталей методом реверс-инжиниринга',
+            'state_id' => '1',
+            'supervisors' => 'Клименкова Светлана Богдановна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Проектирование кулисно-рычажных механизмов убирающегося шасси самолета.',
+            'places' => '15',
+            'goal' => 'Разработать методику расчета механизма с качающимся гидроцилиндром.',
+            'description' => 'Механизмы убирающегося шасси самолета представлены структурными схемами в сборнике механизмов Артоболевского И.И. «Механизмы в современной технике» , 1352-1375, в количестве 23 вариантов. Данные схемы включают в свою конструкцию гидроцилиндры, что классифицирует их как механизмы второго типа. Механизм качающегося гидроцилиндра должен быть адаптирован к различным видам расчета через преобразование его в кулисно-рычажный механизм. 
+Структурный, кинематический и кинетостатический расчет таких механизмов отличается от исследования рычажных механизмов первого типа. Рабочие учебные программы по дисциплинам «Механика», «Теория механизмов и машин» охватывают изучение только механизмов первого типа, что не позволяет углубиться в изучение механизмов, использующихся в конкретном направлении подготовки специалистов в области конструирования и проектирования машин и механизмов. Данный проект является логическим продолжением изучения механики, устанавливающим взаимосвязь между общетехническими и  специальными дисциплинами. 
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: конструкций убирающихся шасси самолета; ЕСКД.
+Умения: проводить проектировочные расчеты; анализировать конструкцию механизма;  выбора рациональной структурной схемы механизма для возможности использования его в проектируемом сборочном узле, агрегате. 
+Навыки: конструирования, проектирования, выполнения чертежей и расчетных схем с использованием CAD/CAM/CAE систем проектирования; систематизирования и анализа информации для дальнейшего продвижения, реализации полученных результатов  в конкретных методиках расчета.
+',
+            'product_result' => 'Методические рекомендации расчета механизмов второго типа. Комплект конструкторской документации.',
+            'state_id' => '1',
+            'supervisors' => 'Шматкова Анна Викторовна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка, проектирование механизмов поворота планетарного типа.',
+            'places' => '15',
+            'goal' => 'Разработать пакет конструкторской документации',
+            'description' => 'Механизмы поворотного типа это планетарные механизмы, применяющиеся в различных технологических и транспортных машинах. Планетарные редукторы имеют целый ряд достоинств перед обычными редукторами с неподвижными осями. Мощность передаётся через несколько шестерён, следовательно, уменьшается нагрузка на зубья, выше надёжность и срок службы. Ведущий и ведомый валы соосны, это очень удобно с точки зрения компоновки. Планетарная передача более компактна, чем простой редуктор с тем же передаточным числом.
+Исследование области применения и подробное изучение особенностей конструкций планетарных механизмов в качестве поворотных механизмов, позволяет получить дополнительные компетенции в проектировании, конструировании деталей машин и механизмов.
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Шифр 17866827
+Механизм поворота планетарного типа
+АО "Клинцовский автокрановый завод"
+',
+            'study_result' => 'Знания: кинематического и силового расчета механизмов передач графическими и аналитическими методами, ЕСКД.
+Умения: проводить кинематический расчет сложных многоступенчатых зубчатых передач с подвижными осями, 
+Навыки: в работе с графическими редакторами, проектирования с применением CAD/CAM/CAE системами, в работе над проектом от «схемы» до «чертежа».
+',
+            'product_result' => 'Комплект конструкторской документации.',
+            'state_id' => '1',
+            'supervisors' => 'Шматкова Анна Викторовна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => '',
+            'places' => '15',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '0',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '1',
+            'supervisors' => '',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => '',
+            'places' => '15',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '0',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '1',
+            'supervisors' => '',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => '',
+            'places' => '15',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '0',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '1',
+            'supervisors' => '',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => '',
+            'places' => '15',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '0',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '1',
+            'supervisors' => '',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => '',
+            'places' => '15',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '0',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '1',
+            'supervisors' => '',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => '',
+            'places' => '15',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '0',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '1',
+            'supervisors' => '',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => '',
+            'places' => '15',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '0',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '1',
+            'supervisors' => '',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => '',
+            'places' => '15',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '0',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '1',
+            'supervisors' => '',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => '',
+            'places' => '15',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '0',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '1',
+            'supervisors' => '',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => '',
+            'places' => '15',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '0',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '1',
+            'supervisors' => '',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => '',
+            'places' => '15',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '0',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '1',
+            'supervisors' => '',
             'type_id' => '1',
         ]);
         DB::table('projects')->insert([
@@ -2150,1433 +2955,6 @@ id ФИО учеников Наименование предмета Посещ�
             'product_result' => 'Научная публикация, аналитический обзор.',
             'state_id' => '1',
             'supervisors' => 'Литвинцев Алексей Вячеславович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка проекта введения на улично-дорожной сети приоритетного движения городского маршрутного пассажирского транспорта общего пользования на примере г. Иркутска',
-            'places' => '15',
-            'goal' => 'Повышение качества транспортных услуг для населения города за счет приоритетного комплексного развития транспорта общего пользования (снижение затрат времени на совершение ежедневных регулярных поездок пассажиров маршрутного транспорта за счет предоставления ему приоритета при движении по улично-дорожной сети и стимулирования отказа от использования индивидуальных автомобилей)',
-            'description' => 'Высокий в настоящее время и продолжающий увеличиваться уровень автомобилизации (количество автомобилей на 1 тысячу жителей) приводит к возникновению транспортных проблем для жителей и гостей крупных городов. Это прежде всего возникновение заторов (пробок), что приводит к увеличению времени и затрат на поездки, транспортной усталости, снижает безопасность дорожного движения, обуславливает повышенные выбросы вредных веществ. Это усугубляется еще и отставанием развития транспортной инфраструктуры: улицы, дороги, остановочные пункты, транспортно-пересадочные узлы и т.п. В этих условиях в крупных городах необходимо разработать мероприятия по решению вышеуказанных проблем. Среди большого комплекса мер важнейшее значение будет иметь предоставление приоритета на улицах городов для маршрутного пассажирского транспорта общего пользования. Очень важно проводить это в сочетании с политикой стимулирования отказа от использования индивидуального транспорта для ежедневных поездок прежде всего по трудовым целям',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: инструменты поиска информации по теме исследования; основные требования к представлению результатов проекта; особенности основных и смежных ролевых позиций.
-Умения: формулировать цели и задачи исследования; планировать и организовывать свою деятельность на основе приоритетов и поставленных целей; использовать инструменты поиска информации; выделить из массива информации ключевые моменты; решать задачи в соответствии с ролевой позицией, переключиться на свою смежную ролевую позицию.
-Навыки: формулирования запроса на поиск новых знаний и информации; анализа информации с целью выделения требуемого знания и формирования комплексного понимания предмета изучения; выполнения системного анализа информации по теме проекта, выделения «дефицитов» знаний и формулирования запроса на поиск новой информации; презентации результатов проекта; самоанализа и оценки личного вклада в достигнутые результаты; социального взаимодействия как с членами команды, так и с внешними стейкхолдерами
-',
-            'product_result' => 'Предложения для городских властей по введению приоритетного движения на улично-дорожной сети для маршрутного пассажирского транспорта общего пользования, основанные на исследовании характеристик транспортных и пассажирских потоков',
-            'state_id' => '1',
-            'supervisors' => 'Колганов С.В.',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка цифровых моделей транспортной инфраструктуры города и агломерации',
-            'places' => '15',
-            'goal' => 'Повышение качества транспортного планирования городских агломераций на основе разработки цифровых моделей транспортной инфраструктуры',
-            'description' => 'Одной из основных проблем формирования устойчивых городов и их агломераций является отсутствие качественного транспортного планирования в связке с территориальным планированием. В связи с этим необходимо решение ряда комплексных задач, связанных с освоением современных инструментов в области транспортного планирования и технологий учета влияния характеристик использования городских территорий на формирование транспортного спроса. Рассматриваемый проект на целен на разработку подходов по повышению скорости и качества задач интегрированного территориального и транспортного планирования с применением транспортного моделирования',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Разработка транспортной модели Иркутска и Иркутской агломерации (хоз. договорные работы в области транспортного планирования и организации дорожного движения)',
-            'study_result' => 'Знания: инструменты поиска информации по теме исследования; основные требования к представлению результатов проекта; особенности основных и смежных ролевых позиций.
-Умения: формулировать цели и задачи исследования; планировать и организовывать свою деятельность на основе приоритетов и поставленных целей; использовать инструменты поиска информации; выделить из массива информации ключевые моменты; решать задачи в соответствии с ролевой позицией, переключиться на свою смежную ролевую позицию.
-Навыки: формулирования запроса на поиск новых знаний и информации; анализа информации с целью выделения требуемого знания и формирования комплексного понимания предмета изучения; выполнения системного анализа информации по теме проекта, выделения «дефицитов» знаний и формулирования запроса на поиск новой информации; презентации результатов проекта; самоанализа и оценки личного вклада в достигнутые результаты; социального взаимодействия как с членами команды, так и с внешними стейкхолдерами
-',
-            'product_result' => 'Предложения по развитию подходов к оценке транспортного моделирования и оценке транспортного спроса',
-            'state_id' => '1',
-            'supervisors' => 'Левашев А.Г.',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка проекта совершенствования методики расчета цены муниципального контракта при осуществлении закупок в сфере регулярных перевозок пассажиров на примере г. Иркутска',
-            'places' => '15',
-            'goal' => 'Совершенствование методики расчета начальной (максимальной) цены контракта (НМЦК), а также цены контракта, заключаемого с единственным поставщиком (подрядчиком, исполнителем), для закупок в сфере регулярных перевозок пассажиров на основе учета технико-эксплуатационных параметров маршрутов перевозчика, а также создание соответствующего программного продукта',
-            'description' => 'Начальная (максимальная) цена контракта (НМЦК) — это предельное значение цены, которое указывается в извещении и документации о проведении закупки с приглашением принять в ней участие. Заказчик обязан в полной мере обосновать цену, чтобы провести закупку. Менять условия уже заключенного контракта в большинстве случаев нельзя. Но очень часто при проведении расчета НМЦК возникают проблемы. Первое, цена может быть занижена. Это может привести к тому, что процедура закупки просто не состоится, так как никто не будет заключать контракт себе в убыток. Если такой контракт все-таки будет заключен, то это будет недобросовестный перевозчик, который не выполнит условия контракта по заявленной цене, либо будет занижено качество поставляемого товара, или предоставляемых услуг. Второе, может возникнуть ситуация, когда НМЦК, наоборот, будет завышена. Это в свою очередь приведет к неэффективному расходу средств бюджета. Третье, стоимость устанавливается некорректно, из-за технических проблем (ошибок в расчетах; неправильном использовании положений методических рекомендаций; ошибок при анализе рынка, когда он проанализирован не полностью; использовании некорректных исходных данных)',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: характеристик подвижного состава и методики расчета и технико-эксплуатационных показателей на регулярных маршрутах.
-Навыки: проведения обследования пассажиропотоков и расчёта технико-эксплуатационных показателей на регулярных маршрутах; владения методикой обработки результатов исследования; составления базы данных по результатам обследования пассажиропотоков и разработки программного продукт; владения методикой расчёта НМЦК
-',
-            'product_result' => 'Отчет и программный продукт с исходными данными по регулярным маршрутам для муниципальных властей по расчету начальной (максимальной) цены контракта, а также цены контракта, заключаемого с единственным поставщиком, для закупок в сфере регулярных перевозок пассажиров',
-            'state_id' => '1',
-            'supervisors' => 'Яценко С.А.',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Повышение углеродной нейтральности автомобилей с дизельными двигателями и их эксплуатационные свойства',
-            'places' => '15',
-            'goal' => 'Снижение выбросов вредных веществ и диоксида углерода с выбросами автомобильных двигателей',
-            'description' => 'Снижение выбросов вредных веществ и диоксида углерода с отработавшими газами является серьезной проблемой современности. Переход на электротранспорт в целом в настоящий момент не решает проблему снижения выбросов диоксида углерода, т.к. многие станции по выработке электроэнергии являются тепловыми, работающими на углеводородном топливе или каменном угле. Одним из путей снижения техногенной нагрузки в переходном периоде является применение возобновляемых топлив, которые могут быть растительного происхождения, а также являются продуктом утилизации бытовых отходов и др. При этом углеродный баланс нарушается меньше, а экологическая составляющая повышается.',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: методики выполнения расчетов двигателей внутреннего сгорания; влияния рабочих процессов на динамику двигателя и на технико-экономические показатели работы
-Умения: проводить испытания двигателей и автомобилей; проводить экспериментальные исследования
-Навыки: расчета параметров технического состояния транспортных средств и сравнение их с требованиями нормативных правовых документов в отношении технического состояния транспортных средств; определения качества технологических жидкостей и эксплуатационных материалов
-',
-            'product_result' => 'Топливные композиции (состав возобновляемых топлив); экспериментальные данные в виде отчета и статьи с полученными результатами ',
-            'state_id' => '1',
-            'supervisors' => 'Кривцов Сергей Николаевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка конструкции стенда для исследования характеристик шин в дорожных условиях',
-            'places' => '15',
-            'goal' => 'Разработка конструкции стенда для исследования характеристик шин в дорожных условиях для создания алгоритма управления антиблокировочной системой (АБС) колёсных транспортных средств (КТС).',
-            'description' => 'Безопасность КТС во многом определяется сложными электронными и мехатронными системами, которые широко используются в современных автомобилях. Одной из таких систем является АБС, принцип работы которой построен на поддержании допустимого скольжения колеса в области максимального коэффициента сцепления шины автомобильного колеса с поверхностью дороги без его снижения в область неустойчивости КТС. Изменение коэффициента сцепления шины с опорной поверхностью от изменения проскальзывания колеса является основной зависимостью, в соответствии с которой осуществляется управления АБС. Однако, эта зависимость в значительной степени меняется от типа опорной поверхности, формы протектора шины, её материала и т.п. Применение аналитических методов для синтеза алгоритма управления АБС весьма проблематично, в связи с тем, что объект управления в точке экстремума теряет устойчивость, таким образом правее максимума управление в обычном смысле становится невозможным. В процессе движения КТС невозможно точно определить линейную скорость его кузова, а соответственно и проскальзывание колёс, что затрудняет определение коэффициента сцепления. Если довести колесо до момента предблокирования, возникнет существенное снижение бокового коэффициента сцепления, и, как следствие, потеря устойчивости КТС. Особенно это опасно на покрытии с различным коэффициентом сцепления по боковым колёсам КТС. Всё это приводит к тому, что возникает необходимость разработки алгоритма распознавания типа опорной поверхности под каждым колесом КТС и его управления. Компания Bosch, являющаяся лидером в разработке мехатронных систем, ведут работы по созданию алгоритма действий по калибровке систем АБС без изучения непосредственно взаимодействия шины, используя какие-то пороговые коэффициенты. Отечественными компаниями, такими, как Группа ГАЗ, АвтоВАЗ, и научными организациями ведутся работы по исследовании процесса взаимодействия автомобильного колеса с эластичной шиной на различных опорных поверхностях (сухой асфальт, мокрый, лед, снег и т.п). Результаты этих исследований позволят построить математический аппарат алгоритма адаптивного управления АБС с поддержанием удовлетворительной управляемости КТС. Для решения этой задачи необходимо разработать стенд для исследования характеристик шин в дорожных условиях.',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Ориентировочно грант РНФ, заявка № 22-79-00166, зарегистрирована: 09.03.2022 г.; электронный документ подписан: 10.03.2022 г. Совместно с кафедрой «Автомобили и тракторы» Института Транспортных систем, НГТУ им. Р.Е. Алексеева',
-            'study_result' => 'Знания: устройства и принципа работы современных мехатронных систем активной безопасности КТС; устройства и принципов работы дополнительного технологического и испытательного оборудования;
-рациональных методов эффективной эксплуатации, а также технологических процессов поддержания и восстановления работоспособности подвижного состава автотранспортных средств, их агрегатов, механизмов, узлов.
-Умения: разрабатывать структурные и кинематические схемы систем технологического и испытательного оборудования; проводить диагностирование и контроль технического состояния мехатронных систем подвижного состава автотранспортных средств.
-Навыки: проведения испытаний электронных систем КТС; проведения контроля технического состояния и диагностики подвижного состава автотранспортных средств, их агрегатов, механизмов, узлов.
-',
-            'product_result' => 'Комплект конструкторской документации для создания опытного образца стенда для исследования характеристик шин в дорожных условиях',
-            'state_id' => '1',
-            'supervisors' => 'Яньков Олег Сергеевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка программного комплекса для управления диагностическим гибридным стендом с беговыми барабанами',
-            'places' => '15',
-            'goal' => 'Разработка программного комплекса (ПК) для регистрации, контроля, обработки и сохранения диагностической информации, полученной при испытании колёсных транспортных средств(КТС) на стенде с беговыми барабанами, а также для управления электронными системами стенда.',
-            'description' => 'В настоящее время диагностику и контроль технического состояния как традиционных, так и беспилотных КТС, в том числе с электрическими и гибридными силовыми установками, с автоматизированными агрегатами и интеллектуальными системами осуществляют при помощи сканеров и, как правило, в дорожных условиях. Однако, исследования, проведённые ранее, убедительно показывает наличие системных проблем при определении их технического состояния. Обусловлено это во многом тем, что уровень конструктивной сложности традиционных и беспилотных КТС непрерывно растет. При этом требования к безопасности КТС постоянно ужесточаются. Поэтому качество контроля технического состояния КТС во многом определяет безопасность автомобильного транспорта. Для контроля технического состояния КТС давно уже недостаточно применения электронных сканеров, поскольку они не дают полного объема необходимой информации: о безопасности, о техническом состоянии их агрегатов и систем, о мощностных характеристиках, о техническом состоянии ходовой части и подвески, а также об эффективности работы их интеллектуальных систем.
-Для эффективного контроля современных КТС требуется наукоемкое оборудование, способное обеспечивать контролируемым КТС заданные тестовые режимы – «разгон», «торможение», «боковой занос», «движение под нагрузкой» и пр. Использовать для этих целей современные стенды нет возможности по причине того, что они морально устарели, либо имеют очень высокую стоимость. К тому же практически все современные стенды являются зарубежными. Существующие стенды для контроля КТС имеют ограниченный функционал. Для качественного контроля КТС измерение силовых и кинематических параметров необходимо проводить индивидуально на каждом колесе колёсных транспортных средств с достаточной точностью. Для этого необходимо создать корректные тестовые воздействия, при которых колёсное транспортное средство на стенде будет функционировать как в реальных дорожных условиях. Для решения вышеперечисленных проблем на кафедре Автомобильного транспорта был разработан и изготовлен опытный образец стенда, представляющий собой диагностическое стендовое оборудование, которое способно реализовать высокоэффективные методы контроля технического состояния современных КТС. Опытный образец имеет сложные механические, электрические и пневматические системы, электронные системы измерения контролируемых параметров и системы управления стендом. Функционирование стенда сопровождается большим количеством контролируемых, измеряемых и управляющих параметров процесса испытания автомобиля, которые должны быть обработаны одновременно. Поэтому для его полноценной эксплуатации остро стоит вопрос о разработке ПК, способного управлять стендом, а также регистрировать, контролировать, обрабатывать и сохранять диагностическую и контрольную информацию, полученную при испытании КТС.
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Ориентировочно грант РНФ, заявка № 22-79-00166, зарегистрирована: 09.03.2022 г.; электронный документ подписан: 10.03.2022 г.',
-            'study_result' => 'Знания: устройства и принципа работы средств технического диагностирования; устройства и принципов работы дополнительного технологического оборудования; рациональных методов эффективной эксплуатации, а также технологических процессов поддержания и восстановления работоспособности подвижного состава автотранспортных средств, их агрегатов, механизмов, узлов.
-Умения: разрабатывать структурные, электрические и кинематические схемы систем технологического оборудования; проводить диагностирование и контроль технического состояния подвижного состава автотранспортных средств.
-Навыки: проведения испытаний электронных систем технологического оборудования; проведения контроля технического состояния и диагностики подвижного состава автотранспортных средств, их агрегатов, механизмов, узлов.
-',
-            'product_result' => 'Комплекс программ (ПК), входящий в состав диагностического оборудования.',
-            'state_id' => '1',
-            'supervisors' => 'Яньков Олег Сергеевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка стенда и методики для исследования смазывающих свойств нефтепродуктов',
-            'places' => '15',
-            'goal' => 'Изучение смазывающих свойств нефтепродуктов и разработка методики исследования смазывающих свойств нефтепродуктов',
-            'description' => 'Все знают, что смазочные материалы изменяют свои характеристики в процессе работы, так как оно подвергается высокому давлению, температуре и многим другим факторам. На сегодняшний день производство смазочных материалов происходит одновременно с совершенствованием машин. В связи с современной тенденцией понижения выбросов вредных веществ в окружающую среду, а также экономии смазочных материалов выдвигают жесткие требования к качеству смазочных материалов.
-Смазочные материалы в машинах выполняют множество ролей: уменьшение и защиту от сухого трения, защита от возникновения коррозии, за счет антикоррозионных присадок, охлаждение трущихся деталей и вывод продуктов износа.
-В наше время, существует множество различных брендов смазочных материалов, обладающих различными противозадирными и противоизносными свойствами. Поэтому для различных типов машин с различными свойствами среды, подходят разные виды смазочных материалов с разными присадками.
-Поэтому существует проблема – снижение износа поверхностей, подвергающихся трению и нагрузкам. Это позволит продлить срок эксплуатации деталей механизмов, сделает их более долговечными и надежными. В ряде случаев смазки применяются не только для снижения износа, но  и для предотвращения трения и заклинивания смежных поверхностей. Благодаря своей пластичности и составу эти мазки защищают от проникновения агрессивных веществ, газов и паров. Также практически все консистентные смазки отличаются антикоррозионными свойствами и т.д. Необходимо расширять сырьевую базу и увеличивать рабочий диапазон применения пластичных смазок.
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'ООО «ПолитехГидравлика»',
-            'study_result' => 'Знания: методология исследования
-Умения: исследовать свойства нефтепродуктов
-Навыки: правильно подходить к выбору гсм
-',
-            'product_result' => 'Масла, пластичные смазки, топлива с заданными смазывающими свойствами. Позволит расширить характеристики данных нефтепродуктов.',
-            'state_id' => '1',
-            'supervisors' => 'Стрельников Александр Николаевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Изучение свойств  материалов масляных фильтров
-Изучение свойств  фильтрующих материалов применяемых в масляных фильтрах
-',
-            'places' => '15',
-            'goal' => 'Разработка методики исследования свойств материалов и определение (Изучение) качеств материалов масляных фильтров',
-            'description' => 'В рамках международных стандартов к масляным фильтрам предъявляется немало требований: Фильтрующие элементы к ним должны соответствовать требованиям настоящего стандарта и конструкторской документации (КД), утвержденной в установленном порядке. Полнота отсевов фильтров и фильтрующих элементов должна быть не менее 25 %. Зависимость тонкости отсева от полноты ГОСТ Р 53844—2010 4.3 Ресурс фильтрующего элемента до замены (для 1 категории условий эксплуатации) по ГОСТ 21624 устанавливают в руководстве (инструкции) по эксплуатации автомобиля, при этом он должен быть не менее 250 ч работы двигателя. Гидравлическое сопротивление фильтрующего элемента и перепускного клапана, определяемое из их гидравлических характеристик при заданном расходе масла, должно быть не больше значения, указанного в КД. Фильтрующий элемент должен выдерживать без разрушения повышенный перепад давления (АР), равный не менее 2,0 АР начала открытия перепускного клапана фильтра. Фильтры должны выдерживать без нарушения давление не менее 3 Рном. Давление начала открытия перепускного клапана должно находиться в пределах, установленных требованиями КД. Фильтрующие элементы должны быть вибростойкими к пульсации давления и сохранять работоспособность при температурах от минус 50 °С до плюс 135 °С. Фильтрующие элементы, их уплотнения и другие детали должны быть масло-, бензо-, водостойкими. Материалы, используемые для изготовления фильтров и их элементов, не должны выделять в поток фильтруемого масла составляющих компонентов. 
-В наше время, существует множество различных брендов фильтрующих материалов, обладающих различными свойствами, но не все отвечающие определенным требованиям. Поэтому для различных типов машин работающих в различными средах и на различных режимах, требуются фильтрующие элементы отвечающие определенным требованиям
-Поэтому существует проблема- подбор фильтрующего элемента отвечающего определенным требованиям
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'ООО «Тимбермаш Байкал»',
-            'study_result' => 'Знания: методология исследования
-Умения: исследовать совйства фильтрующего материала
-Навыки: правильно подходить к выбору фильтрующего элемента
-',
-            'product_result' => 'Полученные результаты исследования позволят правильно подбирать фильтрующий элемент для определенного вида оборудования',
-            'state_id' => '1',
-            'supervisors' => 'Стрельников Александр Николаевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка резонансного виброгрохота',
-            'places' => '15',
-            'goal' => 'Повышение энергоэффективности виброгрохота',
-            'description' => 'В сырьевых и перерабатывающих отраслях промышленности для транспортирования и переработки различных сыпучих и кусковых материалов широко применяются вибрационные транспортно-технологические машины (ВТТМ). Самой представительной группой ВТТМ являются вибрационные грохоты. Традиционные виброгрохоты с дебалансным, кинематическим и электромагнитным приводами имеют невысокие технические и эксплуатационные показатели. Значительная часть вибрационного оборудования, выполняющего данные технологические операции, требует больших затрат энергии. Кроме этого имеется ряд проблем с самой обработкой материалов, в частности разделение и сортировка труднопросеиваемых материалов, самоочистка сит, дезинтеграция агломератов.
-Большинство конструкций современных вибрационных грохотов для возбуждения колебаний используют дебалансные вибраторы и зарезонансный режим работы. В колебательной системе таких машин циркулирует большая реактивная мощность, необходимая для преодоления инерционных сил, что снижает их энергетическую эффективность.
- Повышение производительности и снижения энергетических затрат вибрационного грохота возможно благодаря явлению резонанса. В резонансном режиме работы вибрационной машины упругие и инерционные силы взаимно уравновешиваются, при этом энергия вибровозбудителя расходуется только на преодоление диссипативных сил, а рабочий орган совершает движение, близкое к собственному. 
-Основной трудностью практического использования резонансных вибрационных машин является высокая чувствительность к изменению технологической нагрузки и параметров колебательной системы. Нелинейность технологической нагрузки препятствует решению проблемы стабилизации резонансного режима работы машин при вынужденных колебаниях даже при помощи средств автоматической подстройки. 
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: расширенные знания в области вибрационной техники
-Умения: умение реализовать теоретические знания в конкретном проекте
-Навыки: навыки работы в творческом коллективе 
-',
-            'product_result' => 'Физическая модель резонансного виброгрохота. Результаты экспериментальных исследований. Методики расчета резонансного виброгрохота. ',
-            'state_id' => '1',
-            'supervisors' => 'Зедгенизов В.Г.',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Исследование проблем прочности деталей, изготовленных с применением цифровых производственных технологий',
-            'places' => '15',
-            'goal' => '1)Разработать образцы для исследования проблем прочности деталей, выполненных с помощью 3D – печати. 2)Сформировать корректные расчётные схемы авиационного узла в цифровом формате, позволяющие получить достоверную оценку параметров прочности и жёсткости узла ',
-            'description' => 'Передовые технологии производственных процессов невозможны без их цифровизации. Это актуально для авиастроения, автомобилестроения, энергетической отрасли, приборостроения, медицины и др. Многие задачи в этих случаях позволяют решить аддитивные технологии (3d-печать). Они позволяют получать детали практически любой геометрической формы и габаритов. Появилась возможность трансформации сборочной единицы в деталь. В противовес традиционным вычитающим и формообразующим технологиям с помощью 3d-печати деталь «выращивают». Весь этот процесс определяется цифровой моделью изготавливаемой детали. Одной из наиболее привлекательных технологий 3d-печати является FDM-печать. Она применяется как в прототипировании, так и при изготовлении рабочих деталей. Однако, чтобы получить несущую деталь с помощью FDM-печати, нужно суметь рассчитать её на прочность. А для этого необходимо знать как на прочность влияют свойства материала печати, параметры печати, шаблон печати, процент заполнения детали и т.д. Ответы на эти вопросы можно получить, научившись работать на 3D-принтере; изучив поведение деталей, изготовленных на нём, под действием нагрузок. Для изучения поведения деталей нужны натурные и численные эксперименты. Натурные эксперименты, как правило, проводят на образцах. Значит надо изготовить с помощью FDM-печати образцы и провести их испытание на специальном оборудовании. Как правило, в качестве материала для FDM-печати применяют термопластики, композитные термопластики. Поскольку, требований к форме таких образцов пока нет, их надо разработать. Численные эксперименты требуют формирования адекватных моделей в CAD/CAE – системах (Femap, ANSYS, FIDESYS, Siemens NX, КОМПАС-3D, и др.). Под «адекватными моделями» понимаются модели, которые достоверно отображают в цифровой среде поведение реальной детали под действием реальной нагрузки. В частности, необходимо построить в цифровой среде модель натурных испытаний FDM-образцов.
-Однако, исследование прочности деталей, изготовленных с помощью традиционных технологий, не утратило своей актуальности. Основная часть конструкции самолёта образована деталями, изготовленными с помощью таких технологий. Конструкция самолёта представляет собой весьма сложную и многокомпонентную структуру, взаимное влияние между её элементами (деталями) непростое и меняется в зависимости от изменения режима работы конструкции (режима полёта, наземного режима). При этом должна обеспечиваться их прочность. Случаев нагружения одной и той же детали несколько и не все они являются явными. Следовательно, без применения цифровизации процессов исследования в сочетании с натурными испытаниями получить ответы на вопросы о причинах разрушения такой детали и разработке рекомендаций для её оптимизации очень сложно или невозможно. Под цифровизацией процессов исследования понимается применение CAD/CAE – систем. В частности, необходимо построить в цифровой среде достоверную модель реального объекта исследования; на основе её анализа сделать заключение о причинах потери прочности и дать рекомендации об устранении этих причин.
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Иркутский авиационный завод',
-            'study_result' => 'Знания: об аддитивных технологиях применительно к изготовлению несущих деталей, с заданными механическими характеристиками; о методах расчёта авиационных деталей на прочность
-Умения: работать на 3d-принтере; определять значения параметров напряжённо-деформированного состояния реальных деталей
-Навыки: проведения натурных экспериментов для определения характеристик прочности и жёсткости; построения цифровых моделей исследуемых деталей
-',
-            'product_result' => '1. Образцы для экспериментальных исследований характеристик прочности и жёсткости деталей, изготовленных с применением FDM-печати. 2. Формирование электронной модели узла, позволяющей системно оценить параметры прочности и жёсткости с целью оптимизации конструкции узла. Фиксация материала осуществляется в форме электронной модели, сформированной в автоматизированной среде инженерного анализа и соответствующей пояснительной записке с соответствующими описаниями',
-            'state_id' => '1',
-            'supervisors' => 'Распопина Вера Борисовна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Анализ инноваций проектирования и производства беспилотных систем.',
-            'places' => '15',
-            'goal' => 'Проектирование и анализ технологических процессов производства БПЛА',
-            'description' => 'В настоящее время в мире в различные производства внедряется большое количество инноваций. В России внедрение осложняется необходимостью импортозамещения. К различным российским компаниям, в основном связанным с оборонным и ресурсодобывающим секторами применяются санкции, причем по продуктам, на которых в компаниях реализованы различные технологические процессы основной деятельности, В частности, это касается систем инженерного анализа и технически сложного оборудования и комплектующих. На все это накладывается  необходимость завершения текущих проектов в приемлемые сроки.
-К подобным инновациям можно отнести:
-Новые производственные технологии, к которым, например можно отнести моделирование, аддитивные технологии, которые  позволяют сократить время от идеи до реального моделирования, сократить стоимости изготовление деталей.
-Внедрение новых материалов (композиционные материалы) которые зачастую требуют создания новых специфических технологических процессов и уникального оборудования.
-Внедрение элементов искусственного интеллекта, работы с большими данными и облачные сервисы влекут за собой повышение эффективности эксплуатации изделий и производственного оборудования, повышение производительности труда, сокращение времени на поиск нужных решений
-Виртуальная и дополненная реальность позволяет на этапе электронного моделирования улучшить структурирование и качество производственных операций, сократить количество 
-дефектов за счет предварительной проработки производственных процессов
-Робототехника, сенсорика и автоматизация проектирования и проведения технологических процессов  позволяют сократить, временя производства изделий, получать стабильные результаты выполняемых операций без присутствия человека.
-Таким образом, в  рамках проекта, в зависимости от состава команды и ее возможностей будут реализовываться следующие направления:
-беспилотные системы;
-аддитивные технологии;
-оборудование инновационных технологических процессов;
-технология композиционных материалов;
-робототехника;
-автоматизированные системы;
-контроллеры и их программирование. 
-',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знать: основы  принципов построения технологических процессов основных производств и изделий и тенденции их развития; основные программные продукты подготовки и разработки технологических процессов и изделий. 
-Уметь: проводить анализ перспективных технологических процессов и изделий
-Владеть навыками работы в программных продуктах, достаточных для проведения работ по анализу и подготовке технологических процессов и разработке изделий. 
-',
-            'product_result' => 'Подготовленная заявка участия в конкурсе на получение финансирования. ',
-            'state_id' => '1',
-            'supervisors' => 'Дебердеев Евгений Масутович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка воздухо-воздушного теплообменника СКВ современного самолета',
-            'places' => '15',
-            'goal' => 'Разработка рекомендаций по совершенствованию конструкции воздухо-воздушных теплообменников СКВ на основе инженерных расчетов теплообменных аппаратов с целью повышения их  эффективности,  надежности и эксплуатационного ресурса',
-            'description' => 'В настоящее время вопросам теплообмена и его интенсификации в теплообменниках посвящены многие теоретические и экспериментальные работы. Однако усовершенствованные конструкции новых поколений авиационных турбин требуют поиска новейших более конструктивных решений, которые обеспечивали бы увеличение ресурса существующих двигателей и улучшение характеристик перспективных двигателей новых поколений.
-В процессе проектирования рассчитывают массовые расходы теплоносителей, определяют температуры нагревающей и охлаждающей среды, коэффициенты теплопередачи и поверхность теплообмена и эффективность данного теплообменного аппарата, рассчитываются потери давления в аппарате. 
-',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Иркутский авиационный завод',
-            'study_result' => 'Знать: основные понятия и определения тепломассообмена; методы проведения инженерных расчётов теплообменных аппаратов.
-Уметь: формулировать математические задачи для теплообменных аппаратов в дифференциальной и интегральной формах.
-Владеть навыками и методами расчетов теплообменных аппаратов.
-',
-            'product_result' => 'Проект воздухо-воздушного теплообменника СКВ на основе инженерных расчетов теплообменных аппаратов',
-            'state_id' => '1',
-            'supervisors' => 'Молокова Светлана Васильевна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Прогнозирование времени задержки прибытия авиационных рейсов с помощью машинного обучения',
-            'places' => '15',
-            'goal' => 'Разработка математической, обучаемой предиктивной модели, позволяющей по различным данным о текущей погоде, состоянию и загруженности аэропорта, и др. предсказать возможную задержку прибытия авиационного рейса и причины ее возникновения. ',
-            'description' => 'В настоящее время ведутся активные работы по части применения методов машинного обучения и искусственного интеллекта для различных задач предсказательной аналитики. Крупный международный аэропорт в год может принять до 15 миллионов пассажиров, обслужить до 160 тысяч взлетно-посадочных операций. В таких условиях особенно остро стоит вопрос автоматизации процессов распределения воздушного и наземного трафика, регламентных работ и прочих функций с целью повышения эффективности и снижения аварийности. Генерирующиеся в процессе работы аэропорта массивы данных могут стать базой для построения различных предиктивных моделей, которые обладают высокой предсказательной силой. Результаты работы этих моделей могут быть в свою очередь использованы для информирования персонала аэропорта о возможных проблемах, пассажиров о возможных неудобствах и для понимания необходимых путей для решения данных проблем',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Международный Аэропорт Иркутск',
-            'study_result' => 'Знать: основные модели машинного обучения, методы их построения и валидации результатов
-Уметь: работать с большими данными (Big Data) и применять полученную в ходе анализа информацию для решения прикладных инженерных задач
-Владеть навыками и методами создания и тренировки различных моделей машинного обучения 
-',
-            'product_result' => 'Математическая модель прогнозирования времени задержки прибытия авиационных рейсов ',
-            'state_id' => '1',
-            'supervisors' => 'Груздев Александр Сергеевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Оборудование для наземной эксплуатации авиационной техники (только для ЭЛб19)',
-            'places' => '15',
-            'goal' => 'Разработка аванпроекта оборудования для наземной эксплуатации авиационной техники (авиационных систем) с применением методов и средств инженерного анализа',
-            'description' => 'Данный проект направлен на совершенствование технологии эксплуатации авиационной техники. частности, предполагается разработка проекта средств наземной эксплуатации (гидростендового и иного оборудования) с улучшенными характеристиками. Наземное оборудование – неотъемлемая часть комплекса для эксплуатации любого воздушного судна. От того, насколько наземное оборудование будет соответствовать современным требованиям по функциональности, эргономике, стоимости, и ряду других параметров, зависит в конечном счёте и стоимость эксплуатации самой авиационной техники, и, как следствие, её конкурентность на авиационном рынке. ',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'АО «Авиакомпания «Ангара»',
-            'study_result' => 'Знания: о методах анализа систем по различным критериям
-Навыки: выполнения схем  и моделей систем.
-',
-            'product_result' => 'Модель или схема наземного оборудования (гидростенда или иного оборудования).',
-            'state_id' => '1',
-            'supervisors' => 'Бобарика Игорь Олегович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Оптимизация авиационных гидросистем с учётом технологии их обслуживания при эксплуатации',
-            'places' => '15',
-            'goal' => 'Обоснование необходимости и определение путей модернизации авиационных систем с учётом эксплуатационной истории с применением современных средств инженерного анализа и предиктивной аналитики',
-            'description' => 'Данный проект направлен на совершенствование авиационной техники, характеристик её бортовых систем. В частности, рассматривается возможность оптимизации разветвлённых трубопроводных систем, а это все гидравлические, топливные, пневматические системы, без которых не может существовать ни один современный самолёт. Все системы тесно сплетены между собой, а их характеристики обеспечивают характеристики всего самолёта в целом. Знать бортовые системы, принципы их работы, видеть возможности для их совершенствования и модернизации, разрабатывать и предлагать конкретные решения – значит быть настоящим авиационным инженером!',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'АО «Авиакомпания «Ангара»',
-            'study_result' => 'Знания: о методах анализа систем по различным критериям
-Навыки: выполнения многофакторной оптимизации систем.
-',
-            'product_result' => 'Модель бортовой системы с элементами многофакторной оптимизации.',
-            'state_id' => '1',
-            'supervisors' => 'Бобарика Игорь Олегович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Цифровой двойник цеха агрегатно-сборочных работ',
-            'places' => '15',
-            'goal' => 'Создание твердотельных 3D моделей, предназначенных для создания виртуальной модели цеха агрегатно-сборочных работ, используемых для изготовления авиационных деталей',
-            'description' => 'Создание цифрового двойника производственного помещения в образовательном сегменте позволит обеспечить доступные инструменты для пользователей и дополнить обучающие программы интерактивным визуальным контентом. Погружение студентов в производственную атмосферу, без физического присутствия на производстве.',
-            'difficulty' => '0',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знать основные технологические процессы изготовления авиационных деталей
-Уметь составлять технологические процессы
-Знание основ конструкции сборочных приспособлений
-
-Знать основные инструменты создания 3D моделей в системе NX
-Уметь использовать инструменты моделирования с заданием физико-механических свойств материала 
-',
-            'product_result' => 'Электронные модели авиационных узлов собираемые в сборочных приспособлениях, которые в дальнейшем будут интегрированы в программный модуль цифрового двойника',
-            'state_id' => '1',
-            'supervisors' => 'Фокин Игорь Владимирович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Конструкция и система управления навесными модулями настольного станка с ЧПУ',
-            'places' => '15',
-            'goal' => 'Разработка навесного модуля для работы тангенциальным ножом илт терморезака/нихромового ножа резки композитных материалов и системы управления ими при реализации программы импортозамещения',
-            'description' => 'Разработанный проект должен предполагать получение новых возможностей для существующего средства технологического оснащения - настольного станка. Это возможность установить новый инструмент, разработать систему для его управления.',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Проект "Твой ход", направление "Двигаю прогресс"',
-            'study_result' => 'Знания: основы проектирования типовых узлов и систем для станков с ЧПУ
-Умения: выполнять конструирование узлов механических приводов и электрических плат, в том числе и с помощью ЭВМ
-Навыки: прототипирования и моделирования
-',
-            'product_result' => 'Модель, макет',
-            'state_id' => '1',
-            'supervisors' => 'Казимиров Денис Юрьевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Предварительная оценка машинного времени обработки заготовительно-штамповочной оснастки',
-            'places' => '15',
-            'goal' => 'Создание классификатора изделий по геометрическим особенностям, влияющим на машинное время обработки заготовительно-штамповочной оснастки, и вычисление соответствующих поправочных коэффициентов',
-            'description' => 'Заготовительно-штамповочное производство в авиационной промышленности имеет немаловажное значение, так как листовая штамповка используется для изготовления многих деталей. Оснастка заготовительно-штамповочного производства уникальная для каждого изделия. Внесение изменений в конструкцию детали требует изменения модели оснастки и изготовления нового образца, часто в кратчайшие сроки. Внесение нового приоритетного изделия в цеховое расписание требует его перестроения, для чего необходимо знать машинное время. Традиционно, машинное время вычисляется при помощи встроенных функций Unigraphics NX, но для этого требуется написание управляющей программы, что занимает значительное время. Для повышения гибкости производства целесообразно применить метод предварительной оценки машинного времени на основе скорости удаления материала. Для более точного приближения результата к реальному необходимо ввести коэффициенты, учитывающие геометрические особенности изделия и динамические характеристики оборудования, что требует проведения экспериментальных исследований.',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Конкурс «Твой Ход», направление «Двигаю прогресс».
-https://tvoyhod.online/
-',
-            'study_result' => 'Знания: виды продукции, выпускаемой в цехах изготовления заготовительно-штамповочной оснастки, методики оценки машинного времени.
-Умения: работа в среде Unigraphics NX, анализ геометрической информации.
-Навыки: поиск информации, анализ информации с целью выделения требуемого знания, формирование комплексного понимания предмета изучения на основе полученной информации, системный анализ полученной информации, выделение «дефицитов» знаний и формулирование запроса на поиск новой информации.
-',
-            'product_result' => 'Методика оценки машинного времени на основе классификатора изделий и скорости удаления материала, позволяющая в краткие сроки позволить предоставить данные по машинному времени для перестроения цехового расписания',
-            'state_id' => '1',
-            'supervisors' => 'Исаченко Алексей Сергеевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Лопасти воздушного винта из композиционного материала',
-            'places' => '15',
-            'goal' => 'Разработка технологии изготовления лопасти воздушного винта из композиционного материала для водной техники (аэролодка)',
-            'description' => 'Исследование и анализ существующих геометрий лопастей для водной техники (аэролодка). Разработка геометрии лопасти в программной среде Siemens NX. Проектирование специализированной оснастки для изготовления прототипа лопасти из композиционных материалов методом вакуумной инфузии. Изготовление и подготовка оснастки. Создание прототипа лопасти из композиционного материала.',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'ООО «ИРКУТ – АЭРО»',
-            'study_result' => 'Знания: основы проектирования типовых узлов и деталей машин; основы проектирования типовых узлов и деталей машин
-Умения: выполнять конструирование типовых узлов и деталей машин, в том числе и с помощью CAD-технологий
-Навыки: выполнения инженерных и компьютерных расчётов, способами представления и анализа результатов; 
-',
-            'product_result' => 'Прототип лопасти воздушного винта из композиционного материала',
-            'state_id' => '1',
-            'supervisors' => 'Чащин Николай Сергеевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка и изготовление лабораторного комплекса и исследование процесса комбинированного формообразования подкреплённых панелей самолётов',
-            'places' => '15',
-            'goal' => 'Опытная отработка импортонезависимой технологии формообразования крупногабаритных панелей сложной формы  ',
-            'description' => 'Панели крыла представляют собой обводообразующие детали с гладкой наружной (аэродинамической) поверхностью. Внутренний набор деталей типа панелей содержит такие конструктивные элементы как карманы, люки с окантовками и подкрепляющие рёбра различных сечений, расположенные в продольном или в поперечном направлениях. 
-По геометрической форме панели и обшивки представляют собой совокупность линейчатых поверхностей с направляющими переменной кривизны, участков двойной и знакопеременной кривизны (зон перегиба) с закруткой сечений.
-Основными технологическими операциями получения требуемой формы деталей является дробеударное формообразование с последующей зачисткой, а так же раскатка и посадка ребер.
-В рамках проектных работ будет разработано, изготовлено и испытано следующее оборудование:
-- лабораторная установка для обработки методами раскатки роликами и посадки;
-- лабораторная установка для дробеударного формообразования и зачистки абразивными лепестковыми кругами.
-Также планируется проведение опытных работ на образцах с целью отработки технологии формообразования подкреплённых панелей
-',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'ПАО «Электромеханика»',
-            'study_result' => 'Знать: основные технологические процессы формообразования и правки крупногабаритных маложестких деталей.
-Уметь: проектировать специальное оборудование для реализации технологии формообразования и правки крупногабаритных маложестких деталей.
-Навыки: проектирование в Siemens NX; слесарные и сборочные работы.
-',
-            'product_result' => 'Лабораторные стенды для отработки технологии формообразования деталей пита подкреплённых панелей из алюминиевых сплавов',
-            'state_id' => '1',
-            'supervisors' => 'Пашков Александр Андреевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Изготовление корпусных деталей беспилотных летательных аппаратов',
-            'places' => '15',
-            'goal' => 'Разработка технологии изготовления корпусных деталей беспилотных летательных аппаратов',
-            'description' => 'Исследование и анализ существующих корпусных деталей беспилотных летательных аппаратов. Разработка модели корпуса в программной среде Siemens NX. Проектирование специализированной оснастки для изготовления прототипа деталей корпуса из композиционных материалов методом вакуумной инфузии. Изготовление и подготовка оснастки. Создание прототипа детали корпуса.',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: основы проектирования типовых узлов и деталей машин; основы проектирования типовых узлов и деталей машин
-Умения: выполнять конструирование типовых узлов и деталей машин, в том числе и с помощью CAD-технологий
-Навыки: выполнения инженерных и компьютерных расчётов, способами представления и анализа результатов; 
-',
-            'product_result' => 'Прототип детали корпуса беспилотных летательных аппаратов',
-            'state_id' => '1',
-            'supervisors' => 'Иванов Юрий Николаевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка оптимальных характеристик конструкции механизма перемещения садовых и строительных грузов весом до 250 кг. ',
-            'places' => '15',
-            'goal' => 'Разработка работающего устройства перемещения грузов',
-            'description' => 'Изготовленное устройство перемещения грузов должно облегчить труд пожилого контингента на дачном участке или строителей при ремонтных и строительных работах с небольшими объёмами работ. Изготовлению должно предшествовать комплекс расчетных и технологических задач, позволяющие обеспечить точное воспроизведение в действующем образце всех заложенных параметров. В рамках проекта будут освоены CAD системы, позволяющие обеспечить точное воспроизведение рассчитанного изделия. Полученные чертежи, с трёхмерной модели, позволят изготовить в металле детали на станках токарно-фрезерной группы. Для этого будет изучен инструмент и станки, подобран материал для изготовления деталей. Изучены критерии и приборы для оценки качества деталей ( шероховатость, размерных допусков и погрешностей формы, определение твёрдости, методы закалки и т.д.).',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: Изучение CAD системы трёхмерного моделирования. Систему допусков и посадок. Методы определения твёрдости материалов и пути их достижения. Знать устройство и возможности металлорежущих станков, методы обработки материалов.
-Умения :Работать в CAD системе трёхмерного моделирования, уметь создавать детали и сборочные единицы. На основе 3D модели создавать чертежи деталей. Для изготовления деталей подбирать необходимое оборудование, инструмент и режимы резания.
-Навыки: Рациональная работа CAD системе. Работа на металлорежущих станках. Работа с приборами оценивающие  качество поверхности.
-',
-            'product_result' => 'Готовое изделие для перемещения грузов',
-            'state_id' => '1',
-            'supervisors' => 'Дрожжин Сергей Николаевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка и изготовление  опытной партии многофункциональных пильных станков на модульном принципе',
-            'places' => '15',
-            'goal' => 'Разработка рабочей и эксплуатационной документации многофункциональных пильных станков,  организация производства ',
-            'description' => 'Многофункциональность станков обеспечивается за счет быстрой смены режущего инструмента (пильные диски для разных материалов), изменение режимов резания, наличие  сменных контейнеров для сбора разных отходов и использования специальных сменных модулей. Модульный принцип реализован в разделении конструкции станка на отдельные модули по технологическим и конструктивным свойствам. Разделение на модули является важной задачей и решается синтезом сложных систем, определения числа оптимальных функций каждого модуля. 
-Производство пильных станков не требует сложных технологий и дорогостоящего оборудования, высокой квалификации рабочих, что подтверждается изготовлением 4х станков силами студентов в рамках выпускной работы. Модульный принцип позволяет распределить изготовление модулей на небольших предприятиях и среди индивидуальных предпринимателей, а общую сборку и испытание проводить на базе лабораторий ИрНИТУ. Расчетная стоимость производства пильного станка составляет на 2021г. 16363руб., что позволяет говорить об возможном получении прибыли при условии стоимости подобных станков на рынке 20-40тыс. руб.. Потребителями станка на рынке в первую очередь являются индивидуальные предприниматели, строительные фирмы, малые предприятия и др.. Для повышения качества, производительности и обеспечения взаимозаменяемости модулей в лаборатории спроектированы и изготовлены специальные сборочные приспособления для каждого модуля.
-Технические решения заложенные в конструкции пильного станка имеют большой потенциал при его использовании и совершенствовании конструкции самого станка
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Патент ИрНИТУ на изобретение №2709064 «Модульный многофункциональный пильный станок» 2019г',
-            'study_result' => 'Знать: основы проектирования станочного оборудования на модульном принципе, технологические процессы изготовления деталей, сборки узлов( модулей) и общей сборки станков.
-Уметь: проектировать станочное оборудование, приспособлений разного назначения.
-Навыки: проектирование в Siemens NX; слесарные и сборочные работы.
-',
-            'product_result' => 'Рабочая конструкторская документация, технология изготовления и готовые станки для реализации',
-            'state_id' => '1',
-            'supervisors' => 'Москвитин Виктор Николаевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка эскизного проекта СВП «Марс 7000», проектирование отдельных узлов и элементов ',
-            'places' => '15',
-            'goal' => 'Создание судов на воздушной подушке для использования в условиях крайнего Севера для нужд нефтегазовой добывающей отрасли ',
-            'description' => 'В ОКБ имени Алексеева г.Нижний Новгород разработаны и изготовлены суда на воздушной подушке разных типов и грузоподъемности. Наиболее эффективным является «Марс2000и3000» Данные аппараты рассчитаны на перевозку 20 или 30 человек. Аппараты в теплое время эксплуатируют на водных акваториях, а в зимнее время на льду и снежном покрове. Они оснащены двумя дизельными двигателями, которые обеспечивают скорость движения 50- 70 км/час.
-Для повышения грузоподъемности и скорости необходимо снижение массы конструкции корпуса и двигателей, а также повышение мощности привода. Важным фактором эффективного использования в условиях крайнего севера возможность эксплуатации при температурах минус 40-50град. Требования заказчика иметь разные модификации аппаратов: пассажирский, грузовой и грузо-пассажирский с грузовой нагрузкой более 5-10Тс.
-В 2021-2022г. автором разработаны два проекта в виде технического предложения «Марс300» и «Марс7000» с турбо вальными газотурбинными двигателями, которые позволяют в два раза увеличить мощности привода, уменьшить массу конструкции, увеличить скорость до 90 км/час, поднять грузоподъемность до 7000кг. Важным достоинством ГТД малый вес, долговечность и высокая надежность при эксплуатации при низких температурах. Конструкция аппаратов относится к сложными ответственным транспортным средствам, включает в себя множество уникальных устройств(редукторы, силовые передачи, системы управления и т.д.). 
-',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'ОКБ имени Алексеева г.Нижний Новгород',
-            'study_result' => 'Знать: основы проектирования сложных и ответственных конструкций транспортных систем, технологические процессы изготовления деталей, сборки узлов( модулей) и общей сборки.
-Уметь: Разрабатывать  сборочные и деталиировочные чертежи, строить КЭМ 
-Навыки: проектирование в Siemens NX;.
-',
-            'product_result' => 'Рабочая конструкторская документация, технология изготовления элементов конструкций и систем',
-            'state_id' => '1',
-            'supervisors' => 'Москвитин Виктор Николаевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Снежный 3Д принтер',
-            'places' => '15',
-            'goal' => 'Разработка и сборка 3Д принтера способного печатать снегом',
-            'description' => 'В зимний период в Иркутской области выпадает много снега, разработка устройства которое позволит печатать из снега различные объекты практического и художественного смысла',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'ИРНИТУ ректорат',
-            'study_result' => 'Знания: системы ЧПУ, шаговые двигателя
-Умения: Конфигурация систем с ЧПУ
-Навыки: подготовка моделей к 3Д печати, физика процесса 3Д печати
-',
-            'product_result' => 'Прототип 3Д принтера, печатающего снегом',
-            'state_id' => '1',
-            'supervisors' => 'Кононенко Роман Владимирович ',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка бобинной технологии сварки с перемешиванием',
-            'places' => '15',
-            'goal' => 'Опытная отработка технологии сварки трением с перемешиванием с использованием бобинного инструмента (инструмента с двумя заплечиками)  ',
-            'description' => 'Традиционные технологические процессы сварки обладают целым рядом недостатков, которые в свою очередь отсутствует при использовании сварки с трением с перемешиванием (СТП). Особый интерес вызывают современные способы СТП, которые позволяют повысить качество соединений, получаемых с применением этой технологии. Одним из таких способов расширения технологических возможностей СТП является сварка с использованием бобинного инструмента (инструмента с двумя заплечиками).  
-В рамках проектных работ будет спроектированы, изготовлены и испытаны средства технологического оснащения процесса: сварочные приспособления, сварочный инструмент.
-В рамках проекта также планируется проведение опытных работ на образцах с целью отработки технологии бобинной сварки трением с перемешиванием.
-',
-            'difficulty' => '1',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знать: основные технологические особенности сварки трением с перемешиванием
-Уметь: проектировать специальное технологическое оборудование для реализации технологии СТП.
-Навыки: проектирование с использованием программных продуктов САD, CAE; слесарные и сборочные работы.
-',
-            'product_result' => 'Приспособления и инструмент для реализации исследуемой технологии бобинной сварки трением с перемешиванием',
-            'state_id' => '1',
-            'supervisors' => 'Тютрин Николай Орестович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка технологии изготовления алюминиевых труб с внутренним антифрикционным покрытием',
-            'places' => '15',
-            'goal' => 'Опытная отработка импортозамещающей технологии производства алюминиевых труб для производства гильз пневмоцилиндров с повышенными эксплуатационными свойствами рабочей поверхности   ',
-            'description' => 'Алюминиевые трубы для производства гильз пневмоцилиндров используются российскими производителями пневмооборудования, а также приобретаются эксплуатирующими организациями в ремонтных целях. При этом в Российской Федерации такая продукция не производится и приобретается за рубежом (производители – предприятия европейских стран и КНР). Традиционная технология изготовления труб для изготовления гильз пневмоцилиндров – прессование. Она отличается высокой себестоимостью, приводящей к завышенной цене готового продукта. Кроме того, изготовленные таким способом гильзы не имеют износостойкого слоя. В этой связи проект, направленный на создание технологии производства импортозамещающей продукции с повышенным ресурсом путём её изготовления центробежным литьём, является актуальным.
-В рамках работ будет спроектированы, изготовлены и испытаны средства технологического оснащения процесса: вращающаяся изложница, плавильно-разливочный модуль.
-В рамках проекта также планируется производство опытных образцов и испытание их эксплуатационных свойств.
-',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знать: основные технологические особенности литейных и сварочно-наплавочных технологий
-Уметь: проектировать специальное технологическое оборудование для реализации технологии СТП.
-Навыки: проектирование с использованием программных продуктов САD, CAE; слесарные и сборочные работы.
-',
-            'product_result' => 'Опытная технологическая оснастка для реализации технологии производства алюминиевых труб методом центробежного литья с нанесением антифрикционных покрытий',
-            'state_id' => '1',
-            'supervisors' => 'Тютрин Николай Орестович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Определение показателей качества металлоконструкций, изготавливаемых аддитивными комбинированными технологиями ',
-            'places' => '15',
-            'goal' => 'Опытная отработка  методик и технологий определения показателей качества изделий, изготавливаемых аддитивными методами',
-            'description' => 'Изготовленные с применением аддитивных технологий металлические детали и изделия  могут обеспечить значительное снижение веса и повышение производительности в различных отраслях промышленности. Внедрению аддитивных технологий в производство должно предшествовать решение комплекса технологических задач, позволяющих обеспечить точные и воспроизводимые характеристики изделий. В рамках проекта будут освоены различные методики определения характеристик изделий, а также  основы технологии  их аддитивного производства',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знать: показатели качества металлоконструкций, изготавливаемых аддитивными технологиями и методы их определения
-Уметь: проводить комплекс необходимых исследований для  определения основных характеристик  изделий, полученных 
-Навыки: работ с использованием САПР, приборами и оборудованием для исследований 
-',
-            'product_result' => 'Методики оценки качества изделий при послойном аддитивном выращивании',
-            'state_id' => '1',
-            'supervisors' => 'Астафьева Наталья Анатольевна ',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Обработка поверхности изделий из конструкционных материалов концентрированными источниками нагрева ',
-            'places' => '15',
-            'goal' => 'Получение особых свойств поверхностных слоёв изделий из конструкционных материалов при воздействии концентрированными источниками нагрева',
-            'description' => 'Проблема совершенствования технологических методов упрочнения конструкционных материалов является  актуальной  на сегодняшний день. Данный проект направлен на исследование фазовых и структурных превращений в конструкционных материалах после воздействия концентрированных источников нагрева и разработка комбинированных технологий поверхностного упрочнения с использованием плазменного и лазерного источника, обеспечивающих высокий уровень физико-механических свойств поверхностного слоя. Для этого необходимо провести комплексные исследования взаимосвязи структуры и свойств исследуемых материалов  с различной исходной микроструктурой в зонах лазерного и плазменного воздействия, сформированных при различных вариантах, условиях и энергетических параметрах непрерывного излучения, используемого с целью достижения термического упрочнения, легирования и наплавки.',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знать: методы обработки поверхности изделий из конструкционных материалов концентрированными источниками нагрев, методы исследования структуры и свойств матеоиалов;
-Уметь: проводить комплекс необходимых исследований для  установления взаимосвязей структуры и свойств исследуемых материалов  с различной исходной микроструктурой в зонах лазерного и плазменного воздействия, сформированных при различных вариантах, условиях и энергетических параметрах непрерывного излучения;
-Навыки: работы с  приборами и оборудованием для исследований, оборудованием для упрочнения, легирования и наплавки .
-',
-            'product_result' => 'Комбинированная технология поверхностного упрочнения ( легирования, наплавки)',
-            'state_id' => '1',
-            'supervisors' => 'Астафьева Наталья Анатольевна ',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка методологии реверс- инжиниринга деталей ',
-            'places' => '15',
-            'goal' => 'Создание методологии разработки электронных моделей изделий методом обратного (реверсного) инжиниринга.',
-            'description' => 'Под реверс-инжинирингом понимают процесс создания конструкторской документации на основе снятия данных с реального изделия.  В отличие от традиционных методов, метод обратного сканирования позволяет значительно сократить сроки разработки и удешевить процесс. 
-В условиях, когда предприятия столкнулись с необходимостью импортозамещения, разработка электронных моделей изделий, полностью подходящих под требования заказчика, весьма актуальна. 
-В настоящее время в ИрНИТУ поступают заказы от предприятий различного профиля на создание графического пакета документации на детали. 
-Обучающиеся, решившие принять участие в данном проекте,  на реальных заказах от АО «АНХК» пройдут весь путь от трехмерного сканирования деталей  до создания  рабочей документации.
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'АО «АНХК»',
-            'study_result' => 'Знания: методов снятия  и обработки графической информации с образца изделия
-Умения: продумывать последовательность обработки графической информации об объекте с целью максимально эффективного создания его модели
-Навыки: работы с 3d сканером, обработки результатов сканирования, работы с графическим ПО для создания электронной модели изделия 
-',
-            'product_result' => 'Создание электронных моделей деталей методом реверс-инжиниринга',
-            'state_id' => '1',
-            'supervisors' => 'Клименкова Светлана Богдановна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Проектирование кулисно-рычажных механизмов убирающегося шасси самолета.',
-            'places' => '15',
-            'goal' => 'Разработать методику расчета механизма с качающимся гидроцилиндром.',
-            'description' => 'Механизмы убирающегося шасси самолета представлены структурными схемами в сборнике механизмов Артоболевского И.И. «Механизмы в современной технике» , 1352-1375, в количестве 23 вариантов. Данные схемы включают в свою конструкцию гидроцилиндры, что классифицирует их как механизмы второго типа. Механизм качающегося гидроцилиндра должен быть адаптирован к различным видам расчета через преобразование его в кулисно-рычажный механизм. 
-Структурный, кинематический и кинетостатический расчет таких механизмов отличается от исследования рычажных механизмов первого типа. Рабочие учебные программы по дисциплинам «Механика», «Теория механизмов и машин» охватывают изучение только механизмов первого типа, что не позволяет углубиться в изучение механизмов, использующихся в конкретном направлении подготовки специалистов в области конструирования и проектирования машин и механизмов. Данный проект является логическим продолжением изучения механики, устанавливающим взаимосвязь между общетехническими и  специальными дисциплинами. 
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: конструкций убирающихся шасси самолета; ЕСКД.
-Умения: проводить проектировочные расчеты; анализировать конструкцию механизма;  выбора рациональной структурной схемы механизма для возможности использования его в проектируемом сборочном узле, агрегате. 
-Навыки: конструирования, проектирования, выполнения чертежей и расчетных схем с использованием CAD/CAM/CAE систем проектирования; систематизирования и анализа информации для дальнейшего продвижения, реализации полученных результатов  в конкретных методиках расчета.
-',
-            'product_result' => 'Методические рекомендации расчета механизмов второго типа. Комплект конструкторской документации.',
-            'state_id' => '1',
-            'supervisors' => 'Шматкова Анна Викторовна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка, проектирование механизмов поворота планетарного типа.',
-            'places' => '15',
-            'goal' => 'Разработать пакет конструкторской документации',
-            'description' => 'Механизмы поворотного типа это планетарные механизмы, применяющиеся в различных технологических и транспортных машинах. Планетарные редукторы имеют целый ряд достоинств перед обычными редукторами с неподвижными осями. Мощность передаётся через несколько шестерён, следовательно, уменьшается нагрузка на зубья, выше надёжность и срок службы. Ведущий и ведомый валы соосны, это очень удобно с точки зрения компоновки. Планетарная передача более компактна, чем простой редуктор с тем же передаточным числом.
-Исследование области применения и подробное изучение особенностей конструкций планетарных механизмов в качестве поворотных механизмов, позволяет получить дополнительные компетенции в проектировании, конструировании деталей машин и механизмов.
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Шифр 17866827
-Механизм поворота планетарного типа
-АО "Клинцовский автокрановый завод"
-',
-            'study_result' => 'Знания: кинематического и силового расчета механизмов передач графическими и аналитическими методами, ЕСКД.
-Умения: проводить кинематический расчет сложных многоступенчатых зубчатых передач с подвижными осями, 
-Навыки: в работе с графическими редакторами, проектирования с применением CAD/CAM/CAE системами, в работе над проектом от «схемы» до «чертежа».
-',
-            'product_result' => 'Комплект конструкторской документации.',
-            'state_id' => '1',
-            'supervisors' => 'Шматкова Анна Викторовна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Оптимизация процесса переработки техногенного и минерального сырья',
-            'places' => '15',
-            'goal' => 'Разработать технологические рекомендации по переработки отходов вторичной металлургии свинца и оптимизации процесса производства первичного алюминия',
-            'description' => 'Проблема накопления отходов в процессе переработки свинцовых аккумуляторных батарей встречается на большинстве заводов данной отрасли. Самым ярким примером являются накопленные отходы в г. Свирске, объем которых составляет 3500-4500 т. Данный отход относится к третьему классу опасности, но также представляет собой ценный продукт для доизвлечения свинца, которого в отходах содержится до 30 мас. %. Разработанное технологическое решение может быть использовано и на других предприятиях перерабатывающих аккумуляторные батареи.
-При производстве алюминия электролизом криолит-глиноземного расплава возникает ряд проблем. При повышении амперной нагрузки повышается температура электролита, поэтому необходимо организовать эффективный отвод тепла от поверхностей электролизера и уменьшить потери тепла. Увеличение засыпки и размеров электролизера способствуют уменьшению тепловых потерь за счет снижения отношения их поверхности к объему. 
-Увеличение силы тока на электролизной серии выше нормативного значения приводит к ряду расстройств на электролизере: увеличению сопротивления токопроводящих элементов ванны, нарушению теплового баланса, повышению выбросов газообразных веществ. Поэтому проработка инновационных решений для компенсации амперной нагрузки является не простой и важной задачей.
-Потери анодного напряжения связаны в первую очередь с конструкцией анодного узла, составом и качеством материала анода. Важную роль в перепаде напряжения в анодном массиве играет токораспределение по анодам. Известно, что оно может быть крайне неравномерно, в результате чего возникают конусы, приводящие к замыканию электродов.
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания:
-Принципы рационального природопользования в области металлургии.
-Конструкция электролизеров для получения алюминия; основные параметры, оказывающие влияние на эффективность металлургических процессов производства алюминия электролитическим способом и диапазоны их оптимальных значений.
-Умения:
-Уметь применять, совершенствовать или разрабатывать методы переработки отходов металлургического производства.
-Уметь применять полученные знания о строении криолит-глиноземных расплавов на практике; уметь проводить анализ влияния различных факторов на основные показатели электролиза
-Навыки:
-Владеть навыками разработки предложений по переработке отходов металлургического производства и оптимизации процесса производства алюминия. 
-',
-            'product_result' => 'Технологические рекомендации, включающие анализ образующихся отходов вторичной металлургии свинца, а также конкретные технологические решения по вовлечению и переработке техногенного сырья. 
-Технологические рекомендации, включающие анализ проблем возникающих при производстве первичного алюминия, а также конкретные технологические решения по их решению
-',
-            'state_id' => '1',
-            'supervisors' => 'Тютрин Андрей Александрович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Расширение сырьевой базы металлургического производства',
-            'places' => '15',
-            'goal' => 'Разработать технологические рекомендации и стратегию расширения сырьевой базы металлургического производства за счет разработки новых месторождений и переработки техногенного сырья',
-            'description' => 'На территории России сосредоточено почти 30% мировых разведанных запасов никеля, 28% – железа, 10% – меди, по запасам других видов металлов, страна входит в число ведущих горнодобывающих государств. Ресурсная обеспеченность России определяется исходя из необходимости удовлетворения текущих и перспективных потребностей экономики, в соответствии с уровнем экономического развития страны. Однако Россия отстает от большинства стран мира по уровню вовлечения минерально-сырьевой базы в экономический оборот, по уровню обеспечения народнохозяйственных потребностей в ресурсах и по темпам роста горноперерабатывающей и металлургической промышленности. Отставание от среднемирового уровня свидетельствует о проблемах вовлечения природных ресурсов в производство, о трудностях с воспроизводством материально-технической базы страны.
-Вместе с тем металлургические предприятия являются одним из основных источников загрязнения окружающей среды. Выбросы вредных веществ на конкретных промышленных предприятиях зависят от объема производства, структуры предприятия, оснащенности газоочистным оборудованием, технологических особенностей и других причин. В связи со всевозрастающим негативным воздействием производственной деятельности металлургических предприятий на состояние окружающей среды наибольшую важность приобретают технологии, обеспечивающие устойчивое развитие за счет повышения энергоэффективности, комплексного использования сырья, снижения экологической нагрузки и производственных издержек. Как показывает практика, переработка многих видов отходов металлургического производства экономически выгодно и технически осуществимо.
-Основными направлениями расширения сырьевой базы являются разработка новых месторождений и переработка уже накопленных и вновь образующихся отходов.
-',
-            'difficulty' => '1',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания:
-Принципы рационального природопользования в области металлургии.
-Умения:
-Уметь применять принципы рационального природопользования для энерго- и ресурсосбережения технологических процессов в металлургии 
-Навыки:
-Владеть навыками использования принципов рационального природопользования для энерго- и ресурсосбережения технологических процессов в металлургии.
-',
-            'product_result' => 'Технологические рекомендации, включающие анализ образующихся отходов металлургических предприятий и существующих запасов минерального сырья, а также конкретные технологические решения по вовлечению и переработке минерального и техногенного сырья',
-            'state_id' => '1',
-            'supervisors' => 'Зайцева Анна Александровна, Тютрин Андрей Александрович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка технологии переработки золотосодержащих руд',
-            'places' => '15',
-            'goal' => 'Разработать технологию по переработке золотосодержащего сырья и расширить сырьевую базу путем вовлечения в переработку упорного, бедного, забалансового, комплексного сырья',
-            'description' => 'В России в золотых рудах коренных месторождений заключено 61,1% разведанных запасов. В комплексных рудах – 25,5%, в россыпях – 13,4%. Прогнозные ресурсы коренных месторождений 38,8 тыс. т, россыпей 2,8 тыс. т. Однако Россия отстает от большинства стран мира по уровню вовлечения минерально-сырьевой базы в экономический оборот, по уровню обеспечения народнохозяйственных потребностей в ресурсах и по темпам роста горноперерабатывающей и металлургической промышленности. На сегодняшний день Россия занимает третье место по добыче золота (282-300 тонн/год). Лидерами являются Китай (400 тонн/год) и Австралия (315 тонн/год). Легких для переработки руд в России и мире осталось крайне мало. Все чаще золотодобытчикам приходится работать с упорным рудами. Традиционного цианирования в условиях переработки упорных руд недостаточно. Такие руды требуют обогатительных процессов прежде, чем их будет целесообразно подвергать цианированию. Так же следует отметить, что в настоящее время особый интерес представляют и комплексные руды, содержащие благородные металлы. Переработка комплексных руд позволяет повысить экономические показатели производства. 
-Основным направлением в золотодобыче является выбор наиболее рентабельной технологии по переработке золотосодержащих руд. 
-',
-            'difficulty' => '1',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания:
-Принципы рационального природопользования в области металлургии.
-Умения:
-Уметь применять принципы рационального природопользования для энерго- и ресурсосбережения технологических процессов в металлургии 
-Навыки:
-Владеть навыками использования принципов рационального природопользования для энерго- и ресурсосбережения технологических процессов в металлургии.
-',
-            'product_result' => 'Технологические рекомендации, включающие анализ существующих схем переработки золотосодержащих руд, а также конкретные технологические решения по расширению сырьевой базы путем вовлечения в переработку упорного, бедного, забалансового, комплексного сырья',
-            'state_id' => '1',
-            'supervisors' => 'Шипнигов Антон Андреевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Проектирование, монтаж и наладка учебно-исследовательских стендов на базе оборудования для автоматизации ПГ ОВЕН (3й курс)',
-            'places' => '15',
-            'goal' => 'Дать обучающимся возможность приобрести практические знания, умения, навыки работы с оборудованием для автоматизации в процессе проектирования, монтажа, наладки учебно-исследовательских стендов и исследования систем автоматического регулирования.',
-            'description' => 'Основной задачей учебных стендов является обучение студентов основам автоматизации технологических процессов, демонстрация работы средств автоматического управления и регулирования. Внедрение в процесс обучения стендов поможет учащимся детально изучать процессы автоматического управления и регулирования, а разработка методических пособий по работе с ними, получать практические навыки в проектировании систем автоматизации. Работа на стендах знакомит будущих специалистов в области автоматизации с условиями максимально приближенными к производственным. 
-Вследствие этого, задачи разработки устройств данного класса являются актуальными
-',
-            'difficulty' => '1',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Институт высоких технологий ИРНИТУ
-Региональный учебный центр «ОВЕН-ИРНИТУ»
-',
-            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации,  нормы и способы социального взаимодействия.
-Умения: формулировать цели и задачи; творчески и критически мыслить, решать задачи в соответствии с ролевой позицией.
-Навыки: работа в команде, получение первичной информации, навыками определения и постановки задач.
-',
-            'product_result' => '1.Проект учебно-исследовательских стендов.
-2.Разработка технической документации:
--схема электрическая принципиальная;
--схема внешних проводок;
--схема питания;
--монтажная схема;
--методические указания к лабораторным и практическим работам;
--программное обеспечение и т.д.
-3. Изготовленный учебно-исследовательский стенд.
-',
-            'state_id' => '1',
-            'supervisors' => 'Ершов П.Р., Подкорытов А.А.',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Проектирование, монтаж и наладка учебно-исследовательских стендов на базе оборудования для автоматизации ПГ ОВЕН (4й курс)',
-            'places' => '15',
-            'goal' => 'Дать обучающимся возможность приобрести практические знания, умения, навыки работы с оборудованием для автоматизации в процессе проектирования, монтажа, наладки учебно-исследовательских стендов и исследования систем автоматического регулирования',
-            'description' => 'Основной задачей учебных стендов является обучение студентов основам автоматизации технологических процессов, демонстрация работы средств автоматического управления и регулирования. Внедрение в процесс обучения стендов поможет учащимся детально изучать процессы автоматического управления и регулирования, а разработка методических пособий по работе с ними, получать практические навыки в проектировании систем автоматизации. Работа на стендах знакомит будущих специалистов в области автоматизации с условиями максимально приближенными к производственным. 
-Вследствие этого, задачи разработки устройств данного класса являются актуальными
-',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Институт высоких технологий ИРНИТУ
-Региональный учебный центр «ОВЕН-ИРНИТУ
-',
-            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации,  нормы и способы социального взаимодействия.
-Умения: формулировать цели и задачи; творчески и критически мыслить, решать задачи в соответствии с ролевой позицией.
-Навыки: работа в команде, получение первичной информации, навыками определения и постановки задач.
-',
-            'product_result' => '1.Проект учебно-исследовательских стендов.
-2.Разработка технической документации:
--схема электрическая принципиальная;
--схема внешних проводок;
--схема питания;
--монтажная схема;
--методические указания к лабораторным и практическим работам;
--программное обеспечение и т.д.
-3. Изготовленный учебно-исследовательский стенд.
-
-',
-            'state_id' => '1',
-            'supervisors' => 'Ершов П.Р.',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка элементов  автоматических устройств контроля физико-химических параметров гидрометаллургических процессов переработки минерального сырья',
-            'places' => '15',
-            'goal' => 'Разработка технических и программных составляющих устройств автоматического контроля таких параметров как: концентрация растворенного золота, цианида натрия  в технологических растворах гидрометаллургических отделений при переработке минерального сырья',
-            'description' => 'Аналитический контроль играет важную роль  для успешного ведения технологических процессов. В большинстве случаев измерения проводятся либо в лабораторных условиях и соответственно данные  могут потерять свою актуальность из-за достаточно большого времени проведения анализов, либо существующие устройства  имеют высокую стоимость. Вследствие этого, задачи разработки устройств данного класса являются актуальными. В рамках данного проекта  предлагается рассматривать отдельные задачи для достижения общей цели проекта, такие как разработка отдельных алгоритмов,  разработка  отдельных технических узлов.',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знать: метрологические и эксплуатационные характеристики, особенности монтажа, погрешности, состояние и перспективы и тенденции современного приборостроения, классификацию, назначение, особенности применения, устройство и принцип действия приборов и устройств качественного анализа (газоанализаторов, рН- метров, концентратомеров и пр.).
-Уметь: проводить декомпозицию общей задачи измерения, с выделением отдельных подсистем 
-Владеть: навыками работы с анализаторами: подготовки проб, проведения измерений, оценки и обработки    результатов, в том числе с применением специализированного программного обеспечения
-',
-            'product_result' => 'Алгоритмы реализации отдельных подсистем
-Структурные схемы отдельных технических решений
-',
-            'state_id' => '1',
-            'supervisors' => 'Овсюков Александр Евгеньевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка системы управления лабораторной информацией',
-            'places' => '15',
-            'goal' => 'Разработка структуры',
-            'description' => 'Система управления лабораторной информацией – программное обеспечение, предназначенное для управления лабораторными потоками работ и документов. Позволяет оптимизировать сбор, анализ, возврат и отчетность лабораторных данных. Часто применяется вместе с MES-системами. Задачами данного проекта является рассмотрение существующих систем данного класса, рассмотрение направления движения потоков информации, выделение основных функций которые реализуются, разработка структуры, описание функций, составление алгоритмов обработки информации.',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знать: международную систему единиц физических величин, методы измерений, метрологические показатели средств измерений, метрологические характеристики средств измерения, погрешности  измерений, причины возникновения погрешностей,  методику обработки результатов наблюдений и оценивание погрешностей измерений, поверку и калибровку средств измерений, методы поверки (калибровки) 
-Уметь: обоснованно применять методы метрологии и стандартизации,  проводить простейшую обработку результатов многократных измерений.
-Владеть: методами метрологии и стандартизации, достаточным творческим мышлением и способностью самостоятельно принимать решения.
-',
-            'product_result' => 'Структура программного комплекса
-Описание функций реализуемых данным комплексом
-Описание графического интерфейса
-Алгоритмы обработки  информации
-',
-            'state_id' => '1',
-            'supervisors' => 'Овсюков Александр Евгеньевич, Колодин Алексей Александрович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Формирование компетенции персонала высокотехнологичного предприятия как инструмент обеспечения его конкурентоспособности. Разработка веб-приложения «Система адаптации персонала».
-   3-й КУРС
-',
-            'places' => '15',
-            'goal' => 'Разработать веб-приложение, построенного по типу «Электронное обучение» на базе CMS Wordpress, с применением стека технологий HTML/CSS/JS',
-            'description' => 'Актуальной задачей обеспечения конкурентоспособности высокотехнологичного предприятия является формирование компетенции персонала. Одним из важнейших ресурсов достижения результативности процессов является подготовка компетентного персонала. При найме новых сотрудников в штат организации происходит процесс их адаптации. В рамках адаптационного периода новоприбывший сотрудник ознакамливается с необходимой нормативно-правовой документацией и внутренними регламентами компании. К таким регламентам могут относиться как требования федерального уровня, например инструктаж о соблюдении мер по защите и охране труда, так и внутренние условия нахождения на режимных объектах, правила пожарной безопасности, и иные требования.
-Создание веб-приложения по типу «Электронное обучение» позволит не только собрать все необходимые для адаптации сотрудников документы на единой площадке, но и даст возможность сотрудникам удаленно проходить адаптационные мероприятия в части ознакомления и прохождения тестирования в рамках тех или иных требований, заявленных руководством. Кроме того, введение системы электронного обучения позволит унифицировать процесс управления обучающими материалами, необходимых для адаптации персонала
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Иркутская Нефтяная Компания. 
-Газпром добыча Иркутск.
-ВСЖД – филиал РЖД
-',
-            'study_result' => 'Знать: основные понятия и методы риск-менеджмента; правовые, нормативно-технические и организационно-правовые основы обеспечения безопасности и менеджмента риска на
-предприятиях;
-Уметь: выявлять риски и оценивать степень риска при управлении качеством; вести документацию по разработке и внедрению систем менеджмента риска;
-Владеть: навыками применения инструментов и методов риск-менеджмента по снижению степени риска в системах качества
-',
-            'product_result' => 'Веб-приложение, запускаемое на сервере организации, дающее возможность организации электронного обучения в рамках процесса адаптации персонала',
-            'state_id' => '1',
-            'supervisors' => 'Лонцих Павел Абрамович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Формирование компетенции персонала высокотехнологичного предприятия как инструмент обеспечения его конкурентоспособности.  Проектирование UX (пользовательского опыта) и UI (интерфейса) для web-приложения «Система адаптации персонала».
-     4-Й КУРС
-',
-            'places' => '15',
-            'goal' => 'Спроектировать интерфейс web-приложения, построенного по типу «электронное обучение» на основе CJM',
-            'description' => 'Актуальной задачей обеспечения конкурентоспособности высокотехнологичного предприятия является формирование компетенции персонала. Проблема конкурентоспособности предприятия определяется его ресурсами, и, прежде всего, компетентностью персонала. Это требует формирования СМК, выявление бизнес-процессов, оценку рис-ориентированной деятельности и разработку мер по совершенствованию и улучшению результативности процессов.  Предварительное UX/UI проектирование web-приложения необходимо для сокращения временных издержек при внедрении системы адаптации новых сотрудников высокотехнологичного предприятия и повысит качество разрабатываемого web-приложения. Проектирование интерфейса в соответствии с картой пользовательского пути и учетом достоинств/недостатков аналогичных систем. ',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Иркутская Нефтяная Компания. 
-Газпром добыча Иркутск.
-ВСЖД – филиал РЖД 
-',
-            'study_result' => 'Знать: основные понятия и методы риск-менеджмента; правовые, нормативно-технические и организационно-правовые основы обеспечения безопасности и менеджмента риска на
-предприятиях;
-Уметь: выявлять риски и оценивать степень риска при управлении качеством; вести документацию по разработке и внедрению систем менеджмента риска;
-Владеть: навыками применения инструментов и методов риск-менеджмента по снижению степени риска в системах качества
-',
-            'product_result' => 'Интерфейс web-приложения, готовый для передачи в разработку. Спроектирован с помощью методологии CJM, обоснованы возможные пользовательские цели и пути их решения.',
-            'state_id' => '1',
-            'supervisors' => 'Лонцих Павел Абрамович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Информационная система Байкальского региона',
-            'places' => '15',
-            'goal' => 'Создание информационной системы Байкальского региона',
-            'description' => 'Целью проекта является создание прототипа интернет-сервиса с картой по Байкалу для российских и иностранных туристов, отличительными особенностями которого будут:
-• Контент для туриста – предоставление информации для планирования отдыха по виду, времени, месту, стоимости и способу проезда.
-• Единая автоматизированная площадка для турбизнеса – возможность для продвижения своих услуг.
-• Интерактивная карта
-Создание подобного ресурса создаст возможности для увеличения известности и доступности региона  для туристов, привлечет туристов, сделает местный туристический рынок более открытым, гибким, конкурентным.
-',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Администрация п.Хужир',
-            'study_result' => 'Уметь: анализировать и обобщать информацию в сфере маркетинга при управлении проектом;
-Владеть: навыками анализа и обобщения информацию в сфере маркетинга при управлении проектом.
-Уметь: использовать современные информационные технологии для сбора, анализа и обобщения информации; 
-Владеть: Навыками использования современных информационных технологий для сбора, анализа и обобщения информации
-',
-            'product_result' => 'Прототип информационной системы Байкальского региона',
-            'state_id' => '1',
-            'supervisors' => 'Куклина Мария Владимировна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка 3D моделей для рынка Healthnet',
-            'places' => '15',
-            'goal' => '1) Совершенствование оказания медицинской помощи онкологическим пациентам. 
-2) Улучшение качества обучения специалистов эндоскопии.
-',
-            'description' => 'Злокачественные новообразования (ЗНО) стоят на третьем месте по причинам смерти населения в Российской Федерации, после заболеваний сердечно-сосудистой системы и внешних причин.
-В ходе проекта будет разработана 3D-модель, созданная на основе механических свойств нормальной и опухолевой тканей, а также программа, благодаря которой улучшится визуализация слабо-контактируемых злокачественных опухолей по МРТ/МСКТ-снимкам. 
-Проект позволит с помощью данных технологий воспроизводить высокоточные трехмерные модели человеческих органов в реальном времени.  К аддитивным технологиям относится биомоделирование — создание точной виртуальной или реальной модели интересующей области человеческого организма на основе данных лучевой диагностики, как правило, компьютерной томографии (КТ). Также позволит усовершенствовать диагностику и планирование лечения онкологических пациентов, в том числе хирургическое, злокачественных опухолей.
-3D-печать имеет огромный потенциал в медицине. С помощью этих технологий можно воспроизводить высокоточные трехмерные модели человеческих органов, а также некоторые имплантаты. Разработчики подобных технологий стремятся к созданию органов в реальном времени.
-',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'ГБУЗ Иркутский областной онкологический диспансер',
-            'study_result' => 'В результате реализации проекта у студентов должна быть сформирована способность обеспечения практического применения результатов научного исследования:
-ПКР-4. Способность определять стоимостную оценку основных ресурсов и затрат по реализации проекта ПКР-5. Способность организовать работу исполнителей в коллективе, находить и принимать управленческие решения в области организации работ по проекту и нормированию труда
-ПКР-7. Способность обеспечить практическое применение результатов научного исследования
-ПКР-11. Способность спланировать необходимый эксперимент, получить адекватную модель и исследовать ее 
-',
-            'product_result' => 'Главная ценность продукта заключатся снизить риски для здоровья пациента. 3D-печать в медицине позволяет с высокой точностью моделировать и создавать стоматологические имплантаты, протезы, прототипы органов. Также 3D-печать помогает уже работающим специалистам и медикам эффективнее учиться и повышать квалификацию, практиковаться и составлять точные планы хирургических операций',
-            'state_id' => '1',
-            'supervisors' => 'Конюхов Владимир Юрьевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка модели коммерциализации результатов проекта «Исследование противокоррозионных свойств эпоксидных композиций, допированных ингибиторами коррозии',
-            'places' => '15',
-            'goal' => 'Создание эффективной модели продвижения на рынок результатов НИОКР ВУЗа на примере проекта «Исследование противокоррозионных свойств эпоксидных композиций, допированных ингибиторами коррозии»',
-            'description' => '    При реализации НИОКР в рамках ВУЗов одной из основных задач является продвижение их результатов на рынок, а именно: поиск схем и возможностей коммерциализации, привлечение инвесторов, организация высокотехнологичного бизнеса, создание конкурентной среды технологического предпринимательства. Именно при разработке инновационного проекта, решающее значение имеют возможности коммерциализации результатов НИОКР, основанные на проведенных маркетинговых исследованиях. В рамках данного проекта (техническая аспект) исследуются способы защиты металлических конструкций от коррозийных процессов и разрабатывается модель продвижения на рынок результатов исследования (предпринимательский аспект).
-      Коррозия металлов наносит значительный ущерб народному хозяйству нашей страны. Потери от коррозии металлов весомы, они складываются из стоимости изготовления металлических конструкций, пришедших в негодность вследствие коррозии, из безвозвратных потерь в виде продуктов коррозии и из косвенных убытков. В настоящее время большая часть нефтегазовых месторождений находится в поздней стадии разработки, когда снижается добыча и резко возрастает обводненность нефти. Такие месторождения характеризуются значительными осложнениями в процессах добычи, сбора и подготовки нефти, связанными с образованием стойких нефтяных эмульсий, отложениями АСПО, неорганических солей, наличием механических примесей, коррозионным разрушением оборудования и нефтепроводов.Увеличение коррозионной активности, добываемой совместно с нефтью воды на данном этапе является серьезной проблемой. Наиболее эффективным и технологически несложным защитным мероприятием является ингибиторная защита. 
-     Именно поэтому исследования способов защиты металлических конструкций от коррозийных процессов и создание эффективной модели бизнеса на основе этих исследований являются крайне актуальными. 
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'соискатель ИрНИТУ (сотрудник ИАЗ)',
-            'study_result' => 'В результате реализации проекта у студентов должна быть сформирована способность обеспечения практического применения результатов научного исследования (ПКР-7, в части ПКР-7.3, ПКР-7.4) и: 
-знания основных способов коммерциализации результатов НИОКР;
-умения обеспечения практического применения результатов научного исследования;
-навыки осуществления деятельности по продвижению на рынок результатов НИОКР. 
-',
-            'product_result' => 'Практические рекомендации (алгоритм) по продвижению на рынок результатов НИОКР, осуществляемых в ИрНИТУ',
-            'state_id' => '1',
-            'supervisors' => 'Уразова Нина Геннадьевна ',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка рецептур продуктов питания функционального назначения на основе плодоовощного растительного сырья Иркутской области и организация их безопасного производства ',
-            'places' => '15',
-            'goal' => 'Дать обучающимся возможность приобрести востребованные практико-ориентированные знания, умения, навыки в экспериментальной отработке рецептур функциональных пищевых продуктов и подготовки документации для обеспечения качества, и безопасности их производства.  ',
-            'description' => 'Продукты функционального питания и их компоненты могут модифицировать метаболизм в организме человека и играть важную роль в предотвращении возникновения различных заболеваний. При создании безопасного производства продуктов функционального питания необходимо знать химический состав сырья, пищевую ценность, специальные приемы технологической обработки.
-Для обеспечения качества и безопасности продуктов питания необходимо знать и уметь определять факторы, оказывающие негативное влияние на безопасность готовой продукции, зависимость этих факторов от применяемого сырья, технологии, оборудования и упаковки. Применение специальных систем качества и безопасности пищевой продукции позволяет управлять рисками внутри производства и обеспечивать сохранение здоровья потребителя. 
-',
-            'difficulty' => '1',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации
-Умения: формулировать цели и задачи; творчески и критически мыслить
-Навыки: работа в команде, получение первичной информации
-',
-            'product_result' => '1.Разработана рецептура функционального пищевого продукта, проведены эксперименты применения рецептуры с отработкой параметров процесса производства, получен лабораторный образец. 
-2.Определены этапы построения системы безопасности пищевой продукции, разработаны обязательные мероприятия для обеспечения безопасности производства, определены возможные риски пищевой безопасности для готовой продукции
-3. Проведены исследования на соответствие показателей качества лабораторного образца требованиям ГОСТ, подтверждено функциональное назначение. Разработана технологическая документация и рекомендации по применению.
-',
-            'state_id' => '1',
-            'supervisors' => 'Куприна О.В.       , Евстафьева О.А.',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка рецептур продуктов питания функционального назначения на основе растительного сырья Иркутской области и организация их безопасного производства ',
-            'places' => '15',
-            'goal' => 'Дать обучающимся возможность приобрести востребованные практико-ориентированные знания, умения, навыки в экспериментальной отработке рецептур функциональных пищевых продуктов и подготовки документации для обеспечения качества, и безопасности их производства',
-            'description' => 'Продукты функционального питания и их компоненты могут модифицировать метаболизм в организме человека и играть важную роль в предотвращении возникновения различных заболеваний. При создании безопасного производства продуктов функционального питания необходимо знать химический состав сырья, пищевую ценность, специальные приемы технологической обработки.
-Для обеспечения качества и безопасности продуктов питания необходимо знать и уметь определять факторы, оказывающие негативное влияние на безопасность готовой продукции, зависимость этих факторов от применяемого сырья, технологии, оборудования и упаковки. Применение специальных систем качества и безопасности пищевой продукции позволяет управлять рисками внутри производства и обеспечивать сохранение здоровья потребителя. 
-',
-            'difficulty' => '1',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации
-Умения: формулировать цели и задачи; творчески и критически мыслить
-Навыки: работа в команде, получение первичной информации
-',
-            'product_result' => '1.Разработана рецептура функционального пищевого продукта, проведены эксперименты применения рецептуры с отработкой параметров процесса производства, получен лабораторный образец. 
-2.Определены этапы построения системы безопасности пищевой продукции, разработаны обязательные мероприятия для обеспечения безопасности производства, определены возможные риски пищевой безопасности для готовой продукции
-3. Проведены исследования на соответствие показателей качества лабораторного образца требованиям ГОСТ, подтверждено функциональное назначение. Разработана технологическая документация и рекомендации по применению.
-',
-            'state_id' => '1',
-            'supervisors' => 'Гусакова Г.С., Евстафьева О.А.',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Организация безопасного производства экологически чистых продуктов питания на основе растительного сырья Иркутской области',
-            'places' => '15',
-            'goal' => 'Дать обучающимся возможность приобрести востребованные практико-ориентированные знания, умения, навыки в подготовки документации для обеспечения качества, и безопасности их производства',
-            'description' => 'Для обеспечения качества и безопасности продуктов питания необходимо знать и уметь определять факторы, оказывающие негативное влияние на безопасность готовой продукции, зависимость этих факторов от применяемого сырья, технологии, оборудования и упаковки. Применение специальных систем качества и безопасности пищевой продукции позволяет управлять рисками внутри производства и обеспечивать сохранение здоровья потребителя. ',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации
-Умения: формулировать цели и задачи; творчески и критически мыслить
-Навыки: работа в команде, получение первичной информации
-',
-            'product_result' => '1.Определены этапы построения системы безопасности пищевой продукции, разработаны обязательные мероприятия для обеспечения безопасности производства, определены возможные риски пищевой безопасности для готовой продукции',
-            'state_id' => '1',
-            'supervisors' => 'Евстафьева О.А.',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Спортивные напитки на основе растительного сырья Иркутской области',
-            'places' => '15',
-            'goal' => 'Дать обучающимся возможность приобрести востребованные практико-ориентированные знания, умения, навыки в подготовки документации для обеспечения качества, и безопасности их производства',
-            'description' => 'Продукты функционального питания и их компоненты могут модифицировать метаболизм в организме человека и играть важную роль в предотвращении возникновения различных заболеваний. При создании безопасного производства продуктов функционального питания необходимо знать химический состав сырья, пищевую ценность, специальные приемы технологической обработки',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации
-Умения: формулировать цели и задачи; творчески и критически мыслить
-Навыки: работа в команде, получение первичной информации
-',
-            'product_result' => '1.Разработана рецептура функционального пищевого продукта, проведены эксперименты применения рецептуры с отработкой параметров процесса производства, получен лабораторный образец. ',
-            'state_id' => '1',
-            'supervisors' => 'Гусакова Г.С.',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Разработка технологии получения пектинового экстракта на основе растительного сырья Иркутской области и организация их безопасного производства',
-            'places' => '15',
-            'goal' => 'Дать обучающимся возможность приобрести востребованные практико-ориентированные знания, умения, навыки в подготовки документации для обеспечения качества, и безопасности их производства.  ',
-            'description' => 'Продукты функционального питания и их компоненты могут модифицировать метаболизм в организме человека и играть важную роль в предотвращении возникновения различных заболеваний. При создании безопасного производства продуктов функционального питания необходимо знать химический состав сырья, пищевую ценность, специальные приемы технологической обработки.',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации
-Умения: формулировать цели и задачи; творчески и критически мыслить
-Навыки: работа в команде, получение первичной информации
-',
-            'product_result' => '1.Разработана ТИ функционального пищевого продукта, проведены эксперименты применения с отработкой параметров процесса производства, получен лабораторный образец. 
-2.Определены этапы построения системы безопасности пищевой продукции, разработаны обязательные мероприятия для обеспечения безопасности производства, определены возможные риски пищевой безопасности для готовой продукции
-3. Проведены исследования на соответствие показателей качества лабораторного образца требованиям ГОСТ, подтверждено функциональное назначение. Разработана технологическая документация и рекомендации по применению.
-',
-            'state_id' => '1',
-            'supervisors' => 'Гусакова Г.С.',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Переработка пластиковых отходов.',
-            'places' => '15',
-            'goal' => 'Исследовать возможности переработки бытовых пластиковых отходов.',
-            'description' => 'В рамках проекта изучить существующие способы переработки пластиковых отходов, определить наиболее перспективный  способ, провести эксперимент с разными видами пластиков. Исследовать полученные материалы.',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: способы переработки различных видов пластика,  и методики определения свойств готовых продуктов.
-Умения: подбирать технологию переработки к определенному сырью.
-Навыки: работы с сырьем в лаборатории.
-',
-            'product_result' => 'Получение синтетического  топлива и определение его свойств. ',
-            'state_id' => '1',
-            'supervisors' => 'Оборина М.А.',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Масла  ',
-            'places' => '15',
-            'goal' => 'Изучение свойств масел разной основы и разного состава',
-            'description' => 'При производстве товарных масел, разной масляной основы, необходимо введение различных групп присадок (депрессорных, смазывающих, диспергирующих и др.). отвечающих за эксплуатационные характеристики качества товарной продукции. Базы данных на содержание и состав присадок по маслам закрыты, поэтому введение присадок в базовую нефтяную основу и анализ изменения свойств, а также сравнение с товарными производителями, для учебного процесса является актуальной задачей.',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Кафедра СДМ (получение образцов для дальнейшего исследования)',
-            'study_result' => 'Знания: технологических процессов и основного оборудования производства нефтяных масел; основных параметров химмотологии смазочных материалов
-Умения: выявления возможных причин, вызывающих отклонения от норм качества готовой продукции
-Навыки: работы с маслами, а также технических требований к нефтяным маслам и их примения
-',
-            'product_result' => 'Получение масляной основы с заданными свойствами в соответствие с нормативной документацией и существующими аналогами товарной продукции.  ',
-            'state_id' => '1',
-            'supervisors' => 'Подгорбунская Татьяна Анатольевна, Белозерова Ольга Викторовна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Пластичные смазки',
-            'places' => '15',
-            'goal' => 'Получение пластичных смазок ',
-            'description' => 'В настоящее время промышленность стремительно развивается и характеризуется созданием высокопроизводительных машин и механизмов, генерирующих и передающих большие мощности. По мере распространения технического прогресса усиливается энергонапряженность множественных узлов трения и, соответственно, возрастает роль смазочного материала как наиболее значимого элемента техники, повышаются и становятся разнообразнее требования к его качеству. Работоспособность техники, развитие автомобилестроения и других видов транспортного машиностроения, а, следовательно, и эффективность функционирования народного хозяйства серьезно зависят от их обеспеченности высокоэффективными смазочными материалами – пластичными смазками.
-Проблема – снизить износ поверхностей, подвергающихся трению и нагрузкам. Это позволит продлить срок эксплуатации деталей механизмов, сделает их более долговечными и надежными. В ряде случаев смазки применяются не только для снижения износа, но и для предотвращения трения и заклинивания смежных поверхностей. Благодаря своей пластичности и составу эти мазки защищают от проникновения агрессивных веществ, газов и паров. Также практически все консистентные смазки отличаются антикоррозионными свойствами и т.д. Необходимо расширять сырьевую базу и увеличивать рабочий диапазон применения пластичных смазок
-',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знать: основные параметры химмотологии смазочных материалов, технологические процессы и основное оборудование производства масел
-Уметь: обосновывать технические требования к пластичным смазкам для обеспечения их рационального применения в современной технике 
-Владеть основными требованиями предъявляемые к пластичным смазкам, и научными и практическими достижениями в области химмотологии смазок. 
-',
-            'product_result' => 'Пластичные смазки с заданными свойствами. Позволит расширить ассортимент данных нефтепродуктов.',
-            'state_id' => '1',
-            'supervisors' => 'Белозерова Ольга Викторовна, Подгорбунская Татьяна Анатольевна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Малотоннажная химия',
-            'places' => '15',
-            'goal' => 'Разработать технологическую концепцию переработки пластиковых отходов',
-            'description' => 'Самые распространенные способы переработки пластика – это механический и термический. При механическом способе пластиковые отходы подвергают дроблению, измельчению и перетиранию до получения порошка, который далее добавляют в расплав при получении нового материала. А самый распространенный термический способ – это сжигание, при котором происходят выбросы оксида углерода в атмосферу. Данный проект посвящен переработке пластиковых отходов с целью получения исходных мономеров, продуктов имеющих высокую стоимость и востребованность на рынке химических продуктов.',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Ангара-Реактив, ООО зарегистрирована по адресу 665809, Иркутская обл., г. Ангарск, тер. Первый промышленный массив, кв-л 7, стр. 22, ОФИС 20. Директор организации ООО "Ангара-Реактив" Шатохина Валентина Александровна. Основным видом деятельности компании является Производство прочих химических продуктов, не включенных в другие группировки. Также Ангара-Реактив, ООО работает еще по 25 направлениям.
-ООО "Ангара-Реактив" присвоен ИНН 3801059241, КПП 380101001, ОГРН 1023800520501, ОКПО 55573556
-Действует с 10.07.2001
-',
-            'study_result' => 'Знать сырье органического синтеза, основные процессы органического синтеза, способы оценки качества целевого продукта, достоверные источники информации и базы данных в области химии.
-Уметь искать информацию о химических соединениях по формульным указателям и ключевым словам, составлять химическую схему получения целевого продукта из доступного сырья.
-Владеть критериями выбора оптимальной схемы химической схемы синтеза целевого продукта
-',
-            'product_result' => 'Удобный, безопасный и дешевый способ переработки пластиковых отходов',
-            'state_id' => '1',
-            'supervisors' => 'Боженков Георгий Викторович, Чайка анна Анатольевна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Изучение влияния углеводородного состава высокооктановых бензинов на его эксплуатационные характеристики',
-            'places' => '15',
-            'goal' => 'Изучить влияние углеводородного состава высокооктановых бензинов  производства АО «АНХК» на его эксплуатационные характеристики.',
-            'description' => 'Важной задачей российской нефтепереработки, повышающей ее конкурентоспособность, является доведение эксплуатационных и экологических свойств автомобильных бензинов до требований мирового уровня. Растет потребность в моторных топливах с октановым числом 95 и выше.  Использование в составе бензинов различного рода добавок и присадок, обеспечивает повышение октанового числа, но при этом необходимо знать какое влияние они окажут на углеводородный состав и как следствие на эксплуатационные характеристики топлива. Поэтому изучение влияния углеводородного состава высокооктановых бензинов  производства АО «АНХК» на его эксплуатационные характеристики является актуальной задаей.',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'АО «АНХК»',
-            'study_result' => 'Знания: основные постулаты эффективности добавок и присадок, применяемых для улучшения эксплуатационных характеристик автобензинов
-Умения: на основании теории объяснить эффективность действия октаноповышающих добавок и присадок
-Навыки: владеть навыками оценки влияния углеводородного состава высокооктановых бензинов на его эксплуатационные характеристики.
-',
-            'product_result' => 'Изучено влияние углеводородного состава высокооктановых бензинов  производства АО «АНХК» на его эксплуатационные характеристики.',
-            'state_id' => '1',
-            'supervisors' => 'Ганина Анна Александровна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Изучение влияния соотношения депрессора и дисперганта в присадке, применяемой для улучшения низкотемпературных характеристик тяжелых компонентов топлива судового маловязкого',
-            'places' => '15',
-            'goal' => 'Подбор оптимального соотношения депрессора и дисперганта в присадке, применяемой для улучшения низкотемпературных характеристик компонентов топлива судового маловязкого производства АО «АНХК»',
-            'description' => 'Эффективность нефтеперерабатывающих заводов в России напрямую зависит от глубины переработки нефти, именно поэтому модернизация в этом направление является приоритетной задачей. Одним из направлений увеличения глубины переработки является снижения выработки тяжелых топлив за счет использования современных методов компаундирования. Так, применение компонентов тяжелых топлив в приготовлении топлива судового маловязкого с использованием правильно подобранных присадок позволит использовать их в составе светлых нефтепродуктов, тем самым увеличить глубину переработки. Так как эффективность присадок зависит от соотношения в ней депрессора и дисперганта, а чаще всего это соотношение является Ноу-Хау производителя, поэтому подбор оптимального соотношения составных частей присадки для улучшения низкотемпературных характеристик тяжелых компонентов топлива судового маловязкого производства АО «АНХК» является актуальной задачей.',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'АО «АНХК»',
-            'study_result' => 'Знания: основные постулаты эффективности присадок, применяемых для улучшения низкотемпературных свойств
-Умения: на основании теории объяснить эффективность действия депрессорно-диспергирующих присадок
-Навыки: владеть навыками оптимизации и выбора наиболее эффективного соотношения депрессора и дисперганта в составе депрессорно-диспергирующей присадки.
-',
-            'product_result' => 'Подбор оптимального соотношение депрессора и дисперганта в присадке, применяемой для улучшения низкотемпературных характеристик компонентов топлива судового маловязкого производства АО «АНХК»',
-            'state_id' => '1',
-            'supervisors' => 'Ганина Анна Александровна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Полифункциональные (нано)композиты – молекулярный дизайн, структурные особенности, фундаментальные свойства.',
-            'places' => '15',
-            'goal' => 'Создание  новых полифункциональных композитов с целенаправленно формируемой структурой и свойствами для водородной энергетики.',
-            'description' => 'Полимерные композиты, сформированные в результате комбинации компонентов различной химической природы, представляют собой новый класс композиционных материалов с характеристиками, превосходящими аналогичные показатели отдельно взятых составляющих. В результате композиционного эффекта они проявляют уникальные механические, магнитные, оптоэлектронные и др. свойства, обладают высокой химической и термической стабильностью, а также устойчивостью к УФ-излучению. Существенное влияние на свойства таких композитов оказывает переход к нанометровому диапазону размеров индивидуальных компонентов системы. Обширную группу органо-неорганических композитов составляют структуры на основе диоксида кремния, полученные в результате золь-гель процесса с участием тетралкоксисиланов в присутствии высокомолекулярных соединений. Основная роль кремнийорганического прекурсора в таких системах сводится к регулированию процесса структурообразования композита, возможности управления размерами наночастиц и физико-техническими характеристиками материала. При этом кремниевый компонент композита - диоксид кремния, не содержит функциональных групп. В качестве носителя химически-активных фрагментов выступают функциональные высокомолекулярные соединения. Строение функциональных групп предшественников композитов позволит регулировать особенности их структуры и комплекс физико-химических свойств. В результате проведенных исследований будет установлена принципиальная возможность использования предлагаемых полифункциональных композитов при конструировании топливных элементов.',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: Способы и лабораторные методы получения полимерных мембран.
-Умения: Выбирать рациональную схему получения полимерной мембраны для топливных элементов с заданными эксплуатационными свойствами.
-Навыки: Синтезировать полимерной мембраны для топливных элементов с заданными эксплуатационными свойствами
-',
-            'product_result' => 'Полимерные мембраны для топливных элементов, обладающие протонной проводимостью. Физический прототип.',
-            'state_id' => '1',
-            'supervisors' => 'Шаглаева Нина Савельевна, Баяндин Виктор Владимирович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Статистическая обработка эксперимента  ',
-            'places' => '15',
-            'goal' => 'Анализ экспериментальных данных, способность обсуждать полученные результаты и предвидеть течение эксперимента в перспективе ',
-            'description' => 'Проведение эксперимента - это только часть научной задачи. Главная роль исследователя планирование процесса заранее (предвидеть разные направления) и умение интерпретировать полученные данные, которые в дальнейшем должны реализоваться в научной публикации. ',
-            'difficulty' => '1',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знать принципы измерения и аппаратурное оформление, возможности и ограничения каждого метода
-Уметь обобщать полученные результаты Владеть методами планирования и проведения эксперимента и оценки полученных результатов
-',
-            'product_result' => 'не указан',
-            'state_id' => '1',
-            'supervisors' => 'Айзина Юлия Александровна, Подгорбунская Татьяна Анатольевна ',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Браслеты с GPS-трекерами для контроля за состоянием здоровья, подключением техники безопасности и улучшением производственного травматизма.',
-            'places' => '15',
-            'goal' => 'оснащение производственных рабочих браслетами с GPS-трекерами для контроля за состоянием здоровья, подключением техники безопасности и улучшением производственного травматизма.',
-            'description' => 'ввиду удаленности большинства ремонтных участков Группы Компаний от специалистов по охране труда существует потребность в удаленном мониторинге соблюдения техники безопасности и состояния здоровья рабочих. В рамках проекта предлагается разработать прототип, основанный на измерении показателей состояния сотрудников с возможностью геопозиционирования и разграничения рабочих и опасных зон.',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Лаборатория энергетики Акселерационная программа, реализуемая ГК «ЕвроСибЭнерго» на базе ИРНИТУ
-
-
-
-конкурс научно-исследовательских проектов "Авангард науки"
-
-Лаборатория энергетики:
-“Оснащение производственных рабочих браслетами с GPS-трекерами для контроля за состоянием здоровья, подключением техники безопасности и улучшением производственного травматизма.”
-',
-            'study_result' => 'Знать виды, функциональное назначение, свойства беспроводных персональных сетей 
-Уметь составлять алгоритм работы устройства для конкретного назначения.
-Владеть навыками использования программных продуктов, предназначенных для программирования миниатюрных вычислительных устройств
-',
-            'product_result' => 'Определен оптимальный функционал, заданы ключевые параметры отслеживания.
-Разработано техническое решение. Проработаны возможные поставщики оборудования, программного обеспечения.
-',
-            'state_id' => '1',
-            'supervisors' => 'Губин Никита Андреевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Наблюдение измеряемых параметров физических сред и предметов с использованием  децентрализованных самоорганизующихся сетей',
-            'places' => '15',
-            'goal' => 'Формирование знаний о структуре сети, основных протоколах и порядке передачи данных, удаленном мониторинге и измерении физических величин, перспективных способах измерений и передачи данных нового поколения.',
-            'description' => 'Глобализация рынков, конкуренция, стремительное развитие технологий и наукоемких инноваций, появление сверхсложных научно-технических проблем требует от промышленности гораздо более быстрых темпов развития, предельно коротких циклов контроля и измерения физических характеристик в процессе разработки и производства продукции высокого качества. 
-Спрос на сложные многофункциональные инженерные изделия стимулирует процесс постоянных модификаций как самих устройств так и способов их взаимодействия.
-Перспективным трендом является создание беспроводных децентрализованных самоорганизующихся сенсорных сетей, состоящих из беспроводных сенсоров и управляющих устройств способных к самоорганизации с помощью интеллектуальных алгоритмов,
-В рамках проекта студентам предлагается провести анализ новых способов удаленного мониторинга и контроля, получить общие навыки по измерениям и мониторингу состояния  здоровья человека, окружающей среды, функционирования производственных и транспортных систем, учета различных ресурсов и др. 
-Знания, которые будут получены учащимися в ходе проектной работы, могут быть применены в их дальнейшей научно-исследовательской деятельности.   
-',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Лаборатория энергетики Акселерационная программа, реализуемая ГК «ЕвроСибЭнерго» на базе ИРНИТУ
-
-
-
-конкурс научно-исследовательских проектов "Авангард науки"
-
-Лаборатория энергетики:
-1)интеллектуальная система смазки подшипников электромашин постоянного тока.
-2)система централизованной смазки стрелы и находящейся на ней элементов.
-',
-            'study_result' => 'Знать виды, функциональное назначение, свойства беспроводных персональных сетей 
-Уметь составлять алгоритм работы устройства для конкретного назначения.
-Владеть навыками использования программных продуктов, предназначенных для программирования миниатюрных вычислительных устройств
-',
-            'product_result' => 'Разработка лабораторного стенда, с сетью взаимосвязанных заменяемых беспроводных датчиков.',
-            'state_id' => '1',
-            'supervisors' => 'Губин Никита Андреевич',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Система контроля целостности металлоконструкции стрелы экскаватора марки ЭШ',
-            'places' => '15',
-            'goal' => 'Разработка системы контроля целостности металлоконструкции стрелы экскаватора марки ЭШ',
-            'description' => 'Измерение целостности металлоконструкции стрелы эксковатора',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Лаборатория энергетики Акселерационная программа, реализуемая ГК «ЕвроСибЭнерго» на базе ИРНИТУ
-
-
-
-конкурс научно-исследовательских проектов "Авангард науки"
-
-Лаборатория энергетики:
-“ Система контроля целостности металлоконструкции стрелы экскаватора марки ЭШ.”
-',
-            'study_result' => 'Знать виды, функциональное назначение, свойства датчиков угла наклона 
-Уметь составлять алгоритм работы программы. 
-Владеть навыками использования программных продуктов, предназначенных для программирования микроконтроллеров
-',
-            'product_result' => 'Система контроля целостности металлоконструкции стрелы экскаватора марки ЭШ',
-            'state_id' => '1',
-            'supervisors' => 'Ченский Дмитрий Александрович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'Вибродиагностика сороудерживающих решеток',
-            'places' => '15',
-            'goal' => 'Разработка системы мониторинга уровня вибрации сороудерживающих решёток братской ГЭС с целью выявления предельных нагрузок.',
-            'description' => 'Вибродиагностика сороудерживающих решёток братской ГЭС с целью выявления предельных нагрузок.',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => 'Лаборатория энергетики Акселерационная программа, реализуемая ГК «ЕвроСибЭнерго» на базе ИРНИТУ
-
-
-
-конкурс научно-исследовательских проектов "Авангард науки"
-
-Лаборатория энергетики:
-“ Вибродиагностика сороудерживающих решеток.”
-',
-            'study_result' => 'Знать виды, функциональное назначение, свойства датчиков вибрации  
-Уметь составлять алгоритм работы устройства для конкретного назначения.
-Владеть навыками использования программных продуктов, предназначенных для программирования микроконтроллеров
-',
-            'product_result' => 'Система мониторинга уровня вибрации сороудерживающих решёток',
-            'state_id' => '1',
-            'supervisors' => 'Ченский Дмитрий Александрович',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'влияние  пористых  алюмосиликатных  матриц  на свойства протон-проводящих мембран  для топливных элементов',
-            'places' => '15',
-            'goal' => 'Изучить влияние различных пористых алюмосиликатных матриц, в частности, цеолитов разных структурных типов на характеристики протон-проводящих мембран для топливных элементов.',
-            'description' => 'Ионообменные мембраны на основе поливинилового спирта (ПВС) представляют собой перспективную группу материалов для применения в тведополимерных топливных элементах (ТПТЭ) благодаря высокой гидрофильности, способности к пленкообразованию, низкой стоимости, хорошим механическим свойствам и возможности сшивания ПВС различными химическими реагентами. Для улучшения технических характеристик таких мембран, используют керамические материалы на основе оксидов алюминия, кремния, титана, олова, циркония и др., которые способные повысить ионную проводимость, химическую и термическую стабильность, а также механическую прочность мембран. В настоящее время   большое внимание уделяется  получению новых биоразлагаемых протонообменных мембран для ТПТЭ, полученных на основе сшитого сульфоянтарной кислотой поливинилового спирта с добавлением в качестве кислотного компонента – цеолитов. В работе предлагается для получения таких мембран использовать цеолиты различных структурных типов и изучить влияние не только структурного типа цеолита, но и его содержания на характеристики мембран. ',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: углубленные знания золь-гель технологии; технологии синтеза цеолитных материалов, методов тестирования характеристик мембран для ТПТЭ; 
-Умения: выбрать соответствующие методы и подходы для синтеза мембран для ТПТЭ;
-Навыки: использования методов синтеза протон-проводящих мембран и тестирования их рабочих характеристик.
-',
-            'product_result' => 'Предполагается получение протон-проводящих мембран на основе цеолитов разных структурных типов и изучение их характеристик. ',
-            'state_id' => '1',
-            'supervisors' => 'Скорникова Светлана Афанасьевна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'влияние  модифицирования  алюмосиликатов  на  их  физико-химические характеристики',
-            'places' => '15',
-            'goal' => 'Исследовать влияние различных способов модифицирования синтетических алюмосиликатов, в том числе цеолитов, на их физико-химические характеристики. ',
-            'description' => 'Цеолиты находят широкое применение в нефтехимии и нефтепереработке. Кроме этого в последнее время возрос интерес к цеолитам и в качестве уникальных адсорбентов, которые нашли применение и в медицине. С этой целью возрос интерес исследователей к разработке нетрадиционных способов их модифицирования для получения новых характеристик, таких как микро-мезопористая структура, магнитные характеристики, кислотные свойства и др. В связи с этим целью данного проекта является  изучение влияние различных способов модифицирования цеолитов на их физико-химические свойства.',
-            'difficulty' => '2',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: получены углубленные знания в области поверхностных явлений в дисперсных системах и физико-химии наноразмерных систем; 
-Умения: выбрать оптимальные способы модифицирования цеолитов; 
-Навыки: использовать их для получения соответствующих характеристик цеолитов
-',
-            'product_result' => 'Получены модифицированные образцы цеолитов, изучены их характеристики. ',
-            'state_id' => '1',
-            'supervisors' => 'Скорникова Светлана Афанасьевна',
-            'type_id' => '1',
-        ]);
-        DB::table('projects')->insert([
-            'title' => 'синтез  магнитоуправляемых композитов на основе цеолитов и магнитных наночастиц',
-            'places' => '15',
-            'goal' => 'Целью проекта является создание наноразмерных магнитных цеолитов путем добавления магнитных F3O4 частиц в процессе кристаллизации, для получения кристаллов цеолита с магнитным ядром внутри структуры.',
-            'description' => 'Получение магнитных нанокомпозитов на основе пористых носителей является одним из возможных способов разработки систем адресной магнитоуправляемой доставки лекарственных препаратов. Определенный интерес вызывает получение композитных материалов на основе цеолитов и наночастиц магнетита. Цеолиты - это микропористые кристаллические вещества. Кристалличность обеспечивает механическую и химическую стабильность цеолитов, одинаковый и контролируемый размер пор, каналов, полостей. Это свойство определяет использование цеолитов в качестве молекулярных сит, адсорбентов, детергентов. Благодаря своим ионообменным и сорбционным свойствам, широко применяются для химической, нефтехимической и нефтеперерабатывающей промышленности, экологии и медицины.  Цеолиты благодаря особенностям своей структуры являются уникальными сорбентами, позволяющими осуществлять эффективную адсорбцию и высвобождение лекарственных препаратов в физиологической среде организма, при этом они являются нетоксичными и биоразлагаемыми материалами. Модифицирование цеолитов магнитными наночастицами позволяет придать им магнитные свойства',
-            'difficulty' => '3',
-            'date_start' => '2022-09-01',
-            'date_end' => '2023-05-30',
-            'requirements' => '',
-            'customer' => '',
-            'study_result' => 'Знания: дополнительные знания в области нанохимии магнитных материалов;
-Умения: применять методы соосаждения, золь-гель методы и гидротермальный синтез для получения магнитных композитов на основе цеолитов;
-Навыки: гидротермального синтеза цеолитов с магнитным ядром, позволяющие получить материалы с магнитными свойствами и высокой адсорбционной способностью.
-',
-            'product_result' => 'Планируется получить магнитоуправляемый композитов на основе цеолитов и магнитных наночастиц. Данный нанокомпозит будет иметь уникальные свойства цеолита и обладать магнитными свойствами, что позволит увеличить области возможного его применения.  ',
-            'state_id' => '1',
-            'supervisors' => 'Скорникова Светлана Афанасьевна',
             'type_id' => '1',
         ]);
         DB::table('projects')->insert([
@@ -4566,6 +3944,758 @@ Case-in , Международный нефтегазовый, кейс ESG
             'supervisors' => 'Войтюк Алена Александровна',
             'type_id' => '1',
         ]);
+        DB::table('projects')->insert([
+            'title' => 'Оптимизация процесса переработки техногенного и минерального сырья',
+            'places' => '15',
+            'goal' => 'Разработать технологические рекомендации по переработки отходов вторичной металлургии свинца и оптимизации процесса производства первичного алюминия',
+            'description' => 'Проблема накопления отходов в процессе переработки свинцовых аккумуляторных батарей встречается на большинстве заводов данной отрасли. Самым ярким примером являются накопленные отходы в г. Свирске, объем которых составляет 3500-4500 т. Данный отход относится к третьему классу опасности, но также представляет собой ценный продукт для доизвлечения свинца, которого в отходах содержится до 30 мас. %. Разработанное технологическое решение может быть использовано и на других предприятиях перерабатывающих аккумуляторные батареи.
+При производстве алюминия электролизом криолит-глиноземного расплава возникает ряд проблем. При повышении амперной нагрузки повышается температура электролита, поэтому необходимо организовать эффективный отвод тепла от поверхностей электролизера и уменьшить потери тепла. Увеличение засыпки и размеров электролизера способствуют уменьшению тепловых потерь за счет снижения отношения их поверхности к объему. 
+Увеличение силы тока на электролизной серии выше нормативного значения приводит к ряду расстройств на электролизере: увеличению сопротивления токопроводящих элементов ванны, нарушению теплового баланса, повышению выбросов газообразных веществ. Поэтому проработка инновационных решений для компенсации амперной нагрузки является не простой и важной задачей.
+Потери анодного напряжения связаны в первую очередь с конструкцией анодного узла, составом и качеством материала анода. Важную роль в перепаде напряжения в анодном массиве играет токораспределение по анодам. Известно, что оно может быть крайне неравномерно, в результате чего возникают конусы, приводящие к замыканию электродов.
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания:
+Принципы рационального природопользования в области металлургии.
+Конструкция электролизеров для получения алюминия; основные параметры, оказывающие влияние на эффективность металлургических процессов производства алюминия электролитическим способом и диапазоны их оптимальных значений.
+Умения:
+Уметь применять, совершенствовать или разрабатывать методы переработки отходов металлургического производства.
+Уметь применять полученные знания о строении криолит-глиноземных расплавов на практике; уметь проводить анализ влияния различных факторов на основные показатели электролиза
+Навыки:
+Владеть навыками разработки предложений по переработке отходов металлургического производства и оптимизации процесса производства алюминия. 
+',
+            'product_result' => 'Технологические рекомендации, включающие анализ образующихся отходов вторичной металлургии свинца, а также конкретные технологические решения по вовлечению и переработке техногенного сырья. 
+Технологические рекомендации, включающие анализ проблем возникающих при производстве первичного алюминия, а также конкретные технологические решения по их решению
+',
+            'state_id' => '1',
+            'supervisors' => 'Тютрин Андрей Александрович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Расширение сырьевой базы металлургического производства',
+            'places' => '15',
+            'goal' => 'Разработать технологические рекомендации и стратегию расширения сырьевой базы металлургического производства за счет разработки новых месторождений и переработки техногенного сырья',
+            'description' => 'На территории России сосредоточено почти 30% мировых разведанных запасов никеля, 28% – железа, 10% – меди, по запасам других видов металлов, страна входит в число ведущих горнодобывающих государств. Ресурсная обеспеченность России определяется исходя из необходимости удовлетворения текущих и перспективных потребностей экономики, в соответствии с уровнем экономического развития страны. Однако Россия отстает от большинства стран мира по уровню вовлечения минерально-сырьевой базы в экономический оборот, по уровню обеспечения народнохозяйственных потребностей в ресурсах и по темпам роста горноперерабатывающей и металлургической промышленности. Отставание от среднемирового уровня свидетельствует о проблемах вовлечения природных ресурсов в производство, о трудностях с воспроизводством материально-технической базы страны.
+Вместе с тем металлургические предприятия являются одним из основных источников загрязнения окружающей среды. Выбросы вредных веществ на конкретных промышленных предприятиях зависят от объема производства, структуры предприятия, оснащенности газоочистным оборудованием, технологических особенностей и других причин. В связи со всевозрастающим негативным воздействием производственной деятельности металлургических предприятий на состояние окружающей среды наибольшую важность приобретают технологии, обеспечивающие устойчивое развитие за счет повышения энергоэффективности, комплексного использования сырья, снижения экологической нагрузки и производственных издержек. Как показывает практика, переработка многих видов отходов металлургического производства экономически выгодно и технически осуществимо.
+Основными направлениями расширения сырьевой базы являются разработка новых месторождений и переработка уже накопленных и вновь образующихся отходов.
+',
+            'difficulty' => '1',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания:
+Принципы рационального природопользования в области металлургии.
+Умения:
+Уметь применять принципы рационального природопользования для энерго- и ресурсосбережения технологических процессов в металлургии 
+Навыки:
+Владеть навыками использования принципов рационального природопользования для энерго- и ресурсосбережения технологических процессов в металлургии.
+',
+            'product_result' => 'Технологические рекомендации, включающие анализ образующихся отходов металлургических предприятий и существующих запасов минерального сырья, а также конкретные технологические решения по вовлечению и переработке минерального и техногенного сырья',
+            'state_id' => '1',
+            'supervisors' => 'Зайцева Анна Александровна, Тютрин Андрей Александрович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка технологии переработки золотосодержащих руд',
+            'places' => '15',
+            'goal' => 'Разработать технологию по переработке золотосодержащего сырья и расширить сырьевую базу путем вовлечения в переработку упорного, бедного, забалансового, комплексного сырья',
+            'description' => 'В России в золотых рудах коренных месторождений заключено 61,1% разведанных запасов. В комплексных рудах – 25,5%, в россыпях – 13,4%. Прогнозные ресурсы коренных месторождений 38,8 тыс. т, россыпей 2,8 тыс. т. Однако Россия отстает от большинства стран мира по уровню вовлечения минерально-сырьевой базы в экономический оборот, по уровню обеспечения народнохозяйственных потребностей в ресурсах и по темпам роста горноперерабатывающей и металлургической промышленности. На сегодняшний день Россия занимает третье место по добыче золота (282-300 тонн/год). Лидерами являются Китай (400 тонн/год) и Австралия (315 тонн/год). Легких для переработки руд в России и мире осталось крайне мало. Все чаще золотодобытчикам приходится работать с упорным рудами. Традиционного цианирования в условиях переработки упорных руд недостаточно. Такие руды требуют обогатительных процессов прежде, чем их будет целесообразно подвергать цианированию. Так же следует отметить, что в настоящее время особый интерес представляют и комплексные руды, содержащие благородные металлы. Переработка комплексных руд позволяет повысить экономические показатели производства. 
+Основным направлением в золотодобыче является выбор наиболее рентабельной технологии по переработке золотосодержащих руд. 
+',
+            'difficulty' => '1',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания:
+Принципы рационального природопользования в области металлургии.
+Умения:
+Уметь применять принципы рационального природопользования для энерго- и ресурсосбережения технологических процессов в металлургии 
+Навыки:
+Владеть навыками использования принципов рационального природопользования для энерго- и ресурсосбережения технологических процессов в металлургии.
+',
+            'product_result' => 'Технологические рекомендации, включающие анализ существующих схем переработки золотосодержащих руд, а также конкретные технологические решения по расширению сырьевой базы путем вовлечения в переработку упорного, бедного, забалансового, комплексного сырья',
+            'state_id' => '1',
+            'supervisors' => 'Шипнигов Антон Андреевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Проектирование, монтаж и наладка учебно-исследовательских стендов на базе оборудования для автоматизации ПГ ОВЕН (3й курс)',
+            'places' => '15',
+            'goal' => 'Дать обучающимся возможность приобрести практические знания, умения, навыки работы с оборудованием для автоматизации в процессе проектирования, монтажа, наладки учебно-исследовательских стендов и исследования систем автоматического регулирования.',
+            'description' => 'Основной задачей учебных стендов является обучение студентов основам автоматизации технологических процессов, демонстрация работы средств автоматического управления и регулирования. Внедрение в процесс обучения стендов поможет учащимся детально изучать процессы автоматического управления и регулирования, а разработка методических пособий по работе с ними, получать практические навыки в проектировании систем автоматизации. Работа на стендах знакомит будущих специалистов в области автоматизации с условиями максимально приближенными к производственным. 
+Вследствие этого, задачи разработки устройств данного класса являются актуальными
+',
+            'difficulty' => '1',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Институт высоких технологий ИРНИТУ
+Региональный учебный центр «ОВЕН-ИРНИТУ»
+',
+            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации,  нормы и способы социального взаимодействия.
+Умения: формулировать цели и задачи; творчески и критически мыслить, решать задачи в соответствии с ролевой позицией.
+Навыки: работа в команде, получение первичной информации, навыками определения и постановки задач.
+',
+            'product_result' => '1.Проект учебно-исследовательских стендов.
+2.Разработка технической документации:
+-схема электрическая принципиальная;
+-схема внешних проводок;
+-схема питания;
+-монтажная схема;
+-методические указания к лабораторным и практическим работам;
+-программное обеспечение и т.д.
+3. Изготовленный учебно-исследовательский стенд.
+',
+            'state_id' => '1',
+            'supervisors' => 'Ершов П.Р., Подкорытов А.А.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Проектирование, монтаж и наладка учебно-исследовательских стендов на базе оборудования для автоматизации ПГ ОВЕН (4й курс)',
+            'places' => '15',
+            'goal' => 'Дать обучающимся возможность приобрести практические знания, умения, навыки работы с оборудованием для автоматизации в процессе проектирования, монтажа, наладки учебно-исследовательских стендов и исследования систем автоматического регулирования',
+            'description' => 'Основной задачей учебных стендов является обучение студентов основам автоматизации технологических процессов, демонстрация работы средств автоматического управления и регулирования. Внедрение в процесс обучения стендов поможет учащимся детально изучать процессы автоматического управления и регулирования, а разработка методических пособий по работе с ними, получать практические навыки в проектировании систем автоматизации. Работа на стендах знакомит будущих специалистов в области автоматизации с условиями максимально приближенными к производственным. 
+Вследствие этого, задачи разработки устройств данного класса являются актуальными
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Институт высоких технологий ИРНИТУ
+Региональный учебный центр «ОВЕН-ИРНИТУ
+',
+            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации,  нормы и способы социального взаимодействия.
+Умения: формулировать цели и задачи; творчески и критически мыслить, решать задачи в соответствии с ролевой позицией.
+Навыки: работа в команде, получение первичной информации, навыками определения и постановки задач.
+',
+            'product_result' => '1.Проект учебно-исследовательских стендов.
+2.Разработка технической документации:
+-схема электрическая принципиальная;
+-схема внешних проводок;
+-схема питания;
+-монтажная схема;
+-методические указания к лабораторным и практическим работам;
+-программное обеспечение и т.д.
+3. Изготовленный учебно-исследовательский стенд.
+
+',
+            'state_id' => '1',
+            'supervisors' => 'Ершов П.Р.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка элементов  автоматических устройств контроля физико-химических параметров гидрометаллургических процессов переработки минерального сырья',
+            'places' => '15',
+            'goal' => 'Разработка технических и программных составляющих устройств автоматического контроля таких параметров как: концентрация растворенного золота, цианида натрия  в технологических растворах гидрометаллургических отделений при переработке минерального сырья',
+            'description' => 'Аналитический контроль играет важную роль  для успешного ведения технологических процессов. В большинстве случаев измерения проводятся либо в лабораторных условиях и соответственно данные  могут потерять свою актуальность из-за достаточно большого времени проведения анализов, либо существующие устройства  имеют высокую стоимость. Вследствие этого, задачи разработки устройств данного класса являются актуальными. В рамках данного проекта  предлагается рассматривать отдельные задачи для достижения общей цели проекта, такие как разработка отдельных алгоритмов,  разработка  отдельных технических узлов.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знать: метрологические и эксплуатационные характеристики, особенности монтажа, погрешности, состояние и перспективы и тенденции современного приборостроения, классификацию, назначение, особенности применения, устройство и принцип действия приборов и устройств качественного анализа (газоанализаторов, рН- метров, концентратомеров и пр.).
+Уметь: проводить декомпозицию общей задачи измерения, с выделением отдельных подсистем 
+Владеть: навыками работы с анализаторами: подготовки проб, проведения измерений, оценки и обработки    результатов, в том числе с применением специализированного программного обеспечения
+',
+            'product_result' => 'Алгоритмы реализации отдельных подсистем
+Структурные схемы отдельных технических решений
+',
+            'state_id' => '1',
+            'supervisors' => 'Овсюков Александр Евгеньевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка системы управления лабораторной информацией',
+            'places' => '15',
+            'goal' => 'Разработка структуры',
+            'description' => 'Система управления лабораторной информацией – программное обеспечение, предназначенное для управления лабораторными потоками работ и документов. Позволяет оптимизировать сбор, анализ, возврат и отчетность лабораторных данных. Часто применяется вместе с MES-системами. Задачами данного проекта является рассмотрение существующих систем данного класса, рассмотрение направления движения потоков информации, выделение основных функций которые реализуются, разработка структуры, описание функций, составление алгоритмов обработки информации.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знать: международную систему единиц физических величин, методы измерений, метрологические показатели средств измерений, метрологические характеристики средств измерения, погрешности  измерений, причины возникновения погрешностей,  методику обработки результатов наблюдений и оценивание погрешностей измерений, поверку и калибровку средств измерений, методы поверки (калибровки) 
+Уметь: обоснованно применять методы метрологии и стандартизации,  проводить простейшую обработку результатов многократных измерений.
+Владеть: методами метрологии и стандартизации, достаточным творческим мышлением и способностью самостоятельно принимать решения.
+',
+            'product_result' => 'Структура программного комплекса
+Описание функций реализуемых данным комплексом
+Описание графического интерфейса
+Алгоритмы обработки  информации
+',
+            'state_id' => '1',
+            'supervisors' => 'Овсюков Александр Евгеньевич, Колодин Алексей Александрович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Формирование компетенции персонала высокотехнологичного предприятия как инструмент обеспечения его конкурентоспособности. Разработка веб-приложения «Система адаптации персонала».
+   3-й КУРС
+',
+            'places' => '15',
+            'goal' => 'Разработать веб-приложение, построенного по типу «Электронное обучение» на базе CMS Wordpress, с применением стека технологий HTML/CSS/JS',
+            'description' => 'Актуальной задачей обеспечения конкурентоспособности высокотехнологичного предприятия является формирование компетенции персонала. Одним из важнейших ресурсов достижения результативности процессов является подготовка компетентного персонала. При найме новых сотрудников в штат организации происходит процесс их адаптации. В рамках адаптационного периода новоприбывший сотрудник ознакамливается с необходимой нормативно-правовой документацией и внутренними регламентами компании. К таким регламентам могут относиться как требования федерального уровня, например инструктаж о соблюдении мер по защите и охране труда, так и внутренние условия нахождения на режимных объектах, правила пожарной безопасности, и иные требования.
+Создание веб-приложения по типу «Электронное обучение» позволит не только собрать все необходимые для адаптации сотрудников документы на единой площадке, но и даст возможность сотрудникам удаленно проходить адаптационные мероприятия в части ознакомления и прохождения тестирования в рамках тех или иных требований, заявленных руководством. Кроме того, введение системы электронного обучения позволит унифицировать процесс управления обучающими материалами, необходимых для адаптации персонала
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Иркутская Нефтяная Компания. 
+Газпром добыча Иркутск.
+ВСЖД – филиал РЖД
+',
+            'study_result' => 'Знать: основные понятия и методы риск-менеджмента; правовые, нормативно-технические и организационно-правовые основы обеспечения безопасности и менеджмента риска на
+предприятиях;
+Уметь: выявлять риски и оценивать степень риска при управлении качеством; вести документацию по разработке и внедрению систем менеджмента риска;
+Владеть: навыками применения инструментов и методов риск-менеджмента по снижению степени риска в системах качества
+',
+            'product_result' => 'Веб-приложение, запускаемое на сервере организации, дающее возможность организации электронного обучения в рамках процесса адаптации персонала',
+            'state_id' => '1',
+            'supervisors' => 'Лонцих Павел Абрамович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Формирование компетенции персонала высокотехнологичного предприятия как инструмент обеспечения его конкурентоспособности.  Проектирование UX (пользовательского опыта) и UI (интерфейса) для web-приложения «Система адаптации персонала».
+     4-Й КУРС
+',
+            'places' => '15',
+            'goal' => 'Спроектировать интерфейс web-приложения, построенного по типу «электронное обучение» на основе CJM',
+            'description' => 'Актуальной задачей обеспечения конкурентоспособности высокотехнологичного предприятия является формирование компетенции персонала. Проблема конкурентоспособности предприятия определяется его ресурсами, и, прежде всего, компетентностью персонала. Это требует формирования СМК, выявление бизнес-процессов, оценку рис-ориентированной деятельности и разработку мер по совершенствованию и улучшению результативности процессов.  Предварительное UX/UI проектирование web-приложения необходимо для сокращения временных издержек при внедрении системы адаптации новых сотрудников высокотехнологичного предприятия и повысит качество разрабатываемого web-приложения. Проектирование интерфейса в соответствии с картой пользовательского пути и учетом достоинств/недостатков аналогичных систем. ',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Иркутская Нефтяная Компания. 
+Газпром добыча Иркутск.
+ВСЖД – филиал РЖД 
+',
+            'study_result' => 'Знать: основные понятия и методы риск-менеджмента; правовые, нормативно-технические и организационно-правовые основы обеспечения безопасности и менеджмента риска на
+предприятиях;
+Уметь: выявлять риски и оценивать степень риска при управлении качеством; вести документацию по разработке и внедрению систем менеджмента риска;
+Владеть: навыками применения инструментов и методов риск-менеджмента по снижению степени риска в системах качества
+',
+            'product_result' => 'Интерфейс web-приложения, готовый для передачи в разработку. Спроектирован с помощью методологии CJM, обоснованы возможные пользовательские цели и пути их решения.',
+            'state_id' => '1',
+            'supervisors' => 'Лонцих Павел Абрамович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Информационная система Байкальского региона',
+            'places' => '15',
+            'goal' => 'Создание информационной системы Байкальского региона',
+            'description' => 'Целью проекта является создание прототипа интернет-сервиса с картой по Байкалу для российских и иностранных туристов, отличительными особенностями которого будут:
+• Контент для туриста – предоставление информации для планирования отдыха по виду, времени, месту, стоимости и способу проезда.
+• Единая автоматизированная площадка для турбизнеса – возможность для продвижения своих услуг.
+• Интерактивная карта
+Создание подобного ресурса создаст возможности для увеличения известности и доступности региона  для туристов, привлечет туристов, сделает местный туристический рынок более открытым, гибким, конкурентным.
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Администрация п.Хужир',
+            'study_result' => 'Уметь: анализировать и обобщать информацию в сфере маркетинга при управлении проектом;
+Владеть: навыками анализа и обобщения информацию в сфере маркетинга при управлении проектом.
+Уметь: использовать современные информационные технологии для сбора, анализа и обобщения информации; 
+Владеть: Навыками использования современных информационных технологий для сбора, анализа и обобщения информации
+',
+            'product_result' => 'Прототип информационной системы Байкальского региона',
+            'state_id' => '1',
+            'supervisors' => 'Куклина Мария Владимировна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка 3D моделей для рынка Healthnet',
+            'places' => '15',
+            'goal' => '1) Совершенствование оказания медицинской помощи онкологическим пациентам. 
+2) Улучшение качества обучения специалистов эндоскопии.
+',
+            'description' => 'Злокачественные новообразования (ЗНО) стоят на третьем месте по причинам смерти населения в Российской Федерации, после заболеваний сердечно-сосудистой системы и внешних причин.
+В ходе проекта будет разработана 3D-модель, созданная на основе механических свойств нормальной и опухолевой тканей, а также программа, благодаря которой улучшится визуализация слабо-контактируемых злокачественных опухолей по МРТ/МСКТ-снимкам. 
+Проект позволит с помощью данных технологий воспроизводить высокоточные трехмерные модели человеческих органов в реальном времени.  К аддитивным технологиям относится биомоделирование — создание точной виртуальной или реальной модели интересующей области человеческого организма на основе данных лучевой диагностики, как правило, компьютерной томографии (КТ). Также позволит усовершенствовать диагностику и планирование лечения онкологических пациентов, в том числе хирургическое, злокачественных опухолей.
+3D-печать имеет огромный потенциал в медицине. С помощью этих технологий можно воспроизводить высокоточные трехмерные модели человеческих органов, а также некоторые имплантаты. Разработчики подобных технологий стремятся к созданию органов в реальном времени.
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'ГБУЗ Иркутский областной онкологический диспансер',
+            'study_result' => 'В результате реализации проекта у студентов должна быть сформирована способность обеспечения практического применения результатов научного исследования:
+ПКР-4. Способность определять стоимостную оценку основных ресурсов и затрат по реализации проекта ПКР-5. Способность организовать работу исполнителей в коллективе, находить и принимать управленческие решения в области организации работ по проекту и нормированию труда
+ПКР-7. Способность обеспечить практическое применение результатов научного исследования
+ПКР-11. Способность спланировать необходимый эксперимент, получить адекватную модель и исследовать ее 
+',
+            'product_result' => 'Главная ценность продукта заключатся снизить риски для здоровья пациента. 3D-печать в медицине позволяет с высокой точностью моделировать и создавать стоматологические имплантаты, протезы, прототипы органов. Также 3D-печать помогает уже работающим специалистам и медикам эффективнее учиться и повышать квалификацию, практиковаться и составлять точные планы хирургических операций',
+            'state_id' => '1',
+            'supervisors' => 'Конюхов Владимир Юрьевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка модели коммерциализации результатов проекта «Исследование противокоррозионных свойств эпоксидных композиций, допированных ингибиторами коррозии',
+            'places' => '15',
+            'goal' => 'Создание эффективной модели продвижения на рынок результатов НИОКР ВУЗа на примере проекта «Исследование противокоррозионных свойств эпоксидных композиций, допированных ингибиторами коррозии»',
+            'description' => '    При реализации НИОКР в рамках ВУЗов одной из основных задач является продвижение их результатов на рынок, а именно: поиск схем и возможностей коммерциализации, привлечение инвесторов, организация высокотехнологичного бизнеса, создание конкурентной среды технологического предпринимательства. Именно при разработке инновационного проекта, решающее значение имеют возможности коммерциализации результатов НИОКР, основанные на проведенных маркетинговых исследованиях. В рамках данного проекта (техническая аспект) исследуются способы защиты металлических конструкций от коррозийных процессов и разрабатывается модель продвижения на рынок результатов исследования (предпринимательский аспект).
+      Коррозия металлов наносит значительный ущерб народному хозяйству нашей страны. Потери от коррозии металлов весомы, они складываются из стоимости изготовления металлических конструкций, пришедших в негодность вследствие коррозии, из безвозвратных потерь в виде продуктов коррозии и из косвенных убытков. В настоящее время большая часть нефтегазовых месторождений находится в поздней стадии разработки, когда снижается добыча и резко возрастает обводненность нефти. Такие месторождения характеризуются значительными осложнениями в процессах добычи, сбора и подготовки нефти, связанными с образованием стойких нефтяных эмульсий, отложениями АСПО, неорганических солей, наличием механических примесей, коррозионным разрушением оборудования и нефтепроводов.Увеличение коррозионной активности, добываемой совместно с нефтью воды на данном этапе является серьезной проблемой. Наиболее эффективным и технологически несложным защитным мероприятием является ингибиторная защита. 
+     Именно поэтому исследования способов защиты металлических конструкций от коррозийных процессов и создание эффективной модели бизнеса на основе этих исследований являются крайне актуальными. 
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'соискатель ИрНИТУ (сотрудник ИАЗ)',
+            'study_result' => 'В результате реализации проекта у студентов должна быть сформирована способность обеспечения практического применения результатов научного исследования (ПКР-7, в части ПКР-7.3, ПКР-7.4) и: 
+знания основных способов коммерциализации результатов НИОКР;
+умения обеспечения практического применения результатов научного исследования;
+навыки осуществления деятельности по продвижению на рынок результатов НИОКР. 
+',
+            'product_result' => 'Практические рекомендации (алгоритм) по продвижению на рынок результатов НИОКР, осуществляемых в ИрНИТУ',
+            'state_id' => '1',
+            'supervisors' => 'Уразова Нина Геннадьевна ',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка рецептур продуктов питания функционального назначения на основе плодоовощного растительного сырья Иркутской области и организация их безопасного производства ',
+            'places' => '15',
+            'goal' => 'Дать обучающимся возможность приобрести востребованные практико-ориентированные знания, умения, навыки в экспериментальной отработке рецептур функциональных пищевых продуктов и подготовки документации для обеспечения качества, и безопасности их производства.  ',
+            'description' => 'Продукты функционального питания и их компоненты могут модифицировать метаболизм в организме человека и играть важную роль в предотвращении возникновения различных заболеваний. При создании безопасного производства продуктов функционального питания необходимо знать химический состав сырья, пищевую ценность, специальные приемы технологической обработки.
+Для обеспечения качества и безопасности продуктов питания необходимо знать и уметь определять факторы, оказывающие негативное влияние на безопасность готовой продукции, зависимость этих факторов от применяемого сырья, технологии, оборудования и упаковки. Применение специальных систем качества и безопасности пищевой продукции позволяет управлять рисками внутри производства и обеспечивать сохранение здоровья потребителя. 
+',
+            'difficulty' => '1',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации
+Умения: формулировать цели и задачи; творчески и критически мыслить
+Навыки: работа в команде, получение первичной информации
+',
+            'product_result' => '1.Разработана рецептура функционального пищевого продукта, проведены эксперименты применения рецептуры с отработкой параметров процесса производства, получен лабораторный образец. 
+2.Определены этапы построения системы безопасности пищевой продукции, разработаны обязательные мероприятия для обеспечения безопасности производства, определены возможные риски пищевой безопасности для готовой продукции
+3. Проведены исследования на соответствие показателей качества лабораторного образца требованиям ГОСТ, подтверждено функциональное назначение. Разработана технологическая документация и рекомендации по применению.
+',
+            'state_id' => '1',
+            'supervisors' => 'Куприна О.В.       , Евстафьева О.А.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка рецептур продуктов питания функционального назначения на основе растительного сырья Иркутской области и организация их безопасного производства ',
+            'places' => '15',
+            'goal' => 'Дать обучающимся возможность приобрести востребованные практико-ориентированные знания, умения, навыки в экспериментальной отработке рецептур функциональных пищевых продуктов и подготовки документации для обеспечения качества, и безопасности их производства',
+            'description' => 'Продукты функционального питания и их компоненты могут модифицировать метаболизм в организме человека и играть важную роль в предотвращении возникновения различных заболеваний. При создании безопасного производства продуктов функционального питания необходимо знать химический состав сырья, пищевую ценность, специальные приемы технологической обработки.
+Для обеспечения качества и безопасности продуктов питания необходимо знать и уметь определять факторы, оказывающие негативное влияние на безопасность готовой продукции, зависимость этих факторов от применяемого сырья, технологии, оборудования и упаковки. Применение специальных систем качества и безопасности пищевой продукции позволяет управлять рисками внутри производства и обеспечивать сохранение здоровья потребителя. 
+',
+            'difficulty' => '1',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации
+Умения: формулировать цели и задачи; творчески и критически мыслить
+Навыки: работа в команде, получение первичной информации
+',
+            'product_result' => '1.Разработана рецептура функционального пищевого продукта, проведены эксперименты применения рецептуры с отработкой параметров процесса производства, получен лабораторный образец. 
+2.Определены этапы построения системы безопасности пищевой продукции, разработаны обязательные мероприятия для обеспечения безопасности производства, определены возможные риски пищевой безопасности для готовой продукции
+3. Проведены исследования на соответствие показателей качества лабораторного образца требованиям ГОСТ, подтверждено функциональное назначение. Разработана технологическая документация и рекомендации по применению.
+',
+            'state_id' => '1',
+            'supervisors' => 'Гусакова Г.С., Евстафьева О.А.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Организация безопасного производства экологически чистых продуктов питания на основе растительного сырья Иркутской области',
+            'places' => '15',
+            'goal' => 'Дать обучающимся возможность приобрести востребованные практико-ориентированные знания, умения, навыки в подготовки документации для обеспечения качества, и безопасности их производства',
+            'description' => 'Для обеспечения качества и безопасности продуктов питания необходимо знать и уметь определять факторы, оказывающие негативное влияние на безопасность готовой продукции, зависимость этих факторов от применяемого сырья, технологии, оборудования и упаковки. Применение специальных систем качества и безопасности пищевой продукции позволяет управлять рисками внутри производства и обеспечивать сохранение здоровья потребителя. ',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации
+Умения: формулировать цели и задачи; творчески и критически мыслить
+Навыки: работа в команде, получение первичной информации
+',
+            'product_result' => '1.Определены этапы построения системы безопасности пищевой продукции, разработаны обязательные мероприятия для обеспечения безопасности производства, определены возможные риски пищевой безопасности для готовой продукции',
+            'state_id' => '1',
+            'supervisors' => 'Евстафьева О.А.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Спортивные напитки на основе растительного сырья Иркутской области',
+            'places' => '15',
+            'goal' => 'Дать обучающимся возможность приобрести востребованные практико-ориентированные знания, умения, навыки в подготовки документации для обеспечения качества, и безопасности их производства',
+            'description' => 'Продукты функционального питания и их компоненты могут модифицировать метаболизм в организме человека и играть важную роль в предотвращении возникновения различных заболеваний. При создании безопасного производства продуктов функционального питания необходимо знать химический состав сырья, пищевую ценность, специальные приемы технологической обработки',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации
+Умения: формулировать цели и задачи; творчески и критически мыслить
+Навыки: работа в команде, получение первичной информации
+',
+            'product_result' => '1.Разработана рецептура функционального пищевого продукта, проведены эксперименты применения рецептуры с отработкой параметров процесса производства, получен лабораторный образец. ',
+            'state_id' => '1',
+            'supervisors' => 'Гусакова Г.С.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Разработка технологии получения пектинового экстракта на основе растительного сырья Иркутской области и организация их безопасного производства',
+            'places' => '15',
+            'goal' => 'Дать обучающимся возможность приобрести востребованные практико-ориентированные знания, умения, навыки в подготовки документации для обеспечения качества, и безопасности их производства.  ',
+            'description' => 'Продукты функционального питания и их компоненты могут модифицировать метаболизм в организме человека и играть важную роль в предотвращении возникновения различных заболеваний. При создании безопасного производства продуктов функционального питания необходимо знать химический состав сырья, пищевую ценность, специальные приемы технологической обработки.',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: знать основные принципы организации своей работы, требования к представлению результатов, инструменты поиска информации
+Умения: формулировать цели и задачи; творчески и критически мыслить
+Навыки: работа в команде, получение первичной информации
+',
+            'product_result' => '1.Разработана ТИ функционального пищевого продукта, проведены эксперименты применения с отработкой параметров процесса производства, получен лабораторный образец. 
+2.Определены этапы построения системы безопасности пищевой продукции, разработаны обязательные мероприятия для обеспечения безопасности производства, определены возможные риски пищевой безопасности для готовой продукции
+3. Проведены исследования на соответствие показателей качества лабораторного образца требованиям ГОСТ, подтверждено функциональное назначение. Разработана технологическая документация и рекомендации по применению.
+',
+            'state_id' => '1',
+            'supervisors' => 'Гусакова Г.С.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Переработка пластиковых отходов.',
+            'places' => '15',
+            'goal' => 'Исследовать возможности переработки бытовых пластиковых отходов.',
+            'description' => 'В рамках проекта изучить существующие способы переработки пластиковых отходов, определить наиболее перспективный  способ, провести эксперимент с разными видами пластиков. Исследовать полученные материалы.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: способы переработки различных видов пластика,  и методики определения свойств готовых продуктов.
+Умения: подбирать технологию переработки к определенному сырью.
+Навыки: работы с сырьем в лаборатории.
+',
+            'product_result' => 'Получение синтетического  топлива и определение его свойств. ',
+            'state_id' => '1',
+            'supervisors' => 'Оборина М.А.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Масла  ',
+            'places' => '15',
+            'goal' => 'Изучение свойств масел разной основы и разного состава',
+            'description' => 'При производстве товарных масел, разной масляной основы, необходимо введение различных групп присадок (депрессорных, смазывающих, диспергирующих и др.). отвечающих за эксплуатационные характеристики качества товарной продукции. Базы данных на содержание и состав присадок по маслам закрыты, поэтому введение присадок в базовую нефтяную основу и анализ изменения свойств, а также сравнение с товарными производителями, для учебного процесса является актуальной задачей.',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Кафедра СДМ (получение образцов для дальнейшего исследования)',
+            'study_result' => 'Знания: технологических процессов и основного оборудования производства нефтяных масел; основных параметров химмотологии смазочных материалов
+Умения: выявления возможных причин, вызывающих отклонения от норм качества готовой продукции
+Навыки: работы с маслами, а также технических требований к нефтяным маслам и их примения
+',
+            'product_result' => 'Получение масляной основы с заданными свойствами в соответствие с нормативной документацией и существующими аналогами товарной продукции.  ',
+            'state_id' => '1',
+            'supervisors' => 'Подгорбунская Татьяна Анатольевна, Белозерова Ольга Викторовна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Пластичные смазки',
+            'places' => '15',
+            'goal' => 'Получение пластичных смазок ',
+            'description' => 'В настоящее время промышленность стремительно развивается и характеризуется созданием высокопроизводительных машин и механизмов, генерирующих и передающих большие мощности. По мере распространения технического прогресса усиливается энергонапряженность множественных узлов трения и, соответственно, возрастает роль смазочного материала как наиболее значимого элемента техники, повышаются и становятся разнообразнее требования к его качеству. Работоспособность техники, развитие автомобилестроения и других видов транспортного машиностроения, а, следовательно, и эффективность функционирования народного хозяйства серьезно зависят от их обеспеченности высокоэффективными смазочными материалами – пластичными смазками.
+Проблема – снизить износ поверхностей, подвергающихся трению и нагрузкам. Это позволит продлить срок эксплуатации деталей механизмов, сделает их более долговечными и надежными. В ряде случаев смазки применяются не только для снижения износа, но и для предотвращения трения и заклинивания смежных поверхностей. Благодаря своей пластичности и составу эти мазки защищают от проникновения агрессивных веществ, газов и паров. Также практически все консистентные смазки отличаются антикоррозионными свойствами и т.д. Необходимо расширять сырьевую базу и увеличивать рабочий диапазон применения пластичных смазок
+',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знать: основные параметры химмотологии смазочных материалов, технологические процессы и основное оборудование производства масел
+Уметь: обосновывать технические требования к пластичным смазкам для обеспечения их рационального применения в современной технике 
+Владеть основными требованиями предъявляемые к пластичным смазкам, и научными и практическими достижениями в области химмотологии смазок. 
+',
+            'product_result' => 'Пластичные смазки с заданными свойствами. Позволит расширить ассортимент данных нефтепродуктов.',
+            'state_id' => '1',
+            'supervisors' => 'Белозерова Ольга Викторовна, Подгорбунская Татьяна Анатольевна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Малотоннажная химия',
+            'places' => '15',
+            'goal' => 'Разработать технологическую концепцию переработки пластиковых отходов',
+            'description' => 'Самые распространенные способы переработки пластика – это механический и термический. При механическом способе пластиковые отходы подвергают дроблению, измельчению и перетиранию до получения порошка, который далее добавляют в расплав при получении нового материала. А самый распространенный термический способ – это сжигание, при котором происходят выбросы оксида углерода в атмосферу. Данный проект посвящен переработке пластиковых отходов с целью получения исходных мономеров, продуктов имеющих высокую стоимость и востребованность на рынке химических продуктов.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Ангара-Реактив, ООО зарегистрирована по адресу 665809, Иркутская обл., г. Ангарск, тер. Первый промышленный массив, кв-л 7, стр. 22, ОФИС 20. Директор организации ООО "Ангара-Реактив" Шатохина Валентина Александровна. Основным видом деятельности компании является Производство прочих химических продуктов, не включенных в другие группировки. Также Ангара-Реактив, ООО работает еще по 25 направлениям.
+ООО "Ангара-Реактив" присвоен ИНН 3801059241, КПП 380101001, ОГРН 1023800520501, ОКПО 55573556
+Действует с 10.07.2001
+',
+            'study_result' => 'Знать сырье органического синтеза, основные процессы органического синтеза, способы оценки качества целевого продукта, достоверные источники информации и базы данных в области химии.
+Уметь искать информацию о химических соединениях по формульным указателям и ключевым словам, составлять химическую схему получения целевого продукта из доступного сырья.
+Владеть критериями выбора оптимальной схемы химической схемы синтеза целевого продукта
+',
+            'product_result' => 'Удобный, безопасный и дешевый способ переработки пластиковых отходов',
+            'state_id' => '1',
+            'supervisors' => 'Боженков Георгий Викторович, Чайка анна Анатольевна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Изучение влияния углеводородного состава высокооктановых бензинов на его эксплуатационные характеристики',
+            'places' => '15',
+            'goal' => 'Изучить влияние углеводородного состава высокооктановых бензинов  производства АО «АНХК» на его эксплуатационные характеристики.',
+            'description' => 'Важной задачей российской нефтепереработки, повышающей ее конкурентоспособность, является доведение эксплуатационных и экологических свойств автомобильных бензинов до требований мирового уровня. Растет потребность в моторных топливах с октановым числом 95 и выше.  Использование в составе бензинов различного рода добавок и присадок, обеспечивает повышение октанового числа, но при этом необходимо знать какое влияние они окажут на углеводородный состав и как следствие на эксплуатационные характеристики топлива. Поэтому изучение влияния углеводородного состава высокооктановых бензинов  производства АО «АНХК» на его эксплуатационные характеристики является актуальной задаей.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'АО «АНХК»',
+            'study_result' => 'Знания: основные постулаты эффективности добавок и присадок, применяемых для улучшения эксплуатационных характеристик автобензинов
+Умения: на основании теории объяснить эффективность действия октаноповышающих добавок и присадок
+Навыки: владеть навыками оценки влияния углеводородного состава высокооктановых бензинов на его эксплуатационные характеристики.
+',
+            'product_result' => 'Изучено влияние углеводородного состава высокооктановых бензинов  производства АО «АНХК» на его эксплуатационные характеристики.',
+            'state_id' => '1',
+            'supervisors' => 'Ганина Анна Александровна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Изучение влияния соотношения депрессора и дисперганта в присадке, применяемой для улучшения низкотемпературных характеристик тяжелых компонентов топлива судового маловязкого',
+            'places' => '15',
+            'goal' => 'Подбор оптимального соотношения депрессора и дисперганта в присадке, применяемой для улучшения низкотемпературных характеристик компонентов топлива судового маловязкого производства АО «АНХК»',
+            'description' => 'Эффективность нефтеперерабатывающих заводов в России напрямую зависит от глубины переработки нефти, именно поэтому модернизация в этом направление является приоритетной задачей. Одним из направлений увеличения глубины переработки является снижения выработки тяжелых топлив за счет использования современных методов компаундирования. Так, применение компонентов тяжелых топлив в приготовлении топлива судового маловязкого с использованием правильно подобранных присадок позволит использовать их в составе светлых нефтепродуктов, тем самым увеличить глубину переработки. Так как эффективность присадок зависит от соотношения в ней депрессора и дисперганта, а чаще всего это соотношение является Ноу-Хау производителя, поэтому подбор оптимального соотношения составных частей присадки для улучшения низкотемпературных характеристик тяжелых компонентов топлива судового маловязкого производства АО «АНХК» является актуальной задачей.',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'АО «АНХК»',
+            'study_result' => 'Знания: основные постулаты эффективности присадок, применяемых для улучшения низкотемпературных свойств
+Умения: на основании теории объяснить эффективность действия депрессорно-диспергирующих присадок
+Навыки: владеть навыками оптимизации и выбора наиболее эффективного соотношения депрессора и дисперганта в составе депрессорно-диспергирующей присадки.
+',
+            'product_result' => 'Подбор оптимального соотношение депрессора и дисперганта в присадке, применяемой для улучшения низкотемпературных характеристик компонентов топлива судового маловязкого производства АО «АНХК»',
+            'state_id' => '1',
+            'supervisors' => 'Ганина Анна Александровна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Полифункциональные (нано)композиты – молекулярный дизайн, структурные особенности, фундаментальные свойства.',
+            'places' => '15',
+            'goal' => 'Создание  новых полифункциональных композитов с целенаправленно формируемой структурой и свойствами для водородной энергетики.',
+            'description' => 'Полимерные композиты, сформированные в результате комбинации компонентов различной химической природы, представляют собой новый класс композиционных материалов с характеристиками, превосходящими аналогичные показатели отдельно взятых составляющих. В результате композиционного эффекта они проявляют уникальные механические, магнитные, оптоэлектронные и др. свойства, обладают высокой химической и термической стабильностью, а также устойчивостью к УФ-излучению. Существенное влияние на свойства таких композитов оказывает переход к нанометровому диапазону размеров индивидуальных компонентов системы. Обширную группу органо-неорганических композитов составляют структуры на основе диоксида кремния, полученные в результате золь-гель процесса с участием тетралкоксисиланов в присутствии высокомолекулярных соединений. Основная роль кремнийорганического прекурсора в таких системах сводится к регулированию процесса структурообразования композита, возможности управления размерами наночастиц и физико-техническими характеристиками материала. При этом кремниевый компонент композита - диоксид кремния, не содержит функциональных групп. В качестве носителя химически-активных фрагментов выступают функциональные высокомолекулярные соединения. Строение функциональных групп предшественников композитов позволит регулировать особенности их структуры и комплекс физико-химических свойств. В результате проведенных исследований будет установлена принципиальная возможность использования предлагаемых полифункциональных композитов при конструировании топливных элементов.',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: Способы и лабораторные методы получения полимерных мембран.
+Умения: Выбирать рациональную схему получения полимерной мембраны для топливных элементов с заданными эксплуатационными свойствами.
+Навыки: Синтезировать полимерной мембраны для топливных элементов с заданными эксплуатационными свойствами
+',
+            'product_result' => 'Полимерные мембраны для топливных элементов, обладающие протонной проводимостью. Физический прототип.',
+            'state_id' => '1',
+            'supervisors' => 'Шаглаева Нина Савельевна, Баяндин Виктор Владимирович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Статистическая обработка эксперимента  ',
+            'places' => '15',
+            'goal' => 'Анализ экспериментальных данных, способность обсуждать полученные результаты и предвидеть течение эксперимента в перспективе ',
+            'description' => 'Проведение эксперимента - это только часть научной задачи. Главная роль исследователя планирование процесса заранее (предвидеть разные направления) и умение интерпретировать полученные данные, которые в дальнейшем должны реализоваться в научной публикации. ',
+            'difficulty' => '1',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знать принципы измерения и аппаратурное оформление, возможности и ограничения каждого метода
+Уметь обобщать полученные результаты Владеть методами планирования и проведения эксперимента и оценки полученных результатов
+',
+            'product_result' => 'не указан',
+            'state_id' => '1',
+            'supervisors' => 'Айзина Юлия Александровна, Подгорбунская Татьяна Анатольевна ',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Браслеты с GPS-трекерами для контроля за состоянием здоровья, подключением техники безопасности и улучшением производственного травматизма.',
+            'places' => '15',
+            'goal' => 'оснащение производственных рабочих браслетами с GPS-трекерами для контроля за состоянием здоровья, подключением техники безопасности и улучшением производственного травматизма.',
+            'description' => 'ввиду удаленности большинства ремонтных участков Группы Компаний от специалистов по охране труда существует потребность в удаленном мониторинге соблюдения техники безопасности и состояния здоровья рабочих. В рамках проекта предлагается разработать прототип, основанный на измерении показателей состояния сотрудников с возможностью геопозиционирования и разграничения рабочих и опасных зон.',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Лаборатория энергетики Акселерационная программа, реализуемая ГК «ЕвроСибЭнерго» на базе ИРНИТУ
+
+
+
+конкурс научно-исследовательских проектов "Авангард науки"
+
+Лаборатория энергетики:
+“Оснащение производственных рабочих браслетами с GPS-трекерами для контроля за состоянием здоровья, подключением техники безопасности и улучшением производственного травматизма.”
+',
+            'study_result' => 'Знать виды, функциональное назначение, свойства беспроводных персональных сетей 
+Уметь составлять алгоритм работы устройства для конкретного назначения.
+Владеть навыками использования программных продуктов, предназначенных для программирования миниатюрных вычислительных устройств
+',
+            'product_result' => 'Определен оптимальный функционал, заданы ключевые параметры отслеживания.
+Разработано техническое решение. Проработаны возможные поставщики оборудования, программного обеспечения.
+',
+            'state_id' => '1',
+            'supervisors' => 'Губин Никита Андреевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Наблюдение измеряемых параметров физических сред и предметов с использованием  децентрализованных самоорганизующихся сетей',
+            'places' => '15',
+            'goal' => 'Формирование знаний о структуре сети, основных протоколах и порядке передачи данных, удаленном мониторинге и измерении физических величин, перспективных способах измерений и передачи данных нового поколения.',
+            'description' => 'Глобализация рынков, конкуренция, стремительное развитие технологий и наукоемких инноваций, появление сверхсложных научно-технических проблем требует от промышленности гораздо более быстрых темпов развития, предельно коротких циклов контроля и измерения физических характеристик в процессе разработки и производства продукции высокого качества. 
+Спрос на сложные многофункциональные инженерные изделия стимулирует процесс постоянных модификаций как самих устройств так и способов их взаимодействия.
+Перспективным трендом является создание беспроводных децентрализованных самоорганизующихся сенсорных сетей, состоящих из беспроводных сенсоров и управляющих устройств способных к самоорганизации с помощью интеллектуальных алгоритмов,
+В рамках проекта студентам предлагается провести анализ новых способов удаленного мониторинга и контроля, получить общие навыки по измерениям и мониторингу состояния  здоровья человека, окружающей среды, функционирования производственных и транспортных систем, учета различных ресурсов и др. 
+Знания, которые будут получены учащимися в ходе проектной работы, могут быть применены в их дальнейшей научно-исследовательской деятельности.   
+',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Лаборатория энергетики Акселерационная программа, реализуемая ГК «ЕвроСибЭнерго» на базе ИРНИТУ
+
+
+
+конкурс научно-исследовательских проектов "Авангард науки"
+
+Лаборатория энергетики:
+1)интеллектуальная система смазки подшипников электромашин постоянного тока.
+2)система централизованной смазки стрелы и находящейся на ней элементов.
+',
+            'study_result' => 'Знать виды, функциональное назначение, свойства беспроводных персональных сетей 
+Уметь составлять алгоритм работы устройства для конкретного назначения.
+Владеть навыками использования программных продуктов, предназначенных для программирования миниатюрных вычислительных устройств
+',
+            'product_result' => 'Разработка лабораторного стенда, с сетью взаимосвязанных заменяемых беспроводных датчиков.',
+            'state_id' => '1',
+            'supervisors' => 'Губин Никита Андреевич',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Система контроля целостности металлоконструкции стрелы экскаватора марки ЭШ',
+            'places' => '15',
+            'goal' => 'Разработка системы контроля целостности металлоконструкции стрелы экскаватора марки ЭШ',
+            'description' => 'Измерение целостности металлоконструкции стрелы эксковатора',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Лаборатория энергетики Акселерационная программа, реализуемая ГК «ЕвроСибЭнерго» на базе ИРНИТУ
+
+
+
+конкурс научно-исследовательских проектов "Авангард науки"
+
+Лаборатория энергетики:
+“ Система контроля целостности металлоконструкции стрелы экскаватора марки ЭШ.”
+',
+            'study_result' => 'Знать виды, функциональное назначение, свойства датчиков угла наклона 
+Уметь составлять алгоритм работы программы. 
+Владеть навыками использования программных продуктов, предназначенных для программирования микроконтроллеров
+',
+            'product_result' => 'Система контроля целостности металлоконструкции стрелы экскаватора марки ЭШ',
+            'state_id' => '1',
+            'supervisors' => 'Ченский Дмитрий Александрович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Вибродиагностика сороудерживающих решеток',
+            'places' => '15',
+            'goal' => 'Разработка системы мониторинга уровня вибрации сороудерживающих решёток братской ГЭС с целью выявления предельных нагрузок.',
+            'description' => 'Вибродиагностика сороудерживающих решёток братской ГЭС с целью выявления предельных нагрузок.',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Лаборатория энергетики Акселерационная программа, реализуемая ГК «ЕвроСибЭнерго» на базе ИРНИТУ
+
+
+
+конкурс научно-исследовательских проектов "Авангард науки"
+
+Лаборатория энергетики:
+“ Вибродиагностика сороудерживающих решеток.”
+',
+            'study_result' => 'Знать виды, функциональное назначение, свойства датчиков вибрации  
+Уметь составлять алгоритм работы устройства для конкретного назначения.
+Владеть навыками использования программных продуктов, предназначенных для программирования микроконтроллеров
+',
+            'product_result' => 'Система мониторинга уровня вибрации сороудерживающих решёток',
+            'state_id' => '1',
+            'supervisors' => 'Ченский Дмитрий Александрович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'влияние  пористых  алюмосиликатных  матриц  на свойства протон-проводящих мембран  для топливных элементов',
+            'places' => '15',
+            'goal' => 'Изучить влияние различных пористых алюмосиликатных матриц, в частности, цеолитов разных структурных типов на характеристики протон-проводящих мембран для топливных элементов.',
+            'description' => 'Ионообменные мембраны на основе поливинилового спирта (ПВС) представляют собой перспективную группу материалов для применения в тведополимерных топливных элементах (ТПТЭ) благодаря высокой гидрофильности, способности к пленкообразованию, низкой стоимости, хорошим механическим свойствам и возможности сшивания ПВС различными химическими реагентами. Для улучшения технических характеристик таких мембран, используют керамические материалы на основе оксидов алюминия, кремния, титана, олова, циркония и др., которые способные повысить ионную проводимость, химическую и термическую стабильность, а также механическую прочность мембран. В настоящее время   большое внимание уделяется  получению новых биоразлагаемых протонообменных мембран для ТПТЭ, полученных на основе сшитого сульфоянтарной кислотой поливинилового спирта с добавлением в качестве кислотного компонента – цеолитов. В работе предлагается для получения таких мембран использовать цеолиты различных структурных типов и изучить влияние не только структурного типа цеолита, но и его содержания на характеристики мембран. ',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: углубленные знания золь-гель технологии; технологии синтеза цеолитных материалов, методов тестирования характеристик мембран для ТПТЭ; 
+Умения: выбрать соответствующие методы и подходы для синтеза мембран для ТПТЭ;
+Навыки: использования методов синтеза протон-проводящих мембран и тестирования их рабочих характеристик.
+',
+            'product_result' => 'Предполагается получение протон-проводящих мембран на основе цеолитов разных структурных типов и изучение их характеристик. ',
+            'state_id' => '1',
+            'supervisors' => 'Скорникова Светлана Афанасьевна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'влияние  модифицирования  алюмосиликатов  на  их  физико-химические характеристики',
+            'places' => '15',
+            'goal' => 'Исследовать влияние различных способов модифицирования синтетических алюмосиликатов, в том числе цеолитов, на их физико-химические характеристики. ',
+            'description' => 'Цеолиты находят широкое применение в нефтехимии и нефтепереработке. Кроме этого в последнее время возрос интерес к цеолитам и в качестве уникальных адсорбентов, которые нашли применение и в медицине. С этой целью возрос интерес исследователей к разработке нетрадиционных способов их модифицирования для получения новых характеристик, таких как микро-мезопористая структура, магнитные характеристики, кислотные свойства и др. В связи с этим целью данного проекта является  изучение влияние различных способов модифицирования цеолитов на их физико-химические свойства.',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: получены углубленные знания в области поверхностных явлений в дисперсных системах и физико-химии наноразмерных систем; 
+Умения: выбрать оптимальные способы модифицирования цеолитов; 
+Навыки: использовать их для получения соответствующих характеристик цеолитов
+',
+            'product_result' => 'Получены модифицированные образцы цеолитов, изучены их характеристики. ',
+            'state_id' => '1',
+            'supervisors' => 'Скорникова Светлана Афанасьевна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'синтез  магнитоуправляемых композитов на основе цеолитов и магнитных наночастиц',
+            'places' => '15',
+            'goal' => 'Целью проекта является создание наноразмерных магнитных цеолитов путем добавления магнитных F3O4 частиц в процессе кристаллизации, для получения кристаллов цеолита с магнитным ядром внутри структуры.',
+            'description' => 'Получение магнитных нанокомпозитов на основе пористых носителей является одним из возможных способов разработки систем адресной магнитоуправляемой доставки лекарственных препаратов. Определенный интерес вызывает получение композитных материалов на основе цеолитов и наночастиц магнетита. Цеолиты - это микропористые кристаллические вещества. Кристалличность обеспечивает механическую и химическую стабильность цеолитов, одинаковый и контролируемый размер пор, каналов, полостей. Это свойство определяет использование цеолитов в качестве молекулярных сит, адсорбентов, детергентов. Благодаря своим ионообменным и сорбционным свойствам, широко применяются для химической, нефтехимической и нефтеперерабатывающей промышленности, экологии и медицины.  Цеолиты благодаря особенностям своей структуры являются уникальными сорбентами, позволяющими осуществлять эффективную адсорбцию и высвобождение лекарственных препаратов в физиологической среде организма, при этом они являются нетоксичными и биоразлагаемыми материалами. Модифицирование цеолитов магнитными наночастицами позволяет придать им магнитные свойства',
+            'difficulty' => '3',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => '',
+            'study_result' => 'Знания: дополнительные знания в области нанохимии магнитных материалов;
+Умения: применять методы соосаждения, золь-гель методы и гидротермальный синтез для получения магнитных композитов на основе цеолитов;
+Навыки: гидротермального синтеза цеолитов с магнитным ядром, позволяющие получить материалы с магнитными свойствами и высокой адсорбционной способностью.
+',
+            'product_result' => 'Планируется получить магнитоуправляемый композитов на основе цеолитов и магнитных наночастиц. Данный нанокомпозит будет иметь уникальные свойства цеолита и обладать магнитными свойствами, что позволит увеличить области возможного его применения.  ',
+            'state_id' => '1',
+            'supervisors' => 'Скорникова Светлана Афанасьевна',
+            'type_id' => '1',
+        ]);
+
 
 
 
@@ -4800,10 +4930,6 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '19',
-            'project_id' => '4',
-        ]);
-        DB::table('project_skill')->insert([
             'skill_id' => '28',
             'project_id' => '4',
         ]);
@@ -4812,7 +4938,15 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
+            'skill_id' => '19',
+            'project_id' => '4',
+        ]);
+        DB::table('project_skill')->insert([
             'skill_id' => '30',
+            'project_id' => '4',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '31',
             'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
@@ -4824,7 +4958,15 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '4',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '31',
+            'skill_id' => '32',
+            'project_id' => '6',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '33',
+            'project_id' => '6',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '34',
             'project_id' => '6',
         ]);
         DB::table('project_skill')->insert([
@@ -4832,7 +4974,7 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '6',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '32',
+            'skill_id' => '35',
             'project_id' => '7',
         ]);
         DB::table('project_skill')->insert([
@@ -4848,7 +4990,7 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '7',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '33',
+            'skill_id' => '36',
             'project_id' => '8',
         ]);
         DB::table('project_skill')->insert([
@@ -4856,7 +4998,7 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '8',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '34',
+            'skill_id' => '37',
             'project_id' => '8',
         ]);
         DB::table('project_skill')->insert([
@@ -4864,15 +5006,15 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '8',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '35',
+            'skill_id' => '38',
             'project_id' => '9',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '36',
+            'skill_id' => '39',
             'project_id' => '9',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '37',
+            'skill_id' => '40',
             'project_id' => '9',
         ]);
         DB::table('project_skill')->insert([
@@ -4896,11 +5038,15 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '9',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '38',
+            'skill_id' => '41',
             'project_id' => '10',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '39',
+            'skill_id' => '42',
+            'project_id' => '10',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '1',
             'project_id' => '10',
         ]);
         DB::table('project_skill')->insert([
@@ -4952,167 +5098,195 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '10',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '40',
-            'project_id' => '10',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '41',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '42',
-            'project_id' => '11',
-        ]);
-        DB::table('project_skill')->insert([
             'skill_id' => '43',
-            'project_id' => '11',
+            'project_id' => '10',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '44',
             'project_id' => '11',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '2',
-            'project_id' => '12',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '3',
-            'project_id' => '12',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '5',
-            'project_id' => '12',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '6',
-            'project_id' => '12',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '16',
-            'project_id' => '12',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '35',
-            'project_id' => '12',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '36',
-            'project_id' => '12',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '21',
-            'project_id' => '12',
-        ]);
-        DB::table('project_skill')->insert([
             'skill_id' => '45',
-            'project_id' => '12',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '8',
-            'project_id' => '12',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '19',
-            'project_id' => '12',
+            'project_id' => '11',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '46',
-            'project_id' => '12',
+            'project_id' => '11',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '47',
-            'project_id' => '12',
+            'project_id' => '11',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '48',
-            'project_id' => '12',
+            'project_id' => '11',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '49',
-            'project_id' => '12',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '11',
-            'project_id' => '12',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '2',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '3',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '5',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '6',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '16',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '35',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '36',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '21',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '45',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '8',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '19',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '46',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '47',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '48',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '49',
-            'project_id' => '13',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '11',
-            'project_id' => '13',
+            'project_id' => '11',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '50',
-            'project_id' => '13',
+            'project_id' => '11',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '51',
-            'project_id' => '14',
+            'project_id' => '11',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '52',
-            'project_id' => '14',
+            'project_id' => '11',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '53',
+            'project_id' => '11',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '54',
+            'project_id' => '11',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '2',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '3',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '16',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '38',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '39',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '21',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '55',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '8',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '19',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '56',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '57',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '58',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '59',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '11',
+            'project_id' => '12',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '2',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '3',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '16',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '38',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '39',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '21',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '55',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '8',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '19',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '56',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '57',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '58',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '59',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '11',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '60',
+            'project_id' => '13',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '61',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '62',
+            'project_id' => '14',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '63',
             'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
@@ -5136,11 +5310,11 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '35',
+            'skill_id' => '38',
             'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '36',
+            'skill_id' => '39',
             'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
@@ -5148,7 +5322,7 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '45',
+            'skill_id' => '55',
             'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
@@ -5160,19 +5334,19 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '46',
+            'skill_id' => '56',
             'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '47',
+            'skill_id' => '57',
             'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '48',
+            'skill_id' => '58',
             'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '49',
+            'skill_id' => '59',
             'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
@@ -5180,15 +5354,15 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '14',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '51',
+            'skill_id' => '61',
             'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '52',
+            'skill_id' => '62',
             'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '53',
+            'skill_id' => '63',
             'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
@@ -5212,11 +5386,11 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '35',
+            'skill_id' => '38',
             'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '36',
+            'skill_id' => '39',
             'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
@@ -5224,7 +5398,7 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '45',
+            'skill_id' => '55',
             'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
@@ -5236,73 +5410,835 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '46',
-            'project_id' => '15',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '47',
-            'project_id' => '15',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '48',
-            'project_id' => '15',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '49',
-            'project_id' => '15',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '54',
-            'project_id' => '15',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '55',
-            'project_id' => '16',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '5',
-            'project_id' => '16',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '6',
-            'project_id' => '16',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '1',
-            'project_id' => '16',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '55',
-            'project_id' => '17',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '5',
-            'project_id' => '17',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '6',
-            'project_id' => '17',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '1',
-            'project_id' => '17',
-        ]);
-        DB::table('project_skill')->insert([
             'skill_id' => '56',
-            'project_id' => '20',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '1',
-            'project_id' => '21',
+            'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '57',
-            'project_id' => '21',
+            'project_id' => '15',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '58',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '59',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '64',
+            'project_id' => '15',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '4',
+            'project_id' => '16',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '16',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '16',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '1',
+            'project_id' => '16',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '4',
+            'project_id' => '17',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '5',
+            'project_id' => '17',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '6',
+            'project_id' => '17',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '1',
+            'project_id' => '17',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '65',
+            'project_id' => '18',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '66',
+            'project_id' => '18',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '67',
+            'project_id' => '18',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '68',
+            'project_id' => '19',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '65',
+            'project_id' => '20',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '69',
+            'project_id' => '20',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '70',
+            'project_id' => '20',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '1',
             'project_id' => '21',
         ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '71',
+            'project_id' => '21',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '72',
+            'project_id' => '21',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '73',
+            'project_id' => '26',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '74',
+            'project_id' => '26',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '75',
+            'project_id' => '26',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '76',
+            'project_id' => '26',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '77',
+            'project_id' => '26',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '78',
+            'project_id' => '28',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '79',
+            'project_id' => '28',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '80',
+            'project_id' => '28',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '81',
+            'project_id' => '28',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '82',
+            'project_id' => '28',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '78',
+            'project_id' => '29',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '79',
+            'project_id' => '29',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '80',
+            'project_id' => '29',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '81',
+            'project_id' => '29',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '82',
+            'project_id' => '29',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '78',
+            'project_id' => '30',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '79',
+            'project_id' => '30',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '80',
+            'project_id' => '30',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '81',
+            'project_id' => '30',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '82',
+            'project_id' => '30',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '83',
+            'project_id' => '31',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '84',
+            'project_id' => '31',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '85',
+            'project_id' => '31',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '86',
+            'project_id' => '32',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '87',
+            'project_id' => '33',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '88',
+            'project_id' => '33',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '89',
+            'project_id' => '33',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '87',
+            'project_id' => '34',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '90',
+            'project_id' => '34',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '91',
+            'project_id' => '34',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '92',
+            'project_id' => '35',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '93',
+            'project_id' => '36',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '94',
+            'project_id' => '36',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '95',
+            'project_id' => '36',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '96',
+            'project_id' => '36',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '97',
+            'project_id' => '36',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '98',
+            'project_id' => '41',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '99',
+            'project_id' => '41',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '100',
+            'project_id' => '42',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '101',
+            'project_id' => '42',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '102',
+            'project_id' => '43',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '103',
+            'project_id' => '43',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '104',
+            'project_id' => '43',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '105',
+            'project_id' => '44',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '99',
+            'project_id' => '44',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '106',
+            'project_id' => '46',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '107',
+            'project_id' => '46',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '108',
+            'project_id' => '46',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '109',
+            'project_id' => '46',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '110',
+            'project_id' => '46',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '111',
+            'project_id' => '47',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '112',
+            'project_id' => '47',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '113',
+            'project_id' => '47',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '111',
+            'project_id' => '48',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '114',
+            'project_id' => '48',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '113',
+            'project_id' => '48',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '115',
+            'project_id' => '49',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '116',
+            'project_id' => '51',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '117',
+            'project_id' => '52',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '117',
+            'project_id' => '53',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '118',
+            'project_id' => '65',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '119',
+            'project_id' => '68',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '120',
+            'project_id' => '69',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '121',
+            'project_id' => '69',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '122',
+            'project_id' => '69',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '123',
+            'project_id' => '69',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '120',
+            'project_id' => '70',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '121',
+            'project_id' => '70',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '122',
+            'project_id' => '70',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '123',
+            'project_id' => '70',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '120',
+            'project_id' => '71',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '121',
+            'project_id' => '71',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '122',
+            'project_id' => '71',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '123',
+            'project_id' => '71',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '120',
+            'project_id' => '72',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '121',
+            'project_id' => '72',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '122',
+            'project_id' => '72',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '123',
+            'project_id' => '72',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '120',
+            'project_id' => '73',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '121',
+            'project_id' => '73',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '122',
+            'project_id' => '73',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '123',
+            'project_id' => '73',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '124',
+            'project_id' => '84',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '125',
+            'project_id' => '85',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '124',
+            'project_id' => '86',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '125',
+            'project_id' => '87',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '126',
+            'project_id' => '88',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '127',
+            'project_id' => '89',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '128',
+            'project_id' => '91',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '129',
+            'project_id' => '93',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '130',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '131',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '132',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '133',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '134',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '135',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '136',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '137',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '138',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '139',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '140',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '141',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '142',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '143',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '144',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '145',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '146',
+            'project_id' => '94',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '147',
+            'project_id' => '98',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '79',
+            'project_id' => '98',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '148',
+            'project_id' => '98',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '149',
+            'project_id' => '98',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '150',
+            'project_id' => '101',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '151',
+            'project_id' => '101',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '152',
+            'project_id' => '101',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '153',
+            'project_id' => '101',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '154',
+            'project_id' => '101',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '155',
+            'project_id' => '101',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '156',
+            'project_id' => '102',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '157',
+            'project_id' => '103',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '150',
+            'project_id' => '106',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '158',
+            'project_id' => '106',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '159',
+            'project_id' => '106',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '160',
+            'project_id' => '107',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '161',
+            'project_id' => '111',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '162',
+            'project_id' => '112',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '163',
+            'project_id' => '117',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '164',
+            'project_id' => '118',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '165',
+            'project_id' => '118',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '166',
+            'project_id' => '127',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '167',
+            'project_id' => '128',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '168',
+            'project_id' => '128',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '169',
+            'project_id' => '128',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '170',
+            'project_id' => '128',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '171',
+            'project_id' => '128',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '172',
+            'project_id' => '128',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '173',
+            'project_id' => '128',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '174',
+            'project_id' => '130',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '175',
+            'project_id' => '130',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '176',
+            'project_id' => '132',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '177',
+            'project_id' => '136',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '178',
+            'project_id' => '139',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '179',
+            'project_id' => '139',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '180',
+            'project_id' => '139',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '181',
+            'project_id' => '139',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '182',
+            'project_id' => '139',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '183',
+            'project_id' => '139',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '184',
+            'project_id' => '139',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '185',
+            'project_id' => '139',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '186',
+            'project_id' => '147',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '187',
+            'project_id' => '147',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '188',
+            'project_id' => '147',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '189',
+            'project_id' => '147',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '190',
+            'project_id' => '150',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '191',
+            'project_id' => '152',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '192',
+            'project_id' => '152',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '193',
+            'project_id' => '153',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '194',
+            'project_id' => '153',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '195',
+            'project_id' => '153',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '196',
+            'project_id' => '155',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '197',
+            'project_id' => '155',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '198',
+            'project_id' => '155',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '196',
+            'project_id' => '156',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '199',
+            'project_id' => '156',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '198',
+            'project_id' => '156',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '196',
+            'project_id' => '157',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '199',
+            'project_id' => '157',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '198',
+            'project_id' => '157',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '196',
+            'project_id' => '158',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '199',
+            'project_id' => '158',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '198',
+            'project_id' => '158',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '196',
+            'project_id' => '159',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '199',
+            'project_id' => '159',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '198',
+            'project_id' => '159',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '200',
+            'project_id' => '161',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '201',
+            'project_id' => '161',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '202',
+            'project_id' => '161',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '203',
+            'project_id' => '161',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '204',
+            'project_id' => '161',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '205',
+            'project_id' => '162',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '206',
+            'project_id' => '172',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '207',
+            'project_id' => '172',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '208',
+            'project_id' => '172',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '209',
+            'project_id' => '173',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '210',
+            'project_id' => '174',
+        ]);
+
+
 
 
 
@@ -5310,363 +6246,319 @@ Case-in , Международный нефтегазовый, кейс ESG
 
 
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '1',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '1',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '1',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '1',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '2',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '2',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '2',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '2',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '3',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '3',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '3',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '3',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '4',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '4',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '4',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '4',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '5',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '5',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '5',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '5',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '6',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '6',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '6',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '6',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '7',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '7',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '7',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '7',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '8',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '8',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '9',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '9',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '9',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '9',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '10',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '10',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '10',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '40',
+            'speciality_id' => '27',
             'project_id' => '11',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '12',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '12',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '12',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '12',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '13',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '13',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '13',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '13',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '14',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '14',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '14',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '14',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '15',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
+            'speciality_id' => '26',
             'project_id' => '15',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '15',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '15',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '16',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '16',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '43',
+            'speciality_id' => '29',
             'project_id' => '16',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '43',
+            'speciality_id' => '29',
             'project_id' => '16',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '17',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '17',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '43',
+            'speciality_id' => '29',
             'project_id' => '17',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '43',
+            'speciality_id' => '29',
             'project_id' => '17',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '18',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '19',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '20',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '20',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '15',
             'project_id' => '21',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '25',
             'project_id' => '21',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
+            'speciality_id' => '4',
             'project_id' => '21',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '63',
+            'speciality_id' => '31',
             'project_id' => '22',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '63',
+            'speciality_id' => '6',
+            'project_id' => '22',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '7',
+            'project_id' => '22',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '31',
             'project_id' => '23',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '92',
+            'speciality_id' => '6',
             'project_id' => '23',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '63',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '92',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '28',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '52',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '53',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '94',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '96',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '102',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '103',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '104',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '24',
+            'speciality_id' => '7',
+            'project_id' => '23',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '31',
             'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
+            'speciality_id' => '6',
             'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '33',
+            'speciality_id' => '7',
             'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '34',
-            'project_id' => '24',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '63',
+            'speciality_id' => '6',
             'project_id' => '25',
         ]);
         DB::table('project_speciality')->insert([
@@ -5674,1269 +6566,1282 @@ Case-in , Международный нефтегазовый, кейс ESG
             'project_id' => '25',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '103',
-            'project_id' => '25',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
+            'speciality_id' => '6',
             'project_id' => '26',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
+            'speciality_id' => '92',
+            'project_id' => '26',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '35',
+            'project_id' => '26',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '26',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '6',
             'project_id' => '27',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
-            'project_id' => '28',
+            'speciality_id' => '92',
+            'project_id' => '27',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
-            'project_id' => '29',
+            'speciality_id' => '35',
+            'project_id' => '27',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
-            'project_id' => '30',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
-            'project_id' => '31',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '31',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '32',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '33',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '34',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
-            'project_id' => '34',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '125',
-            'project_id' => '34',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '35',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '36',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '31',
-            'project_id' => '36',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
-            'project_id' => '36',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '37',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '31',
-            'project_id' => '37',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
-            'project_id' => '37',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '31',
-            'project_id' => '38',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '39',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
-            'project_id' => '39',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '125',
-            'project_id' => '39',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '144',
-            'project_id' => '39',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
-            'project_id' => '40',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
-            'project_id' => '40',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
-            'project_id' => '41',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
-            'project_id' => '42',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
-            'project_id' => '43',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
-            'project_id' => '44',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '47',
-            'project_id' => '45',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
-            'project_id' => '46',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '47',
-            'project_id' => '47',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
-            'project_id' => '48',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '102',
-            'project_id' => '49',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '61',
-            'project_id' => '49',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '28',
-            'project_id' => '50',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
-            'project_id' => '50',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '144',
-            'project_id' => '50',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '28',
-            'project_id' => '51',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
-            'project_id' => '51',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '144',
-            'project_id' => '51',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '28',
-            'project_id' => '52',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '47',
-            'project_id' => '53',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '47',
-            'project_id' => '54',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '45',
-            'project_id' => '55',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '55',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '11',
-            'project_id' => '55',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '45',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '11',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '45',
-            'project_id' => '57',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '57',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '11',
-            'project_id' => '57',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '58',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '137',
-            'project_id' => '58',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '59',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '137',
-            'project_id' => '59',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
-            'project_id' => '59',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '59',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '60',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '137',
-            'project_id' => '60',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
-            'project_id' => '60',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '60',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '60',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
-            'project_id' => '60',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '1',
-            'project_id' => '60',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '137',
-            'project_id' => '61',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '137',
-            'project_id' => '62',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '137',
-            'project_id' => '63',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '64',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '64',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '65',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '65',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '65',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '65',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '1',
-            'project_id' => '65',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
-            'project_id' => '65',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '65',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '66',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '66',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '66',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '66',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '67',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '67',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '67',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '67',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '68',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '69',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '69',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '70',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '70',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '71',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '71',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
-            'project_id' => '71',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '71',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
-            'project_id' => '71',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '72',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '72',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '1',
-            'project_id' => '73',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '73',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '73',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '73',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '74',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '74',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '74',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '74',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '1',
-            'project_id' => '75',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '75',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '75',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '75',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '76',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '76',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '77',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '77',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '77',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '78',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '78',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '78',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '79',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
-            'project_id' => '79',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '79',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '80',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
-            'project_id' => '80',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '80',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '81',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
-            'project_id' => '81',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '81',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '82',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
-            'project_id' => '82',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '82',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '83',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
-            'project_id' => '83',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '83',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '84',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '1',
-            'project_id' => '84',
+            'speciality_id' => '38',
+            'project_id' => '27',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '3',
-            'project_id' => '84',
+            'project_id' => '27',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
-            'project_id' => '84',
+            'speciality_id' => '48',
+            'project_id' => '27',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
-            'project_id' => '84',
+            'speciality_id' => '1',
+            'project_id' => '27',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
-            'project_id' => '84',
+            'speciality_id' => '92',
+            'project_id' => '28',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '92',
+            'project_id' => '29',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '92',
+            'project_id' => '30',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '31',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '31',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '32',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '32',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '55',
+            'project_id' => '32',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '32',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '1',
+            'project_id' => '32',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '35',
+            'project_id' => '32',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '32',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '33',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '33',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '33',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '33',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '34',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '34',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '34',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '34',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '35',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '36',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '36',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '37',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '37',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '38',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '38',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '35',
+            'project_id' => '38',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '38',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '40',
+            'project_id' => '38',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '39',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '39',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '1',
+            'project_id' => '40',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '40',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '40',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '40',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '41',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '41',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '41',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '41',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '1',
+            'project_id' => '42',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '42',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '42',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '42',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '43',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '43',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '44',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '44',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '44',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '45',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '45',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '45',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '46',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '35',
+            'project_id' => '46',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '46',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '47',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '40',
+            'project_id' => '47',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '47',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '48',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '40',
+            'project_id' => '48',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '48',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '49',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '40',
+            'project_id' => '49',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '49',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '50',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '40',
+            'project_id' => '50',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '50',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '51',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '1',
+            'project_id' => '51',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '2',
+            'project_id' => '51',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '51',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '48',
+            'project_id' => '51',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '35',
+            'project_id' => '51',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '51',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '51',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '52',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '52',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '92',
+            'project_id' => '52',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '53',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '53',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '53',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '6',
+            'project_id' => '53',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '44',
+            'project_id' => '65',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '44',
+            'project_id' => '66',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '62',
+            'project_id' => '66',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '44',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '62',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '36',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '63',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '64',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '69',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '70',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '21',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '22',
+            'project_id' => '67',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '44',
+            'project_id' => '68',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '62',
+            'project_id' => '68',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '70',
+            'project_id' => '68',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '21',
+            'project_id' => '69',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '21',
+            'project_id' => '70',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '21',
+            'project_id' => '71',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '21',
+            'project_id' => '72',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '21',
+            'project_id' => '73',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '74',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '74',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '75',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '76',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '77',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '77',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '85',
+            'project_id' => '77',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '78',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '79',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '79',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '80',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '80',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '82',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '82',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '85',
+            'project_id' => '82',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '96',
+            'project_id' => '82',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '83',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '83',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '64',
             'project_id' => '84',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
-            'project_id' => '84',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
+            'speciality_id' => '64',
             'project_id' => '85',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '85',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '137',
-            'project_id' => '85',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '140',
+            'speciality_id' => '64',
             'project_id' => '86',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '86',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '86',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '86',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '49',
+            'speciality_id' => '64',
             'project_id' => '87',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '49',
+            'speciality_id' => '32',
             'project_id' => '88',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '49',
+            'speciality_id' => '64',
             'project_id' => '89',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
+            'speciality_id' => '32',
             'project_id' => '90',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
+            'speciality_id' => '64',
             'project_id' => '91',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
+            'speciality_id' => '69',
             'project_id' => '92',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
+            'speciality_id' => '42',
+            'project_id' => '92',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
             'project_id' => '93',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '89',
+            'speciality_id' => '64',
+            'project_id' => '93',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '96',
+            'project_id' => '93',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
             'project_id' => '94',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '89',
+            'speciality_id' => '64',
+            'project_id' => '94',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '96',
+            'project_id' => '94',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
             'project_id' => '95',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
+            'speciality_id' => '32',
             'project_id' => '96',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '54',
-            'project_id' => '96',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
+            'speciality_id' => '32',
             'project_id' => '97',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
+            'speciality_id' => '90',
             'project_id' => '98',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
+            'speciality_id' => '91',
+            'project_id' => '98',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '90',
             'project_id' => '99',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '91',
+            'project_id' => '99',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '87',
+            'project_id' => '99',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '81',
+            'project_id' => '99',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '82',
+            'project_id' => '99',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '99',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '90',
+            'project_id' => '100',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '91',
+            'project_id' => '100',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '87',
+            'project_id' => '100',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '84',
             'project_id' => '100',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
+            'speciality_id' => '87',
             'project_id' => '101',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
+            'speciality_id' => '86',
+            'project_id' => '101',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '101',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '87',
             'project_id' => '102',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
+            'speciality_id' => '86',
             'project_id' => '103',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '97',
+            'speciality_id' => '87',
+            'project_id' => '103',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '80',
+            'project_id' => '103',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '93',
+            'project_id' => '103',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '86',
             'project_id' => '104',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '99',
+            'speciality_id' => '87',
             'project_id' => '104',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '97',
+            'speciality_id' => '80',
+            'project_id' => '104',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '93',
+            'project_id' => '104',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '86',
             'project_id' => '105',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '99',
+            'speciality_id' => '87',
             'project_id' => '105',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '80',
+            'project_id' => '105',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '93',
+            'project_id' => '105',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '86',
+            'project_id' => '106',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '84',
-            'project_id' => '105',
+            'project_id' => '107',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '97',
-            'project_id' => '106',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '99',
-            'project_id' => '106',
+            'project_id' => '107',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '84',
-            'project_id' => '106',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '97',
-            'project_id' => '107',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '99',
-            'project_id' => '107',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
-            'project_id' => '107',
+            'project_id' => '108',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '97',
             'project_id' => '108',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '99',
-            'project_id' => '108',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '35',
-            'project_id' => '108',
+            'speciality_id' => '84',
+            'project_id' => '109',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '97',
             'project_id' => '109',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '99',
-            'project_id' => '109',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '35',
-            'project_id' => '109',
+            'speciality_id' => '84',
+            'project_id' => '110',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '97',
             'project_id' => '110',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '99',
-            'project_id' => '110',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '99',
+            'speciality_id' => '81',
             'project_id' => '111',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '68',
+            'speciality_id' => '82',
+            'project_id' => '111',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '80',
+            'project_id' => '111',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '111',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '80',
             'project_id' => '112',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '54',
+            'speciality_id' => '93',
             'project_id' => '112',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '68',
+            'speciality_id' => '81',
             'project_id' => '113',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '54',
+            'speciality_id' => '82',
             'project_id' => '113',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '68',
+            'speciality_id' => '79',
+            'project_id' => '113',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '80',
+            'project_id' => '113',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '93',
+            'project_id' => '113',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '81',
             'project_id' => '114',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '54',
+            'speciality_id' => '82',
             'project_id' => '114',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '68',
+            'speciality_id' => '79',
+            'project_id' => '114',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '80',
+            'project_id' => '114',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '93',
+            'project_id' => '114',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '12',
+            'project_id' => '114',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '42',
+            'project_id' => '114',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '81',
             'project_id' => '115',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '54',
+            'speciality_id' => '82',
             'project_id' => '115',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '44',
+            'speciality_id' => '79',
+            'project_id' => '115',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '80',
+            'project_id' => '115',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '93',
+            'project_id' => '115',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '81',
             'project_id' => '116',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '44',
+            'speciality_id' => '82',
+            'project_id' => '116',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '116',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '72',
             'project_id' => '117',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '44',
+            'speciality_id' => '13',
             'project_id' => '118',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '133',
+            'speciality_id' => '72',
+            'project_id' => '118',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '13',
             'project_id' => '119',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '135',
+            'speciality_id' => '72',
             'project_id' => '119',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '133',
+            'speciality_id' => '13',
             'project_id' => '120',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '135',
+            'speciality_id' => '72',
             'project_id' => '120',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
-            'project_id' => '120',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
-            'project_id' => '120',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '121',
-            'project_id' => '120',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '118',
-            'project_id' => '120',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '133',
+            'speciality_id' => '13',
             'project_id' => '121',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '135',
+            'speciality_id' => '72',
             'project_id' => '121',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
-            'project_id' => '121',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '123',
-            'project_id' => '121',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
+            'speciality_id' => '13',
             'project_id' => '122',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '127',
+            'speciality_id' => '72',
             'project_id' => '122',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '118',
-            'project_id' => '122',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
+            'speciality_id' => '13',
             'project_id' => '123',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '127',
+            'speciality_id' => '72',
+            'project_id' => '123',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '13',
             'project_id' => '124',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
+            'speciality_id' => '72',
             'project_id' => '124',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '124',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '139',
-            'project_id' => '124',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '127',
+            'speciality_id' => '13',
             'project_id' => '125',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
+            'speciality_id' => '72',
             'project_id' => '125',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '125',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '139',
-            'project_id' => '125',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '127',
+            'speciality_id' => '13',
             'project_id' => '126',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '128',
+            'speciality_id' => '72',
             'project_id' => '126',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '126',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '139',
-            'project_id' => '126',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '127',
+            'speciality_id' => '13',
             'project_id' => '127',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '123',
+            'speciality_id' => '13',
             'project_id' => '128',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '146',
+            'speciality_id' => '72',
             'project_id' => '128',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '123',
+            'speciality_id' => '89',
             'project_id' => '129',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '146',
+            'speciality_id' => '42',
             'project_id' => '129',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '123',
+            'speciality_id' => '42',
             'project_id' => '130',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '146',
-            'project_id' => '130',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '123',
+            'speciality_id' => '89',
             'project_id' => '131',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '146',
+            'speciality_id' => '42',
             'project_id' => '131',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
+            'speciality_id' => '13',
+            'project_id' => '131',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '89',
             'project_id' => '132',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '121',
+            'speciality_id' => '42',
             'project_id' => '132',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '132',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '118',
-            'project_id' => '132',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
+            'speciality_id' => '12',
             'project_id' => '133',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '139',
+            'speciality_id' => '42',
             'project_id' => '133',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
+            'speciality_id' => '91',
+            'project_id' => '133',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '133',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '90',
+            'project_id' => '133',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '12',
             'project_id' => '134',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '121',
-            'project_id' => '134',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '118',
-            'project_id' => '134',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '134',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '139',
-            'project_id' => '134',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
+            'speciality_id' => '12',
             'project_id' => '135',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '121',
+            'speciality_id' => '42',
             'project_id' => '135',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '118',
+            'speciality_id' => '91',
             'project_id' => '135',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
+            'speciality_id' => '83',
             'project_id' => '135',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '139',
+            'speciality_id' => '90',
             'project_id' => '135',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
-            'project_id' => '135',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '61',
-            'project_id' => '135',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
+            'speciality_id' => '12',
             'project_id' => '136',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '121',
+            'speciality_id' => '86',
             'project_id' => '136',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '118',
-            'project_id' => '136',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '119',
-            'project_id' => '136',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '139',
-            'project_id' => '136',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '120',
+            'speciality_id' => '12',
             'project_id' => '137',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '121',
+            'speciality_id' => '84',
             'project_id' => '137',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '118',
+            'speciality_id' => '97',
             'project_id' => '137',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '107',
+            'speciality_id' => '13',
+            'project_id' => '137',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '72',
+            'project_id' => '137',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '57',
             'project_id' => '138',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '57',
             'project_id' => '139',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '107',
-            'project_id' => '139',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '57',
             'project_id' => '140',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '107',
+            'speciality_id' => '12',
             'project_id' => '140',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '57',
             'project_id' => '141',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '107',
-            'project_id' => '141',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '57',
             'project_id' => '142',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '107',
-            'project_id' => '142',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '34',
             'project_id' => '143',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '107',
-            'project_id' => '143',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '34',
             'project_id' => '144',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '107',
-            'project_id' => '144',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '34',
             'project_id' => '145',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '107',
-            'project_id' => '145',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '48',
             'project_id' => '146',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '107',
-            'project_id' => '146',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '48',
             'project_id' => '147',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '107',
-            'project_id' => '147',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '48',
             'project_id' => '148',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '48',
             'project_id' => '149',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '107',
-            'project_id' => '149',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '132',
+            'speciality_id' => '60',
             'project_id' => '150',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '61',
-            'project_id' => '150',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '61',
+            'speciality_id' => '60',
             'project_id' => '151',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '132',
+            'speciality_id' => '59',
             'project_id' => '152',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '61',
+            'speciality_id' => '37',
             'project_id' => '152',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '152',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '132',
+            'speciality_id' => '59',
             'project_id' => '153',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '61',
-            'project_id' => '153',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
+            'speciality_id' => '59',
             'project_id' => '154',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '61',
-            'project_id' => '154',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '135',
-            'project_id' => '154',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '122',
-            'project_id' => '154',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '133',
-            'project_id' => '154',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
+            'speciality_id' => '56',
             'project_id' => '155',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
+            'speciality_id' => '56',
             'project_id' => '156',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '61',
-            'project_id' => '156',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '135',
-            'project_id' => '156',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '122',
-            'project_id' => '156',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '133',
-            'project_id' => '156',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
+            'speciality_id' => '56',
             'project_id' => '157',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '127',
-            'project_id' => '157',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
+            'speciality_id' => '56',
             'project_id' => '158',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '123',
-            'project_id' => '158',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '146',
-            'project_id' => '158',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '158',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '107',
-            'project_id' => '158',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '86',
+            'speciality_id' => '56',
             'project_id' => '159',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '86',
+            'speciality_id' => '65',
             'project_id' => '160',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '86',
+            'speciality_id' => '66',
+            'project_id' => '160',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '65',
             'project_id' => '161',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
+            'speciality_id' => '66',
             'project_id' => '161',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '86',
+            'speciality_id' => '56',
+            'project_id' => '161',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '65',
             'project_id' => '162',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '86',
+            'speciality_id' => '66',
+            'project_id' => '162',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '56',
+            'project_id' => '162',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '65',
             'project_id' => '163',
         ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '66',
+            'project_id' => '163',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '48',
+            'project_id' => '163',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '65',
+            'project_id' => '164',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '66',
+            'project_id' => '164',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '164',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '65',
+            'project_id' => '165',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '66',
+            'project_id' => '165',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '23',
+            'project_id' => '165',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '65',
+            'project_id' => '166',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '66',
+            'project_id' => '166',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '66',
+            'project_id' => '167',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '47',
+            'project_id' => '168',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '37',
+            'project_id' => '168',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '47',
+            'project_id' => '169',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '37',
+            'project_id' => '169',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '47',
+            'project_id' => '170',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '37',
+            'project_id' => '170',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '47',
+            'project_id' => '171',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '37',
+            'project_id' => '171',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '30',
+            'project_id' => '172',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '30',
+            'project_id' => '173',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '30',
+            'project_id' => '174',
+        ]);
+
 
 
 
