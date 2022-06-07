@@ -28,18 +28,21 @@ class IndexController extends Controller
             }
         }
 
-        // if ($candidateSpeciality != null) {
-        //     $specilities = Speciality::where('name', $candidateSpeciality)->get();
-        //     if (count($specilities) == 0) {
-        //         return response('Не найдено', 404);
-        //     }
-        //     $specility1 = $specilities[0];
-        //     $specilitiesInInstitute = $specility1->institute->specialities;
-        //     $specilitiesInInstituteIds = $specilitiesInInstitute->pluck('id')->toArray();
-        //     $specialities = Speciality::all()->whereIn('id', $specilitiesInInstituteIds);
-
-        //     //dd($specialities);
-        // }
+        if ($candidateSpeciality != null) {
+            $specilities = Speciality::where('name', $candidateSpeciality)->get();
+            if (count($specilities) == 0) {
+                return response('Не найдено', 404);
+            }
+            $specility1 = $specilities[0];
+            $specilitiesInInstitute = $specility1->institute->specialities;
+            $specilitiesInInstituteIds = $specilitiesInInstitute->pluck('id')->toArray();
+            $specialities = [];
+            $specs = Speciality::all()->whereIn('id', $specilitiesInInstituteIds);
+            foreach ($specs as $key => $value) {
+                array_push($specialities, $value);
+            }
+            //dd($specialities->toArray());
+        }
 
         return [
             'skills' => $skills,
