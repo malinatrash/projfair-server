@@ -7,18 +7,62 @@ use App\Http\Requests\Participation\StoreRequest;
 use App\Models\Candidate;
 use App\Models\Participation;
 use App\Models\Project;
+use App\Models\ProjectSpeciality;
+use App\Models\Speciality;
 use App\Models\StateParticipation;
 use Illuminate\Http\Request;
 
 class CreateParticipationController extends Controller
 {
-    public function __invoke($id_project, StoreRequest $request)
+    public function __invoke(Project $project, StoreRequest $request)
     {
-        $id_project = intval($id_project);
+        $project->load('specialities', 'state');
+
+        if ($project->state->id != 1) {
+            return response("Проект не в статусе набора заявок", 403);
+        }
+        $id_project = $project->id;
+
 
         $token = $request->get('api_token');
-        $id = Candidate::where('api_token', $token)->select('id')->get()[0]['id'];
+        $candidates = Candidate::where('api_token', $token)->get();
+        if (count($candidates) == 0) {
+            return response("Авторизируйтесь, чтобы подать заявку", 403);
+        }
+        $candidate = $candidates[0];
 
+        $candidateSpeciality = explode("-", $candidate['training_group'])[0];
+        $idsProject = [];
+
+
+        if ($candidateSpeciality != null) {
+            $specilities = Speciality::where('name', $candidateSpeciality)->get();
+            if (count($specilities) == 0) {
+                return response('Не найдено', 404);
+            }
+            $specility1 = $specilities[0];
+            $specilitiesInInstitute = $specility1->institute->specialities;
+            $specilitiesInInstituteIds = $specilitiesInInstitute->pluck('id')->toArray();
+            $idProjectsWithSpecialities = ProjectSpeciality::select('project_id as id')->whereIn('speciality_id', $specilitiesInInstituteIds)->get()->toArray();
+
+            foreach ($idProjectsWithSpecialities as $key => $value) {
+                array_push($idsProject, $value['id']);
+            }
+        }
+
+        if (!in_array($id_project, $idsProject)) {
+            return  response("Вы не можете подать заявку проект с другого института", 403);
+        }
+
+
+
+        $id = $candidate['id'];
+
+
+        $candidatesParticipations = Participation::where('candidate_id', $id)->get();
+        if (count($candidatesParticipations) > 3) {
+            return  response("Вы уже подали 3 заявки", 403);
+        }
         if (Participation::where('candidate_id', $id)->where('project_id', $id_project)->get()->count() != 0) {
             return response()->json(['error' => 'Заявка на этот проект уже есть'], 400);
         }

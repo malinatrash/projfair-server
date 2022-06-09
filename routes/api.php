@@ -13,51 +13,51 @@ Route::group(['namespace' => 'Supervisor', 'prefix' => 'supervisors'], function 
 });
 
 Route::group(['namespace' => 'Project', 'prefix' => 'projects'], function () {
-    Route::post('/', 'StoreController');
+    // Route::post('/', 'StoreController');
     Route::get('/', 'IndexController');
     Route::get('/filter', 'FilterController');
     Route::get('/{project}', 'ShowController');
-    Route::patch('/{project}', 'UpdateController');
-    Route::delete('/{project}', 'DeleteController');
+    // Route::patch('/{project}', 'UpdateController');
+    // Route::delete('/{project}', 'DeleteController');
 });
 
 
 
 Route::group(['namespace' => 'Type', 'prefix' => 'types'], function () {
-    Route::post('/', 'StoreController');
+    // Route::post('/', 'StoreController');
     Route::get('/', 'IndexController');
     Route::get('/{type}', 'ShowController');
-    Route::patch('/{type}', 'UpdateController');
-    Route::delete('/{type}', 'DeleteController');
+    // Route::patch('/{type}', 'UpdateController');
+    // Route::delete('/{type}', 'DeleteController');
 });
 
 Route::group(['namespace' => 'State', 'prefix' => 'states'], function () {
-    Route::post('/', 'StoreController');
+    // Route::post('/', 'StoreController');
     Route::get('/', 'IndexController');
     Route::get('/{state}', 'ShowController');
-    Route::patch('/{state}', 'UpdateController');
-    Route::delete('/{state}', 'DeleteController');
+    // Route::patch('/{state}', 'UpdateController');
+    // Route::delete('/{state}', 'DeleteController');
 });
 
 Route::group(['namespace' => 'Skill', 'prefix' => 'skills'], function () {
-    Route::post('/', 'StoreController');
+    // Route::post('/', 'StoreController');
     Route::get('/', 'IndexController');
     Route::get('/{skill}', 'ShowController');
-    Route::patch('/{skill}', 'UpdateController');
-    Route::delete('/{skill}', 'DeleteController');
+    // Route::patch('/{skill}', 'UpdateController');
+    // Route::delete('/{skill}', 'DeleteController');
 });
 
 Route::group(['namespace' => 'Participation', 'prefix' => 'participations'], function () {
     //Route::post('/', 'StoreController');
     // Route::get('/', 'IndexController');
     //Route::get('/{participation}', 'ShowController');
-    Route::patch('/{participation}', 'UpdateController');
-    Route::delete('/{participation}', 'DeleteController');
+    Route::patch('/{participation}', 'UpdateController')->middleware(ApiAuth::class); // Изменение заявки
+    Route::delete('/{participation}', 'DeleteController')->middleware(ApiAuth::class); // Удаление заявки
 });
 Route::get('/participations', 'Candidate\\ParticipationsController')->middleware(ApiAuth::class);
 //Route::delete('/participations/{id}', 'Candidate\\DeleteParticipationController')->middleware(ApiAuth::class);
-Route::post('/participations/{id}', 'Candidate\\CreateParticipationController')->middleware(ApiAuth::class);
-Route::get('/participations_deadline', 'Participation\\DeadLineController');
+Route::post('/participations/{project}', 'Candidate\\CreateParticipationController')->middleware(ApiAuth::class); // Создание заявки
+Route::get('/participations_deadline', 'Participation\\DeadLineController'); // Получение дедлайна подачи заявки
 
 
 //Route::post('/supervisor/projects', 'Supervisor\\CreateProjectController')->middleware(ApiAuth::class);
