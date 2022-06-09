@@ -7,8 +7,9 @@
 
     <title>Ярмарка проектов</title>
 
-    <script type="module" crossorigin src="{{ asset('assets/index.f15b241b.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('assets/index.dd7c6818.css') }}">
+    <script type="module" crossorigin src="{{ asset('assets/index.9feb1555.js') }}"></script>
+    <link rel="modulepreload" href="{{ asset('assets/vendor.da625174.js') }}">
+    <link rel="stylesheet" href="{{ asset('assets/index.fa55d107.css') }}">
 
 </head>
 

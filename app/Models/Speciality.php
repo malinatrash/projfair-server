@@ -9,6 +9,7 @@ class Speciality extends Model
 {
     use HasFactory;
     protected $guarded = false;
+    public $timestamps = false;
 
     public function projects()
     {

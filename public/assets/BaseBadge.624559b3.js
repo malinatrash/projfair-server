@@ -1,1 +1,0 @@
-import{_ as r,o,c as a,m as t}from"./index.f15b241b.js";const c={},n={class:"badge"};function d(e,s){return o(),a("div",n,[t(e.$slots,"default",{},void 0,!0)])}var l=r(c,[["render",d],["__scopeId","data-v-85952bb4"]]);export{l as B};
