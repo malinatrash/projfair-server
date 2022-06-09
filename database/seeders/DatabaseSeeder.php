@@ -476,6 +476,7 @@ class DatabaseSeeder extends Seeder
 
 
 
+
         DB::table('states')->insert([
             'state' => 'Идёт набор',
         ]);
@@ -679,7 +680,7 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Ethernet',  'skillCategory_id' => '1'],
             ['name' => 'Удалённое',  'skillCategory_id' => '1'],
             ['name' => 'Работа с БД',  'skillCategory_id' => '1'],
-            ['name' => '1С',  'skillCategory_id' => '1'],
+            ['name' => 'С',  'skillCategory_id' => '1'],
             ['name' => 'Управление ОС',  'skillCategory_id' => '1'],
             ['name' => 'Arduino. ',  'skillCategory_id' => '1'],
             ['name' => 'LoRa',  'skillCategory_id' => '1'],
@@ -693,7 +694,7 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Для фронтенда: PHP + дизайн и web-дизайн',  'skillCategory_id' => '1'],
             ['name' => 'Для бэкэнда: PHP, Java + MySQL',  'skillCategory_id' => '1'],
             ['name' => 'ФЗ-63',  'skillCategory_id' => '1'],
-            ['name' => '«Битрикс» ',  'skillCategory_id' => '1'],
+            ['name' => 'Битрикс» ',  'skillCategory_id' => '1'],
             ['name' => 'SimInTech',  'skillCategory_id' => '1'],
             ['name' => 'Universal Mechanism',  'skillCategory_id' => '1'],
             ['name' => 'Proteus',  'skillCategory_id' => '1'],
@@ -730,7 +731,7 @@ class DatabaseSeeder extends Seeder
             ['name' => 'ЧПУ',  'skillCategory_id' => '1'],
             ['name' => 'Mach3',  'skillCategory_id' => '1'],
             ['name' => 'PLCM',  'skillCategory_id' => '1'],
-            ['name' => '3Д печать',  'skillCategory_id' => '1'],
+            ['name' => 'Д печать',  'skillCategory_id' => '1'],
             ['name' => 'Cura',  'skillCategory_id' => '1'],
             ['name' => 'Знания в области материаловедения',  'skillCategory_id' => '1'],
             ['name' => 'Сварочных технологий',  'skillCategory_id' => '1'],
@@ -843,13 +844,13 @@ class DatabaseSeeder extends Seeder
             ['name' => 'ArchiCad',  'skillCategory_id' => '1'],
             ['name' => 'Adobe',  'skillCategory_id' => '1'],
             ['name' => 'Corel Draw',  'skillCategory_id' => '1'],
-            ['name' => '3D',  'skillCategory_id' => '1'],
+            ['name' => 'D',  'skillCategory_id' => '1'],
             ['name' => 'Навыки создания графической части объектов архитектуры, зданий и сооружений',  'skillCategory_id' => '1'],
             ['name' => 'Работа в пространстве программного обеспечения',  'skillCategory_id' => '1'],
             ['name' => 'Конструирование и проектирование зданий',  'skillCategory_id' => '1'],
             ['name' => 'ArchiCAD',  'skillCategory_id' => '1'],
             ['name' => 'AutoCAD',  'skillCategory_id' => '1'],
-            ['name' => '3D моделирование (3D MAX)',  'skillCategory_id' => '1'],
+            ['name' => 'D моделирование (3D MAX)',  'skillCategory_id' => '1'],
             ['name' => 'Знание разработки чертежей раздела электрики ( желательно )',  'skillCategory_id' => '1'],
             ['name' => 'Autodesk AutoCAD',  'skillCategory_id' => '1'],
             ['name' => 'Конструирование и проектирование зданий, инженерных систем зданий',  'skillCategory_id' => '1'],
@@ -859,7 +860,7 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Microsoft Visual Studio ',  'skillCategory_id' => '1'],
             ['name' => 'Умение ориентироваться в нормативной документации',  'skillCategory_id' => '1'],
             ['name' => 'Владение навыками AutoCAD и др. программами.',  'skillCategory_id' => '1'],
-            ['name' => '«ГИС Панорама»',  'skillCategory_id' => '1'],
+            ['name' => 'ГИС Панорама»',  'skillCategory_id' => '1'],
             ['name' => 'Правовые основ земельно-имущественных отношений',  'skillCategory_id' => '1'],
             ['name' => 'Знание ПО «ГИС Панорама», Правовые основ земельно-имущественных отношений',  'skillCategory_id' => '1'],
             ['name' => 'Знание основ академической живописи, рисунка, композиции',  'skillCategory_id' => '1'],
@@ -909,7 +910,7 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Подготавливать исходную техническую и климатическую информацию',  'skillCategory_id' => '1'],
             ['name' => 'Программирование в Matlab',  'skillCategory_id' => '1'],
             ['name' => 'Читать и переводить англоязычную литературу',  'skillCategory_id' => '1'],
-            ['name' => 'Подготавливать исходную техническую и климатическую информацию, программирование в Matlab, читать и переводить англоязычную литературу',  'skillCategory_id' => '1'],
+            ['name' => 'Программирование в Matla',  'skillCategory_id' => '1'],
             ['name' => 'Моделирование в MatLab ',  'skillCategory_id' => '1'],
             ['name' => 'Знание электротехники, базовые навыки чтения электрических схем',  'skillCategory_id' => '1'],
             ['name' => 'Компас',  'skillCategory_id' => '1'],
@@ -1451,6 +1452,22 @@ id ФИО учеников Наименование предмета Посещ�
 ',
             'state_id' => '1',
             'supervisors' => 'Аношко Алексей Федорович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Академия IT',
+            'places' => '100',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'En+ digital',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '2',
+            'supervisors' => 'Говорков А.С.',
             'type_id' => '1',
         ]);
         DB::table('projects')->insert([
@@ -2145,6 +2162,38 @@ https://tvoyhod.online/
             'product_result' => 'Комплект конструкторской документации.',
             'state_id' => '1',
             'supervisors' => 'Шматкова Анна Викторовна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Академия IT',
+            'places' => '100',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'En+ digital',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '2',
+            'supervisors' => 'Говорков А.С.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Проект "Форсайт"',
+            'places' => '100',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Центр проектного обучения',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '2',
+            'supervisors' => '',
             'type_id' => '1',
         ]);
         DB::table('projects')->insert([
@@ -2945,6 +2994,22 @@ https://tvoyhod.online/
             'product_result' => 'Научная публикация, аналитический обзор.',
             'state_id' => '1',
             'supervisors' => 'Литвинцев Алексей Вячеславович',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Академия IT',
+            'places' => '100',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'En+ digital',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '2',
+            'supervisors' => 'Говорков А.С.',
             'type_id' => '1',
         ]);
         DB::table('projects')->insert([
@@ -3956,6 +4021,22 @@ Case-in , Международный нефтегазовый, кейс ESG
             'type_id' => '1',
         ]);
         DB::table('projects')->insert([
+            'title' => 'Академия IT',
+            'places' => '100',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'En+ digital',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '2',
+            'supervisors' => 'Говорков А.С.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
             'title' => 'Вовлечение техногенного сырья в производство цветных металлов',
             'places' => '15',
             'goal' => 'Разработать технологические рекомендации и стратегию переработки техногенного сырья и расширения сырьевой базы металлургического производства за счет разработки новых месторождений',
@@ -4729,6 +4810,38 @@ Case-in , Международный нефтегазовый, кейс ESG
             'product_result' => 'Планируется получить магнитоуправляемый композитов на основе цеолитов и магнитных наночастиц. Данный нанокомпозит будет иметь уникальные свойства цеолита и обладать магнитными свойствами, что позволит увеличить области возможного его применения.  ',
             'state_id' => '1',
             'supervisors' => 'Скорникова Светлана Афанасьевна',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Академия IT',
+            'places' => '100',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'En+ digital',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '2',
+            'supervisors' => 'Говорков А.С.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Проект "Форсайт"',
+            'places' => '100',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Центр проектного обучения',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '2',
+            'supervisors' => 'Чимитов П.Е.',
             'type_id' => '1',
         ]);
         DB::table('projects')->insert([
@@ -5904,6 +6017,38 @@ Case-in , Международный нефтегазовый, кейс ESG
             'type_id' => '1',
         ]);
         DB::table('projects')->insert([
+            'title' => 'Академия IT',
+            'places' => '100',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'En+ digital',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '2',
+            'supervisors' => 'Говорков А.С.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Проект "Форсайт"',
+            'places' => '100',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Центр проектного обучения',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '2',
+            'supervisors' => 'Чимитов П.Е.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
             'title' => 'Использование солнечной энергии для отопления и горячего водоснабжения потребителей в индивидуальном жилищном строительстве, на децентрализованных территориях ',
             'places' => '15',
             'goal' => 'Разработка проекта использования солнечной энергии для отопления и горячего водоснабжения зданий в удаленных территориях, а также создание программы для расчета параметров системы, использующей солнечные коллекторы',
@@ -6253,6 +6398,40 @@ www.polyplastic.ru
             'supervisors' => 'Дунаев Андрей Михайлович',
             'type_id' => '1',
         ]);
+        DB::table('projects')->insert([
+            'title' => 'Академия IT',
+            'places' => '100',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'En+ digital',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '2',
+            'supervisors' => 'Говорков А.С.',
+            'type_id' => '1',
+        ]);
+        DB::table('projects')->insert([
+            'title' => 'Проект "Форсайт"',
+            'places' => '100',
+            'goal' => '',
+            'description' => '',
+            'difficulty' => '2',
+            'date_start' => '2022-09-01',
+            'date_end' => '2023-05-30',
+            'requirements' => '',
+            'customer' => 'Центр проектного обучения',
+            'study_result' => '',
+            'product_result' => '',
+            'state_id' => '2',
+            'supervisors' => 'Чимитов П.Е.',
+            'type_id' => '1',
+        ]);
+
+
 
 
 
@@ -7082,43 +7261,23 @@ www.polyplastic.ru
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '76',
-            'project_id' => '28',
+            'project_id' => '29',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '77',
-            'project_id' => '28',
+            'project_id' => '29',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '78',
-            'project_id' => '28',
+            'project_id' => '29',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '79',
-            'project_id' => '28',
+            'project_id' => '29',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '80',
-            'project_id' => '28',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '81',
-            'project_id' => '30',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '82',
-            'project_id' => '30',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '83',
-            'project_id' => '30',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '84',
-            'project_id' => '30',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '85',
-            'project_id' => '30',
+            'project_id' => '29',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '81',
@@ -7159,161 +7318,177 @@ www.polyplastic.ru
         DB::table('project_skill')->insert([
             'skill_id' => '85',
             'project_id' => '32',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '81',
+            'project_id' => '33',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '82',
+            'project_id' => '33',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '83',
+            'project_id' => '33',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '84',
+            'project_id' => '33',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '85',
+            'project_id' => '33',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '86',
-            'project_id' => '33',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '87',
-            'project_id' => '33',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '88',
-            'project_id' => '33',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '89',
             'project_id' => '34',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '90',
+            'skill_id' => '87',
+            'project_id' => '34',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '88',
+            'project_id' => '34',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '89',
             'project_id' => '35',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '90',
+            'project_id' => '36',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '91',
-            'project_id' => '35',
+            'project_id' => '36',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '92',
-            'project_id' => '35',
+            'project_id' => '36',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '90',
-            'project_id' => '36',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '93',
-            'project_id' => '36',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '94',
-            'project_id' => '36',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '95',
             'project_id' => '37',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '96',
+            'skill_id' => '93',
+            'project_id' => '37',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '94',
+            'project_id' => '37',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '95',
             'project_id' => '38',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '96',
+            'project_id' => '39',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '97',
-            'project_id' => '38',
+            'project_id' => '39',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '98',
-            'project_id' => '38',
+            'project_id' => '39',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '99',
-            'project_id' => '38',
+            'project_id' => '39',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '100',
-            'project_id' => '38',
+            'project_id' => '39',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '101',
-            'project_id' => '43',
+            'project_id' => '44',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '102',
-            'project_id' => '43',
+            'project_id' => '44',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '103',
-            'project_id' => '44',
+            'project_id' => '45',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '104',
-            'project_id' => '44',
+            'project_id' => '45',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '105',
-            'project_id' => '45',
+            'project_id' => '46',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '106',
-            'project_id' => '45',
+            'project_id' => '46',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '107',
-            'project_id' => '45',
+            'project_id' => '46',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '108',
-            'project_id' => '46',
+            'project_id' => '47',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '102',
-            'project_id' => '46',
+            'project_id' => '47',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '109',
-            'project_id' => '48',
+            'project_id' => '49',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '110',
-            'project_id' => '48',
+            'project_id' => '49',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '111',
-            'project_id' => '48',
+            'project_id' => '49',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '112',
-            'project_id' => '48',
+            'project_id' => '49',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '113',
-            'project_id' => '48',
+            'project_id' => '49',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '114',
-            'project_id' => '49',
+            'project_id' => '50',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '115',
-            'project_id' => '49',
+            'project_id' => '50',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '116',
-            'project_id' => '49',
+            'project_id' => '50',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '114',
-            'project_id' => '50',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '117',
-            'project_id' => '50',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '116',
-            'project_id' => '50',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '118',
             'project_id' => '51',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '119',
-            'project_id' => '53',
+            'skill_id' => '117',
+            'project_id' => '51',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '120',
+            'skill_id' => '116',
+            'project_id' => '51',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '118',
+            'project_id' => '52',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '119',
             'project_id' => '54',
         ]);
         DB::table('project_skill')->insert([
@@ -7321,59 +7496,15 @@ www.polyplastic.ru
             'project_id' => '55',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '121',
-            'project_id' => '57',
+            'skill_id' => '120',
+            'project_id' => '56',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '122',
+            'skill_id' => '121',
             'project_id' => '60',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '123',
-            'project_id' => '61',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '124',
-            'project_id' => '61',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '125',
-            'project_id' => '61',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '126',
-            'project_id' => '61',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '123',
-            'project_id' => '62',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '124',
-            'project_id' => '62',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '125',
-            'project_id' => '62',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '126',
-            'project_id' => '62',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '123',
-            'project_id' => '63',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '124',
-            'project_id' => '63',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '125',
-            'project_id' => '63',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '126',
+            'skill_id' => '122',
             'project_id' => '63',
         ]);
         DB::table('project_skill')->insert([
@@ -7407,863 +7538,920 @@ www.polyplastic.ru
         DB::table('project_skill')->insert([
             'skill_id' => '126',
             'project_id' => '65',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '123',
+            'project_id' => '66',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '124',
+            'project_id' => '66',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '125',
+            'project_id' => '66',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '126',
+            'project_id' => '66',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '123',
+            'project_id' => '67',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '124',
+            'project_id' => '67',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '125',
+            'project_id' => '67',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '126',
+            'project_id' => '67',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '123',
+            'project_id' => '68',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '124',
+            'project_id' => '68',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '125',
+            'project_id' => '68',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '126',
+            'project_id' => '68',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '127',
-            'project_id' => '76',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '128',
-            'project_id' => '77',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '127',
-            'project_id' => '78',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '128',
             'project_id' => '79',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '129',
+            'skill_id' => '128',
             'project_id' => '80',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '130',
+            'skill_id' => '127',
             'project_id' => '81',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '131',
+            'skill_id' => '128',
+            'project_id' => '82',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '129',
             'project_id' => '83',
         ]);
         DB::table('project_skill')->insert([
+            'skill_id' => '130',
+            'project_id' => '84',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '131',
+            'project_id' => '86',
+        ]);
+        DB::table('project_skill')->insert([
             'skill_id' => '132',
-            'project_id' => '85',
+            'project_id' => '88',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '133',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '134',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '135',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '136',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '137',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '138',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '139',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '140',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '141',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '142',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '143',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '144',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '145',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '146',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '147',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '148',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '149',
-            'project_id' => '86',
+            'project_id' => '89',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '150',
-            'project_id' => '90',
+            'project_id' => '94',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '151',
-            'project_id' => '91',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '82',
-            'project_id' => '91',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '152',
-            'project_id' => '91',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '153',
-            'project_id' => '91',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '154',
-            'project_id' => '94',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '155',
-            'project_id' => '94',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '156',
-            'project_id' => '94',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '157',
-            'project_id' => '94',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '158',
-            'project_id' => '94',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '159',
-            'project_id' => '94',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '160',
             'project_id' => '95',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '161',
-            'project_id' => '96',
+            'skill_id' => '82',
+            'project_id' => '95',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '152',
+            'project_id' => '95',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '153',
+            'project_id' => '95',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '154',
+            'project_id' => '98',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '155',
+            'project_id' => '98',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '156',
+            'project_id' => '98',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '157',
+            'project_id' => '98',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '158',
+            'project_id' => '98',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '159',
+            'project_id' => '98',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '160',
             'project_id' => '99',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '162',
-            'project_id' => '99',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '163',
-            'project_id' => '99',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '164',
+            'skill_id' => '161',
             'project_id' => '100',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '165',
+            'skill_id' => '154',
+            'project_id' => '103',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '162',
+            'project_id' => '103',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '163',
+            'project_id' => '103',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '164',
             'project_id' => '104',
         ]);
         DB::table('project_skill')->insert([
+            'skill_id' => '165',
+            'project_id' => '108',
+        ]);
+        DB::table('project_skill')->insert([
             'skill_id' => '166',
-            'project_id' => '105',
+            'project_id' => '109',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '167',
-            'project_id' => '110',
+            'project_id' => '114',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '168',
-            'project_id' => '111',
+            'project_id' => '115',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '169',
-            'project_id' => '111',
+            'project_id' => '115',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '170',
-            'project_id' => '120',
+            'project_id' => '124',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '171',
-            'project_id' => '121',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '172',
-            'project_id' => '121',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '173',
-            'project_id' => '121',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '174',
-            'project_id' => '121',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '175',
-            'project_id' => '121',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '176',
-            'project_id' => '121',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '177',
-            'project_id' => '121',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '178',
-            'project_id' => '123',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '179',
-            'project_id' => '123',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '180',
             'project_id' => '125',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '181',
+            'skill_id' => '172',
+            'project_id' => '125',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '173',
+            'project_id' => '125',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '174',
+            'project_id' => '125',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '175',
+            'project_id' => '125',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '176',
+            'project_id' => '125',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '177',
+            'project_id' => '125',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '178',
+            'project_id' => '127',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '179',
+            'project_id' => '127',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '180',
             'project_id' => '129',
         ]);
         DB::table('project_skill')->insert([
+            'skill_id' => '181',
+            'project_id' => '133',
+        ]);
+        DB::table('project_skill')->insert([
             'skill_id' => '182',
-            'project_id' => '132',
+            'project_id' => '136',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '183',
-            'project_id' => '132',
+            'project_id' => '136',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '184',
-            'project_id' => '132',
+            'project_id' => '136',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '185',
-            'project_id' => '132',
+            'project_id' => '136',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '186',
-            'project_id' => '132',
+            'project_id' => '136',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '187',
-            'project_id' => '132',
+            'project_id' => '136',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '188',
-            'project_id' => '132',
+            'project_id' => '136',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '189',
-            'project_id' => '132',
+            'project_id' => '136',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '190',
-            'project_id' => '141',
+            'project_id' => '146',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '191',
-            'project_id' => '141',
+            'project_id' => '146',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '192',
-            'project_id' => '141',
+            'project_id' => '146',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '193',
-            'project_id' => '141',
+            'project_id' => '146',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '194',
-            'project_id' => '144',
+            'project_id' => '149',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '195',
-            'project_id' => '146',
+            'project_id' => '151',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '196',
-            'project_id' => '146',
+            'project_id' => '151',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '197',
-            'project_id' => '147',
+            'project_id' => '152',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '198',
-            'project_id' => '147',
+            'project_id' => '152',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '199',
-            'project_id' => '147',
+            'project_id' => '152',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '200',
-            'project_id' => '149',
+            'project_id' => '154',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '201',
-            'project_id' => '149',
+            'project_id' => '154',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '202',
-            'project_id' => '149',
+            'project_id' => '154',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '200',
-            'project_id' => '150',
+            'project_id' => '155',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '203',
-            'project_id' => '150',
+            'project_id' => '155',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '202',
-            'project_id' => '150',
+            'project_id' => '155',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '200',
-            'project_id' => '151',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '203',
-            'project_id' => '151',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '202',
-            'project_id' => '151',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '200',
-            'project_id' => '152',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '203',
-            'project_id' => '152',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '202',
-            'project_id' => '152',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '200',
-            'project_id' => '153',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '203',
-            'project_id' => '153',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '202',
-            'project_id' => '153',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '204',
-            'project_id' => '155',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '205',
-            'project_id' => '155',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '206',
-            'project_id' => '155',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '207',
-            'project_id' => '155',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '208',
-            'project_id' => '155',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '209',
             'project_id' => '156',
         ]);
         DB::table('project_skill')->insert([
+            'skill_id' => '203',
+            'project_id' => '156',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '202',
+            'project_id' => '156',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '200',
+            'project_id' => '157',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '203',
+            'project_id' => '157',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '202',
+            'project_id' => '157',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '200',
+            'project_id' => '158',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '203',
+            'project_id' => '158',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '202',
+            'project_id' => '158',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '204',
+            'project_id' => '160',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '205',
+            'project_id' => '160',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '206',
+            'project_id' => '160',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '207',
+            'project_id' => '160',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '208',
+            'project_id' => '160',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '209',
+            'project_id' => '161',
+        ]);
+        DB::table('project_skill')->insert([
             'skill_id' => '210',
-            'project_id' => '166',
+            'project_id' => '171',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '211',
-            'project_id' => '166',
+            'project_id' => '171',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '212',
-            'project_id' => '166',
+            'project_id' => '171',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '213',
-            'project_id' => '167',
+            'project_id' => '172',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '214',
-            'project_id' => '168',
+            'project_id' => '173',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '215',
-            'project_id' => '169',
+            'project_id' => '176',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '216',
-            'project_id' => '170',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '217',
-            'project_id' => '171',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '218',
-            'project_id' => '171',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '219',
-            'project_id' => '171',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '220',
-            'project_id' => '171',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '221',
-            'project_id' => '172',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '222',
-            'project_id' => '172',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '223',
-            'project_id' => '172',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '224',
-            'project_id' => '172',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '225',
-            'project_id' => '172',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '221',
-            'project_id' => '173',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '222',
-            'project_id' => '173',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '223',
-            'project_id' => '173',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '224',
-            'project_id' => '173',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '225',
-            'project_id' => '173',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '226',
-            'project_id' => '174',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '227',
-            'project_id' => '174',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '228',
-            'project_id' => '175',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '229',
-            'project_id' => '175',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '230',
-            'project_id' => '175',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '231',
-            'project_id' => '175',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '232',
-            'project_id' => '175',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '233',
-            'project_id' => '176',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '234',
-            'project_id' => '176',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '235',
             'project_id' => '177',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '236',
+            'skill_id' => '217',
             'project_id' => '178',
         ]);
         DB::table('project_skill')->insert([
+            'skill_id' => '218',
+            'project_id' => '178',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '219',
+            'project_id' => '178',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '220',
+            'project_id' => '178',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '221',
+            'project_id' => '179',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '222',
+            'project_id' => '179',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '223',
+            'project_id' => '179',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '224',
+            'project_id' => '179',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '225',
+            'project_id' => '179',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '221',
+            'project_id' => '180',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '222',
+            'project_id' => '180',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '223',
+            'project_id' => '180',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '224',
+            'project_id' => '180',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '225',
+            'project_id' => '180',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '226',
+            'project_id' => '181',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '227',
+            'project_id' => '181',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '228',
+            'project_id' => '182',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '229',
+            'project_id' => '182',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '230',
+            'project_id' => '182',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '231',
+            'project_id' => '182',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '232',
+            'project_id' => '182',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '233',
+            'project_id' => '183',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '234',
+            'project_id' => '183',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '235',
+            'project_id' => '184',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '236',
+            'project_id' => '185',
+        ]);
+        DB::table('project_skill')->insert([
             'skill_id' => '237',
-            'project_id' => '186',
+            'project_id' => '193',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '238',
-            'project_id' => '186',
+            'project_id' => '193',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '239',
-            'project_id' => '188',
+            'project_id' => '195',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '240',
-            'project_id' => '188',
+            'project_id' => '195',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '237',
-            'project_id' => '189',
+            'project_id' => '196',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '238',
-            'project_id' => '189',
+            'project_id' => '196',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '241',
-            'project_id' => '190',
+            'project_id' => '197',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '242',
-            'project_id' => '190',
+            'project_id' => '197',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '243',
-            'project_id' => '191',
+            'project_id' => '198',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '244',
-            'project_id' => '205',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '245',
-            'project_id' => '206',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '246',
-            'project_id' => '206',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '247',
-            'project_id' => '207',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '248',
-            'project_id' => '207',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '249',
-            'project_id' => '208',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '249',
-            'project_id' => '209',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '250',
-            'project_id' => '210',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '251',
-            'project_id' => '211',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '252',
-            'project_id' => '211',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '253',
             'project_id' => '212',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '254',
+            'skill_id' => '245',
             'project_id' => '213',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '255',
+            'skill_id' => '246',
             'project_id' => '213',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '230',
-            'project_id' => '213',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '256',
-            'project_id' => '213',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '254',
+            'skill_id' => '247',
             'project_id' => '214',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '255',
+            'skill_id' => '248',
             'project_id' => '214',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '230',
-            'project_id' => '214',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '257',
+            'skill_id' => '249',
             'project_id' => '215',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '258',
-            'project_id' => '215',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '259',
-            'project_id' => '215',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '260',
-            'project_id' => '215',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '261',
-            'project_id' => '215',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '262',
+            'skill_id' => '249',
             'project_id' => '216',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '263',
-            'project_id' => '216',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '264',
+            'skill_id' => '250',
             'project_id' => '217',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '265',
+            'skill_id' => '251',
             'project_id' => '218',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '266',
+            'skill_id' => '252',
+            'project_id' => '218',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '253',
+            'project_id' => '219',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '254',
             'project_id' => '220',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '267',
-            'project_id' => '222',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '268',
-            'project_id' => '222',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '76',
-            'project_id' => '222',
+            'skill_id' => '255',
+            'project_id' => '220',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '230',
+            'project_id' => '220',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '256',
+            'project_id' => '220',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '254',
+            'project_id' => '221',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '255',
+            'project_id' => '221',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '230',
+            'project_id' => '221',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '257',
+            'project_id' => '222',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '258',
+            'project_id' => '222',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '259',
+            'project_id' => '222',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '260',
+            'project_id' => '222',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '261',
+            'project_id' => '222',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '262',
             'project_id' => '223',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '269',
+            'skill_id' => '263',
             'project_id' => '223',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '24',
-            'project_id' => '223',
+            'skill_id' => '264',
+            'project_id' => '224',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '270',
-            'project_id' => '223',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '271',
-            'project_id' => '223',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '272',
+            'skill_id' => '265',
             'project_id' => '225',
         ]);
         DB::table('project_skill')->insert([
-            'skill_id' => '273',
-            'project_id' => '225',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '274',
-            'project_id' => '226',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '275',
-            'project_id' => '226',
-        ]);
-        DB::table('project_skill')->insert([
-            'skill_id' => '90',
+            'skill_id' => '266',
             'project_id' => '227',
         ]);
         DB::table('project_skill')->insert([
+            'skill_id' => '267',
+            'project_id' => '231',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '268',
+            'project_id' => '231',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '76',
+            'project_id' => '231',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '230',
+            'project_id' => '232',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '269',
+            'project_id' => '232',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '24',
+            'project_id' => '232',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '270',
+            'project_id' => '232',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '271',
+            'project_id' => '232',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '272',
+            'project_id' => '234',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '273',
+            'project_id' => '234',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '274',
+            'project_id' => '235',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '275',
+            'project_id' => '235',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '90',
+            'project_id' => '236',
+        ]);
+        DB::table('project_skill')->insert([
             'skill_id' => '276',
-            'project_id' => '229',
+            'project_id' => '238',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '277',
-            'project_id' => '229',
+            'project_id' => '238',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '278',
-            'project_id' => '229',
+            'project_id' => '238',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '4',
-            'project_id' => '229',
+            'project_id' => '238',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '279',
-            'project_id' => '229',
+            'project_id' => '238',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '280',
-            'project_id' => '230',
+            'project_id' => '239',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '281',
-            'project_id' => '230',
+            'project_id' => '239',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '282',
-            'project_id' => '230',
+            'project_id' => '239',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '283',
-            'project_id' => '231',
+            'project_id' => '240',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '280',
-            'project_id' => '231',
+            'project_id' => '240',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '284',
-            'project_id' => '231',
+            'project_id' => '240',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '285',
-            'project_id' => '231',
+            'project_id' => '240',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '286',
-            'project_id' => '231',
+            'project_id' => '240',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '150',
-            'project_id' => '231',
+            'project_id' => '240',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '287',
-            'project_id' => '231',
+            'project_id' => '240',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '288',
-            'project_id' => '232',
+            'project_id' => '241',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '289',
-            'project_id' => '232',
+            'project_id' => '241',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '290',
-            'project_id' => '232',
+            'project_id' => '241',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '288',
+            'project_id' => '242',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '291',
-            'project_id' => '233',
+            'project_id' => '242',
+        ]);
+        DB::table('project_skill')->insert([
+            'skill_id' => '290',
+            'project_id' => '242',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '93',
-            'project_id' => '234',
+            'project_id' => '243',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '292',
-            'project_id' => '234',
+            'project_id' => '243',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '283',
-            'project_id' => '235',
+            'project_id' => '244',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '293',
-            'project_id' => '235',
+            'project_id' => '244',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '285',
-            'project_id' => '235',
+            'project_id' => '244',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '286',
-            'project_id' => '235',
+            'project_id' => '244',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '150',
-            'project_id' => '235',
+            'project_id' => '244',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '294',
-            'project_id' => '235',
+            'project_id' => '244',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '295',
-            'project_id' => '235',
+            'project_id' => '244',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '221',
-            'project_id' => '236',
+            'project_id' => '245',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '296',
-            'project_id' => '236',
+            'project_id' => '245',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '121',
-            'project_id' => '236',
+            'project_id' => '245',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '297',
-            'project_id' => '236',
+            'project_id' => '245',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '298',
-            'project_id' => '236',
+            'project_id' => '245',
         ]);
         DB::table('project_skill')->insert([
             'skill_id' => '221',
-            'project_id' => '237',
+            'project_id' => '246',
         ]);
+
 
 
 
@@ -8564,18 +8752,6 @@ www.polyplastic.ru
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '31',
-            'project_id' => '23',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '6',
-            'project_id' => '23',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '7',
-            'project_id' => '23',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '31',
             'project_id' => '24',
         ]);
         DB::table('project_speciality')->insert([
@@ -8609,13 +8785,17 @@ www.polyplastic.ru
         DB::table('project_speciality')->insert([
             'speciality_id' => '7',
             'project_id' => '26',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '31',
+            'project_id' => '27',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '6',
             'project_id' => '27',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '92',
+            'speciality_id' => '7',
             'project_id' => '27',
         ]);
         DB::table('project_speciality')->insert([
@@ -8624,14 +8804,6 @@ www.polyplastic.ru
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '92',
-            'project_id' => '28',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '35',
-            'project_id' => '28',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
             'project_id' => '28',
         ]);
         DB::table('project_speciality')->insert([
@@ -8649,21 +8821,33 @@ www.polyplastic.ru
         DB::table('project_speciality')->insert([
             'speciality_id' => '38',
             'project_id' => '29',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '6',
+            'project_id' => '30',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '92',
+            'project_id' => '30',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '35',
+            'project_id' => '30',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '30',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '3',
-            'project_id' => '29',
+            'project_id' => '30',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '48',
-            'project_id' => '29',
+            'project_id' => '30',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '1',
-            'project_id' => '29',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '92',
             'project_id' => '30',
         ]);
         DB::table('project_speciality')->insert([
@@ -8675,11 +8859,7 @@ www.polyplastic.ru
             'project_id' => '32',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '94',
-            'project_id' => '33',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '53',
+            'speciality_id' => '92',
             'project_id' => '33',
         ]);
         DB::table('project_speciality')->insert([
@@ -8689,41 +8869,33 @@ www.polyplastic.ru
         DB::table('project_speciality')->insert([
             'speciality_id' => '53',
             'project_id' => '34',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '35',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '35',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '55',
-            'project_id' => '34',
+            'project_id' => '35',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '3',
-            'project_id' => '34',
+            'project_id' => '35',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '1',
-            'project_id' => '34',
+            'project_id' => '35',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '35',
-            'project_id' => '34',
+            'project_id' => '35',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '38',
-            'project_id' => '34',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '94',
-            'project_id' => '35',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '53',
-            'project_id' => '35',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '35',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '3',
             'project_id' => '35',
         ]);
         DB::table('project_speciality')->insert([
@@ -8741,14 +8913,22 @@ www.polyplastic.ru
         DB::table('project_speciality')->insert([
             'speciality_id' => '3',
             'project_id' => '36',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '37',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '53',
             'project_id' => '37',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '94',
-            'project_id' => '38',
+            'speciality_id' => '55',
+            'project_id' => '37',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '37',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '53',
@@ -8763,23 +8943,11 @@ www.polyplastic.ru
             'project_id' => '39',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
+            'speciality_id' => '94',
             'project_id' => '40',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '3',
-            'project_id' => '40',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '35',
-            'project_id' => '40',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
-            'project_id' => '40',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '40',
+            'speciality_id' => '53',
             'project_id' => '40',
         ]);
         DB::table('project_speciality')->insert([
@@ -8791,59 +8959,71 @@ www.polyplastic.ru
             'project_id' => '41',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '1',
-            'project_id' => '42',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '42',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '42',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '53',
-            'project_id' => '42',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '43',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '3',
-            'project_id' => '43',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '43',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '94',
-            'project_id' => '43',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '1',
-            'project_id' => '44',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '44',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
-            'project_id' => '44',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '53',
-            'project_id' => '44',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
-            'project_id' => '45',
+            'speciality_id' => '35',
+            'project_id' => '41',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '39',
+            'project_id' => '41',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '40',
+            'project_id' => '41',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '42',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '42',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '1',
+            'project_id' => '43',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '43',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '43',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
+            'project_id' => '43',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '44',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '44',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '44',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '44',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '1',
+            'project_id' => '45',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '45',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '45',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '53',
             'project_id' => '45',
         ]);
         DB::table('project_speciality')->insert([
@@ -8851,11 +9031,7 @@ www.polyplastic.ru
             'project_id' => '46',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '3',
-            'project_id' => '46',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '94',
+            'speciality_id' => '39',
             'project_id' => '46',
         ]);
         DB::table('project_speciality')->insert([
@@ -8871,27 +9047,27 @@ www.polyplastic.ru
             'project_id' => '47',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '38',
+            'speciality_id' => '55',
             'project_id' => '48',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '3',
+            'project_id' => '48',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '48',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '38',
+            'project_id' => '49',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '35',
-            'project_id' => '48',
+            'project_id' => '49',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '3',
-            'project_id' => '48',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '39',
-            'project_id' => '49',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '40',
-            'project_id' => '49',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '55',
             'project_id' => '49',
         ]);
         DB::table('project_speciality')->insert([
@@ -8929,126 +9105,78 @@ www.polyplastic.ru
         DB::table('project_speciality')->insert([
             'speciality_id' => '55',
             'project_id' => '52',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '39',
+            'project_id' => '53',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '40',
+            'project_id' => '53',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '55',
             'project_id' => '53',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '55',
+            'project_id' => '54',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '1',
-            'project_id' => '53',
+            'project_id' => '54',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '2',
-            'project_id' => '53',
+            'project_id' => '54',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '3',
-            'project_id' => '53',
+            'project_id' => '54',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '48',
-            'project_id' => '53',
+            'project_id' => '54',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '35',
-            'project_id' => '53',
+            'project_id' => '54',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '38',
-            'project_id' => '53',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '94',
-            'project_id' => '53',
+            'project_id' => '54',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '94',
             'project_id' => '54',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '94',
+            'project_id' => '55',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '53',
-            'project_id' => '54',
+            'project_id' => '55',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '92',
-            'project_id' => '54',
+            'project_id' => '55',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '94',
-            'project_id' => '55',
+            'project_id' => '56',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '53',
-            'project_id' => '55',
+            'project_id' => '56',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '55',
-            'project_id' => '55',
+            'project_id' => '56',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '6',
-            'project_id' => '55',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '44',
             'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '62',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '36',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '63',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '64',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '69',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '21',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '22',
-            'project_id' => '56',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '44',
-            'project_id' => '57',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '44',
-            'project_id' => '58',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '62',
-            'project_id' => '58',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '44',
@@ -9103,23 +9231,71 @@ www.polyplastic.ru
             'project_id' => '60',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '62',
-            'project_id' => '60',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
-            'project_id' => '60',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '21',
+            'speciality_id' => '44',
             'project_id' => '61',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '62',
+            'project_id' => '61',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '44',
+            'project_id' => '62',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '62',
+            'project_id' => '62',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
+            'project_id' => '62',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '36',
+            'project_id' => '62',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '63',
+            'project_id' => '62',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '64',
+            'project_id' => '62',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '69',
+            'project_id' => '62',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '70',
+            'project_id' => '62',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
+            'project_id' => '62',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '62',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '21',
             'project_id' => '62',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '21',
+            'speciality_id' => '22',
+            'project_id' => '62',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '44',
+            'project_id' => '63',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '62',
+            'project_id' => '63',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '70',
             'project_id' => '63',
         ]);
         DB::table('project_speciality')->insert([
@@ -9131,31 +9307,23 @@ www.polyplastic.ru
             'project_id' => '65',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
+            'speciality_id' => '21',
             'project_id' => '66',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '66',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '21',
             'project_id' => '67',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
+            'speciality_id' => '21',
             'project_id' => '68',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '20',
-            'project_id' => '69',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '58',
             'project_id' => '69',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '85',
+            'speciality_id' => '20',
             'project_id' => '69',
         ]);
         DB::table('project_speciality')->insert([
@@ -9167,15 +9335,15 @@ www.polyplastic.ru
             'project_id' => '71',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '58',
-            'project_id' => '71',
-        ]);
-        DB::table('project_speciality')->insert([
             'speciality_id' => '20',
             'project_id' => '72',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '58',
+            'project_id' => '72',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '85',
             'project_id' => '72',
         ]);
         DB::table('project_speciality')->insert([
@@ -9191,14 +9359,6 @@ www.polyplastic.ru
             'project_id' => '74',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '85',
-            'project_id' => '74',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '96',
-            'project_id' => '74',
-        ]);
-        DB::table('project_speciality')->insert([
             'speciality_id' => '20',
             'project_id' => '75',
         ]);
@@ -9207,15 +9367,31 @@ www.polyplastic.ru
             'project_id' => '75',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '64',
+            'speciality_id' => '20',
             'project_id' => '76',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '64',
+            'speciality_id' => '20',
             'project_id' => '77',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '64',
+            'speciality_id' => '58',
+            'project_id' => '77',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '85',
+            'project_id' => '77',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '96',
+            'project_id' => '77',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '20',
+            'project_id' => '78',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '58',
             'project_id' => '78',
         ]);
         DB::table('project_speciality')->insert([
@@ -9223,7 +9399,7 @@ www.polyplastic.ru
             'project_id' => '79',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
+            'speciality_id' => '64',
             'project_id' => '80',
         ]);
         DB::table('project_speciality')->insert([
@@ -9231,127 +9407,87 @@ www.polyplastic.ru
             'project_id' => '81',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
+            'speciality_id' => '64',
             'project_id' => '82',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '64',
+            'speciality_id' => '32',
             'project_id' => '83',
         ]);
         DB::table('project_speciality')->insert([
+            'speciality_id' => '64',
+            'project_id' => '84',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '32',
+            'project_id' => '85',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '64',
+            'project_id' => '86',
+        ]);
+        DB::table('project_speciality')->insert([
             'speciality_id' => '69',
-            'project_id' => '84',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '42',
-            'project_id' => '84',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
-            'project_id' => '85',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '64',
-            'project_id' => '85',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '96',
-            'project_id' => '85',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
-            'project_id' => '86',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '64',
-            'project_id' => '86',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '96',
-            'project_id' => '86',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '18',
             'project_id' => '87',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
+            'speciality_id' => '42',
+            'project_id' => '87',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
             'project_id' => '88',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '32',
+            'speciality_id' => '64',
+            'project_id' => '88',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '96',
+            'project_id' => '88',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
             'project_id' => '89',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '90',
+            'speciality_id' => '64',
+            'project_id' => '89',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '96',
+            'project_id' => '89',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '18',
             'project_id' => '90',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '90',
+            'speciality_id' => '32',
             'project_id' => '91',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '91',
-            'project_id' => '91',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '90',
-            'project_id' => '92',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '91',
-            'project_id' => '92',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
-            'project_id' => '92',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '81',
-            'project_id' => '92',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '82',
-            'project_id' => '92',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
+            'speciality_id' => '32',
             'project_id' => '92',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '90',
-            'project_id' => '93',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '91',
-            'project_id' => '93',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
-            'project_id' => '93',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '93',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
             'project_id' => '94',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '86',
-            'project_id' => '94',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '94',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '87',
+            'speciality_id' => '90',
             'project_id' => '95',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '86',
+            'speciality_id' => '91',
+            'project_id' => '95',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '90',
+            'project_id' => '96',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '91',
             'project_id' => '96',
         ]);
         DB::table('project_speciality')->insert([
@@ -9359,15 +9495,23 @@ www.polyplastic.ru
             'project_id' => '96',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
+            'speciality_id' => '81',
             'project_id' => '96',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '93',
+            'speciality_id' => '82',
             'project_id' => '96',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '86',
+            'speciality_id' => '79',
+            'project_id' => '96',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '90',
+            'project_id' => '97',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '91',
             'project_id' => '97',
         ]);
         DB::table('project_speciality')->insert([
@@ -9375,135 +9519,107 @@ www.polyplastic.ru
             'project_id' => '97',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
+            'speciality_id' => '84',
             'project_id' => '97',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '93',
-            'project_id' => '97',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '86',
-            'project_id' => '98',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '87',
             'project_id' => '98',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '98',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '93',
-            'project_id' => '98',
-        ]);
-        DB::table('project_speciality')->insert([
             'speciality_id' => '86',
+            'project_id' => '98',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '98',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '87',
             'project_id' => '99',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
+            'speciality_id' => '86',
             'project_id' => '100',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '97',
+            'speciality_id' => '87',
             'project_id' => '100',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
+            'speciality_id' => '80',
+            'project_id' => '100',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '93',
+            'project_id' => '100',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '86',
             'project_id' => '101',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '97',
+            'speciality_id' => '87',
             'project_id' => '101',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
+            'speciality_id' => '80',
+            'project_id' => '101',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '93',
+            'project_id' => '101',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '86',
             'project_id' => '102',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '97',
+            'speciality_id' => '87',
             'project_id' => '102',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
+            'speciality_id' => '80',
+            'project_id' => '102',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '93',
+            'project_id' => '102',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '86',
             'project_id' => '103',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '84',
+            'project_id' => '104',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '97',
-            'project_id' => '103',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '81',
             'project_id' => '104',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '82',
-            'project_id' => '104',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '104',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '104',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
+            'speciality_id' => '84',
             'project_id' => '105',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '93',
+            'speciality_id' => '97',
             'project_id' => '105',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '81',
+            'speciality_id' => '84',
             'project_id' => '106',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '82',
+            'speciality_id' => '97',
             'project_id' => '106',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '106',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '106',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '93',
-            'project_id' => '106',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '81',
+            'speciality_id' => '84',
             'project_id' => '107',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '82',
-            'project_id' => '107',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '107',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '80',
-            'project_id' => '107',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '93',
-            'project_id' => '107',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '12',
-            'project_id' => '107',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '42',
+            'speciality_id' => '97',
             'project_id' => '107',
         ]);
         DB::table('project_speciality')->insert([
@@ -9512,6 +9628,10 @@ www.polyplastic.ru
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '82',
+            'project_id' => '108',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '80',
             'project_id' => '108',
         ]);
         DB::table('project_speciality')->insert([
@@ -9520,55 +9640,91 @@ www.polyplastic.ru
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '80',
-            'project_id' => '108',
+            'project_id' => '109',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '93',
-            'project_id' => '108',
+            'project_id' => '109',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '81',
-            'project_id' => '109',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '82',
-            'project_id' => '109',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '79',
-            'project_id' => '109',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '72',
             'project_id' => '110',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '13',
+            'speciality_id' => '82',
+            'project_id' => '110',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '79',
+            'project_id' => '110',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '80',
+            'project_id' => '110',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '93',
+            'project_id' => '110',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '81',
             'project_id' => '111',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '72',
+            'speciality_id' => '82',
             'project_id' => '111',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '13',
+            'speciality_id' => '79',
+            'project_id' => '111',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '80',
+            'project_id' => '111',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '93',
+            'project_id' => '111',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '12',
+            'project_id' => '111',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '42',
+            'project_id' => '111',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '81',
             'project_id' => '112',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '72',
+            'speciality_id' => '82',
             'project_id' => '112',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '13',
+            'speciality_id' => '79',
+            'project_id' => '112',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '80',
+            'project_id' => '112',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '93',
+            'project_id' => '112',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '81',
             'project_id' => '113',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '72',
+            'speciality_id' => '82',
             'project_id' => '113',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '13',
-            'project_id' => '114',
+            'speciality_id' => '79',
+            'project_id' => '113',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '72',
@@ -9619,6 +9775,10 @@ www.polyplastic.ru
             'project_id' => '120',
         ]);
         DB::table('project_speciality')->insert([
+            'speciality_id' => '72',
+            'project_id' => '120',
+        ]);
+        DB::table('project_speciality')->insert([
             'speciality_id' => '13',
             'project_id' => '121',
         ]);
@@ -9627,127 +9787,135 @@ www.polyplastic.ru
             'project_id' => '121',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '89',
+            'speciality_id' => '13',
             'project_id' => '122',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '42',
+            'speciality_id' => '72',
             'project_id' => '122',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '42',
+            'speciality_id' => '13',
             'project_id' => '123',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '89',
-            'project_id' => '124',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '42',
-            'project_id' => '124',
+            'speciality_id' => '72',
+            'project_id' => '123',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '13',
             'project_id' => '124',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '89',
-            'project_id' => '125',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '42',
-            'project_id' => '125',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '12',
-            'project_id' => '126',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '42',
-            'project_id' => '126',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '91',
-            'project_id' => '126',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '126',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '90',
-            'project_id' => '126',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '12',
-            'project_id' => '127',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '12',
-            'project_id' => '128',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '42',
-            'project_id' => '128',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '91',
-            'project_id' => '128',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '83',
-            'project_id' => '128',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '90',
-            'project_id' => '128',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '12',
-            'project_id' => '129',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '86',
-            'project_id' => '129',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '12',
-            'project_id' => '130',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '84',
-            'project_id' => '130',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '97',
-            'project_id' => '130',
-        ]);
-        DB::table('project_speciality')->insert([
             'speciality_id' => '13',
-            'project_id' => '130',
+            'project_id' => '125',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '72',
+            'project_id' => '125',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '89',
+            'project_id' => '126',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '42',
+            'project_id' => '126',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '42',
+            'project_id' => '127',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '89',
+            'project_id' => '128',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '42',
+            'project_id' => '128',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '13',
+            'project_id' => '128',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '89',
+            'project_id' => '129',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '42',
+            'project_id' => '129',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '12',
             'project_id' => '130',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '57',
+            'speciality_id' => '42',
+            'project_id' => '130',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '91',
+            'project_id' => '130',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '130',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '90',
+            'project_id' => '130',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '12',
             'project_id' => '131',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '57',
+            'speciality_id' => '12',
             'project_id' => '132',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '57',
-            'project_id' => '133',
+            'speciality_id' => '42',
+            'project_id' => '132',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '91',
+            'project_id' => '132',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '83',
+            'project_id' => '132',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '90',
+            'project_id' => '132',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '12',
             'project_id' => '133',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '57',
+            'speciality_id' => '86',
+            'project_id' => '133',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '12',
+            'project_id' => '134',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '84',
+            'project_id' => '134',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '97',
+            'project_id' => '134',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '13',
+            'project_id' => '134',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '72',
             'project_id' => '134',
         ]);
         DB::table('project_speciality')->insert([
@@ -9755,135 +9923,99 @@ www.polyplastic.ru
             'project_id' => '135',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '34',
+            'speciality_id' => '57',
             'project_id' => '136',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '34',
+            'speciality_id' => '57',
             'project_id' => '137',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '34',
+            'speciality_id' => '12',
+            'project_id' => '137',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '57',
             'project_id' => '138',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '34',
+            'speciality_id' => '57',
             'project_id' => '139',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '48',
-            'project_id' => '140',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '48',
+            'speciality_id' => '34',
             'project_id' => '141',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '48',
+            'speciality_id' => '34',
             'project_id' => '142',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '48',
+            'speciality_id' => '34',
             'project_id' => '143',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '60',
+            'speciality_id' => '34',
             'project_id' => '144',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '60',
+            'speciality_id' => '48',
             'project_id' => '145',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '59',
+            'speciality_id' => '48',
             'project_id' => '146',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '37',
-            'project_id' => '146',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '59',
-            'project_id' => '147',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '59',
-            'project_id' => '148',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '149',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '150',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '151',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '152',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '153',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '65',
-            'project_id' => '154',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '66',
-            'project_id' => '154',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '65',
-            'project_id' => '155',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '66',
-            'project_id' => '155',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '155',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '65',
-            'project_id' => '156',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '66',
-            'project_id' => '156',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '56',
-            'project_id' => '156',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '65',
-            'project_id' => '157',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '66',
-            'project_id' => '157',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '48',
+            'project_id' => '147',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '48',
+            'project_id' => '148',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '60',
+            'project_id' => '149',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '60',
+            'project_id' => '150',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '59',
+            'project_id' => '151',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '37',
+            'project_id' => '151',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '59',
+            'project_id' => '152',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '59',
+            'project_id' => '153',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '56',
+            'project_id' => '154',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '56',
+            'project_id' => '155',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '56',
+            'project_id' => '156',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '56',
             'project_id' => '157',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '65',
-            'project_id' => '158',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '66',
-            'project_id' => '158',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
+            'speciality_id' => '56',
             'project_id' => '158',
         ]);
         DB::table('project_speciality')->insert([
@@ -9892,10 +10024,6 @@ www.polyplastic.ru
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '66',
-            'project_id' => '159',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '23',
             'project_id' => '159',
         ]);
         DB::table('project_speciality')->insert([
@@ -9905,173 +10033,161 @@ www.polyplastic.ru
         DB::table('project_speciality')->insert([
             'speciality_id' => '66',
             'project_id' => '160',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '56',
+            'project_id' => '160',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '65',
+            'project_id' => '161',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '66',
             'project_id' => '161',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '47',
+            'speciality_id' => '56',
+            'project_id' => '161',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '65',
             'project_id' => '162',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '37',
+            'speciality_id' => '66',
             'project_id' => '162',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '47',
+            'speciality_id' => '48',
+            'project_id' => '162',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '65',
             'project_id' => '163',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '37',
+            'speciality_id' => '66',
             'project_id' => '163',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '47',
+            'speciality_id' => '23',
+            'project_id' => '163',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '65',
             'project_id' => '164',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '37',
+            'speciality_id' => '66',
             'project_id' => '164',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '47',
+            'speciality_id' => '23',
+            'project_id' => '164',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '65',
             'project_id' => '165',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '37',
+            'speciality_id' => '66',
             'project_id' => '165',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
+            'speciality_id' => '66',
             'project_id' => '166',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
+            'speciality_id' => '47',
             'project_id' => '167',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '30',
+            'speciality_id' => '37',
+            'project_id' => '167',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '47',
             'project_id' => '168',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
+            'speciality_id' => '37',
+            'project_id' => '168',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '47',
             'project_id' => '169',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '8',
+            'speciality_id' => '37',
+            'project_id' => '169',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '47',
             'project_id' => '170',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
+            'speciality_id' => '37',
             'project_id' => '170',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '46',
-            'project_id' => '170',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '8',
+            'speciality_id' => '30',
             'project_id' => '171',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
-            'project_id' => '171',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '46',
-            'project_id' => '171',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '50',
-            'project_id' => '171',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '19',
-            'project_id' => '171',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '8',
+            'speciality_id' => '30',
             'project_id' => '172',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '8',
+            'speciality_id' => '30',
             'project_id' => '173',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '9',
-            'project_id' => '174',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '46',
-            'project_id' => '174',
+            'project_id' => '176',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '8',
-            'project_id' => '174',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
-            'project_id' => '175',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '14',
-            'project_id' => '175',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '16',
-            'project_id' => '175',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '17',
-            'project_id' => '175',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '46',
-            'project_id' => '175',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '52',
-            'project_id' => '175',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
-            'project_id' => '176',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '14',
-            'project_id' => '176',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '46',
-            'project_id' => '176',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '52',
-            'project_id' => '176',
+            'project_id' => '177',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '9',
             'project_id' => '177',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
+            'speciality_id' => '46',
+            'project_id' => '177',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '8',
+            'project_id' => '178',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '9',
             'project_id' => '178',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '46',
+            'project_id' => '178',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '50',
+            'project_id' => '178',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '19',
+            'project_id' => '178',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '8',
             'project_id' => '179',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
+            'speciality_id' => '8',
             'project_id' => '180',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '46',
-            'project_id' => '180',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
+            'speciality_id' => '9',
             'project_id' => '181',
         ]);
         DB::table('project_speciality')->insert([
@@ -10079,7 +10195,23 @@ www.polyplastic.ru
             'project_id' => '181',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
+            'speciality_id' => '8',
+            'project_id' => '181',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '9',
+            'project_id' => '182',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '14',
+            'project_id' => '182',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '16',
+            'project_id' => '182',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '17',
             'project_id' => '182',
         ]);
         DB::table('project_speciality')->insert([
@@ -10087,7 +10219,15 @@ www.polyplastic.ru
             'project_id' => '182',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
+            'speciality_id' => '52',
+            'project_id' => '182',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '9',
+            'project_id' => '183',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '14',
             'project_id' => '183',
         ]);
         DB::table('project_speciality')->insert([
@@ -10095,515 +10235,451 @@ www.polyplastic.ru
             'project_id' => '183',
         ]);
         DB::table('project_speciality')->insert([
+            'speciality_id' => '52',
+            'project_id' => '183',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '9',
+            'project_id' => '184',
+        ]);
+        DB::table('project_speciality')->insert([
             'speciality_id' => '95',
-            'project_id' => '184',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '46',
-            'project_id' => '184',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
             'project_id' => '185',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '14',
+            'speciality_id' => '46',
             'project_id' => '186',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '52',
-            'project_id' => '186',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '14',
+            'speciality_id' => '95',
             'project_id' => '187',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '52',
+            'speciality_id' => '46',
             'project_id' => '187',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '14',
+            'speciality_id' => '95',
             'project_id' => '188',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '14',
+            'speciality_id' => '46',
+            'project_id' => '188',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '95',
             'project_id' => '189',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '52',
+            'speciality_id' => '46',
             'project_id' => '189',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '28',
+            'speciality_id' => '95',
             'project_id' => '190',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '28',
+            'speciality_id' => '46',
+            'project_id' => '190',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '95',
             'project_id' => '191',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '41',
-            'project_id' => '192',
-        ]);
-        DB::table('project_speciality')->insert([
             'speciality_id' => '46',
+            'project_id' => '191',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
             'project_id' => '192',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '41',
+            'speciality_id' => '14',
             'project_id' => '193',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '41',
+            'speciality_id' => '52',
+            'project_id' => '193',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '14',
             'project_id' => '194',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '41',
+            'speciality_id' => '52',
+            'project_id' => '194',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '14',
             'project_id' => '195',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '46',
-            'project_id' => '195',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
+            'speciality_id' => '14',
             'project_id' => '196',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
-            'project_id' => '197',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '197',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '41',
-            'project_id' => '197',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
-            'project_id' => '198',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '198',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '41',
-            'project_id' => '198',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '70',
-            'project_id' => '199',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '199',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '41',
-            'project_id' => '199',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '200',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '16',
-            'project_id' => '201',
-        ]);
-        DB::table('project_speciality')->insert([
             'speciality_id' => '52',
-            'project_id' => '201',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '16',
-            'project_id' => '202',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '202',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
-            'project_id' => '202',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '50',
-            'project_id' => '202',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '19',
-            'project_id' => '202',
+            'project_id' => '196',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '28',
+            'project_id' => '197',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '28',
+            'project_id' => '198',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '41',
+            'project_id' => '199',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '46',
+            'project_id' => '199',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '41',
+            'project_id' => '200',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '41',
+            'project_id' => '201',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '41',
             'project_id' => '202',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '16',
+            'speciality_id' => '46',
+            'project_id' => '202',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '70',
             'project_id' => '203',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '52',
-            'project_id' => '203',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '14',
-            'project_id' => '203',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '16',
+            'speciality_id' => '70',
             'project_id' => '204',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
+            'speciality_id' => '71',
             'project_id' => '204',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '50',
+            'speciality_id' => '41',
             'project_id' => '204',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
+            'speciality_id' => '70',
             'project_id' => '205',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '50',
+            'speciality_id' => '71',
             'project_id' => '205',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
+            'speciality_id' => '41',
             'project_id' => '205',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '205',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '50',
+            'speciality_id' => '70',
             'project_id' => '206',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '50',
+            'speciality_id' => '71',
+            'project_id' => '206',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '41',
+            'project_id' => '206',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '71',
             'project_id' => '207',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
+            'speciality_id' => '16',
             'project_id' => '208',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '50',
-            'project_id' => '208',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
-            'project_id' => '208',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '208',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '88',
-            'project_id' => '209',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '50',
-            'project_id' => '209',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
-            'project_id' => '209',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '209',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '19',
-            'project_id' => '210',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '210',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '11',
-            'project_id' => '210',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '46',
-            'project_id' => '210',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '19',
-            'project_id' => '211',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '19',
-            'project_id' => '212',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '8',
-            'project_id' => '212',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '19',
-            'project_id' => '213',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
-            'project_id' => '213',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '19',
-            'project_id' => '214',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
-            'project_id' => '214',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '8',
-            'project_id' => '214',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '214',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '19',
-            'project_id' => '215',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '19',
-            'project_id' => '216',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
-            'project_id' => '216',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '8',
-            'project_id' => '216',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '216',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '216',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '19',
-            'project_id' => '217',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '71',
-            'project_id' => '217',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '217',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '218',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '219',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '8',
-            'project_id' => '219',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '19',
-            'project_id' => '219',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
-            'project_id' => '219',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
-            'project_id' => '219',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '10',
-            'project_id' => '220',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '9',
-            'project_id' => '220',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '8',
-            'project_id' => '220',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '95',
-            'project_id' => '221',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '46',
-            'project_id' => '221',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '5',
-            'project_id' => '221',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '14',
-            'project_id' => '221',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '52',
+            'project_id' => '208',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '16',
+            'project_id' => '209',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '209',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '9',
+            'project_id' => '209',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '50',
+            'project_id' => '209',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '19',
+            'project_id' => '209',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '28',
+            'project_id' => '209',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '16',
+            'project_id' => '210',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '52',
+            'project_id' => '210',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '14',
+            'project_id' => '210',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '16',
+            'project_id' => '211',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '9',
+            'project_id' => '211',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '50',
+            'project_id' => '211',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '88',
+            'project_id' => '212',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '50',
+            'project_id' => '212',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '9',
+            'project_id' => '212',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '10',
+            'project_id' => '212',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '50',
+            'project_id' => '213',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '50',
+            'project_id' => '214',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '88',
+            'project_id' => '215',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '50',
+            'project_id' => '215',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '9',
+            'project_id' => '215',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '10',
+            'project_id' => '215',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '88',
+            'project_id' => '216',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '50',
+            'project_id' => '216',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '9',
+            'project_id' => '216',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '10',
+            'project_id' => '216',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '19',
+            'project_id' => '217',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '10',
+            'project_id' => '217',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '11',
+            'project_id' => '217',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '46',
+            'project_id' => '217',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '19',
+            'project_id' => '218',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '19',
+            'project_id' => '219',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '8',
+            'project_id' => '219',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '19',
+            'project_id' => '220',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '9',
+            'project_id' => '220',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '19',
             'project_id' => '221',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
+            'speciality_id' => '9',
+            'project_id' => '221',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '8',
+            'project_id' => '221',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '221',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '19',
             'project_id' => '222',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '49',
-            'project_id' => '222',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '68',
-            'project_id' => '222',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '73',
-            'project_id' => '222',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '74',
-            'project_id' => '222',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '75',
-            'project_id' => '222',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '76',
-            'project_id' => '222',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '77',
-            'project_id' => '222',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
+            'speciality_id' => '19',
             'project_id' => '223',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '4',
+            'speciality_id' => '9',
             'project_id' => '223',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
+            'speciality_id' => '8',
+            'project_id' => '223',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '223',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '71',
+            'project_id' => '223',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '19',
             'project_id' => '224',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '49',
+            'speciality_id' => '71',
             'project_id' => '224',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '68',
+            'speciality_id' => '5',
             'project_id' => '224',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '73',
-            'project_id' => '224',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '74',
-            'project_id' => '224',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '75',
-            'project_id' => '224',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '76',
-            'project_id' => '224',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '77',
-            'project_id' => '224',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '51',
+            'speciality_id' => '10',
             'project_id' => '225',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '73',
+            'speciality_id' => '10',
             'project_id' => '226',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '76',
+            'speciality_id' => '8',
             'project_id' => '226',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '77',
+            'speciality_id' => '19',
             'project_id' => '226',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '73',
+            'speciality_id' => '95',
+            'project_id' => '226',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '9',
+            'project_id' => '226',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '10',
             'project_id' => '227',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '77',
+            'speciality_id' => '9',
             'project_id' => '227',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '8',
+            'project_id' => '227',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '95',
+            'project_id' => '228',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '46',
+            'project_id' => '228',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '5',
+            'project_id' => '228',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '14',
+            'project_id' => '228',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '52',
+            'project_id' => '228',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '51',
+            'project_id' => '231',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '49',
+            'project_id' => '231',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '68',
+            'project_id' => '231',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '73',
+            'project_id' => '231',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '74',
+            'project_id' => '231',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '75',
-            'project_id' => '227',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '73',
-            'project_id' => '228',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '77',
-            'project_id' => '228',
+            'project_id' => '231',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '76',
-            'project_id' => '228',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '73',
-            'project_id' => '229',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '77',
-            'project_id' => '229',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '76',
-            'project_id' => '229',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '73',
-            'project_id' => '230',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '77',
-            'project_id' => '230',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '76',
-            'project_id' => '230',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '73',
             'project_id' => '231',
         ]);
         DB::table('project_speciality')->insert([
@@ -10611,27 +10687,31 @@ www.polyplastic.ru
             'project_id' => '231',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '76',
-            'project_id' => '231',
+            'speciality_id' => '51',
+            'project_id' => '232',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '4',
+            'project_id' => '232',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '51',
+            'project_id' => '233',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '49',
+            'project_id' => '233',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '68',
+            'project_id' => '233',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '73',
-            'project_id' => '232',
+            'project_id' => '233',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '75',
-            'project_id' => '232',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '76',
-            'project_id' => '232',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '77',
-            'project_id' => '232',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '73',
+            'speciality_id' => '74',
             'project_id' => '233',
         ]);
         DB::table('project_speciality')->insert([
@@ -10647,27 +10727,11 @@ www.polyplastic.ru
             'project_id' => '233',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '73',
-            'project_id' => '234',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '75',
-            'project_id' => '234',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '76',
-            'project_id' => '234',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '77',
+            'speciality_id' => '51',
             'project_id' => '234',
         ]);
         DB::table('project_speciality')->insert([
             'speciality_id' => '73',
-            'project_id' => '235',
-        ]);
-        DB::table('project_speciality')->insert([
-            'speciality_id' => '75',
             'project_id' => '235',
         ]);
         DB::table('project_speciality')->insert([
@@ -10679,7 +10743,11 @@ www.polyplastic.ru
             'project_id' => '235',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '76',
+            'speciality_id' => '73',
+            'project_id' => '236',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '77',
             'project_id' => '236',
         ]);
         DB::table('project_speciality')->insert([
@@ -10687,13 +10755,134 @@ www.polyplastic.ru
             'project_id' => '236',
         ]);
         DB::table('project_speciality')->insert([
+            'speciality_id' => '73',
+            'project_id' => '237',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '77',
+            'project_id' => '237',
+        ]);
+        DB::table('project_speciality')->insert([
             'speciality_id' => '76',
             'project_id' => '237',
         ]);
         DB::table('project_speciality')->insert([
-            'speciality_id' => '75',
-            'project_id' => '237',
+            'speciality_id' => '73',
+            'project_id' => '238',
         ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '77',
+            'project_id' => '238',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '76',
+            'project_id' => '238',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '73',
+            'project_id' => '239',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '77',
+            'project_id' => '239',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '76',
+            'project_id' => '239',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '73',
+            'project_id' => '240',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '77',
+            'project_id' => '240',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '76',
+            'project_id' => '240',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '73',
+            'project_id' => '241',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '75',
+            'project_id' => '241',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '76',
+            'project_id' => '241',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '77',
+            'project_id' => '241',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '73',
+            'project_id' => '242',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '75',
+            'project_id' => '242',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '76',
+            'project_id' => '242',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '77',
+            'project_id' => '242',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '73',
+            'project_id' => '243',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '75',
+            'project_id' => '243',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '76',
+            'project_id' => '243',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '77',
+            'project_id' => '243',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '73',
+            'project_id' => '244',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '75',
+            'project_id' => '244',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '76',
+            'project_id' => '244',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '77',
+            'project_id' => '244',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '76',
+            'project_id' => '245',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '75',
+            'project_id' => '245',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '76',
+            'project_id' => '246',
+        ]);
+        DB::table('project_speciality')->insert([
+            'speciality_id' => '75',
+            'project_id' => '246',
+        ]);
+
 
 
 
