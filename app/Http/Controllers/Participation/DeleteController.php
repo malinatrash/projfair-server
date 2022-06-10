@@ -23,6 +23,6 @@ class DeleteController extends Controller
         }
 
         $participation->delete();
-        return response("Заявка успешно удалена", 200);
+        return response([]);
     }
 }
