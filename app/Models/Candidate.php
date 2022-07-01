@@ -10,7 +10,7 @@ class Candidate extends Model
     use HasFactory;
 
     protected $guarded = false;
-
+	protected $hidden = ['api_token', 'numz', 'email', 'phone'];
     public function skills()
     {
         return $this->belongsToMany(Skill::class);

@@ -26,17 +26,19 @@ class SpecialityController extends AdminController
     protected function grid()
     {
         $grid = new Grid(new Speciality());
-
-        $grid->column('id', __('Id'));
+        
+        $grid->id('ID')->sortable();
+        //$grid->column('id', __('Id'));
         $grid->column('name', __('Название'));
         $grid->column('institute.name', __('Институт'));
         $grid->filter(function ($filter) {
 
             // Remove the default id filter
-            $filter->disableIdFilter();
+           // $filter->disableIdFilter();
 
             // Add a column filter
             $filter->like('name', 'Название');
+            $filter->like('institute.name', 'Институт');
         });
         return $grid;
     }

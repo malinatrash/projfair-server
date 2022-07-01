@@ -27,17 +27,18 @@ class SkillController extends AdminController
     {
         $grid = new Grid(new Skill());
 
-        $grid->column('id', __('Id'));
-        $grid->column('name', __('Название'));
-        $grid->column('skillCategory.name', __('Категория'));
+        $grid->id('ID')->sortable();
+        $grid->column('name', __('Название'))->sortable();
+        $grid->column('skillCategory.name', __('Категория'))->sortable();
 
         $grid->filter(function ($filter) {
 
             // Remove the default id filter
-            $filter->disableIdFilter();
+            //$filter->disableIdFilter();
 
             // Add a column filter
             $filter->like('name', 'Название');
+            $filter->like('skillCategory.name', 'Категория');
         });
         return $grid;
     }

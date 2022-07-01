@@ -25,4 +25,8 @@ class Participation extends Model
     {
         return $this->belongsTo(StateParticipation::class);
     }
+    public function state()
+    {
+        return $this->belongsTo(StateParticipation::class);
+    }
 }
