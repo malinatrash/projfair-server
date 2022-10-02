@@ -9,6 +9,10 @@ Route::group(['middleware' => 'admin', 'prefix' => 'admin'], function () {
     Route::get('/skill', App\Http\Controllers\Admin\Skill\IndexController::class);
 });
 
+Route::group(['middleware' => 'admin', 'prefix' => 'admin'], function () {
+    Route::get('/Institute', App\Http\Controllers\Admin\Institute\IndexController::class);
+});
+
 Route::group(['namespace' => 'Supervisor', 'prefix' => 'supervisors'], function () {
     //Route::post('/', 'StoreController');
     Route::get('/', 'IndexController');
