@@ -6,8 +6,8 @@ use Illuminate\Support\Facades\Route;
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::group(['namespace' => 'Skill', 'prefix' => 'skill'], function () {
         Route::get('/', 'IndexController');
-    }
-}) -> middleware(AdminApiAuth::class);
+    });
+})->middleware(AdminApiAuth::class);
 
 Route::group(['namespace' => 'Supervisor', 'prefix' => 'supervisors'], function () {
     //Route::post('/', 'StoreController');
