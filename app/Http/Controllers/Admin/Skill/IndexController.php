@@ -1,14 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Campus;
+namespace App\Http\Controllers\Admin\Skill;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Models\Skill;
 
 class IndexController extends Controller
 {
-    public function __invoke(Request $request)
+    public function __invoke()
     {
         $skills = Skill::all();
 

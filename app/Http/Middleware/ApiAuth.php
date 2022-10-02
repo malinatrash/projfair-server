@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 
 class ApiAuth
 {
-    const API_KEY_HEADER = 'x-api-key';
     /**
      * Handle an incoming request.
      *
@@ -19,15 +18,12 @@ class ApiAuth
      */
     public function handle(Request $request, Closure $next)
     {
-        $token = $request->header(self::API_KEY_HEADER);
 
+        $token = $request->cookie('token');
         if ($token == null || (Candidate::where('api_token', $token) == null) && Supervisor::where('api_token', $token) == null) {
-            $token = $request->cookie('token');
-            if ($token == null || (Candidate::where('api_token', $token) == null) && Supervisor::where('api_token', $token) == null) {
-
-                abort(403, 'Access denied');
-            }
+            abort(403, 'Access denied');
         }
+
 
         $request->attributes->add(['api_token' => $token]);
 
