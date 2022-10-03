@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +24,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        JsonResource::withoutWrapping(); // resource classes don't wrap data
         // \URL::forceScheme('https'); TODO WHEN UPLOADING ON ISTU SERVER UNCOMMENT THIS LINE
     }
 }
