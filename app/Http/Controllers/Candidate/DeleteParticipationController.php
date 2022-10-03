@@ -16,9 +16,7 @@ class DeleteParticipationController extends Controller
 
         $id_cancelState = StateParticipation::where('state', 'Отозвана')->select('id')->get()[0]['id'];
 
-        $token = $request->get('api_token');
-        $id = Candidate::where('api_token', $token)->select('id')->get()[0]['id'];
-
+        $id = $request->get('candidate')->id;
         if (!Participation::where('id_candidate', $id)->where('id_project', $id_project)->get()->count()) {
             return response()->json(['error' => 'Project not found'], 400);
         }

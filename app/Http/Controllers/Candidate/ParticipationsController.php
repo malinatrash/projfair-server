@@ -11,9 +11,7 @@ class ParticipationsController extends Controller
 {
     public function __invoke(Request $request) //Получить все заявки студента
     {
-        $token = $request->get('api_token');
-        $id = Candidate::where('api_token', $token)->select('id')->get()[0]['id'];
-
+        $id = $request->get('candidate')->id;
         $data = Participation::where('candidate_id', $id)->get();
         return $data;
     }

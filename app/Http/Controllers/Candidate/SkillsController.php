@@ -11,8 +11,7 @@ class SkillsController extends Controller
 {
     public function __invoke(Request $request)
     {
-        $token = $request->get('api_token');
-        $id = Candidate::where('api_token', $token)->select('id')->get()[0]['id'];
+        $id = $request->get('candidate')->id;
 
         $data = CandidatesSkill::join('skills', 'skills.id', '=', 'candidates_skills.id_skill')
             ->where('id_candidate', $id)->select('skills.id', 'skills.skill')->get();

@@ -23,13 +23,7 @@ class CreateParticipationController extends Controller
         }
         $id_project = $project->id;
 
-
-        $token = $request->get('api_token');
-        $candidates = Candidate::where('api_token', $token)->get();
-        if (count($candidates) == 0) {
-            return response("Авторизируйтесь, чтобы подать заявку", 403);
-        }
-        $candidate = $candidates[0];
+        $candidate = $request->get('candidate');
 
         $candidateSpeciality = explode("-", $candidate['training_group'])[0];
         $idsProject = [];

@@ -1,15 +1,16 @@
 <?php
 
-use App\Http\Middleware\AdminApiAuth;
-use App\Http\Middleware\ApiAuth;
+use App\Http\Middleware\AdminCandidateAuth;
+use App\Http\Middleware\CandidateAuth;
+use App\Http\Middleware\CandidateAuthProtected;
 use Illuminate\Support\Facades\Route;
 
 
-Route::group(['middleware' => 'admin', 'prefix' => 'admin'], function () {
+Route::group(['middleware' => 'adminAuthProtected', 'prefix' => 'admin'], function () {
     Route::get('/skill', App\Http\Controllers\Admin\Skill\IndexController::class);
 });
 
-Route::group(['middleware' => 'admin', 'prefix' => 'admin'], function () {
+Route::group(['middleware' => 'adminAuthProtected', 'prefix' => 'admin'], function () {
     Route::get('/Institute', App\Http\Controllers\Admin\Institute\IndexController::class);
 });
 
@@ -25,7 +26,7 @@ Route::group(['namespace' => 'Supervisor', 'prefix' => 'supervisors'], function 
 Route::group(['namespace' => 'Project', 'prefix' => 'projects'], function () {
     // Route::post('/', 'StoreController');
     Route::get('/', 'IndexController');
-    Route::get('/filter', 'FilterController');
+    Route::get('/filter', 'FilterController')->middleware(CandidateAuth::class); // Получение проектов с фильтрацией. Скрывать данные других институтов если пользователь авторизован
     Route::get('/{project}', 'ShowController');
     // Route::patch('/{project}', 'UpdateController');
     // Route::delete('/{project}', 'DeleteController');
@@ -51,33 +52,33 @@ Route::group(['namespace' => 'State', 'prefix' => 'states'], function () {
 
 Route::group(['namespace' => 'Skill', 'prefix' => 'skills'], function () {
     // Route::post('/', 'StoreController');
-    Route::get('/', 'IndexController');
+    Route::get('/', 'IndexController')->middleware(CandidateAuth::class); // Получить данные для фильтрации по навыкам и специальностям. Скрывать данные других институтов если пользователь авторизован
     Route::get('/{skill}', 'ShowController');
     // Route::patch('/{skill}', 'UpdateController');
     // Route::delete('/{skill}', 'DeleteController');
 });
 
-//Route::get('/supervisor/projects/{id}/participation', 'Supervisor\\ParticipationsOnProjectController')->where('id', '[0-9]+')->middleware(ApiAuth::class);
-//Route::get('/supervisor/student/{id}', 'Supervisor\\GetCandidateByIdController')->where('id', '[0-9]+')->middleware(ApiAuth::class);
-//Route::put('/supervisor', 'Supervisor\\UpdateController')->middleware(ApiAuth::class);
-//Route::post('/supervisor/projects', 'Supervisor\\CreateProjectController')->middleware(ApiAuth::class);
-//Route::put('/supervisor/projects/{id}', 'Supervisor\\UpdateProjectController')->where('id', '[0-9]+')->middleware(ApiAuth::class);
-//Route::get('/supervisor/projects/{id}', 'Supervisor\\GetProjectByIdController')->middleware(ApiAuth::class);
-//Route::delete('/participations/{id}', 'Candidate\\DeleteParticipationController')->middleware(ApiAuth::class);
+//Route::get('/supervisor/projects/{id}/participation', 'Supervisor\\ParticipationsOnProjectController')->where('id', '[0-9]+')->middleware(CandidateAuthProtected::class);
+//Route::get('/supervisor/student/{id}', 'Supervisor\\GetCandidateByIdController')->where('id', '[0-9]+')->middleware(CandidateAuthProtected::class);
+//Route::put('/supervisor', 'Supervisor\\UpdateController')->middleware(CandidateAuthProtected::class);
+//Route::post('/supervisor/projects', 'Supervisor\\CreateProjectController')->middleware(CandidateAuthProtected::class);
+//Route::put('/supervisor/projects/{id}', 'Supervisor\\UpdateProjectController')->where('id', '[0-9]+')->middleware(CandidateAuthProtected::class);
+//Route::get('/supervisor/projects/{id}', 'Supervisor\\GetProjectByIdController')->middleware(CandidateAuthProtected::class);
+//Route::delete('/participations/{id}', 'Candidate\\DeleteParticipationController')->middleware(CandidateAuthProtected::class);
 
 Route::group(['namespace' => 'Participation', 'prefix' => 'participations'], function () {
     //Route::post('/', 'StoreController');
     // Route::get('/', 'IndexController');
     //Route::get('/{participation}', 'ShowController');
-    Route::patch('/{participation}', 'UpdateController')->middleware(ApiAuth::class); // Изменение заявки
-    Route::delete('/{participation}', 'DeleteController')->middleware(ApiAuth::class); // Удаление заявки
+    Route::patch('/{participation}', 'UpdateController')->middleware(CandidateAuthProtected::class); // Изменение заявки
+    Route::delete('/{participation}', 'DeleteController')->middleware(CandidateAuthProtected::class); // Удаление заявки
 });
+Route::get('/participations_deadline', 'Participation\\DeadLineController'); // Получение дедлайна подачи заявки
 
-Route::middleware(['apiAuth'])->group(function () {
-    Route::get('/participations', 'Candidate\\ParticipationsController');
+Route::middleware(['candidateAuthProtected'])->group(function () {
+    Route::get('/participations', 'Candidate\\ParticipationsController'); // Получение заявок кандидата
     Route::post('/participations/{project}', 'Candidate\\CreateParticipationController'); // Создание заявки
-    Route::get('/participations_deadline', 'Participation\\DeadLineController'); // Получение дедлайна подачи заявки
-    Route::get('/supervisor/projects', 'Supervisor\\ProjectsController');
+    Route::get('/supervisor/projects', 'Supervisor\\ProjectsController'); // 
     Route::get('/supervisor/projects/names', 'Supervisor\\ProjectNamesController');
     Route::get('/participations/projects', 'Candidate\\ProjectsController');
     Route::get('/candidate/skills', 'Candidate\\SkillsController');

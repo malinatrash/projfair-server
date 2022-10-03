@@ -33,19 +33,10 @@ class FilterController extends Controller
 
     public function __invoke(Request $request)
     {
-        $token = $request->cookie('token');
-        $candidateSpeciality = null;
-        if ($token != null) {
-            $candidates = Candidate::where('api_token', $token)->get();
-
-            if (count($candidates) != 0) {
-                $candidate = $candidates[0];
-                $candidateSpeciality = explode("-", $candidate['training_group'])[0];
-            }
-        }
+        $candidate = $request->get('candidate');
         $data = Project::with('skills', 'specialities', 'type', 'state', 'supervisor')->get();;
-        if ($candidateSpeciality != null) {
-
+        if ($candidate != null) {
+            $candidateSpeciality = explode("-", $candidate['training_group'])[0];
 
             $specilities = Speciality::where('name', $candidateSpeciality)->get();
             if (count($specilities) == 0) {

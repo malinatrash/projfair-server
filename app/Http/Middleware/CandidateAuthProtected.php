@@ -7,7 +7,7 @@ use App\Models\Supervisor;
 use Closure;
 use Illuminate\Http\Request;
 
-class ApiAuth
+class CandidateAuthProtected
 {
     /**
      * Handle an incoming request.
@@ -20,12 +20,17 @@ class ApiAuth
     {
 
         $token = $request->cookie('token');
-        if ($token == null || (Candidate::where('api_token', $token) == null) && Supervisor::where('api_token', $token) == null) {
+        if ($token == null) {
+            abort(403, 'Access denied');
+        }
+        $candidates = Candidate::where('api_token', $token)->get();
+
+        if (count($candidates) == 0) {
             abort(403, 'Access denied');
         }
 
 
-        $request->attributes->add(['api_token' => $token]);
+        $request->attributes->add(['candidate' => $candidates[0]]);
 
         return $next($request);
     }

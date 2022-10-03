@@ -17,18 +17,12 @@ class IndexController extends Controller
         $specialities = Speciality::all();
         $skillCategories = SkillCategory::all();
 
-        $token = $request->cookie('token');
         $candidateSpeciality = null;
-        if ($token != null) {
-            $candidates = Candidate::where('api_token', $token)->get();
 
-            if (count($candidates) != 0) {
-                $candidate = $candidates[0];
-                $candidateSpeciality = explode("-", $candidate['training_group'])[0];
-            }
-        }
+        $candidate = $request->get('candidate');
+        if ($candidate != null) {
+            $candidateSpeciality = explode("-", $candidate['training_group'])[0];
 
-        if ($candidateSpeciality != null) {
             $specilities = Speciality::where('name', $candidateSpeciality)->get();
             if (count($specilities) == 0) {
                 return response('Не найдено', 404);
@@ -41,8 +35,8 @@ class IndexController extends Controller
             foreach ($specs as $key => $value) {
                 array_push($specialities, $value);
             }
-            //dd($specialities->toArray());
         }
+
 
         return [
             'skills' => $skills,

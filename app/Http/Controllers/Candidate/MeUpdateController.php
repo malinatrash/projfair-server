@@ -12,10 +12,7 @@ class MeUpdateController extends Controller
 {
     public function __invoke(MeUpdateRequest $req)
     {
-        $token = $req->get('api_token');
-
-        $id = Candidate::where('api_token', $token)->select('id')->get()[0]['id'];
-
+        $id = $req->get('candidate')->id;
         Candidate::where('id', $id)->update([
             'about' => $req['about'],
             'phone' => $req['phone']

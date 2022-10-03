@@ -13,13 +13,7 @@ class UpdateController extends Controller
     public function __invoke(UpdateRequest $request, Participation $participation)
     {
         $data = $request->validated();
-
-        $token = $request->get('api_token');
-        $candidates = Candidate::where('api_token', $token)->get();
-        if (count($candidates) == 0) {
-            return response("Авторизируйтесь, чтобы подать заявку", 403);
-        }
-        $candidate = $candidates[0];
+        $candidate = $request->get('candidate');
 
         if ($participation->candidate->id != $candidate->id) {
             return response("Вы не можете изменить чужую заявку", 403);
