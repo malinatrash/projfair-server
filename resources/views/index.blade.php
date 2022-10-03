@@ -10,7 +10,7 @@
     <script type="module" crossorigin src="{{ asset('assets/index.js') }}"></script>
     <link rel="modulepreload" href="{{ asset('assets/vendor.js') }}">
     <link rel="stylesheet" href="{{ asset('assets/index3.css') }}">
-	 
+
 </head>
 
 <body class="antialiased">
