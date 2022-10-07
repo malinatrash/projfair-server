@@ -6,11 +6,11 @@ use App\Http\Controllers\Controller;
 use App\Models\Institute;
 use Illuminate\Http\Request;
 
-class DeleteInstitute extends Institute
+class DeleteController extends Controller
 {
-    public function __invoke(admin $admin)
+    public function __invoke(Institute $intitute)
     {
-        $admin -> delete();
+        $intitute -> delete();
         return response([]);
     }
 }
