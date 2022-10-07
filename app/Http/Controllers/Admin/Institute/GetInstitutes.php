@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Institute;
 use Illuminate\Http\Request;
 
-class GetInstitutes extends Admin { //Я не до конца понял что он должен был экстендить так что поставил админа
+class GetInstitutes extends Institute { //Я не до конца понял что он должен был экстендить так что поставил админа
     public function __invoke(Request $request)
     {
         $token = $request->get('api_token');
