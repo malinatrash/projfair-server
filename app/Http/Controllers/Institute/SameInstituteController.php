@@ -11,7 +11,6 @@ class SameInstituteController extends Controller
     public function __invoke($specialityName1, $specialityName2)
     {
         // Проверка находятся ли две специальности в одном институте
-        //dd($specialityName);
         $specilities = Speciality::where('name', $specialityName1)->get();
         if (count($specilities) == 0) {
             return response('Не найдено', 404);
@@ -24,8 +23,6 @@ class SameInstituteController extends Controller
         }
         $specility2 = $specilities[0];
         $institute2 = $specility2->institute;
-        // dd($institute2->id);
-        // dd($institute1->id);
 
         return ['isSame' => $institute1->id == $institute2->id];
     }

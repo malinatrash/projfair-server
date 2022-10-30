@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class ShowController extends Controller
 {
-    public function __invoke(Project $project)
+    public function __invoke(Project $project) // Получение информации о проекте
     {
         $participations = Participation::where('project_id', '=', $project->id)->get();
         $participations->load('candidate');

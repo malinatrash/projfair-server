@@ -188,7 +188,6 @@ class FilterController extends Controller
         foreach ($data as $key => $value) {
             array_push($dataArr, $value);
         }
-        //return response()->json(['data' => $dataArr, 'request' => urldecode($_SERVER['REQUEST_URI'])])->setStatusCode(200);
         return response()->json(['data' => $dataArr, 'projectCount' => $projectCount])->setStatusCode(200);
     }
 }

@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class GetController extends Controller
 {
-    public function __invoke(Request $request)
+    public function __invoke(Request $request) // DEPRECATED получить информацию о преподавателе по токену
     {
         $token = $request->get('api_token');
         $data = Supervisor::where('api_token', $token)->get()[0];

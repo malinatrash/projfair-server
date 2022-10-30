@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class ProjectsController extends Controller
 {
-    public function __invoke(Request $request)
+    public function __invoke(Request $request) // Получение заявок студента
     {
         $id = $request->get('candidate')->id;
 

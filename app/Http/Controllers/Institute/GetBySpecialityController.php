@@ -8,9 +8,8 @@ use Illuminate\Http\Request;
 
 class GetBySpecialityController extends Controller
 {
-    public function __invoke($specialityName)
+    public function __invoke($specialityName) // Получить институты по названию специльности
     {
-        //dd($specialityName);
         $specilities = Speciality::where('name', $specialityName)->get();
         if (count($specilities) == 0) {
             return response('Не найдено', 404);

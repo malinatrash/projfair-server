@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class ProjectNamesController extends Controller
 {
-    public function __invoke(Request $request)
+    public function __invoke(Request $request) // DEPRECATED Получение инормации о проектах руководителя через апи токен
     {
         $token = $request->get('api_token');
         $id = Supervisor::where('api_token', $token)->select('id')->get()[0]['id'];

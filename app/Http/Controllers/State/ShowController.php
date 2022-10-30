@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ShowController extends Controller
 {
-    public function __invoke(State $state)
+    public function __invoke(State $state) // Получение одного состояния проекта
     {
         return $state;
     }

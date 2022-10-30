@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 
 class MeUpdateController extends Controller
 {
-    public function __invoke(MeUpdateRequest $req)
+    public function __invoke(MeUpdateRequest $req) // Обновить номер телефона, о себе, скиллы студента
     {
         $id = $req->get('candidate')->id;
         Candidate::where('id', $id)->update([

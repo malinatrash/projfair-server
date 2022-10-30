@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 
 class MeController extends Controller
 {
-    public function __invoke(Request $request)
+    public function __invoke(Request $request) // Получить информацию об авторизованном студенте
     {
         return new CandidateResource($request->get('candidate'));
     }

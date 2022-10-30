@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 
 class ParticipationsController extends Controller
 {
-    public function __invoke(Request $request)
+    public function __invoke(Request $request) // DEPRECATED получение информации о заявках руководителя 
     {
         $token = $request->get('api_token');
         $id = Supervisor::where('api_token', $token)->select('id')->get()[0]['id'];

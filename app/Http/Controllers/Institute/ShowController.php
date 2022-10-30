@@ -8,9 +8,8 @@ use Illuminate\Http\Request;
 
 class ShowController extends Controller
 {
-    public function __invoke(Institute $institute)
+    public function __invoke(Institute $institute) // Получить информацию об институте
     {
-        //dd($institute);
         return $institute;
     }
 }

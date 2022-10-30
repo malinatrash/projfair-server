@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ShowController extends Controller
 {
-    public function __invoke(Type $type)
+    public function __invoke(Type $type) // Получение одного типа проекта
     {
         return $type;
     }

@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 
 class GetParticipationByIdController extends Controller
 {
-    public function __invoke($id_part, Request $request)
+    public function __invoke($id_part, Request $request) // DEPRECATED Получение информации о заявке по id
     {
         $token = $request->get('api_token');
         $id = Supervisor::where('api_token', $token)->select('id')->get()[0]['id'];
@@ -23,7 +23,7 @@ class GetParticipationByIdController extends Controller
         }
 
         $id_project = Participation::where('id', $id_part)->get()[0]['id_project'];
-        if (!in_array($id_project, $id_projects)) {
+        if (!in_array($id_project, $id_projects)) { // Проверить отношение заявки к преподавателью
             return response()->json(['error' => 'Заявка не относится к проекту преподавателя'], 403);
         }
 

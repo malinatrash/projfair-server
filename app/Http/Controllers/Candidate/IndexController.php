@@ -3,14 +3,15 @@
 namespace App\Http\Controllers\Candidate;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\CandidateResource;
 use App\Models\Candidate;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function __invoke()
+    public function __invoke() // Получить информацию о всех студентах
     {
         $candidates = Candidate::all();
-        return $candidates;
+        return CandidateResource::collection($candidates);
     }
 }
