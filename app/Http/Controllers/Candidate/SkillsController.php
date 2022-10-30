@@ -7,6 +7,9 @@ use App\Models\Candidate;
 use App\Models\CandidatesSkill;
 use Illuminate\Http\Request;
 
+/**
+ * Получение навыков студента
+ */
 class SkillsController extends Controller
 {
     public function __invoke(Request $request) // Получение навыков студента

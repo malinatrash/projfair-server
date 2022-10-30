@@ -9,9 +9,12 @@ use App\Models\SkillCategory;
 use App\Models\Speciality;
 use Illuminate\Http\Request;
 
+/**
+ * Получить данные для фильтрации по навыкам и специальностям. Скрывать данные других институтов если пользователь авторизован
+ */
 class IndexController extends Controller
 {
-    public function __invoke(Request $request) // Получить данные для фильтрации по навыкам и специальностям. Скрывать данные других институтов если пользователь авторизован
+    public function __invoke(Request $request)
     {
         $skills = Skill::all();
         $specialities = Speciality::all();

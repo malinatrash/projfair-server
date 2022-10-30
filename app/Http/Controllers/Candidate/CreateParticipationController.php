@@ -12,6 +12,9 @@ use App\Models\Speciality;
 use App\Models\StateParticipation;
 use Illuminate\Http\Request;
 
+/**
+ * Создание заявки на проект
+ */
 class CreateParticipationController extends Controller
 {
     public function __invoke(Project $project, StoreRequest $request)

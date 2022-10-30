@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Models\Speciality;
 use Illuminate\Http\Request;
 
+/**
+ * Получить институты по названию специльности
+ */
 class GetBySpecialityController extends Controller
 {
     public function __invoke($specialityName) // Получить институты по названию специльности

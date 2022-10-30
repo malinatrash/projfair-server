@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Models\Institute;
 use Illuminate\Http\Request;
 
+/**
+ * Получение всех институтов
+ */
 class IndexController extends Controller
 {
     public function __invoke()

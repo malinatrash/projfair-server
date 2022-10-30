@@ -7,6 +7,9 @@ use App\Models\Candidate;
 use App\Models\Participation;
 use Illuminate\Http\Request;
 
+/**
+ * Получение заявок студента
+ */
 class ProjectsController extends Controller
 {
     public function __invoke(Request $request) // Получение заявок студента

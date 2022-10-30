@@ -10,6 +10,9 @@ use App\Models\Supervisor;
 use App\Http\Resources\CandidateResource;
 use Illuminate\Http\Request;
 
+/**
+ * Получить информацию об авторизованном студенте
+ */
 class MeController extends Controller
 {
     public function __invoke(Request $request) // Получить информацию об авторизованном студенте

@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Models\Supervisor;
 use Illuminate\Http\Request;
 
+/**
+ * Получение всех фио преподавателей
+ */
 class NamesController extends Controller
 {
     public function __invoke()

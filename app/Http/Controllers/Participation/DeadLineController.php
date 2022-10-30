@@ -7,6 +7,9 @@ use App\Models\Participation;
 use App\Models\ParticipationDeadLine;
 use Illuminate\Http\Request;
 
+/**
+ * Получение дедлайна подачи заявки
+ */
 class DeadLineController extends Controller
 {
     public function __invoke()

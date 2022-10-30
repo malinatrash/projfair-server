@@ -13,6 +13,9 @@ use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 
+/**
+ * Получение проектов с фильтрацией. Скрывать данные других институтов если пользователь авторизован
+ */
 class FilterController extends Controller
 {
     private function stringToArray($arr)

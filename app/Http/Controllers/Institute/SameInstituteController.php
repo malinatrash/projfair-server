@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Models\Speciality;
 use Illuminate\Http\Request;
 
+/**
+ * Проверка находятся ли две специальности в одном институте
+ */
 class SameInstituteController extends Controller
 {
     public function __invoke($specialityName1, $specialityName2)

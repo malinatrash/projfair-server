@@ -6,9 +6,12 @@ use App\Http\Controllers\Controller;
 use App\Models\State;
 use Illuminate\Http\Request;
 
+/**
+ * Получение одного состояния проекта
+ */
 class ShowController extends Controller
 {
-    public function __invoke(State $state) // Получение одного состояния проекта
+    public function __invoke(State $state)
     {
         return $state;
     }

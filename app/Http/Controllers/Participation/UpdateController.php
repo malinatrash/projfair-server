@@ -8,6 +8,9 @@ use App\Models\Candidate;
 use App\Models\Participation;
 use Illuminate\Http\Request;
 
+/**
+ * Изменение заявки
+ */
 class UpdateController extends Controller
 {
     public function __invoke(UpdateRequest $request, Participation $participation)

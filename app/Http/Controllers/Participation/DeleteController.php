@@ -7,6 +7,9 @@ use App\Models\Candidate;
 use App\Models\Participation;
 use Illuminate\Http\Request;
 
+/**
+ * Удаление заявки у студента
+ */
 class DeleteController extends Controller
 {
     public function __invoke(Participation $participation, Request $request)

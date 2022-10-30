@@ -7,9 +7,12 @@ use App\Models\Participation;
 use App\Models\Project;
 use Illuminate\Http\Request;
 
+/**
+ * Получение информации о проекте
+ */
 class ShowController extends Controller
 {
-    public function __invoke(Project $project) // Получение информации о проекте
+    public function __invoke(Project $project)
     {
         $participations = Participation::where('project_id', '=', $project->id)->get();
         $participations->load('candidate');

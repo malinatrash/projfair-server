@@ -8,6 +8,9 @@ use App\Models\Candidate;
 use App\Models\CandidatesSkill;
 use Illuminate\Http\Request;
 
+/**
+ * Обновить номер телефона, о себе, скиллы студента
+ */
 class MeUpdateController extends Controller
 {
     public function __invoke(MeUpdateRequest $req) // Обновить номер телефона, о себе, скиллы студента
