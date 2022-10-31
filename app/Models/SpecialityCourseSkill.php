@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class SpecialityCourseSkill extends Model
 {
     use HasFactory;
+    protected $table = "speciality_course_skill";
+    protected $guarded = false;
 }
