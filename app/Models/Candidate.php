@@ -11,16 +11,28 @@ class Candidate extends Model
 
     protected $guarded = false;
     protected $hidden = ['api_token', 'numz', 'email', 'phone'];
+
+    /**
+     * Навыки студента
+     */
     public function skills()
     {
         return $this->belongsToMany(Skill::class);
     }
 
+    /**
+     * Группа студента
+     */
     public function group()
     {
         return $this->belongsTo(Group::class);
     }
 
+    /**
+     * Проект, на котором учавствует студент или null
+     * 
+     * @return Проект или null
+     */
     public function activeProject()
     {
         $activeStateParticipation = StateParticipation::where('state', 'Участвует')->get()[0];
