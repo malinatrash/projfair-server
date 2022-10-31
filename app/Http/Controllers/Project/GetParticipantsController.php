@@ -16,9 +16,7 @@ class GetParticipantsController extends Controller
 {
     public function __invoke(Project $project)
     {
-        $activeState = StateParticipation::where('state', 'Участвует')->get()[0];
-        $activeParticipations = Participation::with('candidate')->where('project_id', '=', $project->id)->where('state_id', '=', $activeState->id)->get();
-        $participants = $activeParticipations->pluck('candidate');
-        return CandidateResource::collection($participants);
+
+        return CandidateResource::collection($project->participants());
     }
 }
