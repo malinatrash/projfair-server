@@ -612,9 +612,10 @@ class DatabaseSeeder extends Seeder
         DB::table('state_participations')->insert([
             'state' => 'Архив',
         ]);
-        // DB::table('state_participations')->insert([
-        //     'state' => 'В архиве',
-        // ]);
+        DB::table('state_participations')->insert([
+            'state' => 'Отклонена',
+        ]);
+
 
 
 

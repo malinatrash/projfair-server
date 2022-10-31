@@ -11,6 +11,9 @@ class StateParticipation extends Model
 
     protected $guarded = false;
 
+    /**
+     * Получить заявки состояния
+     */
     public function participations()
     {
         return $this->hasMany(Participation::class);
