@@ -44,4 +44,16 @@ class Candidate extends Model
             return null;
         }
     }
+
+    /**
+     * Архивные проекты студента или null
+     * 
+     * @return Проект или null
+     */
+    public function arhiveProjects()
+    {
+        $arhiveStateParticipation = StateParticipation::where('state', 'Архив')->get()[0];
+        $projectsIds = Participation::where('candidate_id', $this->id)->where('state_id', $arhiveStateParticipation->id)->pluck('project_id');
+        return Project::whereIn('id', $projectsIds)->get();
+    }
 }
