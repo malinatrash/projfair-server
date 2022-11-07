@@ -12,12 +12,36 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/CandidateResource'
+                $ref: '#/components/schemas/Candidate'
 components:
   schemas:
-    CandidateResource:
+    Candidate:
       properties:
         id:
-          description: 'The product name,'
+          description: 'ID студента'
+          type: integer
+        fio:
+          description: 'ФИО студента'
           type: string
+        about:
+          description: 'Информация о студенте'
+          type: string
+        email:
+          description: Почта
+          type: string
+        numz:
+          description: 'Номер зачетной книжки'
+          type: string
+        phone:
+          description: Телефон
+          type: string
+        course:
+          description: Курс
+          type: integer
+        training_group:
+          description: 'Учебная группа'
+          type: string
+        canSendParticipations:
+          description: 'Может ли отправлять заявки на проекты'
+          type: boolean
       type: object

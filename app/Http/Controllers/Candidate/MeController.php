@@ -23,7 +23,7 @@ class MeController extends Controller
      *     @OA\Response(
      *         response="200",
      *         description="Информация о студенте",
-     *         @OA\JsonContent(ref="#/components/schemas/CandidateResource"),
+     *         @OA\JsonContent(ref="#/components/schemas/Candidate"),
      *     )
      * )
      */

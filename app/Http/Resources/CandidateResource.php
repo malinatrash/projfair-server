@@ -4,18 +4,8 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-/**
- * @OA\Schema()
- */
 class CandidateResource extends JsonResource
 {
-    /**
-     * The product name,
-     * @var string
-     * @OA\Property()
-     */
-    public $id;
-
     /**
      * Transform the resource into an array.
      *
@@ -33,7 +23,74 @@ class CandidateResource extends JsonResource
             'phone' => $this->phone,
             'course' => $this->course,
             'training_group' => $this->training_group,
-            'candSendParticipations' => $this->candSendParticipations,
+            'canSendParticipations' => $this->canSendParticipations,
         ];
     }
+}
+
+
+/**
+ * @OA\Schema()
+ */
+class Candidate extends CandidateResource
+{
+    /**
+     * ID студента
+     * @var int
+     * @OA\Property()
+     */
+    protected $id;
+
+    /**
+     * ФИО студента
+     * @var string
+     * @OA\Property()
+     */
+    public $fio;
+
+    /**
+     * Информация о студенте
+     * @var string
+     * @OA\Property()
+     */
+    public $about;
+
+    /**
+     * Почта
+     * @var string
+     * @OA\Property()
+     */
+    public $email;
+
+    /**
+     * Номер зачетной книжки
+     * @var string
+     * @OA\Property()
+     */
+    public $numz;
+
+    /**
+     * Телефон
+     * @var string
+     * @OA\Property()
+     */
+    public $phone;
+    /**
+     * Курс
+     * @var int
+     * @OA\Property()
+     */
+    public $course;
+    /**
+     * Учебная группа
+     * @var string
+     * @OA\Property()
+     */
+    public $training_group;
+    /**
+     * Может ли отправлять заявки на проекты
+     * @var boolean
+     * @OA\Property()
+     */
+    public $canSendParticipations;
 }
