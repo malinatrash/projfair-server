@@ -1,0 +1,23 @@
+openapi: 3.0.0
+paths:
+  /api/candidate:
+    get:
+      tags:
+        - candidate
+      summary: 'Получить информацию об авторизованном студенте'
+      operationId: 2480a493492a84a70c52416430a1d362
+      responses:
+        '200':
+          description: 'Информация о студенте'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CandidateResource'
+components:
+  schemas:
+    CandidateResource:
+      properties:
+        id:
+          description: 'The product name,'
+          type: string
+      type: object
