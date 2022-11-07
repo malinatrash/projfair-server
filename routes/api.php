@@ -8,12 +8,14 @@ use Illuminate\Support\Facades\Route;
 
 // --------- ADMIN ROUTES ---------
 
-Route::group(['middleware' => 'adminAuthProtected', 'prefix' => 'admin'], function () {
-    Route::get('/skill', App\Http\Controllers\Admin\Skill\IndexController::class); // Получение всех скилов
-});
+Route::middleware(['adminAuthProtected'])->group(function () {
+    Route::group(['prefix' => 'admin'], function () {
+        Route::get('/skill', App\Http\Controllers\Admin\Skill\IndexController::class); // Получение всех скилов
+    });
 
-Route::group(['middleware' => 'adminAuthProtected', 'prefix' => 'admin'], function () {
-    Route::get('/Institute', App\Http\Controllers\Admin\Institute\IndexController::class); // Получение всех институтов
+    Route::group(['prefix' => 'admin'], function () {
+        Route::get('/Institute', App\Http\Controllers\Admin\Institute\IndexController::class); // Получение всех институтов
+    });
 });
 
 
@@ -104,7 +106,7 @@ Route::middleware(['candidateAuthProtected'])->group(function () { // роуты
     // Route::get('/supervisor/participation/{id}', 'Supervisor\\GetParticipationByIdController')->where('id', '[0-9]+'); // DEPRECATED Получение информации о заявке по id
     // Route::get('/supervisor/participation', 'Supervisor\\ParticipationsController');  // DEPRECATED получение информации о заявках руководителя
     // Route::get('/supervisor/projects/names', 'Supervisor\\ProjectNamesController'); // DEPRECATED Получение инормации о проектах руководителя через апи токен
-    // Route::get('/supervisor/projects', 'Supervisor\\ProjectsController'); // DEPRECATED Получение информации о проектах
+    // Route::get('/supervisor/projects', 'Supervisor\\ProjectsController'); // DEPRECATED Получение информации о проектах руководителя через апи токен
     // Route::get('/supervisor', 'Supervisor\\GetController'); // DEPRECATED получить информацию о преподавателе по токену
 });
 

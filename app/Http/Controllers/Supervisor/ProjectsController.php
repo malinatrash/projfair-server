@@ -7,9 +7,10 @@ use App\Models\Project;
 use App\Models\Supervisor;
 use Illuminate\Http\Request;
 
+/** DEPRECATED Получение информации о проектах руководителя через апи токен */
 class ProjectsController extends Controller
 {
-    public function __invoke(Request $request) // DEPRECATED Получение информации о проектах руководителя через апи токен
+    public function __invoke(Request $request)
     {
         $token = $request->get('api_token');
         $id = Supervisor::where('api_token', $token)->select('id')->get()[0]['id'];

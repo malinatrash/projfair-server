@@ -7,10 +7,11 @@ use App\Models\Supervisor;
 use Closure;
 use Illuminate\Http\Request;
 
+/** Добавляет в запрос информацию о студенте, если авторизован */
 class CandidateAuth
 {
     /**
-     * Handle an incoming request.
+     * Проверить авторизирован ли пользователь. Если да, то добавить в запрос данные пользователя
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next

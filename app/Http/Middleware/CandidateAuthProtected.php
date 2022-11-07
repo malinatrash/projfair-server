@@ -7,10 +7,11 @@ use App\Models\Supervisor;
 use Closure;
 use Illuminate\Http\Request;
 
+/** Защищенный роут кандидата (студента) */
 class CandidateAuthProtected
 {
     /**
-     * Handle an incoming request.
+     * Проверить авторизирован ли пользователь. Если нет, то вернуть 403 
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
