@@ -5,11 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Модель студента
+ */
 class Candidate extends Model
 {
     use HasFactory;
 
     protected $guarded = false;
+
+    /** Данные которые не достаются из БД */
     protected $hidden = ['api_token', 'numz', 'email', 'phone'];
 
     /**

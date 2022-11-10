@@ -45,3 +45,207 @@ components:
           description: 'Может ли отправлять заявки на проекты'
           type: boolean
       type: object
+    Group:
+      properties:
+        id:
+          description: 'ID групппы'
+          type: integer
+        specialityCourse_id:
+          description: 'ID специальности с курсом'
+          type: integer
+        name:
+          description: 'ID название'
+          type: string
+      type: object
+    Institute:
+      properties:
+        id:
+          description: 'ID института'
+          type: integer
+        name:
+          description: 'Название института'
+          type: string
+      type: object
+    ParticipationDeadLine:
+      properties:
+        id:
+          description: ID
+          type: integer
+        deadline:
+          description: 'Дата окончания сбора заявок'
+          type: integer
+      type: object
+    Participation:
+      properties:
+        id:
+          description: 'ID заявки'
+          type: integer
+        priority:
+          description: 'Приоритет заявки'
+          type: integer
+        project_id:
+          description: 'ID проекта, на которые подали заявку'
+          type: string
+        state_id:
+          description: 'ID состояния'
+          type: string
+        candidate_id:
+          description: 'ID студента подавшего заявку'
+          type: string
+        created_at:
+          description: 'Дата создания записи в БД'
+          type: string
+        updated_at:
+          description: 'Дата обновления записи в БД'
+          type: string
+      type: object
+    Project:
+      properties:
+        id:
+          description: 'ID Проекта'
+          type: integer
+        title:
+          description: 'Название проекта'
+          type: string
+        places:
+          description: 'Количество мест на проекте'
+          type: integer
+        goal:
+          description: Цель
+          type: string
+        description:
+          description: Описание
+          type: string
+        difficulty:
+          description: Сложность
+          type: integer
+        date_start:
+          description: 'Дата начала (2022-09-01)'
+          type: string
+        date_end:
+          description: 'Дата окончания (2023-05-30)'
+          type: string
+        requirements:
+          description: Требования
+          type: string
+        additional_inf:
+          description: 'Дополнительная информация'
+          type: string
+        product_result:
+          description: 'Продуктовынй результат'
+          type: string
+        study_result:
+          description: 'Учебный результат'
+          type: string
+        supervisors:
+          description: Руководители
+          type: string
+        supervisor_id:
+          description: 'ID руководителя проекта'
+          type: string
+        state_id:
+          description: 'ID состояния проекта'
+          type: string
+        type_id:
+          description: 'ID типа проекта'
+          type: string
+        created_at:
+          description: 'Дата создания записи в БД'
+          type: string
+        updated_at:
+          description: 'Дата обновления записи в БД'
+          type: string
+      type: object
+    SkillCategory:
+      properties:
+        id:
+          description: 'ID Категории скила'
+          type: integer
+        name:
+          description: 'Название категории скила'
+          type: string
+      type: object
+    Skill:
+      properties:
+        id:
+          description: 'ID скила'
+          type: integer
+        name:
+          description: 'Название скила'
+          type: string
+        skillCategory_id:
+          description: 'ID категории скила'
+          type: integer
+      type: object
+    SpecialityCourse:
+      properties:
+        id:
+          description: 'ID специальности с курсом'
+          type: integer
+        speciality_id:
+          description: 'ID специальности'
+          type: integer
+        course:
+          description: Курс
+          type: integer
+      type: object
+    Speciality:
+      properties:
+        id:
+          description: 'ID специальности'
+          type: integer
+        state:
+          description: 'Название состояния'
+          type: string
+      type: object
+    StateParticipationProject:
+      properties:
+        id:
+          description: 'ID Состояния заявки'
+          type: integer
+        state:
+          description: 'Название состояния'
+          type: string
+      type: object
+    StateProject:
+      properties:
+        id:
+          description: 'ID Состояния проекта'
+          type: integer
+        state:
+          description: 'Название состояния'
+          type: string
+      type: object
+    Supervisor:
+      properties:
+        id:
+          description: 'ID Преподавателя'
+          type: integer
+        fio:
+          description: ФИО
+          type: string
+        email:
+          description: Почта
+          type: string
+        about:
+          description: 'Информация о преподавателе'
+          type: string
+        position:
+          description: Должность
+          type: string
+        created_at:
+          description: 'Дата создания записи в БД'
+          type: string
+        updated_at:
+          description: 'Дата обновления записи в БД'
+          type: string
+      type: object
+    ProjectType:
+      properties:
+        id:
+          description: 'ID типа проекта'
+          type: integer
+        type:
+          description: 'Название типа проекта'
+          type: string
+      type: object
