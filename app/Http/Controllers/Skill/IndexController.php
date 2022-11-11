@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Skill;
 
 use App\Http\Controllers\Controller;
-use App\Models\Candidate;
 use App\Models\Skill;
 use App\Models\SkillCategory;
 use App\Models\Speciality;
@@ -14,6 +13,24 @@ use Illuminate\Http\Request;
  */
 class IndexController extends Controller
 {
+    /**
+     * @OA\Get(
+     *     path="/api/skills/",
+     *     summary="Получить данные для фильтрации по навыкам и специальностям. Скрывать данные других институтов если пользователь авторизован",
+     *      tags={"Skill"},
+     *     @OA\Response(
+     *         response="200",
+     *         description="Проекты @TODO RESPONCE",
+     *
+     *         @OA\JsonContent(
+     *              type="array",
+     *                  @OA\Items(
+     *                 ref="#/components/schemas/Skill"
+     *         )
+     * )
+     *     ),
+     * )
+     */
     public function __invoke(Request $request)
     {
         $skills = Skill::all();
@@ -40,11 +57,10 @@ class IndexController extends Controller
             }
         }
 
-
         return [
             'skills' => $skills,
             'specialties' => $specialities,
-            'skillCategories' => $skillCategories
+            'skillCategories' => $skillCategories,
         ];
     }
 }

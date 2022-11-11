@@ -6,10 +6,31 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Project\UpdateRequest;
 use App\Models\Project;
 use App\Models\Supervisor;
-use Illuminate\Http\Request;
 
 class UpdateProjectController extends Controller
 {
+    /**
+     * @OA\Patch(
+     *     path="/api/supervisor/projects/{id}",
+     *     summary="Обновить проект преподавателя",
+     *      tags={"DEPRECATED"},
+     *      @OA\Parameter(
+     *         name="id",
+     *         description="ID проекта @TODO BODY",
+     *          in = "path",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="integer"
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response="200",
+     *         description="Проект изменен",
+     *     ),
+
+     * )
+     * )
+     */
     public function __invoke($id, UpdateRequest $request)
     {
         $token = $request->get('api_token');
@@ -23,12 +44,14 @@ class UpdateProjectController extends Controller
         $updated = [];
         $possibleFiled = [
             'title', 'places', 'difficulty', 'date_start', 'date_end',
-            'goal', 'idea', 'customer', 'type', 'requirements', 'skills'
+            'goal', 'idea', 'customer', 'type', 'requirements', 'skills',
         ];
 
         foreach ($possibleFiled as $v) {
-            if (isset($request[$v]))
+            if (isset($request[$v])) {
                 $updated[$v] = $request[$v];
+            }
+
         }
 
         Project::where('id', $id)->update($updated);

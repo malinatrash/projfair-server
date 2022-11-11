@@ -9,8 +9,22 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Str;
 
+/**
+ * Авторизация через кампус
+ */
 class LoginController extends Controller
 {
+    /**
+     * @OA\Get(
+     *     path="/campus_auth",
+     *     summary="Авторизация через кампус",
+     *     tags={"Auth"},
+     *     @OA\Response(
+     *         response="200",
+     *     )
+     * )
+     * )
+     */
     function __invoke()
     {
         $return = false;

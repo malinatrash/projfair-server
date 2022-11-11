@@ -4,11 +4,31 @@ namespace App\Http\Controllers\Project;
 
 use App\Http\Controllers\Controller;
 use App\Models\Project;
-use Illuminate\Http\Request;
 
+/**
+ * Получить информацию о проектах с пагинацией (UNUSED)
+ */
 class IndexController extends Controller
 {
-    public function __invoke() // Получить информацию о проектах с пагинацией
+    /**
+     * @OA\Get(
+     *     path="/api/projects/",
+     *     summary="Получить информацию о проектах с пагинацией",
+     *      tags={"UNUSED"},
+     *     @OA\Response(
+     *         response="200",
+     *         description="Проекты",
+     *
+     *         @OA\JsonContent(
+     *              type="array",
+     *                  @OA\Items(
+     *                 ref="#/components/schemas/Project"
+     *         )
+     * )
+     *     ),
+     * )
+     */
+    public function __invoke()
     {
         $dataAll = Project::join('states', 'states.id', '=', 'projects.state_id')->where('states.state', '!=', 'Обработка')->get();
         $projectCount = count($dataAll);

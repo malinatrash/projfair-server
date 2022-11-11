@@ -17,6 +17,36 @@ use Illuminate\Http\Request;
  */
 class CreateParticipationController extends Controller
 {
+
+    /**
+     * @OA\Post(
+     *     path="/api/participations/${id}",
+     *     summary="Создание заявки на проект",
+     *      tags={"UNUSED"},
+     *      @OA\Parameter(
+     *         name="id",
+     *         description="ID проекта",
+     *          in = "path",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="integer"
+     *         ) 
+     *     ),
+     *     @OA\Response(
+     *         response="200",
+     *         description="Заявка создана",
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Не найдено",
+     *     ),
+     *     @OA\Response(
+     *         response="403",
+     *         description="Вы уже подали 3 заявки",
+     *     )
+     * )
+     * )
+     */
     public function __invoke(Project $project, StoreRequest $request)
     {
         $project->load('specialities', 'state');
@@ -57,7 +87,7 @@ class CreateParticipationController extends Controller
 
 
         $candidatesParticipations = Participation::where('candidate_id', $id)->get();
-        if (count($candidatesParticipations) > 3) {
+        if (count($candidatesParticipations) > 2) {
             return  response("Вы уже подали 3 заявки", 403);
         }
         if (Participation::where('candidate_id', $id)->where('project_id', $id_project)->get()->count() != 0) {

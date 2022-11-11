@@ -11,6 +11,47 @@ use Illuminate\Http\Request;
  */
 class SameInstituteController extends Controller
 {
+    /**
+     * @OA\Get(
+     *     path="/api/institutes/isInSameInstitute/{specialityName1}/{specialityName2}",
+     *     summary="Проверка находятся ли две специальности в одном институте",
+     *     tags={"Institute"},
+     *           @OA\Parameter(
+     *         name="specialityName1",
+     *         description="Название первой специльности",
+     *          in = "path",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="string"
+     *         ) 
+     *     ),
+     *           @OA\Parameter(
+     *         name="specialityName2",
+     *         description="Название второй специльности",
+     *          in = "path",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="string"
+     *         ) 
+     *     ),
+     *     @OA\Response(
+     *         response="200",
+     *         description="находятся ли две специальности в одном институте",
+     *         @OA\JsonContent(
+     *                    type="object",
+     *                  @OA\Property(
+     *                      property="isSame",
+     *                      type="boolean",
+     *                  )
+     *      ),
+     *      @OA\Response(
+     *         response="404",
+     *         description="Не найдено",
+     *     ),
+     *     )
+     * )
+     * )
+     */
     public function __invoke($specialityName1, $specialityName2)
     {
         // Проверка находятся ли две специальности в одном институте

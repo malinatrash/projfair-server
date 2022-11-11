@@ -12,6 +12,23 @@ use Illuminate\Http\Request;
  */
 class DeadLineController extends Controller
 {
+    /**
+     * @OA\Get(
+     *     path="/api/participations_deadline",
+     *     summary="Получение дедлайна подачи заявки",
+     *     tags={"Participation"},
+     *     @OA\Response(
+     *         response="200",
+     *         description="Информация об институте",
+     *         @OA\JsonContent(ref="#/components/schemas/DeadLine")
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Дедлайн не назначен",
+     *     ),
+     * )
+     * )
+     */
     public function __invoke()
     {
         $deadline = ParticipationDeadLine::find(1);

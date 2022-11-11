@@ -10,6 +10,25 @@ use Illuminate\Http\Request;
 /** DEPRECATED Получение информации о проектах руководителя через апи токен */
 class ProjectsController extends Controller
 {
+
+    /**
+     * @OA\Get(
+     *     path="/supervisor/projects",
+     *     summary="Получение информации о проектах руководителя через апи токен",
+     *      tags={"DEPRECATED"},
+     *     @OA\Response(
+     *         response="200",
+     *         description="Информация о проектах руководителя @TODO REPONSE",
+     *
+     *         @OA\JsonContent(
+     *              type="array",
+     *                  @OA\Items(
+     *                 ref="#/components/schemas/Project"
+     *         )
+     * )
+     *     ),
+     * )
+     */
     public function __invoke(Request $request)
     {
         $token = $request->get('api_token');
@@ -22,15 +41,17 @@ class ProjectsController extends Controller
             return intval($value);
         }, $request->input('type') ?? []);
 
-        if (count($types) != 0)
+        if (count($types) != 0) {
             $data = $data->whereIn('type_id', $types);
+        }
 
         //фильтрация по состоянию
         $states = array_map(function ($value) {
             return intval($value);
         }, $request->input('state') ?? []);
-        if (count($states) != 0)
+        if (count($states) != 0) {
             $data = $data->whereIn('state_id', $states);
+        }
 
         //фильтрация по названию
         $title = $request->input('title') ?? '';
@@ -44,13 +65,11 @@ class ProjectsController extends Controller
             })->values();
         }
 
-
         //фильтрация по датам
         $date = $request->input('sort_date') ?? '';
 
         $date = ltrim($date, '"');
         $date = rtrim($date, '"');
-
 
         if ($date != '') {
 
@@ -61,10 +80,9 @@ class ProjectsController extends Controller
             }
         }
 
-
         $data->makeHidden([
             'tags', 'supervisor_name', 'goal', 'idea', 'requirements', 'expected_result', 'result',
-            'additional_inf', 'result', 'deleted_at', 'updated_at'
+            'additional_inf', 'result', 'deleted_at', 'updated_at',
         ]);
 
         $dataArr = [];

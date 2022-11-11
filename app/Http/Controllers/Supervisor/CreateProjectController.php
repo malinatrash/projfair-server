@@ -7,10 +7,24 @@ use App\Http\Requests\Project\StoreRequest;
 use App\Models\Project;
 use App\Models\ProjectSkill;
 use App\Models\Supervisor;
-use Illuminate\Http\Request;
 
+/**
+ * Создать проект (Преподаватель)
+ */
 class CreateProjectController extends Controller
 {
+    /**
+     * @OA\Post(
+     *     path="/supervisor/projects",
+     *     summary="Создать проект (Преподаватель) @TODO BODY",
+     *      tags={"DEPRECATED"},
+
+     *     @OA\Response(
+     *         response="200",
+     *         description="Проект создан",
+     *     ),
+     * )
+     */
     public function __invoke(StoreRequest $request)
     {
         $token = $request->get('api_token');
@@ -37,7 +51,7 @@ class CreateProjectController extends Controller
                 return response()->json(
                     [
                         'status' => false,
-                        'message' => 'Массив тегов содержит не число'
+                        'message' => 'Массив тегов содержит не число',
                     ],
                     400
                 );
@@ -45,10 +59,9 @@ class CreateProjectController extends Controller
 
             ProjectSkill::create([
                 'project_id' => $project_id,
-                'skill_id' =>  $skill
+                'skill_id' => $skill,
             ]);
         }
-
 
         return response()->json(['success' => 'OK'], 200);
     }

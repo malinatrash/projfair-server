@@ -1,9 +1,149 @@
 openapi: 3.0.0
 paths:
+  /campus_auth:
+    get:
+      tags:
+        - Auth
+      summary: 'Авторизация через кампус'
+      operationId: 9d55367cf81c991ca0964d5d8f0dd060
+      responses:
+        '200': {  }
+  /campus_out:
+    get:
+      tags:
+        - Auth
+      summary: 'Выход из аккаунта'
+      operationId: a12c2317fbb07a89c3eef2cde10f4dfd
+      responses:
+        '200': {  }
+  /api/arhiveProjects:
+    get:
+      tags:
+        - Candidate
+      summary: 'Получение активного проекта студента'
+      operationId: 6999044fcfc619dcae4b89032b2ae1c1
+      responses:
+        '200':
+          description: 'Архивные проекты студента'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Project'
+  '/api/participations/${id}':
+    post:
+      tags:
+        - UNUSED
+      summary: 'Создание заявки на проект'
+      operationId: 301a772e316b0ba3f6c6f0c6f5916c7b
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Заявка создана'
+        '404':
+          description: 'Не найдено'
+        '403':
+          description: 'Вы уже подали 3 заявки'
+    delete:
+      tags:
+        - UNUSED
+      summary: 'Отозвать заявку'
+      operationId: 77e827e080b1a10cdce47ad3f748810c
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID Заявки'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Заявка отозвана'
+    patch:
+      tags:
+        - Participation
+      summary: 'Изменение приоритета заявки у авторизованного студента'
+      operationId: f8565721843057e358bbc347e64c2eda
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID Заявки @TODO BODY'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Заявка изменена'
+        '403':
+          description: 'Вы не можете изменить чужую заявку'
+  '/api/candidates/${id}':
+    delete:
+      tags:
+        - UNUSED
+      summary: 'Удалить студента'
+      operationId: 9493782f31a0cb51f036b2105a70bd0e
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID студента'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Студент удален'
+  /api/candidates:
+    get:
+      tags:
+        - Candidate
+      summary: 'Получить информацию о всех студентах'
+      operationId: 86a41d1e246bd2e10a64300d56eb578a
+      responses:
+        '200':
+          description: 'Информация о всех студентах'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Candidate'
+    post:
+      tags:
+        - UNUSED
+      summary: 'Создание студента @TODO BODY'
+      operationId: e3a2bb6c858188c9db9e983c67f9f4d0
+      responses:
+        '200':
+          description: 'Информация о студенте создана'
+    patch:
+      tags:
+        - UNUSED
+      summary: 'Обновить информацию о студенте @TODO BODY'
+      operationId: 0fbff065723de9d077170867bf7f32b7
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID студента'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Информация о студенте обновлена'
   /api/candidate:
     get:
       tags:
-        - candidate
+        - Candidate
       summary: 'Получить информацию об авторизованном студенте'
       operationId: 2480a493492a84a70c52416430a1d362
       responses:
@@ -13,6 +153,647 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Candidate'
+    put:
+      tags:
+        - Candidate
+      summary: 'Обновить номер телефона, о себе, скиллы студента @TODO BODY'
+      operationId: 7992d4e4a9e0c02c61e4717a66494a25
+      responses:
+        '200':
+          description: 'Информация о студенте Обновлена'
+  /api/participations:
+    get:
+      tags:
+        - Candidate
+      summary: 'Получение заявок студента'
+      operationId: b3b6a65927c7c35ddf4bec2dd1aa3bc9
+      responses:
+        '200':
+          description: 'Информация о заявках студента'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Participation'
+    post:
+      tags:
+        - UNUSED
+      summary: 'Создать заявку @TODO BODY'
+      operationId: 8a37594960b629a005376ebd3cccffb9
+      responses:
+        '200':
+          description: 'Заявка создана'
+  '/api/candidates/{id}':
+    get:
+      tags:
+        - Candidate
+      summary: 'Получить информацию о студенте по ID'
+      operationId: 24960ff0fb77086529a54ad57a10816c
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID студента'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Информация о студенте'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Candidate'
+  /api/candidate/skills:
+    get:
+      tags:
+        - Candidate
+      summary: 'Получение навыков студента'
+      operationId: 386620a303432a949055b472a169a0ac
+      responses:
+        '200':
+          description: 'Получение навыков студента @TODO RESPONCE'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CandidateSkill'
+  '/api/institutes/getBySpecialityName/{specialityName}':
+    get:
+      tags:
+        - Institute
+      summary: 'Получить институт по названию специльности'
+      operationId: ac5b11386e1f29242c21942a1f51c926
+      parameters:
+        -
+          name: specialityName
+          in: path
+          description: 'Название специльности'
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 'Информация об институте'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Institute'
+  /api/institutes:
+    get:
+      tags:
+        - Institute
+      summary: 'Получить институты'
+      operationId: ee9911bd3fae617cfbb1b2db973d1082
+      responses:
+        '200':
+          description: 'Все институты'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Institute'
+  '/api/institutes/isInSameInstitute/{specialityName1}/{specialityName2}':
+    get:
+      tags:
+        - Institute
+      summary: 'Проверка находятся ли две специальности в одном институте'
+      operationId: 401f1d077801d48956d7c3605d4fc280
+      parameters:
+        -
+          name: specialityName1
+          in: path
+          description: 'Название первой специльности'
+          required: true
+          schema:
+            type: string
+        -
+          name: specialityName2
+          in: path
+          description: 'Название второй специльности'
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 'находятся ли две специальности в одном институте'
+          content:
+            application/json:
+              schema:
+                properties:
+                  isSame: { type: boolean }
+                type: object
+  '/api/institutes/{id}':
+    get:
+      tags:
+        - Candidate
+      summary: 'Получить информацию об институте по ID'
+      operationId: ca24ce3c8648cce7c7032093eb1afe54
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID института'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Информация об институте'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Institute'
+  /api/participations_deadline:
+    get:
+      tags:
+        - Participation
+      summary: 'Получение дедлайна подачи заявки'
+      operationId: c22ff02595b3353e62ee501e2559c148
+      responses:
+        '200':
+          description: 'Информация об институте'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeadLine'
+        '404':
+          description: 'Дедлайн не назначен'
+  '/api/participations/{id}':
+    get:
+      tags:
+        - UNUSED
+      summary: 'Создать заявку'
+      operationId: b28cd7bb37909d7fdcc968054afa8239
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID Заявки'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Заявка по ID'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Institute'
+  '/api/projects/${id}':
+    delete:
+      tags:
+        - UNUSED
+      summary: 'Удаление проекта'
+      operationId: 387468517c6fa36eae4baaa9fb441348
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Проект удален'
+    patch:
+      tags:
+        - UNUSED
+      summary: 'Обновить проект'
+      operationId: 5ed1bf0b0937291634083b91d03ac31c
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID проекта @TODO BODY'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Проект изменен'
+  /api/projects/filter:
+    get:
+      tags:
+        - Project
+      summary: 'Получить проекты с фильтрацией @TODO PARAMS'
+      operationId: f6980616c8b381ecfd091dc09561d9b3
+      responses:
+        '200':
+          description: Проекты
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Project'
+  '/api/projects/{id}/participants':
+    get:
+      tags:
+        - Project
+      summary: 'Получение участников на проекте'
+      operationId: 126b02f893ec810bc0b91bb3a8795010
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Проекты
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Candidate'
+  /api/projects/:
+    get:
+      tags:
+        - UNUSED
+      summary: 'Получить информацию о проектах с пагинацией'
+      operationId: e73f98c8e4f2531e4e2a30e2178ca2f5
+      responses:
+        '200':
+          description: Проекты
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Project'
+  '/api/projects/{id}':
+    get:
+      tags:
+        - Project
+      summary: 'Получение информации о проекте по ID'
+      operationId: 30d477cc11e01c46fe7c71d21d0f3eb1
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Проект
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Project'
+  /api/projects:
+    post:
+      tags:
+        - UNUSED
+      summary: 'Создать проекта @TODO BODY'
+      operationId: fe58d2871df3ce3d0339fc8d5541d5a2
+      responses:
+        '200':
+          description: 'Проект создан'
+  '/api/skills/${id}':
+    delete:
+      tags:
+        - UNUSED
+      summary: 'Удаление навыка'
+      operationId: af4a3c6b9f08ba6b062eff0bd52754f6
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID навыка'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'навык удален'
+    patch:
+      tags:
+        - UNUSED
+      summary: 'Обновить навык'
+      operationId: f17422f07c1c7c953d6af136f3bafbbb
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID навыка @TODO BODY'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'навык изменен'
+  /api/skills/:
+    get:
+      tags:
+        - Skill
+      summary: 'Получить данные для фильтрации по навыкам и специальностям. Скрывать данные других институтов если пользователь авторизован'
+      operationId: 4cdbc410153f11ae6a10002715d9fd6c
+      responses:
+        '200':
+          description: 'Проекты @TODO RESPONCE'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Skill'
+  '/api/skills/{id}':
+    get:
+      tags:
+        - Project
+      summary: 'Получение информации о навыке по ID'
+      operationId: 2b7359be165c54b3fff865ef54f4f8f0
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID навыка'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Навык
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Skill'
+  /api/skills:
+    post:
+      tags:
+        - UNUSED
+      summary: 'Создать навык @TODO BODY'
+      operationId: 85bc1be1de5dcf301af49f152469ef9a
+      responses:
+        '200':
+          description: 'навык создан'
+  '/api/states/${id}':
+    delete:
+      tags:
+        - UNUSED
+      summary: 'Удалить состояние проекта'
+      operationId: 758d12b476e1b56779014e8b44a48012
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID состояния проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Состояние проекта удалено'
+    patch:
+      tags:
+        - UNUSED
+      summary: 'Обновить состояние проекта'
+      operationId: 91ab0a6d7a32adc5ac42174201288c68
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID состояния проекта @TODO BODY'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Состояние проекта изменено'
+  /api/states/:
+    get:
+      tags:
+        - ProjectState
+      summary: 'Получить все состояния проекта'
+      operationId: 4381924b418372a1ebbf493a65453e11
+      responses:
+        '200':
+          description: 'состояния проектов'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ProjectState'
+  '/api/states/{id}':
+    get:
+      tags:
+        - Project
+      summary: 'Получение состояния проекта по ID'
+      operationId: 61e81f5821617080c2640403de3670c4
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID состояния проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Навык
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Skill'
+  /api/states:
+    post:
+      tags:
+        - UNUSED
+      summary: 'Создать состояние проекта @TODO BODY'
+      operationId: 7d1a7d196df15641a690646acfda5b8e
+      responses:
+        '200':
+          description: 'Состояние проекта создано'
+  /supervisor/projects:
+    get:
+      tags:
+        - DEPRECATED
+      summary: 'Получение информации о проектах руководителя через апи токен'
+      operationId: eccda7a4267e3786fcf3e51713f6f33f
+      responses:
+        '200':
+          description: 'Информация о проектах руководителя @TODO REPONSE'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Project'
+    post:
+      tags:
+        - DEPRECATED
+      summary: 'Создать проект (Преподаватель) @TODO BODY'
+      operationId: 0bc60c65e2331e17202ee47612f8123a
+      responses:
+        '200':
+          description: 'Проект создан'
+  '/api/supervisors/${id}':
+    delete:
+      tags:
+        - UNUSED
+      summary: 'Удалить преподавателя'
+      operationId: 027f82708babc1f4200ecbd1851eb003
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID преподавателя'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Преподаватель удален'
+  /api/supervisors/:
+    get:
+      tags:
+        - Supervisor
+      summary: 'Получить всех преподавателей'
+      operationId: 14d9df40e38ee19ded9b467255d7fd3c
+      responses:
+        '200':
+          description: 'все преподаватели'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Supervisor'
+  /api/supervisors/names:
+    get:
+      tags:
+        - Supervisor
+      summary: 'Получение всех фио и ID преподавателей'
+      operationId: 8e07ab9f8dd2d15c34c4f79ffcb87690
+      responses:
+        '200':
+          description: 'все фио и ID преподавателей @TODO RESPONCE'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Supervisor'
+  /api/supervisor/participation:
+    get:
+      tags:
+        - DEPRECATED
+      summary: 'получение информации о заявках руководителя'
+      operationId: 0bb95332a2f9c358fa2a750a7c723908
+      responses:
+        '200':
+          description: 'Информации о заявках руководителя @TODO RESPONCE'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Participation'
+  /api/supervisors:
+    post:
+      tags:
+        - UNUSED
+      summary: 'Создать преподавателя @TODO BODY'
+      operationId: 4bac33b11ece3da641555393c88b1c8c
+      responses:
+        '200':
+          description: 'Преподаватель создан'
+  '/api/supervisors/{id}':
+    patch:
+      tags:
+        - UNUSED
+      summary: 'Обновить состояние проекта'
+      operationId: 5f7e3afb9dca133e3a9e130d390e21a8
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID преподавателя @TODO BODY'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Преподаватель изменен'
+  '/api/supervisor/projects/{id}':
+    patch:
+      tags:
+        - DEPRECATED
+      summary: 'Обновить проект преподавателя'
+      operationId: 9ca77789f41c28b8a3ad9cf01d3caafd
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID проекта @TODO BODY'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Проект изменен'
+  '/api/types/${id}':
+    delete:
+      tags:
+        - UNUSED
+      summary: 'Удалить тип проекта'
+      operationId: 517d5f851a8c41a434d3e1709d377da1
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID типа проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Тип проекта удален'
+  /api/types/:
+    get:
+      tags:
+        - ProjectState
+      summary: 'Получение всех типов проекта'
+      operationId: 22d40a36b778600a73a54731e4079a70
+      responses:
+        '200':
+          description: 'Cостояния проектов'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ProjectType'
+  '/api/types/{id}':
+    get:
+      tags:
+        - Project
+      summary: 'Получение типа проекта по ID'
+      operationId: d5abbc44236ab1e2376f29f847e0ab87
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID типа проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Тип проекта'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectType'
 components:
   schemas:
     Candidate:
@@ -207,7 +988,7 @@ components:
           description: 'Название состояния'
           type: string
       type: object
-    StateProject:
+    ProjectState:
       properties:
         id:
           description: 'ID Состояния проекта'

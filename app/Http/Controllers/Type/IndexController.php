@@ -4,14 +4,31 @@ namespace App\Http\Controllers\Type;
 
 use App\Http\Controllers\Controller;
 use App\Models\Type;
-use Illuminate\Http\Request;
 
 /**
  * Получение всех типов проекта
  */
 class IndexController extends Controller
 {
-    public function __invoke() // Получение типов проекта
+    /**
+     * @OA\Get(
+     *     path="/api/types/",
+     *     summary="Получение всех типов проекта",
+     *      tags={"ProjectState"},
+     *     @OA\Response(
+     *         response="200",
+     *         description="Cостояния проектов",
+     *
+     *         @OA\JsonContent(
+     *              type="array",
+     *                  @OA\Items(
+     *                 ref="#/components/schemas/ProjectType"
+     *         )
+     * )
+     *     ),
+     * )
+     */
+    public function __invoke()
     {
         $types = Type::all();
         return $types;

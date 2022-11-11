@@ -8,10 +8,29 @@ use App\Models\Participation;
 use Illuminate\Http\Request;
 
 /**
- * Получение заявок кандидата
+ * Получение заявок студента
  */
 class ParticipationsController extends Controller
 {
+    /**
+     * @OA\Get(
+     *     path="/api/participations",
+     *     summary="Получение заявок студента",
+     *      tags={"Candidate"},
+     *     @OA\Response(
+     *         response="200",
+     *         description="Информация о заявках студента",
+     *          @OA\JsonContent( 
+     *              type="array",
+     *                  @OA\Items(
+     *                          ref="#/components/schemas/Participation"
+     *                  )
+     *              )
+     *     )
+     * 
+     * )
+     * )
+     */
     public function __invoke(Request $request) //Получить все заявки студента
     {
         $id = $request->get('candidate')->id;

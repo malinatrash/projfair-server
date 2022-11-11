@@ -19,7 +19,7 @@ class StateResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'state' => $this->state
+            'state' => $this->state,
         ];
     }
 }
@@ -27,7 +27,7 @@ class StateResource extends JsonResource
 /**
  * @OA\Schema()
  */
-class StateProject extends StateResource
+class ProjectState extends StateResource
 {
     /**
      * ID Состояния проекта

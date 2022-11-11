@@ -12,6 +12,19 @@ use Illuminate\Http\Request;
  */
 class ActiveProjectController extends Controller
 {
+    /**
+     * @OA\Get(
+     *     path="/api/arhiveProjects",
+     *     summary="Получение активного проекта студента",
+     *      tags={"Candidate"},
+     *     @OA\Response(
+     *         response="200",
+     *         description="Архивные проекты студента",
+     *         @OA\JsonContent( ref="#/components/schemas/Project")
+     *     )
+     *  )
+     * )
+     */
     public function __invoke(Request $request)
     {
 

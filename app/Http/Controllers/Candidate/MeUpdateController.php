@@ -13,6 +13,17 @@ use Illuminate\Http\Request;
  */
 class MeUpdateController extends Controller
 {
+    /**
+     * @OA\Put(
+     *     path="/api/candidate",
+     *     summary="Обновить номер телефона, о себе, скиллы студента @TODO BODY",
+     *      tags={"Candidate"},
+     *     @OA\Response(
+     *         response="200",
+     *         description="Информация о студенте Обновлена",
+     *     )
+     * )
+     */
     public function __invoke(MeUpdateRequest $req) // Обновить номер телефона, о себе, скиллы студента
     {
         $id = $req->get('candidate')->id;

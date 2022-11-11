@@ -12,6 +12,24 @@ use Illuminate\Http\Request;
  */
 class IndexController extends Controller
 {
+    /**
+     * @OA\Get(
+     *     path="/api/candidates",
+     *     summary="Получить информацию о всех студентах",
+     *      tags={"Candidate"},
+     *     @OA\Response(
+     *         response="200",
+     *         description="Информация о всех студентах",
+     *          @OA\JsonContent( 
+     *              type="array",
+     *                  @OA\Items(
+     *                          ref="#/components/schemas/Candidate"
+     *                  )
+     *          )
+     *     )
+     * )
+     * )
+     */
     public function __invoke() // Получить информацию о всех студентах
     {
         $candidates = Candidate::all();

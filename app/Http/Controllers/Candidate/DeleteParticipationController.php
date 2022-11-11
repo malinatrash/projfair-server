@@ -8,8 +8,32 @@ use App\Models\Participation;
 use App\Models\StateParticipation;
 use Illuminate\Http\Request;
 
+/**
+ * Отозвать заявку
+ */
 class DeleteParticipationController extends Controller
 {
+    /**
+     * @OA\Delete(
+     *     path="/api/participations/${id}",
+     *     summary="Отозвать заявку",
+     *      tags={"UNUSED"},
+     *      @OA\Parameter(
+     *         name="id",
+     *         description="ID Заявки",
+     *          in = "path",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="integer"
+     *         ) 
+     *     ),
+     *     @OA\Response(
+     *         response="200",
+     *         description="Заявка отозвана",
+     *     )
+     * )
+     * )
+     */
     public function __invoke($id_project, Request $request)
     {
         $id_project = intval($id_project);

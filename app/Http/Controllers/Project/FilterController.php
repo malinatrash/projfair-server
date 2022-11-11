@@ -3,14 +3,13 @@
 namespace App\Http\Controllers\Project;
 
 use App\Http\Controllers\Controller;
-use App\Models\Candidate;
 use App\Models\Project;
 use App\Models\ProjectSkill;
 use App\Models\ProjectSpeciality;
 use App\Models\Speciality;
-use Illuminate\Pagination\Paginator;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Collection;
 
 /**
@@ -18,6 +17,24 @@ use Illuminate\Support\Collection;
  */
 class FilterController extends Controller
 {
+    /**
+     * @OA\Get(
+     *     path="/api/projects/filter",
+     *     summary="Получить проекты с фильтрацией @TODO PARAMS",
+     *      tags={"Project"},
+     *     @OA\Response(
+     *         response="200",
+     *         description="Проекты",
+     *
+     *         @OA\JsonContent(
+     *              type="array",
+     *                  @OA\Items(
+     *                 ref="#/components/schemas/Project"
+     *         )
+     * )
+     *     ),
+     * )
+     */
     private function stringToArray($arr)
     {
         if (is_string($arr)) {
@@ -37,7 +54,7 @@ class FilterController extends Controller
     public function __invoke(Request $request)
     {
         $candidate = $request->get('candidate');
-        $data = Project::with('skills', 'specialities', 'type', 'state', 'supervisor')->get();;
+        $data = Project::with('skills', 'specialities', 'type', 'state', 'supervisor')->get();
         if ($candidate != null) {
             $candidateSpeciality = explode("-", $candidate['training_group'])[0];
 
@@ -49,7 +66,6 @@ class FilterController extends Controller
             $specilitiesInInstitute = $specility1->institute->specialities;
             $specilitiesInInstituteIds = $specilitiesInInstitute->pluck('id')->toArray();
 
-
             $idProjectsWithSpecialities = ProjectSpeciality::select('project_id as id')->whereIn('speciality_id', $specilitiesInInstituteIds)->get()->toArray();
             $idProject = [];
             foreach ($idProjectsWithSpecialities as $key => $value) {
@@ -58,8 +74,6 @@ class FilterController extends Controller
             $data = $data->whereIn('id', $idProject);
         }
 
-
-
         $inputSkills = $this->stringToArray($request->input('skills'));
         $inputSpecialities = $this->stringToArray($request->input('specialties'));
 
@@ -67,7 +81,6 @@ class FilterController extends Controller
         $inputState = $this->stringToArray($request->input('state'));
         $inputSupervisors = $this->stringToArray($request->input('supervisor'));
         $inputDiff = $this->stringToArray($request->input('difficulty'));
-
 
         //фильтрация по специальностям
         $specialities = array_map(function ($value) {
@@ -103,15 +116,17 @@ class FilterController extends Controller
         $types = array_map(function ($value) {
             return intval($value);
         }, $inputTypes ?? []);
-        if (count($types) != 0)
+        if (count($types) != 0) {
             $data = $data->whereIn('type_id', $types);
+        }
 
         //фильтрация по состоянию
         $states = array_map(function ($value) {
             return intval($value);
         }, $inputState ?? []);
-        if (count($states) != 0)
+        if (count($states) != 0) {
             $data = $data->whereIn('state_id', $states);
+        }
 
         //фильтрация по руководителю
         // $supervisors = array_map(function ($value) {
@@ -124,8 +139,9 @@ class FilterController extends Controller
         $difficulty = array_map(function ($value) {
             return intval($value);
         }, $inputDiff ?? []);
-        if (count($difficulty) != 0)
+        if (count($difficulty) != 0) {
             $data = $data->whereIn('difficulty', $difficulty);
+        }
 
         //фильтрация по тегам
         // $tags = array_map(function($value) {
@@ -136,7 +152,7 @@ class FilterController extends Controller
         //     $idProject = [];
         //     foreach ($idProjectsWithTags as $key => $value) {
         //         array_push($idProject, $value['id']);
-        //     } 
+        //     }
         //     $data = $data->whereIn('id', $idProject);
         // }
 

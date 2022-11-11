@@ -8,8 +8,22 @@ use App\Models\Supervisor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 
+/**
+ * Выход из аккаунта
+ */
 class LogoutController extends Controller
 {
+    /**
+     * @OA\Get(
+     *     path="/campus_out",
+     *     summary="Выход из аккаунта",
+     *     tags={"Auth"},
+     *     @OA\Response(
+     *         response="200",
+     *     )
+     * )
+     * )
+     */
     public function __invoke(Request $request)
     {
         $token = $request->get('api_token');
