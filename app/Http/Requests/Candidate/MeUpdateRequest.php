@@ -4,6 +4,9 @@ namespace App\Http\Requests\Candidate;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * Реквест для обновления данных авторизованного студента
+ */
 class MeUpdateRequest extends FormRequest
 {
     /**

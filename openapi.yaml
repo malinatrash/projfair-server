@@ -160,6 +160,19 @@ paths:
         - Candidate
       summary: 'Обновить номер телефона, о себе, скиллы студента @TODO BODY'
       operationId: 7992d4e4a9e0c02c61e4717a66494a25
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                'skill_ids[]':
+                  type: array
+                  items: { type: integer }
+                about:
+                  type: string
+                phone:
+                  type: string
+              type: object
       responses:
         '200':
           description: 'Информация о студенте Обновлена'

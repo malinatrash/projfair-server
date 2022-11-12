@@ -18,18 +18,38 @@ class MeUpdateController extends Controller
      *     path="/api/candidate",
      *     summary="Обновить номер телефона, о себе, скиллы студента @TODO BODY",
      *      tags={"Candidate"},
+     *      @OA\RequestBody(
+     *         @OA\MediaType(
+     *             mediaType="application/json",
+     *             @OA\Schema(
+     *                 @OA\Property(
+     *                     property="skill_ids[]",
+     *                     type="array",
+     *                     @OA\Items(type="integer")
+     *                 ),
+     *                 @OA\Property(
+     *                     property="about",
+     *                     type="string",
+     *                 ),
+     *                 @OA\Property(
+     *                     property="phone",
+     *                     type="string",
+     *                 ),
+     *             )
+     *         )
+     *     ),
      *     @OA\Response(
      *         response="200",
      *         description="Информация о студенте Обновлена",
      *     )
      * )
      */
-    public function __invoke(MeUpdateRequest $req) // Обновить номер телефона, о себе, скиллы студента
+    public function __invoke(MeUpdateRequest $req)
     {
         $id = $req->get('candidate')->id;
         Candidate::where('id', $id)->update([
             'about' => $req['about'],
-            'phone' => $req['phone']
+            'phone' => $req['phone'],
         ]);
         CandidatesSkill::where('id_candidate', $id)->delete();
         foreach ($req['skills'] as $skill) {
@@ -37,7 +57,7 @@ class MeUpdateController extends Controller
                 return response()->json(
                     [
                         'status' => false,
-                        'message' => 'Массив скиллов содержит не число'
+                        'message' => 'Массив скиллов содержит не число',
                     ],
                     400
                 );
@@ -45,7 +65,7 @@ class MeUpdateController extends Controller
 
             CandidatesSkill::create([
                 'id_skill' => $skill,
-                'id_candidate' => $id
+                'id_candidate' => $id,
             ]);
         }
 
