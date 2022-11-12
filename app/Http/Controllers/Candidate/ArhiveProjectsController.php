@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Candidate;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ProjectResource;
 use Illuminate\Http\Request;
 
 /**
@@ -18,7 +19,7 @@ class ArhiveProjectsController extends Controller
      *     @OA\Response(
      *         response="200",
      *         description="Архивные проекты студента",
-     *         @OA\JsonContent( 
+     *         @OA\JsonContent(
      *              type="array",
      *              @OA\Items(
      *                      ref="#/components/schemas/Project"
@@ -32,6 +33,6 @@ class ArhiveProjectsController extends Controller
     {
 
         $arhiveProjects = $request->get('candidate')->arhiveProjects();
-        return $arhiveProjects;
+        return ProjectResource::collection($arhiveProjects);
     }
 }

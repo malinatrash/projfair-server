@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Candidate;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ProjectResource;
 use App\Models\Candidate;
-use App\Models\Participation;
 use Illuminate\Http\Request;
 
 /**
@@ -19,7 +19,7 @@ class ActiveProjectController extends Controller
      *      tags={"Candidate"},
      *     @OA\Response(
      *         response="200",
-     *         description="Архивные проекты студента",
+     *         description="Активный проект студента",
      *         @OA\JsonContent( ref="#/components/schemas/Project")
      *     )
      *  )
@@ -30,7 +30,7 @@ class ActiveProjectController extends Controller
 
         $activeProject = $request->get('candidate')->activeProject();
         if ($activeProject) {
-            return $activeProject;
+            return new ProjectResource($activeProject);
         } else {
             return abort(404);
         }

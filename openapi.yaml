@@ -26,7 +26,7 @@ paths:
       operationId: 6999044fcfc619dcae4b89032b2ae1c1
       responses:
         '200':
-          description: 'Архивные проекты студента'
+          description: 'Активный проект студента'
           content:
             application/json:
               schema:
