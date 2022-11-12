@@ -11,8 +11,11 @@ class Supervisor extends Model
 
     protected $guarded = false;
 
+    /**
+     * Получить проекты преподавателя
+     */
     public function projects()
     {
-        return $this->hasMany(Project::class);
+        return $this->belongsToMany(Project::class);
     }
 }

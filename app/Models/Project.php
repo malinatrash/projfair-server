@@ -20,12 +20,18 @@ class Project extends Model
         return $this->belongsToMany(Skill::class);
     }
 
+    /**
+     * Получить требуемые специальности на проекте
+     */
     public function specialities()
     {
         return $this->belongsToMany(Speciality::class);
     }
 
-    public function candidates()
+    /**
+     * Получить все заявки на проект
+     */
+    public function participation()
     {
         return $this->hasMany(Participation::class, 'project_id');
     }
@@ -41,9 +47,9 @@ class Project extends Model
     /**
      * Получить руководителей проекта
      */
-    public function supervisor()
+    public function supervisors()
     {
-        return $this->belongsTo(Supervisor::class);
+        return $this->belongsToMany(Supervisor::class);
     }
 
     /**
@@ -63,5 +69,15 @@ class Project extends Model
         $activeParticipations = Participation::with('candidate')->where('project_id', '=', $this->id)->where('state_id', '=', $activeState->id)->get();
         $participants = $activeParticipations->pluck('candidate');
         return $participants;
+    }
+
+    /**
+     * Получить связанный проект из предыдущего семестра
+     */
+    public function prevProject(): Project
+    {
+        $prevProjectId = $this->prev_project_id;
+
+        return Project::find($prevProjectId);
     }
 }

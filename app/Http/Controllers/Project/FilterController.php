@@ -54,7 +54,7 @@ class FilterController extends Controller
     public function __invoke(Request $request)
     {
         $candidate = $request->get('candidate');
-        $data = Project::with('skills', 'specialities', 'type', 'state', 'supervisor')->get();
+        $projectCollection = Project::with('skills', 'specialities', 'type', 'state', 'supervisors')->get();
         if ($candidate != null) {
             $candidateSpeciality = explode("-", $candidate['training_group'])[0];
 
@@ -71,7 +71,7 @@ class FilterController extends Controller
             foreach ($idProjectsWithSpecialities as $key => $value) {
                 array_push($idProject, $value['id']);
             }
-            $data = $data->whereIn('id', $idProject);
+            $projectCollection = $projectCollection->whereIn('id', $idProject);
         }
 
         $inputSkills = $this->stringToArray($request->input('skills'));
@@ -93,7 +93,7 @@ class FilterController extends Controller
             foreach ($idProjectsWithSpecialities as $key => $value) {
                 array_push($idProject, $value['id']);
             }
-            $data = $data->whereIn('id', $idProject);
+            $projectCollection = $projectCollection->whereIn('id', $idProject);
             //dd($idProject);
         }
 
@@ -108,7 +108,7 @@ class FilterController extends Controller
             foreach ($idProjectsWithSkills as $key => $value) {
                 array_push($idProject, $value['id']);
             }
-            $data = $data->whereIn('id', $idProject);
+            $projectCollection = $projectCollection->whereIn('id', $idProject);
             //dd($idProject);
         }
 
@@ -117,7 +117,7 @@ class FilterController extends Controller
             return intval($value);
         }, $inputTypes ?? []);
         if (count($types) != 0) {
-            $data = $data->whereIn('type_id', $types);
+            $projectCollection = $projectCollection->whereIn('type_id', $types);
         }
 
         //фильтрация по состоянию
@@ -125,7 +125,7 @@ class FilterController extends Controller
             return intval($value);
         }, $inputState ?? []);
         if (count($states) != 0) {
-            $data = $data->whereIn('state_id', $states);
+            $projectCollection = $projectCollection->whereIn('state_id', $states);
         }
 
         //фильтрация по руководителю
@@ -140,10 +140,10 @@ class FilterController extends Controller
             return intval($value);
         }, $inputDiff ?? []);
         if (count($difficulty) != 0) {
-            $data = $data->whereIn('difficulty', $difficulty);
+            $projectCollection = $projectCollection->whereIn('difficulty', $difficulty);
         }
 
-        //фильтрация по тегам
+        // фильтрация по тегам
         // $tags = array_map(function($value) {
         //     return intval($value);
         // }, $inputTags ?? []);
@@ -163,7 +163,7 @@ class FilterController extends Controller
         $title = rtrim($title, '"');
 
         if ($title != '') {
-            $data = $data->filter(function ($value) use ($title) {
+            $projectCollection = $projectCollection->filter(function ($value) use ($title) {
                 return (strpos(mb_strtolower($value->title), mb_strtolower($title)) !== false);
             })->values();
         }
@@ -179,34 +179,28 @@ class FilterController extends Controller
         $dateEnd = ltrim($dateEnd, '"');
 
         if ($dateStart != '') {
-            $data = $data->filter(function ($value) use ($dateStart) {
+            $projectCollection = $projectCollection->filter(function ($value) use ($dateStart) {
                 return $value->date_start >= $dateStart;
             })->values();
         }
         if ($dateEnd != '') {
-            $data = $data->filter(function ($value) use ($dateEnd) {
+            $projectCollection = $projectCollection->filter(function ($value) use ($dateEnd) {
                 return $value->date_end <= $dateEnd;
             })->values();
         }
 
         $page = intval($request->input('page')) ?? 1;
-        $projectCount = count($data);
+        $projectCount = count($projectCollection);
 
-        $data = $this->paginate($data, 7, $page);
-        $data->makeHidden(['state_id', 'supervisor_id', 'type_id']);
+        $projectCollection = $this->paginate($projectCollection, 7, $page);
+        $projectCollection->makeHidden(['state_id', 'type_id']);
 
-        $data = $data->toArray()['data'];
-        foreach ($data as &$d) {
+        $projectCollection = $projectCollection->toArray()['data'];
 
-            if (isset($d['supervisors'])) {
-                $d['supervisors'] = explode(",", $d['supervisors']);
-            }
+        $projectsArray = [];
+        foreach ($projectCollection as $key => $value) {
+            array_push($projectsArray, $value);
         }
-
-        $dataArr = [];
-        foreach ($data as $key => $value) {
-            array_push($dataArr, $value);
-        }
-        return response()->json(['data' => $dataArr, 'projectCount' => $projectCount])->setStatusCode(200);
+        return response()->json(['data' => $projectsArray, 'projectCount' => $projectCount])->setStatusCode(200);
     }
 }

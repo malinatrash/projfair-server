@@ -45,7 +45,6 @@ class ProjectController extends AdminController
         $grid->column('additional_inf', __('Доп. инф.'));
         $grid->column('product_result', __('Продуктовый рез.'));
         $grid->column('study_result', __('Учебный рез.'));
-        $grid->column('supervisors', __('Руководители (через запятую)'));
         $grid->column('state.state', __('Состояние'));
         $grid->column('type.type', __('Тип'));
 
@@ -66,6 +65,15 @@ class ProjectController extends AdminController
             return join('<br> ', $skills);
         });
 
+        $grid->supervisors()->display(function ($supervisors) {
+
+            $supervisors = array_map(function ($supervisor) {
+                return "<span class='label label-success'>{$supervisor['fio']}</span>";
+            }, $supervisors);
+
+            return join('<br> ', $supervisors);
+        });
+
         $grid->filter(function ($filter) {
 
             // Remove the default id filter
@@ -76,9 +84,8 @@ class ProjectController extends AdminController
             $filter->like('state.state', 'Заказчик');
             $filter->like('supervisors', 'Руководители');
             $filter->like('customer', 'Состояние');
-            
-        });
 
+        });
 
         return $grid;
     }
@@ -125,7 +132,6 @@ class ProjectController extends AdminController
             $skills->name();
         });
 
-
         return $show;
     }
 
@@ -150,8 +156,6 @@ class ProjectController extends AdminController
         ];
         $form->select('difficulty', 'Сложность')->options($directors)->rules('required');
 
-
-
         $form->date('date_start', __('Date start'))->default(date('Y-m-d'))->rules('required');
         $form->date('date_end', __('Date end'))->default(date('Y-m-d'))->rules('required');
         $form->textarea('requirements', __('Требования'));
@@ -161,9 +165,9 @@ class ProjectController extends AdminController
         $form->textarea('study_result', __('Учебный рез.'))->rules('required');
         $form->textarea('supervisors', __('Руководители (через запятую)'))->rules('required');
         $form->select('state_id', __('Состояние'))->options(State::all()->pluck('state', 'id'))->rules('required');
-        
+
         //$form->number('supervisor_id', __('Supervisor id'));
-        
+
         $form->select('type_id', __('Тип'))->options(Type::all()->pluck('type', 'id'))->rules('required');
         $form->multipleSelect('specialities', 'Специальности')->options(Speciality::all()->pluck('name', 'id'))->rules('required');
         $form->multipleSelect('skills', 'Требуемые навыки')->options(Skill::all()->pluck('name', 'id'));
