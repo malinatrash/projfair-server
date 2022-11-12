@@ -384,6 +384,13 @@ paths:
       operationId: 3172f11dfe97cf7f45f02c67fdfc86e5
       parameters:
         -
+          name: page
+          in: query
+          description: 'Номер страницы (отчет с нуля)'
+          required: false
+          schema:
+            type: integer
+        -
           name: skills
           in: query
           description: 'Массив ID скилов'
@@ -978,16 +985,26 @@ components:
           type: string
         supervisors:
           description: Руководители
+          type: array
+          items:
+            $ref: '#/components/schemas/Supervisor'
+        skills:
+          description: 'Требуемые навыки'
+          type: array
+          items:
+            $ref: '#/components/schemas/Skill'
+        specialities:
+          description: 'Для каких специальностей'
+          type: array
+          items:
+            $ref: '#/components/schemas/Speciality'
+        supervisorsNames:
+          description: 'Имена руководителей'
           type: string
-        supervisor_id:
-          description: 'ID руководителя проекта'
-          type: string
-        state_id:
-          description: 'ID состояния проекта'
-          type: string
-        type_id:
-          description: 'ID типа проекта'
-          type: string
+        state:
+          $ref: '#/components/schemas/ProjectState'
+        type:
+          $ref: '#/components/schemas/ProjectType'
         created_at:
           description: 'Дата создания записи в БД'
           type: string

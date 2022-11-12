@@ -31,11 +31,13 @@ class ProjectResource extends JsonResource
             'additional_inf' => $this->additional_inf,
             'product_result' => $this->product_result,
             'study_result' => $this->study_result,
-            'supervisors' => $this->supervisors,
+            'supervisors' => SupervisorResource::collection($this->supervisors),
+            'skills' => SkillResource::collection($this->skills),
+            'specialities' => SpecialityResource::collection($this->specialities),
+            'supervisorsNames' => $this->supervisorsNames,
 
-            'supervisor_id' => $this->supervisor_id,
-            'state_id' => $this->state_id,
-            'type_id' => $this->type_id,
+            'state' => new StateResource($this->state),
+            'type' => new TypeResource($this->type),
 
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
@@ -126,30 +128,50 @@ class Project extends ProjectResource
 
     /**
      * Руководители
-     * @var string
-     * @OA\Property()
+     * @var array
+     * @OA\Property(
+     *  type="array",
+     * @OA\Items(ref="#/components/schemas/Supervisor")
+     * )
      */
     public $supervisors;
+    /**
+     * Требуемые навыки
+     * @var array
+     * @OA\Property(
+     *  type="array",
+     * @OA\Items(ref="#/components/schemas/Skill")
+     * )
+     */
+    public $skills;
+    /**
+     * Для каких специальностей
+     * @var array
+     * @OA\Property(
+     *  type="array",
+     * @OA\Items(ref="#/components/schemas/Speciality")
+     * )
+     */
+    public $specialities;
+    /**
+     * Имена руководителей
+     * @var string
+     * @OA\Property()
+     */
+    public $supervisorsNames;
 
-
     /**
-     * ID руководителя проекта
-     * @var string
-     * @OA\Property()
+     * Cостояние проекта
+     * @var object
+     * @OA\Property(ref="#/components/schemas/ProjectState")
      */
-    public $supervisor_id;
+    public $state;
     /**
-     * ID состояния проекта
-     * @var string
-     * @OA\Property()
+     * Тип проекта
+     * @var object
+     * @OA\Property(ref="#/components/schemas/ProjectType")
      */
-    public $state_id;
-    /**
-     * ID типа проекта
-     * @var string
-     * @OA\Property()
-     */
-    public $type_id;
+    public $type;
     /**
      * Дата создания записи в БД
      * @var string

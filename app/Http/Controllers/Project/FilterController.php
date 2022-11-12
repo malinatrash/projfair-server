@@ -3,13 +3,12 @@
 namespace App\Http\Controllers\Project;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ProjectResource;
 use App\Models\Project;
 use App\Models\ProjectSkill;
 use App\Models\ProjectSpeciality;
 use App\Models\Speciality;
 use Illuminate\Http\Request;
-use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Collection;
 
 /**
@@ -26,18 +25,20 @@ class FilterController extends Controller
         }
     }
 
-    public function paginate($items, $perPage = 7, $page = null, $options = [])
-    {
-        $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
-        $items = $items instanceof Collection ? $items : Collection::make($items);
-        return new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $page, $options);
-    }
-
     /**
      * @OA\Get(
      *     path="/api/projects/filter",
      *     summary="Получить проекты с фильтрацией @TODO PARAMS",
      *      tags={"Project"},
+     *      @OA\Parameter(
+     *         name="page",
+     *         description="Номер страницы (отчет с нуля)",
+     *          in = "query",
+     *         required=false,
+     *         @OA\Schema(
+     *               type="integer"
+     *         )
+     *     ),
      *      @OA\Parameter(
      *         name="skills",
      *         description="Массив ID скилов",
@@ -136,8 +137,8 @@ class FilterController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $candidate = $request->get('candidate');
         $projectCollection = Project::with('skills', 'specialities', 'type', 'state', 'supervisors')->get();
+        $candidate = $request->get('candidate');
         if ($candidate != null) {
             $candidateSpeciality = explode("-", $candidate['training_group'])[0];
 
@@ -192,7 +193,6 @@ class FilterController extends Controller
                 array_push($idProject, $value['id']);
             }
             $projectCollection = $projectCollection->whereIn('id', $idProject);
-            //dd($idProject);
         }
 
         //фильтрация по типу
@@ -211,13 +211,6 @@ class FilterController extends Controller
             $projectCollection = $projectCollection->whereIn('state_id', $states);
         }
 
-        //фильтрация по руководителю
-        // $supervisors = array_map(function ($value) {
-        //     return intval($value);
-        // }, $inputSupervisors ?? []);
-        // if (count($supervisors) != 0)
-        //     $data = $data->whereIn('supervisor_id', $supervisors);
-
         //фильтрация по сложности
         $difficulty = array_map(function ($value) {
             return intval($value);
@@ -225,6 +218,13 @@ class FilterController extends Controller
         if (count($difficulty) != 0) {
             $projectCollection = $projectCollection->whereIn('difficulty', $difficulty);
         }
+
+        //фильтрация по руководителю
+        // $supervisors = array_map(function ($value) {
+        //     return intval($value);
+        // }, $inputSupervisors ?? []);
+        // if (count($supervisors) != 0)
+        //     $data = $data->whereIn('supervisor_id', $supervisors);
 
         // фильтрация по тегам
         // $tags = array_map(function($value) {
@@ -272,18 +272,14 @@ class FilterController extends Controller
             })->values();
         }
 
-        $page = intval($request->input('page')) ?? 1;
+        $page = intval($request->input('page'));
+        $perPage = 7;
+
         $projectCount = count($projectCollection);
+        $startIndex = $perPage * ($page);
 
-        $projectCollection = $this->paginate($projectCollection, 7, $page);
-        $projectCollection->makeHidden(['state_id', 'type_id']);
+        $projectCollection = $projectCollection->slice($startIndex, $perPage);
 
-        $projectCollection = $projectCollection->toArray()['data'];
-
-        $projectsArray = [];
-        foreach ($projectCollection as $key => $value) {
-            array_push($projectsArray, $value);
-        }
-        return response()->json(['data' => $projectsArray, 'projectCount' => $projectCount])->setStatusCode(200);
+        return response()->json(['data' => ProjectResource::collection($projectCollection), 'projectCount' => $projectCount])->setStatusCode(200);
     }
 }
