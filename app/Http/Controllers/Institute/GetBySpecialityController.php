@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Institute;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\InstituteResource;
 use App\Models\Speciality;
-use Illuminate\Http\Request;
 
 /**
  * Получить институт по названию специльности
@@ -23,24 +23,28 @@ class GetBySpecialityController extends Controller
      *         required=true,
      *         @OA\Schema(
      *             type="string"
-     *         ) 
+     *         )
      *     ),
      *     @OA\Response(
      *         response="200",
      *         description="Информация об институте",
      *         @OA\JsonContent(ref="#/components/schemas/Institute")
-     *     )
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Не найдено",
+     *     ),
      * )
      * )
      */
-    public function __invoke($specialityName) // Получить институты по названию специльности
+    public function __invoke($specialityName)
     {
         $specilities = Speciality::where('name', $specialityName)->get();
         if (count($specilities) == 0) {
             return response('Не найдено', 404);
         }
-        $specilities->load('institute');
+        $institute = $specilities->load('institute')[0]->institute;
 
-        return $specilities[0]->institute;
+        return new InstituteResource($institute);
     }
 }

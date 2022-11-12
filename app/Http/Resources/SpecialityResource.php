@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Institute;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
@@ -20,7 +21,7 @@ class SpecialityResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            // 'institute_id'=> $this->institute_id
+            'institute' => new InstituteResource(Institute::find($this->institute_id)),
         ];
     }
 }
@@ -43,4 +44,11 @@ class Speciality extends SpecialityResource
      * @OA\Property()
      */
     public $state;
+
+    /**
+     * Институт к которому принадлежит специальность
+     * @var object
+     * @OA\Property()
+     */
+    public $institute;
 }

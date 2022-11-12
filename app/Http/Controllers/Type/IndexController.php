@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Type;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\TypeResource;
 use App\Models\Type;
 
 /**
@@ -14,23 +15,20 @@ class IndexController extends Controller
      * @OA\Get(
      *     path="/api/types/",
      *     summary="Получение всех типов проекта",
-     *      tags={"ProjectState"},
+     *      tags={"ProjectType"},
      *     @OA\Response(
      *         response="200",
-     *         description="Cостояния проектов",
-     *
+     *         description="Типы проектов",
      *         @OA\JsonContent(
      *              type="array",
-     *                  @OA\Items(
-     *                 ref="#/components/schemas/ProjectType"
-     *         )
-     * )
+     *              @OA\Items(ref="#/components/schemas/ProjectType")
+     *          )
      *     ),
      * )
      */
     public function __invoke()
     {
         $types = Type::all();
-        return $types;
+        return TypeResource::collection($types);
     }
 }

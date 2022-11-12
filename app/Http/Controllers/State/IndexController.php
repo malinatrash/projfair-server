@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\State;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\StateResource;
 use App\Models\State;
 
 /**
@@ -17,20 +18,18 @@ class IndexController extends Controller
      *      tags={"ProjectState"},
      *     @OA\Response(
      *         response="200",
-     *         description="состояния проектов",
+     *         description="Cостояния проектов",
      *
      *         @OA\JsonContent(
      *              type="array",
-     *                  @OA\Items(
-     *                 ref="#/components/schemas/ProjectState"
-     *         )
-     * )
+     *                  @OA\Items(ref="#/components/schemas/ProjectState")
+     *          )
      *     ),
      * )
      */
     public function __invoke()
     {
         $states = State::all();
-        return $states;
+        return StateResource::collection($states);
     }
 }

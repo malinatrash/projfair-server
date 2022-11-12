@@ -20,7 +20,6 @@ Route::middleware(['adminAuthProtected'])->group(function () {
 
 Route::group(['namespace' => 'Supervisor', 'prefix' => 'supervisors'], function () {
     Route::get('/{supervisor}', App\Http\Controllers\Supervisor\ShowController::class); // Получение информации о преподавателе
-    Route::get('/names', App\Http\Controllers\Supervisor\NamesController::class); // Получение всех фио преподавателей
     Route::get('/', App\Http\Controllers\Supervisor\IndexController::class); // Получение всех преподавателей
     // Route::post('/', 'StoreController');
     // Route::patch('/{supervisor}', 'UpdateController');

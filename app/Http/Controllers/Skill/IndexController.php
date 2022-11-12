@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Skill;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\SkillCategoryResource;
+use App\Http\Resources\SkillResource;
+use App\Http\Resources\SpecialityResource;
 use App\Models\Skill;
 use App\Models\SkillCategory;
 use App\Models\Speciality;
@@ -20,14 +23,28 @@ class IndexController extends Controller
      *      tags={"Skill"},
      *     @OA\Response(
      *         response="200",
-     *         description="Проекты @TODO RESPONCE",
-     *
+     *         description="Навыки, специальности, категории скилов",
      *         @OA\JsonContent(
-     *              type="array",
-     *                  @OA\Items(
-     *                 ref="#/components/schemas/Skill"
-     *         )
-     * )
+     *             type="object",
+     *             @OA\Property(
+     *                 property="skills",
+     *                 type="array",
+     *                  description="Все навыки",
+     *                  @OA\Items(ref="#/components/schemas/Skill")
+     *             ),
+     *             @OA\Property(
+     *                 property="specialities",
+     *                 type="array",
+     *                  description="Специальности. Если пользователь авторизован, то показываются специальности только его института",
+     *                  @OA\Items(ref="#/components/schemas/Skill")
+     *             ),
+     *             @OA\Property(
+     *                 property="skillCategories",
+     *                 type="array",
+     *                 description="Категории скилов",
+     *                  @OA\Items(ref="#/components/schemas/Skill")
+     *             ),
+     *        )
      *     ),
      * )
      */
@@ -58,9 +75,9 @@ class IndexController extends Controller
         }
 
         return [
-            'skills' => $skills,
-            'specialties' => $specialities,
-            'skillCategories' => $skillCategories,
+            'skills' => SkillResource::collection($skills),
+            'specialties' => SpecialityResource::collection($specialities),
+            'skillCategories' => SkillCategoryResource::collection($skillCategories),
         ];
     }
 }

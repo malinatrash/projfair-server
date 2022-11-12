@@ -27,20 +27,22 @@ class GetParticipantsController extends Controller
      *     ),
      *     @OA\Response(
      *         response="200",
-     *         description="Проекты",
-     *
+     *         description="Участники проекта",
      *         @OA\JsonContent(
      *              type="array",
      *                  @OA\Items(
-     *                 ref="#/components/schemas/Candidate"
+     *                      ref="#/components/schemas/Candidate"
+     *                  )
      *         )
-     * )
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Проект не найден",
      *     ),
      * )
      */
     public function __invoke(Project $project)
     {
-
         return CandidateResource::collection($project->participants());
     }
 }

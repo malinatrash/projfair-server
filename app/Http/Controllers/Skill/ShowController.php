@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Skill;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\SkillResource;
 use App\Models\Skill;
 
 /**
@@ -14,7 +15,7 @@ class ShowController extends Controller
      * @OA\Get(
      *     path="/api/skills/{id}",
      *     summary="Получение информации о навыке по ID",
-     *      tags={"Project"},
+     *      tags={"Skill"},
      *           @OA\Parameter(
      *         name="id",
      *         description="ID навыка",
@@ -27,16 +28,16 @@ class ShowController extends Controller
      *     @OA\Response(
      *         response="200",
      *         description="Навык",
-     *
-     *         @OA\JsonContent(
-     *                 ref="#/components/schemas/Skill"
-     *
-     * )
+     *         @OA\JsonContent(ref="#/components/schemas/Skill")
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Навык не найден",
      *     ),
      * )
      */
     public function __invoke(Skill $skill)
     {
-        return $skill;
+        return new SkillResource($skill);
     }
 }

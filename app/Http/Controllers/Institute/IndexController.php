@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Institute;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\InstituteResource;
 use App\Models\Institute;
-use Illuminate\Http\Request;
 
 /**
  * Получить информацию обо всех институтах
@@ -20,18 +20,18 @@ class IndexController extends Controller
      *         response="200",
      *         description="Все институты",
      *         @OA\JsonContent(
-     *      *              type="array",
-     *                  @OA\Items(
-     *                          ref="#/components/schemas/Institute"
-     *                  )
-     * )
+     *              type="array",
+     *              @OA\Items(
+     *                  ref="#/components/schemas/Institute"
+     *              )
+     *         )
      *     )
      * )
      * )
      */
-    public function __invoke() // Получить информацию обо всех институтах
+    public function __invoke()
     {
         $institutes = Institute::all();
-        return $institutes;
+        return InstituteResource::collection($institutes);
     }
 }

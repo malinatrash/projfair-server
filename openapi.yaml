@@ -264,6 +264,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Institute'
+        '404':
+          description: 'Не найдено'
   /api/institutes:
     get:
       tags:
@@ -309,6 +311,8 @@ paths:
                 properties:
                   isSame: { type: boolean }
                 type: object
+        '404':
+          description: 'Не найдено'
   '/api/institutes/{id}':
     get:
       tags:
@@ -493,13 +497,15 @@ paths:
             type: integer
       responses:
         '200':
-          description: Проекты
+          description: 'Участники проекта'
           content:
             application/json:
               schema:
                 type: array
                 items:
                   $ref: '#/components/schemas/Candidate'
+        '404':
+          description: 'Проект не найден'
   /api/projects/:
     get:
       tags:
@@ -531,11 +537,13 @@ paths:
             type: integer
       responses:
         '200':
-          description: Проект
+          description: 'Информация о проекте @TODO Понять какую информацию отдавать если проект активный архивный и т.д.'
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Project'
+        '404':
+          description: 'Проект не найден'
   /api/projects:
     post:
       tags:
@@ -586,17 +594,19 @@ paths:
       operationId: 4cdbc410153f11ae6a10002715d9fd6c
       responses:
         '200':
-          description: 'Проекты @TODO RESPONCE'
+          description: 'Навыки, специальности, категории скилов'
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Skill'
+                properties:
+                  skills: { description: 'Все навыки', type: array, items: { $ref: '#/components/schemas/Skill' } }
+                  specialities: { description: 'Специальности. Если пользователь авторизован, то показываются специальности только его института', type: array, items: { $ref: '#/components/schemas/Skill' } }
+                  skillCategories: { description: 'Категории скилов', type: array, items: { $ref: '#/components/schemas/Skill' } }
+                type: object
   '/api/skills/{id}':
     get:
       tags:
-        - Project
+        - Skill
       summary: 'Получение информации о навыке по ID'
       operationId: 2b7359be165c54b3fff865ef54f4f8f0
       parameters:
@@ -614,6 +624,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Skill'
+        '404':
+          description: 'Навык не найден'
   /api/skills:
     post:
       tags:
@@ -664,7 +676,7 @@ paths:
       operationId: 4381924b418372a1ebbf493a65453e11
       responses:
         '200':
-          description: 'состояния проектов'
+          description: 'Cостояния проектов'
           content:
             application/json:
               schema:
@@ -674,7 +686,7 @@ paths:
   '/api/states/{id}':
     get:
       tags:
-        - Project
+        - ProjectState
       summary: 'Получение состояния проекта по ID'
       operationId: 61e81f5821617080c2640403de3670c4
       parameters:
@@ -687,11 +699,13 @@ paths:
             type: integer
       responses:
         '200':
-          description: Навык
+          description: 'Состояние проекта'
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Skill'
+                $ref: '#/components/schemas/ProjectState'
+        '404':
+          description: 'Состояние проекта не найдено'
   /api/states:
     post:
       tags:
@@ -750,21 +764,6 @@ paths:
       responses:
         '200':
           description: 'все преподаватели'
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Supervisor'
-  /api/supervisors/names:
-    get:
-      tags:
-        - Supervisor
-      summary: 'Получение всех фио и ID преподавателей'
-      operationId: 8e07ab9f8dd2d15c34c4f79ffcb87690
-      responses:
-        '200':
-          description: 'все фио и ID преподавателей @TODO RESPONCE'
           content:
             application/json:
               schema:
@@ -849,12 +848,12 @@ paths:
   /api/types/:
     get:
       tags:
-        - ProjectState
+        - ProjectType
       summary: 'Получение всех типов проекта'
       operationId: 22d40a36b778600a73a54731e4079a70
       responses:
         '200':
-          description: 'Cостояния проектов'
+          description: 'Типы проектов'
           content:
             application/json:
               schema:
@@ -864,7 +863,7 @@ paths:
   '/api/types/{id}':
     get:
       tags:
-        - Project
+        - ProjectType
       summary: 'Получение типа проекта по ID'
       operationId: d5abbc44236ab1e2376f29f847e0ab87
       parameters:
@@ -882,6 +881,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ProjectType'
+        '404':
+          description: 'Тип проекта не найден'
 components:
   schemas:
     Candidate:
@@ -1078,6 +1079,9 @@ components:
         state:
           description: 'Название состояния'
           type: string
+        institute:
+          description: 'Институт к которому принадлежит специальность'
+          type: object
       type: object
     StateParticipationProject:
       properties:

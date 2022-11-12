@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Participation;
 
 use App\Http\Controllers\Controller;
 use App\Models\Participation;
-use Illuminate\Http\Request;
 
 /**
  * Получить все заявки
@@ -20,11 +19,9 @@ class IndexController extends Controller
      *         response="200",
      *         description="Заявка создана",
      *         @OA\JsonContent(
-     *                    type="array",
-     *                  @OA\Items(
-     *                          ref="#/components/schemas/Participation"
-     *                  )
-     * )
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/Participation")
+     *          )
      *     ),
      * )
      * )

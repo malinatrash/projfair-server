@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Institute;
 
 use App\Http\Controllers\Controller;
 use App\Models\Speciality;
-use Illuminate\Http\Request;
 
 /**
  * Проверка находятся ли две специальности в одном институте
@@ -23,33 +22,32 @@ class SameInstituteController extends Controller
      *         required=true,
      *         @OA\Schema(
      *             type="string"
-     *         ) 
+     *         )
      *     ),
-     *           @OA\Parameter(
+     *     @OA\Parameter(
      *         name="specialityName2",
      *         description="Название второй специльности",
      *          in = "path",
      *         required=true,
      *         @OA\Schema(
      *             type="string"
-     *         ) 
+     *         )
      *     ),
      *     @OA\Response(
      *         response="200",
      *         description="находятся ли две специальности в одном институте",
      *         @OA\JsonContent(
-     *                    type="object",
-     *                  @OA\Property(
-     *                      property="isSame",
-     *                      type="boolean",
-     *                  )
+     *             type="object",
+     *             @OA\Property(
+     *                 property="isSame",
+     *                 type="boolean",
+     *             )
+     *        )
      *      ),
      *      @OA\Response(
      *         response="404",
      *         description="Не найдено",
-     *     ),
      *     )
-     * )
      * )
      */
     public function __invoke($specialityName1, $specialityName2)

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Type;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\TypeResource;
 use App\Models\Type;
 
 /**
@@ -14,7 +15,7 @@ class ShowController extends Controller
      * @OA\Get(
      *     path="/api/types/{id}",
      *     summary="Получение типа проекта по ID",
-     *      tags={"Project"},
+     *      tags={"ProjectType"},
      *           @OA\Parameter(
      *         name="id",
      *         description="ID типа проекта",
@@ -27,16 +28,16 @@ class ShowController extends Controller
      *     @OA\Response(
      *         response="200",
      *         description="Тип проекта",
-     *
-     *         @OA\JsonContent(
-     *                 ref="#/components/schemas/ProjectType"
-     *
-     * )
+     *         @OA\JsonContent(ref="#/components/schemas/ProjectType")
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Тип проекта не найден",
      *     ),
      * )
      */
     public function __invoke(Type $type)
     {
-        return $type;
+        return new TypeResource($type);
     }
 }

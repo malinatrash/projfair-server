@@ -27,12 +27,12 @@ class ShowController extends Controller
      *     ),
      *     @OA\Response(
      *         response="200",
-     *         description="Проект",
-     *
-     *         @OA\JsonContent(
-     *                 ref="#/components/schemas/Project"
-     *
-     * )
+     *         description="Информация о проекте @TODO Понять какую информацию отдавать если проект активный архивный и т.д.",
+     *         @OA\JsonContent(ref="#/components/schemas/Project")
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Проект не найден",
      *     ),
      * )
      */
