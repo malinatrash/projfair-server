@@ -19,6 +19,7 @@ class ProjectResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'prevProjectId' => $this->prev_project_id,
 
             'title' => $this->title,
             'places' => $this->places,
@@ -52,11 +53,18 @@ class Project extends ProjectResource
 {
 
     /**
-     * ID Проекта
+     * ID проекта
      * @var int
      * @OA\Property()
      */
     public $id;
+
+    /**
+     * ID предшествующего проекта или null
+     * @var int
+     * @OA\Property()
+     */
+    public $prevProjectId;
 
     /**
      * Название проекта
