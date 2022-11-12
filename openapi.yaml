@@ -948,7 +948,10 @@ components:
     Project:
       properties:
         id:
-          description: 'ID Проекта'
+          description: 'ID проекта'
+          type: integer
+        prevProjectId:
+          description: 'ID предшествующего проекта или null'
           type: integer
         title:
           description: 'Название проекта'
