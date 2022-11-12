@@ -17,24 +17,6 @@ use Illuminate\Support\Collection;
  */
 class FilterController extends Controller
 {
-    /**
-     * @OA\Get(
-     *     path="/api/projects/filter",
-     *     summary="Получить проекты с фильтрацией @TODO PARAMS",
-     *      tags={"Project"},
-     *     @OA\Response(
-     *         response="200",
-     *         description="Проекты",
-     *
-     *         @OA\JsonContent(
-     *              type="array",
-     *                  @OA\Items(
-     *                 ref="#/components/schemas/Project"
-     *         )
-     * )
-     *     ),
-     * )
-     */
     private function stringToArray($arr)
     {
         if (is_string($arr)) {
@@ -51,6 +33,107 @@ class FilterController extends Controller
         return new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $page, $options);
     }
 
+    /**
+     * @OA\Get(
+     *     path="/api/projects/filter",
+     *     summary="Получить проекты с фильтрацией @TODO PARAMS",
+     *      tags={"Project"},
+     *      @OA\Parameter(
+     *         name="skills",
+     *         description="Массив ID скилов",
+     *          in = "query",
+     *         required=false,
+     *         @OA\Schema(
+     *             type="array",
+     *             @OA\Items(
+     *                  type="integer"
+     *                 )
+     *         )
+     *     ),
+     *      @OA\Parameter(
+     *         name="specialties",
+     *         description="Массив ID специальностей",
+     *          in = "query",
+     *         required=false,
+     *         @OA\Schema(
+     *             type="array",
+     *             @OA\Items(
+     *                  type="integer"
+     *                 )
+     *         )
+     *     ),
+     *      @OA\Parameter(
+     *         name="type",
+     *         description="Массив ID типов проекта",
+     *          in = "query",
+     *         required=false,
+     *         @OA\Schema(
+     *             type="array",
+     *             @OA\Items(
+     *                  type="integer"
+     *                 )
+     *         )
+     *     ),
+     *      @OA\Parameter(
+     *         name="state",
+     *         description="Массив ID состояний проекта",
+     *          in = "query",
+     *         required=false,
+     *         @OA\Schema(
+     *             type="array",
+     *             @OA\Items(
+     *                  type="integer"
+     *                 )
+     *         )
+     *     ),
+     *      @OA\Parameter(
+     *         name="supervisor",
+     *         description="Массив ID руководителей",
+     *          in = "query",
+     *         required=false,
+     *         @OA\Schema(
+     *             type="array",
+     *             @OA\Items(
+     *                  type="integer"
+     *                 )
+     *         )
+     *     ),
+     *      @OA\Parameter(
+     *         name="difficulty",
+     *         description="Массив с сложностями",
+     *          in = "query",
+     *         required=false,
+     *         @OA\Schema(
+     *             type="array",
+     *             @OA\Items(
+     *                  type="integer"
+     *                 )
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response="200",
+     *         description="7 проектов на странице + навигация",
+     *          content={
+     *         @OA\MediaType(
+     *              mediaType="application/json",
+     *              @OA\Schema(
+     *                @OA\Property(
+     *                property="projectCount",
+     *                  type="integer",
+     *                  description="Общее количество проектов",
+     *                ),
+     *                @OA\Property(
+     *                 property="data",
+     *                 type="array",
+     *                 description="Массив проектов",
+     *                 @OA\Items(ref="#/components/schemas/Project")
+     *                ),
+     *              )
+     *          )
+     *          }
+     *     ),
+     * )
+     */
     public function __invoke(Request $request)
     {
         $candidate = $request->get('candidate');

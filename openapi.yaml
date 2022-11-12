@@ -7,7 +7,8 @@ paths:
       summary: 'Авторизация через кампус'
       operationId: 9d55367cf81c991ca0964d5d8f0dd060
       responses:
-        '200': {  }
+        '200':
+          description: 'Пользователь авторизован'
   /campus_out:
     get:
       tags:
@@ -15,7 +16,8 @@ paths:
       summary: 'Выход из аккаунта'
       operationId: a12c2317fbb07a89c3eef2cde10f4dfd
       responses:
-        '200': {  }
+        '200':
+          description: 'Пользователь вышел из аккаунта'
   /api/arhiveProjects:
     get:
       tags:
@@ -379,16 +381,72 @@ paths:
       tags:
         - Project
       summary: 'Получить проекты с фильтрацией @TODO PARAMS'
-      operationId: f6980616c8b381ecfd091dc09561d9b3
+      operationId: 3172f11dfe97cf7f45f02c67fdfc86e5
+      parameters:
+        -
+          name: skills
+          in: query
+          description: 'Массив ID скилов'
+          required: false
+          schema:
+            type: array
+            items:
+              type: integer
+        -
+          name: specialties
+          in: query
+          description: 'Массив ID специальностей'
+          required: false
+          schema:
+            type: array
+            items:
+              type: integer
+        -
+          name: type
+          in: query
+          description: 'Массив ID типов проекта'
+          required: false
+          schema:
+            type: array
+            items:
+              type: integer
+        -
+          name: state
+          in: query
+          description: 'Массив ID состояний проекта'
+          required: false
+          schema:
+            type: array
+            items:
+              type: integer
+        -
+          name: supervisor
+          in: query
+          description: 'Массив ID руководителей'
+          required: false
+          schema:
+            type: array
+            items:
+              type: integer
+        -
+          name: difficulty
+          in: query
+          description: 'Массив с сложностями'
+          required: false
+          schema:
+            type: array
+            items:
+              type: integer
       responses:
         '200':
-          description: Проекты
+          description: '7 проектов на странице + навигация'
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Project'
+                properties:
+                  projectCount: { description: 'Общее количество проектов', type: integer }
+                  data: { description: 'Массив проектов', type: array, items: { $ref: '#/components/schemas/Project' } }
+                type: object
   '/api/projects/{id}/participants':
     get:
       tags:

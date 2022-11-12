@@ -20,6 +20,7 @@ class LogoutController extends Controller
      *     tags={"Auth"},
      *     @OA\Response(
      *         response="200",
+     *         description="Пользователь вышел из аккаунта",
      *     )
      * )
      * )

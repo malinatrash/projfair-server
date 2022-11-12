@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Campus;
 use App\Http\Controllers\Controller;
 use App\Models\Candidate;
 use App\Models\Supervisor;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Str;
 
@@ -21,16 +20,18 @@ class LoginController extends Controller
      *     tags={"Auth"},
      *     @OA\Response(
      *         response="200",
+     *         description="Пользователь авторизован",
+     *
      *     )
      * )
      * )
      */
-    function __invoke()
+    public function __invoke()
     {
         $return = false;
         $APP = [
-            'ID'    => 'local.6149ff4c7fcf40.88217011',
-            'CODE'  => 'hpSC3PDk3TGpW1tWTqozH67k2JCD9n6ZY00Zp501baj8sNWvFW'
+            'ID' => 'local.6149ff4c7fcf40.88217011',
+            'CODE' => 'hpSC3PDk3TGpW1tWTqozH67k2JCD9n6ZY00Zp501baj8sNWvFW',
         ];
 
         //  ЭТАП 1 - авторизация учетной записи в ЛИЧНОМ КАБИНЕТЕ
@@ -52,13 +53,16 @@ class LoginController extends Controller
                 'https://int.istu.edu/oauth/token/?grant_type=authorization_code',
                 'code=' . $_REQUEST['code'],
                 'client_id=' . $APP['ID'],
-                'client_secret=' . $APP['CODE']
+                'client_secret=' . $APP['CODE'],
             ]);
             //  выполнение запроса и обработка ответа
 
             $data = @file_get_contents($url);
 
-            if (explode(' ', $http_response_header[0])[1] !== '200') return false;
+            if (explode(' ', $http_response_header[0])[1] !== '200') {
+                return false;
+            }
+
             $data = json_decode($data, true);
         }
 
@@ -68,20 +72,28 @@ class LoginController extends Controller
             $url = $data['client_endpoint'] . 'user.info.json?auth=' . $data['access_token'];
             //  выполнение запроса и обработка ответа
             $data = @file_get_contents($url);
-            if (explode(' ', $http_response_header[0])[1] !== '200') return false;
+            if (explode(' ', $http_response_header[0])[1] !== '200') {
+                return false;
+            }
+
             $data = json_decode($data, true);
             //  проверка наличия структуры данных
-            if (isset($data['result']['email'])) $return = $data['result'];
+            if (isset($data['result']['email'])) {
+                $return = $data['result'];
+            }
+
         }
 
         $api_token = null;
         setcookie('is_student', $return['is_student']);
-        if ($return['is_student'])
+        if ($return['is_student']) {
             $api_token = $this->authStudent($return);
-        else
+        } else {
             $api_token = $this->authTeacher($return);
+        }
+
         setcookie('token', $api_token, ['httponly' => true]);
-        return redirect('/');;
+        return redirect('/');
         //json_encode(['token' => $api_token]);
     }
 
@@ -101,14 +113,14 @@ class LoginController extends Controller
                 'email' => $email,
                 'position' => $position,
                 'about' => '',
-                'api_token' => $api_token
+                'api_token' => $api_token,
             ]);
         } else {
             Supervisor::where('fio', $fio)->limit(1)->update([
                 'fio' => $fio,
                 'email' => $email,
                 'position' => $position,
-                'api_token' => $api_token
+                'api_token' => $api_token,
             ]);
         }
 
@@ -128,7 +140,6 @@ class LoginController extends Controller
         $course = date('m') > 8 ? date('y') - $course + 1 : date('y') - $course;
         $api_token = hash('sha256', Str::random(60));
 
-
         if ($user->count() == 0) {
             Candidate::create([
                 'fio' => $fio,
@@ -138,7 +149,7 @@ class LoginController extends Controller
                 'about' => '',
                 'course' => $course,
                 'training_group' => $group,
-                'api_token' => $api_token
+                'api_token' => $api_token,
             ]);
         } else {
             Candidate::where('numz', $numz)->limit(1)->update([
@@ -146,7 +157,7 @@ class LoginController extends Controller
                 'email' => $return['email'],
                 'course' => $course,
                 'training_group' => $group,
-                'api_token' => $api_token
+                'api_token' => $api_token,
             ]);
         }
 
