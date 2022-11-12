@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Institute;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\InstituteResource;
 use App\Models\Institute;
-use Illuminate\Http\Request;
 
 /**
  * Получить информацию об институте
@@ -23,7 +23,7 @@ class ShowController extends Controller
      *         required=true,
      *         @OA\Schema(
      *             type="integer"
-     *         ) 
+     *         )
      *     ),
      *     @OA\Response(
      *         response="200",
@@ -33,8 +33,8 @@ class ShowController extends Controller
      * )
      * )
      */
-    public function __invoke(Institute $institute) // Получить информацию об институте
+    public function __invoke(Institute $institute)
     {
-        return $institute;
+        return new InstituteResource($institute);
     }
 }
