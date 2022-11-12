@@ -3,35 +3,38 @@
 namespace App\Http\Controllers\Candidate;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\SkillResource;
 use App\Models\Candidate;
-use App\Models\CandidatesSkill;
 use Illuminate\Http\Request;
 
 /**
- * Получение навыков студента
+ * Получение навыков авторизованного студента
  */
 class SkillsController extends Controller
 {
     /**
      * @OA\Get(
      *     path="/api/candidate/skills",
-     *     summary="Получение навыков студента",
+     *     summary="Получение навыков авторизованного студента",
      *     tags={"Candidate"},
      *     @OA\Response(
      *         response="200",
-     *         description="Получение навыков студента @TODO RESPONCE",
-     *         @OA\JsonContent(ref="#/components/schemas/CandidateSkill")
+     *         description="Получение навыков студента",
+     *         @OA\JsonContent(
+     *              type="array",
+     *              @OA\Items(
+     *                   ref="#/components/schemas/Skill"
+     *              )
+     *
+     *          )
      *     )
      * )
      * )
      */
-    public function __invoke(Request $request) // Получение навыков студента
+    public function __invoke(Request $request)
     {
-        $id = $request->get('candidate')->id;
+        $candidateSkills = $request->get('candidate')->skills;
 
-        $data = CandidatesSkill::join('skills', 'skills.id', '=', 'candidates_skills.id_skill')
-            ->where('id_candidate', $id)->select('skills.id', 'skills.skill')->get();
-
-        return $data;
+        return SkillResource::collection($candidateSkills);
     }
 }

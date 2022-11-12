@@ -35,7 +35,7 @@ class Candidate extends Model
 
     /**
      * Проект, на котором учавствует студент или null
-     * 
+     *
      * @return Проект или null
      */
     public function activeProject()
@@ -52,7 +52,7 @@ class Candidate extends Model
 
     /**
      * Архивные проекты студента или null
-     * 
+     *
      * @return Проект или null
      */
     public function arhiveProjects()

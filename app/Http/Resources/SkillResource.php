@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Models\SkillCategory;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
@@ -20,11 +21,10 @@ class SkillResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'skillCategory_id' => $this->skillCategory_id,
+            'skillCategory' => new SkillCategoryResource(SkillCategory::find($this->skillCategory_id)),
         ];
     }
 }
-
 
 /**
  * @OA\Schema()
@@ -48,7 +48,7 @@ class Skill extends SkillResource
     /**
      * ID категории скила
      * @var int
-     * @OA\Property()
+     * @OA\Property(ref="#/components/schemas/SkillCategory")
      */
-    public $skillCategory_id;
+    public $skillCategory;
 }

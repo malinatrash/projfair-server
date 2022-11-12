@@ -224,15 +224,17 @@ paths:
     get:
       tags:
         - Candidate
-      summary: 'Получение навыков студента'
+      summary: 'Получение навыков авторизованного студента'
       operationId: 386620a303432a949055b472a169a0ac
       responses:
         '200':
-          description: 'Получение навыков студента @TODO RESPONCE'
+          description: 'Получение навыков студента'
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/CandidateSkill'
+                type: array
+                items:
+                  $ref: '#/components/schemas/Skill'
   '/api/institutes/getBySpecialityName/{specialityName}':
     get:
       tags:
@@ -1045,9 +1047,8 @@ components:
         name:
           description: 'Название скила'
           type: string
-        skillCategory_id:
-          description: 'ID категории скила'
-          type: integer
+        skillCategory:
+          $ref: '#/components/schemas/SkillCategory'
       type: object
     SpecialityCourse:
       properties:
