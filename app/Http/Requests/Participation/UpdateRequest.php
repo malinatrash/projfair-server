@@ -4,6 +4,9 @@ namespace App\Http\Requests\Participation;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * Обновление приоритета заявки авторизованного пользователя
+ */
 class UpdateRequest extends FormRequest
 {
     /**

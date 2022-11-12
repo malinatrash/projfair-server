@@ -77,10 +77,18 @@ paths:
         -
           name: id
           in: path
-          description: 'ID Заявки @TODO BODY'
+          description: 'ID Заявки'
           required: true
           schema:
             type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                priority:
+                  type: integer
+              type: object
       responses:
         '200':
           description: 'Заявка изменена'

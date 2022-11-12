@@ -20,12 +20,23 @@ class UpdateController extends Controller
      *      tags={"Participation"},
      *      @OA\Parameter(
      *         name="id",
-     *         description="ID Заявки @TODO BODY",
+     *         description="ID Заявки",
      *          in = "path",
      *         required=true,
      *         @OA\Schema(
      *             type="integer"
-     *         ) 
+     *         )
+     *     ),
+     *     @OA\RequestBody(
+     *         @OA\MediaType(
+     *             mediaType="application/json",
+     *             @OA\Schema(
+     *                 @OA\Property(
+     *                     property="priority",
+     *                     type="integer",
+     *                 ),
+     *             )
+     *         )
      *     ),
      *     @OA\Response(
      *         response="200",
@@ -48,7 +59,7 @@ class UpdateController extends Controller
         }
 
         $participation->update([
-            'priority' => $data['priority']
+            'priority' => $data['priority'],
         ]);
         return $participation;
     }
