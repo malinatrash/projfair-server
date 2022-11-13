@@ -471,6 +471,27 @@ paths:
             type: array
             items:
               type: integer
+        -
+          name: order
+          in: query
+          description: 'Порядок сортировки (возрастающий - asc, убывающий - desc)'
+          required: false
+          schema:
+            type: string
+        -
+          name: sortBy
+          in: query
+          description: 'По какому полю сортировать'
+          required: false
+          schema:
+            type: string
+        -
+          name: pageSize
+          in: query
+          description: 'Размер страницы. Позитивное число'
+          required: false
+          schema:
+            type: integer
       responses:
         '200':
           description: '7 проектов на странице + навигация'

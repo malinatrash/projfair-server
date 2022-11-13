@@ -111,6 +111,33 @@ class FilterController extends Controller
      *                 )
      *         )
      *     ),
+     *      @OA\Parameter(
+     *         name="order",
+     *         description="Порядок сортировки (возрастающий - asc, убывающий - desc)",
+     *          in = "query",
+     *         required=false,
+     *         @OA\Schema(
+     *             type="string",
+     *         )
+     *     ),
+     *      @OA\Parameter(
+     *         name="sortBy",
+     *         description="По какому полю сортировать",
+     *          in = "query",
+     *         required=false,
+     *         @OA\Schema(
+     *             type="string",
+     *         )
+     *     ),
+     *      @OA\Parameter(
+     *         name="pageSize",
+     *         description="Размер страницы. Позитивное число",
+     *          in = "query",
+     *         required=false,
+     *         @OA\Schema(
+     *             type="integer",
+     *         )
+     *     ),
      *     @OA\Response(
      *         response="200",
      *         description="7 проектов на странице + навигация",
@@ -138,6 +165,16 @@ class FilterController extends Controller
     public function __invoke(Request $request)
     {
         $projectCollection = Project::with('skills', 'specialities', 'type', 'state', 'supervisors')->get();
+        $sortBy = $request->get('sortBy') ?? 'id';
+
+        $order = $request->get('order') ?? 'asc';
+        if ($order == 'asc') {
+            $projectCollection = $projectCollection->sortBy($sortBy);
+
+        } else {
+            $projectCollection = $projectCollection->sortByDesc($sortBy);
+        }
+
         $candidate = $request->get('candidate');
         if ($candidate != null) {
             $candidateSpeciality = explode("-", $candidate['training_group'])[0];
@@ -273,12 +310,14 @@ class FilterController extends Controller
         }
 
         $page = intval($request->input('page'));
-        $perPage = 7;
-
+        $pageSize = intval($request->input('pageSize')) ?? 7;
+        if ($pageSize <= 0) {
+            $pageSize = 7;
+        }
         $projectCount = count($projectCollection);
-        $startIndex = $perPage * ($page);
+        $startIndex = $pageSize * ($page);
 
-        $projectCollection = $projectCollection->slice($startIndex, $perPage);
+        $projectCollection = $projectCollection->slice($startIndex, $pageSize);
 
         return response()->json(['data' => ProjectResource::collection($projectCollection), 'projectCount' => $projectCount])->setStatusCode(200);
     }
