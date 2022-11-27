@@ -509,6 +509,72 @@ paths:
           description: 'Преподаватель изменен'
         '404':
           description: 'Преподаватель не найден'
+  '/api/admin/types/${id}':
+    delete:
+      tags:
+        - ADMIN
+      summary: 'Удалить тип проекта'
+      operationId: ac4c955ae2fa550c7e3df8bfaea48f18
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID типа проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Тип проекта удален'
+        '404':
+          description: 'Тип проекта не найден'
+    patch:
+      tags:
+        - ADMIN
+      summary: 'Обновить тип проекта'
+      operationId: ddc84a394082d962b2d340fb2913c855
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID типа проекта'
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: 'Параметры для создания типа проекта'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                type:
+                  type: string
+              type: object
+      responses:
+        '200':
+          description: 'Тип проекта изменен'
+        '404':
+          description: 'Тип проекта не найден'
+  /api/admin/types:
+    post:
+      tags:
+        - ADMIN
+      summary: 'Создать тип проекта'
+      operationId: c939d2a21adb706922ffabca2284bbfa
+      requestBody:
+        description: 'Параметры для создания типа проекта'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                type:
+                  type: string
+              type: object
+      responses:
+        '200':
+          description: 'Тип проекта создан'
   /campus_auth:
     get:
       tags:
@@ -815,7 +881,7 @@ paths:
     get:
       tags:
         - Project
-      summary: 'Получить проекты с фильтрацией @TODO PARAMS'
+      summary: 'Получить проекты с фильтрацией'
       operationId: 3172f11dfe97cf7f45f02c67fdfc86e5
       parameters:
         -
@@ -1148,23 +1214,6 @@ paths:
       responses:
         '200':
           description: 'Проект изменен'
-  '/api/types/${id}':
-    delete:
-      tags:
-        - UNUSED
-      summary: 'Удалить тип проекта'
-      operationId: 517d5f851a8c41a434d3e1709d377da1
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID типа проекта'
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: 'Тип проекта удален'
   /api/types/:
     get:
       tags:
@@ -1203,32 +1252,6 @@ paths:
                 $ref: '#/components/schemas/ProjectType'
         '404':
           description: 'Тип проекта не найден'
-  /api/states:
-    post:
-      tags:
-        - UNUSED
-      summary: 'Создать тип проекта @TODO BODY'
-      operationId: f5563dbf3d8c3c307df1f3e68b2e5372
-      responses:
-        '200':
-          description: 'Тип проекта создан'
-  '/api/states/${id}':
-    patch:
-      tags:
-        - UNUSED
-      summary: 'Обновить тип проекта'
-      operationId: 4584c215f2703fbf371c5d2d6ab00082
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID типа проекта @TODO BODY'
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: 'Тип проекта изменен'
 components:
   schemas:
     Candidate:

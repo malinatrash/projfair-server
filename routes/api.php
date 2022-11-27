@@ -45,6 +45,11 @@ Route::group(['prefix' => 'admin'], function () {
         Route::patch('/{state}', App\Http\Controllers\Admin\State\UpdateController::class);
         Route::post('/', App\Http\Controllers\Admin\State\StoreController::class);
     });
+    Route::group(['prefix' => 'types'], function () {
+        Route::delete('/{type}', App\Http\Controllers\Admin\Type\DeleteController::class);
+        Route::patch('/{type}', App\Http\Controllers\Admin\Type\UpdateController::class);
+        Route::post('/', App\Http\Controllers\Admin\Type\StoreController::class);
+    });
 
 });
 
@@ -65,9 +70,7 @@ Route::group(['prefix' => 'projects'], function () { // Получения ин�
 Route::group(['namespace' => 'Type', 'prefix' => 'types'], function () { // Получение типов проекта
     Route::get('/{type}', App\Http\Controllers\Type\ShowController::class); // Получение одного типа проекта
     Route::get('/', App\Http\Controllers\Type\IndexController::class); // Получение всех типов проекта
-    // Route::delete('/{type}', 'DeleteController');
-    // Route::patch('/{type}', 'UpdateController');
-    // Route::post('/', 'StoreController');
+
 });
 
 Route::group(['namespace' => 'State', 'prefix' => 'states'], function () { // Получение состояний проекта

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Type;
+namespace App\Http\Controllers\Admin\Type;
 
 use App\Http\Controllers\Controller;
 use App\Models\Type;
@@ -12,9 +12,9 @@ class DeleteController extends Controller
 {
     /**
      * @OA\Delete(
-     *     path="/api/types/${id}",
+     *     path="/api/admin/types/${id}",
      *     summary="Удалить тип проекта",
-     *      tags={"UNUSED"},
+     *      tags={"ADMIN"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID типа проекта",
@@ -27,6 +27,10 @@ class DeleteController extends Controller
      *     @OA\Response(
      *         response="200",
      *         description="Тип проекта удален",
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Тип проекта не найден",
      *     ),
      * )
      */
