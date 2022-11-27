@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Participation;
+namespace App\Http\Controllers\Admin\Participation;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ParticipationResource;
 use App\Models\Participation;
 
 /**
@@ -12,12 +13,12 @@ class IndexController extends Controller
 {
     /**
      * @OA\Get(
-     *     path="/api/participations",
+     *     path="/api/admin/participations",
      *     summary="Получить все заявки",
-     *      tags={"UNUSED"},
+     *      tags={"ADMIN"},
      *     @OA\Response(
      *         response="200",
-     *         description="Заявка создана",
+     *         description="Список всех заявок",
      *         @OA\JsonContent(
      *             type="array",
      *             @OA\Items(ref="#/components/schemas/Participation")
@@ -29,6 +30,6 @@ class IndexController extends Controller
     public function __invoke()
     {
         $participations = Participation::all();
-        return $participations;
+        return ParticipationResource::collection($participations);
     }
 }

@@ -1,5 +1,82 @@
 openapi: 3.0.0
 paths:
+  '/api/admin/participations/${id}':
+    delete:
+      tags:
+        - ADMIN
+      summary: 'Удаление заявки'
+      operationId: c59fd8cebecda6a8f4c23e55ec6ed094
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID Заявки'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Заявка удалена'
+  /api/admin/participations:
+    get:
+      tags:
+        - ADMIN
+      summary: 'Получить все заявки'
+      operationId: 08cfd783e97365a1e9560a470fdc89f9
+      responses:
+        '200':
+          description: 'Список всех заявок'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Participation'
+    post:
+      tags:
+        - ADMIN
+      summary: 'Создать заявку @TODO BODY'
+      operationId: 16176789c58375bad7d2c751c15b2b38
+      requestBody:
+        description: 'Параметры для создания заявки'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                priority:
+                  type: integer
+                state_id:
+                  type: integer
+                candidate_id:
+                  type: integer
+                project_id:
+                  type: integer
+              type: object
+      responses:
+        '200':
+          description: 'Заявка создана'
+  '/api/admin/participations/{id}':
+    get:
+      tags:
+        - ADMIN
+      summary: 'Получить заявку по ID'
+      operationId: 61dd4b50183c78e715843e31789bb0ff
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID Заявки'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Заявка
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Participation'
   /campus_auth:
     get:
       tags:
@@ -199,14 +276,6 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Participation'
-    post:
-      tags:
-        - UNUSED
-      summary: 'Создать заявку @TODO BODY'
-      operationId: 8a37594960b629a005376ebd3cccffb9
-      responses:
-        '200':
-          description: 'Заявка создана'
   '/api/candidates/{id}':
     get:
       tags:
@@ -349,27 +418,6 @@ paths:
                 $ref: '#/components/schemas/DeadLine'
         '404':
           description: 'Дедлайн не назначен'
-  '/api/participations/{id}':
-    get:
-      tags:
-        - UNUSED
-      summary: 'Создать заявку'
-      operationId: b28cd7bb37909d7fdcc968054afa8239
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID Заявки'
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: 'Заявка по ID'
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Institute'
   '/api/projects/${id}':
     delete:
       tags:

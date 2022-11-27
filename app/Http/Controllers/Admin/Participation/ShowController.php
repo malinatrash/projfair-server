@@ -1,21 +1,21 @@
 <?php
 
-namespace App\Http\Controllers\Participation;
+namespace App\Http\Controllers\Admin\Participation;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ParticipationResource;
 use App\Models\Participation;
-use Illuminate\Http\Request;
 
 /**
- * Получить заявку по ID UNUSED
+ * Получить заявку по ID
  */
 class ShowController extends Controller
 {
     /**
      * @OA\Get(
-     *     path="/api/participations/{id}",
-     *     summary="Создать заявку",
-     *      tags={"UNUSED"},
+     *     path="/api/admin/participations/{id}",
+     *     summary="Получить заявку по ID",
+     *      tags={"ADMIN"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID Заявки",
@@ -23,18 +23,18 @@ class ShowController extends Controller
      *         required=true,
      *         @OA\Schema(
      *             type="integer"
-     *         ) 
+     *         )
      *     ),
      *     @OA\Response(
      *         response="200",
-     *         description="Заявка по ID",
-     *         @OA\JsonContent(ref="#/components/schemas/Institute")
+     *         description="Заявка",
+     *         @OA\JsonContent(ref="#/components/schemas/Participation")
      *     ),
      * )
      * )
      */
     public function __invoke(Participation $participation)
     {
-        return $participation;
+        return new ParticipationResource($participation);
     }
 }

@@ -4,8 +4,9 @@ namespace App\Http\Requests\Participation;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreRequest extends FormRequest
+class StoreRequestAdminParticipation extends FormRequest
 {
+
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -27,7 +28,9 @@ class StoreRequest extends FormRequest
             'priority' => 'integer',
 
             // 'review' => 'string',
-            // 'state_id' => 'required|integer|exists:state_participations,id',
+            'state_id' => 'required|integer|exists:state_participations,id',
+            'candidate_id' => 'required|integer|exists:candidates,id',
+            'project_id' => 'required|integer|exists:projects,id',
         ];
     }
 }

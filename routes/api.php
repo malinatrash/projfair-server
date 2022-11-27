@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 // --------- ADMIN ROUTES ---------
 
-Route::middleware(['adminAuthProtected'])->group(function () {
+Route::group(['prefix' => ''], function () {
     Route::group(['prefix' => 'admin'], function () {
         Route::get('/skill', App\Http\Controllers\Admin\Skill\IndexController::class); // Получение всех скилов
     });
@@ -14,6 +14,13 @@ Route::middleware(['adminAuthProtected'])->group(function () {
     Route::group(['prefix' => 'admin'], function () {
         Route::get('/Institute', App\Http\Controllers\Admin\Institute\IndexController::class); // Получение всех институтов
     });
+    Route::group(['prefix' => 'admin/participations'], function () {
+        Route::get('/{participation}', App\Http\Controllers\Admin\Participation\ShowController::class);
+        Route::delete('/{participation}', App\Http\Controllers\Admin\Participation\DeleteController::class);
+        Route::post('/', App\Http\Controllers\Admin\Participation\StoreController::class);
+        Route::get('/', App\Http\Controllers\Admin\Participation\IndexController::class);
+    });
+
 });
 
 // --------- USER ROUTES ---------
@@ -79,9 +86,7 @@ Route::group(['namespace' => 'Institute', 'prefix' => 'institutes'], function ()
 Route::group(['namespace' => 'Participation', 'prefix' => 'participations'], function () {
     Route::delete('/{participation}', App\Http\Controllers\Participation\DeleteController::class)->middleware(CandidateAuthProtected::class); // Удаление заявки
     Route::patch('/{participation}', App\Http\Controllers\Participation\UpdateController::class)->middleware(CandidateAuthProtected::class); // Изменение заявки
-    // Route::get('/{participation}', 'ShowController');
-    // Route::post('/', 'StoreController');
-    // Route::get('/', 'IndexController');
+
 });
 
 Route::middleware(['candidateAuthProtected'])->group(function () { // роуты авторизованного студента
