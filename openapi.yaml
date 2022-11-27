@@ -56,6 +56,8 @@ paths:
       responses:
         '200':
           description: 'Заявка создана'
+        '400':
+          description: 'У кандидата уже есть заявка на этот проект'
   '/api/admin/participations/{id}':
     get:
       tags:
