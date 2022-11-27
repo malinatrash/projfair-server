@@ -629,9 +629,9 @@ paths:
           description: 'Вы уже подали 3 заявки'
     delete:
       tags:
-        - DEPRECATED
-      summary: 'Отозвать заявку'
-      operationId: 77e827e080b1a10cdce47ad3f748810c
+        - Participation
+      summary: 'Удаление заявки у авторизованного студента'
+      operationId: 6700919707cec7e6144a07d3c23a342e
       parameters:
         -
           name: id
@@ -642,7 +642,9 @@ paths:
             type: integer
       responses:
         '200':
-          description: 'Заявка отозвана'
+          description: 'Заявка удалена'
+        '403':
+          description: 'Вы не можете удалить чужую заявку'
     patch:
       tags:
         - Participation
@@ -1144,29 +1146,6 @@ paths:
                 $ref: '#/components/schemas/ProjectState'
         '404':
           description: 'Состояние проекта не найдено'
-  /supervisor/projects:
-    get:
-      tags:
-        - DEPRECATED
-      summary: 'Получение информации о проектах руководителя через апи токен'
-      operationId: eccda7a4267e3786fcf3e51713f6f33f
-      responses:
-        '200':
-          description: 'Информация о проектах руководителя @TODO REPONSE'
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Project'
-    post:
-      tags:
-        - DEPRECATED
-      summary: 'Создать проект (Преподаватель) @TODO BODY'
-      operationId: 0bc60c65e2331e17202ee47612f8123a
-      responses:
-        '200':
-          description: 'Проект создан'
   /api/supervisors/:
     get:
       tags:
@@ -1182,12 +1161,12 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Supervisor'
-  /api/supervisor/participation:
+  /api/supervisor/projectsOnReview:
     get:
       tags:
-        - DEPRECATED
-      summary: 'получение информации о заявках руководителя'
-      operationId: 0bb95332a2f9c358fa2a750a7c723908
+        - 'SUPERVISOR CABINET'
+      summary: 'Получить проекты на рассмотрении. Делает преподаватель'
+      operationId: 7021a33c16c7ecbbb801e0c611ab203d
       responses:
         '200':
           description: 'Информации о заявках руководителя @TODO RESPONCE'
@@ -1196,24 +1175,61 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Participation'
-  '/api/supervisor/projects/{id}':
-    patch:
+                  $ref: '#/components/schemas/Project'
+  api/supervisor/projectsOnReview:
+    post:
       tags:
-        - DEPRECATED
-      summary: 'Обновить проект преподавателя'
-      operationId: 9ca77789f41c28b8a3ad9cf01d3caafd
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID проекта @TODO BODY'
-          required: true
-          schema:
-            type: integer
+        - 'SUPERVISOR CABINET'
+      summary: 'Создать проект на рассмотрении. Делает преподаватель'
+      operationId: 6dac10a008a83382b64be7d6f56964d2
+      requestBody:
+        description: 'Параметры для создания проекта'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                title:
+                  type: string
+                places:
+                  type: integer
+                goal:
+                  type: string
+                description:
+                  type: string
+                difficulty:
+                  type: integer
+                date_start:
+                  type: string
+                  format: date
+                date_end:
+                  type: string
+                  format: date
+                requirements:
+                  type: string
+                customer:
+                  type: string
+                product_result:
+                  type: string
+                study_result:
+                  type: string
+                additional_inf:
+                  type: string
+                type_id:
+                  type: integer
+                supervisor_ids:
+                  type: array
+                  items: { type: integer }
+                skill_ids:
+                  type: array
+                  items: { type: integer }
+                speciality_ids:
+                  type: array
+                  items: { type: integer }
+              type: object
       responses:
         '200':
-          description: 'Проект изменен'
+          description: 'Проект подан на рассмотрение'
   /api/types/:
     get:
       tags:

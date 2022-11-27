@@ -2,6 +2,7 @@
 
 use App\Http\Middleware\CandidateAuth;
 use App\Http\Middleware\CandidateAuthProtected;
+use App\Http\Middleware\SupervisorAuthProtected;
 use Illuminate\Support\Facades\Route;
 
 // --------- ADMIN ROUTES ---------
@@ -51,6 +52,13 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('/', App\Http\Controllers\Admin\Type\StoreController::class);
     });
 
+});
+
+// --------- SUPERVISORS CABINET ROUTES ---------
+
+Route::group(['prefix' => 'supervisor'], function () {
+    Route::post('/projectOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\StoreController::class)->middleware(SupervisorAuthProtected::class);
+    Route::get('/projectOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\IndexController::class)->middleware(SupervisorAuthProtected::class);
 });
 
 // --------- USER ROUTES ---------
@@ -117,11 +125,3 @@ Route::middleware(['candidateAuthProtected'])->group(function () { // роуты
 });
 
 Route::get('/participations_deadline', App\Http\Controllers\Participation\DeadLineController::class); // Получение дедлайна подачи заявки
-
-// Route::get('/supervisor/participation', 'Supervisor\\ParticipationsController');  // DEPRECATED получение информации о заявках руководителя
-// Route::get('/supervisor/projects', 'Supervisor\\ProjectsController'); // DEPRECATED Получение информации о проектах руководителя через апи токен
-
-// Route::get('/supervisor/projects/{id}/participation', 'Supervisor\\ParticipationsOnProjectController')->where('id', '[0-9]+')->middleware(CandidateAuthProtected::class);
-// Route::put('/supervisor', 'Supervisor\\UpdateController')->middleware(CandidateAuthProtected::class);
-// Route::post('/supervisor/projects', 'Supervisor\\CreateProjectController')->middleware(CandidateAuthProtected::class);
-// Route::put('/supervisor/projects/{id}', 'Supervisor\\UpdateProjectController')->where('id', '[0-9]+')->middleware(CandidateAuthProtected::class);

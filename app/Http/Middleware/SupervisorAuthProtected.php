@@ -2,10 +2,11 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\Supervisor;
 use Closure;
 use Illuminate\Http\Request;
 
-class AdminAuthProtected
+class SupervisorAuthProtected
 {
     public function handle(Request $request, Closure $next)
     {
@@ -17,6 +18,7 @@ class AdminAuthProtected
         // if (count($admins) == 0) {
         //     abort(403, 'Access denied');
         // }
+        $request->attributes->add(['supervisor' => Supervisor::find(2)]);
         // $request->attributes->add(['admin' => $admins[0]]);
 
         return $next($request);
