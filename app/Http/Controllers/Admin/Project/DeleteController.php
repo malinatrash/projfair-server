@@ -1,24 +1,24 @@
 <?php
 
-namespace App\Http\Controllers\Project;
+namespace App\Http\Controllers\Admin\Project;
 
 use App\Http\Controllers\Controller;
 use App\Models\Project;
 
 /**
- * Удалить проект (UNUSED)
+ * Удалить проект
  */
 class DeleteController extends Controller
 {
     /**
      * @OA\Delete(
-     *     path="/api/projects/${id}",
+     *     path="/api/admin/projects/${id}",
      *     summary="Удаление проекта",
-     *      tags={"UNUSED"},
+     *      tags={"ADMIN"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID проекта",
-     *          in = "path",
+     *         in = "path",
      *         required=true,
      *         @OA\Schema(
      *             type="integer"
@@ -27,6 +27,10 @@ class DeleteController extends Controller
      *     @OA\Response(
      *         response="200",
      *         description="Проект удален",
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Проект не найден",
      *     ),
      * )
      */

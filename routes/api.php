@@ -6,20 +6,28 @@ use Illuminate\Support\Facades\Route;
 
 // --------- ADMIN ROUTES ---------
 
-Route::group(['prefix' => ''], function () {
-    Route::group(['prefix' => 'admin'], function () {
-        Route::get('/skill', App\Http\Controllers\Admin\Skill\IndexController::class); // Получение всех скилов
+Route::group(['prefix' => 'admin'], function () {
+    Route::group(['prefix' => 'skill'], function () {
+        Route::get('/', App\Http\Controllers\Admin\Skill\IndexController::class); // Получение всех скилов
     });
 
-    Route::group(['prefix' => 'admin'], function () {
-        Route::get('/Institute', App\Http\Controllers\Admin\Institute\IndexController::class); // Получение всех институтов
+    Route::group(['prefix' => 'Institute'], function () {
+        Route::get('/', App\Http\Controllers\Admin\Institute\IndexController::class); // Получение всех институтов
     });
-    Route::group(['prefix' => 'admin/participations'], function () {
+
+    Route::group(['prefix' => 'participations'], function () {
         Route::get('/{participation}', App\Http\Controllers\Admin\Participation\ShowController::class);
         Route::patch('/{participation}', App\Http\Controllers\Admin\Participation\UpdateController::class);
         Route::delete('/{participation}', App\Http\Controllers\Admin\Participation\DeleteController::class);
         Route::post('/', App\Http\Controllers\Admin\Participation\StoreController::class);
         Route::get('/', App\Http\Controllers\Admin\Participation\IndexController::class);
+    });
+
+    Route::group(['prefix' => 'projects'], function () {
+        Route::delete('/{project}', App\Http\Controllers\Admin\Project\DeleteController::class);
+        Route::patch('/{project}', App\Http\Controllers\Admin\Project\UpdateController::class);
+        Route::post('/', App\Http\Controllers\Admin\Project\StoreController::class);
+        Route::get('/', App\Http\Controllers\Admin\Project\IndexController::class);
     });
 
 });
@@ -39,10 +47,6 @@ Route::group(['prefix' => 'projects'], function () { // Получения ин�
     Route::get('/{project}', App\Http\Controllers\Project\ShowController::class); // Получение информации о проекте
     Route::get('/{project}/participants', App\Http\Controllers\Project\GetParticipantsController::class); // Получение участников на проекте
 
-    // Route::delete('/{project}', 'DeleteController');
-    // Route::patch('/{project}', 'UpdateController');
-    // Route::post('/', 'StoreController');
-    // Route::get('/', 'IndexController');
 });
 
 Route::group(['namespace' => 'Type', 'prefix' => 'types'], function () { // Получение типов проекта

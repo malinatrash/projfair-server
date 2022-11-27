@@ -22,10 +22,8 @@ class ProjectsController extends Controller
      *
      *         @OA\JsonContent(
      *              type="array",
-     *                  @OA\Items(
-     *                 ref="#/components/schemas/Project"
+     *              @OA\Items(ref="#/components/schemas/Project")
      *         )
-     * )
      *     ),
      * )
      */

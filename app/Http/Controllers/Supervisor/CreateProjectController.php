@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Supervisor;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Project\StoreRequest;
+use App\Http\Requests\Project\StoreRequestAdminProject;
 use App\Models\Project;
 use App\Models\ProjectSkill;
 use App\Models\Supervisor;
@@ -25,7 +25,7 @@ class CreateProjectController extends Controller
      *     ),
      * )
      */
-    public function __invoke(StoreRequest $request)
+    public function __invoke(StoreRequestAdminProject $request)
     {
         $token = $request->get('api_token');
         $id = Supervisor::where('api_token', $token)->select('id')->get()[0]['id'];

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Candidate;
 
 use App\Http\Controllers\Controller;
-use App\Models\Candidate;
 use App\Models\Participation;
 use App\Models\StateParticipation;
 use Illuminate\Http\Request;
@@ -17,7 +16,7 @@ class DeleteParticipationController extends Controller
      * @OA\Delete(
      *     path="/api/participations/${id}",
      *     summary="Отозвать заявку",
-     *      tags={"UNUSED"},
+     *      tags={"DEPRECATED"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID Заявки",
@@ -25,7 +24,7 @@ class DeleteParticipationController extends Controller
      *         required=true,
      *         @OA\Schema(
      *             type="integer"
-     *         ) 
+     *         )
      *     ),
      *     @OA\Response(
      *         response="200",
@@ -45,7 +44,7 @@ class DeleteParticipationController extends Controller
             return response()->json(['error' => 'Project not found'], 400);
         }
         $data = Participation::where('id_candidate', $id)->where('id_project', $id_project)->update([
-            'id_state' => $id_cancelState
+            'id_state' => $id_cancelState,
         ]);
 
         return response()->json(['status' => 'OK'], 200);

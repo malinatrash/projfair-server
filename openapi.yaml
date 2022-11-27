@@ -113,6 +113,159 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Participation'
+  '/api/admin/projects/${id}':
+    delete:
+      tags:
+        - ADMIN
+      summary: 'Удаление проекта'
+      operationId: 3e5ccd2e6e3d9bd429b36cae215713cf
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Проект удален'
+        '404':
+          description: 'Проект не найден'
+    patch:
+      tags:
+        - ADMIN
+      summary: 'Обновить проект'
+      operationId: e2c4a11d12a4215787f8f46b11c805d8
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID проекта @TODO BODY'
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: 'Параметры для создания проекта'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                title:
+                  type: string
+                places:
+                  type: integer
+                goal:
+                  type: string
+                description:
+                  type: string
+                difficulty:
+                  type: integer
+                date_start:
+                  type: string
+                date_end:
+                  type: string
+                requirements:
+                  type: string
+                customer:
+                  type: string
+                product_result:
+                  type: string
+                study_result:
+                  type: string
+                additional_inf:
+                  type: string
+                state_id:
+                  type: integer
+                type_id:
+                  type: integer
+                supervisor_ids:
+                  type: array
+                  items: { type: integer }
+                skill_ids:
+                  type: array
+                  items: { type: integer }
+                speciality_ids:
+                  type: array
+                  items: { type: integer }
+              type: object
+      responses:
+        '200':
+          description: 'Проект изменен'
+        '404':
+          description: 'Проект не найден'
+  /api/admin/projects/:
+    get:
+      tags:
+        - ADMIN
+      summary: 'Получить информацию о всех проектах'
+      operationId: 61aaffa080da129d88459601deafa221
+      responses:
+        '200':
+          description: 'Все проекты'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Project'
+  /api/admin/projects:
+    post:
+      tags:
+        - ADMIN
+      summary: 'Создать проект'
+      operationId: 111fb580612eb7b269c09a8bc49db764
+      requestBody:
+        description: 'Параметры для создания проекта'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                title:
+                  type: string
+                places:
+                  type: integer
+                goal:
+                  type: string
+                description:
+                  type: string
+                difficulty:
+                  type: integer
+                date_start:
+                  type: string
+                  format: date
+                date_end:
+                  type: string
+                  format: date
+                requirements:
+                  type: string
+                customer:
+                  type: string
+                product_result:
+                  type: string
+                study_result:
+                  type: string
+                additional_inf:
+                  type: string
+                state_id:
+                  type: integer
+                type_id:
+                  type: integer
+                supervisor_ids:
+                  type: array
+                  items: { type: integer }
+                skill_ids:
+                  type: array
+                  items: { type: integer }
+                speciality_ids:
+                  type: array
+                  items: { type: integer }
+              type: object
+      responses:
+        '200':
+          description: 'Проект создан'
   /campus_auth:
     get:
       tags:
@@ -167,7 +320,7 @@ paths:
           description: 'Вы уже подали 3 заявки'
     delete:
       tags:
-        - UNUSED
+        - DEPRECATED
       summary: 'Отозвать заявку'
       operationId: 77e827e080b1a10cdce47ad3f748810c
       parameters:
@@ -454,39 +607,6 @@ paths:
                 $ref: '#/components/schemas/DeadLine'
         '404':
           description: 'Дедлайн не назначен'
-  '/api/projects/${id}':
-    delete:
-      tags:
-        - UNUSED
-      summary: 'Удаление проекта'
-      operationId: 387468517c6fa36eae4baaa9fb441348
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID проекта'
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: 'Проект удален'
-    patch:
-      tags:
-        - UNUSED
-      summary: 'Обновить проект'
-      operationId: 5ed1bf0b0937291634083b91d03ac31c
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID проекта @TODO BODY'
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: 'Проект изменен'
   /api/projects/filter:
     get:
       tags:
@@ -611,21 +731,6 @@ paths:
                   $ref: '#/components/schemas/Candidate'
         '404':
           description: 'Проект не найден'
-  /api/projects/:
-    get:
-      tags:
-        - UNUSED
-      summary: 'Получить информацию о проектах с пагинацией'
-      operationId: e73f98c8e4f2531e4e2a30e2178ca2f5
-      responses:
-        '200':
-          description: Проекты
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Project'
   '/api/projects/{id}':
     get:
       tags:
@@ -649,15 +754,6 @@ paths:
                 $ref: '#/components/schemas/Project'
         '404':
           description: 'Проект не найден'
-  /api/projects:
-    post:
-      tags:
-        - UNUSED
-      summary: 'Создать проекта @TODO BODY'
-      operationId: fe58d2871df3ce3d0339fc8d5541d5a2
-      responses:
-        '200':
-          description: 'Проект создан'
   '/api/skills/${id}':
     delete:
       tags:

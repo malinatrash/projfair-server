@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Supervisor;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Project\UpdateRequest;
+use App\Http\Requests\Project\UpdateRequestAdminProject;
 use App\Models\Project;
 use App\Models\Supervisor;
 
@@ -31,7 +31,7 @@ class UpdateProjectController extends Controller
      * )
      * )
      */
-    public function __invoke($id, UpdateRequest $request)
+    public function __invoke($id, UpdateRequestAdminProject $request)
     {
         $token = $request->get('api_token');
         $id_supervisor = Supervisor::where('api_token', $token)->select('id')->get()[0]['id'];

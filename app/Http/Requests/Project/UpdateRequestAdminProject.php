@@ -4,7 +4,7 @@ namespace App\Http\Requests\Project;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateRequest extends FormRequest
+class UpdateRequestAdminProject extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -37,10 +37,11 @@ class UpdateRequest extends FormRequest
             'study_result' => 'string',
             'additional_inf' => 'string|nullable',
 
+            'state_id' => 'integer|exists:states,id',
+            'type_id' => 'integer|exists:types,id',
 
-            'state_id' => 'required|integer|exists:states,id',
-            'supervisor_id' => 'required|integer|exists:supervisors,id',
-            'type_id' => 'required|integer|exists:types,id',
+            'supervisor_ids' => 'nullable|array',
+            'supervisor_ids.*' => 'nullable|integer|exists:supervisor,id',
 
             'skill_ids' => 'nullable|array',
             'skill_ids.*' => 'nullable|integer|exists:skills,id',
