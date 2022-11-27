@@ -10,16 +10,17 @@ class SupervisorAuthProtected
 {
     public function handle(Request $request, Closure $next)
     {
-        // $token = $request->cookie('token');
-        // if ($token == null) {
-        //     return abort(403, 'Access denied');
-        // }
-        // $admins = Admin::where('username', $token)->get(); // TODO Придумать как авторизовать админа
-        // if (count($admins) == 0) {
-        //     abort(403, 'Access denied');
-        // }
-        $request->attributes->add(['supervisor' => Supervisor::find(2)]);
-        // $request->attributes->add(['admin' => $admins[0]]);
+        $token = $request->cookie('token');
+        if ($token == null) {
+            abort(403, 'Access denied');
+        }
+        $supervisors = Supervisor::where('api_token', $token)->get();
+
+        if (count($supervisors) == 0) {
+            abort(403, 'Access denied');
+        }
+
+        $request->attributes->add(['supervisor' => $supervisors[0]]);
 
         return $next($request);
     }
