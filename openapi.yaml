@@ -141,7 +141,7 @@ paths:
         -
           name: id
           in: path
-          description: 'ID проекта @TODO BODY'
+          description: 'ID проекта'
           required: true
           schema:
             type: integer
