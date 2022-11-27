@@ -4,7 +4,7 @@ namespace App\Http\Requests\Supervisor;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreRequest extends FormRequest
+class UpdateRequestAdminSupervisor extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,6 +26,7 @@ class StoreRequest extends FormRequest
         return [
             'fio' => 'string',
             'email' => 'string',
+            'about' => 'string',
             'position' => 'string',
         ];
     }

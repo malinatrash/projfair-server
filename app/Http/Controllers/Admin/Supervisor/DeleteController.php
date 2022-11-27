@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Supervisor;
+namespace App\Http\Controllers\Admin\Supervisor;
 
 use App\Http\Controllers\Controller;
 use App\Models\Supervisor;
@@ -12,9 +12,9 @@ class DeleteController extends Controller
 {
     /**
      * @OA\Delete(
-     *     path="/api/supervisors/${id}",
+     *     path="/api/admin/supervisors/${id}",
      *     summary="Удалить преподавателя",
-     *      tags={"UNUSED"},
+     *      tags={"ADMIN"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID преподавателя",
@@ -27,6 +27,10 @@ class DeleteController extends Controller
      *     @OA\Response(
      *         response="200",
      *         description="Преподаватель удален",
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Преподаватель не найден",
      *     ),
      * )
      */

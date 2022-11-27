@@ -35,6 +35,11 @@ Route::group(['prefix' => 'admin'], function () {
         Route::patch('/{candidate}', App\Http\Controllers\Admin\Candidate\UpdateController::class);
         Route::post('/', App\Http\Controllers\Admin\Candidate\StoreController::class);
     });
+    Route::group(['prefix' => 'supervisors'], function () {
+        Route::post('/', App\Http\Controllers\Admin\Supervisor\StoreController::class);
+        Route::patch('/{supervisor}', App\Http\Controllers\Admin\Supervisor\UpdateController::class);
+        Route::delete('/{supervisor}', App\Http\Controllers\Admin\Supervisor\DeleteController::class);
+    });
 
 });
 
@@ -43,9 +48,6 @@ Route::group(['prefix' => 'admin'], function () {
 Route::group(['namespace' => 'Supervisor', 'prefix' => 'supervisors'], function () {
     Route::get('/{supervisor}', App\Http\Controllers\Supervisor\ShowController::class); // Получение информации о преподавателе
     Route::get('/', App\Http\Controllers\Supervisor\IndexController::class); // Получение всех преподавателей
-    // Route::post('/', 'StoreController');
-    // Route::patch('/{supervisor}', 'UpdateController');
-    // Route::delete('/{supervisor}', 'DeleteController');
 });
 
 Route::group(['prefix' => 'projects'], function () { // Получения информации о проектах

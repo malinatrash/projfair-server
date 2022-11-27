@@ -364,6 +364,85 @@ paths:
       responses:
         '200':
           description: 'Проект создан'
+  '/api/admin/supervisors/${id}':
+    delete:
+      tags:
+        - ADMIN
+      summary: 'Удалить преподавателя'
+      operationId: 80394ebee6acccdced5d5b9557058252
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID преподавателя'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Преподаватель удален'
+        '404':
+          description: 'Преподаватель не найден'
+  /api/admin/supervisors:
+    post:
+      tags:
+        - ADMIN
+      summary: 'Создать преподавателя'
+      operationId: 5e04dd6c28e7e27544abc31005d977c8
+      requestBody:
+        description: 'Параметры для создания руководителя проекта'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                fio:
+                  type: string
+                email:
+                  type: string
+                about:
+                  type: string
+                position:
+                  type: string
+              type: object
+      responses:
+        '200':
+          description: 'Преподаватель создан'
+  '/api/admin/supervisors/{id}':
+    patch:
+      tags:
+        - ADMIN
+      summary: 'Обновить состояние проекта'
+      operationId: 1ab32dcae664fdd506852d7164d961c2
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID преподавателя @TODO BODY'
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: 'Параметры для обновления руководителя проекта'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                fio:
+                  type: string
+                email:
+                  type: string
+                about:
+                  type: string
+                position:
+                  type: string
+              type: object
+      responses:
+        '200':
+          description: 'Преподаватель изменен'
+        '404':
+          description: 'Преподаватель не найден'
   /campus_auth:
     get:
       tags:
@@ -996,23 +1075,6 @@ paths:
       responses:
         '200':
           description: 'Проект создан'
-  '/api/supervisors/${id}':
-    delete:
-      tags:
-        - UNUSED
-      summary: 'Удалить преподавателя'
-      operationId: 027f82708babc1f4200ecbd1851eb003
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID преподавателя'
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: 'Преподаватель удален'
   /api/supervisors/:
     get:
       tags:
@@ -1043,32 +1105,6 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Participation'
-  /api/supervisors:
-    post:
-      tags:
-        - UNUSED
-      summary: 'Создать преподавателя @TODO BODY'
-      operationId: 4bac33b11ece3da641555393c88b1c8c
-      responses:
-        '200':
-          description: 'Преподаватель создан'
-  '/api/supervisors/{id}':
-    patch:
-      tags:
-        - UNUSED
-      summary: 'Обновить состояние проекта'
-      operationId: 5f7e3afb9dca133e3a9e130d390e21a8
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID преподавателя @TODO BODY'
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: 'Преподаватель изменен'
   '/api/supervisor/projects/{id}':
     patch:
       tags:
