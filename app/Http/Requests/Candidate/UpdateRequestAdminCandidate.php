@@ -4,7 +4,7 @@ namespace App\Http\Requests\Candidate;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreRequest extends FormRequest
+class UpdateRequestAdminCandidate extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -31,6 +31,7 @@ class StoreRequest extends FormRequest
             'phone' => 'string',
             'course' => 'integer',
             'training_group' => 'string',
+            'canSendParticipations' => 'boolean',
 
             'skill_ids' => 'nullable|array',
             'skill_ids.*' => 'nullable|integer|exists:skills,id',

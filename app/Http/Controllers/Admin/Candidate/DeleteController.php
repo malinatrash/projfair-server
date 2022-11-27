@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Candidate;
+namespace App\Http\Controllers\Admin\Candidate;
 
 use App\Http\Controllers\Controller;
 use App\Models\Candidate;
-use Illuminate\Http\Request;
 
 /**
  * Удалить студента
@@ -13,9 +12,9 @@ class DeleteController extends Controller
 {
     /**
      * @OA\Delete(
-     *     path="/api/candidates/${id}",
+     *     path="/api/admin/candidates/${id}",
      *     summary="Удалить студента",
-     *      tags={"UNUSED"},
+     *      tags={"ADMIN"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID студента",
@@ -23,7 +22,7 @@ class DeleteController extends Controller
      *         required=true,
      *         @OA\Schema(
      *             type="integer"
-     *         ) 
+     *         )
      *     ),
      *     @OA\Response(
      *         response="200",

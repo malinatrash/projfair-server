@@ -1,5 +1,101 @@
 openapi: 3.0.0
 paths:
+  '/api/admin/candidates/${id}':
+    delete:
+      tags:
+        - ADMIN
+      summary: 'Удалить студента'
+      operationId: 1159a87fae094064ad7fdc67e8104494
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID студента'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Студент удален'
+  /api/admin/candidates:
+    post:
+      tags:
+        - ADMIN
+      summary: 'Создание студента'
+      operationId: 3b17c617fad2984d0721794131f3cea3
+      requestBody:
+        description: 'Параметры для создания студента'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                fio:
+                  type: string
+                about:
+                  type: string
+                email:
+                  type: string
+                numz:
+                  type: integer
+                phone:
+                  type: string
+                course:
+                  type: integer
+                training_group:
+                  type: string
+                canSendParticipations:
+                  type: boolean
+                skill_ids:
+                  type: array
+                  items: { type: integer }
+              type: object
+      responses:
+        '200':
+          description: 'Информация о студенте создана'
+    patch:
+      tags:
+        - ADMIN
+      summary: 'Обновить информацию о студенте @TODO BODY'
+      operationId: 2863c09aad77ed86e41eb20ea249ce4f
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID студента'
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: 'Параметры для обновления студента'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                fio:
+                  type: string
+                about:
+                  type: string
+                email:
+                  type: string
+                numz:
+                  type: integer
+                phone:
+                  type: string
+                course:
+                  type: integer
+                training_group:
+                  type: string
+                skill_ids:
+                  type: array
+                  items: { type: integer }
+              type: object
+      responses:
+        '200':
+          description: 'Информация о студенте обновлена'
+        '404':
+          description: 'Студент не найден'
   '/api/admin/participations/${id}':
     delete:
       tags:
@@ -31,6 +127,8 @@ paths:
           schema:
             type: integer
       requestBody:
+        description: 'Параметры для обновления заявки'
+        required: true
         content:
           application/json:
             schema:
@@ -146,7 +244,7 @@ paths:
           schema:
             type: integer
       requestBody:
-        description: 'Параметры для создания проекта'
+        description: 'Параметры для обновления проекта'
         required: true
         content:
           application/json:
@@ -360,23 +458,6 @@ paths:
           description: 'Заявка изменена'
         '403':
           description: 'Вы не можете изменить чужую заявку'
-  '/api/candidates/${id}':
-    delete:
-      tags:
-        - UNUSED
-      summary: 'Удалить студента'
-      operationId: 9493782f31a0cb51f036b2105a70bd0e
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID студента'
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: 'Студент удален'
   /api/candidates:
     get:
       tags:
@@ -392,30 +473,6 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Candidate'
-    post:
-      tags:
-        - UNUSED
-      summary: 'Создание студента @TODO BODY'
-      operationId: e3a2bb6c858188c9db9e983c67f9f4d0
-      responses:
-        '200':
-          description: 'Информация о студенте создана'
-    patch:
-      tags:
-        - UNUSED
-      summary: 'Обновить информацию о студенте @TODO BODY'
-      operationId: 0fbff065723de9d077170867bf7f32b7
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID студента'
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: 'Информация о студенте обновлена'
   /api/candidate:
     get:
       tags:

@@ -26,7 +26,7 @@ class UpdateController extends Controller
      *         )
      *     ),
      *     @OA\RequestBody(
-     *         description="Параметры для создания проекта",
+     *         description="Параметры для обновления проекта",
      *         required=true,
      *         @OA\MediaType(
      *             mediaType="application/json",

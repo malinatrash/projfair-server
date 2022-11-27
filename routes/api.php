@@ -30,6 +30,12 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/', App\Http\Controllers\Admin\Project\IndexController::class);
     });
 
+    Route::group(['prefix' => 'candidates'], function () {
+        Route::delete('/{candidate}', App\Http\Controllers\Admin\Candidate\DeleteController::class);
+        Route::patch('/{candidate}', App\Http\Controllers\Admin\Candidate\UpdateController::class);
+        Route::post('/', App\Http\Controllers\Admin\Candidate\StoreController::class);
+    });
+
 });
 
 // --------- USER ROUTES ---------
@@ -76,9 +82,7 @@ Route::group(['namespace' => 'Skill', 'prefix' => 'skills'], function () {
 Route::group(['namespace' => 'Candidate', 'prefix' => 'candidates'], function () {
     Route::get('/{candidate}', App\Http\Controllers\Candidate\ShowController::class); // Получить информацию о студенте
     Route::get('/', App\Http\Controllers\Candidate\IndexController::class); // Получить информацию о всех студентах
-    // Route::delete('/{candidate}', 'DeleteController');
-    // Route::patch('/{candidate}', 'UpdateController');
-    // Route::post('/', 'StoreController');
+
 });
 
 Route::group(['namespace' => 'Institute', 'prefix' => 'institutes'], function () {
