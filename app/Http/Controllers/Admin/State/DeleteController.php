@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\State;
+namespace App\Http\Controllers\Admin\State;
 
 use App\Http\Controllers\Controller;
 use App\Models\State;
@@ -12,9 +12,9 @@ class DeleteController extends Controller
 {
     /**
      * @OA\Delete(
-     *     path="/api/states/${id}",
+     *     path="/api/admin/states/${id}",
      *     summary="Удалить состояние проекта",
-     *      tags={"UNUSED"},
+     *      tags={"ADMIN"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID состояния проекта",
@@ -27,6 +27,10 @@ class DeleteController extends Controller
      *     @OA\Response(
      *         response="200",
      *         description="Состояние проекта удалено",
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Состояние проекта не найдено",
      *     ),
      * )
      */

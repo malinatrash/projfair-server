@@ -40,6 +40,11 @@ Route::group(['prefix' => 'admin'], function () {
         Route::patch('/{supervisor}', App\Http\Controllers\Admin\Supervisor\UpdateController::class);
         Route::delete('/{supervisor}', App\Http\Controllers\Admin\Supervisor\DeleteController::class);
     });
+    Route::group(['prefix' => 'states'], function () {
+        Route::delete('/{state}', App\Http\Controllers\Admin\State\DeleteController::class);
+        Route::patch('/{state}', App\Http\Controllers\Admin\State\UpdateController::class);
+        Route::post('/', App\Http\Controllers\Admin\State\StoreController::class);
+    });
 
 });
 
@@ -68,9 +73,7 @@ Route::group(['namespace' => 'Type', 'prefix' => 'types'], function () { // По
 Route::group(['namespace' => 'State', 'prefix' => 'states'], function () { // Получение состояний проекта
     Route::get('/{state}', App\Http\Controllers\State\ShowController::class); // Получение одного состояния проекта
     Route::get('/', App\Http\Controllers\State\IndexController::class); // Получение всех состояний проекта
-    // Route::delete('/{state}', 'DeleteController');
-    // Route::patch('/{state}', 'UpdateController');
-    // Route::post('/', 'StoreController');
+
 });
 
 Route::group(['namespace' => 'Skill', 'prefix' => 'skills'], function () {
