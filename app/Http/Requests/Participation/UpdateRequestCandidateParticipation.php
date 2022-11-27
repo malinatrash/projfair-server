@@ -7,7 +7,7 @@ use Illuminate\Foundation\Http\FormRequest;
 /**
  * Обновление приоритета заявки авторизованного пользователя
  */
-class UpdateRequest extends FormRequest
+class UpdateRequestAdminParticipation extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.

@@ -16,6 +16,7 @@ Route::group(['prefix' => ''], function () {
     });
     Route::group(['prefix' => 'admin/participations'], function () {
         Route::get('/{participation}', App\Http\Controllers\Admin\Participation\ShowController::class);
+        Route::patch('/{participation}', App\Http\Controllers\Admin\Participation\UpdateController::class);
         Route::delete('/{participation}', App\Http\Controllers\Admin\Participation\DeleteController::class);
         Route::post('/', App\Http\Controllers\Admin\Participation\StoreController::class);
         Route::get('/', App\Http\Controllers\Admin\Participation\IndexController::class);

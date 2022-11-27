@@ -17,6 +17,40 @@ paths:
       responses:
         '200':
           description: 'Заявка удалена'
+    patch:
+      tags:
+        - Participation
+      summary: 'Изменение заявки у студента'
+      operationId: 28b6d1ee56c9fcb9b71e4f110bd572fb
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID Заявки'
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                priority:
+                  type: integer
+                state_id:
+                  type: integer
+                candidate_id:
+                  type: integer
+                project_id:
+                  type: integer
+              type: object
+      responses:
+        '200':
+          description: 'Заявка изменена'
+        '404':
+          description: 'Заявка не найдена'
+        '400':
+          description: 'У кандидата уже есть заявка на этот проект'
   /api/admin/participations:
     get:
       tags:
