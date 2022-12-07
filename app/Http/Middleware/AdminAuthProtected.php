@@ -15,10 +15,10 @@ class SupervisorAuthProtected
         // }
         // $admins = Admin::where('username', $token)->get(); // TODO Придумать как авторизовать админа
         // if (count($admins) == 0) {
-        //     abort(403, 'Access denied');
+        return abort(403, 'Access denied');
         // }
         // $request->attributes->add(['admin' => $admins[0]]);
 
-        return $next($request);
+        // return $next($request);
     }
 }
