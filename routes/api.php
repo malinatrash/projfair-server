@@ -14,6 +14,13 @@ Route::middleware(['adminAuthProtected'])->group(function () {
     Route::group(['prefix' => 'admin'], function () {
         Route::get('/Institute', App\Http\Controllers\Admin\Institute\IndexController::class); // Получение всех институтов
     });
+    Route::group(['prefix' => 'admin'], function () {
+        Route::get('/skillCategory', App\Http\Controllers\Admin\SkillCategory\IndexController::class); // Получение всех категорий навыков
+        Route::get('/{skillCategory}', App\Http\Controllers\Admin\SkillCategory\ShowController::class); // Показать категорию навыков
+        Route::put('/skillCategory', App\Http\Controllers\Admin\SkillCategory\UpdateController::class); // Обновление категорию навыков
+        Route::delete('/skillCategory', App\Http\Controllers\Admin\SkillCategory\DeleteController::class)// Удаление категории навыков
+        Route::post('/skillCategory', App\Http\Controllers\Admin\SkillCategory\StoreController::class)// Создание категорию навыков
+    });
 });
 
 // --------- USER ROUTES ---------
