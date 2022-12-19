@@ -17,6 +17,7 @@ class State extends Model
     use HasFactory;
 
     protected $guarded = false;
+    public $timestamps = false;
 
     public function projects()
     {

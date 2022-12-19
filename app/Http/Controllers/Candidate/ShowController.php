@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Candidate;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\CandidateResource;
 use App\Models\Candidate;
-use Illuminate\Http\Request;
 
 /**
  * Получить информацию о студенте
@@ -24,17 +23,21 @@ class ShowController extends Controller
      *         required=true,
      *         @OA\Schema(
      *             type="integer"
-     *         ) 
+     *         )
      *     ),
      *     @OA\Response(
      *         response="200",
      *         description="Информация о студенте",
      *         @OA\JsonContent(ref="#/components/schemas/Candidate")
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Информация о студенте не найдена",
      *     )
      * )
      * )
      */
-    public function __invoke(Candidate $candidate) // Получить информацию о студенте
+    public function __invoke(Candidate $candidate)
     {
         $candidate->load('group.specialityCourse.speciality');
         return new CandidateResource($candidate);

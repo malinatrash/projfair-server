@@ -2,35 +2,77 @@
 
 use App\Http\Middleware\CandidateAuth;
 use App\Http\Middleware\CandidateAuthProtected;
+use App\Http\Middleware\SupervisorAuthProtected;
 use Illuminate\Support\Facades\Route;
 
 // --------- ADMIN ROUTES ---------
 
-Route::middleware(['adminAuthProtected'])->group(function () {
-    Route::group(['prefix' => 'admin'], function () {
-        Route::get('/skill', App\Http\Controllers\Admin\Skill\IndexController::class); // Получение всех скилов
+Route::group(['prefix' => 'admin'], function () {
+    Route::group(['prefix' => 'skill'], function () {
+        Route::get('/', App\Http\Controllers\Admin\Skill\IndexController::class); // Получение всех скилов
     });
 
-    Route::group(['prefix' => 'admin'], function () {
-        Route::get('/Institute', App\Http\Controllers\Admin\Institute\IndexController::class); // Получение всех институтов
+    Route::group(['prefix' => 'Institute'], function () {
+        Route::get('/', App\Http\Controllers\Admin\Institute\IndexController::class); // Получение всех институтов
     });
-    Route::group(['prefix' => 'admin'], function () {
-        Route::get('/skillCategory', App\Http\Controllers\Admin\SkillCategory\IndexController::class); // Получение всех категорий навыков
-        Route::get('/{skillCategory}', App\Http\Controllers\Admin\SkillCategory\ShowController::class); // Показать категорию навыков
-        Route::put('/skillCategory', App\Http\Controllers\Admin\SkillCategory\UpdateController::class); // Обновление категорию навыков
-        Route::delete('/skillCategory', App\Http\Controllers\Admin\SkillCategory\DeleteController::class)// Удаление категории навыков
-        Route::post('/skillCategory', App\Http\Controllers\Admin\SkillCategory\StoreController::class)// Создание категорию навыков
+
+    Route::group(['prefix' => 'participations'], function () {
+        Route::get('/{participation}', App\Http\Controllers\Admin\Participation\ShowController::class);
+        Route::patch('/{participation}', App\Http\Controllers\Admin\Participation\UpdateController::class);
+        Route::delete('/{participation}', App\Http\Controllers\Admin\Participation\DeleteController::class);
+        Route::post('/', App\Http\Controllers\Admin\Participation\StoreController::class);
+        Route::get('/', App\Http\Controllers\Admin\Participation\IndexController::class);
     });
+
+    Route::group(['prefix' => 'projects'], function () {
+        Route::delete('/{project}', App\Http\Controllers\Admin\Project\DeleteController::class);
+        Route::patch('/{project}', App\Http\Controllers\Admin\Project\UpdateController::class);
+        Route::post('/', App\Http\Controllers\Admin\Project\StoreController::class);
+        Route::get('/', App\Http\Controllers\Admin\Project\IndexController::class);
+    });
+
+    Route::group(['prefix' => 'candidates'], function () {
+        Route::delete('/{candidate}', App\Http\Controllers\Admin\Candidate\DeleteController::class);
+        Route::patch('/{candidate}', App\Http\Controllers\Admin\Candidate\UpdateController::class);
+        Route::post('/', App\Http\Controllers\Admin\Candidate\StoreController::class);
+    });
+    Route::group(['prefix' => 'supervisors'], function () {
+        Route::post('/', App\Http\Controllers\Admin\Supervisor\StoreController::class);
+        Route::patch('/{supervisor}', App\Http\Controllers\Admin\Supervisor\UpdateController::class);
+        Route::delete('/{supervisor}', App\Http\Controllers\Admin\Supervisor\DeleteController::class);
+    });
+    Route::group(['prefix' => 'states'], function () {
+        Route::delete('/{state}', App\Http\Controllers\Admin\State\DeleteController::class);
+        Route::patch('/{state}', App\Http\Controllers\Admin\State\UpdateController::class);
+        Route::post('/', App\Http\Controllers\Admin\State\StoreController::class);
+    });
+    Route::group(['prefix' => 'types'], function () {
+        Route::delete('/{type}', App\Http\Controllers\Admin\Type\DeleteController::class);
+        Route::patch('/{type}', App\Http\Controllers\Admin\Type\UpdateController::class);
+        Route::post('/', App\Http\Controllers\Admin\Type\StoreController::class);
+    });
+
 });
 
+// --------- SUPERVISORS CABINET ROUTES ---------
+
+Route::group(['prefix' => 'supervisor'], function () {
+    Route::post('/projectOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\StoreController::class)->middleware(SupervisorAuthProtected::class);
+    Route::get('/projectOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\IndexController::class)->middleware(SupervisorAuthProtected::class);
+>>>>>>> d4e9684d5de7ded3dc2421c12c43529aefb435da
+});
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/skillCategory', App\Http\Controllers\Admin\SkillCategory\IndexController::class); // Получение всех категорий навыков
+    Route::get('/{skillCategory}', App\Http\Controllers\Admin\SkillCategory\ShowController::class); // Показать категорию навыков
+    Route::put('/skillCategory', App\Http\Controllers\Admin\SkillCategory\UpdateController::class); // Обновление категорию навыков
+    Route::delete('/skillCategory', App\Http\Controllers\Admin\SkillCategory\DeleteController::class)// Удаление категории навыков
+    Route::post('/skillCategory', App\Http\Controllers\Admin\SkillCategory\StoreController::class)// Создание категорию навыков
+});
 // --------- USER ROUTES ---------
 
 Route::group(['namespace' => 'Supervisor', 'prefix' => 'supervisors'], function () {
     Route::get('/{supervisor}', App\Http\Controllers\Supervisor\ShowController::class); // Получение информации о преподавателе
     Route::get('/', App\Http\Controllers\Supervisor\IndexController::class); // Получение всех преподавателей
-    // Route::post('/', 'StoreController');
-    // Route::patch('/{supervisor}', 'UpdateController');
-    // Route::delete('/{supervisor}', 'DeleteController');
 });
 
 Route::group(['prefix' => 'projects'], function () { // Получения информации о проектах
@@ -38,26 +80,18 @@ Route::group(['prefix' => 'projects'], function () { // Получения ин�
     Route::get('/{project}', App\Http\Controllers\Project\ShowController::class); // Получение информации о проекте
     Route::get('/{project}/participants', App\Http\Controllers\Project\GetParticipantsController::class); // Получение участников на проекте
 
-    // Route::delete('/{project}', 'DeleteController');
-    // Route::patch('/{project}', 'UpdateController');
-    // Route::post('/', 'StoreController');
-    // Route::get('/', 'IndexController');
 });
 
 Route::group(['namespace' => 'Type', 'prefix' => 'types'], function () { // Получение типов проекта
     Route::get('/{type}', App\Http\Controllers\Type\ShowController::class); // Получение одного типа проекта
     Route::get('/', App\Http\Controllers\Type\IndexController::class); // Получение всех типов проекта
-    // Route::delete('/{type}', 'DeleteController');
-    // Route::patch('/{type}', 'UpdateController');
-    // Route::post('/', 'StoreController');
+
 });
 
 Route::group(['namespace' => 'State', 'prefix' => 'states'], function () { // Получение состояний проекта
     Route::get('/{state}', App\Http\Controllers\State\ShowController::class); // Получение одного состояния проекта
     Route::get('/', App\Http\Controllers\State\IndexController::class); // Получение всех состояний проекта
-    // Route::delete('/{state}', 'DeleteController');
-    // Route::patch('/{state}', 'UpdateController');
-    // Route::post('/', 'StoreController');
+
 });
 
 Route::group(['namespace' => 'Skill', 'prefix' => 'skills'], function () {
@@ -71,9 +105,7 @@ Route::group(['namespace' => 'Skill', 'prefix' => 'skills'], function () {
 Route::group(['namespace' => 'Candidate', 'prefix' => 'candidates'], function () {
     Route::get('/{candidate}', App\Http\Controllers\Candidate\ShowController::class); // Получить информацию о студенте
     Route::get('/', App\Http\Controllers\Candidate\IndexController::class); // Получить информацию о всех студентах
-    // Route::delete('/{candidate}', 'DeleteController');
-    // Route::patch('/{candidate}', 'UpdateController');
-    // Route::post('/', 'StoreController');
+
 });
 
 Route::group(['namespace' => 'Institute', 'prefix' => 'institutes'], function () {
@@ -86,9 +118,7 @@ Route::group(['namespace' => 'Institute', 'prefix' => 'institutes'], function ()
 Route::group(['namespace' => 'Participation', 'prefix' => 'participations'], function () {
     Route::delete('/{participation}', App\Http\Controllers\Participation\DeleteController::class)->middleware(CandidateAuthProtected::class); // Удаление заявки
     Route::patch('/{participation}', App\Http\Controllers\Participation\UpdateController::class)->middleware(CandidateAuthProtected::class); // Изменение заявки
-    // Route::get('/{participation}', 'ShowController');
-    // Route::post('/', 'StoreController');
-    // Route::get('/', 'IndexController');
+
 });
 
 Route::middleware(['candidateAuthProtected'])->group(function () { // роуты авторизованного студента
@@ -102,11 +132,3 @@ Route::middleware(['candidateAuthProtected'])->group(function () { // роуты
 });
 
 Route::get('/participations_deadline', App\Http\Controllers\Participation\DeadLineController::class); // Получение дедлайна подачи заявки
-
-// Route::get('/supervisor/participation', 'Supervisor\\ParticipationsController');  // DEPRECATED получение информации о заявках руководителя
-// Route::get('/supervisor/projects', 'Supervisor\\ProjectsController'); // DEPRECATED Получение информации о проектах руководителя через апи токен
-
-// Route::get('/supervisor/projects/{id}/participation', 'Supervisor\\ParticipationsOnProjectController')->where('id', '[0-9]+')->middleware(CandidateAuthProtected::class);
-// Route::put('/supervisor', 'Supervisor\\UpdateController')->middleware(CandidateAuthProtected::class);
-// Route::post('/supervisor/projects', 'Supervisor\\CreateProjectController')->middleware(CandidateAuthProtected::class);
-// Route::put('/supervisor/projects/{id}', 'Supervisor\\UpdateProjectController')->where('id', '[0-9]+')->middleware(CandidateAuthProtected::class);

@@ -28,7 +28,7 @@ class FilterController extends Controller
     /**
      * @OA\Get(
      *     path="/api/projects/filter",
-     *     summary="Получить проекты с фильтрацией @TODO PARAMS",
+     *     summary="Получить проекты с фильтрацией",
      *      tags={"Project"},
      *      @OA\Parameter(
      *         name="page",

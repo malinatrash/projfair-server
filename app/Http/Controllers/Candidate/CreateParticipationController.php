@@ -3,14 +3,11 @@
 namespace App\Http\Controllers\Candidate;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Participation\StoreRequest;
-use App\Models\Candidate;
+use App\Http\Requests\Participation\StoreRequestAdminParticipation;
 use App\Models\Participation;
 use App\Models\Project;
 use App\Models\ProjectSpeciality;
 use App\Models\Speciality;
-use App\Models\StateParticipation;
-use Illuminate\Http\Request;
 
 /**
  * Создание заявки на проект
@@ -30,7 +27,7 @@ class CreateParticipationController extends Controller
      *         required=true,
      *         @OA\Schema(
      *             type="integer"
-     *         ) 
+     *         )
      *     ),
      *     @OA\Response(
      *         response="200",
@@ -47,7 +44,7 @@ class CreateParticipationController extends Controller
      * )
      * )
      */
-    public function __invoke(Project $project, StoreRequest $request)
+    public function __invoke(Project $project, StoreRequestAdminParticipation $request)
     {
         $project->load('specialities', 'state');
 
@@ -60,7 +57,6 @@ class CreateParticipationController extends Controller
 
         $candidateSpeciality = explode("-", $candidate['training_group'])[0];
         $idsProject = [];
-
 
         if ($candidateSpeciality != null) {
             $specilities = Speciality::where('name', $candidateSpeciality)->get();
@@ -78,22 +74,19 @@ class CreateParticipationController extends Controller
         }
 
         if (!in_array($id_project, $idsProject)) {
-            return  response("Вы не можете подать заявку проект с другого института", 403);
+            return response("Вы не можете подать заявку проект с другого института", 403);
         }
-
-
 
         $id = $candidate['id'];
 
-
         $candidatesParticipations = Participation::where('candidate_id', $id)->get();
         if (count($candidatesParticipations) > 2) {
-            return  response("Вы уже подали 3 заявки", 403);
+            return response("Вы уже подали 3 заявки", 403);
         }
         if (Participation::where('candidate_id', $id)->where('project_id', $id_project)->get()->count() != 0) {
             return response()->json(['error' => 'Заявка на этот проект уже есть'], 400);
         }
-        $data =  $request->json()->all();
+        $data = $request->json()->all();
         $bodyContent = $request->getContent();
         $priority = json_decode($bodyContent)->priority;
         //dd(json_decode($bodyContent)->priority);
@@ -104,8 +97,6 @@ class CreateParticipationController extends Controller
             'candidate_id' => $id,
             'state_id' => 1,
         ])->id;
-
-
 
         return response()->json(['status' => 'OK'], 200);
     }

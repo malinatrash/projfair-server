@@ -3,9 +3,8 @@
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
-use OpenApi\Annotations as OA;
 
-#[OA\Info(title: "My First API", version: "0.1")]
+#[OA\Info(title:"My First API", version:"0.1")]
 class OpenApi
 {
 }
@@ -58,7 +57,7 @@ class Kernel extends HttpKernel
      * @var array<string, class-string|string>
      */
     protected $routeMiddleware = [
-        'adminAuthProtected' => \App\Http\Middleware\AdminApiAuthProtected::class,
+        'adminAuthProtected' => \App\Http\Middleware\SupervisorAuthProtected::class,
         'candidateAuth' => \App\Http\Middleware\CandidateAuth::class,
         'candidateAuthProtected' => \App\Http\Middleware\CandidateAuthProtected::class,
         'auth' => \App\Http\Middleware\Authenticate::class,
