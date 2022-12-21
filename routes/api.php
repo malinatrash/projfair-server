@@ -12,12 +12,12 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/', App\Http\Controllers\Admin\Skill\IndexController::class); // Получение всех скилов
     });
     
-    Route::group(['prefix' => 'admin'], function () {
-        Route::get('/skillCategory', App\Http\Controllers\Admin\SkillCategory\IndexController::class); // Получение всех категорий навыков
+    Route::group(['prefix' => 'skillCategory'], function () {
+        Route::get('/', App\Http\Controllers\Admin\SkillCategory\IndexController::class); // Получение всех категорий навыков
         Route::get('/{skillCategory}', App\Http\Controllers\Admin\SkillCategory\ShowController::class); // Показать категорию навыков
-        Route::put('/skillCategory', App\Http\Controllers\Admin\SkillCategory\UpdateController::class); // Обновление категорию навыков
-        Route::delete('/skillCategory', App\Http\Controllers\Admin\SkillCategory\DeleteController::class)// Удаление категории навыков
-        Route::post('/skillCategory', App\Http\Controllers\Admin\SkillCategory\StoreController::class)// Создание категорию навыков
+        Route::put('/', App\Http\Controllers\Admin\SkillCategory\UpdateController::class); // Обновление категорию навыков
+        Route::delete('/', App\Http\Controllers\Admin\SkillCategory\DeleteController::class);// Удаление категории навыков
+        Route::post('/', App\Http\Controllers\Admin\SkillCategory\StoreController::class);// Создание категорию навыков
     });
 
     Route::group(['prefix' => 'Institute'], function () {
@@ -67,7 +67,6 @@ Route::group(['prefix' => 'admin'], function () {
 Route::group(['prefix' => 'supervisor'], function () {
     Route::post('/projectOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\StoreController::class)->middleware(SupervisorAuthProtected::class);
     Route::get('/projectOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\IndexController::class)->middleware(SupervisorAuthProtected::class);
->>>>>>> d4e9684d5de7ded3dc2421c12c43529aefb435da
 });
 
 // --------- USER ROUTES ---------
