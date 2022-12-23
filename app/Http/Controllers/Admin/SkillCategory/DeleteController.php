@@ -6,15 +6,15 @@ use App\Http\Controllers\Controller;
 use App\Models\SkillCategory;
 
 /**
- * Удалить категорию навыков (UNUSED)
+ * Удалить категорию навыков
  */
 class DeleteController extends Controller
 {
     /**
      * @OA\Delete(
-     *     path="/api/skillCategory/${id}",
+     *     path="/api/admin/${id}",
      *     summary="Удаление категории навыков",
-     *      tags={"UNUSED"},
+     *      tags={"ADMIN"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID категории навыков",

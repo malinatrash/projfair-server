@@ -2,18 +2,33 @@
 
 namespace App\Http\Controllers\Admin\SkillCategory;
 
-use App\Http\Controllers\Controller;
 use App\Http\Requests\SkillCategory\StoreRequest;
 use App\Models\SkillCategory;
 
+/**
+ * Создать категорию навыков
+ */
 class StoreController
 {
 
     /**
      * @OA\Post(
-     *     path="/api/skills",
-     *     summary="Создать категорию навыков @TODO BODY",
-     *      tags={"UNUSED"},
+     *     path="/api/admin/skillCategory",
+     *     summary="Создать категорию навыков",
+     *     tags=ADMIN,
+     *     @OA\RequestBody(
+     *         description= "Параметры для обновления категории навыка",
+     *         required=true,
+     *         @OA\MediaType(
+     *             mediaType= "aplication\json",
+     *             @OA\Scema(
+     *                 @OA\Property(
+     *                     type= "string",
+     *                     property= "name",
+     *                 ),
+     *             ),
+     *         ),
+     *     ),
      *     @OA\Response(
      *         response="200",
      *         description="категория навыков создана",
