@@ -11,13 +11,13 @@ Route::group(['prefix' => 'admin'], function () {
     Route::group(['prefix' => 'skill'], function () {
         Route::get('/', App\Http\Controllers\Admin\Skill\IndexController::class); // Получение всех скилов
     });
-    
+
     Route::group(['prefix' => 'skillCategory'], function () {
         Route::get('/', App\Http\Controllers\Admin\SkillCategory\IndexController::class); // Получение всех категорий навыков
         Route::get('/', App\Http\Controllers\Admin\SkillCategory\ShowController::class); // Показать категорию навыков
         Route::patch('/{skillCategory}', App\Http\Controllers\Admin\SkillCategory\UpdateController::class); // Обновление категорию навыков
-        Route::delete('/{skillCategory}', App\Http\Controllers\Admin\SkillCategory\DeleteController::class);// Удаление категории навыков
-        Route::post('/', App\Http\Controllers\Admin\SkillCategory\StoreController::class);// Создание категорию навыков
+        Route::delete('/{skillCategory}', App\Http\Controllers\Admin\SkillCategory\DeleteController::class); // Удаление категории навыков
+        Route::post('/', App\Http\Controllers\Admin\SkillCategory\StoreController::class); // Создание категорию навыков
     });
 
     Route::group(['prefix' => 'Institute'], function () {
@@ -59,7 +59,11 @@ Route::group(['prefix' => 'admin'], function () {
         Route::patch('/{type}', App\Http\Controllers\Admin\Type\UpdateController::class);
         Route::post('/', App\Http\Controllers\Admin\Type\StoreController::class);
     });
-    
+
+    Route::group(['prefix' => 'participationsDeadline'], function () {
+        Route::patch('/', App\Http\Controllers\Admin\ParticipationDeadLine\UpdateController::class);
+    });
+
 });
 
 // --------- SUPERVISORS CABINET ROUTES ---------
@@ -132,4 +136,4 @@ Route::middleware(['candidateAuthProtected'])->group(function () { // роуты
     Route::get('/arhiveProjects', App\Http\Controllers\Candidate\ArhiveProjectsController::class); // Получение архивных проектов студента
 });
 
-Route::get('/participations_deadline', App\Http\Controllers\Participation\DeadLineController::class); // Получение дедлайна подачи заявки
+Route::get('/participationsDeadline', App\Http\Controllers\Participation\DeadLineController::class); // Получение дедлайна подачи заявки

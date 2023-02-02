@@ -96,6 +96,26 @@ paths:
           description: 'Информация о студенте обновлена'
         '404':
           description: 'Студент не найден'
+  /api/admin/participationDeadline:
+    patch:
+      tags:
+        - ADMIN
+      summary: 'Изменение дедлайна подачи заявок YYYY-MM-DD'
+      operationId: b033dde945a9781a25f3c99a344300a8
+      requestBody:
+        description: 'Параметры для обновления заявки'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                date:
+                  type: string
+                  format: date
+              type: object
+      responses:
+        '200':
+          description: 'дедлайн подачи заявок изменен'
   '/api/admin/participations/${id}':
     delete:
       tags:
@@ -364,6 +384,107 @@ paths:
       responses:
         '200':
           description: 'Проект создан'
+  '/api/admin/${id}':
+    delete:
+      tags:
+        - ADMIN
+      summary: 'Удаление категории навыков'
+      operationId: 825ecff95822915cb9f5ae85c8a06b10
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID категории навыков'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'категория навыков удалена'
+  /api/admin/skillCatigory:
+    get:
+      tags:
+        - ADMIN
+      summary: 'Получить информацию  о всех категориях навыков'
+      operationId: 63920770b63cf4bf99b0279e9e453eab
+      responses:
+        '200':
+          description: 'Информация о всех категориях навыков'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SkillCategory'
+  '/api/admin/skillCategory/{id}':
+    get:
+      tags:
+        - ADMIN
+      summary: 'Получение информации о категории навыков по ID'
+      operationId: eda60c18a001ef09620e5a85ac7657ec
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID категории навыков'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Категория навыков'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SkillCategory'
+        '404':
+          description: 'Категория навыков не найдена'
+  /api/admin/skillCategory:
+    post:
+      tags:
+        - ADMIN
+      summary: 'Создать категорию навыков'
+      operationId: f472023b22e4a380f5b4b2c85a31256a
+      requestBody:
+        description: 'Параметры для обновления категории навыка'
+        required: true
+        content:
+          aplication\json:
+            schema:
+              properties:
+                name:
+                  type: string
+              type: object
+      responses:
+        '200':
+          description: 'категория навыков создана'
+  '/api/admin/skillCategory/${id}':
+    patch:
+      tags:
+        - ADMIN
+      summary: 'Обновить категорию навыков'
+      operationId: f44f4da324207f8df281d4c6fe99ce11
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID категория навыков'
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: 'Параметры для обновления категории навыка'
+        required: true
+        content:
+          aplication\json:
+            schema:
+              properties:
+                name:
+                  type: string
+              type: object
+      responses:
+        '200':
+          description: 'категория навыков изменена'
   '/api/admin/states/${id}':
     delete:
       tags:
@@ -864,12 +985,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Institute'
-  /api/participations_deadline:
+  /api/participationsDeadline:
     get:
       tags:
         - Participation
       summary: 'Получение дедлайна подачи заявки'
-      operationId: c22ff02595b3353e62ee501e2559c148
+      operationId: 9abe53584b0d0b085e984c7f5168ce95
       responses:
         '200':
           description: 'Информация об институте'

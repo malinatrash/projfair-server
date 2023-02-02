@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Admin\SkillCategory;
 
-use App\Http\Controllers\Controller;
 use App\Http\Requests\SkillCategory\UpdateRequest;
 use App\Models\SkillCategory;
+
 /**
  * Обновить категорию навыков
  */
@@ -19,18 +19,16 @@ class UpdateController
      *      @OA\Parameter(
      *         name="id",
      *         description="ID категория навыков",
-     *          in = "path",
+     *         in="path",
      *         required=true,
-     *         @OA\Schema(
-     *             type="integer"
-     *         )
+     *         @OA\Schema(type="integer"),
      *     ),
      *     @OA\RequestBody(
      *         description= "Параметры для обновления категории навыка",
      *         required=true,
      *         @OA\MediaType(
-     *             mediaType= "aplication\json",
-     *             @OA\Scema(
+     *             mediaType="aplication\json",
+     *             @OA\Schema(
      *                 @OA\Property(
      *                     type= "string",
      *                     property= "name",
@@ -42,8 +40,6 @@ class UpdateController
      *         response="200",
      *         description="категория навыков изменена",
      *     ),
-
-     * )
      * )
      */
     public function __invoke(UpdateRequest $request, SkillCategory $skillCategory)

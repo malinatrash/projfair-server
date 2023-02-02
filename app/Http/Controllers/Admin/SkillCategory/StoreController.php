@@ -15,16 +15,16 @@ class StoreController
      * @OA\Post(
      *     path="/api/admin/skillCategory",
      *     summary="Создать категорию навыков",
-     *     tags=ADMIN,
+     *     tags={"ADMIN"},
      *     @OA\RequestBody(
      *         description= "Параметры для обновления категории навыка",
      *         required=true,
      *         @OA\MediaType(
-     *             mediaType= "aplication\json",
-     *             @OA\Scema(
+     *             mediaType="aplication\json",
+     *             @OA\Schema(
      *                 @OA\Property(
-     *                     type= "string",
-     *                     property= "name",
+     *                     type="string",
+     *                     property="name",
      *                 ),
      *             ),
      *         ),
@@ -33,7 +33,6 @@ class StoreController
      *         response="200",
      *         description="категория навыков создана",
      *     ),
-     * )
      * )
      */
     public function __invoke(StoreRequest $request)

@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Participation;
 use App\Http\Controllers\Controller;
 use App\Models\Participation;
 use App\Models\ParticipationDeadLine;
-use Illuminate\Http\Request;
 
 /**
  * Получение дедлайна подачи заявки
@@ -14,7 +13,7 @@ class DeadLineController extends Controller
 {
     /**
      * @OA\Get(
-     *     path="/api/participations_deadline",
+     *     path="/api/participationsDeadline",
      *     summary="Получение дедлайна подачи заявки",
      *     tags={"Participation"},
      *     @OA\Response(
