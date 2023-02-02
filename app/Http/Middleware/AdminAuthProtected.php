@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-class SupervisorAuthProtected
+class AdminAuthProtected
 {
     public function handle(Request $request, Closure $next)
     {
