@@ -28,6 +28,11 @@ class LoginController extends Controller
      */
     public function __invoke()
     {
+        if (env('APP_DEVELOPMENT')) {
+            setcookie('token', 1, ['httponly' => true]);
+            return redirect('/blabla');
+        }
+
         $return = false;
         $APP = [
             'ID' => 'local.6149ff4c7fcf40.88217011',

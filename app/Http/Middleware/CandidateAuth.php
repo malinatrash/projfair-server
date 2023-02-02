@@ -3,7 +3,6 @@
 namespace App\Http\Middleware;
 
 use App\Models\Candidate;
-use App\Models\Supervisor;
 use Closure;
 use Illuminate\Http\Request;
 
@@ -20,6 +19,7 @@ class CandidateAuth
     public function handle(Request $request, Closure $next)
     {
         $token = $request->cookie('token');
+
         if ($token != null) {
             $candidates = Candidate::where('api_token', $token)->get();
 
@@ -27,7 +27,6 @@ class CandidateAuth
                 $request->attributes->add(['candidate' => $candidates[0]]);
             }
         }
-
 
         return $next($request);
     }
