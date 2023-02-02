@@ -36,19 +36,19 @@ class Skill extends SkillResource
      * @var int
      * @OA\Property()
      */
-    public $id;
+    public int $id;
 
     /**
      * Название скила
      * @var string
      * @OA\Property()
      */
-    public $name;
+    public string $name;
 
     /**
      * ID категории скила
      * @var int
      * @OA\Property(ref="#/components/schemas/SkillCategory")
      */
-    public $skillCategory;
+    public int $skillCategory;
 }

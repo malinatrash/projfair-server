@@ -34,12 +34,12 @@ class ParticipationDeadLine extends ParticipationDeadLineResource
      * @var int
      * @OA\Property()
      */
-    public $id;
+    public int $id;
 
     /**
      * Дата окончания сбора заявок
      * @var int
      * @OA\Property()
      */
-    public $deadline;
+    public int $deadline;
 }

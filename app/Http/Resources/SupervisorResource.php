@@ -39,42 +39,42 @@ class Supervisor extends SupervisorResource
      * @var int
      * @OA\Property()
      */
-    public $id;
+    public int $id;
     /**
      * ФИО
      * @var string
      * @OA\Property()
      */
-    public $fio;
+    public string $fio;
     /**
      * Почта
      * @var string
      * @OA\Property()
      */
-    public $email;
+    public string $email;
     /**
      * Информация о преподавателе
      * @var string
      * @OA\Property()
      */
-    public $about;
+    public string $about;
     /**
      * Должность
      * @var string
      * @OA\Property()
      */
-    public $position;
+    public string $position;
 
     /**
      * Дата создания записи в БД
      * @var string
      * @OA\Property()
      */
-    public $created_at;
+    public string $created_at;
     /**
      * Дата обновления записи в БД
      * @var string
      * @OA\Property()
      */
-    public $updated_at;
+    public string $updated_at;
 }

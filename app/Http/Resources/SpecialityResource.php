@@ -36,14 +36,14 @@ class Speciality extends SpecialityResource
      * @var int
      * @OA\Property()
      */
-    public $id;
+    public int $id;
 
     /**
      * Название состояния
      * @var string
      * @OA\Property()
      */
-    public $state;
+    public string $state;
 
     /**
      * Институт к которому принадлежит специальность

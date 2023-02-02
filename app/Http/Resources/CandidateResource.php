@@ -40,58 +40,58 @@ class Candidate extends CandidateResource
      * @var int
      * @OA\Property()
      */
-    protected $id;
+    protected int $id;
 
     /**
      * ФИО студента
      * @var string
      * @OA\Property()
      */
-    public $fio;
+    public string $fio;
 
     /**
      * Информация о студенте
      * @var string
      * @OA\Property()
      */
-    public $about;
+    public string $about;
 
     /**
      * Почта
      * @var string
      * @OA\Property()
      */
-    public $email;
+    public string $email;
 
     /**
      * Номер зачетной книжки
      * @var string
      * @OA\Property()
      */
-    public $numz;
+    public string $numz;
 
     /**
      * Телефон
      * @var string
      * @OA\Property()
      */
-    public $phone;
+    public string $phone;
     /**
      * Курс
      * @var int
      * @OA\Property()
      */
-    public $course;
+    public int $course;
     /**
      * Учебная группа
      * @var string
      * @OA\Property()
      */
-    public $training_group;
+    public string $training_group;
     /**
      * Может ли отправлять заявки на проекты
      * @var boolean
      * @OA\Property()
      */
-    public $canSendParticipations;
+    public bool $canSendParticipations;
 }

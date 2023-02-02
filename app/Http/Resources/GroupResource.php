@@ -35,19 +35,19 @@ class Group extends GroupResource
      * @var int
      * @OA\Property()
      */
-    public $id;
+    public int $id;
 
     /**
      * ID специальности с курсом
      * @var int
      * @OA\Property()
      */
-    public $specialityCourse_id;
+    public int $specialityCourse_id;
 
     /**
      * ID название
      * @var string
      * @OA\Property()
      */
-    public $name;
+    public string $name;
 }

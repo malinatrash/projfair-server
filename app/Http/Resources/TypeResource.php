@@ -28,12 +28,12 @@ class ProjectType extends TypeResource
      * @var int
      * @OA\Property()
      */
-    protected $id;
+    protected int $id;
 
     /**
      * Название типа проекта
      * @var string
      * @OA\Property()
      */
-    public $type;
+    public string $type;
 }

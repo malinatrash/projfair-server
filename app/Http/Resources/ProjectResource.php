@@ -57,82 +57,82 @@ class Project extends ProjectResource
      * @var int
      * @OA\Property()
      */
-    public $id;
+    public int $id;
 
     /**
      * ID предшествующего проекта или null
      * @var int
      * @OA\Property()
      */
-    public $prevProjectId;
+    public int $prevProjectId;
 
     /**
      * Название проекта
      * @var string
      * @OA\Property()
      */
-    public $title;
+    public string $title;
     /**
      * Количество мест на проекте
      * @var int
      * @OA\Property()
      */
-    public $places;
+    public string $places;
     /**
      * Цель
      * @var string
      * @OA\Property()
      */
-    public $goal;
+    public string $goal;
     /**
      * Описание
      * @var string
      * @OA\Property()
      */
-    public $description;
+    public string $description;
     /**
      * Сложность
      * @var int
      * @OA\Property()
      */
-    public $difficulty;
+    public int $difficulty;
 
     /**
      * Дата начала (2022-09-01)
      * @var string
      * @OA\Property()
      */
-    public $date_start;
+    public string $date_start;
     /**
      * Дата окончания (2023-05-30)
      * @var string
      * @OA\Property()
      */
-    public $date_end;
+    public string $date_end;
     /**
      * Требования
      * @var string
      * @OA\Property()
      */
-    public $requirements;
+    public string $requirements;
     /**
      * Дополнительная информация
      * @var string
      * @OA\Property()
      */
-    public $additional_inf;
+    public string $additional_inf;
     /**
      * Продуктовынй результат
      * @var string
      * @OA\Property()
      */
-    public $product_result;
+    public string $product_result;
     /**
      * Учебный результат
      * @var string
      * @OA\Property()
      */
-    public $study_result;
+    public string $study_result;
 
     /**
      * Руководители
@@ -166,7 +166,7 @@ class Project extends ProjectResource
      * @var string
      * @OA\Property()
      */
-    public $supervisorsNames;
+    public string $supervisorsNames;
 
     /**
      * Cостояние проекта
@@ -185,11 +185,11 @@ class Project extends ProjectResource
      * @var string
      * @OA\Property()
      */
-    public $created_at;
+    public string $created_at;
     /**
      * Дата обновления записи в БД
      * @var string
      * @OA\Property()
      */
-    public $updated_at;
+    public string $updated_at;
 }

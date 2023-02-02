@@ -33,12 +33,12 @@ class Institute extends InstituteResource
      * @var int
      * @OA\Property()
      */
-    public $id;
+    public int $id;
 
     /**
      * Название института
      * @var string
      * @OA\Property()
      */
-    public $name;
+    public string $name;
 }

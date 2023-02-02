@@ -34,12 +34,12 @@ class SkillCategory extends SkillCategoryResource
      * @var int
      * @OA\Property()
      */
-    public $id;
+    public int $id;
 
     /**
      * Название категории скила
      * @var string
      * @OA\Property()
      */
-    public $name;
+    public string $name;
 }

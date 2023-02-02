@@ -42,44 +42,44 @@ class Participation extends ParticipationResource
      * @var int
      * @OA\Property()
      */
-    public $id;
+    public int $id;
     /**
      * Приоритет заявки
      * @var int
      * @OA\Property()
      */
-    public $priority;
+    public int $priority;
 
     /**
      * ID проекта, на которые подали заявку
      * @var string
      * @OA\Property()
      */
-    public $project_id;
+    public string $project_id;
     /**
      * ID состояния
      * @var string
      * @OA\Property()
      */
-    public $state_id;
+    public string $state_id;
     /**
      * ID студента подавшего заявку
      * @var string
      * @OA\Property()
      */
-    public $candidate_id;
+    public string $candidate_id;
 
     /**
      * Дата создания записи в БД
      * @var string
      * @OA\Property()
      */
-    public $created_at;
+    public string $created_at;
 
     /**
      * Дата обновления записи в БД
      * @var string
      * @OA\Property()
      */
-    public $updated_at;
+    public string $updated_at;
 }

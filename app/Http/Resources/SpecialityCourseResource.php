@@ -35,19 +35,19 @@ class SpecialityCourse extends SpecialityCourseResource
      * @var int
      * @OA\Property()
      */
-    public $id;
+    public int $id;
 
     /**
      * ID специальности
      * @var int
      * @OA\Property()
      */
-    public $speciality_id;
+    public int $speciality_id;
 
     /**
      * Курс
      * @var int
      * @OA\Property()
      */
-    public $course;
+    public int $course;
 }
