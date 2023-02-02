@@ -6,6 +6,12 @@ use App\Models\Candidate;
 use App\Models\Project;
 use App\Models\ProjectSpeciality;
 
+/**
+ * Имеют ли студент и проект общую специальность
+ * @param Candidate $candidate
+ * @param Project $project
+ * @return bool
+ */
 function isCandidateInProjectSpecialities(Candidate $candidate, Project $project): bool
 {
     $candidateSpeciality = getCandidateSpeciality($candidate);
