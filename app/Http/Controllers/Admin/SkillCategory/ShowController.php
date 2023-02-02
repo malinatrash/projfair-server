@@ -2,16 +2,20 @@
 
 namespace App\Http\Controllers\Admin\SkillCategory;
 
+use App\Https\Resources\SkillCategoryResource;
 use App\Models\SkillCategory;
 
+/**
+ * Получение информации о категории навыков по ID
+ */
 class ShowController
 {
 
     /**
      * @OA\Get(
-     *     path="/api/skillCategories/{id}",
+     *     path="/api/admin/skillCategory/{id}",
      *     summary="Получение информации о категории навыков по ID",
-     *      tags={"SkillCategory"},
+     *      tags={"ADMIN"},
      *           @OA\Parameter(
      *         name="id",
      *         description="ID категории навыков",

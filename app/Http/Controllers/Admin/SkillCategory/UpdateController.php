@@ -5,23 +5,38 @@ namespace App\Http\Controllers\Admin\SkillCategory;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SkillCategory\UpdateRequest;
 use App\Models\SkillCategory;
-
+/**
+ * Обновить категорию навыков
+ */
 class UpdateController
 {
 
     /**
      * @OA\Patch(
-     *     path="/api/skillCategories/${id}",
+     *     path="/api/admin/skillCategory/${id}",
      *     summary="Обновить категорию навыков",
-     *      tags={"UNUSED"},
+     *      tags={"ADMIN"},
      *      @OA\Parameter(
      *         name="id",
-     *         description="ID категория навыков @TODO BODY",
+     *         description="ID категория навыков",
      *          in = "path",
      *         required=true,
      *         @OA\Schema(
      *             type="integer"
      *         )
+     *     ),
+     *     @OA\RequestBody(
+     *         description= "Параметры для обновления категории навыка",
+     *         required=true,
+     *         @OA\MediaType(
+     *             mediaType= "aplication\json",
+     *             @OA\Scema(
+     *                 @OA\Property(
+     *                     type= "string",
+     *                     property= "name",
+     *                 ),
+     *             ),
+     *         ),
      *     ),
      *     @OA\Response(
      *         response="200",

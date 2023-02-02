@@ -14,9 +14,9 @@ Route::group(['prefix' => 'admin'], function () {
     
     Route::group(['prefix' => 'skillCategory'], function () {
         Route::get('/', App\Http\Controllers\Admin\SkillCategory\IndexController::class); // Получение всех категорий навыков
-        Route::get('/{skillCategory}', App\Http\Controllers\Admin\SkillCategory\ShowController::class); // Показать категорию навыков
-        Route::put('/', App\Http\Controllers\Admin\SkillCategory\UpdateController::class); // Обновление категорию навыков
-        Route::delete('/', App\Http\Controllers\Admin\SkillCategory\DeleteController::class);// Удаление категории навыков
+        Route::get('/', App\Http\Controllers\Admin\SkillCategory\ShowController::class); // Показать категорию навыков
+        Route::patch('/{skillCategory}', App\Http\Controllers\Admin\SkillCategory\UpdateController::class); // Обновление категорию навыков
+        Route::delete('/{skillCategory}', App\Http\Controllers\Admin\SkillCategory\DeleteController::class);// Удаление категории навыков
         Route::post('/', App\Http\Controllers\Admin\SkillCategory\StoreController::class);// Создание категорию навыков
     });
 

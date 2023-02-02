@@ -14,7 +14,7 @@ class IndexController extends Controller
      * @OA\Get(
      *     path="/api/admin/skillCatigory",
      *     summary="Получить информацию  о всех категориях навыков",
-     *      tags={"admin"},
+     *      tags={"ADMIN"},
      *     @OA\Response(
      *         response="200",
      *         description="Информация о всех категориях навыков",
@@ -32,8 +32,6 @@ class IndexController extends Controller
     {
         $skillCategories = SkillCategory::all();
 
-        return [
-            'skillCategories' => SkillCategoryResource::collection($skillCategories)
-        ];
+        return SkillCategoryResource::collection($skillCategories);
     }
 }
