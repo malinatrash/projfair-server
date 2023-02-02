@@ -315,7 +315,7 @@ class FilterController extends Controller
             $pageSize = 7;
         }
         $projectCount = count($projectCollection);
-        $startIndex = $pageSize * ($page);
+        $startIndex = $pageSize * ($page - 1);
 
         $projectCollection = $projectCollection->slice($startIndex, $pageSize);
 
