@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Participation\StoreRequestAdminParticipation;
 use App\Models\Participation;
 use App\Models\Project;
+
 use function App\Utils\isCandidateHasMaxSendedParticipation;
 use function App\Utils\isCandidateInProjectSpecialities;
 use function App\Utils\isCandidateOnProject;
@@ -74,5 +75,4 @@ class CreateParticipationController extends Controller
 
         return response()->json(['status' => 'OK'], 200);
     }
-
 }
