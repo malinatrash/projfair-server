@@ -68,7 +68,8 @@ class LoginController extends Controller
 
         if ($campusUserData->is_student) {
             $this->saveStudent($campusUserData, $api_token);
-        } else {
+        }
+        if ($campusUserData->is_teacher) {
             $this->saveTeacher($campusUserData, $api_token);
         }
 
