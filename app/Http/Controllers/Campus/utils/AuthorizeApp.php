@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers\Campus\utils;
 
+use Exception;
+
 /**
- * Авторизовать приложение в кампусе
- * @return bool|array
+ * Авторизовать приложение в кампусе 
+ * @throws Exception - не удалось авторизовать приложение
+ * @return array
  */
-function AuthorizeApp(): false | array
+function AuthorizeApp(string $authorizationCode): array
 {
     $APP = [
         'ID' => 'local.6149ff4c7fcf40.88217011',
@@ -15,7 +18,7 @@ function AuthorizeApp(): false | array
     //  формирование параметров запроса
     $url = implode('&', [
         'https://int.istu.edu/oauth/token/?grant_type=authorization_code',
-        'code=' . $_REQUEST['code'],
+        'code=' . $authorizationCode,
         'client_id=' . $APP['ID'],
         'client_secret=' . $APP['CODE'],
     ]);
@@ -24,13 +27,13 @@ function AuthorizeApp(): false | array
     $data = @file_get_contents($url);
 
     if (explode(' ', $http_response_header[0])[1] !== '200') {
-        return false;
+        throw new Exception();
     }
 
     $campusData = json_decode($data, true);
 
     if (!isset($campusData['client_endpoint']) || !isset($campusData['access_token'])) {
-        return false;
+        throw new Exception();
     }
     return $campusData;
 }

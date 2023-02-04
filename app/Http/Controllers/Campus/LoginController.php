@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\Campus;
 
-use App\Http\Controllers\Campus\model\CampusData;
+use App\Http\Controllers\Campus\model\CampusUserData;
 use App\Http\Controllers\Controller;
 use App\Models\Candidate;
 use App\Models\Supervisor;
+use Exception;
 use Illuminate\Support\Str;
 
 use function App\Http\Controllers\Campus\utils\AuthorizeApp;
@@ -24,7 +25,6 @@ class LoginController extends Controller
      *     @OA\Response(
      *         response="200",
      *         description="Пользователь авторизован",
-     *
      *     )
      * )
      * )
@@ -37,53 +37,57 @@ class LoginController extends Controller
             return redirect('/blabla');
         }
 
-        $APP = [
-            'ID' => 'local.6149ff4c7fcf40.88217011',
-            'CODE' => 'hpSC3PDk3TGpW1tWTqozH67k2JCD9n6ZY00Zp501baj8sNWvFW',
-        ];
-
-        //  ЭТАП 1 - авторизация учетной записи в ЛИЧНОМ КАБИНЕТЕ
-        //  редирект на страницу авторизации
-        //  редирект обратно после успешной авторизации
-        if (!isset($_REQUEST['code'])) {
-            return json_encode(['url' => 'https://int.istu.edu/oauth/authorize/?client_id=' . $APP['ID']]);
+        $authorizationCode = $_REQUEST['code'];
+        //  редирект на страницу авторизации.  редирект обратно после успешной авторизации
+        if (!isset($authorizationCode)) {
+            $CAMPUS_LOGIN_URL = 'https://int.istu.edu/oauth/authorize/?client_id=local.6149ff4c7fcf40.88217011';
+            return json_encode(['url' =>  $CAMPUS_LOGIN_URL]);
         }
 
-        //  ЭТАП 2 - авторизация приложения
-        $data = AuthorizeApp();
-        if (!$data) {
+        try {
+            $data = AuthorizeApp($authorizationCode);
+            $clientEndpoint = $data['client_endpoint'];
+            $accessToken = $data['access_token'];
+
+            $campusUserData = LoadCampusUserData($clientEndpoint, $accessToken);
+            $this->saveUserData($campusUserData);
+        } catch (Exception $e) {
             return false;
         }
-        //  ЭТАП 3 - запрос данных по учетной записи
-        $campusData = LoadCampusUserData($data);
-        if (!$campusData) {
-            return false;
-        }
-
-        $api_token = hash('sha256', Str::random(60));
-
-        if ($campusData->is_student) {
-            $this->saveStudent($campusData, $api_token);
-        } else {
-            $this->saveTeacher($campusData, $api_token);
-        }
-
-        setcookie('is_student', $campusData->is_student);
-        setcookie('token', $api_token, ['httponly' => true]);
         return redirect('/');
     }
 
     /**
+     * Сохранить данные пользователя с кампуса
+     * @param CampusUserData $campusUserData
+     * @return void
+     */
+    private function saveUserData(CampusUserData $campusUserData): void
+    {
+        $api_token = hash('sha256', Str::random(60));
+
+        if ($campusUserData->is_student) {
+            $this->saveStudent($campusUserData, $api_token);
+        } else {
+            $this->saveTeacher($campusUserData, $api_token);
+        }
+
+        setcookie('is_student', $campusUserData->is_student);
+        setcookie('is_teacher', $campusUserData->is_teacher);
+        setcookie('token', $api_token, ['httponly' => true]);
+    }
+
+    /**
      * Загрузить данные преподавателя в БД
-     * @param CampusData $campusData - данные кампуса
+     * @param CampusUserData $campusData - данные кампуса о пользователе
      * @param string $api_token - токен
      * @return void
      */
-    private function saveTeacher(CampusData $campusData, string $api_token): void
+    private function saveTeacher(CampusUserData $campusUserData, string $api_token): void
     {
-        $fio = $campusData->last_name . ' ' . $campusData->name . ' ' . $campusData->second_name;
-        $email = $campusData->email;
-        $position = $campusData->data_teacher->dep;
+        $fio = $campusUserData->last_name . ' ' . $campusUserData->name . ' ' . $campusUserData->second_name;
+        $email = $campusUserData->email;
+        $position = $campusUserData->data_teacher->dep;
 
 
         $supervisor = Supervisor::where('email', $email)->limit(1)->get();
@@ -108,17 +112,17 @@ class LoginController extends Controller
 
     /**
      * Загрузить данные студента в БД
-     * @param CampusData $campusData - данные кампуса
+     * @param CampusUserData $campusUserData - данные кампуса о пользователе
      * @param string $api_token - токен
      * @return void
      */
-    private function saveStudent(CampusData $campusData, string $api_token): void
+    private function saveStudent(CampusUserData $campusUserData, string $api_token): void
     {
         //работа с пользователями
-        $numz = $campusData->data_student->nomz;
+        $numz = $campusUserData->data_student->nomz;
         $user = Candidate::where('numz', $numz)->limit(1)->get();
-        $fio = $campusData->last_name . ' ' . $campusData->name . ' ' . $campusData->second_name;
-        $group = $campusData->data_student->grup;
+        $fio = $campusUserData->last_name . ' ' . $campusUserData->name . ' ' . $campusUserData->second_name;
+        $group = $campusUserData->data_student->grup;
         //высчитываем номер курса из группы
         $course = intval(explode('-', $group)[1]);
         //если сентябрь то на курс выше
@@ -127,7 +131,7 @@ class LoginController extends Controller
         if ($user->count() == 0) {
             Candidate::create([
                 'fio' => $fio,
-                'email' => $campusData->email,
+                'email' => $campusUserData->email,
                 'numz' => $numz,
                 'phone' => '',
                 'about' => '',
@@ -138,7 +142,7 @@ class LoginController extends Controller
         } else {
             Candidate::where('numz', $numz)->limit(1)->update([
                 'fio' => $fio,
-                'email' => $campusData->email,
+                'email' => $campusUserData->email,
                 'course' => $course,
                 'training_group' => $group,
                 'api_token' => $api_token,

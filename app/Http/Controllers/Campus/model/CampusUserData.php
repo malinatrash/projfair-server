@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Campus\model;
 
-class CampusData
+class CampusUserData
 {
     /**
      * фамилия
@@ -49,19 +49,19 @@ class CampusData
      * массив данных по пользователю группы "студент" { массив || пустой массив || FALSE }
      * @var object
      */
-    public CampusStudentData | false $data_student;
+    public CampusStudentData | null $data_student;
     /**
      * массив данных по пользователю группы "преподаватель" { массив || пустой массив || FALSE }
      * @var object
      */
-    public CampusTeacherData | false $data_teacher;
+    public CampusTeacherData | null $data_teacher;
     /**
      * массив значений идентификатора пользователя в АИС "УНИВЕРСИТЕТ" { массив || пустой массив || FALSE }
      * @var array
      */
     public array $mira_id;
 
-    public function __construct(string $last_name, string $name, string $second_name, string $gender, string $photo, string $email, int $is_student, int $is_teacher, CampusStudentData $data_student, CampusTeacherData $data_teacher, array $mira_id)
+    public function __construct(string $last_name, string $name, string $second_name, string $gender, string $photo, string $email, int $is_student, int $is_teacher, CampusStudentData | null $data_student, CampusTeacherData | null $data_teacher, array $mira_id)
     {
         $this->$last_name = $last_name;
         $this->$name = $name;

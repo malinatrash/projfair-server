@@ -2,27 +2,30 @@
 
 namespace App\Http\Controllers\Campus\utils;
 
-use App\Http\Controllers\Campus\model\CampusData;
+use App\Http\Controllers\Campus\model\CampusUserData;
+use Exception;
 
 /**
  * Загрузить данные пользователя
  * 
- * @param array $data - данные авторизации приложения
- * @return CampusData|false - данные пользователя
+ * @param string $clientEndpoint
+ * @param string $accessToken
+ * @throws Exception - не удалось загрузить данные
+ * @return CampusUserData - данные пользователя
  */
-function LoadCampusUserData(array $data): CampusData | false
+function LoadCampusUserData(string $clientEndpoint, string $accessToken): CampusUserData
 {
-    $url = $data['client_endpoint'] . 'user.info.json?auth=' . $data['access_token'];
+    $urlToGetUserData = $clientEndpoint . 'user.info.json?auth=' . $accessToken;
     //  выполнение запроса и обработка ответа
-    $data = @file_get_contents($url);
+    $data = @file_get_contents($urlToGetUserData);
     if (explode(' ', $http_response_header[0])[1] !== '200') {
-        return false;
+        throw new Exception();
     }
 
     $data = json_decode($data, true);
     //  проверка наличия структуры данных
     if (!isset($data['result']['email'])) {
-        return false;
+        throw new Exception();
     }
-    return createCampusData($data['result']);
+    return createCampusUserData($data['result']);
 }

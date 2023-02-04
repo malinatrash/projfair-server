@@ -31,8 +31,9 @@ class LogoutController extends Controller
 
         Supervisor::where('api_token', $token)->update(['api_token' => null]);
         Candidate::where('api_token', $token)->update(['api_token' => null]);
-        $cookie = Cookie::queue(Cookie::forget('token'));
-        $cookie = Cookie::queue(Cookie::forget('is_student'));
+        Cookie::queue(Cookie::forget('token'));
+        Cookie::queue(Cookie::forget('is_student'));
+        Cookie::queue(Cookie::forget('is_teacher'));
         return redirect('/'); //->away('https://int.istu.edu/?logout=yes');
     }
 }
