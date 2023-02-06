@@ -27,10 +27,6 @@ class StoreRequestAdminParticipation extends FormRequest
         return [
             'priority' => 'integer',
 
-            // 'review' => 'string',
-            'state_id' => 'required|integer|exists:state_participations,id',
-            'candidate_id' => 'required|integer|exists:candidates,id',
-            'project_id' => 'required|integer|exists:projects,id',
         ];
     }
 }
