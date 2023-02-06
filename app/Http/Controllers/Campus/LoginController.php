@@ -2,15 +2,14 @@
 
 namespace App\Http\Controllers\Campus;
 
+use App\Http\Controllers\Campus\model\CampusStudentData;
+use App\Http\Controllers\Campus\model\CampusTeacherData;
 use App\Http\Controllers\Campus\model\CampusUserData;
 use App\Http\Controllers\Controller;
 use App\Models\Candidate;
 use App\Models\Supervisor;
 use Exception;
 use Illuminate\Support\Str;
-
-use function App\Http\Controllers\Campus\utils\AuthorizeApp;
-use function App\Http\Controllers\Campus\utils\LoadCampusUserData;
 
 /**
  * Авторизация через кампус
@@ -45,11 +44,11 @@ class LoginController extends Controller
         }
 
         try {
-            $data = AuthorizeApp($authorizationCode);
+            $data = $this->AuthorizeApp($authorizationCode);
             $clientEndpoint = $data['client_endpoint'];
             $accessToken = $data['access_token'];
 
-            $campusUserData = LoadCampusUserData($clientEndpoint, $accessToken);
+            $campusUserData = $this->LoadCampusUserData($clientEndpoint, $accessToken);
             $this->saveUserData($campusUserData);
         } catch (Exception $e) {
             return false;
@@ -149,5 +148,151 @@ class LoginController extends Controller
                 'api_token' => $api_token,
             ]);
         }
+    }
+
+
+    /**
+     * Авторизовать приложение в кампусе 
+     * @throws Exception - не удалось авторизовать приложение
+     * @return array
+     */
+    function AuthorizeApp(string $authorizationCode): array
+    {
+        $APP = [
+            'ID' => 'local.6149ff4c7fcf40.88217011',
+            'CODE' => 'hpSC3PDk3TGpW1tWTqozH67k2JCD9n6ZY00Zp501baj8sNWvFW',
+        ];
+        //  формирование параметров запроса
+        $url = implode('&', [
+            'https://int.istu.edu/oauth/token/?grant_type=authorization_code',
+            'code=' . $authorizationCode,
+            'client_id=' . $APP['ID'],
+            'client_secret=' . $APP['CODE'],
+        ]);
+        //  выполнение запроса и обработка ответа
+
+        $data = @file_get_contents($url);
+
+        if (explode(' ', $http_response_header[0])[1] !== '200') {
+            throw new Exception();
+        }
+
+        $campusData = json_decode($data, true);
+
+        if (!isset($campusData['client_endpoint']) || !isset($campusData['access_token'])) {
+            throw new Exception();
+        }
+        return $campusData;
+    }
+
+    /**
+     * Преобразует ответ кампуса из массива в объект
+     * @param array $data
+     * @return CampusUserData
+     */
+    function createCampusUserData(array $data): CampusUserData
+    {
+        $studentData = null;
+        if (isset($data['data_student'])) {
+            $data_student = $data['data_student'];
+            $grup = $data_student['$grup'];
+            $active = $data_student['$active'];
+            $speccode = $data_student['$speccode'];
+            $specname = $data_student['$specname'];
+            $nomz = $data_student['$nomz'];
+            $facultyid = $data_student['$facultyid'];
+            $faculty = $data_student['$faculty'];
+            $kafid = $data_student['$kafid'];
+            $kaf = $data_student['$kaf'];
+            $age = $data_student['$age'];
+            $graduate = $data_student['$graduate'];
+
+            $studentData = new CampusStudentData(
+                $grup,
+                $active,
+                $speccode,
+                $specname,
+                $nomz,
+                $facultyid,
+                $faculty,
+                $kafid,
+                $kaf,
+                $age,
+                $graduate,
+            );
+        }
+
+        $teacherData = null;
+        if (isset($data['data_teacher'])) {
+            $data_teacher = $data['data_teacher'];
+            $facultyid = $data_teacher['$facultyid'];
+            $faculty = $data_teacher['$faculty'];
+            $kafid = $data_teacher['$kafid'];
+            $kaf = $data_teacher['$kaf'];
+            $depid = $data_teacher['$depid'];
+            $dep = $data_teacher['$dep'];
+            $deleted = $data_teacher['$deleted'];
+
+            $teacherData = new CampusTeacherData(
+                $facultyid,
+                $faculty,
+                $kafid,
+                $kaf,
+                $depid,
+                $dep,
+                $deleted,
+            );
+        }
+
+        $last_name = $data['$last_name'];
+        $name = $data['$name'];
+        $second_name = $data['$second_name'];
+        $gender = $data['$gender'];
+        $photo = $data['$photo'];
+        $email = $data['$email'];
+        $is_student = $data['$is_student'];
+        $is_teacher = $data['$is_teacher'];
+
+        $mira_id = $data['$mira_id'];
+
+        return new CampusUserData(
+            $last_name,
+            $name,
+            $second_name,
+            $gender,
+            $photo,
+            $email,
+            $is_student,
+            $is_teacher,
+            $studentData,
+            $teacherData,
+            $mira_id,
+        );
+    }
+
+
+    /**
+     * Загрузить данные пользователя
+     * 
+     * @param string $clientEndpoint
+     * @param string $accessToken
+     * @throws Exception - не удалось загрузить данные
+     * @return CampusUserData - данные пользователя
+     */
+    function LoadCampusUserData(string $clientEndpoint, string $accessToken): CampusUserData
+    {
+        $urlToGetUserData = $clientEndpoint . 'user.info.json?auth=' . $accessToken;
+        //  выполнение запроса и обработка ответа
+        $data = @file_get_contents($urlToGetUserData);
+        if (explode(' ', $http_response_header[0])[1] !== '200') {
+            throw new Exception();
+        }
+
+        $data = json_decode($data, true);
+        //  проверка наличия структуры данных
+        if (!isset($data['result']['email'])) {
+            throw new Exception();
+        }
+        return $this->createCampusUserData($data['result']);
     }
 }
