@@ -25,6 +25,7 @@ class CandidateResource extends JsonResource
             'course' => $this->course,
             'training_group' => $this->training_group,
             'canSendParticipations' => $this->canSendParticipations,
+            'is_student' => 1,
         ];
     }
 }
