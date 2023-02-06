@@ -36,12 +36,12 @@ class LoginController extends Controller
             return redirect('/blabla');
         }
 
-        $authorizationCode = $_REQUEST['code'];
         //  редирект на страницу авторизации.  редирект обратно после успешной авторизации
-        if (!isset($authorizationCode)) {
+        if (!isset($_REQUEST['code'])) {
             $CAMPUS_LOGIN_URL = 'https://int.istu.edu/oauth/authorize/?client_id=local.6149ff4c7fcf40.88217011';
             return json_encode(['url' =>  $CAMPUS_LOGIN_URL]);
         }
+        $authorizationCode = $_REQUEST['code'];
 
         try {
             $data = $this->AuthorizeApp($authorizationCode);
