@@ -58,9 +58,7 @@ class UpdateController extends Controller
             return response("Вы не можете изменить чужую заявку", 403);
         }
 
-        if ($participation->priority > 3) {
-            return response("Вы не можете изменить автоматически созданную заявку", 403);
-        }
+
 
         $participation->update([
             'priority' => $data['priority'],
