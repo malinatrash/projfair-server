@@ -66,8 +66,8 @@ class Project extends Model
      */
     public function participants(): Collection
     {
-        $activeState = StateParticipation::where('state', 'Участвует')->get()[0];
-        $activeParticipations = Participation::with('candidate')->where('project_id', '=', $this->id)->where('state_id', '=', $activeState->id)->get();
+
+        $activeParticipations = Participation::with('candidate')->where('project_id', '=', $this->id)->whereIn('state_id', [2, 3])->get();
         $participants = $activeParticipations->pluck('candidate');
         return $participants;
     }
