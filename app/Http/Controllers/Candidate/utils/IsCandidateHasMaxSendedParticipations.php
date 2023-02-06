@@ -14,7 +14,15 @@ use App\Models\Participation;
 function isCandidateHasMaxSendedParticipation(Candidate $candidate): bool
 {
     $candidateId = $candidate['id'];
-    $candidatesParticipations = Participation::where('candidate_id', $candidateId)->get();
+    $allCandidatesParticipations = Participation::where('candidate_id', $candidateId)->get();
+
+    $candidatesParticipations = [];
+    foreach ($allCandidatesParticipations as $participation) {
+        if ($participation->priority < 4 && $participation->state_id === '1') {
+            array_push($candidatesParticipations, $participation);
+        }
+    }
+
 
     return count($candidatesParticipations) > 2;
 }
