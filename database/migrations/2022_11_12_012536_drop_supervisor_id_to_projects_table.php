@@ -27,8 +27,8 @@ return new class extends Migration
     public function down()
     {
         Schema::table('projects', function (Blueprint $table) {
+            $table->unsignedBiginteger('supervisor_id')->nullable();
             $table->foreign('supervisor_id')->on('supervisors')->references('id')->onDelete('cascade');
-
         });
     }
 };

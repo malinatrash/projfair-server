@@ -14,10 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::table('specialities', function (Blueprint $table) {
-            $table->dropForeign(['institute_id']);
-            $table->dropColumn('institute_id');
+            $table->dropConstrainedForeignId('institute_id');
 
-            $table->unsignedBiginteger('department_id');
+            $table->unsignedBiginteger('department_id')->nullable();
             $table->foreign('department_id')->on('departments')->references('id')->onDelete('cascade');
         });
     }
@@ -30,8 +29,8 @@ return new class extends Migration
     public function down()
     {
         Schema::table('specialities', function (Blueprint $table) {
-            $table->dropForeign(['department_id']);
-            $table->dropColumn('department_id');
+
+            $table->dropConstrainedForeignId('department_id');
 
             $table->unsignedBiginteger('institute_id')->nullable();
 
