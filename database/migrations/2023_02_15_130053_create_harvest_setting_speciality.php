@@ -20,7 +20,7 @@ return new class extends Migration
             $table->unsignedBigInteger('setting_id');
             $table->unsignedBigInteger('speciality_id');
 
-            $table->foreign('setting_id')->on('settings')->references('id')->onDelete('cascade');
+            $table->foreign('setting_id')->on('harvest_settings')->references('id')->onDelete('cascade');
             $table->foreign('speciality_id')->on('specialities')->references('id')->onDelete('cascade');
         });
     }

@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('settings', function (Blueprint $table) {
+        Schema::table('harvest_settings', function (Blueprint $table) {
             $table->renameColumn('start', 'start_date_participation_harvest');
             $table->renameColumn('deadline', 'end_date_participation_harvest');
         });
@@ -26,7 +26,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('settings', function (Blueprint $table) {
+        Schema::table('harvest_settings', function (Blueprint $table) {
             $table->renameColumn('start_date_participation_harvest', 'start');
             $table->renameColumn('end_date_participation_harvest', 'deadline');
         });

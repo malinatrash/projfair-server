@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::rename('participation_dead_lines', 'settings');
+        Schema::rename('participation_dead_lines', 'harvest_settings');
     }
 
     /**
@@ -23,6 +23,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::rename('settings', 'participation_dead_lines');
+        Schema::rename('harvest_settings', 'participation_dead_lines');
     }
 };

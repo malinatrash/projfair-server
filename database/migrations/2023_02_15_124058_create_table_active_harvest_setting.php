@@ -13,9 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('settings', function (Blueprint $table) {
-            $table->integer('min_course')->nullable();
-            $table->integer('max_course')->nullable();
+        Schema::create('active_harvest_setting', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('setting_id');
+
+            $table->foreign('setting_id')->on('harvest_settings')->references('id')->onDelete('cascade');
         });
     }
 
@@ -26,8 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('settings', function (Blueprint $table) {
-            $table->dropColumn(['min_course', 'max_course']);
-        });
+        Schema::dropIfExists('active_harvest_setting');
     }
 };
