@@ -84,16 +84,20 @@ class LoginController extends Controller
         }
 
         $api_token = null;
-        setcookie('is_student', $return['is_student']);
+
         if ($return['is_student']) {
             $api_token = $this->authStudent($return);
-        } else {
+        }
+        if ($return['is_student']) {
             $api_token = $this->authTeacher($return);
         }
+        $tenYears = time() + (10 * 365 * 24 * 60 * 60);
+        $cookieOptions = ['httponly' => true, 'expires' => $tenYears];
 
-        setcookie('token', $api_token, ['httponly' => true]);
+        setcookie('is_student', $return['is_student'], $cookieOptions);
+        setcookie('is_teacher', $return['is_teacher'], $cookieOptions);
+        setcookie('token', $api_token, $cookieOptions);
         return redirect('/');
-        //json_encode(['token' => $api_token]);
     }
 
     private function authTeacher($return)
