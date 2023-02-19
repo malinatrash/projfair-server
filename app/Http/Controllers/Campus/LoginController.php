@@ -91,8 +91,8 @@ class LoginController extends Controller
         if ($return['is_student']) {
             $api_token = $this->authTeacher($return);
         }
-        $tenYears = time() + (10 * 365 * 24 * 60 * 60);
-        $cookieOptions = ['httponly' => true, 'expires' => $tenYears];
+        $expiresTime = time() + (7 * 24 * 60 * 60);
+        $cookieOptions = ['httponly' => true, 'expires' => $expiresTime];
 
         setcookie('is_student', $return['is_student'], $cookieOptions);
         setcookie('is_teacher', $return['is_teacher'], $cookieOptions);
