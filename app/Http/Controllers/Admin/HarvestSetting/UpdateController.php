@@ -4,21 +4,23 @@ namespace App\Http\Controllers\Admin\Type;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Type\UpdateRequestAdminType;
+use App\Models\HarvestSetting;
 use App\Models\Type;
 
 /**
- * Обновить тип проекта
+ * Обновить настройку сбора заявок
  */
 class UpdateController extends Controller
 {
+    //TODO add body
     /**
      * @OA\Patch(
-     *     path="/api/admin/types/${id}",
-     *     summary="Обновить тип проекта",
+     *     path="/api/admin/harvestSetting/${id}",
+     *     summary="Обновить настройку сбора заявок",
      *      tags={"ADMIN"},
      *      @OA\Parameter(
      *         name="id",
-     *         description="ID типа проекта",
+     *         description="ID настройки",
      *          in = "path",
      *         required=true,
      *         @OA\Schema(
@@ -26,7 +28,7 @@ class UpdateController extends Controller
      *         )
      *     ),
      *     @OA\RequestBody(
-     *         description="Параметры для обновления типа проекта",
+     *         description="Параметры для обновления настройки",
      *         required=true,
      *         @OA\MediaType(
      *             mediaType="application/json",
@@ -40,19 +42,20 @@ class UpdateController extends Controller
      *     ),
      *     @OA\Response(
      *         response="200",
-     *         description="Тип проекта изменен",
+     *         description="Настройка изменена",
      *     ),
      *     @OA\Response(
      *         response="404",
-     *         description="Тип проекта не найден",
+     *         description="Настройка не найдена",
      *     ),
+
      * )
      * )
      */
-    public function __invoke(UpdateRequestAdminType $request, Type $type)
+    public function __invoke(UpdateRequestAdminType $request, HarvestSetting $harvestSetting)
     {
         $data = $request->validated();
-        $type->update($data);
+        $harvestSetting->update($data);
         return response([]);
     }
 }

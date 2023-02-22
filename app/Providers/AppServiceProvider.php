@@ -2,7 +2,8 @@
 
 namespace App\Providers;
 
-use App\Utils\StateParticipationUtil;
+use App\Http\Services\HarvestSettingService;
+use App\Http\Services\StateParticipationService;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\ServiceProvider;
 
@@ -15,10 +16,16 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(StateParticipationUtil::class, function (): StateParticipationUtil {
-            $s = new StateParticipationUtil();
-            return $s;
-        });
+        $this->app->singleton(
+            StateParticipationUtil::class,
+            fn () =>
+            new StateParticipationService()
+        );
+        $this->app->singleton(
+            HarvestSettingService::class,
+            fn () =>
+            new HarvestSettingService()
+        );
     }
 
     /**

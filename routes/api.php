@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 // --------- ADMIN ROUTES ---------
 
 Route::group(['prefix' => 'admin'], function () {
-    Route::group(['prefix' => 'skill'], function () {
+    Route::group(['prefix' => 'skills'], function () {
         Route::get('/', App\Http\Controllers\Admin\Skill\IndexController::class); // Получение всех скилов
     });
 
@@ -59,11 +59,6 @@ Route::group(['prefix' => 'admin'], function () {
         Route::patch('/{type}', App\Http\Controllers\Admin\Type\UpdateController::class);
         Route::post('/', App\Http\Controllers\Admin\Type\StoreController::class);
     });
-
-    Route::group(['prefix' => 'participationsDeadline'], function () {
-        Route::patch('/', App\Http\Controllers\Admin\ParticipationDeadLine\UpdateController::class);
-    });
-
 });
 
 // --------- SUPERVISORS CABINET ROUTES ---------
@@ -135,5 +130,3 @@ Route::middleware(['candidateAuthProtected'])->group(function () { // роуты
     Route::get('/activeProject', App\Http\Controllers\Candidate\ActiveProjectController::class); // Получение активного проекта студента
     Route::get('/arhiveProjects', App\Http\Controllers\Candidate\ArhiveProjectsController::class); // Получение архивных проектов студента
 });
-
-Route::get('/participationsDeadline', App\Http\Controllers\Participation\DeadLineController::class); // Получение дедлайна подачи заявки

@@ -3,21 +3,22 @@
 namespace App\Http\Controllers\Admin\Type;
 
 use App\Http\Controllers\Controller;
+use App\Models\HarvestSetting;
 use App\Models\Type;
 
 /**
- * Удалить тип проекта
+ * Удалить настройку сбора заявок
  */
 class DeleteController extends Controller
 {
     /**
      * @OA\Delete(
-     *     path="/api/admin/types/${id}",
-     *     summary="Удалить тип проекта",
+     *     path="/api/admin/harvestSetting/${id}",
+     *     summary="Удалить настройку сбора заявок",
      *      tags={"ADMIN"},
      *      @OA\Parameter(
      *         name="id",
-     *         description="ID типа проекта",
+     *         description="ID настройки",
      *          in = "path",
      *         required=true,
      *         @OA\Schema(
@@ -34,9 +35,9 @@ class DeleteController extends Controller
      *     ),
      * )
      */
-    public function __invoke(Type $type)
+    public function __invoke(HarvestSetting $harvestSetting)
     {
-        $type->delete();
+        $harvestSetting->delete();
         return response([]);
     }
 }
