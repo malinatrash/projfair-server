@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('active_harvest_setting', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('setting_id');
+            $table->unsignedBigInteger('harvest_setting_id');
 
-            $table->foreign('setting_id')->on('harvest_settings')->references('id')->onDelete('cascade');
+            $table->foreign('harvest_setting_id')->on('harvest_settings')->references('id')->onDelete('cascade');
         });
     }
 

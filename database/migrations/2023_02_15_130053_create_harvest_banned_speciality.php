@@ -13,14 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('setting_speciality', function (Blueprint $table) {
+        Schema::create('harvest_banned_specialities', function (Blueprint $table) {
             $table->id();
 
+            $table->integer('course')->nullable();
 
-            $table->unsignedBigInteger('setting_id');
+
+            $table->unsignedBigInteger('harvest_setting_id');
             $table->unsignedBigInteger('speciality_id');
 
-            $table->foreign('setting_id')->on('harvest_settings')->references('id')->onDelete('cascade');
+            $table->foreign('harvest_setting_id')->on('harvest_settings')->references('id')->onDelete('cascade');
             $table->foreign('speciality_id')->on('specialities')->references('id')->onDelete('cascade');
         });
     }
@@ -32,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('setting_speciality');
+        Schema::dropIfExists('harvest_banned_specialities');
     }
 };
