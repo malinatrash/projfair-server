@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Speciality extends Model
 {
@@ -11,13 +13,13 @@ class Speciality extends Model
     protected $guarded = false;
     public $timestamps = false;
 
-    public function projects()
+    public function projects(): BelongsToMany
     {
         return $this->belongsToMany(Project::class);
     }
 
-    public function institute()
+    public function department(): BelongsTo
     {
-        return $this->belongsTo(Institute::class);
+        return $this->belongsTo(Department::class);
     }
 }

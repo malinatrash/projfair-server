@@ -5,19 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Institute extends Model
+class Department extends Model
 {
     use HasFactory;
-    protected $table = "institutes";
+
+    protected $table = "departments";
     protected $guarded = false;
 
     public function specialities()
     {
-        return $this->hasManyThrough(Speciality::class, Department::class);
+        return $this->hasMany(Speciality::class);
     }
 
-    public function departments()
+    public function institute()
     {
-        return $this->hasMany(Department::class);
+        return $this->belongsTo(Institute::class);
     }
 }

@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * Модель студента
@@ -38,7 +40,7 @@ class Candidate extends Model
      *
      * @return Проект или null
      */
-    public function activeProject()
+    public function activeProject(): Project | null
     {
         $activeStateParticipation = StateParticipation::where('state', 'Участвует')->get()[0];
         $activeParticipation = Participation::where('candidate_id', $this->id)->where('state_id', $activeStateParticipation->id)->get();
@@ -55,10 +57,34 @@ class Candidate extends Model
      *
      * @return Проект или null
      */
-    public function arhiveProjects()
+    public function arhiveProjects(): Collection
     {
         $arhiveStateParticipation = StateParticipation::where('state', 'Архив')->get()[0];
         $projectsIds = Participation::where('candidate_id', $this->id)->where('state_id', $arhiveStateParticipation->id)->pluck('project_id');
         return Project::whereIn('id', $projectsIds)->get();
+    }
+
+    public function getSpeciality(): Speciality | null
+    {
+        $candidateSpeciality = explode("-", $this->training_group)[0];
+        return Speciality::firstWhere('name', $candidateSpeciality);
+    }
+
+    public function getDepartment(): Department | null
+    {
+        $speciality = $this->getSpeciality();
+        if (!isset($speciality)) {
+            return null;
+        }
+        return $speciality->department;
+    }
+
+    public function getInstitute(): Institute | null
+    {
+        $department = $this->getDepartment();
+        if (!isset($department)) {
+            return null;
+        }
+        return $department->institute;
     }
 }

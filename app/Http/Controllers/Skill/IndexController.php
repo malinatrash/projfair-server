@@ -9,6 +9,7 @@ use App\Http\Resources\SpecialityResource;
 use App\Models\Skill;
 use App\Models\SkillCategory;
 use App\Models\Speciality;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 
 /**
@@ -54,30 +55,29 @@ class IndexController extends Controller
         $specialities = Speciality::all();
         $skillCategories = SkillCategory::all();
 
-        $candidateSpeciality = null;
-
-        $candidate = $request->get('candidate');
-        if ($candidate != null) {
-            $candidateSpeciality = explode("-", $candidate['training_group'])[0];
-
-            $specilities = Speciality::where('name', $candidateSpeciality)->get();
-            if (count($specilities) == 0) {
-                return response('Не найдено', 404);
-            }
-            $specility1 = $specilities[0];
-            $specilitiesInInstitute = $specility1->institute->specialities;
-            $specilitiesInInstituteIds = $specilitiesInInstitute->pluck('id')->toArray();
-            $specialities = [];
-            $specs = Speciality::all()->whereIn('id', $specilitiesInInstituteIds);
-            foreach ($specs as $key => $value) {
-                array_push($specialities, $value);
-            }
-        }
+        $specialities = $this->filterSpecilitiesByCandidate($request, $specialities);
 
         return [
             'skills' => SkillResource::collection($skills),
             'specialties' => SpecialityResource::collection($specialities),
             'skillCategories' => SkillCategoryResource::collection($skillCategories),
         ];
+    }
+
+    private function filterSpecilitiesByCandidate(Request $request, Collection $specilities): Collection
+    {
+        $candidate = $request->get('candidate');
+        if ($candidate == null) {
+            return $specilities;
+        }
+        $candidateInsitute = $candidate->getInstitute();
+
+        if (!isset($candidateInsitute)) {
+            return $specilities;
+        }
+        $specilitiesInInstitute = $candidateInsitute->specialities;
+        $specilitiesInInstituteIds = $specilitiesInInstitute->pluck('id')->toArray();
+
+        return $specilities->whereIn('id', $specilitiesInInstituteIds);
     }
 }

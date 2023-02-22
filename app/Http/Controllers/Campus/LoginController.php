@@ -28,6 +28,12 @@ class LoginController extends Controller
      */
     public function __invoke()
     {
+        if (env('APP_DEBUG')) {
+            setcookie('is_student', 1);
+            setcookie('is_teacher', 0);
+            setcookie('token', 1);
+        }
+
         $return = false;
         $APP = [
             'ID' => 'local.6149ff4c7fcf40.88217011',

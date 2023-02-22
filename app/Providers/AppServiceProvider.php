@@ -15,10 +15,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // $this->app->singleton(StateParticipationUtil::class, function (): StateParticipationUtil {
-        //     $s = new StateParticipationUtil();
-        //     return $s;
-        // });
+        $this->app->singleton(StateParticipationUtil::class, function (): StateParticipationUtil {
+            $s = new StateParticipationUtil();
+            return $s;
+        });
     }
 
     /**
