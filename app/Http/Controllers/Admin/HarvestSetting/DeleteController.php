@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Type;
+namespace App\Http\Controllers\Admin\HarvestSetting;
 
 use App\Http\Controllers\Controller;
 use App\Models\HarvestSetting;
-use App\Models\Type;
 
 /**
  * Удалить настройку сбора заявок
@@ -13,7 +12,7 @@ class DeleteController extends Controller
 {
     /**
      * @OA\Delete(
-     *     path="/api/admin/harvestSetting/${id}",
+     *     path="/api/admin/harvestSettings/${id}",
      *     summary="Удалить настройку сбора заявок",
      *      tags={"ADMIN"},
      *      @OA\Parameter(

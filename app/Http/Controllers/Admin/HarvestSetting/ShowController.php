@@ -1,11 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Admin\SkillCategory;
+namespace App\Http\Controllers\Admin\HarvestSetting;
 
 use App\Http\Resources\HarvestSettingResource;
-use App\Https\Resources\SkillCategoryResource;
 use App\Models\HarvestSetting;
-use App\Models\SkillCategory;
 
 /**
  * Получение информации о настройке по ID
@@ -15,7 +13,7 @@ class ShowController
 
     /**
      * @OA\Get(
-     *     path="/api/admin/harvestSetting/{id}",
+     *     path="/api/admin/harvestSettings/{id}",
      *     summary="Получение информации о настройке по ID",
      *      tags={"ADMIN"},
      *           @OA\Parameter(

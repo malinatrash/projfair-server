@@ -96,17 +96,17 @@ paths:
           description: 'Информация о студенте обновлена'
         '404':
           description: 'Студент не найден'
-  '/api/admin/types/${id}':
+  '/api/admin/harvestSettings/${id}':
     delete:
       tags:
         - ADMIN
-      summary: 'Удалить тип проекта'
-      operationId: ac4c955ae2fa550c7e3df8bfaea48f18
+      summary: 'Удалить настройку сбора заявок'
+      operationId: 6ac4e41fa20fe89547be924f5f423f5e
       parameters:
         -
           name: id
           in: path
-          description: 'ID типа проекта'
+          description: 'ID настройки'
           required: true
           schema:
             type: integer
@@ -118,18 +118,18 @@ paths:
     patch:
       tags:
         - ADMIN
-      summary: 'Обновить тип проекта'
-      operationId: ddc84a394082d962b2d340fb2913c855
+      summary: 'Обновить настройку сбора заявок'
+      operationId: 77a5d40ce3ff5216cfef52aee1d8bd5a
       parameters:
         -
           name: id
           in: path
-          description: 'ID типа проекта'
+          description: 'ID настройки'
           required: true
           schema:
             type: integer
       requestBody:
-        description: 'Параметры для обновления типа проекта'
+        description: 'Параметры для обновления настройки'
         required: true
         content:
           application/json:
@@ -140,55 +140,55 @@ paths:
               type: object
       responses:
         '200':
-          description: 'Тип проекта изменен'
+          description: 'Настройка изменена'
         '404':
-          description: 'Тип проекта не найден'
-  /api/admin/projects/:
+          description: 'Настройка не найдена'
+  /api/admin/harvestSettings/:
     get:
       tags:
         - ADMIN
-      summary: 'Получить информацию о всех проектах'
-      operationId: 61aaffa080da129d88459601deafa221
+      summary: 'Получить информацию о всех настройках'
+      operationId: 26e01f809a92fc7e51da7727fea50fcf
       responses:
         '200':
-          description: 'Все проекты'
+          description: 'Все настройки'
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Project'
-  '/api/admin/skillCategory/{id}':
+                  $ref: '#/components/schemas/HarvestSetting'
+  '/api/admin/harvestSettings/{id}':
     get:
       tags:
         - ADMIN
-      summary: 'Получение информации о категории навыков по ID'
-      operationId: eda60c18a001ef09620e5a85ac7657ec
+      summary: 'Получение информации о настройке по ID'
+      operationId: d1a0a22a3986670afd12d9b59f6abb8e
       parameters:
         -
           name: id
           in: path
-          description: 'ID категории навыков'
+          description: 'ID настройки'
           required: true
           schema:
             type: integer
       responses:
         '200':
-          description: 'Категория навыков'
+          description: настрока
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/SkillCategory'
+                $ref: '#/components/schemas/HarvestSetting'
         '404':
-          description: 'Категория навыков не найдена'
-  /api/admin/types:
+          description: 'настройка не найдена'
+  /api/admin/harvestSettings:
     post:
       tags:
         - ADMIN
-      summary: 'Создать тип проекта'
-      operationId: c939d2a21adb706922ffabca2284bbfa
+      summary: 'Создать настройку сбора заявок'
+      operationId: 8162c701863db10edb2951010a51d02e
       requestBody:
-        description: 'Параметры для создания типа проекта'
+        description: 'Параметры для настройки'
         required: true
         content:
           application/json:
@@ -199,7 +199,7 @@ paths:
               type: object
       responses:
         '200':
-          description: 'Тип проекта создан'
+          description: 'Тип настройка создана'
   '/api/admin/participations/${id}':
     delete:
       tags:
@@ -397,6 +397,21 @@ paths:
           description: 'Проект изменен'
         '404':
           description: 'Проект не найден'
+  /api/admin/projects/:
+    get:
+      tags:
+        - ADMIN
+      summary: 'Получить информацию о всех проектах'
+      operationId: 61aaffa080da129d88459601deafa221
+      responses:
+        '200':
+          description: 'Все проекты'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Project'
   /api/admin/projects:
     post:
       tags:
@@ -485,6 +500,29 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/SkillCategory'
+  '/api/admin/skillCategory/{id}':
+    get:
+      tags:
+        - ADMIN
+      summary: 'Получение информации о категории навыков по ID'
+      operationId: eda60c18a001ef09620e5a85ac7657ec
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID категории навыков'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Категория навыков'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SkillCategory'
+        '404':
+          description: 'Категория навыков не найдена'
   /api/admin/skillCategory:
     post:
       tags:
@@ -691,6 +729,72 @@ paths:
           description: 'Преподаватель изменен'
         '404':
           description: 'Преподаватель не найден'
+  '/api/admin/types/${id}':
+    delete:
+      tags:
+        - ADMIN
+      summary: 'Удалить тип проекта'
+      operationId: ac4c955ae2fa550c7e3df8bfaea48f18
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID типа проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Тип проекта удален'
+        '404':
+          description: 'Тип проекта не найден'
+    patch:
+      tags:
+        - ADMIN
+      summary: 'Обновить тип проекта'
+      operationId: ddc84a394082d962b2d340fb2913c855
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID типа проекта'
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: 'Параметры для обновления типа проекта'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                type:
+                  type: string
+              type: object
+      responses:
+        '200':
+          description: 'Тип проекта изменен'
+        '404':
+          description: 'Тип проекта не найден'
+  /api/admin/types:
+    post:
+      tags:
+        - ADMIN
+      summary: 'Создать тип проекта'
+      operationId: c939d2a21adb706922ffabca2284bbfa
+      requestBody:
+        description: 'Параметры для создания типа проекта'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                type:
+                  type: string
+              type: object
+      responses:
+        '200':
+          description: 'Тип проекта создан'
   /campus_auth:
     get:
       tags:

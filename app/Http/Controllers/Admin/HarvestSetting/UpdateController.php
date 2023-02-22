@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Type;
+namespace App\Http\Controllers\Admin\HarvestSetting;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Type\UpdateRequestAdminType;
 use App\Models\HarvestSetting;
-use App\Models\Type;
 
 /**
  * Обновить настройку сбора заявок
@@ -15,7 +14,7 @@ class UpdateController extends Controller
     //TODO add body
     /**
      * @OA\Patch(
-     *     path="/api/admin/harvestSetting/${id}",
+     *     path="/api/admin/harvestSettings/${id}",
      *     summary="Обновить настройку сбора заявок",
      *      tags={"ADMIN"},
      *      @OA\Parameter(
