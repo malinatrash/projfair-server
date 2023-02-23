@@ -53,18 +53,17 @@ class UpdateController extends Controller
      */
     public function __invoke(UpdateRequestAdminParticipation $request, Participation $participation)
     {
-        if (!$this->harvestSettingService->isNowHarvesting()) {
-            return response("Сейчас не идет сбор заявок", 403);
+        $candidate = $request->get('candidate');
+
+        if ($this->harvestSettingService->isCandidateBannedByHarvestSettings($candidate)) {
+            return response("Сейчас вы не можете обновить заявку", 403);
         }
 
         $data = $request->validated();
-        $candidate = $request->get('candidate');
 
         if ($participation->candidate->id != $candidate->id) {
             return response("Вы не можете изменить чужую заявку", 403);
         }
-
-
 
         $participation->update([
             'priority' => $data['priority'],

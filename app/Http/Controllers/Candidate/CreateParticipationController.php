@@ -54,8 +54,8 @@ class CreateParticipationController extends Controller
         $project->load('specialities', 'state');
         $candidate = $request->get('candidate');
 
-        if (!$this->harvestSettingService->isNowHarvesting()) {
-            return response("Сейчас не идет сбор заявок", 403);
+        if ($this->harvestSettingService->isCandidateBannedByHarvestSettings($candidate)) {
+            return response("Сейчас вы не можете подать заявку", 403);
         }
 
         if (!$this->isProjectOnRecruitment($project)) {

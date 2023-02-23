@@ -44,8 +44,8 @@ class DeleteController extends Controller
     public function __invoke(Participation $participation, Request $request)
     {
         $candidate = $request->get('candidate');
-        if (!$this->harvestSettingService->isNowHarvesting()) {
-            return response("Сейчас не идет сбор заявок", 403);
+        if ($this->harvestSettingService->isCandidateBannedByHarvestSettings($candidate)) {
+            return response("Сейчас вы не можете удалить заявку", 403);
         }
         if ($participation->candidate->id != $candidate->id) {
             return response("Вы не можете удалить чужую заявку", 403);

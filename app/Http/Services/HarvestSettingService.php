@@ -3,6 +3,7 @@
 namespace App\Http\Services;
 
 use App\Models\ActiveHarvestSetting;
+use App\Models\Candidate;
 use App\Models\HarvestSetting;
 
 class HarvestSettingService
@@ -39,5 +40,29 @@ class HarvestSettingService
         $endDate = strtotime($harvestEnd);
 
         return (($nowDate >= $startDate) && ($nowDate <= $endDate));
+    }
+
+    public function isCandidateBannedByHarvestSettings(Candidate $candidate): bool
+    {
+        if (!$this->isNowHarvesting()) {
+            return true;
+        }
+        $currentHarvest = $this->getCurrentHarvestSetting();
+        $candidateSpeciality = $candidate->getSpeciality();
+        if (!isset($candidateSpeciality)) {
+            return false;
+        }
+        $candidateSpecialityId = $candidateSpeciality->id;
+        $bannedCandidateSpeciality = $currentHarvest->bannedSpecialities()->firstWhere('speciality_id', $candidateSpecialityId);
+
+        if (!isset($bannedCandidateSpeciality)) {
+            return false;
+        }
+        $bannedCandidateSpecialityCourse = $bannedCandidateSpeciality->course;
+        if (!isset($bannedCandidateSpecialityCourse)) {
+            return true;
+        }
+        $candidateCourse = $candidate->course;
+        return $bannedCandidateSpecialityCourse == $candidateCourse;
     }
 }
