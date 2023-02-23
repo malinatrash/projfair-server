@@ -12,6 +12,14 @@ class Supervisor extends Model
     protected $guarded = false;
 
     /**
+     * Кафедра, к которой относится преподаватель
+     */
+    public function department()
+    {
+        return $this->belongsTo(Department::class);
+    }
+
+    /**
      * Получить проекты преподавателя
      */
     public function projects()

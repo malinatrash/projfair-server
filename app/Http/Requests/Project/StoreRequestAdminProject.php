@@ -4,7 +4,7 @@ namespace App\Http\Requests\Project;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreRequestAdminProject extends FormRequest
+class StoreRequestByAdminProject extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -39,6 +39,7 @@ class StoreRequestAdminProject extends FormRequest
 
             'state_id' => 'required|integer|exists:states,id',
             'type_id' => 'required|integer|exists:types,id',
+            'department_id' => 'required|integer|exists:departments,id',
 
             'supervisor_ids' => 'nullable|array',
             'supervisor_ids.*' => 'nullable|integer|exists:supervisors,id',

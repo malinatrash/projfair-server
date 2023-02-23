@@ -38,6 +38,7 @@ class StoreRequestSupervisorCabinetProject extends FormRequest
             'additional_inf' => 'string|nullable',
 
             'type_id' => 'required|integer|exists:states,id',
+            'department_id' => 'required|integer|exists:departments,id',
 
             'supervisor_ids' => 'nullable|array',
             'supervisor_ids.*' => 'nullable|integer|exists:supervisors,id',

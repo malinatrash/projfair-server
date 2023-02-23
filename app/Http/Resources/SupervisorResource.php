@@ -25,6 +25,7 @@ class SupervisorResource extends JsonResource
             'position' => $this->position,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'department' => new DepartmentResource($this->department),
         ];
     }
 }
@@ -64,6 +65,13 @@ class Supervisor extends SupervisorResource
      * @OA\Property()
      */
     public string $position;
+
+    /**
+     * Кафедра
+     * @var object
+     * @OA\Property(ref="#/components/schemas/Department")
+     */
+    public $department;
 
     /**
      * Дата создания записи в БД

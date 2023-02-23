@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Supervisor;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\SupervisorResource;
 use App\Models\Supervisor;
 
 /**
@@ -31,6 +32,6 @@ class IndexController extends Controller
     public function __invoke()
     {
         $supervisors = Supervisor::all();
-        return $supervisors;
+        return SupervisorResource::collection($supervisors);
     }
 }

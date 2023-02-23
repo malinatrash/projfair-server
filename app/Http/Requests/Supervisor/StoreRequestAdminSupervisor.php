@@ -28,6 +28,8 @@ class StoreRequestAdminSupervisor extends FormRequest
             'email' => 'string',
             'about' => 'string',
             'position' => 'string',
+            'department_id' => 'required|integer|exists:departments,id',
+
         ];
     }
 }

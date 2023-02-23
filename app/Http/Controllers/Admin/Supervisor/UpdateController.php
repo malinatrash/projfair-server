@@ -38,6 +38,10 @@ class UpdateController extends Controller
      *                      type="string",
      *                      property="position",
      *                  ),
+     *                  @OA\Property(
+     *                      type="integer",
+     *                      property="department_id",
+     *                  ),
      *              )
      *          )
      *     ),

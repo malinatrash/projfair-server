@@ -71,10 +71,13 @@ class StoreController extends Controller
      *                      type="string",
      *                      property="additional_inf",
      *                  ),
-
      *                  @OA\Property(
      *                      type="integer",
      *                      property="type_id",
+     *                  ),
+     *                  @OA\Property(
+     *                      type="integer",
+     *                      property="department_id",
      *                  ),
      *                  @OA\Property(
      *                      type="array",

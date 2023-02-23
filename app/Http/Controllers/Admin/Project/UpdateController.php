@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin\Project;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Project\UpdateRequestAdminProject;
+use App\Http\Requests\Project\UpdateRequestByAdminProject;
 use App\Models\Project;
 
 /**
@@ -88,6 +88,10 @@ class UpdateController extends Controller
      *                      property="type_id",
      *                  ),
      *                  @OA\Property(
+     *                      type="integer",
+     *                      property="department_id",
+     *                  ),
+     *                  @OA\Property(
      *                      type="array",
      *                      property="supervisor_ids",
      *                      @OA\Items(type="integer")
@@ -116,24 +120,21 @@ class UpdateController extends Controller
      * )
      * )
      */
-    public function __invoke(UpdateRequestAdminProject $request, Project $project)
+    public function __invoke(UpdateRequestByAdminProject $request, Project $project)
     {
         $data = $request->validated();
 
         if (isset($data['skill_ids'])) {
             $project->skills()->sync($data['skill_ids']);
             unset($data['skill_ids']);
-
         }
         if (isset($data['supervisor_ids'])) {
             $project->supervisors()->sync($data['supervisor_ids']);
             unset($data['supervisor_ids']);
-
         }
         if (isset($data['speciality_ids'])) {
             $project->specialities()->sync($data['speciality_ids']);
             unset($data['speciality_ids']);
-
         }
 
         $project->update($data);

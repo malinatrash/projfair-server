@@ -846,7 +846,7 @@ paths:
         '404':
           description: 'Не найдено'
         '403':
-          description: 'Вы уже подали 3 заявки'
+          description: 'Сообщение об ошибке'
     delete:
       tags:
         - Participation
@@ -1516,9 +1516,17 @@ components:
         training_group:
           description: 'Учебная группа'
           type: string
-        canSendParticipations:
-          description: 'Может ли отправлять заявки на проекты'
-          type: boolean
+      type: object
+    Department:
+      properties:
+        id:
+          description: 'ID Кафедры'
+          type: integer
+        name:
+          description: 'Название кафедры'
+          type: string
+        institute:
+          $ref: '#/components/schemas/Institute'
       type: object
     Group:
       properties:
@@ -1532,6 +1540,17 @@ components:
           description: 'ID название'
           type: string
       type: object
+    HarvestBannedSpeciality:
+      properties:
+        id:
+          description: 'ID специальности'
+          type: integer
+        course:
+          description: 'Курс, если на задан, то все курсы не учавствуют'
+          type: integer
+        speciality:
+          $ref: '#/components/schemas/Speciality'
+      type: object
     HarvestSetting:
       properties:
         startDateParticipationHarvest:
@@ -1544,7 +1563,7 @@ components:
           description: 'Специальности, которые не учавствуют в сборе заявок'
           type: array
           items:
-            $ref: '#/components/schemas/Supervisor'
+            $ref: '#/components/schemas/HarvestBannedSpeciality'
       type: object
     Institute:
       properties:
@@ -1640,6 +1659,8 @@ components:
           type: string
         state:
           $ref: '#/components/schemas/ProjectState'
+        department:
+          $ref: '#/components/schemas/Department'
         type:
           $ref: '#/components/schemas/ProjectType'
         created_at:
@@ -1690,8 +1711,7 @@ components:
           description: 'Название состояния'
           type: string
         institute:
-          description: 'Институт к которому принадлежит специальность'
-          type: object
+          $ref: '#/components/schemas/Institute'
       type: object
     StateParticipationProject:
       properties:
@@ -1728,6 +1748,8 @@ components:
         position:
           description: Должность
           type: string
+        department:
+          $ref: '#/components/schemas/Department'
         created_at:
           description: 'Дата создания записи в БД'
           type: string

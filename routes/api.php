@@ -72,8 +72,9 @@ Route::group(['prefix' => 'admin'], function () {
 // --------- SUPERVISORS CABINET ROUTES ---------
 
 Route::group(['prefix' => 'supervisor'], function () {
-    Route::post('/projectOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\StoreController::class)->middleware(SupervisorAuthProtected::class);
-    Route::get('/projectOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\IndexController::class)->middleware(SupervisorAuthProtected::class);
+    Route::post('/projectsOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\StoreController::class)->middleware(SupervisorAuthProtected::class);
+    Route::get('/projectsOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\IndexController::class)->middleware(SupervisorAuthProtected::class);
+    Route::patch('/projectsOnReview/{project}', App\Http\Controllers\Supervisor\ProjectOnReview\UpdateController::class)->middleware(SupervisorAuthProtected::class);
 });
 
 // --------- USER ROUTES ---------

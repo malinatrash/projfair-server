@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Supervisor;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\SupervisorResource;
 use App\Models\Supervisor;
 
 /**
@@ -37,6 +38,6 @@ class ShowController extends Controller
      */
     public function __invoke(Supervisor $supervisor)
     {
-        return $supervisor;
+        return new SupervisorResource($supervisor);
     }
 }

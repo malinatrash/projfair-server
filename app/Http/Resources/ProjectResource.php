@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Participation;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
@@ -17,6 +18,9 @@ class ProjectResource extends JsonResource
      */
     public function toArray($request)
     {
+        $participations = Participation::where('project_id', '=', $this->id)->get();
+        $participations->load('candidate');
+
         return [
             'id' => $this->id,
             'prevProjectId' => $this->prev_project_id,
@@ -37,8 +41,11 @@ class ProjectResource extends JsonResource
             'specialities' => SpecialityResource::collection($this->specialities),
             'supervisorsNames' => $this->supervisorsNames,
 
+            'department' => new DepartmentResource($this->department),
             'state' => new StateResource($this->state),
             'type' => new TypeResource($this->type),
+
+            'participations' => $participations,
 
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
@@ -174,6 +181,13 @@ class Project extends ProjectResource
      * @OA\Property(ref="#/components/schemas/ProjectState")
      */
     public $state;
+
+    /**
+     * Кафедра проекта
+     * @var object
+     * @OA\Property(ref="#/components/schemas/Department")
+     */
+    public $department;
     /**
      * Тип проекта
      * @var object

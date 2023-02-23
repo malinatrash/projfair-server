@@ -46,6 +46,14 @@ class Project extends Model
     }
 
     /**
+     * Кафедра, к которой относится проект
+     */
+    public function department()
+    {
+        return $this->belongsTo(Department::class);
+    }
+
+    /**
      * Получить руководителей проекта
      */
     public function supervisors()

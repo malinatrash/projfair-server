@@ -1,23 +1,32 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Project;
+namespace App\Http\Controllers\Supervisor\ProjectOnReview;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Project\StoreRequestByAdminProject;
+use App\Http\Requests\Project\UpdateRequestBySupervisorProject;
 use App\Models\Project;
 
 /**
- * Создать проект
+ * Обновить проект
  */
-class StoreController extends Controller
+class UpdateController extends Controller
 {
     /**
-     * @OA\Post(
-     *     path="/api/admin/projects",
-     *     summary="Создать проект",
-     *     tags={"ADMIN"},
-     *     @OA\RequestBody(
-     *         description="Параметры для создания проекта",
+     * @OA\Patch(
+     *     path="api/supervisor/projectsOnReview/${id}",
+     *     summary="Обновить проект на рассмотрении. Делает преподаватель",
+     *      tags={"SUPERVISOR CABINET"},
+     *      @OA\Parameter(
+     *         name="id",
+     *         description="ID проекта",
+     *          in = "path",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="integer"
+     *         )
+     *     ),
+     *      @OA\RequestBody(
+     *         description="Параметры для обновления проекта",
      *         required=true,
      *         @OA\MediaType(
      *             mediaType="application/json",
@@ -72,10 +81,6 @@ class StoreController extends Controller
      *                  ),
      *                  @OA\Property(
      *                      type="integer",
-     *                      property="state_id",
-     *                  ),
-     *                  @OA\Property(
-     *                      type="integer",
      *                      property="type_id",
      *                  ),
      *                  @OA\Property(
@@ -102,24 +107,28 @@ class StoreController extends Controller
      *     ),
      *     @OA\Response(
      *         response="200",
-     *         description="Проект создан",
+     *         description="Проект на рассмотрение обновлен",
      *     ),
      * )
-     * )
      */
-    public function __invoke(StoreRequestByAdminProject $request)
+    public function __invoke(UpdateRequestBySupervisorProject $request, Project $project)
     {
         $data = $request->validated();
-        $skillIds = $data['skill_ids'];
-        $supervisorIds = $data['supervisor_ids'];
-        $specialityIds = $data['speciality_ids'];
-        unset($data['skill_ids']);
-        unset($data['supervisor_ids']);
-        unset($data['speciality_ids']);
-        $project = Project::create($data);
-        $project->skills()->attach($skillIds);
-        $project->supervisors()->attach($supervisorIds);
-        $project->specialities()->attach($specialityIds);
+
+        if (isset($data['skill_ids'])) {
+            $project->skills()->sync($data['skill_ids']);
+            unset($data['skill_ids']);
+        }
+        if (isset($data['supervisor_ids'])) {
+            $project->supervisors()->sync($data['supervisor_ids']);
+            unset($data['supervisor_ids']);
+        }
+        if (isset($data['speciality_ids'])) {
+            $project->specialities()->sync($data['speciality_ids']);
+            unset($data['speciality_ids']);
+        }
+
+        $project->update($data);
         return response([]);
     }
 }
