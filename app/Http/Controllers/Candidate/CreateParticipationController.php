@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Candidate;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Participation\StoreRequestAdminParticipation;
+use App\Http\Services\HarvestSettingService;
 use App\Models\Candidate;
 use App\Models\Participation;
 use App\Models\Project;
@@ -16,7 +17,9 @@ use App\Models\Speciality;
  */
 class CreateParticipationController extends Controller
 {
-
+    public function __construct(private HarvestSettingService $harvestSettingService)
+    {
+    }
     /**
      * @OA\Post(
      *     path="/api/participations/${id}",
@@ -41,7 +44,7 @@ class CreateParticipationController extends Controller
      *     ),
      *     @OA\Response(
      *         response="403",
-     *         description="Вы уже подали 3 заявки",
+     *         description="Сообщение об ошибке",
      *     )
      * )
      * )
@@ -50,18 +53,27 @@ class CreateParticipationController extends Controller
     {
         $project->load('specialities', 'state');
         $candidate = $request->get('candidate');
+
+        if (!$this->harvestSettingService->isNowHarvesting()) {
+            return response("Сейчас не идет сбор заявок", 403);
+        }
+
         if (!$this->isProjectOnRecruitment($project)) {
             return response("Проект не в статусе набора заявок", 403);
         }
+
         if (!$this->isCandidateInProjectSpecialities($candidate, $project)) {
             return response("Вы не можете подать заявку проект с другого института", 403);
         }
+
         if ($this->isCandidateHasMaxSendedParticipation($candidate)) {
             return response("Вы уже подали 3 заявки", 403);
         }
+
         if ($this->isCandidateOnProject($candidate, $project)) {
-            return response()->json(['error' => 'Заявка на этот проект уже есть'], 400);
+            return response('Заявка на этот проект уже есть', 403);
         }
+
         $candidateId = $candidate['id'];
         $projectId = $project->id;
         Participation::create([

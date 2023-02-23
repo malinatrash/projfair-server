@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Participation;
 
 use App\Http\Controllers\Controller;
+use App\Http\Services\HarvestSettingService;
 use App\Models\Candidate;
 use App\Models\Participation;
 use Illuminate\Http\Request;
@@ -12,6 +13,9 @@ use Illuminate\Http\Request;
  */
 class DeleteController extends Controller
 {
+    public function __construct(private HarvestSettingService $harvestSettingService)
+    {
+    }
     /**
      * @OA\Delete(
      *     path="/api/participations/${id}",
@@ -40,7 +44,9 @@ class DeleteController extends Controller
     public function __invoke(Participation $participation, Request $request)
     {
         $candidate = $request->get('candidate');
-
+        if (!$this->harvestSettingService->isNowHarvesting()) {
+            return response("Сейчас не идет сбор заявок", 403);
+        }
         if ($participation->candidate->id != $candidate->id) {
             return response("Вы не можете удалить чужую заявку", 403);
         }

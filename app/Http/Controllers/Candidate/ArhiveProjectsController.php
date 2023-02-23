@@ -31,7 +31,6 @@ class ArhiveProjectsController extends Controller
      */
     public function __invoke(Request $request)
     {
-
         $arhiveProjects = $request->get('candidate')->arhiveProjects();
         return ProjectResource::collection($arhiveProjects);
     }

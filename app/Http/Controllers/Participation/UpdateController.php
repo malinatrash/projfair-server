@@ -4,15 +4,17 @@ namespace App\Http\Controllers\Participation;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Participation\UpdateRequestAdminParticipation;
-use App\Models\Candidate;
+use App\Http\Services\HarvestSettingService;
 use App\Models\Participation;
-use Illuminate\Http\Request;
 
 /**
  * Изменение приоритета заявки
  */
 class UpdateController extends Controller
 {
+    public function __construct(private HarvestSettingService $harvestSettingService)
+    {
+    }
     /**
      * @OA\Patch(
      *     path="/api/participations/${id}",
@@ -51,6 +53,10 @@ class UpdateController extends Controller
      */
     public function __invoke(UpdateRequestAdminParticipation $request, Participation $participation)
     {
+        if (!$this->harvestSettingService->isNowHarvesting()) {
+            return response("Сейчас не идет сбор заявок", 403);
+        }
+
         $data = $request->validated();
         $candidate = $request->get('candidate');
 

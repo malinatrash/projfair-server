@@ -1084,6 +1084,21 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Institute'
+  /api/participationsDeadline:
+    get:
+      tags:
+        - Participation
+      summary: 'Получение дедлайна подачи заявки'
+      operationId: 9abe53584b0d0b085e984c7f5168ce95
+      responses:
+        '200':
+          description: 'Дата дедлайна'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeadLine'
+        '404':
+          description: 'Дедлайн не назначен'
   /api/projects/filter:
     get:
       tags:
