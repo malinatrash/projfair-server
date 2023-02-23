@@ -4,13 +4,11 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-/**
- * Данные о специальности для апи
- */
-class SpecialityResource extends JsonResource
+/** Данные студента для апи */
+class DepartmentResource extends JsonResource
 {
     /**
-     * Подготавливает данные специальности для апи
+     * Transform the resource into an array.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
@@ -20,32 +18,33 @@ class SpecialityResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'department' => new DepartmentResource($this->department),
+            'institute' => new InstituteResource($this->institute),
         ];
     }
 }
 
+
 /**
  * @OA\Schema()
  */
-class Speciality extends SpecialityResource
+class Department extends DepartmentResource
 {
     /**
-     * ID специальности
+     * ID Кафедры
      * @var int
      * @OA\Property()
      */
-    public int $id;
+    protected int $id;
 
     /**
-     * Название состояния
+     * Название кафедры
      * @var string
      * @OA\Property()
      */
-    public string $state;
+    public string $name;
 
     /**
-     * Институт к которому принадлежит специальность
+     * Институт к которому принадлежит кафедра
      * @var object
      * @OA\Property(ref="#/components/schemas/Institute")
      */

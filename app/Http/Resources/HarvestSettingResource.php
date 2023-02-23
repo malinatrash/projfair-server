@@ -18,8 +18,7 @@ class HarvestSettingResource extends JsonResource
             'id' => $this->id,
             'startDateParticipationHarvest' => $this->start_date_participation_harvest,
             'endDateParticipationHarvest' => $this->end_date_participation_harvest,
-            // TODO add bannedSpecialities
-            'bannedSpecialities' => SpecialityResource::collection($this->bannedSpecialities),
+            'bannedSpecialities' => HarvestBannedSpecialityResource::collection($this->bannedSpecialities),
         ];
     }
 }
@@ -47,7 +46,7 @@ class HarvestSetting extends HarvestSettingResource
      * @var array
      * @OA\Property(
      *  type="array",
-     * @OA\Items(ref="#/components/schemas/Supervisor")
+     * @OA\Items(ref="#/components/schemas/HarvestBannedSpeciality")
      * )
      */
     public $bannedSpecialities;

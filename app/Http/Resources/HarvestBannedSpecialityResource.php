@@ -2,12 +2,13 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Institute;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
  * Данные о специальности для апи
  */
-class SpecialityResource extends JsonResource
+class HarvestBannedSpecialityResource extends JsonResource
 {
     /**
      * Подготавливает данные специальности для апи
@@ -19,8 +20,8 @@ class SpecialityResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'name' => $this->name,
-            'department' => new DepartmentResource($this->department),
+            'course' => $this->course,
+            'speciality' => new SpecialityResource($this->speciality),
         ];
     }
 }
@@ -28,7 +29,7 @@ class SpecialityResource extends JsonResource
 /**
  * @OA\Schema()
  */
-class Speciality extends SpecialityResource
+class HarvestBannedSpeciality extends HarvestBannedSpecialityResource
 {
     /**
      * ID специальности
@@ -37,17 +38,18 @@ class Speciality extends SpecialityResource
      */
     public int $id;
 
-    /**
-     * Название состояния
-     * @var string
-     * @OA\Property()
-     */
-    public string $state;
+
 
     /**
-     * Институт к которому принадлежит специальность
-     * @var object
-     * @OA\Property(ref="#/components/schemas/Institute")
+     * Курс, если на задан, то все курсы не учавствуют
+     * @var int
+     * @OA\Property()
      */
-    public $institute;
+    public $course;
+    /**
+     * Специальность
+     * @var object
+     * @OA\Property(ref="#/components/schemas/Speciality")
+     */
+    public $speciality;
 }

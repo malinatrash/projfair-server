@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['prefix' => 'harvestSettings'], function () {
         Route::get('/', App\Http\Controllers\Admin\HarvestSetting\IndexController::class);
-        Route::get('/', App\Http\Controllers\Admin\HarvestSetting\ShowController::class);
+        Route::get('/{harvestSetting}', App\Http\Controllers\Admin\HarvestSetting\ShowController::class);
         Route::patch('/{harvestSetting}', App\Http\Controllers\Admin\HarvestSetting\UpdateController::class);
         Route::delete('/{harvestSetting}', App\Http\Controllers\Admin\HarvestSetting\DeleteController::class);
         Route::post('/', App\Http\Controllers\Admin\HarvestSetting\StoreController::class);

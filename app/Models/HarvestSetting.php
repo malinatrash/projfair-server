@@ -11,4 +11,12 @@ class HarvestSetting extends Model
 
     protected $table = "harvest_settings";
     protected $guarded = false;
+
+    /**
+     * Получить все заявки на проект
+     */
+    public function bannedSpecialities()
+    {
+        return $this->hasMany(HarvestBannedSpeciality::class, 'harvest_setting_id');
+    }
 }

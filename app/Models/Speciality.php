@@ -18,8 +18,13 @@ class Speciality extends Model
         return $this->belongsToMany(Project::class);
     }
 
-    public function department(): BelongsTo
+    public function department(): BelongsTo | null
     {
         return $this->belongsTo(Department::class);
+    }
+
+    public function getInstitute(): Institute | null
+    {
+        return $this->department?->institute;
     }
 }
