@@ -382,6 +382,8 @@ paths:
                   type: integer
                 type_id:
                   type: integer
+                department_id:
+                  type: integer
                 supervisor_ids:
                   type: array
                   items: { type: integer }
@@ -454,6 +456,8 @@ paths:
                 state_id:
                   type: integer
                 type_id:
+                  type: integer
+                department_id:
                   type: integer
                 supervisor_ids:
                   type: array
@@ -690,6 +694,8 @@ paths:
                   type: string
                 position:
                   type: string
+                department_id:
+                  type: integer
               type: object
       responses:
         '200':
@@ -723,6 +729,8 @@ paths:
                   type: string
                 position:
                   type: string
+                department_id:
+                  type: integer
               type: object
       responses:
         '200':
@@ -1437,6 +1445,8 @@ paths:
                   type: string
                 type_id:
                   type: integer
+                department_id:
+                  type: integer
                 supervisor_ids:
                   type: array
                   items: { type: integer }
@@ -1450,6 +1460,70 @@ paths:
       responses:
         '200':
           description: 'Проект подан на рассмотрение'
+  'api/supervisor/projectsOnReview/${id}':
+    patch:
+      tags:
+        - 'SUPERVISOR CABINET'
+      summary: 'Обновить проект на рассмотрении. Делает преподаватель'
+      operationId: 2da2ae551c89cd5ec2c49033978d8540
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID проекта'
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: 'Параметры для обновления проекта'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                title:
+                  type: string
+                places:
+                  type: integer
+                goal:
+                  type: string
+                description:
+                  type: string
+                difficulty:
+                  type: integer
+                date_start:
+                  type: string
+                  format: date
+                date_end:
+                  type: string
+                  format: date
+                requirements:
+                  type: string
+                customer:
+                  type: string
+                product_result:
+                  type: string
+                study_result:
+                  type: string
+                additional_inf:
+                  type: string
+                type_id:
+                  type: integer
+                department_id:
+                  type: integer
+                supervisor_ids:
+                  type: array
+                  items: { type: integer }
+                skill_ids:
+                  type: array
+                  items: { type: integer }
+                speciality_ids:
+                  type: array
+                  items: { type: integer }
+              type: object
+      responses:
+        '200':
+          description: 'Проект на рассмотрение обновлен'
   /api/types/:
     get:
       tags:
@@ -1654,6 +1728,11 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Speciality'
+        project_specialities:
+          description: 'Для каких специальностей с приоритетом и курсом'
+          type: array
+          items:
+            $ref: '#/components/schemas/ProjectSpeciality'
         supervisorsNames:
           description: 'Имена руководителей'
           type: string
@@ -1669,6 +1748,18 @@ components:
         updated_at:
           description: 'Дата обновления записи в БД'
           type: string
+      type: object
+    ProjectSpeciality:
+      properties:
+        id:
+          description: ID
+          type: integer
+        course:
+          description: 'Для какого курса. Если не задан, то для всех'
+          type: integer
+        priority:
+          description: 'Приоритет специальности'
+          type: integer
       type: object
     SkillCategory:
       properties:

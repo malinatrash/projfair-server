@@ -39,6 +39,7 @@ class ProjectResource extends JsonResource
             'supervisors' => SupervisorResource::collection($this->supervisors),
             'skills' => SkillResource::collection($this->skills),
             'specialities' => SpecialityResource::collection($this->specialities),
+            'project_specialities' => ProjectSpecialityResource::collection($this->projectSpecialities),
             'supervisorsNames' => $this->supervisorsNames,
 
             'department' => new DepartmentResource($this->department),
@@ -168,6 +169,15 @@ class Project extends ProjectResource
      * )
      */
     public $specialities;
+    /**
+     * Для каких специальностей с приоритетом и курсом
+     * @var array
+     * @OA\Property(
+     *  type="array",
+     * @OA\Items(ref="#/components/schemas/ProjectSpeciality")
+     * )
+     */
+    public $project_specialities;
     /**
      * Имена руководителей
      * @var string

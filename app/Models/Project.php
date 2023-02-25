@@ -29,6 +29,11 @@ class Project extends Model
         return $this->belongsToMany(Speciality::class);
     }
 
+    public function projectSpecialities()
+    {
+        return $this->hasMany(ProjectSpeciality::class);
+    }
+
     /**
      * Получить все заявки на проект
      */
@@ -72,7 +77,7 @@ class Project extends Model
     /**
      * Получить участников проекта (заявка в состоянии 'Участвует')
      */
-    public function participants(): Collection
+    public function getParticipants(): Collection
     {
 
         $activeParticipations = Participation::with('candidate')->where('project_id', '=', $this->id)->whereIn('state_id', [2, 3])->get();

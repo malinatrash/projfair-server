@@ -43,6 +43,6 @@ class GetParticipantsController extends Controller
      */
     public function __invoke(Project $project)
     {
-        return CandidateResource::collection($project->participants());
+        return CandidateResource::collection($project->getParticipants());
     }
 }
