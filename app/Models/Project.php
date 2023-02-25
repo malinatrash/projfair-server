@@ -13,6 +13,9 @@ class Project extends Model
 
     protected $guarded = false;
 
+    protected $table = "projects";
+
+
     /**
      * Получить требуемые навыки для проекта
      */
@@ -32,6 +35,11 @@ class Project extends Model
     public function projectSpecialities()
     {
         return $this->hasMany(ProjectSpeciality::class);
+    }
+
+    public function projectSupervisors()
+    {
+        return $this->hasMany(ProjectSupervisor::class);
     }
 
     /**

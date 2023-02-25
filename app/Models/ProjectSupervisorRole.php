@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class ProjectSupervisorRole extends Model
 {
     use HasFactory;
+
+    protected $table = "project_supervisor_roles";
+    protected $guarded = false;
 }
