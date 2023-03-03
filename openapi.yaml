@@ -1192,7 +1192,7 @@ paths:
         -
           name: pageSize
           in: query
-          description: 'Размер страницы. Позитивное число'
+          description: "Размер страницы. Позитивное число ИЛИ 'max' для получения без пагинации"
           required: false
           schema:
             type: integer
@@ -1718,6 +1718,11 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Supervisor'
+        projectSupervisors:
+          description: 'Руководители с ролями и приоритетами'
+          type: array
+          items:
+            $ref: '#/components/schemas/ProjectSupervisor'
         skills:
           description: 'Требуемые навыки'
           type: array
@@ -1759,6 +1764,28 @@ components:
           type: integer
         priority:
           description: 'Приоритет специальности'
+          type: integer
+      type: object
+    ProjectSupervisor:
+      properties:
+        id:
+          description: ID
+          type: integer
+        priority:
+          description: Приоритет
+          type: integer
+        role:
+          $ref: '#/components/schemas/ProjectSupervisorRole'
+        supervisor:
+          $ref: '#/components/schemas/Supervisor'
+      type: object
+    ProjectSupervisorRole:
+      properties:
+        id:
+          description: ID
+          type: integer
+        name:
+          description: Название
           type: integer
       type: object
     SkillCategory:
