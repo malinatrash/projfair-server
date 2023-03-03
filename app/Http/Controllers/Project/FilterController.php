@@ -134,7 +134,7 @@ class FilterController extends Controller
      *     ),
      *      @OA\Parameter(
      *         name="pageSize",
-     *         description="Размер страницы. Позитивное число",
+     *         description="Размер страницы. Позитивное число ИЛИ 'max' для получения без пагинации",
      *          in = "query",
      *         required=false,
      *         @OA\Schema(
@@ -185,13 +185,9 @@ class FilterController extends Controller
 
     private function sortProjects(Request $request, Collection $projectCollection): Collection
     {
-        $sortBy = $request->get('sortBy') ?? 'id';
-        $order = $request->get('order') ?? 'asc';
-        if ($order == 'asc') {
-            return $projectCollection->sortBy($sortBy);
-        } else {
-            return $projectCollection->sortByDesc($sortBy);
-        }
+        $sortBy = $request->get('sortBy') ?? 'state.show_priority';
+        $order = $request->get('order') ?? 'desc';
+        return $projectCollection->sortBy([[$sortBy, $order]]);
     }
 
     private function filterProjectsByCandidateSpeciality(Request $request, Collection $projectCollection): Collection
@@ -347,7 +343,11 @@ class FilterController extends Controller
     private function paginateProjects(Request $request, Collection $projectCollection): Collection
     {
         $page = intval($request->input('page'));
-        $pageSize = intval($request->input('pageSize')) ?? 7;
+        $pageSize = $request->input('pageSize') ?? 7;
+        if ($pageSize == 'max') {
+            return $projectCollection;
+        }
+        $pageSize = intval($pageSize);
         if ($pageSize <= 0) {
             $pageSize = 7;
         }
