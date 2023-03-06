@@ -20,6 +20,7 @@ class SpecialityResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'institute' => new InstituteResource($this->getInstitute()),
             'department' => new DepartmentResource($this->department),
         ];
     }
@@ -42,7 +43,7 @@ class Speciality extends SpecialityResource
      * @var string
      * @OA\Property()
      */
-    public string $state;
+    public string $name;
 
     /**
      * Институт к которому принадлежит специальность
@@ -50,4 +51,11 @@ class Speciality extends SpecialityResource
      * @OA\Property(ref="#/components/schemas/Institute")
      */
     public $institute;
+
+    /**
+     * Кафедра к которому принадлежит специальность
+     * @var object
+     * @OA\Property(ref="#/components/schemas/Department")
+     */
+    public $department;
 }

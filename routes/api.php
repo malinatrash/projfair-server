@@ -88,6 +88,7 @@ Route::group(['prefix' => 'projects'], function () { // Получения ин�
     Route::get('/filter', App\Http\Controllers\Project\FilterController::class)->middleware(CandidateAuth::class); // Получение проектов с фильтрацией. Скрывать данные других институтов если пользователь авторизован
     Route::get('/{project}', App\Http\Controllers\Project\ShowController::class); // Получение информации о проекте
     Route::get('/{project}/participants', App\Http\Controllers\Project\GetParticipantsController::class); // Получение участников на проекте
+    Route::get('/{project}/history', App\Http\Controllers\Project\HistoryController::class); // Получение участников на проекте
 
 });
 

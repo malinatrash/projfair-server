@@ -1231,6 +1231,31 @@ paths:
                   $ref: '#/components/schemas/Candidate'
         '404':
           description: 'Проект не найден'
+  '/api/projects/{id}/history':
+    get:
+      tags:
+        - Project
+      summary: 'История проекта'
+      operationId: 0285645f89ee33a5a8eea0c16e8bd35d
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: проекты
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Project'
+        '404':
+          description: 'Проект не найден'
   '/api/projects/{id}':
     get:
       tags:
@@ -1825,11 +1850,13 @@ components:
         id:
           description: 'ID специальности'
           type: integer
-        state:
+        name:
           description: 'Название состояния'
           type: string
         institute:
           $ref: '#/components/schemas/Institute'
+        department:
+          $ref: '#/components/schemas/Department'
       type: object
     StateParticipationProject:
       properties:

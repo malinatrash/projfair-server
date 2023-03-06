@@ -93,13 +93,40 @@ class Project extends Model
         return $participants;
     }
 
-    /**
-     * Получить связанный проект из предыдущего семестра
-     */
-    public function prevProject(): Project
+    public function getHistory(): array
     {
-        $prevProjectId = $this->prev_project_id;
+        $projects = [];
 
-        return Project::find($prevProjectId);
+        $prevProject = $this->getPreviousProject();
+        while (isset($prevProject)) {
+            array_push($projects, $prevProject);
+            $prevProject = $prevProject->getPreviousProject();
+        }
+
+        array_push($projects, $this);
+
+        $nextProject = $this->getNextProject();
+        while (isset($nextProject)) {
+            array_push($projects, $nextProject);
+            $nextProject = $nextProject->getNextProject();
+        }
+
+        return $projects;
+    }
+
+    /**
+     * Получить предыдущий проект
+     */
+    public function getPreviousProject(): Project | null
+    {
+        return Project::find($this->prev_project_id);
+    }
+
+    /**
+     * Получить следующий проект
+     */
+    public function getNextProject(): Project | null
+    {
+        return Project::firstWhere('prev_project_id', $this->id);
     }
 }
