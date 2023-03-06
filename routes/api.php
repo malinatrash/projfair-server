@@ -128,7 +128,7 @@ Route::group(['namespace' => 'Institute', 'prefix' => 'institutes'], function ()
 Route::group(['namespace' => 'Participation', 'prefix' => 'participations'], function () {
     Route::delete('/{participation}', App\Http\Controllers\Participation\DeleteController::class)->middleware(CandidateAuthProtected::class); // Удаление заявки
     Route::patch('/{participation}', App\Http\Controllers\Participation\UpdateController::class)->middleware(CandidateAuthProtected::class); // Изменение заявки
-
+    Route::get('/filter', App\Http\Controllers\Participation\FilterController::class);
 });
 
 Route::middleware(['candidateAuthProtected'])->group(function () { // роуты авторизованного студента
