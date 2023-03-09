@@ -1107,6 +1107,46 @@ paths:
                 $ref: '#/components/schemas/DeadLine'
         '404':
           description: 'Дедлайн не назначен'
+  /api/participations/filter:
+    get:
+      tags:
+        - Participation
+      summary: 'Получение заявок с фильтрацией'
+      operationId: 3997bdafe69f12ab5c6e00c9a58bcea5
+      parameters:
+        -
+          name: page
+          in: query
+          description: 'Номер страницы (отчет с нуля)'
+          required: false
+          schema:
+            type: integer
+        -
+          name: state
+          in: query
+          description: 'Массив ID состояний'
+          required: false
+          schema:
+            type: array
+            items:
+              type: integer
+        -
+          name: pageSize
+          in: query
+          description: "Размер страницы. Позитивное число ИЛИ 'max' для получения без пагинации"
+          required: false
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Заявки
+          content:
+            application/json:
+              schema:
+                properties:
+                  participationCount: { description: 'Общее количество проектов', type: integer }
+                  data: { description: 'Массив заявок', type: array, items: { $ref: '#/components/schemas/Participation' } }
+                type: object
   /api/projects/filter:
     get:
       tags:

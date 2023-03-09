@@ -102,7 +102,7 @@ class Project extends Model
             array_push($projects, $prevProject);
             $prevProject = $prevProject->getPreviousProject();
         }
-
+        $projects = array_reverse($projects);
         array_push($projects, $this);
 
         $nextProject = $this->getNextProject();
