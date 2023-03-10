@@ -35,9 +35,9 @@ class LoginController extends Controller
         if (env('APP_DEBUG')) {
             $role = $request->input('role');
             $token = $request->input('api_token');
-            $domain = ($_SERVER['HTTP_HOST'] != 'localhost') ? $_SERVER['HTTP_HOST'] : false;
+
             $expiresTime = time() + (7 * 24 * 60 * 60);
-            $cookieOptions = ['httponly' => true, 'expires' => $expiresTime, 'domain' => $domain];
+            $cookieOptions = ['httponly' => true, 'expires' => $expiresTime, 'domain' => false];
             setcookie('is_student', $role == 'is_student', $cookieOptions);
             setcookie('is_teacher', $role == 'is_teacher', $cookieOptions);
             setcookie('token', $token, $cookieOptions);
