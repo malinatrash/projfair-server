@@ -41,7 +41,9 @@ class LoginController extends Controller
             setcookie('is_student', $role == 'is_student', $cookieOptions);
             setcookie('is_teacher', $role == 'is_teacher', $cookieOptions);
             setcookie('token', $token, $cookieOptions);
-            return json_encode(['url' => '']);
+
+            $cookie = cookie('mydomain_api', $token, 60 * 24);
+            return response(['url' => ''])->withCookie($cookie);
         }
 
         $return = false;
