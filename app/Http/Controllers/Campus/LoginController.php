@@ -29,12 +29,16 @@ class LoginController extends Controller
      */
     public function __invoke(Request $request)
     {
+        $expiresTime = time() + (7 * 24 * 60 * 60);
+        $cookieOptions = ['httponly' => true, 'expires' => $expiresTime];
+
+
         if (env('APP_DEBUG')) {
             $role = $request->input('role');
             $token = $request->input('api_token');
-            setcookie('is_student', $role == 'is_student');
-            setcookie('is_teacher', $role == 'is_teacher');
-            setcookie('token', $token);
+            setcookie('is_student', $role == 'is_student', $cookieOptions);
+            setcookie('is_teacher', $role == 'is_teacher', $cookieOptions);
+            setcookie('token', $token, $cookieOptions);
             return json_encode(['url' => '']);
         }
 
@@ -101,8 +105,6 @@ class LoginController extends Controller
         if ($return['is_student']) {
             $api_token = $this->authTeacher($return);
         }
-        $expiresTime = time() + (7 * 24 * 60 * 60);
-        $cookieOptions = ['httponly' => true, 'expires' => $expiresTime];
 
         setcookie('is_student', $return['is_student'], $cookieOptions);
         setcookie('is_teacher', $return['is_teacher'], $cookieOptions);
