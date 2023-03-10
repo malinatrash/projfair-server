@@ -38,9 +38,12 @@ class LoginController extends Controller
 
             $expiresTime = time() + (7 * 24 * 60 * 60);
             $cookieOptions = ['httponly' => true, 'expires' => $expiresTime, 'domain' => false];
-            setcookie('is_student', $role == 'is_student', $cookieOptions);
-            setcookie('is_teacher', $role == 'is_teacher', $cookieOptions);
-            setcookie('token', $token, $cookieOptions);
+            setcookie('is_student', $role == 'is_student', time() + 60 * 60 * 24 * 365, '/', false, false);
+            setcookie('is_teacher', $role == 'is_teacher', time() + 60 * 60 * 24 * 365, '/', false, false);
+            setcookie('token', $token, time() + 60 * 60 * 24 * 365, '/', false, false);
+            // setcookie('is_student', $role == 'is_student', $cookieOptions);
+            // setcookie('is_teacher', $role == 'is_teacher', $cookieOptions);
+            // setcookie('token', $token, $cookieOptions);
             return json_encode(['url' => '']);
         }
 
