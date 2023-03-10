@@ -7,6 +7,7 @@ use App\Models\Candidate;
 use App\Models\Supervisor;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Str;
+use Illuminate\Http\Request;
 
 /**
  * Авторизация через кампус
@@ -26,12 +27,15 @@ class LoginController extends Controller
      * )
      * )
      */
-    public function __invoke()
+    public function __invoke(Request $request)
     {
         if (env('APP_DEBUG')) {
-            setcookie('is_student', 1);
-            setcookie('is_teacher', 0);
-            setcookie('token', 1);
+            $role = $request->input('role');
+            $token = $request->input('api_token');
+            setcookie('is_student', $role == 'is_student');
+            setcookie('is_teacher', $role == 'is_teacher');
+            setcookie('token', $token);
+            return redirect('/');
         }
 
         $return = false;

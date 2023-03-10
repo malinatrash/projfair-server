@@ -72,6 +72,7 @@ Route::group(['prefix' => 'admin'], function () {
 // --------- SUPERVISORS CABINET ROUTES ---------
 
 Route::group(['prefix' => 'supervisor'], function () {
+    Route::get('/', App\Http\Controllers\Supervisor\MeController::class); // Получить информацию об авторизованном преподе
     Route::post('/projectsOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\StoreController::class)->middleware(SupervisorAuthProtected::class);
     Route::get('/projectsOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\IndexController::class)->middleware(SupervisorAuthProtected::class);
     Route::patch('/projectsOnReview/{project}', App\Http\Controllers\Supervisor\ProjectOnReview\UpdateController::class)->middleware(SupervisorAuthProtected::class);
@@ -140,5 +141,7 @@ Route::middleware(['candidateAuthProtected'])->group(function () { // роуты
     Route::get('/activeProject', App\Http\Controllers\Candidate\ActiveProjectController::class); // Получение активного проекта студента
     Route::get('/arhiveProjects', App\Http\Controllers\Candidate\ArhiveProjectsController::class); // Получение архивных проектов студента
 });
+
+
 
 Route::get('/participationsDeadline', App\Http\Controllers\Participation\DeadLineController::class); // Получение дедлайна подачи заявки

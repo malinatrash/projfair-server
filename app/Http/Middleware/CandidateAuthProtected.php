@@ -24,14 +24,14 @@ class CandidateAuthProtected
         if ($token == null) {
             abort(403, 'Access denied');
         }
-        $candidates = Candidate::where('api_token', $token)->get();
+        $candidate = Candidate::firstWhere('api_token', $token);
 
-        if (count($candidates) == 0) {
+        if (!isset($candidate)) {
             abort(403, 'Access denied');
         }
 
 
-        $request->attributes->add(['candidate' => $candidates[0]]);
+        $request->attributes->add(['candidate' => $candidate]);
 
         return $next($request);
     }

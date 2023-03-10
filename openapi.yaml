@@ -1454,6 +1454,19 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Supervisor'
+  /api/supervisor:
+    get:
+      tags:
+        - Supervisor
+      summary: 'Получить информацию об авторизованном преподавателе'
+      operationId: 02d99dd2ffecf8d16975df933612044e
+      responses:
+        '200':
+          description: 'Информация о преподе'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supervisor'
   /api/supervisor/projectsOnReview:
     get:
       tags:

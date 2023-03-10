@@ -14,13 +14,13 @@ class SupervisorAuthProtected
         if ($token == null) {
             abort(403, 'Access denied');
         }
-        $supervisors = Supervisor::where('api_token', $token)->get();
+        $supervisor = Supervisor::firstWhere('api_token', $token);
 
-        if (count($supervisors) == 0) {
+        if (!isset($supervisor)) {
             abort(403, 'Access denied');
         }
 
-        $request->attributes->add(['supervisor' => $supervisors[0]]);
+        $request->attributes->add(['supervisor' => $supervisor]);
 
         return $next($request);
     }
