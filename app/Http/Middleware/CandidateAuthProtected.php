@@ -20,7 +20,7 @@ class CandidateAuthProtected
     public function handle(Request $request, Closure $next)
     {
 
-        $token = $request->cookie('token');
+        $token = $request->cookie('token') || $_SESSION['token'];
         if ($token == null) {
             abort(403, 'Access denied');
         }
