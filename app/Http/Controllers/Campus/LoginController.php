@@ -35,7 +35,7 @@ class LoginController extends Controller
             setcookie('is_student', $role == 'is_student');
             setcookie('is_teacher', $role == 'is_teacher');
             setcookie('token', $token);
-            return redirect('/');
+            return json_encode(['url' => '']);
         }
 
         $return = false;
