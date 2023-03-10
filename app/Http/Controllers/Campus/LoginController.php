@@ -37,7 +37,7 @@ class LoginController extends Controller
             $token = $request->input('api_token');
             $domain = ($_SERVER['HTTP_HOST'] != 'localhost') ? $_SERVER['HTTP_HOST'] : false;
             $expiresTime = time() + (7 * 24 * 60 * 60);
-            $cookieOptions = ['secure ' => true, 'httponly' => true, 'expires' => $expiresTime, 'domain' => null, 'sameSite' => 'None'];
+            $cookieOptions = ['secure' => true, 'httponly' => true, 'expires' => $expiresTime, 'domain' => null, 'sameSite' => 'None'];
             setcookie('is_student', $role == 'is_student', $cookieOptions);
             setcookie('is_teacher', $role == 'is_teacher', $cookieOptions);
             setcookie('token', $token, $cookieOptions);
