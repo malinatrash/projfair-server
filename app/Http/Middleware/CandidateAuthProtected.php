@@ -22,12 +22,12 @@ class CandidateAuthProtected
 
         $token = $request->cookie('token') ?? $request->header('token');
         if ($token == null) {
-            abort(403, 'Access denied');
+            return response(['error' => 'Не найдено'], 404);
         }
         $candidate = Candidate::firstWhere('api_token', $token);
 
         if (!isset($candidate)) {
-            abort(403, 'Access denied');
+            return response(['error' => 'Не найдено'], 404);
         }
 
 

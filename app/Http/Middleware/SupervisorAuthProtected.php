@@ -12,12 +12,12 @@ class SupervisorAuthProtected
     {
         $token = $request->cookie('token') ?? $request->header('token');
         if ($token == null) {
-            abort(403, 'Access denied');
+            return response(['error' => 'Не найдено'], 404);
         }
         $supervisor = Supervisor::firstWhere('api_token', $token);
 
         if (!isset($supervisor)) {
-            abort(403, 'Access denied');
+            return response(['error' => 'Не найдено'], 404);
         }
 
         $request->attributes->add(['supervisor' => $supervisor]);

@@ -11,11 +11,11 @@ class AdminAuthProtected
     {
         // $token = $request->cookie('token');
         // if ($token == null) {
-        //     return abort(403, 'Access denied');
+        //     return response(['error' => 'Не найдено'], 404);
         // }
         // $admins = Admin::where('username', $token)->get(); // TODO Придумать как авторизовать админа
         // if (count($admins) == 0) {
-        return abort(403, 'Access denied');
+        return response(['error' => 'Не найдено'], 404);
         // }
         // $request->attributes->add(['admin' => $admins[0]]);
 
