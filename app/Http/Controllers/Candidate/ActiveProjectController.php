@@ -32,7 +32,7 @@ class ActiveProjectController extends Controller
         if ($activeProject) {
             return new ProjectResource($activeProject);
         } else {
-            return abort(404);
+            return response(['error' => 'Активного проекта нет'], 404);
         }
     }
 }
