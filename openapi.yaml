@@ -1852,8 +1852,11 @@ components:
         priority:
           description: Приоритет
           type: integer
-        role:
-          $ref: '#/components/schemas/ProjectSupervisorRole'
+        roles:
+          description: Роль
+          type: array
+          items:
+            $ref: '#/components/schemas/ProjectSupervisorRole'
         supervisor:
           $ref: '#/components/schemas/Supervisor'
       type: object

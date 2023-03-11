@@ -20,7 +20,7 @@ class ProjectSupervisorResource extends JsonResource
         return [
             'id' => $this->id,
             'priority' => $this->priority,
-            'role' => $this->role,
+            'roles' => ProjectSupervisorRoleResource::collection($this->roles),
             'supervisor' => $this->supervisor,
         ];
     }
@@ -47,10 +47,13 @@ class ProjectSupervisor extends ProjectSupervisorResource
 
     /**
      * Роль
-     * @var int
-     * @OA\Property(ref="#/components/schemas/ProjectSupervisorRole")
+     * @var array
+     * @OA\Property(
+     *  type="array",
+     *  @OA\Items(ref="#/components/schemas/ProjectSupervisorRole")
+     * )
      */
-    public int $role;
+    public int $roles;
 
     /**
      * Преподаватель
