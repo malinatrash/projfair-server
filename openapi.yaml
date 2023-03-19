@@ -1416,6 +1416,21 @@ paths:
       responses:
         '200':
           description: 'навык создан'
+  /api/specialities/:
+    get:
+      tags:
+        - Speciality
+      summary: 'Получить все специальности'
+      operationId: f8872c0089b7f135eef8baed8dd23bd1
+      responses:
+        '200':
+          description: 'все специальности'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Speciality'
   /api/states/:
     get:
       tags:

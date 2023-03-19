@@ -109,6 +109,10 @@ Route::group(['prefix' => 'projectSupervisorRoles'], function () {
     Route::get('/', App\Http\Controllers\ProjectSupervisorRole\IndexController::class);
 });
 
+Route::group(['prefix' => 'specialities'], function () {
+    Route::get('/', App\Http\Controllers\Speciality\IndexController::class);
+});
+
 Route::group(['namespace' => 'Skill', 'prefix' => 'skills'], function () {
     Route::get('/', App\Http\Controllers\Skill\IndexController::class)->middleware(CandidateAuth::class); // Получить данные для фильтрации по навыкам и специальностям. Скрывать данные других институтов если пользователь авторизован
     Route::get('/{skill}', App\Http\Controllers\Skill\ShowController::class); // Получить информацию о навыке
