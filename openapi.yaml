@@ -1147,6 +1147,21 @@ paths:
                   participationCount: { description: 'Общее количество проектов', type: integer }
                   data: { description: 'Массив заявок', type: array, items: { $ref: '#/components/schemas/Participation' } }
                 type: object
+  /api/projectSupervisorRoles/:
+    get:
+      tags:
+        - ProjectSupervisorRole
+      summary: 'Получить роли преподавателей на проекте'
+      operationId: 20453841aa140693af7a8829e3a797da
+      responses:
+        '200':
+          description: 'Роли преподавателей на проекте'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ProjectSupervisorRole'
   /api/projects/filter:
     get:
       tags:
