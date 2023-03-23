@@ -73,9 +73,9 @@ Route::group(['prefix' => 'admin'], function () {
 
 Route::group(['prefix' => 'supervisor'], function () {
     Route::get('/', App\Http\Controllers\Supervisor\MeController::class)->middleware(SupervisorAuthProtected::class);; // Получить информацию об авторизованном преподе
-    Route::post('/projectsOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\StoreController::class)->middleware(SupervisorAuthProtected::class);
-    Route::get('/projectsOnReview', App\Http\Controllers\Supervisor\ProjectOnReview\IndexController::class)->middleware(SupervisorAuthProtected::class);
-    Route::patch('/projectsOnReview/{project}', App\Http\Controllers\Supervisor\ProjectOnReview\UpdateController::class)->middleware(SupervisorAuthProtected::class);
+    Route::post('/projects', App\Http\Controllers\Supervisor\Projects\StoreController::class)->middleware(SupervisorAuthProtected::class);
+    Route::get('/projects', App\Http\Controllers\Supervisor\Projects\IndexController::class)->middleware(SupervisorAuthProtected::class);
+    Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Projects\UpdateController::class)->middleware(SupervisorAuthProtected::class);
 });
 
 // --------- USER ROUTES ---------

@@ -1,32 +1,25 @@
 <?php
 
-namespace App\Http\Controllers\Supervisor\ProjectOnReview;
+namespace App\Http\Controllers\Supervisor\Projects;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Project\UpdateRequestBySupervisorProject;
+use App\Http\Requests\Project\StoreRequestSupervisorCabinetProject;
 use App\Models\Project;
+use App\Models\Supervisor;
+use Illuminate\Http\Request;
 
 /**
- * Обновить проект
+ * Создать проект (Преподаватель)
  */
-class UpdateController extends Controller
+class StoreController extends Controller
 {
     /**
-     * @OA\Patch(
-     *     path="api/supervisor/projectsOnReview/${id}",
-     *     summary="Обновить проект на рассмотрении. Делает преподаватель",
+     * @OA\Post(
+     *     path="api/supervisor/projects",
+     *     summary="Создать проект на рассмотрении. Делает преподаватель",
      *      tags={"SUPERVISOR CABINET"},
-     *      @OA\Parameter(
-     *         name="id",
-     *         description="ID проекта",
-     *          in = "path",
-     *         required=true,
-     *         @OA\Schema(
-     *             type="integer"
-     *         )
-     *     ),
      *      @OA\RequestBody(
-     *         description="Параметры для обновления проекта",
+     *         description="Параметры для создания проекта",
      *         required=true,
      *         @OA\MediaType(
      *             mediaType="application/json",
@@ -107,28 +100,29 @@ class UpdateController extends Controller
      *     ),
      *     @OA\Response(
      *         response="200",
-     *         description="Проект на рассмотрение обновлен",
+     *         description="Проект подан на рассмотрение",
      *     ),
      * )
      */
-    public function __invoke(UpdateRequestBySupervisorProject $request, Project $project)
+    public function __invoke(StoreRequestSupervisorCabinetProject $request)
     {
+        $supervisor = $request->get('supervisor');
         $data = $request->validated();
+        dd($data);
+        return $data;
+        $skillIds = $data['skill_ids'];
+        $supervisorIds = $data['supervisor_ids'];
+        $specialityIds = $data['speciality_ids'];
+        unset($data['skill_ids']);
+        unset($data['supervisor_ids']);
+        unset($data['speciality_ids']);
+        $data['state_id'] = 5;
 
-        if (isset($data['skill_ids'])) {
-            $project->skills()->sync($data['skill_ids']);
-            unset($data['skill_ids']);
-        }
-        if (isset($data['supervisor_ids'])) {
-            $project->supervisors()->sync($data['supervisor_ids']);
-            unset($data['supervisor_ids']);
-        }
-        if (isset($data['speciality_ids'])) {
-            $project->specialities()->sync($data['speciality_ids']);
-            unset($data['speciality_ids']);
-        }
+        $project = Project::create($data);
 
-        $project->update($data);
+        $project->skills()->attach($skillIds);
+        $project->supervisors()->attach($supervisorIds);
+        $project->specialities()->attach($specialityIds);
         return response([]);
     }
 }

@@ -1497,12 +1497,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Supervisor'
-  /api/supervisor/projectsOnReview:
+  /api/supervisor/projects:
     get:
       tags:
         - 'SUPERVISOR CABINET'
       summary: 'Получить проекты на рассмотрении. Делает преподаватель'
-      operationId: 7021a33c16c7ecbbb801e0c611ab203d
+      operationId: b9b4e803d821a67f81fb41d40c7dd9e6
       responses:
         '200':
           description: 'Информации о заявках руководителя @TODO RESPONCE'
@@ -1512,12 +1512,12 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Project'
-  api/supervisor/projectsOnReview:
+  api/supervisor/projects:
     post:
       tags:
         - 'SUPERVISOR CABINET'
       summary: 'Создать проект на рассмотрении. Делает преподаватель'
-      operationId: 6dac10a008a83382b64be7d6f56964d2
+      operationId: 0ab6943d65450a032e433e3874b5eb95
       requestBody:
         description: 'Параметры для создания проекта'
         required: true
@@ -1568,12 +1568,12 @@ paths:
       responses:
         '200':
           description: 'Проект подан на рассмотрение'
-  'api/supervisor/projectsOnReview/${id}':
+  'api/supervisor/projects/${id}':
     patch:
       tags:
         - 'SUPERVISOR CABINET'
       summary: 'Обновить проект на рассмотрении. Делает преподаватель'
-      operationId: 2da2ae551c89cd5ec2c49033978d8540
+      operationId: d71434ad6cb348791d687d0435265b5b
       parameters:
         -
           name: id

@@ -1,11 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Supervisor\ProjectOnReview;
+namespace App\Http\Controllers\Supervisor\Projects;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\ProjectResource;
-use App\Models\Project;
-use App\Models\Supervisor;
 use Illuminate\Http\Request;
 
 /**
@@ -15,7 +13,7 @@ class IndexController extends Controller
 {
     /**
      * @OA\Get(
-     *     path="/api/supervisor/projectsOnReview",
+     *     path="/api/supervisor/projects",
      *     summary="Получить проекты на рассмотрении. Делает преподаватель",
      *      tags={"SUPERVISOR CABINET"},
      *     @OA\Response(
@@ -34,6 +32,6 @@ class IndexController extends Controller
     {
         $supervisor = $request->get('supervisor');
 
-        return ProjectResource::collection($supervisor->projectsOnReview);
+        return ProjectResource::collection($supervisor->projects);
     }
 }

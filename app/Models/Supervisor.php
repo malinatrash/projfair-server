@@ -26,12 +26,4 @@ class Supervisor extends Model
     {
         return $this->belongsToMany(Project::class);
     }
-
-    /**
-     * Получить проекты преподавателя на рассмотрении
-     */
-    public function projectsOnReview()
-    {
-        return $this->belongsToMany(Project::class)->where(['state_id' => 5]);
-    }
 }

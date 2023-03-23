@@ -8,6 +8,6 @@ Route::group(['namespace' => 'Campus'], function () {
     Route::get('/campus_out', 'LogoutController'); // Выход из аккаунта
 });
 
-Route::get('{page}', function () {
-    return view('index');
-})->where('page', '.*');
+// Route::get('{page}', function () {
+//     return view('index');
+// })->where('page', '.*');
