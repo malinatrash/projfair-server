@@ -1102,9 +1102,9 @@ paths:
         '200':
           description: 'Дата дедлайна'
           content:
-            application/json:
+            text/plaint:
               schema:
-                $ref: '#/components/schemas/DeadLine'
+                type: string
         '404':
           description: 'Дедлайн не назначен'
   /api/participations/filter:

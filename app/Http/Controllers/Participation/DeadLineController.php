@@ -23,7 +23,12 @@ class DeadLineController extends Controller
      *     @OA\Response(
      *         response="200",
      *         description="Дата дедлайна",
-     *         @OA\JsonContent(ref="#/components/schemas/DeadLine")
+     *         @OA\MediaType(
+     *             mediaType="text/plaint",
+     *             @OA\Schema(
+     *                 type="string",
+     *             ),
+     *         ),
      *     ),
      *     @OA\Response(
      *         response="404",

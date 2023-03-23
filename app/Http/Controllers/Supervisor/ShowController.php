@@ -15,24 +15,20 @@ class ShowController extends Controller
      * @OA\Get(
      *     path="/api/states/{id}",
      *     summary="Получение информации о преподавателе по ID",
-     *      tags={"Supervisor"},
-     *           @OA\Parameter(
+     *     tags={"Supervisor"},
+     *     @OA\Parameter(
      *         name="id",
      *         description="ID преподавателя",
      *          in = "path",
      *         required=true,
      *         @OA\Schema(
-     *             type="integer"
-     *         )
+     *             type="integer",
+     *         ),
      *     ),
      *     @OA\Response(
      *         response="200",
      *         description="Информация о преподавателе",
-     *
-     *         @OA\JsonContent(
-     *                 ref="#/components/schemas/Supervisor"
-     *
-     * )
+     *         @OA\JsonContent(ref="#/components/schemas/Supervisor")
      *     ),
      * )
      */
