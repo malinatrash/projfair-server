@@ -46,6 +46,7 @@ class ProjectResource extends JsonResource
             'department' => new DepartmentResource($this->department),
             'state' => new StateResource($this->state),
             'type' => new TypeResource($this->type),
+            'theme_source' => new ThemeSourceResource($this->themeSource),
 
             'participations' => $participations,
 
@@ -214,6 +215,12 @@ class Project extends ProjectResource
      * @OA\Property(ref="#/components/schemas/ProjectType")
      */
     public $type;
+    /**
+     * Тип проекта
+     * @var object
+     * @OA\Property(ref="#/components/schemas/ThemeSource")
+     */
+    public $theme_source;
     /**
      * Дата создания записи в БД
      * @var string

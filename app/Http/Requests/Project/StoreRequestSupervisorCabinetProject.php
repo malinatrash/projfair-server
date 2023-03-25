@@ -38,6 +38,7 @@ class StoreRequestSupervisorCabinetProject extends FormRequest
             'additional_inf' => 'string|nullable',
 
             'type_id' => 'required|integer|exists:states,id',
+            'theme_source_id' => 'required|integer|exists:theme_sources,id',
             'department_id' => 'nullable|integer|exists:departments,id',
             'state_id' => 'numeric|min:6|max:7',
             'prev_project_id' => 'nullable|integer|exists:projects,id',

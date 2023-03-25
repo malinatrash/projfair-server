@@ -121,6 +121,10 @@ Route::group(['namespace' => 'Skill', 'prefix' => 'skills'], function () {
     // Route::post('/', 'StoreController');
 });
 
+Route::group(['prefix' => 'themeSources'], function () {
+    Route::get('/', App\Http\Controllers\ThemeSource\IndexController::class);
+});
+
 Route::group(['namespace' => 'Candidate', 'prefix' => 'candidates'], function () {
     Route::get('/{candidate}', App\Http\Controllers\Candidate\ShowController::class); // Получить информацию о студенте
     Route::get('/', App\Http\Controllers\Candidate\IndexController::class); // Получить информацию о всех студентах

@@ -83,6 +83,14 @@ class Project extends Model
     }
 
     /**
+     * Получить источник темы
+     */
+    public function themeSource(): BelongsTo
+    {
+        return $this->belongsTo(ThemeSource::class);
+    }
+
+    /**
      * Получить участников проекта (заявка в состоянии 'Участвует')
      */
     public function getParticipants(): Collection

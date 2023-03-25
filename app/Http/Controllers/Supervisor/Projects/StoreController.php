@@ -82,6 +82,10 @@ class StoreController extends Controller
      *                  ),
      *                  @OA\Property(
      *                      type="integer",
+     *                      property="theme_source_id",
+     *                  ),
+     *                  @OA\Property(
+     *                      type="integer",
      *                      property="department_id",
      *                  ),
      *                  @OA\Property(
@@ -140,7 +144,7 @@ class StoreController extends Controller
      *     ),
      *     @OA\Response(
      *         response="200",
-     *         description="Проект подан на рассмотрение",
+     *         description="Проект создан",
      *     ),
      * )
      */
@@ -150,6 +154,7 @@ class StoreController extends Controller
         $supervisorCreatorRoleIds = [1];
 
         $data = $request->validated();
+
         $specialities = $request["specialities"];
         $supervisors = $request["supervisors"];
 

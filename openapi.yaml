@@ -1553,6 +1553,8 @@ paths:
                   type: string
                 type_id:
                   type: integer
+                theme_source_id:
+                  type: integer
                 department_id:
                   type: integer
                 prev_project_id:
@@ -1574,7 +1576,7 @@ paths:
               type: object
       responses:
         '200':
-          description: 'Проект подан на рассмотрение'
+          description: 'Проект создан'
   'api/supervisor/projects/${id}':
     patch:
       tags:
@@ -1639,6 +1641,21 @@ paths:
       responses:
         '200':
           description: 'Проект на рассмотрение обновлен'
+  /api/themeSources:
+    get:
+      tags:
+        - 'Theme Sources'
+      summary: 'Источники темы'
+      operationId: 50666344a4a04f37fcc6408296057ac0
+      responses:
+        '200':
+          description: 'Источники темы'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ThemeSource'
   /api/types/:
     get:
       tags:
@@ -1862,6 +1879,8 @@ components:
           $ref: '#/components/schemas/Department'
         type:
           $ref: '#/components/schemas/ProjectType'
+        theme_source:
+          $ref: '#/components/schemas/ThemeSource'
         created_at:
           description: 'Дата создания записи в БД'
           type: string
@@ -1990,6 +2009,15 @@ components:
           type: string
         updated_at:
           description: 'Дата обновления записи в БД'
+          type: string
+      type: object
+    ThemeSource:
+      properties:
+        id:
+          description: 'ID типа проекта'
+          type: integer
+        name:
+          description: Название
           type: string
       type: object
     ProjectType:
