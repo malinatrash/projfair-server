@@ -11,6 +11,9 @@ class Institute extends Model
     protected $table = "institutes";
     protected $guarded = false;
 
+    public $timestamps = false;
+
+
     public function specialities()
     {
         return $this->hasManyThrough(Speciality::class, Department::class);

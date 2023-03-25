@@ -12,6 +12,9 @@ class ProjectSupervisor extends Model
     protected $table = "project_supervisor";
     protected $guarded = false;
 
+    public $timestamps = false;
+
+
     public function roles()
     {
         return $this->belongsToMany(ProjectSupervisorRole::class, 'project_supervisor_role', 'project_supervisor_id', 'project_supervisor_role_id');

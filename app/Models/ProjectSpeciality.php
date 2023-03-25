@@ -10,6 +10,9 @@ class ProjectSpeciality extends Model
 {
     use HasFactory;
     protected $table = "project_speciality";
+
+    public $timestamps = false;
+
     protected $guarded = false;
 
     public function speciality(): BelongsTo

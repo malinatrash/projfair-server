@@ -12,6 +12,8 @@ class HarvestSetting extends Model
     protected $table = "harvest_settings";
     protected $guarded = false;
 
+    public $timestamps = false;
+
 
     public function bannedSpecialities()
     {

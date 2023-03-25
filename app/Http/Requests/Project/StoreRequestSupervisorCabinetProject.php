@@ -38,16 +38,31 @@ class StoreRequestSupervisorCabinetProject extends FormRequest
             'additional_inf' => 'string|nullable',
 
             'type_id' => 'required|integer|exists:states,id',
-            'department_id' => 'required|integer|exists:departments,id',
+            'department_id' => 'nullable|integer|exists:departments,id',
+            'state_id' => 'numeric|min:5|max:6',
+            'prev_project_id' => 'nullable|integer|exists:projects,id',
 
-            'supervisor_ids' => 'nullable|array',
-            'supervisor_ids.*' => 'nullable|integer|exists:supervisors,id',
+            'supervisors' => 'nullable|array',
+            'supervisors.supervisor_id' => 'nullable|integer|exists:supervisors,id',
+            'supervisors.role_ids' => 'nullable|array',
+            'supervisors.role_ids.*' => 'nullable|integer|min:2|max:3|exists:project_supervisor_roles,id',
 
             'skill_ids' => 'nullable|array',
             'skill_ids.*' => 'nullable|integer|exists:skills,id',
 
-            'speciality_ids' => 'nullable|array',
-            'speciality_ids.*' => 'nullable|integer|exists:specialities,id',
+
+            'new_skills' => 'nullable|array',
+            'new_skills.*' => 'nullable|string',
+
+            'specialities' => 'nullable|array',
+            'specialities.specialitiy_id' => 'nullable|integer|exists:specialities,id',
+            'specialities.course' => 'nullable|integer',
+            'specialities.priority' => 'nullable|integer',
         ];
+    }
+
+    public function response(array $error)
+    {
+        return response()->json(['error' => $error], 422);
     }
 }

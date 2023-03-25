@@ -10,6 +10,9 @@ class ActiveHarvestSetting extends Model
 {
     use HasFactory;
     protected $table = "active_harvest_setting";
+
+    public $timestamps = false;
+
     /**
      * Получить активную настройку
      */

@@ -11,6 +11,9 @@ class Group extends Model
     protected $table = "groups";
     protected $guarded = false;
 
+    public $timestamps = false;
+
+
     public function specialityCourse()
     {
         return $this->belongsTo(SpecialityCourse::class, 'specialityCourse_id');

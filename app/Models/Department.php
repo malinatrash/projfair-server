@@ -12,6 +12,9 @@ class Department extends Model
     protected $table = "departments";
     protected $guarded = false;
 
+    public $timestamps = false;
+
+
     public function specialities()
     {
         return $this->hasMany(Speciality::class);

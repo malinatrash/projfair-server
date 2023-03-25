@@ -10,4 +10,6 @@ class ProjectSkill extends Model
     use HasFactory;
     protected $table = "project_skill";
     protected $guarded = false;
+
+    public $timestamps = false;
 }

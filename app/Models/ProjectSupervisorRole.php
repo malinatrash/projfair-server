@@ -11,4 +11,6 @@ class ProjectSupervisorRole extends Model
 
     protected $table = "project_supervisor_roles";
     protected $guarded = false;
+
+    public $timestamps = false;
 }

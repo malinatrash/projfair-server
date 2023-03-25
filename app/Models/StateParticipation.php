@@ -18,6 +18,9 @@ class StateParticipation extends Model
 
     protected $guarded = false;
 
+    public $timestamps = false;
+
+
     /**
      * Получить заявки состояния
      */

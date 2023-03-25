@@ -1555,15 +1555,22 @@ paths:
                   type: integer
                 department_id:
                   type: integer
-                supervisor_ids:
+                prev_project_id:
+                  type: integer
+                state_id:
+                  type: integer
+                supervisors:
                   type: array
-                  items: { type: integer }
+                  items: { properties: { supervisor_id: { type: integer }, role_ids: { type: array, items: { type: integer } } }, type: object }
                 skill_ids:
                   type: array
                   items: { type: integer }
-                speciality_ids:
+                new_skills:
                   type: array
-                  items: { type: integer }
+                  items: { type: string }
+                specialities:
+                  type: array
+                  items: { properties: { specialitiy_id: { type: integer }, course: { type: integer }, priority: { type: integer } }, type: object }
               type: object
       responses:
         '200':
@@ -1878,9 +1885,6 @@ components:
       properties:
         id:
           description: ID
-          type: integer
-        priority:
-          description: Приоритет
           type: integer
         roles:
           description: Роль

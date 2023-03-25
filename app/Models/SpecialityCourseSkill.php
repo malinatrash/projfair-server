@@ -10,4 +10,6 @@ class SpecialityCourseSkill extends Model
     use HasFactory;
     protected $table = "speciality_course_skill";
     protected $guarded = false;
+
+    public $timestamps = false;
 }

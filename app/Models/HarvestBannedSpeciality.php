@@ -14,6 +14,7 @@ class HarvestBannedSpeciality extends Model
 
     protected $guarded = false;
 
+    public $timestamps = false;
 
     public function speciality(): BelongsTo
     {
