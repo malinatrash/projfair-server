@@ -147,6 +147,7 @@ class StoreController extends Controller
     public function __invoke(StoreRequestSupervisorCabinetProject $request)
     {
         $supervisorCreator = $request->get('supervisor');
+        $supervisorCreatorRoleIds = [1];
 
         $data = $request->validated();
         $specialities = $request["specialities"];
@@ -157,7 +158,6 @@ class StoreController extends Controller
 
         unset($data['skill_ids']);
         unset($data['new_skills']);
-
 
         $project = Project::create($data);
 
@@ -171,6 +171,12 @@ class StoreController extends Controller
         }
 
         foreach ($supervisors as $supervisor) {
+
+            if ($supervisor["supervisor_id"] == $supervisorCreator->id) {
+                $supervisorCreatorRoleIds = array_merge($supervisorCreatorRoleIds, $supervisor["role_ids"]);
+                continue;
+            }
+
             $projectSupervisor = ProjectSupervisor::create([
                 "project_id" => $project->id,
                 "supervisor_id" => $supervisor["supervisor_id"]
@@ -184,7 +190,7 @@ class StoreController extends Controller
             "supervisor_id" => $supervisorCreator->id
         ]);
 
-        $projectSupervisorCreator->roles()->attach([1]);
+        $projectSupervisorCreator->roles()->attach($supervisorCreatorRoleIds);
 
         foreach ($newSkillNames as $newSkillName) {
             $skill = Skill::create([
