@@ -1516,7 +1516,7 @@ paths:
     post:
       tags:
         - 'SUPERVISOR CABINET'
-      summary: 'Создать проект на рассмотрении. Делает преподаватель'
+      summary: 'Создать проект на рассмотрении (id=6) или черновик (id=7). Делает преподаватель'
       operationId: 0ab6943d65450a032e433e3874b5eb95
       requestBody:
         description: 'Параметры для создания проекта'
