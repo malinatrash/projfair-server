@@ -36,8 +36,7 @@ class ProjectResource extends JsonResource
             'additional_inf' => $this->additional_inf,
             'product_result' => $this->product_result,
             'study_result' => $this->study_result,
-            'supervisors' => SupervisorResource::collection($this->supervisors),
-            'projectSupervisors' => ProjectSupervisorResource::collection($this->projectSupervisors),
+            'supervisors' => ProjectSupervisorResource::collection($this->projectSupervisors),
             'skills' => SkillResource::collection($this->skills),
             'specialities' => SpecialityResource::collection($this->specialities),
             'project_specialities' => ProjectSpecialityResource::collection($this->projectSpecialities),
@@ -145,23 +144,15 @@ class Project extends ProjectResource
     public string $study_result;
 
     /**
-     * Руководители
-     * @var array
-     * @OA\Property(
-     *  type="array",
-     * @OA\Items(ref="#/components/schemas/Supervisor")
-     * )
-     */
-    public $supervisors;
-    /**
-     * Руководители с ролями и приоритетами
+     * Руководители с ролями
      * @var array
      * @OA\Property(
      *  type="array",
      * @OA\Items(ref="#/components/schemas/ProjectSupervisor")
      * )
      */
-    public $projectSupervisors;
+    public $supervisors;
+
     /**
      * Требуемые навыки
      * @var array
