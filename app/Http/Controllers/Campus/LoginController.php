@@ -32,19 +32,19 @@ class LoginController extends Controller
 
 
 
-        // if (env('APP_DEBUG')) {
-        //     $role = $request->input('role');
-        //     $token = $request->input('api_token');
-        //     $domain = ($_SERVER['HTTP_HOST'] != 'localhost') ? $_SERVER['HTTP_HOST'] : false;
-        //     $expiresTime = time() + (7 * 24 * 60 * 60);
-        //     $cookieOptions = ['secure' => true, 'httponly' => true, 'expires' => $expiresTime, 'domain' => null, 'sameSite' => 'None'];
-        //     setcookie('is_student', $role == 'is_student', $cookieOptions);
-        //     setcookie('is_teacher', $role == 'is_teacher', $cookieOptions);
-        //     setcookie('token', $token, $cookieOptions);
+        if (env('APP_DEBUG')) {
+            $role = $request->input('role');
+            $token = $request->input('api_token');
 
-        //     $cookie = cookie('mydomain_api', $token, 60 * 24);
-        //     return response(['url' => ''])->withCookie($cookie);
-        // }
+            $expiresTime = time() + (7 * 24 * 60 * 60);
+            $cookieOptions = ['secure' => true, 'httponly' => true, 'expires' => $expiresTime, 'domain' => null, 'sameSite' => 'None'];
+            setcookie('is_student', $role == 'is_student', $cookieOptions);
+            setcookie('is_teacher', $role == 'is_teacher', $cookieOptions);
+            setcookie('token', $token, $cookieOptions);
+
+            $cookie = cookie('mydomain_api', $token, 60 * 24);
+            return response(['url' => ''])->withCookie($cookie);
+        }
 
         $return = false;
         $APP = [
