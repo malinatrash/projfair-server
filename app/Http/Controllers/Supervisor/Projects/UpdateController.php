@@ -174,7 +174,7 @@ class UpdateController extends Controller
             unset($data['new_skills']);
 
             foreach ($newSkillNames as $newSkillName) {
-                $skill = Skill::create([
+                $skill = Skill::firstOrCreate([
                     "name" => $newSkillName,
                     "skillCategory_id" => 1,
                 ]);
