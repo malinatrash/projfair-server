@@ -35,6 +35,7 @@ class ProjectResource extends JsonResource
             'requirements' => $this->requirements,
             'additional_inf' => $this->additional_inf,
             'product_result' => $this->product_result,
+            'customer' => $this->customer,
             'study_result' => $this->study_result,
             'supervisors' => ProjectSupervisorResource::collection($this->projectSupervisors),
             'skills' => SkillResource::collection($this->skills),
