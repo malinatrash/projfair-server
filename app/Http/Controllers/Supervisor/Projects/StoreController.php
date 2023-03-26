@@ -7,10 +7,7 @@ use App\Http\Requests\Project\StoreRequestSupervisorCabinetProject;
 use App\Models\Project;
 use App\Models\ProjectSpeciality;
 use App\Models\ProjectSupervisor;
-use App\Models\ProjectSupervisorRole;
 use App\Models\Skill;
-use App\Models\Supervisor;
-use Illuminate\Http\Request;
 
 /**
  * Создать проект (Преподаватель)

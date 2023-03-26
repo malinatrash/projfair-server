@@ -4,7 +4,7 @@ namespace App\Http\Requests\Project;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreRequestSupervisorCabinetProject extends FormRequest
+class UpdateTest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -29,8 +29,8 @@ class StoreRequestSupervisorCabinetProject extends FormRequest
             'goal' => 'string',
             'description' => 'string',
             'difficulty' => 'integer',
-            'date_start' => 'date',
-            'date_end' => 'date',
+            'date_start' => 'string',
+            'date_end' => 'string',
             'requirements' => 'string',
             'customer' => 'string|nullable',
             'product_result' => 'string',
@@ -38,7 +38,7 @@ class StoreRequestSupervisorCabinetProject extends FormRequest
             'additional_inf' => 'string|nullable',
 
             'type_id' => 'required|integer|exists:states,id',
-            'theme_source_id' => 'required|integer|exists:theme_sources,id',
+            'theme_source_id' => 'nullable|integer|exists:theme_sources,id',
             'department_id' => 'nullable|integer|exists:departments,id',
             'state_id' => 'numeric|min:6|max:7',
             'prev_project_id' => 'nullable|integer|exists:projects,id',
@@ -54,15 +54,11 @@ class StoreRequestSupervisorCabinetProject extends FormRequest
             'new_skills' => 'nullable|array',
             'new_skills.*' => 'nullable|string',
 
+
             'specialities' => 'nullable|array',
             'specialities.specialitiy_id' => 'nullable|integer|exists:specialities,id',
             'specialities.course' => 'nullable|integer',
             'specialities.priority' => 'nullable|integer',
         ];
-    }
-
-    public function response(array $error)
-    {
-        return response()->json(['error' => $error], 422);
     }
 }

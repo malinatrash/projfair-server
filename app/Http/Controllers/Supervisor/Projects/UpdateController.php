@@ -4,7 +4,11 @@ namespace App\Http\Controllers\Supervisor\Projects;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Project\UpdateRequestBySupervisorProject;
+use App\Http\Requests\Project\UpdateTest;
 use App\Models\Project;
+use App\Models\ProjectSpeciality;
+use App\Models\ProjectSupervisor;
+use App\Models\Skill;
 
 /**
  * Обновить проект
@@ -88,9 +92,31 @@ class UpdateController extends Controller
      *                      property="department_id",
      *                  ),
      *                  @OA\Property(
+     *                      type="integer",
+     *                      property="theme_source_id",
+     *                  ),
+     *                  @OA\Property(
+     *                      type="integer",
+     *                      property="prev_project_id",
+     *                  ),
+     *                  @OA\Property(
+     *                      type="integer",
+     *                      property="state_id",
+     *                  ),
+     *                  @OA\Property(
      *                      type="array",
-     *                      property="supervisor_ids",
-     *                      @OA\Items(type="integer")
+     *                      property="supervisors",
+     *                      @OA\Items(
+     *                            @OA\Property(
+     *                                type="integer",
+     *                                property="supervisor_id",
+     *                            ),
+     *                            @OA\Property(
+     *                                type="array",
+     *                                property="role_ids",
+     *                                @OA\Items(type="integer")
+     *                            ),
+     *                      ),
      *                  ),
      *                  @OA\Property(
      *                      type="array",
@@ -99,33 +125,111 @@ class UpdateController extends Controller
      *                  ),
      *                  @OA\Property(
      *                      type="array",
-     *                      property="speciality_ids",
-     *                      @OA\Items(type="integer")
+     *                      property="new_skills",
+     *                      @OA\Items(type="string")
+     *                  ),
+     *                  @OA\Property(
+     *                      type="array",
+     *                      property="specialities",
+     *                      @OA\Items(
+     *                          @OA\Property(
+     *                              type="integer",
+     *                              property="specialitiy_id",
+     *                          ),
+     *                          @OA\Property(
+     *                              type="integer",
+     *                              property="course",
+     *                          ),
+     *                          @OA\Property(
+     *                              type="integer",
+     *                              property="priority",
+     *                          ),
+     *                      ),
      *                  ),
      *              )
      *          )
      *     ),
      *     @OA\Response(
      *         response="200",
-     *         description="Проект на рассмотрение обновлен",
+     *         description="Проект обновлен",
      *     ),
      * )
      */
-    public function __invoke(UpdateRequestBySupervisorProject $request, Project $project)
+    public function __invoke(UpdateTest $request, Project $project)
     {
         $data = $request->validated();
+        $supervisorCreator = $request->get('supervisor');
+        $supervisorCreatorRoleIds = [1];
+
+
 
         if (isset($data['skill_ids'])) {
             $project->skills()->sync($data['skill_ids']);
             unset($data['skill_ids']);
         }
-        if (isset($data['supervisor_ids'])) {
-            $project->supervisors()->sync($data['supervisor_ids']);
-            unset($data['supervisor_ids']);
+
+        if (isset($data['new_skills'])) {
+            $newSkillIds = [];
+            $newSkillNames = $data['new_skills'];
+            unset($data['new_skills']);
+
+            foreach ($newSkillNames as $newSkillName) {
+                $skill = Skill::create([
+                    "name" => $newSkillName,
+                    "skillCategory_id" => 1,
+                ]);
+
+                array_push($newSkillIds, $skill->id);
+            }
+
+            $project->skills()->syncWithoutDetaching($newSkillIds);
         }
-        if (isset($data['speciality_ids'])) {
-            $project->specialities()->sync($data['speciality_ids']);
-            unset($data['speciality_ids']);
+
+
+        if (isset($data['supervisors'])) {
+
+            ProjectSupervisor::where('project_id', $project->id)->delete();
+
+            $supervisors = $data['supervisors'];
+            unset($data['supervisors']);
+
+            foreach ($supervisors as $supervisor) {
+
+                if ($supervisor["supervisor_id"] == $supervisorCreator->id) {
+                    $supervisorCreatorRoleIds = array_merge($supervisorCreatorRoleIds, $supervisor["role_ids"]);
+                    continue;
+                }
+
+                $projectSupervisor = ProjectSupervisor::create([
+                    "project_id" => $project->id,
+                    "supervisor_id" => $supervisor["supervisor_id"]
+                ]);
+
+                $projectSupervisor->roles()->attach($supervisor["role_ids"]);
+            }
+            $projectSupervisorCreator = ProjectSupervisor::create([
+                "project_id" => $project->id,
+                "supervisor_id" => $supervisorCreator->id
+            ]);
+
+            $projectSupervisorCreator->roles()->attach($supervisorCreatorRoleIds);
+        }
+
+
+        if (isset($data['specialities'])) {
+            $specialities = $data['specialities'];
+            unset($data['specialities']);
+
+            ProjectSpeciality::where('project_id', $project->id)->delete();
+
+            foreach ($specialities as $speciality) {
+                ProjectSpeciality::create([
+                    "project_id" => $project->id,
+                    "speciality_id" => $speciality["specialitiy_id"],
+                    "course" => $speciality["course"],
+                    "priority" => $speciality["priority"]
+                ]);
+            }
         }
 
         $project->update($data);
