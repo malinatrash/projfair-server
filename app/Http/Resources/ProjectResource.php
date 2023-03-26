@@ -32,7 +32,7 @@ class ProjectResource extends JsonResource
             'difficulty' => $this->difficulty,
             'date_start' => $this->date_start,
             'date_end' => $this->date_end,
-            'requirements' => $this->customer,
+            'requirements' => $this->requirements,
             'additional_inf' => $this->additional_inf,
             'product_result' => $this->product_result,
             'study_result' => $this->study_result,
