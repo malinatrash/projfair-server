@@ -143,6 +143,12 @@ class Project extends ProjectResource
      * @OA\Property()
      */
     public string $study_result;
+    /**
+     * Заказчик
+     * @var string
+     * @OA\Property()
+     */
+    public string $customer;
 
     /**
      * Руководители с ролями
