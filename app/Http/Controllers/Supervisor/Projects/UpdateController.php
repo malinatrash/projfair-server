@@ -3,8 +3,7 @@
 namespace App\Http\Controllers\Supervisor\Projects;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Project\UpdateRequestBySupervisorProject;
-use App\Http\Requests\Project\UpdateTest;
+use App\Http\Requests\Project\UpdateRequestSupervisorCabinetProject;
 use App\Models\Project;
 use App\Models\ProjectSpeciality;
 use App\Models\ProjectSupervisor;
@@ -155,7 +154,7 @@ class UpdateController extends Controller
      *     ),
      * )
      */
-    public function __invoke(UpdateTest $request, Project $project)
+    public function __invoke(UpdateRequestSupervisorCabinetProject $request, Project $project)
     {
         $data = $request->validated();
         $supervisorCreator = $request->get('supervisor');
