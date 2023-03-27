@@ -20,7 +20,7 @@ class ProjectSupervisorResource extends JsonResource
         return [
             'id' => $this->id,
             'roles' => ProjectSupervisorRoleResource::collection($this->roles),
-            'supervisor' => $this->supervisor,
+            'supervisor' => new SupervisorResource($this->supervisor),
         ];
     }
 }
