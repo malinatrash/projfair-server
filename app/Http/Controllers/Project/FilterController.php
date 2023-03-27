@@ -266,6 +266,13 @@ class FilterController extends Controller
 
     private function filterProjectsByState(Request $request, Collection $projectCollection): Collection
     {
+        // 6 На рассмотрении
+        // 7 Черновик
+        // 8 Отклонено
+        // 9 Одобрено
+        $hiddenStateIds = [6, 7, 8, 9];
+        $projectCollection = $projectCollection->whereNotIn('state_id', $hiddenStateIds);
+
         $inputState = $this->stringToArray($request->input('state'));
         $states = array_map(function ($value) {
             return intval($value);
