@@ -15,6 +15,7 @@ class CandidateResource extends JsonResource
      */
     public function toArray($request)
     {
+        $speciality = $this->getSpeciality();
         return [
             'id' => $this->id,
             'fio' => $this->fio,
@@ -24,6 +25,7 @@ class CandidateResource extends JsonResource
             'phone' => $this->phone,
             'course' => $this->course,
             'training_group' => $this->training_group,
+            'speciality' => new SpecialityResource($speciality),
             // 'canSendParticipations' => $this->canSendParticipations,
             'is_student' => 1,
         ];
