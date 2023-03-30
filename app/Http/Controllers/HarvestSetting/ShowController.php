@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin\HarvestSetting;
+namespace App\Http\Controllers\HarvestSetting;
 
 use App\Http\Resources\HarvestSettingResource;
 use App\Models\HarvestSetting;
@@ -13,9 +13,9 @@ class ShowController
 
     /**
      * @OA\Get(
-     *     path="/api/admin/harvestSettings/{id}",
+     *     path="/api/harvestSettings/{id}",
      *     summary="Получение информации о настройке по ID",
-     *      tags={"ADMIN"},
+     *      tags={"Harvest"},
      *           @OA\Parameter(
      *         name="id",
      *         description="ID настройки",

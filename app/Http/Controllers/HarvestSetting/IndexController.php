@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin\HarvestSetting;
+namespace App\Http\Controllers\HarvestSetting;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\HarvestSettingResource;
@@ -13,9 +13,9 @@ class IndexController extends Controller
 {
     /**
      * @OA\Get(
-     *     path="/api/admin/harvestSettings/",
+     *     path="/api/harvestSettings/",
      *     summary="Получить информацию о всех настройках",
-     *      tags={"ADMIN"},
+     *      tags={"Harvest"},
      *     @OA\Response(
      *         response="200",
      *         description="Все настройки",

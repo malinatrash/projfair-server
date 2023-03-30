@@ -9,8 +9,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['prefix' => 'harvestSettings'], function () {
-        Route::get('/', App\Http\Controllers\Admin\HarvestSetting\IndexController::class);
-        Route::get('/{harvestSetting}', App\Http\Controllers\Admin\HarvestSetting\ShowController::class);
         Route::patch('/{harvestSetting}', App\Http\Controllers\Admin\HarvestSetting\UpdateController::class);
         Route::delete('/{harvestSetting}', App\Http\Controllers\Admin\HarvestSetting\DeleteController::class);
         Route::post('/', App\Http\Controllers\Admin\HarvestSetting\StoreController::class);
@@ -80,9 +78,16 @@ Route::group(['prefix' => 'supervisor'], function () {
 
 // --------- USER ROUTES ---------
 
-Route::group(['namespace' => 'Supervisor', 'prefix' => 'supervisors'], function () {
+Route::group(['prefix' => 'supervisors'], function () {
     Route::get('/{supervisor}', App\Http\Controllers\Supervisor\ShowController::class); // Получение информации о преподавателе
     Route::get('/', App\Http\Controllers\Supervisor\IndexController::class); // Получение всех преподавателей
+});
+
+
+Route::group(['prefix' => 'harvestSettings'], function () {
+    Route::get('/active', App\Http\Controllers\HarvestSetting\GetActiveController::class);
+    Route::get('/{harvestSetting}', App\Http\Controllers\HarvestSetting\ShowController::class);
+    Route::get('/', App\Http\Controllers\HarvestSetting\IndexController::class);
 });
 
 Route::group(['prefix' => 'projects'], function () { // Получения информации о проектах
@@ -93,13 +98,13 @@ Route::group(['prefix' => 'projects'], function () { // Получения ин�
 
 });
 
-Route::group(['namespace' => 'Type', 'prefix' => 'types'], function () { // Получение типов проекта
+Route::group(['prefix' => 'types'], function () { // Получение типов проекта
     Route::get('/{type}', App\Http\Controllers\Type\ShowController::class); // Получение одного типа проекта
     Route::get('/', App\Http\Controllers\Type\IndexController::class); // Получение всех типов проекта
 
 });
 
-Route::group(['namespace' => 'State', 'prefix' => 'states'], function () { // Получение состояний проекта
+Route::group(['prefix' => 'states'], function () { // Получение состояний проекта
     Route::get('/{state}', App\Http\Controllers\State\ShowController::class); // Получение одного состояния проекта
     Route::get('/', App\Http\Controllers\State\IndexController::class); // Получение всех состояний проекта
 
@@ -113,7 +118,7 @@ Route::group(['prefix' => 'specialities'], function () {
     Route::get('/', App\Http\Controllers\Speciality\IndexController::class);
 });
 
-Route::group(['namespace' => 'Skill', 'prefix' => 'skills'], function () {
+Route::group(['prefix' => 'skills'], function () {
     Route::get('/', App\Http\Controllers\Skill\IndexController::class)->middleware(CandidateAuth::class); // Получить данные для фильтрации по навыкам и специальностям. Скрывать данные других институтов если пользователь авторизован
     Route::get('/{skill}', App\Http\Controllers\Skill\ShowController::class); // Получить информацию о навыке
     // Route::delete('/{skill}', 'DeleteController');
@@ -125,20 +130,20 @@ Route::group(['prefix' => 'themeSources'], function () {
     Route::get('/', App\Http\Controllers\ThemeSource\IndexController::class);
 });
 
-Route::group(['namespace' => 'Candidate', 'prefix' => 'candidates'], function () {
+Route::group(['prefix' => 'candidates'], function () {
     Route::get('/{candidate}', App\Http\Controllers\Candidate\ShowController::class); // Получить информацию о студенте
     Route::get('/', App\Http\Controllers\Candidate\IndexController::class); // Получить информацию о всех студентах
 
 });
 
-Route::group(['namespace' => 'Institute', 'prefix' => 'institutes'], function () {
+Route::group(['prefix' => 'institutes'], function () {
     Route::get('/isInSameInstitute/{specialityName1}/{specialityName2}', App\Http\Controllers\Institute\SameInstituteController::class); // Проверка находятся ли две специальности в одном институте
     Route::get('/getBySpecialityName/{specialityName}', App\Http\Controllers\Institute\GetBySpecialityController::class); // Получить институты по названию специльности
     Route::get('/{institute}', App\Http\Controllers\Institute\ShowController::class); // Получить информацию об институте
     Route::get('/', App\Http\Controllers\Institute\IndexController::class); // Получить информацию обо всех институтах
 });
 
-Route::group(['namespace' => 'Participation', 'prefix' => 'participations'], function () {
+Route::group(['prefix' => 'participations'], function () {
     Route::delete('/{participation}', App\Http\Controllers\Participation\DeleteController::class)->middleware(CandidateAuthProtected::class); // Удаление заявки
     Route::patch('/{participation}', App\Http\Controllers\Participation\UpdateController::class)->middleware(CandidateAuthProtected::class); // Изменение заявки
     Route::get('/filter', App\Http\Controllers\Participation\FilterController::class);
