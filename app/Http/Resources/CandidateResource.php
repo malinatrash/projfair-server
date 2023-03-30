@@ -91,6 +91,12 @@ class Candidate extends CandidateResource
      * @OA\Property()
      */
     public string $training_group;
+    /**
+     * Специальность
+     * @var object
+     * @OA\Property(ref="#/components/schemas/Speciality")
+     */
+    public string $speciality;
 }
 
 

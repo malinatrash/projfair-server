@@ -1731,6 +1731,8 @@ components:
         training_group:
           description: 'Учебная группа'
           type: string
+        speciality:
+          $ref: '#/components/schemas/Speciality'
       type: object
     Department:
       properties:
