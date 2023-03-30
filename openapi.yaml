@@ -143,44 +143,6 @@ paths:
           description: 'Настройка изменена'
         '404':
           description: 'Настройка не найдена'
-  /api/admin/harvestSettings/:
-    get:
-      tags:
-        - ADMIN
-      summary: 'Получить информацию о всех настройках'
-      operationId: 26e01f809a92fc7e51da7727fea50fcf
-      responses:
-        '200':
-          description: 'Все настройки'
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/HarvestSetting'
-  '/api/admin/harvestSettings/{id}':
-    get:
-      tags:
-        - ADMIN
-      summary: 'Получение информации о настройке по ID'
-      operationId: d1a0a22a3986670afd12d9b59f6abb8e
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID настройки'
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: настрока
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/HarvestSetting'
-        '404':
-          description: 'настройка не найдена'
   /api/admin/harvestSettings:
     post:
       tags:
@@ -1001,6 +963,59 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Skill'
+  /api/harvestSettings/active:
+    get:
+      tags:
+        - ADMIN
+      summary: 'Получение информации о активной настройке'
+      operationId: 089d44b0bb97d0c72d7da0b023952526
+      responses:
+        '200':
+          description: настрока
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HarvestSetting'
+        '404':
+          description: 'настройка не найдена'
+  /api/harvestSettings/:
+    get:
+      tags:
+        - Harvest
+      summary: 'Получить информацию о всех настройках'
+      operationId: c031886ca5e0749bfd72f69aa8f5b66b
+      responses:
+        '200':
+          description: 'Все настройки'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/HarvestSetting'
+  '/api/harvestSettings/{id}':
+    get:
+      tags:
+        - Harvest
+      summary: 'Получение информации о настройке по ID'
+      operationId: 88f0d7cd21cfafd4a04151054ba1f320
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID настройки'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: настрока
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HarvestSetting'
+        '404':
+          description: 'настройка не найдена'
   '/api/institutes/getBySpecialityName/{specialityName}':
     get:
       tags:
