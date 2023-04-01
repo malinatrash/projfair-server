@@ -1591,7 +1591,11 @@ paths:
               type: object
       responses:
         '200':
-          description: 'Проект создан'
+          description: 'созданный проект'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Project'
   'api/supervisor/projects/${id}':
     patch:
       tags:
@@ -1665,6 +1669,10 @@ paths:
       responses:
         '200':
           description: 'Проект обновлен'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Project'
   /api/themeSources:
     get:
       tags:

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Supervisor\Projects;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Project\StoreRequestSupervisorCabinetProject;
+use App\Http\Resources\ProjectResource;
 use App\Models\Project;
 use App\Models\ProjectSpeciality;
 use App\Models\ProjectSupervisor;
@@ -141,7 +142,8 @@ class StoreController extends Controller
      *     ),
      *     @OA\Response(
      *         response="200",
-     *         description="Проект создан",
+     *         description="созданный проект",
+     *         @OA\JsonContent(ref="#/components/schemas/Project")
      *     ),
      * )
      */
@@ -204,6 +206,6 @@ class StoreController extends Controller
         }
 
         $project->skills()->attach($skillIds);
-        return response([]);
+        return new ProjectResource($project);
     }
 }

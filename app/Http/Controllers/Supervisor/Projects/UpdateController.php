@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Supervisor\Projects;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Project\UpdateRequestSupervisorCabinetProject;
+use App\Http\Resources\ProjectResource;
 use App\Models\Project;
 use App\Models\ProjectSpeciality;
 use App\Models\ProjectSupervisor;
@@ -151,6 +152,7 @@ class UpdateController extends Controller
      *     @OA\Response(
      *         response="200",
      *         description="Проект обновлен",
+     *         @OA\JsonContent(ref="#/components/schemas/Project")
      *     ),
      * )
      */
@@ -232,6 +234,6 @@ class UpdateController extends Controller
         }
 
         $project->update($data);
-        return response([]);
+        return new ProjectResource($project);
     }
 }
