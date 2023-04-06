@@ -5,6 +5,8 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
+
+
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: PUT, GET, PATCH, POST, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: *");
@@ -47,6 +49,10 @@ require __DIR__ . '/../vendor/autoload.php';
 | to this client's browser, allowing them to enjoy our application.
 |
 */
+
+if (env('APP_DEVELOPMENT')) {
+    setcookie('karbushevgdeadminka', 'AMOGUS');
+}
 
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 
