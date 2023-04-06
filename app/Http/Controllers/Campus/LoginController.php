@@ -5,9 +5,10 @@ namespace App\Http\Controllers\Campus;
 use App\Http\Controllers\Controller;
 use App\Models\Candidate;
 use App\Models\Supervisor;
-use Illuminate\Support\Facades\Redirect;
+use Exception;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 
 /**
  * Авторизация через кампус
@@ -29,7 +30,6 @@ class LoginController extends Controller
      */
     public function __invoke(Request $request)
     {
-
 
 
         if (env('APP_DEBUG')) {
@@ -102,32 +102,46 @@ class LoginController extends Controller
         }
 
         $api_token = null;
+        $expiresTime = time() + (7 * 24 * 60 * 60);
+
+        $cookieOptions = ['httponly' => false, 'expires' => $expiresTime];
+
+        Cookie::forget('is_student');
+        Cookie::forget('is_teacher');
+
 
         if ($return['is_student']) {
+            setcookie('is_student', $return['is_student'], $cookieOptions);
             $api_token = $this->authStudent($return);
         }
-        if ($return['is_student']) {
-            $api_token = $this->authTeacher($return);
+
+        try {
+            if ($return['is_teacher']) {
+                $api_token = $this->authTeacher($return);
+                setcookie('is_teacher', $return['is_teacher'], $cookieOptions);
+            }
+        } catch (Exception $e) {
         }
-
         $expiresTime = time() + (7 * 24 * 60 * 60);
-        $cookieOptions = ['httponly' => true, 'expires' => $expiresTime];
-
-        setcookie('is_student', $return['is_student'], $cookieOptions);
-        setcookie('is_teacher', $return['is_teacher'], $cookieOptions);
         setcookie('token', $api_token, $cookieOptions);
         return redirect('/');
     }
 
-    private function authTeacher($return)
+    private function authTeacher($teacherData)
     {
-        $fio = $return['last_name'] . ' ' . $return['name'] . ' ' . $return['second_name'];
-        $email = $return['email'];
-        $position = $return['data_teacher']['dep'];
+        if (!isset($teacherData['mira_id']) || $teacherData['mira_id'] == false) {
+            throw new Exception();
+        }
+        $mira_id = $teacherData['mira_id'][0];
+
+        $fio = $teacherData['last_name'] . ' ' . $teacherData['name'] . ' ' . $teacherData['second_name'];
+        $email = $teacherData['email'];
+        $email = $teacherData['email'];
+        $position = $teacherData['data_teacher']['dep'];
 
         $api_token = hash('sha256', Str::random(60));
 
-        $supervisor = Supervisor::where('email', $email)->limit(1)->get();
+        $supervisor = Supervisor::where('kampus_id', $mira_id)->limit(1)->get();
 
         if ($supervisor->count() == 0) {
             Supervisor::create([
@@ -149,13 +163,13 @@ class LoginController extends Controller
         return $api_token;
     }
 
-    private function authStudent($return)
+    private function authStudent($studentData)
     {
         //работа с пользователями
-        $numz = $return['data_student']['nomz'];
+        $numz = $studentData['data_student']['nomz'];
         $user = Candidate::where('numz', $numz)->limit(1)->get();
-        $fio = $return['last_name'] . ' ' . $return['name'] . ' ' . $return['second_name'];
-        $group = $return['data_student']['grup'];
+        $fio = $studentData['last_name'] . ' ' . $studentData['name'] . ' ' . $studentData['second_name'];
+        $group = $studentData['data_student']['grup'];
         //высчитываем номер курса из группы
         $course = intval(explode('-', $group)[1]);
         //если сентябрь то на курс выше
@@ -165,7 +179,7 @@ class LoginController extends Controller
         if ($user->count() == 0) {
             Candidate::create([
                 'fio' => $fio,
-                'email' => $return['email'],
+                'email' => $studentData['email'],
                 'numz' => $numz,
                 'phone' => '',
                 'about' => '',
@@ -176,7 +190,7 @@ class LoginController extends Controller
         } else {
             Candidate::where('numz', $numz)->limit(1)->update([
                 'fio' => $fio,
-                'email' => $return['email'],
+                'email' => $studentData['email'],
                 'course' => $course,
                 'training_group' => $group,
                 'api_token' => $api_token,
