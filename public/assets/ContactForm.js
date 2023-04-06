@@ -1,1 +1,0 @@
-import{_ as t,d as _,Q as a,i as s}from"./index.js";import"./BaseTextarea.js";const r="_textarea_1nrby_1";var o={textarea:r};const c=_({setup(n){return a(),(p,m)=>s("",!0)}}),e={};e.$style=o;var l=t(c,[["__cssModules",e],["__scopeId","data-v-93fa22ce"]]);export{l as C};
