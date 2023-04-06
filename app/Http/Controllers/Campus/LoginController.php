@@ -32,7 +32,7 @@ class LoginController extends Controller
     {
 
 
-        if (env('APP_DEBUG')) {
+        if (env('APP_DEVELOPMENT')) {
             $role = $request->input('role');
             $token = $request->input('api_token');
 
