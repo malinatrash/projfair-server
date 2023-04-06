@@ -35,6 +35,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+        if (env('APP_DEVELOPMENT')) {
+            setcookie('karbushevgdeadminka', 'AMOGUS');
+        }
         JsonResource::withoutWrapping(); // Не оборачивать данные в поле data при использовании ресурсов
         // \URL::forceScheme('https'); TODO WHEN UPLOADING ON ISTU SERVER UNCOMMENT THIS LINE
     }
