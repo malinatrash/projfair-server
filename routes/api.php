@@ -83,6 +83,11 @@ Route::group(['prefix' => 'supervisors'], function () {
     Route::get('/', App\Http\Controllers\Supervisor\IndexController::class); // Получение всех преподавателей
 });
 
+Route::group(['prefix' => 'departments'], function () {
+    Route::get('/{department}', App\Http\Controllers\Department\ShowController::class); // Получение информации о преподавателе
+    Route::get('/', App\Http\Controllers\Department\IndexController::class); // Получение всех преподавателей
+});
+
 
 Route::group(['prefix' => 'harvestSettings'], function () {
     Route::get('/active', App\Http\Controllers\HarvestSetting\GetActiveController::class);

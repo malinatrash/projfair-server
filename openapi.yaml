@@ -963,6 +963,44 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Skill'
+  /api/departments/:
+    get:
+      tags:
+        - Department
+      summary: 'Получить информацию о кафедрах'
+      operationId: c8679101c993fe33d9bb9529337cde72
+      responses:
+        '200':
+          description: Кафедры
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Department'
+  '/api/departments/{id}':
+    get:
+      tags:
+        - Harvest
+      summary: 'Получение информации о кафедре по ID'
+      operationId: 7b1a6f42990c7116b01f93686d554711
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID кафедры'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: кафедра
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Department'
+        '404':
+          description: 'настройка не найдена'
   /api/harvestSettings/active:
     get:
       tags:
