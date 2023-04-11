@@ -191,7 +191,7 @@ class StoreController extends Controller
             return $validator->errors();
         }
 
-        $data = $validator->validated();
+        $data = $validator->valid();
 
 
         $supervisorCreator = $request->get('supervisor');
