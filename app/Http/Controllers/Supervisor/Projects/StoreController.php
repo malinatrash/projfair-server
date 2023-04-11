@@ -200,13 +200,14 @@ class StoreController extends Controller
 
         $specialities = $request["specialities"];
         $supervisors = $request["supervisors"];
+        unset($data['specialities']);
+        unset($data['supervisors']);
 
         $skillIds = $data['skill_ids'];
         $newSkillNames = $data['new_skills'];
 
         unset($data['skill_ids']);
         unset($data['new_skills']);
-
         $project = Project::create($data);
 
         foreach ($specialities as $speciality) {
