@@ -41,14 +41,14 @@ class UpdateRequestBySupervisorProject extends BaseRequest
             'new_skills.*' => 'nullable|string',
 
             'supervisors' => 'nullable|array',
-            'supervisors.supervisor_id' => 'nullable|integer|exists:supervisors,id',
-            'supervisors.role_ids' => 'nullable|array',
-            'supervisors.role_ids.*' => 'nullable|integer|min:2|max:3|exists:project_supervisor_roles,id',
+            'supervisors.*.supervisor_id' => 'nullable|integer|exists:supervisors,id',
+            'supervisors.*.role_ids' => 'nullable|array',
+            'supervisors.*.role_ids.*' => 'nullable|integer|min:2|max:3|exists:project_supervisor_roles,id',
 
             'specialities' => 'nullable|array',
-            'specialities.specialitiy_id' => 'nullable|integer|exists:specialities,id',
-            'specialities.course' => 'nullable|integer',
-            'specialities.priority' => 'nullable|integer',
+            'specialities.*.specialitiy_id' => 'nullable|integer|exists:specialities,id',
+            'specialities.*.course' => 'nullable|integer',
+            'specialities.*.priority' => 'nullable|integer',
         ];
     }
 }

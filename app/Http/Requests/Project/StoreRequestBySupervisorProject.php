@@ -33,10 +33,10 @@ class StoreRequestBySupervisorProject extends BaseRequest
             'state_id' => 'numeric|min:6|max:7|exists:states,id',
             'prev_project_id' => 'nullable|integer|exists:projects,id',
 
-            'supervisors' => 'nullable|array',
-            'supervisors.supervisor_id' => 'nullable|integer|exists:supervisors,id',
-            'supervisors.role_ids' => 'nullable|array',
-            'supervisors.role_ids.*' => 'nullable|integer|min:2|max:3|exists:project_supervisor_roles,id',
+            'supervisors' => 'required|array',
+            'supervisors.*.supervisor_id' => 'required|integer|exists:supervisors,id',
+            'supervisors.*.role_ids' => 'required|array',
+            'supervisors.*.role_ids.*' => 'required|integer|min:2|max:3|exists:project_supervisor_roles,id',
 
             'skill_ids' => 'nullable|array',
             'skill_ids.*' => 'nullable|integer|exists:skills,id',
@@ -44,10 +44,10 @@ class StoreRequestBySupervisorProject extends BaseRequest
             'new_skills' => 'nullable|array',
             'new_skills.*' => 'nullable|string',
 
-            'specialities' => 'nullable|array',
-            'specialities.specialitiy_id' => 'nullable|integer|exists:specialities,id',
-            'specialities.course' => 'nullable|integer',
-            'specialities.priority' => 'nullable|integer',
+            'specialities' => 'required|array',
+            'specialities.*.specialitiy_id' => 'nullable|integer|exists:specialities,id',
+            'specialities.*.course' => 'nullable|integer',
+            'specialities.*.priority' => 'nullable|integer',
         ];
     }
 }

@@ -5,18 +5,18 @@ namespace App\Http\Controllers\Supervisor\Projects;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Project\StoreRequestBySupervisorProject;
 use App\Http\Resources\ProjectResource;
-use App\Models\Project;
-use App\Models\ProjectSpeciality;
-use App\Models\ProjectSupervisor;
-use App\Models\Skill;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
+use App\Http\Services\ProjectService;
+
 
 /**
  * Создать проект (Преподаватель)
  */
 class StoreController extends Controller
 {
+
+    public function __construct(private ProjectService $projectService)
+    {
+    }
     /**
      * @OA\Post(
      *     path="api/supervisor/projects",
@@ -153,64 +153,9 @@ class StoreController extends Controller
     {
         $data = $request->validated();
 
-
         $supervisorCreator = $request->get('supervisor');
-        $supervisorCreatorRoleIds = [1];
+        $project = $this->projectService->storeBySupervisor($supervisorCreator, $data);
 
-
-        $specialities = $request["specialities"];
-        $supervisors = $request["supervisors"];
-        unset($data['specialities']);
-        unset($data['supervisors']);
-
-        $skillIds = $data['skill_ids'];
-        $newSkillNames = $data['new_skills'];
-
-        unset($data['skill_ids']);
-        unset($data['new_skills']);
-        $project = Project::create($data);
-
-        foreach ($specialities as $speciality) {
-            ProjectSpeciality::create([
-                "project_id" => $project->id,
-                "speciality_id" => $speciality["specialitiy_id"],
-                "course" => $speciality["course"],
-                "priority" => $speciality["priority"]
-            ]);
-        }
-
-        foreach ($supervisors as $supervisor) {
-
-            if ($supervisor["supervisor_id"] == $supervisorCreator->id) {
-                $supervisorCreatorRoleIds = array_merge($supervisorCreatorRoleIds, $supervisor["role_ids"]);
-                continue;
-            }
-
-            $projectSupervisor = ProjectSupervisor::create([
-                "project_id" => $project->id,
-                "supervisor_id" => $supervisor["supervisor_id"]
-            ]);
-
-            $projectSupervisor->roles()->attach($supervisor["role_ids"]);
-        }
-
-        $projectSupervisorCreator = ProjectSupervisor::create([
-            "project_id" => $project->id,
-            "supervisor_id" => $supervisorCreator->id
-        ]);
-
-        $projectSupervisorCreator->roles()->attach($supervisorCreatorRoleIds);
-
-        foreach ($newSkillNames as $newSkillName) {
-            $skill = Skill::firstOrCreate([
-                "name" => $newSkillName,
-                "skillCategory_id" => 1,
-            ]);
-
-            array_push($skillIds, $skill->id);
-        }
-
-        $project->skills()->attach($skillIds);
         return new ProjectResource($project);
     }
 }
