@@ -2,22 +2,14 @@
 
 namespace App\Http\Requests\Participation;
 
-use Illuminate\Foundation\Http\FormRequest;
+use App\Http\Requests\BaseRequest;
+
 
 /**
  * Обновление приоритета заявки авторизованного пользователя
  */
-class UpdateRequestAdminParticipation extends FormRequest
+class UpdateRequestAdminParticipation extends BaseRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
-    public function authorize()
-    {
-        return true;
-    }
 
     /**
      * Get the validation rules that apply to the request.
