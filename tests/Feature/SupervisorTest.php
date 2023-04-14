@@ -62,14 +62,22 @@ class SupervisorTest extends TestCase
 
 
         $this->assertEquals($createdProject['title'], 'Пример названия');
-        dd($createdProject['supervisors']);
-        $this->assertEquals($createdProject['supervisors'], 'Пример названия');
     }
 
     /** @test */
     public function edit_project_with_harvesting()
     {
-        $this->assertTrue(true);
+        $project = $this->get('api/projects/1');
+
+
+        $editedProject = $this->patch('api/supervisor/projects/1', [
+            "title" => $project["title"] .  "Измененное названия",
+        ], [
+            "token" => 2
+        ]);
+
+        $this->assertEquals($project["title"]  .  "Измененное названия", $editedProject['title']);
+        $this->assertEquals($project["places"], $editedProject['places']);
     }
 
     /** @test */
