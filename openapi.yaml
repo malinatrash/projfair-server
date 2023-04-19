@@ -1544,6 +1544,7 @@ paths:
             schema:
               properties:
                 rejection_reason:
+                  description: 'Можно прислать null'
                   type: string
                 state_id:
                   description: 'Отлонена - 8. Принята - 9'

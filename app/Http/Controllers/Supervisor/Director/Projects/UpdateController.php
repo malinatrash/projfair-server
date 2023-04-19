@@ -39,6 +39,7 @@ class UpdateController extends Controller
      *                  @OA\Property(
      *                      type="string",
      *                      property="rejection_reason",
+     *                      description="Можно прислать null"
      *                  ),
      *                  @OA\Property(
      *                      type="integer",
