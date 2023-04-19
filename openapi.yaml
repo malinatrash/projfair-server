@@ -1522,6 +1522,40 @@ paths:
                 $ref: '#/components/schemas/ProjectState'
         '404':
           description: 'Состояние проекта не найдено'
+  'api/director/projects/${id}':
+    patch:
+      tags:
+        - 'DIRECTOR CABINET'
+      summary: 'Отклонить или принять проект'
+      operationId: 9fb74356bc46603bf9cb741d68d1cdb7
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID проекта'
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: 'Параметры для обновления проекта'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                rejection_reason:
+                  type: string
+                state_id:
+                  description: 'Отлонена - 8. Принята - 9'
+                  type: integer
+              type: object
+      responses:
+        '200':
+          description: 'Проект обновлен'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Project'
   /api/supervisors/:
     get:
       tags:
@@ -1916,6 +1950,9 @@ components:
           type: string
         study_result:
           description: 'Учебный результат'
+          type: string
+        rejection_reason:
+          description: 'Причина отказа'
           type: string
         customer:
           description: Заказчик

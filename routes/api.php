@@ -67,6 +67,12 @@ Route::group(['prefix' => 'admin'], function () {
     });
 });
 
+// --------- DIRECTOR CABINET ROUTES ---------
+
+Route::group(['prefix' => 'director'], function () {
+    Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Director\Projects\UpdateController::class)->middleware(SupervisorAuthProtected::class);
+});
+
 // --------- SUPERVISORS CABINET ROUTES ---------
 
 Route::group(['prefix' => 'supervisor'], function () {
