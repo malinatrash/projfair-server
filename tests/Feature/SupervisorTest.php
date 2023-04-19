@@ -4,6 +4,8 @@ namespace Tests\Feature;
 
 use App\Http\Resources\ProjectResource;
 use App\Models\Project;
+use App\Models\ProjectSupervisorRoleEnum;
+use App\Models\Supervisor;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -17,6 +19,11 @@ class SupervisorTest extends TestCase
     /** @test */
     public function create_project_with_harvesting()
     {
+        $supervisorCreator = Supervisor::factory()->create([
+            'api_token' => 'token_example'
+        ]);
+
+        $supervisorParticipant = Supervisor::factory()->create();
         $createdProject = $this->post('api/supervisor/projects', [
             "title" => "Пример названия",
             "places" => 24,
@@ -32,13 +39,15 @@ class SupervisorTest extends TestCase
             "additional_inf" => "string",
             "type_id" => 1,
             "department_id" => 10,
-
-            "prev_project_id" => 1,
             "state_id" => 6,
             "supervisors" => [
                 [
-                    "supervisor_id" => 2,
-                    "role_ids" => [2, 3]
+                    "supervisor_id" => $supervisorParticipant->id,
+                    "role_ids" => [ProjectSupervisorRoleEnum::coSupervisor->value]
+                ],
+                [
+                    "supervisor_id" => $supervisorCreator->id,
+                    "role_ids" => [ProjectSupervisorRoleEnum::supervisor->value]
                 ]
             ],
             "skill_ids" => [
@@ -57,11 +66,36 @@ class SupervisorTest extends TestCase
             ]
 
         ], [
-            "token" => 2
+            "token" => 'token_example'
         ]);
 
-
         $this->assertEquals($createdProject['title'], 'Пример названия');
+
+        $supervisorsOnProject = $createdProject['supervisors'];
+
+        $supervisorCreatorRoles = [ProjectSupervisorRoleEnum::supervisor->value, ProjectSupervisorRoleEnum::creator->value];
+        $supervisorIds = [$supervisorCreator->id, $supervisorParticipant->id];
+
+        $this->assertEquals(2, count($createdProject['supervisors']));
+
+        foreach ($supervisorsOnProject as $supervisorRolesOnProject) {
+            $supervisorOnProjectId = $supervisorRolesOnProject['supervisor']['id'];
+
+            $this->assertContains($supervisorOnProjectId, $supervisorIds);
+            $roles = $supervisorRolesOnProject['roles'];
+
+            if ($supervisorOnProjectId == $supervisorCreator->id) {
+                $this->assertEquals(2, count($roles), 'Неправильное количество ролей у создателя-преподавателя проекта');
+                foreach ($roles as $role) {
+                    $this->assertContains($role['id'], $supervisorCreatorRoles);
+                }
+            } else {
+                $this->assertEquals(1, count($roles));
+                foreach ($roles as $role) {
+                    $this->assertContains($role['id'], [ProjectSupervisorRoleEnum::coSupervisor->value]);
+                }
+            }
+        }
     }
 
     /** @test */

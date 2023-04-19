@@ -19,7 +19,9 @@ class SupervisorFactory extends Factory
         return [
             'fio' => $this->faker->name,
             'email' => $this->faker->email,
+            'about' => $this->faker->word,
             'position' => $this->faker->word,
+            'api_token' => 'karbushev_gde_adminka',
         ];
     }
 }

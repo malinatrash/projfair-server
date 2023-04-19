@@ -5,6 +5,7 @@ namespace App\Http\Services;
 use App\Models\Project;
 use App\Models\ProjectSpeciality;
 use App\Models\ProjectSupervisor;
+use App\Models\ProjectSupervisorRoleEnum;
 use App\Models\Skill;
 use App\Models\Supervisor;
 use Illuminate\Support\Facades\DB;
@@ -139,11 +140,11 @@ class ProjectService
     }
 
     /** Вставить преподавателя-создателя проекта в массив преподавателей на проекте */
-    public function mergeSupervisorCreatorWithSupervisors(Supervisor $supervisorCreator, $supervisorsRoles): array
+    public function mergeSupervisorCreatorWithSupervisors(Supervisor $supervisorCreator, array &$supervisorsRoles): array
     {
         $hasSupervisorCreator = false;
-        $supervisorCreatorRoleId = 1;
-        foreach ($supervisorsRoles as $supervisor) {
+        $supervisorCreatorRoleId = ProjectSupervisorRoleEnum::creator->value;
+        foreach ($supervisorsRoles as &$supervisor) {
             if ($supervisor["supervisor_id"] == $supervisorCreator->id) {
                 $hasSupervisorCreator = true;
                 array_push($supervisor["role_ids"], $supervisorCreatorRoleId);
