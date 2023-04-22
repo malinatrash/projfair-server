@@ -147,7 +147,9 @@ class ProjectService
         foreach ($supervisorsRoles as &$supervisor) {
             if ($supervisor["supervisor_id"] == $supervisorCreator->id) {
                 $hasSupervisorCreator = true;
-                array_push($supervisor["role_ids"], $supervisorCreatorRoleId);
+                if (!in_array($supervisorCreatorRoleId, $supervisor["role_ids"])) {
+                    array_push($supervisor["role_ids"], $supervisorCreatorRoleId);
+                }
                 break;
             }
         }
