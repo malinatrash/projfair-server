@@ -21,7 +21,7 @@ class ProjectSpecialityResource extends JsonResource
             'id' => $this->id,
             'course' => $this->course,
             'priority' => $this->priority,
-            'speciality' => $this->speciality
+            'speciality' => new SpecialityResource($this->speciality)
         ];
     }
 }
