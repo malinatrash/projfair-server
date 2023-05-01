@@ -7,24 +7,24 @@ use App\Http\Resources\ProjectResource;
 use Illuminate\Http\Request;
 
 /**
- * DEPRECATED получение информации о заявках руководителя
+ * Получить проекты преподавателя
  */
 class IndexController extends Controller
 {
     /**
      * @OA\Get(
      *     path="/api/supervisor/projects",
-     *     summary="Получить проекты на рассмотрении. Делает преподаватель",
+     *     summary="Получить проекты преподавателя",
      *      tags={"SUPERVISOR CABINET"},
      *     @OA\Response(
      *         response="200",
-     *         description="Информации о заявках руководителя @TODO RESPONCE",
+     *         description="Информации о проектах",
      *         @OA\JsonContent(
      *              type="array",
      *                  @OA\Items(
-     *                 ref="#/components/schemas/Project"
-     *         )
-     * )
+     *                      ref="#/components/schemas/Project"
+     *                  )
+     *          )
      *     ),
      * )
      */

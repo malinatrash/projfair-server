@@ -66,7 +66,7 @@ class SupervisorTest extends TestCase
             ]
 
         ], [
-            "token" => 'token_example'
+            "token" => $supervisorCreator->api_token
         ]);
 
         $this->assertEquals($createdProject['title'], 'Пример названия');
@@ -101,15 +101,18 @@ class SupervisorTest extends TestCase
     /** @test */
     public function edit_project_with_harvesting()
     {
-        $project = $this->get('api/projects/1');
 
+        $supervisorCreator = Supervisor::factory()->create([
+            'api_token' => 'token_example'
+        ]);
+        $project = Project::factory()->create();
 
-        $editedProject = $this->patch('api/supervisor/projects/1', [
+        $editedProject = $this->patch('api/supervisor/projects/' . $project->id, [
             "title" => $project["title"] .  "Измененное названия",
         ], [
-            "token" => 2
+            "token" => $supervisorCreator->api_token
         ]);
-
+        $editedProject->assertStatus(200);
         $this->assertEquals($project["title"]  .  "Измененное названия", $editedProject['title']);
         $this->assertEquals($project["places"], $editedProject['places']);
     }

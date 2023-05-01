@@ -5,8 +5,7 @@ namespace App\Http\Controllers\Supervisor\Projects;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Project\StoreRequestBySupervisorProject;
 use App\Http\Resources\ProjectResource;
-use App\Http\Services\ProjectService;
-
+use App\Http\Services\SupervisorCabinetService;
 
 /**
  * Создать проект (Преподаватель)
@@ -14,7 +13,7 @@ use App\Http\Services\ProjectService;
 class StoreController extends Controller
 {
 
-    public function __construct(private ProjectService $projectService)
+    public function __construct(private SupervisorCabinetService $supervisorCabinetService)
     {
     }
     /**
@@ -154,7 +153,7 @@ class StoreController extends Controller
         $data = $request->validated();
 
         $supervisorCreator = $request->get('supervisor');
-        $project = $this->projectService->storeBySupervisor($supervisorCreator, $data);
+        $project = $this->supervisorCabinetService->createProject($supervisorCreator, $data);
 
         return new ProjectResource($project);
     }

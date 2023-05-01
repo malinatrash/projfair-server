@@ -71,6 +71,7 @@ Route::group(['prefix' => 'admin'], function () {
 
 Route::group(['prefix' => 'director'], function () {
     Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Director\Projects\UpdateController::class)->middleware(SupervisorAuthProtected::class);
+    Route::get('/projects', App\Http\Controllers\Supervisor\Director\Projects\IndexController::class)->middleware(SupervisorAuthProtected::class);
 });
 
 // --------- SUPERVISORS CABINET ROUTES ---------

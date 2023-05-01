@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Supervisor\Director\Projects;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Project\UpdateRequestByDirectorProject;
 use App\Http\Resources\ProjectResource;
-use App\Http\Services\ProjectService;
+use App\Http\Services\DirectorCabinetService;
 use App\Models\Project;
 
 /**
@@ -13,7 +13,7 @@ use App\Models\Project;
  */
 class UpdateController extends Controller
 {
-    public function __construct(private ProjectService $projectService)
+    public function __construct(private DirectorCabinetService $projectService)
     {
     }
     /**
@@ -59,7 +59,7 @@ class UpdateController extends Controller
     public function __invoke(UpdateRequestByDirectorProject $request, Project $project)
     {
         $data = $request->validated();
-        $project = $this->projectService->update($data, $project);
+        $project = $this->projectService->reviewProject($data, $project);
         return new ProjectResource($project);
     }
 }
