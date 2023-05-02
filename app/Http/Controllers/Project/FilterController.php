@@ -177,6 +177,10 @@ class FilterController extends Controller
         $dateStart = $request->input('date_start') ?? '';
         $dateEnd = $request->input('date_end') ?? '';
 
+        $specialities = $this->stringToIntArray($request->input('specialties'));
+        $skills = $this->stringToIntArray($request->input('skills'));
+
+
         $projectCollection = Project::with('skills', 'specialities', 'type', 'state', 'supervisors')
             ->inDifficulties($difficulties)
             ->inTitle($title)
@@ -184,13 +188,14 @@ class FilterController extends Controller
             ->inStates($states)
             ->inTypes($types)
             ->inDates($dateStart, $dateEnd)
+            ->inSpecialities($specialities)
+            ->inSkills($skills)
             ->get();
 
         $projectCollection = $this->sortProjects($request, $projectCollection);
 
         $projectCollection = $this->filterProjectsByCandidateSpeciality($request, $projectCollection);
-        $projectCollection = $this->filterProjectsBySpecialities($request, $projectCollection);
-        $projectCollection = $this->filterProjectsBySkills($request, $projectCollection);
+        // $projectCollection = $this->filterProjectsBySkills($request, $projectCollection);
 
 
         $projectCount = count($projectCollection);
@@ -227,36 +232,6 @@ class FilterController extends Controller
             array_push($projectIds, $value['id']);
         }
         $projectCollection = $projectCollection->whereIn('id', $projectIds);
-        return $projectCollection;
-    }
-
-    private function filterProjectsBySkills(Request $request, Collection $projectCollection): Collection
-    {
-        $skills = $this->stringToIntArray($request->input('skills'));
-
-        if (count($skills) != 0) {
-            $projectIdssWithSkills = ProjectSkill::select('project_id as id')->whereIn('skill_id', $skills)->get()->toArray();
-            $projectIds = [];
-            foreach ($projectIdssWithSkills as $key => $value) {
-                array_push($projectIds, $value['id']);
-            }
-            $projectCollection = $projectCollection->whereIn('id', $projectIds);
-        }
-        return $projectCollection;
-    }
-    private function filterProjectsBySpecialities(Request $request, Collection $projectCollection): Collection
-    {
-        $specialities = $this->stringToIntArray($request->input('specialties'));
-
-
-        if (count($specialities) != 0) {
-            $projectIdssWithSpecialities = ProjectSpeciality::select('project_id as id')->whereIn('speciality_id', $specialities)->get()->toArray();
-            $projectIds = [];
-            foreach ($projectIdssWithSpecialities as $key => $value) {
-                array_push($projectIds, $value['id']);
-            }
-            $projectCollection = $projectCollection->whereIn('id', $projectIds);
-        }
         return $projectCollection;
     }
 

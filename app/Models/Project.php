@@ -166,15 +166,23 @@ class Project extends Model
     }
 
 
-    // public function scopeInSpecialities(Builder $query, array $specialities)
-    // {
-    //https://dev.to/othmane_nemli/laravel-wherehas-and-with-550o
-    //http://www.itmathrepetitor.ru/laravel-5-eloquent-chto-znachit-has-with-wherehas/
-    //     if (isset($specialities) && count($specialities) != 0) {
-    //         //TOO do
-    //         // return $query->whereIn('difficulty', $specialities);
-    //     }
-    // }
+    public function scopeInSpecialities(Builder $query, array $specialityIds)
+    {
+        if (isset($specialityIds) && count($specialityIds) != 0) {
+            return $query->whereHas('specialities', function (Builder $q) use ($specialityIds) {
+                $q->whereIn('speciality_id', $specialityIds);
+            });
+        }
+    }
+
+    public function scopeInSkills(Builder $query, array $skillIds)
+    {
+        if (isset($skillIds) && count($skillIds) != 0) {
+            return $query->whereHas('skills', function (Builder $q) use ($skillIds) {
+                $q->whereIn('skill_id', $skillIds);
+            });
+        }
+    }
 
     public function scopeInStates(Builder $query, array $states)
     {
