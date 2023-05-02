@@ -1609,7 +1609,7 @@ paths:
   /api/supervisor:
     get:
       tags:
-        - 'CABINET DIRECTOR'
+        - 'CABINET SUPERVISOR'
       summary: 'Получить информацию об авторизованном преподавателе'
       operationId: 02d99dd2ffecf8d16975df933612044e
       responses:
