@@ -15,7 +15,7 @@ class IndexController extends Controller
      * @OA\Get(
      *     path="/api/supervisor/projects",
      *     summary="Получить проекты преподавателя",
-     *      tags={"SUPERVISOR CABINET"},
+     *      tags={"CABINET SUPERVISOR"},
      *     @OA\Response(
      *         response="200",
      *         description="Информации о проектах",

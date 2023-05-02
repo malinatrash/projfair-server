@@ -15,8 +15,8 @@ class UpdateController extends Controller
     /**
      * @OA\Patch(
      *     path="/api/admin/participations/${id}",
-     *     summary="Изменение заявки у студента",
-     *      tags={"Participation"},
+     *     summary="Изменение заявки на участие",
+     *      tags={"ADMIN"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID Заявки",

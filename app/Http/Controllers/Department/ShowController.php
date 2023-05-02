@@ -15,7 +15,7 @@ class ShowController
      * @OA\Get(
      *     path="/api/departments/{id}",
      *     summary="Получение информации о кафедре по ID",
-     *      tags={"Harvest"},
+     *      tags={"Department"},
      *           @OA\Parameter(
      *         name="id",
      *         description="ID кафедры",

@@ -181,8 +181,8 @@ paths:
           description: 'Заявка удалена'
     patch:
       tags:
-        - Participation
-      summary: 'Изменение заявки у студента'
+        - ADMIN
+      summary: 'Изменение заявки на участие'
       operationId: 28b6d1ee56c9fcb9b71e4f110bd572fb
       parameters:
         -
@@ -538,7 +538,7 @@ paths:
   /api/admin/skills/:
     get:
       tags:
-        - Skill
+        - ADMIN
       summary: 'Получить все навыки'
       operationId: d4a1461efecf630f9159deda7408e2e1
       responses:
@@ -783,12 +783,12 @@ paths:
       responses:
         '200':
           description: 'Пользователь вышел из аккаунта'
-  /api/arhiveProjects:
+  /api/activeProjects:
     get:
       tags:
-        - Candidate
+        - 'CABINET CANDIDATE'
       summary: 'Получение активного проекта студента'
-      operationId: 6999044fcfc619dcae4b89032b2ae1c1
+      operationId: 5c6ce16973c116e96df51a5786384197
       responses:
         '200':
           description: 'Активный проект студента'
@@ -796,10 +796,25 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Project'
+  /api/arhiveProjects:
+    get:
+      tags:
+        - 'CABINET CANDIDATE'
+      summary: 'Получение архивных проектов студента'
+      operationId: 22302cc4c33d8ea1f2f8222c5823a2c8
+      responses:
+        '200':
+          description: 'Архивные проекты студента'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Project'
   '/api/participations/${id}':
     post:
       tags:
-        - UNUSED
+        - 'CABINET CANDIDATE'
       summary: 'Создание заявки на проект'
       operationId: 301a772e316b0ba3f6c6f0c6f5916c7b
       parameters:
@@ -819,7 +834,7 @@ paths:
           description: 'Сообщение об ошибке'
     delete:
       tags:
-        - Participation
+        - 'CABINET CANDIDATE'
       summary: 'Удаление заявки у авторизованного студента'
       operationId: 6700919707cec7e6144a07d3c23a342e
       parameters:
@@ -837,7 +852,7 @@ paths:
           description: 'Вы не можете удалить чужую заявку'
     patch:
       tags:
-        - Participation
+        - 'CABINET CANDIDATE'
       summary: 'Изменение приоритета заявки у авторизованного студента'
       operationId: f8565721843057e358bbc347e64c2eda
       parameters:
@@ -879,7 +894,7 @@ paths:
   /api/candidate:
     get:
       tags:
-        - Candidate
+        - 'CABINET CANDIDATE'
       summary: 'Получить информацию об авторизованном студенте'
       operationId: 2480a493492a84a70c52416430a1d362
       responses:
@@ -889,11 +904,11 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Candidate'
-    put:
+    patch:
       tags:
-        - Candidate
+        - 'CABINET CANDIDATE'
       summary: 'Обновить номер телефона, о себе, скиллы студента @TODO BODY'
-      operationId: 7992d4e4a9e0c02c61e4717a66494a25
+      operationId: 62e625e76ccfb850709080de3a20f139
       requestBody:
         content:
           application/json:
@@ -913,7 +928,7 @@ paths:
   /api/participations:
     get:
       tags:
-        - Candidate
+        - 'CABINET CANDIDATE'
       summary: 'Получение заявок студента'
       operationId: b3b6a65927c7c35ddf4bec2dd1aa3bc9
       responses:
@@ -951,7 +966,7 @@ paths:
   /api/candidate/skills:
     get:
       tags:
-        - Candidate
+        - 'CABINET CANDIDATE'
       summary: 'Получение навыков авторизованного студента'
       operationId: 386620a303432a949055b472a169a0ac
       responses:
@@ -981,7 +996,7 @@ paths:
   '/api/departments/{id}':
     get:
       tags:
-        - Harvest
+        - Department
       summary: 'Получение информации о кафедре по ID'
       operationId: 7b1a6f42990c7116b01f93686d554711
       parameters:
@@ -1127,7 +1142,7 @@ paths:
   '/api/institutes/{id}':
     get:
       tags:
-        - Candidate
+        - Institute
       summary: 'Получить информацию об институте по ID'
       operationId: ca24ce3c8648cce7c7032093eb1afe54
       parameters:
@@ -1525,7 +1540,7 @@ paths:
   /api/director/projects:
     get:
       tags:
-        - 'DIRECTOR CABINET'
+        - 'CABINET DIRECTOR'
       summary: 'Получить проекты на рассмотрении'
       operationId: e0d7192587977ca512485431d882cf37
       responses:
@@ -1540,7 +1555,7 @@ paths:
   'api/director/projects/${id}':
     patch:
       tags:
-        - 'DIRECTOR CABINET'
+        - 'CABINET DIRECTOR'
       summary: 'Отклонить или принять проект'
       operationId: 9fb74356bc46603bf9cb741d68d1cdb7
       parameters:
@@ -1594,7 +1609,7 @@ paths:
   /api/supervisor:
     get:
       tags:
-        - Supervisor
+        - 'CABINET DIRECTOR'
       summary: 'Получить информацию об авторизованном преподавателе'
       operationId: 02d99dd2ffecf8d16975df933612044e
       responses:
@@ -1607,7 +1622,7 @@ paths:
   /api/supervisor/projects:
     get:
       tags:
-        - 'SUPERVISOR CABINET'
+        - 'CABINET SUPERVISOR'
       summary: 'Получить проекты преподавателя'
       operationId: b9b4e803d821a67f81fb41d40c7dd9e6
       responses:
@@ -1622,7 +1637,7 @@ paths:
   api/supervisor/projects:
     post:
       tags:
-        - 'SUPERVISOR CABINET'
+        - 'CABINET SUPERVISOR'
       summary: 'Создать проект на рассмотрении (id=6) или черновик (id=7). Делает преподаватель'
       operationId: 0ab6943d65450a032e433e3874b5eb95
       requestBody:
@@ -1691,7 +1706,7 @@ paths:
   'api/supervisor/projects/${id}':
     patch:
       tags:
-        - 'SUPERVISOR CABINET'
+        - 'CABINET SUPERVISOR'
       summary: 'Обновить проект на рассмотрении. Делает преподаватель'
       operationId: d71434ad6cb348791d687d0435265b5b
       parameters:

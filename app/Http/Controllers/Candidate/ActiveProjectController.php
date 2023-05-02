@@ -14,9 +14,9 @@ class ActiveProjectController extends Controller
 {
     /**
      * @OA\Get(
-     *     path="/api/arhiveProjects",
+     *     path="/api/activeProjects",
      *     summary="Получение активного проекта студента",
-     *      tags={"Candidate"},
+     *      tags={"CABINET CANDIDATE"},
      *     @OA\Response(
      *         response="200",
      *         description="Активный проект студента",

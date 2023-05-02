@@ -20,7 +20,7 @@ class StoreController extends Controller
      * @OA\Post(
      *     path="api/supervisor/projects",
      *     summary="Создать проект на рассмотрении (id=6) или черновик (id=7). Делает преподаватель",
-     *      tags={"SUPERVISOR CABINET"},
+     *      tags={"CABINET SUPERVISOR"},
      *      @OA\RequestBody(
      *         description="Параметры для создания проекта",
      *         required=true,

@@ -20,7 +20,7 @@ class DeleteController extends Controller
      * @OA\Delete(
      *     path="/api/participations/${id}",
      *     summary="Удаление заявки у авторизованного студента",
-     *      tags={"Participation"},
+     *      tags={"CABINET CANDIDATE"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID Заявки",

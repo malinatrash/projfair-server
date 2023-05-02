@@ -19,7 +19,7 @@ class MeController extends Controller
      * @OA\Get(
      *     path="/api/candidate",
      *     summary="Получить информацию об авторизованном студенте",
-     *      tags={"Candidate"},
+     *      tags={"CABINET CANDIDATE"},
      *     @OA\Response(
      *         response="200",
      *         description="Информация о студенте",

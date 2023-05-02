@@ -16,7 +16,7 @@ class SkillsController extends Controller
      * @OA\Get(
      *     path="/api/candidate/skills",
      *     summary="Получение навыков авторизованного студента",
-     *     tags={"Candidate"},
+     *     tags={"CABINET CANDIDATE"},
      *     @OA\Response(
      *         response="200",
      *         description="Получение навыков студента",

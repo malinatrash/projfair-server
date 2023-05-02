@@ -17,7 +17,7 @@ class ParticipationsController extends Controller
      * @OA\Get(
      *     path="/api/participations",
      *     summary="Получение заявок студента",
-     *      tags={"Candidate"},
+     *      tags={"CABINET CANDIDATE"},
      *     @OA\Response(
      *         response="200",
      *         description="Информация о заявках студента",

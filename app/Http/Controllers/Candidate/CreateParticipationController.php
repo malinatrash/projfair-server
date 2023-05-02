@@ -24,7 +24,7 @@ class CreateParticipationController extends Controller
      * @OA\Post(
      *     path="/api/participations/${id}",
      *     summary="Создание заявки на проект",
-     *      tags={"UNUSED"},
+     *      tags={"CABINET CANDIDATE"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID проекта",

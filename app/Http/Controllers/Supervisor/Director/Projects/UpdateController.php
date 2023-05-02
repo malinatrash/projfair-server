@@ -20,7 +20,7 @@ class UpdateController extends Controller
      * @OA\Patch(
      *     path="api/director/projects/${id}",
      *     summary="Отклонить или принять проект",
-     *      tags={"DIRECTOR CABINET"},
+     *      tags={"CABINET DIRECTOR"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID проекта",

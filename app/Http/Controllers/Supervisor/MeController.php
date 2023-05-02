@@ -16,7 +16,7 @@ class MeController extends Controller
      * @OA\Get(
      *     path="/api/supervisor",
      *     summary="Получить информацию об авторизованном преподавателе",
-     *     tags={"Supervisor"},
+     *     tags={"CABINET DIRECTOR"},
      *     @OA\Response(
      *         response="200",
      *         description="Информация о преподе",

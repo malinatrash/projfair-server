@@ -14,10 +14,10 @@ use Illuminate\Http\Request;
 class MeUpdateController extends Controller
 {
     /**
-     * @OA\Put(
+     * @OA\Patch(
      *     path="/api/candidate",
      *     summary="Обновить номер телефона, о себе, скиллы студента @TODO BODY",
-     *      tags={"Candidate"},
+     *      tags={"CABINET CANDIDATE"},
      *      @OA\RequestBody(
      *         @OA\MediaType(
      *             mediaType="application/json",

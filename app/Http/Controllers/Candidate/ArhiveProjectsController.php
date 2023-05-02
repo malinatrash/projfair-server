@@ -15,7 +15,7 @@ class ArhiveProjectsController extends Controller
      * @OA\Get(
      *     path="/api/arhiveProjects",
      *     summary="Получение архивных проектов студента",
-     *      tags={"Candidate"},
+     *      tags={"CABINET CANDIDATE"},
      *     @OA\Response(
      *         response="200",
      *         description="Архивные проекты студента",

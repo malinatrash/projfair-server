@@ -67,7 +67,7 @@ Route::group(['prefix' => 'admin'], function () {
     });
 });
 
-// --------- DIRECTOR CABINET ROUTES ---------
+// --------- CABINET DIRECTOR  ROUTES ---------
 
 Route::group(['prefix' => 'director'], function () {
     Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Director\Projects\UpdateController::class)->middleware(SupervisorAuthProtected::class);
@@ -165,7 +165,7 @@ Route::middleware(['candidateAuthProtected'])->group(function () { // роуты
     Route::post('/participations/{project}', App\Http\Controllers\Candidate\CreateParticipationController::class); // Создание заявки на проект
     Route::get('/participations', App\Http\Controllers\Candidate\ParticipationsController::class); // Получение заявок кандидата
     Route::get('/candidate/skills', App\Http\Controllers\Candidate\SkillsController::class); // Получение навыков студента
-    Route::put('/candidate', App\Http\Controllers\Candidate\MeUpdateController::class); // Обновить номер телефона, о себе, скиллы студента
+    Route::patch('/candidate', App\Http\Controllers\Candidate\MeUpdateController::class); // Обновить номер телефона, о себе, скиллы студента
     Route::get('/candidate', App\Http\Controllers\Candidate\MeController::class); // Получить информацию об авторизованном студенте
     Route::get('/activeProject', App\Http\Controllers\Candidate\ActiveProjectController::class); // Получение активного проекта студента
     Route::get('/arhiveProjects', App\Http\Controllers\Candidate\ArhiveProjectsController::class); // Получение архивных проектов студента

@@ -20,7 +20,7 @@ class UpdateController extends Controller
      * @OA\Patch(
      *     path="api/supervisor/projects/${id}",
      *     summary="Обновить проект на рассмотрении. Делает преподаватель",
-     *      tags={"SUPERVISOR CABINET"},
+     *      tags={"CABINET SUPERVISOR"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID проекта",

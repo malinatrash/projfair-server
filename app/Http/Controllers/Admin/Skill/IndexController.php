@@ -15,7 +15,7 @@ class IndexController extends Controller
      * @OA\Get(
      *     path="/api/admin/skills/",
      *     summary="Получить все навыки",
-     *      tags={"Skill"},
+     *      tags={"ADMIN"},
      *     @OA\Response(
      *         response="200",
      *         description="Навыки",

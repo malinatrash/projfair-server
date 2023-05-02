@@ -19,7 +19,7 @@ class UpdateController extends Controller
      * @OA\Patch(
      *     path="/api/participations/${id}",
      *     summary="Изменение приоритета заявки у авторизованного студента",
-     *      tags={"Participation"},
+     *      tags={"CABINET CANDIDATE"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID Заявки",

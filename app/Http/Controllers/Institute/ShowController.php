@@ -15,7 +15,7 @@ class ShowController extends Controller
      * @OA\Get(
      *     path="/api/institutes/{id}",
      *     summary="Получить информацию об институте по ID",
-     *     tags={"Candidate"},
+     *     tags={"Institute"},
      *      @OA\Parameter(
      *         name="id",
      *         description="ID института",
