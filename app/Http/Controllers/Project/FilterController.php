@@ -195,8 +195,6 @@ class FilterController extends Controller
         $projectCollection = $this->sortProjects($request, $projectCollection);
 
         $projectCollection = $this->filterProjectsByCandidateSpeciality($request, $projectCollection);
-        // $projectCollection = $this->filterProjectsBySkills($request, $projectCollection);
-
 
         $projectCount = count($projectCollection);
         $projectCollection = $this->paginateProjects($request, $projectCollection);

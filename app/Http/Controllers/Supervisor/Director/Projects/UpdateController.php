@@ -42,6 +42,11 @@ class UpdateController extends Controller
      *                      description="Можно прислать null"
      *                  ),
      *                  @OA\Property(
+     *                      type="date",
+     *                      property="rejection_date",
+     *                      description="Можно прислать null"
+     *                  ),
+     *                  @OA\Property(
      *                      type="integer",
      *                      property="state_id",
      *                      description="Отлонена - 8. Принята - 9"

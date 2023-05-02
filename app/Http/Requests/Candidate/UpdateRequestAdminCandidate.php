@@ -22,7 +22,7 @@ class UpdateRequestAdminCandidate extends BaseRequest
             'phone' => 'string',
             'course' => 'integer',
             'training_group' => 'string',
-            'canSendParticipations' => 'boolean',
+            'can_send_participations' => 'boolean',
 
             'skill_ids' => 'nullable|array',
             'skill_ids.*' => 'nullable|integer|exists:skills,id',

@@ -26,7 +26,7 @@ class CandidateResource extends JsonResource
             'course' => $this->course,
             'training_group' => $this->training_group,
             'speciality' => new SpecialityResource($speciality),
-            // 'canSendParticipations' => $this->canSendParticipations,
+            'canSendParticipations' => $this->can_send_participations,
             'is_student' => 1,
         ];
     }
@@ -97,12 +97,11 @@ class Candidate extends CandidateResource
      * @OA\Property(ref="#/components/schemas/Speciality")
      */
     public string $speciality;
+
+    /**
+     * Может ли отправлять заявки на проекты
+     * @var boolean
+     * @OA\Property()
+     */
+    public bool $canSendParticipations;
 }
-
-
-/**
- * Может ли отправлять заявки на проекты
- * @var boolean
- * @OA\Property()
- */
-// public bool $canSendParticipations;

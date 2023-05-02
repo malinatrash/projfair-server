@@ -42,7 +42,9 @@ class ProjectResource extends JsonResource
             'specialities' => SpecialityResource::collection($this->specialities),
             'project_specialities' => ProjectSpecialityResource::collection($this->projectSpecialities),
             'supervisorsNames' => $this->supervisorsNames,
+
             'rejection_reason' => $this->rejection_reason,
+            'rejection_date' => $this->rejection_date,
 
             'department' => new DepartmentResource($this->department),
             'state' => new StateResource($this->state),

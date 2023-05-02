@@ -44,7 +44,7 @@ paths:
                   type: integer
                 training_group:
                   type: string
-                canSendParticipations:
+                can_send_participations:
                   type: boolean
                 skill_ids:
                   type: array
@@ -1522,6 +1522,21 @@ paths:
                 $ref: '#/components/schemas/ProjectState'
         '404':
           description: 'Состояние проекта не найдено'
+  /api/director/projects:
+    get:
+      tags:
+        - 'DIRECTOR CABINET'
+      summary: 'Получить проекты на рассмотрении'
+      operationId: e0d7192587977ca512485431d882cf37
+      responses:
+        '200':
+          description: 'Информации о проектах'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Project'
   'api/director/projects/${id}':
     patch:
       tags:
@@ -1546,6 +1561,10 @@ paths:
                 rejection_reason:
                   description: 'Можно прислать null'
                   type: string
+                rejection_date:
+                  description: 'Можно прислать null'
+                  type: string
+                  format: date
                 state_id:
                   description: 'Отлонена - 8. Принята - 9'
                   type: integer
@@ -1589,11 +1608,11 @@ paths:
     get:
       tags:
         - 'SUPERVISOR CABINET'
-      summary: 'Получить проекты на рассмотрении. Делает преподаватель'
+      summary: 'Получить проекты преподавателя'
       operationId: b9b4e803d821a67f81fb41d40c7dd9e6
       responses:
         '200':
-          description: 'Информации о заявках руководителя @TODO RESPONCE'
+          description: 'Информации о проектах'
           content:
             application/json:
               schema:
@@ -1829,6 +1848,9 @@ components:
           type: string
         speciality:
           $ref: '#/components/schemas/Speciality'
+        canSendParticipations:
+          description: 'Может ли отправлять заявки на проекты'
+          type: boolean
       type: object
     Department:
       properties:

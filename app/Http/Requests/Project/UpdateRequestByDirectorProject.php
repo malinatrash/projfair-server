@@ -16,6 +16,7 @@ class UpdateRequestByDirectorProject extends BaseRequest
     {
         return [
             'rejection_reason' => 'nullable|string',
+            'rejection_date' => 'nullable|date',
             'state_id' => 'numeric|min:8|max:9',
         ];
     }

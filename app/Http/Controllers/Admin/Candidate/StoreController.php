@@ -52,7 +52,7 @@ class StoreController extends Controller
      *                  ),
      *                  @OA\Property(
      *                      type="boolean",
-     *                      property="canSendParticipations",
+     *                      property="can_send_participations",
      *                  ),
      *                  @OA\Property(
      *                      type="array",
