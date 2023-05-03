@@ -4,7 +4,6 @@ namespace Database\Factories;
 
 use App\Models\Candidate;
 use App\Models\Project;
-use App\Models\StateParticipation;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -24,7 +23,7 @@ class ParticipationFactory extends Factory
             'review' => $this->faker->sentence(),
             'project_id' => Project::get()->random()->id,
             'candidate_id' => Candidate::get()->random()->id,
-            'state_id' => StateParticipation::get()->random()->id,
+            'state_id' => '1',
         ];
     }
 }

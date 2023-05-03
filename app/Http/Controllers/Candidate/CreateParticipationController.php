@@ -7,8 +7,10 @@ use App\Http\Requests\Participation\StoreRequestAdminParticipation;
 use App\Http\Services\HarvestSettingService;
 use App\Models\Candidate;
 use App\Models\Participation;
+use App\Models\ParticipationStateEnum;
 use App\Models\Project;
 use App\Models\ProjectSpeciality;
+use App\Models\ProjectStateEnum;
 use App\Models\Speciality;
 
 
@@ -99,7 +101,7 @@ class CreateParticipationController extends Controller
 
         $candidatesParticipations = [];
         foreach ($allCandidatesParticipations as $participation) {
-            if ($participation->priority < 4 && $participation->state_id === '1') {
+            if ($participation->priority < 4 && $participation->state_id === ParticipationStateEnum::ditribution->value) {
                 array_push($candidatesParticipations, $participation);
             }
         }
@@ -172,6 +174,6 @@ class CreateParticipationController extends Controller
      */
     function isProjectOnRecruitment(Project $project): bool
     {
-        return $project->state->id == 1;
+        return $project->state->id == ProjectStateEnum::recruitment->value;
     }
 }

@@ -21,23 +21,3 @@ class ParticipationStateResource extends JsonResource
         ];
     }
 }
-
-/**
- * @OA\Schema()
- */
-class ParticipationState extends ParticipationStateResource
-{
-    /**
-     * ID Состояния заявки
-     * @var int
-     * @OA\Property()
-     */
-    public int $id;
-
-    /**
-     * Название состояния
-     * @var string
-     * @OA\Property()
-     */
-    public string $state;
-}

@@ -17,7 +17,6 @@ class DatabaseSeeder extends Seeder
         //$candidates = Candidate::factory(100)->create();
         //Type::factory(20)->create();
         //Supervisor::factory(20)->create();
-        //StateParticipation::factory(20)->create();
 
         // $projects = Project::factory(200)->create();
 

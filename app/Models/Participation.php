@@ -21,12 +21,9 @@ class Participation extends Model
         return $this->belongsTo(Candidate::class);
     }
 
-    public function stateParticipation()
+    public function getState(): ParticipationState
     {
-        return $this->belongsTo(StateParticipation::class);
-    }
-    public function state()
-    {
-        return $this->belongsTo(StateParticipation::class);
+        $participationStateEnum = ParticipationStateEnum::tryFrom($this->state_id);
+        return ParticipationStateEnum::getProjectStateFromEnum($participationStateEnum);
     }
 }

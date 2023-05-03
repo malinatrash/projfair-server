@@ -129,9 +129,6 @@ Route::group(['prefix' => 'specialities'], function () {
 Route::group(['prefix' => 'skills'], function () {
     Route::get('/', App\Http\Controllers\Skill\IndexController::class)->middleware(CandidateAuth::class); // Получить данные для фильтрации по навыкам и специальностям. Скрывать данные других институтов если пользователь авторизован
     Route::get('/{skill}', App\Http\Controllers\Skill\ShowController::class); // Получить информацию о навыке
-    // Route::delete('/{skill}', 'DeleteController');
-    // Route::patch('/{skill}', 'UpdateController');
-    // Route::post('/', 'StoreController');
 });
 
 Route::group(['prefix' => 'themeSources'], function () {

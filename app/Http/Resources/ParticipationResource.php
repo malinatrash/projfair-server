@@ -26,7 +26,7 @@ class ParticipationResource extends JsonResource
 
             'project_id' => $this->project_id,
             'candidate' => new CandidateResource($this->candidate),
-            'state' => new ParticipationStateResource($this->state),
+            'state' => new ParticipationStateResource($this->getState()),
 
         ];
     }
