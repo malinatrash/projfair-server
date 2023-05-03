@@ -147,16 +147,22 @@ class Project extends Model
 
     /** SCOPES (Query Logic) */
 
-    public function scopeInDifficulties(Builder $query, array $difficulties)
+    public function scopeInNativeInstitute(Builder $query, int | null $instituteId)
     {
-
+        if (isset($instituteId)) {
+            return $query->whereHas('department', function (Builder $q) use ($instituteId) {
+                $q->where('institute_id', $instituteId);
+            });
+        }
+    }
+    public function scopeInDifficulties(Builder $query, array | null $difficulties)
+    {
         if (isset($difficulties) && count($difficulties) != 0) {
-
             return $query->whereIn('difficulty', $difficulties);
         }
     }
 
-    public function scopeInTitle(Builder $query, string $title)
+    public function scopeInTitle(Builder $query, string | null $title)
     {
         if (isset($title)) {
             $title = ltrim($title, '"');
@@ -166,7 +172,7 @@ class Project extends Model
     }
 
 
-    public function scopeInSpecialities(Builder $query, array $specialityIds)
+    public function scopeInSpecialities(Builder $query, array | null $specialityIds)
     {
         if (isset($specialityIds) && count($specialityIds) != 0) {
             return $query->whereHas('specialities', function (Builder $q) use ($specialityIds) {
@@ -175,7 +181,7 @@ class Project extends Model
         }
     }
 
-    public function scopeInSkills(Builder $query, array $skillIds)
+    public function scopeInSkills(Builder $query, array | null $skillIds)
     {
         if (isset($skillIds) && count($skillIds) != 0) {
             return $query->whereHas('skills', function (Builder $q) use ($skillIds) {
@@ -184,23 +190,21 @@ class Project extends Model
         }
     }
 
-    public function scopeInStates(Builder $query, array $states)
+    public function scopeInStates(Builder $query, array | null $states)
     {
         if (isset($states) && count($states) != 0) {
-
             return $query->whereIn('state_id', $states);
         }
     }
 
-    public function scopeInTypes(Builder $query, array $types)
+    public function scopeInTypes(Builder $query, array | null $types)
     {
         if (isset($types) && count($types) != 0) {
-
             return $query->whereIn('type_id', $types);
         }
     }
 
-    public function scopeInDates(Builder $query, string $dateStart, string $dateEnd)
+    public function scopeInDates(Builder $query, string | null $dateStart, string | null $dateEnd)
     {
 
         if (isset($dateStart) && strlen($dateStart) > 0) {

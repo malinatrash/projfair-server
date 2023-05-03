@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Department extends Model
 {
@@ -15,12 +17,12 @@ class Department extends Model
     public $timestamps = false;
 
 
-    public function specialities()
+    public function specialities(): HasMany
     {
         return $this->hasMany(Speciality::class);
     }
 
-    public function institute()
+    public function institute(): BelongsTo
     {
         return $this->belongsTo(Institute::class);
     }

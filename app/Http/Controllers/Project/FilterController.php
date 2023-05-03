@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Project;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\ProjectResource;
+use App\Http\Services\ProjectService;
 use App\Models\Project;
 use App\Models\ProjectSkill;
 use App\Models\ProjectSpeciality;
@@ -16,6 +17,9 @@ use Illuminate\Http\Request;
  */
 class FilterController extends Controller
 {
+    public function __construct(private ProjectService $projectService)
+    {
+    }
 
     private function stringToIntArray($string): array
     {
@@ -173,34 +177,38 @@ class FilterController extends Controller
         $title = $request->input('title') ?? '';
         $publicStates = ProjectStateEnum::getPublicStatesIds();
         $states = $this->stringToIntArray($request->input('state'));
+        $states = array_merge($publicStates, $states);
+
         $types = $this->stringToIntArray($request->input('type'));
+
+
         $dateStart = $request->input('date_start') ?? '';
         $dateEnd = $request->input('date_end') ?? '';
-        $specialities = $this->stringToIntArray($request->input('specialties'));
         $skills = $this->stringToIntArray($request->input('skills'));
 
+        $specialities = $this->stringToIntArray($request->input('specialties'));
         $candidate = $request->get('candidate');
-        $candidateSpecialityIds = [];
+
         if (isset($candidate)) {
             $candidateInsitute = $candidate->getInstitute();
             if (isset($candidateInsitute)) {
                 $candidateSpecialityIds = $candidateInsitute
                     ->specialities
                     ->pluck('id')->toArray();
+                $specialities = array_merge($specialities, $candidateSpecialityIds);
             }
         }
 
-        $projectCollection = Project::with('skills', 'specialities', 'type', 'state', 'supervisors')
-            ->inDifficulties($difficulties)
-            ->inTitle($title)
-            ->inStates($publicStates)
-            ->inStates($states)
-            ->inTypes($types)
-            ->inDates($dateStart, $dateEnd)
-            ->inSpecialities($specialities)
-            ->inSpecialities($candidateSpecialityIds)
-            ->inSkills($skills)
-            ->get();
+        $projectCollection = $this->projectService->filter(
+            difficulties: $difficulties,
+            title: $title,
+            typeIds: $types,
+            stateIds: $states,
+            dateStart: $dateStart,
+            dateEnd: $dateEnd,
+            skillIds: $skills,
+            specialityIds: $specialities,
+        );
 
         $projectCollection = $this->sortProjects($request, $projectCollection);
 

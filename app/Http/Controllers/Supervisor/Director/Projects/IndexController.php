@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
  */
 class IndexController extends Controller
 {
-    public function __construct(private DirectorCabinetService $projectService)
+    public function __construct(private DirectorCabinetService $directorCabinetService)
     {
     }
     /**
@@ -34,6 +34,6 @@ class IndexController extends Controller
     {
         $supervisor = $request->get('supervisor');
 
-        return ProjectResource::collection($this->projectService->getProjectsToReview($supervisor));
+        return ProjectResource::collection($this->directorCabinetService->getProjectsToReview($supervisor));
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Services;
 
 use App\Models\Project;
+use App\Models\ProjectStateEnum;
 use App\Models\Supervisor;
 use Illuminate\Database\Eloquent\Collection;
 
@@ -15,8 +16,12 @@ class DirectorCabinetService
     /** Получить проекты для ревью */
     public function getProjectsToReview(Supervisor $director): Collection
     {
-        // TODO do
-        return $this->projectService->index();
+
+        $instituteId = $director->department->institute->id;
+        $stateIds = ProjectStateEnum::getDirectorCabinetStatesIds();
+
+
+        return $this->projectService->filter(stateIds: $stateIds, nativeInstituteId: $instituteId);
     }
 
     /** Дать ревью на заявку создания проекта от преподавателя. Одобрить или нет */
