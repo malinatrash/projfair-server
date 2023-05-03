@@ -23,23 +23,3 @@ class StateResource extends JsonResource
         ];
     }
 }
-
-/**
- * @OA\Schema()
- */
-class ProjectState extends StateResource
-{
-    /**
-     * ID Состояния проекта
-     * @var int
-     * @OA\Property()
-     */
-    public int $id;
-
-    /**
-     * Название состояния
-     * @var string
-     * @OA\Property()
-     */
-    public string $state;
-}

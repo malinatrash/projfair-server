@@ -4,7 +4,7 @@ namespace App\Http\Controllers\State;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\StateResource;
-use App\Models\State;
+use App\Models\ProjectStateEnum;
 
 /**
  * Получение всех состояний проекта
@@ -29,7 +29,7 @@ class IndexController extends Controller
      */
     public function __invoke()
     {
-        $states = State::all();
+        $states = ProjectStateEnum::getAllProjectStatesData();
         return StateResource::collection($states);
     }
 }

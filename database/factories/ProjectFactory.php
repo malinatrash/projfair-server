@@ -2,8 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\State;
-use App\Models\Supervisor;
 use App\Models\Type;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -34,7 +32,7 @@ class ProjectFactory extends Factory
             'study_result' => $this->faker->sentence(),
 
 
-            'state_id' => State::get()->random()->id,
+            'state_id' => '2',
             'type_id' => Type::get()->random()->id,
 
         ];

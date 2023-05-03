@@ -47,11 +47,11 @@ class ProjectResource extends JsonResource
             'rejection_date' => $this->rejection_date,
 
             'department' => new DepartmentResource($this->department),
-            'state' => new StateResource($this->state),
+            'state' => new StateResource($this->getState()),
             'type' => new TypeResource($this->type),
             'theme_source' => new ThemeSourceResource($this->themeSource),
 
-            'participations' => $participations,
+            'participations' => ParticipationResource::collection($participations),
 
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
@@ -168,6 +168,15 @@ class Project extends ProjectResource
      * )
      */
     public $supervisors;
+    /**
+     * Заявки на проект
+     * @var array
+     * @OA\Property(
+     *  type="array",
+     * @OA\Items(ref="#/components/schemas/Participation")
+     * )
+     */
+    public $participations;
 
     /**
      * Требуемые навыки

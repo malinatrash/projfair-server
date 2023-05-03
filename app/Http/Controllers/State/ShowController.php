@@ -4,7 +4,7 @@ namespace App\Http\Controllers\State;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\StateResource;
-use App\Models\State;
+use App\Models\ProjectStateEnum;
 
 /**
  * Получение состояния проекта
@@ -36,8 +36,15 @@ class ShowController extends Controller
      *     ),
      * )
      */
-    public function __invoke(State $state)
+    public function __invoke($id)
     {
-        return new StateResource($state);
+
+        $projectStateEnum = ProjectStateEnum::tryFrom($id);
+
+        if (!isset($projectStateEnum)) {
+            return response(['error' => 'Не найдено'], 404);
+        }
+        $projectState = ProjectStateEnum::getProjectStateFromEnum($projectStateEnum);
+        return new StateResource($projectState);
     }
 }

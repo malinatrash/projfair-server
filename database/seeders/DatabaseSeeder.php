@@ -2,17 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Candidate;
-use App\Models\Participation;
-use App\Models\Project;
-use App\Models\Skill;
-use App\Models\SkillCategory;
-use App\Models\Speciality;
-use App\Models\State;
-use App\Models\StateParticipation;
-use App\Models\Supervisor;
-use Illuminate\Support\Facades\DB;
-use App\Models\Type;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder

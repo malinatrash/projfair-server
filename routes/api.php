@@ -55,11 +55,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::patch('/{supervisor}', App\Http\Controllers\Admin\Supervisor\UpdateController::class);
         Route::delete('/{supervisor}', App\Http\Controllers\Admin\Supervisor\DeleteController::class);
     });
-    Route::group(['prefix' => 'states'], function () {
-        Route::delete('/{state}', App\Http\Controllers\Admin\State\DeleteController::class);
-        Route::patch('/{state}', App\Http\Controllers\Admin\State\UpdateController::class);
-        Route::post('/', App\Http\Controllers\Admin\State\StoreController::class);
-    });
+
     Route::group(['prefix' => 'types'], function () {
         Route::delete('/{type}', App\Http\Controllers\Admin\Type\DeleteController::class);
         Route::patch('/{type}', App\Http\Controllers\Admin\Type\UpdateController::class);

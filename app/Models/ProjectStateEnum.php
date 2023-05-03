@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+
 /**
  * Состояние проекта
  * 1 - Идёт набор
@@ -59,5 +60,83 @@ enum ProjectStateEnum: int
     public static function getDirectorCabinetStatesIds(): array
     {
         return  [static::onReview->value, static::rejected->value, static::approved->value];
+    }
+
+    /** Получить все данные состояний */
+    public static function getAllProjectStatesData(): array
+    {
+        $statesData = [];
+        foreach (static::cases() as $stateEnum) {
+            array_push(
+                $statesData,
+                static::getProjectStateFromEnum($stateEnum)
+            );
+        }
+        return $statesData;
+    }
+
+
+    /** Получить состояния, которые показываются в кабинете директора */
+    public static function getProjectStateFromEnum(ProjectStateEnum $projectStateEnum): ProjectState
+    {
+        $stateData = [];
+        switch ($projectStateEnum->name) {
+            case static::recruitment->name:
+                $stateData = [
+                    'name' => 'Идёт набор',
+                    'show_priority' => '1',
+                ];
+                break;
+            case static::active->name:
+                $stateData = [
+                    'name' => 'Активный',
+                    'show_priority' => '1',
+                ];
+                break;
+            case static::reRecruitment->name:
+                $stateData = [
+                    'name' => 'Добор',
+                    'show_priority' => '1',
+                ];
+                break;
+            case static::arhive->name:
+                $stateData = [
+                    'name' => 'В архиве',
+                    'show_priority' => '1',
+                ];
+                break;
+            case static::participationProcessing->name:
+                $stateData = [
+                    'name' => 'Обработка заявок',
+                    'show_priority' => '1',
+                ];
+                break;
+            case static::onReview->name:
+                $stateData = [
+                    'name' => 'На рассмотрении',
+                    'show_priority' => '1',
+                ];
+                break;
+            case static::draft->name:
+                $stateData = [
+                    'name' => 'Черновик',
+                    'show_priority' => '1',
+                ];
+                break;
+            case static::rejected->name:
+                $stateData = [
+                    'name' => 'Отклонено',
+                    'show_priority' => '1',
+                ];
+                break;
+            case static::approved->name:
+                $stateData = [
+                    'name' => 'Одобрено',
+                    'show_priority' => '1',
+                ];
+                break;
+        }
+
+        return  new ProjectState(id: $projectStateEnum->value, state: $stateData['name']);
     }
 }

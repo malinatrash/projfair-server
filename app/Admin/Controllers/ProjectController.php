@@ -5,7 +5,6 @@ namespace App\Admin\Controllers;
 use App\Models\Project;
 use App\Models\Skill;
 use App\Models\Speciality;
-use App\Models\State;
 use App\Models\Type;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
@@ -84,7 +83,6 @@ class ProjectController extends AdminController
             $filter->like('state.state', 'Заказчик');
             $filter->like('supervisors', 'Руководители');
             $filter->like('customer', 'Состояние');
-
         });
 
         return $grid;
@@ -164,7 +162,6 @@ class ProjectController extends AdminController
         $form->textarea('product_result', __('Продуктовый рез.'))->rules('required');
         $form->textarea('study_result', __('Учебный рез.'))->rules('required');
         $form->textarea('supervisors', __('Руководители (через запятую)'))->rules('required');
-        $form->select('state_id', __('Состояние'))->options(State::all()->pluck('state', 'id'))->rules('required');
 
         //$form->number('supervisor_id', __('Supervisor id'));
 

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Http\Resources\ProjectState;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -54,9 +55,10 @@ class Project extends Model
     /**
      * Получить состояние проекта
      */
-    public function state()
+    public function getState(): ProjectState
     {
-        return $this->belongsTo(State::class);
+        $projectStateEnum = ProjectStateEnum::tryFrom($this->state_id);
+        return ProjectStateEnum::getProjectStateFromEnum($projectStateEnum);
     }
 
     /**
