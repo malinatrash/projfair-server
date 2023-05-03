@@ -28,7 +28,7 @@ class UpdateRequestByAdminProject extends BaseRequest
             'study_result' => 'string',
             'additional_inf' => 'string|nullable',
 
-            'state_id' => 'integer|exists:states,id',
+            'state_id' => 'integer',
             'type_id' => 'integer|exists:types,id',
             'department_id' => 'required|integer|exists:departments,id',
 

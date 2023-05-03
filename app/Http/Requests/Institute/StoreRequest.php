@@ -1,4 +1,4 @@
-<?php // TODO Ало дети донбасса сделайте тут описание полей(уточнить какие поля есть в институтах)
+<?php
 
 namespace App\Http\Requests\Institute;
 
@@ -14,11 +14,8 @@ class StoreRequest extends BaseRequest
      */
     public function rules()
     {
-        return [
+        return [ //TODO body
             'priority' => 'integer',
-
-            // 'review' => 'string',
-            // 'state_id' => 'required|integer|exists:state_participations,id', 
         ];
     }
 }
