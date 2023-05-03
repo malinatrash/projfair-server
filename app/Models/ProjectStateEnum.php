@@ -58,6 +58,6 @@ enum ProjectStateEnum: int
     /** Получить состояния, которые показываются в кабинете директора */
     public static function getDirectorCabinetStatesIds(): array
     {
-        return  [static::onReview->value];
+        return  [static::onReview->value, static::rejected->value];
     }
 }
