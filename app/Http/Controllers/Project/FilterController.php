@@ -176,10 +176,19 @@ class FilterController extends Controller
         $types = $this->stringToIntArray($request->input('type'));
         $dateStart = $request->input('date_start') ?? '';
         $dateEnd = $request->input('date_end') ?? '';
-
         $specialities = $this->stringToIntArray($request->input('specialties'));
         $skills = $this->stringToIntArray($request->input('skills'));
 
+        $candidate = $request->get('candidate');
+        $candidateSpecialityIds = [];
+        if (isset($candidate)) {
+            $candidateInsitute = $candidate->getInstitute();
+            if (isset($candidateInsitute)) {
+                $candidateSpecialityIds = $candidateInsitute
+                    ->specialities
+                    ->pluck('id')->toArray();
+            }
+        }
 
         $projectCollection = Project::with('skills', 'specialities', 'type', 'state', 'supervisors')
             ->inDifficulties($difficulties)
@@ -189,12 +198,11 @@ class FilterController extends Controller
             ->inTypes($types)
             ->inDates($dateStart, $dateEnd)
             ->inSpecialities($specialities)
+            ->inSpecialities($candidateSpecialityIds)
             ->inSkills($skills)
             ->get();
 
         $projectCollection = $this->sortProjects($request, $projectCollection);
-
-        $projectCollection = $this->filterProjectsByCandidateSpeciality($request, $projectCollection);
 
         $projectCount = count($projectCollection);
         $projectCollection = $this->paginateProjects($request, $projectCollection);
@@ -206,31 +214,6 @@ class FilterController extends Controller
         $sortBy = $request->get('sortBy') ?? 'state.show_priority';
         $order = $request->get('order') ?? 'desc';
         return $projectCollection->sortBy([[$sortBy, $order]]);
-    }
-
-    private function filterProjectsByCandidateSpeciality(Request $request, Collection $projectCollection): Collection
-    {
-        $candidate = $request->get('candidate');
-
-        if (!isset($candidate)) {
-            return $projectCollection;
-        }
-
-        $candidateInsitute = $candidate->getInstitute();
-        if (!isset($candidateInsitute)) {
-            return $projectCollection;
-        }
-
-        $specilitiesInInstitute = $candidateInsitute->specialities;
-        $specilitiesInInstituteIds = $specilitiesInInstitute->pluck('id')->toArray();
-
-        $projectIdssWithSpecialities = ProjectSpeciality::select('project_id as id')->whereIn('speciality_id', $specilitiesInInstituteIds)->get()->toArray();
-        $projectIds = [];
-        foreach ($projectIdssWithSpecialities as $key => $value) {
-            array_push($projectIds, $value['id']);
-        }
-        $projectCollection = $projectCollection->whereIn('id', $projectIds);
-        return $projectCollection;
     }
 
     private function paginateProjects(Request $request, Collection $projectCollection): Collection
