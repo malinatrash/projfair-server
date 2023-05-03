@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /** Данные состояния заявки для апи */
-class StateParticipationResource extends JsonResource
+class ParticipationStateResource extends JsonResource
 {
     /**
      * Трансформирует данные состояния заявки для апи
@@ -25,7 +25,7 @@ class StateParticipationResource extends JsonResource
 /**
  * @OA\Schema()
  */
-class StateParticipationProject extends StateParticipationResource
+class ParticipationState extends ParticipationStateResource
 {
     /**
      * ID Состояния заявки

@@ -25,8 +25,8 @@ class ParticipationResource extends JsonResource
             'review' => $this->review,
 
             'project_id' => $this->project_id,
-            'candidate_id' => $this->candidate_id,
-            'state_id' => $this->state_id,
+            'candidate' => new CandidateResource($this->candidate),
+            'state' => new ParticipationStateResource($this->state),
 
         ];
     }
@@ -56,18 +56,20 @@ class Participation extends ParticipationResource
      * @OA\Property()
      */
     public string $project_id;
+
     /**
-     * ID состояния
-     * @var string
-     * @OA\Property()
+     * Cостояние заявки
+     * @var object
+     * @OA\Property(ref="#/components/schemas/ParticipationState")
      */
-    public string $state_id;
+    public string $state;
+
     /**
-     * ID студента подавшего заявку
-     * @var string
-     * @OA\Property()
+     * Студент
+     * @var object
+     * @OA\Property(ref="#/components/schemas/Candidate")
      */
-    public string $candidate_id;
+    public string $candidate;
 
     /**
      * Дата создания записи в БД

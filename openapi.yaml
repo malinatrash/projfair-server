@@ -550,72 +550,6 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Skill'
-  '/api/admin/states/${id}':
-    delete:
-      tags:
-        - ADMIN
-      summary: 'Удалить состояние проекта'
-      operationId: b31a515315f2c36013e9295c8f24c939
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID состояния проекта'
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: 'Состояние проекта удалено'
-        '404':
-          description: 'Состояние проекта не найдено'
-    patch:
-      tags:
-        - ADMIN
-      summary: 'Обновить состояние проекта'
-      operationId: 128656e872757229a6c40b8b7cd0f630
-      parameters:
-        -
-          name: id
-          in: path
-          description: 'ID состояния проекта'
-          required: true
-          schema:
-            type: integer
-      requestBody:
-        description: 'Параметры для обновления состояния проекта'
-        required: true
-        content:
-          application/json:
-            schema:
-              properties:
-                state:
-                  type: string
-              type: object
-      responses:
-        '200':
-          description: 'Состояние проекта изменено'
-        '404':
-          description: 'Состояние проекта не найдено'
-  /api/admin/states:
-    post:
-      tags:
-        - ADMIN
-      summary: 'Создать состояние проекта'
-      operationId: 0c942b0a43a4437c869b5940e20f26e3
-      requestBody:
-        description: 'Параметры для обновления состояния проекта'
-        required: true
-        content:
-          application/json:
-            schema:
-              properties:
-                state:
-                  type: string
-              type: object
-      responses:
-        '200':
-          description: 'Состояние проекта создано'
   '/api/admin/supervisors/${id}':
     delete:
       tags:
@@ -1935,17 +1869,24 @@ components:
         project_id:
           description: 'ID проекта, на которые подали заявку'
           type: string
-        state_id:
-          description: 'ID состояния'
-          type: string
-        candidate_id:
-          description: 'ID студента подавшего заявку'
-          type: string
+        state:
+          $ref: '#/components/schemas/ParticipationState'
+        candidate:
+          $ref: '#/components/schemas/Candidate'
         created_at:
           description: 'Дата создания записи в БД'
           type: string
         updated_at:
           description: 'Дата обновления записи в БД'
+          type: string
+      type: object
+    ParticipationState:
+      properties:
+        id:
+          description: 'ID Состояния заявки'
+          type: integer
+        state:
+          description: 'Название состояния'
           type: string
       type: object
     Project:
@@ -2000,6 +1941,11 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/ProjectSupervisor'
+        participations:
+          description: 'Заявки на проект'
+          type: array
+          items:
+            $ref: '#/components/schemas/Participation'
         skills:
           description: 'Требуемые навыки'
           type: array
@@ -2112,24 +2058,6 @@ components:
         department:
           $ref: '#/components/schemas/Department'
       type: object
-    StateParticipationProject:
-      properties:
-        id:
-          description: 'ID Состояния заявки'
-          type: integer
-        state:
-          description: 'Название состояния'
-          type: string
-      type: object
-    ProjectState:
-      properties:
-        id:
-          description: 'ID Состояния проекта'
-          type: integer
-        state:
-          description: 'Название состояния'
-          type: string
-      type: object
     Supervisor:
       properties:
         id:
@@ -2172,5 +2100,14 @@ components:
           type: integer
         type:
           description: 'Название типа проекта'
+          type: string
+      type: object
+    ProjectState:
+      properties:
+        id:
+          description: 'ID Состояния проекта'
+          type: integer
+        state:
+          description: 'Название состояния'
           type: string
       type: object
