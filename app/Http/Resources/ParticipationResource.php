@@ -26,6 +26,7 @@ class ParticipationResource extends JsonResource
 
             'project_id' => $this->project_id,
             'candidate' => new CandidateResource($this->candidate),
+            'candidate_id' => $this->candidate_id,
             'state' => new ParticipationStateResource($this->getState()),
 
         ];
@@ -56,6 +57,13 @@ class Participation extends ParticipationResource
      * @OA\Property()
      */
     public string $project_id;
+
+    /**
+     * ID участника
+     * @var string
+     * @OA\Property()
+     */
+    public string $candidate_id;
 
     /**
      * Cостояние заявки
