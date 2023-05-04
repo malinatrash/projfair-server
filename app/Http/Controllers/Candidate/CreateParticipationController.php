@@ -53,7 +53,7 @@ class CreateParticipationController extends Controller
      */
     public function __invoke(Project $project, StoreRequestAdminParticipation $request)
     {
-        $project->load('specialities', 'state');
+        $project->load('specialities');
         $candidate = $request->get('candidate');
 
         if ($this->harvestSettingService->isCandidateBannedByHarvestSettings($candidate)) {
@@ -174,6 +174,6 @@ class CreateParticipationController extends Controller
      */
     function isProjectOnRecruitment(Project $project): bool
     {
-        return $project->state->id == ProjectStateEnum::recruitment->value;
+        return $project->state_id == ProjectStateEnum::recruitment->value;
     }
 }

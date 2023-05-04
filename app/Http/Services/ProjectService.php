@@ -24,7 +24,7 @@ class ProjectService
         ?array $skillIds = null,
         ?string $nativeInstituteId = null
     ): Collection {
-        return Project::with('skills', 'specialities', 'type', 'state', 'supervisors')
+        return Project::with('skills', 'specialities', 'type',  'supervisors')
             ->inDifficulties($difficulties)
             ->inTitle($title)
             ->inStates($stateIds)

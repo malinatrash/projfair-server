@@ -42,8 +42,7 @@ class Candidate extends Model
      */
     public function activeProject(): Project | null
     {
-        $activeStateParticipation = StateParticipation::where('state', 'Участвует')->get()[0];
-        $activeParticipation = Participation::where('candidate_id', $this->id)->where('state_id', $activeStateParticipation->id)->get();
+        $activeParticipation = Participation::where('candidate_id', $this->id)->where('state_id', ParticipationStateEnum::active->value)->get();
         if (count($activeParticipation) != 0) {
             $activeParticipation = $activeParticipation[0];
             return Project::where('id', $activeParticipation->project_id)->get()[0];
@@ -59,8 +58,7 @@ class Candidate extends Model
      */
     public function arhiveProjects(): Collection
     {
-        $arhiveStateParticipation = StateParticipation::where('state', 'Архив')->get()[0];
-        $projectsIds = Participation::where('candidate_id', $this->id)->where('state_id', $arhiveStateParticipation->id)->pluck('project_id');
+        $projectsIds = Participation::where('candidate_id', $this->id)->where('state_id', ParticipationStateEnum::arhive->value)->pluck('project_id');
         return Project::whereIn('id', $projectsIds)->get();
     }
 
