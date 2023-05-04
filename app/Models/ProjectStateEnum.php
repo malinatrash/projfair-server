@@ -84,19 +84,19 @@ enum ProjectStateEnum: int
             case static::recruitment->name:
                 $stateData = [
                     'name' => 'Идёт набор',
-                    'show_priority' => '1',
+                    'show_priority' => '5',
                 ];
                 break;
             case static::active->name:
                 $stateData = [
                     'name' => 'Активный',
-                    'show_priority' => '1',
+                    'show_priority' => '5',
                 ];
                 break;
             case static::reRecruitment->name:
                 $stateData = [
                     'name' => 'Добор',
-                    'show_priority' => '1',
+                    'show_priority' => '5',
                 ];
                 break;
             case static::arhive->name:
@@ -108,35 +108,35 @@ enum ProjectStateEnum: int
             case static::participationProcessing->name:
                 $stateData = [
                     'name' => 'Обработка заявок',
-                    'show_priority' => '1',
+                    'show_priority' => '5',
                 ];
                 break;
             case static::onReview->name:
                 $stateData = [
                     'name' => 'На рассмотрении',
-                    'show_priority' => '1',
+                    'show_priority' => '5',
                 ];
                 break;
             case static::draft->name:
                 $stateData = [
                     'name' => 'Черновик',
-                    'show_priority' => '1',
+                    'show_priority' => '5',
                 ];
                 break;
             case static::rejected->name:
                 $stateData = [
                     'name' => 'Отклонено',
-                    'show_priority' => '1',
+                    'show_priority' => '5',
                 ];
                 break;
             case static::approved->name:
                 $stateData = [
                     'name' => 'Одобрено',
-                    'show_priority' => '1',
+                    'show_priority' => '5',
                 ];
                 break;
         }
 
-        return  new ProjectState(id: $projectStateEnum->value, state: $stateData['name']);
+        return  new ProjectState(id: $projectStateEnum->value, state: $stateData['name'], showPriority: $stateData['show_priority']);
     }
 }

@@ -6,8 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\ProjectResource;
 use App\Http\Services\ProjectService;
 use App\Models\Project;
-use App\Models\ProjectSkill;
-use App\Models\ProjectSpeciality;
 use App\Models\ProjectStateEnum;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
@@ -177,7 +175,11 @@ class FilterController extends Controller
         $title = $request->input('title') ?? '';
         $publicStates = ProjectStateEnum::getPublicStatesIds();
         $states = $this->stringToIntArray($request->input('state'));
-        $states = array_merge($publicStates, $states);
+        if (isset($states) && count($states) != 0) {
+            $states = array_intersect($publicStates, $states);
+        } else {
+            $states = $publicStates;
+        }
 
         $types = $this->stringToIntArray($request->input('type'));
 
@@ -221,7 +223,7 @@ class FilterController extends Controller
     {
         $sortBy = $request->get('sortBy') ?? 'state.show_priority';
         $order = $request->get('order') ?? 'desc';
-        return $projectCollection->sortBy([[$sortBy, $order]]);
+        return $projectCollection->sortBy([fn (Project $a, Project $b) => $a->getState()->showPriority <= $b->getState()->showPriority, [$sortBy, $order]]);
     }
 
     private function paginateProjects(Request $request, Collection $projectCollection): Collection

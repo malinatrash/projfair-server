@@ -21,7 +21,7 @@ class ProjectState
      */
     public string $state;
 
-    public function __construct(int $id, string $state)
+    public function __construct(int $id, string $state, public int $showPriority)
     {
         $this->id = $id;
         $this->state = $state;
