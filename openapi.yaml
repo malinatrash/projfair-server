@@ -1525,6 +1525,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Project'
+        '403':
+          description: 'В институте уже одобрено максимальное количество проектов'
   /api/supervisors/:
     get:
       tags:

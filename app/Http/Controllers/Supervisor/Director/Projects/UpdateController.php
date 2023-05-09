@@ -13,7 +13,7 @@ use App\Models\Project;
  */
 class UpdateController extends Controller
 {
-    public function __construct(private DirectorCabinetService $projectService)
+    public function __construct(private DirectorCabinetService $directorCabinetService)
     {
     }
     /**
@@ -59,12 +59,19 @@ class UpdateController extends Controller
      *         description="Проект обновлен",
      *         @OA\JsonContent(ref="#/components/schemas/Project")
      *     ),
+     *     @OA\Response(
+     *         response="403",
+     *         description="В институте уже одобрено максимальное количество проектов",
+     *     ),
      * )
      */
     public function __invoke(UpdateRequestByDirectorProject $request, Project $project)
     {
         $data = $request->validated();
-        $project = $this->projectService->reviewProject($data, $project);
+        $project = $this->directorCabinetService->reviewProject($data, $project);
+        if (!$project) {
+            return response(['error' => 'В институте уже одобрено максимальное количество проектов'], 403);
+        }
         return new ProjectResource($project);
     }
 }
