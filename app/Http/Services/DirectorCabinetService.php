@@ -28,11 +28,13 @@ class DirectorCabinetService
     public function reviewProject(array $data, Project $project): Project | null
     {
         if ($data['state_id'] == ProjectStateEnum::approved->value) {
-            $projectInstitute =  $project->department->institute;
-            $maxApprovedProjectsInInstitute = $projectInstitute->max_approved_projects;
-            $approvedProjectsInInstituteCount = count($this->projectService->filter(stateIds: [ProjectStateEnum::approved->value], nativeInstituteId: $projectInstitute->id));
-            if ($approvedProjectsInInstituteCount >= $maxApprovedProjectsInInstitute) {
-                return null;
+            $projectInstitute =  $project->department?->institute;
+            if ($projectInstitute) {
+                $maxApprovedProjectsInInstitute = $projectInstitute->max_approved_projects;
+                $approvedProjectsInInstituteCount = count($this->projectService->filter(stateIds: [ProjectStateEnum::approved->value], nativeInstituteId: $projectInstitute->id));
+                if ($approvedProjectsInInstituteCount >= $maxApprovedProjectsInInstitute) {
+                    return null;
+                }
             }
         }
         return $this->projectService->update($data, $project);
