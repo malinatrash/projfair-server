@@ -1854,6 +1854,9 @@ components:
         id:
           description: 'ID института'
           type: integer
+        maxApprovedProjects:
+          description: 'Максимальное кол-во одобренных проектов'
+          type: integer
         name:
           description: 'Название института'
           type: string

@@ -18,6 +18,7 @@ class InstituteResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'maxApprovedProjects' => $this->max_approved_projects,
         ];
     }
 }
@@ -34,6 +35,12 @@ class Institute extends InstituteResource
      * @OA\Property()
      */
     public int $id;
+    /**
+     * Максимальное кол-во одобренных проектов
+     * @var int
+     * @OA\Property()
+     */
+    public int $maxApprovedProjects;
 
     /**
      * Название института
