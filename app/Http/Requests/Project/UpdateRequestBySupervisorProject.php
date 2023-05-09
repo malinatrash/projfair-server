@@ -28,7 +28,7 @@ class UpdateRequestBySupervisorProject extends BaseRequest
             'study_result' => 'nullable|string',
             'additional_inf' => 'nullable|string',
 
-            'type_id' => 'nullable|integer|exists:states,id',
+            'type_id' => 'nullable|integer|exists:types,id',
             'theme_source_id' => 'nullable|integer|exists:theme_sources,id',
             'department_id' => 'nullable|integer|exists:departments,id',
             'state_id' => 'numeric|min:6|max:7',

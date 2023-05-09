@@ -27,10 +27,10 @@ class StoreRequestBySupervisorProject extends BaseRequest
             'study_result' => 'string',
             'additional_inf' => 'string|nullable',
 
-            'type_id' => 'required|integer|exists:states,id',
+            'type_id' => 'required|integer|exists:types,id',
             'theme_source_id' => 'nullable|integer|exists:theme_sources,id',
             'department_id' => 'nullable|integer|exists:departments,id',
-            'state_id' => 'numeric|min:6|max:7|exists:states,id',
+            'state_id' => 'numeric|min:6|max:7',
             'prev_project_id' => 'nullable|integer|exists:projects,id',
 
             'supervisors' => 'required|array',
