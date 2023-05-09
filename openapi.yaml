@@ -1869,6 +1869,9 @@ components:
         project_id:
           description: 'ID проекта, на которые подали заявку'
           type: string
+        candidate_id:
+          description: 'ID участника'
+          type: string
         state:
           $ref: '#/components/schemas/ParticipationState'
         candidate:
@@ -1878,15 +1881,6 @@ components:
           type: string
         updated_at:
           description: 'Дата обновления записи в БД'
-          type: string
-      type: object
-    ParticipationState:
-      properties:
-        id:
-          description: 'ID Состояния заявки'
-          type: integer
-        state:
-          description: 'Название состояния'
           type: string
       type: object
     Project:
@@ -2083,6 +2077,9 @@ components:
         updated_at:
           description: 'Дата обновления записи в БД'
           type: string
+        canReviewProjects:
+          description: 'Может ли делать ревью проектов'
+          type: boolean
       type: object
     ThemeSource:
       properties:
@@ -2100,6 +2097,15 @@ components:
           type: integer
         type:
           description: 'Название типа проекта'
+          type: string
+      type: object
+    ParticipationState:
+      properties:
+        id:
+          description: ID
+          type: integer
+        state:
+          description: 'Название состояния'
           type: string
       type: object
     ProjectState:

@@ -25,6 +25,7 @@ class SupervisorResource extends JsonResource
             'position' => $this->position,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'canReviewProjects' => $this->can_review_projects,
             'department' => new DepartmentResource($this->department),
         ];
     }
@@ -85,4 +86,11 @@ class Supervisor extends SupervisorResource
      * @OA\Property()
      */
     public string $updated_at;
+
+    /**
+     * Может ли делать ревью проектов
+     * @var boolean
+     * @OA\Property()
+     */
+    public bool $canReviewProjects;
 }
