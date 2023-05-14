@@ -14,7 +14,7 @@ class StoreRequestAdminParticipation extends BaseRequest
     public function rules()
     {
         return [
-            'priority' => 'integer',
+            'priority' => 'integer|required',
         ];
     }
 }

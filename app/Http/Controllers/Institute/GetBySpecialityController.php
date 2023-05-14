@@ -39,11 +39,12 @@ class GetBySpecialityController extends Controller
      */
     public function __invoke($specialityName)
     {
-        $specilities = Speciality::where('name', $specialityName)->get();
-        if (count($specilities) == 0) {
+        $specility = Speciality::firstWhere('name', $specialityName);
+        if (!isset($specility)) {
             return response('Не найдено', 404);
         }
-        $institute = $specilities->load('institute')[0]->institute;
+
+        $institute = $specility->getInstitute();
 
         return new InstituteResource($institute);
     }

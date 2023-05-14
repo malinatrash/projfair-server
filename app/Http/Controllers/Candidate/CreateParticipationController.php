@@ -125,7 +125,7 @@ class CreateParticipationController extends Controller
 
         $idsProjectWithCandidateSpeciality = [];
 
-        $specilitiesInInstitute = $candidateSpeciality->institute->specialities;
+        $specilitiesInInstitute = $candidateSpeciality->getInstitute()->specialities;
         $specilitiesInInstituteIds = $specilitiesInInstitute->pluck('id')->toArray();
         $idProjectsWithSpecialities = ProjectSpeciality::select('project_id as id')->whereIn('speciality_id', $specilitiesInInstituteIds)->get()->toArray();
 
