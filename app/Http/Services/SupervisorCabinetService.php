@@ -13,6 +13,12 @@ class SupervisorCabinetService
     }
 
     /** Создать проект от преподавателя */
+    public function deleteProject(Project $project): void
+    {
+        $project->delete();
+    }
+
+    /** Создать проект от преподавателя */
     public function createProject(Supervisor $supervisorCreator, array $data): Project
     {
         $data['supervisors'] = $this->mergeSupervisorCreatorWithSupervisors($supervisorCreator, $data['supervisors']);

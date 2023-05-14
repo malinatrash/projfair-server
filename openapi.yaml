@@ -1555,6 +1555,23 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Supervisor'
+  '/api/supervisor/projects/${id}':
+    delete:
+      tags:
+        - 'CABINET SUPERVISOR'
+      summary: 'Удалить заявку на создание проекта'
+      operationId: 61af00954ad7be386a4bc6d6cd18512d
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID проекта'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Заявка удалена'
   /api/supervisor/projects:
     get:
       tags:

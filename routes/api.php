@@ -77,6 +77,7 @@ Route::group(['prefix' => 'supervisor'], function () {
     Route::post('/projects', App\Http\Controllers\Supervisor\Projects\StoreController::class)->middleware(SupervisorAuthProtected::class);
     Route::get('/projects', App\Http\Controllers\Supervisor\Projects\IndexController::class)->middleware(SupervisorAuthProtected::class);
     Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Projects\UpdateController::class)->middleware(SupervisorAuthProtected::class);
+    Route::delete('/projects/{project}', App\Http\Controllers\Supervisor\Projects\DeleteController::class)->middleware(SupervisorAuthProtected::class);
 });
 
 // --------- USER ROUTES ---------
