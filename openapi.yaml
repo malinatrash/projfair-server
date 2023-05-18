@@ -1094,6 +1094,22 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Institute'
+  /api/kampus:
+    get:
+      tags:
+        - KAMPUS
+      summary: 'Данные для кампуса'
+      operationId: c3cf50ca5694f90f15978476d7ddd41d
+      responses:
+        '200':
+          description: '7 проектов на странице + навигация'
+          content:
+            application/json:
+              schema:
+                properties:
+                  projectCount: { description: 'Общее количество проектов', type: integer }
+                  data: { description: 'Массив проектов', type: array, items: { $ref: '#/components/schemas/Project' } }
+                type: object
   /api/participationsDeadline:
     get:
       tags:

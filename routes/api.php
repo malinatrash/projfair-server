@@ -5,6 +5,9 @@ use App\Http\Middleware\CandidateAuthProtected;
 use App\Http\Middleware\SupervisorAuthProtected;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/kampus', App\Http\Controllers\Kampus\KampusController::class);
+
+
 // --------- ADMIN ROUTES ---------
 
 Route::group(['prefix' => 'admin'], function () {
