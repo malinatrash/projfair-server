@@ -5,6 +5,7 @@ namespace App\Admin\Controllers;
 use App\Models\Project;
 use App\Models\Skill;
 use App\Models\Speciality;
+//use App\Models\State;
 use App\Models\Type;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
@@ -44,7 +45,12 @@ class ProjectController extends AdminController
         $grid->column('additional_inf', __('Доп. инф.'));
         $grid->column('product_result', __('Продуктовый рез.'));
         $grid->column('study_result', __('Учебный рез.'));
-        $grid->column('state.state', __('Состояние'));
+        $grid->column('supervisorsNames', __('Имена наставников'));
+        $grid->column('prev_project_id', __('Предыдущий проект'));
+        $grid->column('department.id', __('Подразделение id'));
+        $grid->column('department.name', __('Подразделение'));
+        $grid->column('theme_source_id', __('Источник темы'));
+        $grid->column('state_id', __('Состояние'));
         $grid->column('type.type', __('Тип'));
 
         $grid->specialities()->display(function ($specialities) {
@@ -63,7 +69,7 @@ class ProjectController extends AdminController
 
             return join('<br> ', $skills);
         });
-
+/*
         $grid->supervisors()->display(function ($supervisors) {
 
             $supervisors = array_map(function ($supervisor) {
@@ -72,7 +78,7 @@ class ProjectController extends AdminController
 
             return join('<br> ', $supervisors);
         });
-
+*/
         $grid->filter(function ($filter) {
 
             // Remove the default id filter
@@ -80,9 +86,10 @@ class ProjectController extends AdminController
 
             // Add a column filter
             $filter->like('title', 'Название');
-            $filter->like('state.state', 'Заказчик');
-            $filter->like('supervisors', 'Руководители');
-            $filter->like('customer', 'Состояние');
+            $filter->like('state_id', 'Состояние');
+            $filter->like('supervisorsNames', 'Руководители');
+            $filter->like('customer', 'Заказчик');
+
         });
 
         return $grid;
@@ -113,8 +120,12 @@ class ProjectController extends AdminController
         $show->field('additional_inf', __('Доп. инф.'));
         $show->field('product_result', __('Продуктовый рез.'));
         $show->field('study_result', __('Учебный рез.'));
-        $show->field('supervisors', __('Руководители (через запятую)'));
-        $show->field('state.state', __('Состояние'));
+        $show->field('supervisorsNames', __('Имена наставников'));
+        $show->field('prev_project_id', __('Предыдущий проект'));
+        $show->field('department.id', __('Подразделение id'));
+        $show->field('department.name', __('Подразделение'));
+        $show->field('theme_source_id', __('Источник темы'));
+        $show->field('state_id', __('Состояние'));
         //$show->field('supervisor_id', __('Supervisor id'));
         $show->field('type.type', __('Тип'));
 
@@ -161,10 +172,16 @@ class ProjectController extends AdminController
         $form->textarea('additional_inf', __('Доп. Инф.'));
         $form->textarea('product_result', __('Продуктовый рез.'))->rules('required');
         $form->textarea('study_result', __('Учебный рез.'))->rules('required');
-        $form->textarea('supervisors', __('Руководители (через запятую)'))->rules('required');
-
+        //$form->textarea('supervisors', __('Руководители (через запятую)'))->rules('required');
+        //$form->select('state_id', __('Состояние'))->options(State::all()->pluck('state', 'id'))->rules('required');
+		$form->select('state_id', __('Состояние'))->rules('required');
         //$form->number('supervisor_id', __('Supervisor id'));
-
+         $form->textarea('supervisorsNames', __('Имена наставников'));
+        $form->number('prev_project_id', __('Предыдущий проект'));
+        $form->number('department_id', __('Подразделение id'));
+        $form->textarea('supervisorsNames', __('Имена наставников'));
+        //$form->textarea('department.name', __('Подразделение'));
+        $form->number('theme_source_id', __('Источник темы'));
         $form->select('type_id', __('Тип'))->options(Type::all()->pluck('type', 'id'))->rules('required');
         $form->multipleSelect('specialities', 'Специальности')->options(Speciality::all()->pluck('name', 'id'))->rules('required');
         $form->multipleSelect('skills', 'Требуемые навыки')->options(Skill::all()->pluck('name', 'id'));
