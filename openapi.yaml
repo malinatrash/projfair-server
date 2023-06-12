@@ -277,6 +277,31 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Participation'
+  /api/admin/participations/updateOrCreate:
+    post:
+      tags:
+        - ADMIN
+      summary: 'Обновить или создать заявку если не существует'
+      operationId: 95f823b04dd1215ee158a91261307a56
+      requestBody:
+        description: 'Параметры для создания-обновления заявки'
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                priority:
+                  type: integer
+                state_id:
+                  type: integer
+                candidate_id:
+                  type: integer
+                project_id:
+                  type: integer
+              type: object
+      responses:
+        '200':
+          description: 'созданая-обновленная заявка'
   '/api/admin/projects/${id}':
     delete:
       tags:
