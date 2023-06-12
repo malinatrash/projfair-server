@@ -14,7 +14,10 @@ class StoreRequestAdminParticipation extends BaseRequest
     public function rules()
     {
         return [
+            'state_id' => 'integer|required|min:1|max:4',
             'priority' => 'integer|required',
+            'project_id' => 'integer|exists:projects,id',
+            'candidate_id' => 'integer|exists:candidates,id',
         ];
     }
 }
