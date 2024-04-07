@@ -85,19 +85,7 @@ Route::group(['prefix' => 'supervisor'], function () {
 
     Route::post('/projects/{project}/candidates/{candidate}', [UpdateParticipationController::class, 'update'])->middleware(SupervisorAuthProtected::class);
     Route::patch('/projects/{project}/candidates/{candidate}', [UpdateParticipationController::class, 'update'])->middleware(SupervisorAuthProtected::class);
-    /*
-    Route::post('/projects/{project}/candidates/{candidate}', [UpdateParticipationController::class, 'update'])->middleware(SupervisorAuthProtected::class);
-    Route::patch('/projects/{project}/candidates/{candidate}', [UpdateParticipationController::class, 'update'])->middleware(SupervisorAuthProtected::class);
-    Route::put('/projects/{project}/candidates/{candidate}', [UpdateParticipationController::class, 'update'])->middleware(SupervisorAuthProtected::class);*/
-    //Route::patch('/projects/{project}/candidates/{candidate}', [UpdateParticipationController::class, 'update'])->middleware(SupervisorAuthProtected::class);
-   // Route::put('/projects/{project}/candidates/{candidate}', App\Http\Controllers\Participation\UpdateParticipationController::class);
-    //->middleware(SupervisorAuthProtected::class);
-   // Route::patch('/projects/{project}/candidates/{candidate}', App\Http\Controllers\Participation\UpdateParticipationController::class) ;
-   // ->middleware(SupervisorAuthProtected::class);
-   // Route::patch('/projects/{project}/candidates/{candidate}', 'UpdateParticipationController@update');
-   // ->middleware(SupervisorAuthProtected::class);
-
-   // Route::patch('/projects/{project}/candidates/{candidate}', App\Http\Controllers\Supervisor\Projects\UpdateController::class)->middleware(SupervisorAuthProtected::class);
+  
 
     Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Projects\UpdateController::class)
     ->middleware(SupervisorAuthProtected::class);
