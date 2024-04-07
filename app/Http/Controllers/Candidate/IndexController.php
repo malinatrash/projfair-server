@@ -32,7 +32,7 @@ class IndexController extends Controller
      */
     public function __invoke() // Получить информацию о всех студентах
     {
-        $candidates = Candidate::all();
+        $candidates = Candidate::where('can_send_participations',1)->get();
         return CandidateResource::collection($candidates);
     }
 }

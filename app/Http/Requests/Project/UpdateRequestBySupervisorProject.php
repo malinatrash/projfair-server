@@ -27,6 +27,13 @@ class UpdateRequestBySupervisorProject extends BaseRequest
             'product_result' => 'nullable|string',
             'study_result' => 'nullable|string',
             'additional_inf' => 'nullable|string',
+            'project_review' => 'nullable|string',
+
+/*---------------------------------------------------*/ 
+            'priority' => 'nullable|integer',
+            'review' => 'nullable|string',
+            'mark' => 'nullable|integer',
+/*---------------------------------------------------*/ 
 
             'type_id' => 'nullable|integer|exists:types,id',
             'theme_source_id' => 'nullable|integer|exists:theme_sources,id',

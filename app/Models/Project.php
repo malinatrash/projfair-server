@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Collection;
+use Carbon\Carbon;
 
 class Project extends Model
 {
@@ -59,6 +60,51 @@ class Project extends Model
         $projectStateEnum = ProjectStateEnum::tryFrom($this->state_id);
         return ProjectStateEnum::getProjectStateFromEnum($projectStateEnum);
     }
+
+
+    public function getStateFilter()
+    {
+        $state = $this->getState();
+        $state_id = $state->id;
+
+        $date_start = $this->date_start; 
+        $date_end = $this->date_end; 
+        
+        if ($state_id != 9) {
+           return null;
+        }
+
+        $startDate = Carbon::parse($date_start);
+        $endDate = Carbon::parse($date_end);
+
+        $isFullYear = $endDate->diffInMonths($startDate) > 4;
+        $isAutumn = $this->isAutumn($startDate->month);
+        $isSpring = $this->isSpring($startDate->month);
+        
+        $filterState = '';
+
+        if ($isFullYear) {
+            $filterState = 'approved_on_year';
+        } elseif ($isAutumn) {
+            $filterState = 'approved_autumn';
+        } elseif ($isSpring) {
+            $filterState = 'approved_spring';
+        }
+        
+        return  $filterState;           
+        
+    }
+
+    private function isAutumn($currentMonth): bool
+    {
+        return $currentMonth >= 8 && $currentMonth <= 11;
+    }
+
+    private function isSpring($currentMonth): bool
+    {
+        return $currentMonth >= 0 && $currentMonth <= 4;
+    }    
+   
 
     /**
      * Кафедра, к которой относится проект
