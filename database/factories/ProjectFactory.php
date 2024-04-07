@@ -31,9 +31,12 @@ class ProjectFactory extends Factory
             'product_result' => $this->faker->sentence(),
             'study_result' => $this->faker->sentence(),
 
+            //'project_review' => $this->faker->sentence(),
+            'project_review' => 'Это отзыв о проекте',
 
             'state_id' => '2',
-            'type_id' => Type::get()->random()->id,
+            //'type_id' => Type::get()->random()->id,
+            'type_id' => Type::factory()->create()->id,
 
         ];
     }
