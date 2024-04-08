@@ -35,6 +35,5 @@ class IndexController extends Controller
         $supervisor = $request->get('supervisor');
 
         return ProjectResource::collection($this->directorCabinetService->getProjectsToReview($supervisor));
-    }
-    
+    }    
 }
