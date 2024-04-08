@@ -23,9 +23,7 @@ class ParticipationResource extends JsonResource
             'updated_at' => $this->updated_at,
             'priority' => $this->priority,
             'review' => $this->review,
-
             'mark' => $this->mark,
-
             'project_id' => $this->project_id,
             'candidate' => new CandidateResource($this->candidate),
             'candidate_id' => $this->candidate_id,
@@ -94,8 +92,7 @@ class Participation extends ParticipationResource
      * @OA\Property()
      */
     public string $updated_at;
-
-    /**
+     /**
      * Оценка заявки
      * @var int
      * @OA\Property()
