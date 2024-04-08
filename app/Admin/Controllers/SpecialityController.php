@@ -3,6 +3,7 @@
 namespace App\Admin\Controllers;
 
 use App\Models\Institute;
+use App\Models\Department;
 use App\Models\Speciality;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
@@ -16,7 +17,7 @@ class SpecialityController extends AdminController
      *
      * @var string
      */
-    protected $title = 'Speciality';
+    protected $title = 'Специальнсть';
 
     /**
      * Make a grid builder.
@@ -30,7 +31,8 @@ class SpecialityController extends AdminController
         $grid->id('ID')->sortable();
         //$grid->column('id', __('Id'));
         $grid->column('name', __('Название'));
-        $grid->column('institute.name', __('Институт'));
+        $grid->column('department.name', __('Кафедра'));
+       // $grid->column('institute.name', __('Институт'));
         $grid->filter(function ($filter) {
 
             // Remove the default id filter
@@ -38,7 +40,7 @@ class SpecialityController extends AdminController
 
             // Add a column filter
             $filter->like('name', 'Название');
-            $filter->like('institute.name', 'Институт');
+            $filter->like('department.name', 'Кафедра');
         });
         return $grid;
     }
@@ -71,7 +73,9 @@ class SpecialityController extends AdminController
 
         $form->text('name', __('Название специальности (ЭВМб, ИСТб)'))->rules('required');
 
-        $form->select('institute_id')->options(Institute::all()->pluck('name', 'id'))->rules('required');
+	    $form->select('department_id')->options(Department::all()->pluck('name', 'id'))->rules('required');
+
+      // $form->select('institute_id')->options(Institute::all()->pluck('name', 'id'))->rules('required');
 
         return $form;
     }

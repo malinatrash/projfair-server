@@ -35,6 +35,7 @@ class ProjectSupervisorController extends AdminController
        // $grid->column('updated_at', __('Дата обновления'))->sortable();
         $grid->column('project_id', __('Id проекта'));
         $grid->column('project.title', __('Проект'));                                                            
+        $grid->column('project.date_start', __('Дата начала'));                                                            
         $grid->column('supervisor.fio', __('Сотрудник'));
         $grid->column('supervisor_id', __('id Сотрудник'));
        
@@ -51,11 +52,10 @@ class ProjectSupervisorController extends AdminController
             // Remove the default id filter
             $filter->disableIdFilter();
 
-            
+           $filter->like('project.id', 'ID проекта'); 
            $filter->like('project.title', 'Название проекта');
-           //$filter->like('priority', 'Приоритет');
            $filter->like('supervisor.fio', 'ФИО');
-           
+           $filter->equal('roles.name', 'Роль')->select(['Руководитель' => 'Руководитель','Создатель задания'=>'Создатель задания','Сонаставник'=>'Сонаставник']);
         });
 
         return $grid;
