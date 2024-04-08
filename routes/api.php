@@ -4,8 +4,10 @@ use App\Http\Middleware\CandidateAuth;
 use App\Http\Middleware\CandidateAuthProtected;
 use App\Http\Middleware\SupervisorAuthProtected;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Participation\UpdateParticipationController;
 
-Route::get('/campus', App\Http\Controllers\Kampus\KampusController::class);
+Route::get('/kampus', App\Http\Controllers\Kampus\KampusController::class);
+
 
 // --------- ADMIN ROUTES ---------
 
@@ -37,6 +39,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::patch('/{participation}', App\Http\Controllers\Admin\Participation\UpdateController::class);
         Route::delete('/{participation}', App\Http\Controllers\Admin\Participation\DeleteController::class);
         Route::post('/', App\Http\Controllers\Admin\Participation\StoreController::class);
+        Route::post('/updateOrCreate', App\Http\Controllers\Admin\Participation\UpdateOrStoreController::class);
         Route::get('/', App\Http\Controllers\Admin\Participation\IndexController::class);
     });
 
@@ -70,6 +73,7 @@ Route::group(['prefix' => 'admin'], function () {
 Route::group(['prefix' => 'director'], function () {
     Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Director\Projects\UpdateController::class)->middleware(SupervisorAuthProtected::class);
     Route::get('/projects', App\Http\Controllers\Supervisor\Director\Projects\IndexController::class)->middleware(SupervisorAuthProtected::class);
+    Route::get('/projects', App\Http\Controllers\Supervisor\Director\Projects\IndexController::class)->middleware(SupervisorAuthProtected::class);
 });
 
 // --------- SUPERVISORS CABINET ROUTES ---------
@@ -78,7 +82,13 @@ Route::group(['prefix' => 'supervisor'], function () {
     Route::get('/', App\Http\Controllers\Supervisor\MeController::class)->middleware(SupervisorAuthProtected::class);; // Получить информацию об авторизованном преподе
     Route::post('/projects', App\Http\Controllers\Supervisor\Projects\StoreController::class)->middleware(SupervisorAuthProtected::class);
     Route::get('/projects', App\Http\Controllers\Supervisor\Projects\IndexController::class)->middleware(SupervisorAuthProtected::class);
-    Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Projects\UpdateController::class)->middleware(SupervisorAuthProtected::class);
+
+    Route::post('/projects/{project}/candidates/{candidate}', [UpdateParticipationController::class, 'update'])->middleware(SupervisorAuthProtected::class);
+    Route::patch('/projects/{project}/candidates/{candidate}', [UpdateParticipationController::class, 'update'])->middleware(SupervisorAuthProtected::class);
+  
+
+    Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Projects\UpdateController::class)
+    ->middleware(SupervisorAuthProtected::class);
     Route::delete('/projects/{project}', App\Http\Controllers\Supervisor\Projects\DeleteController::class)->middleware(SupervisorAuthProtected::class);
 });
 
@@ -104,6 +114,10 @@ Route::group(['prefix' => 'harvestSettings'], function () {
 Route::group(['prefix' => 'projects'], function () { // Получения информации о проектах
     Route::get('/filter', App\Http\Controllers\Project\FilterController::class)->middleware(CandidateAuth::class); // Получение проектов с фильтрацией. Скрывать данные других институтов если пользователь авторизован
     Route::get('/{project}', App\Http\Controllers\Project\ShowController::class); // Получение информации о проекте
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   // Route::put('/projects/{project}/candidates/{candidate}', App\Http\Controllers\Participation\UpdateParticipationController::class); //Добавил для проверки
+
     Route::get('/{project}/participants', App\Http\Controllers\Project\GetParticipantsController::class); // Получение участников на проекте
     Route::get('/{project}/history', App\Http\Controllers\Project\HistoryController::class); // Получение участников на проекте
 
@@ -170,3 +184,4 @@ Route::middleware(['candidateAuthProtected'])->group(function () { // роуты
 
 
 Route::get('/participationsDeadline', App\Http\Controllers\Participation\DeadLineController::class); // Получение дедлайна подачи заявки
+
