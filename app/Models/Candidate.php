@@ -17,7 +17,7 @@ class Candidate extends Model
     protected $guarded = false;
 
     /** Данные которые не достаются из БД */
-    protected $hidden = ['api_token', 'numz', 'email', 'phone'];
+    protected $hidden = ['api_token', /*'email', 'phone'*/];
 
     /**
      * Навыки студента
@@ -26,7 +26,7 @@ class Candidate extends Model
     {
         return $this->belongsToMany(Skill::class);
     }
-
+	
     /**
      * Группа студента
      */
