@@ -24,4 +24,8 @@ class ProjectSupervisor extends Model
     {
         return $this->belongsTo(Supervisor::class);
     }
+    public function project()
+    {
+        return $this->belongsTo(Project::class);
+    }
 }
