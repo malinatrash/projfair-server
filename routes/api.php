@@ -5,7 +5,7 @@ use App\Http\Middleware\CandidateAuthProtected;
 use App\Http\Middleware\SupervisorAuthProtected;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/campus', App\Http\Controllers\Kampus\KampusController::class);
+Route::get('/campus', App\Http\Controllers\Campus\CampusController::class);
 
 // --------- ADMIN ROUTES ---------
 
