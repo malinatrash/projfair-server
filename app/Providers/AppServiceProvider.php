@@ -40,6 +40,7 @@ class AppServiceProvider extends ServiceProvider
             setcookie('karbushevgdeadminka', 'AMOGUS');
         }
         JsonResource::withoutWrapping(); // Не оборачивать данные в поле data при использовании ресурсов
+        //нужно уточнить
         // \URL::forceScheme('https'); TODO WHEN UPLOADING ON ISTU SERVER UNCOMMENT THIS LINE
     }
 }
