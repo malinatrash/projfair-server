@@ -149,10 +149,11 @@ class LoginController extends Controller
                 'email' => $email,
                 'position' => $position,
                 'about' => '',
+                'kampus_id' => $mira_id,
                 'api_token' => $api_token,
             ]);
         } else {
-            Supervisor::where('fio', $fio)->limit(1)->update([
+            Supervisor::where('kampus_id', $mira_id)->limit(1)->update([
                 'fio' => $fio,
                 'email' => $email,
                 'position' => $position,
@@ -191,7 +192,7 @@ class LoginController extends Controller
             Candidate::where('numz', $numz)->limit(1)->update([
                 'fio' => $fio,
                 'email' => $studentData['email'],
-                'course' => $course,
+                //'course' => $course,
                 'training_group' => $group,
                 'api_token' => $api_token,
             ]);

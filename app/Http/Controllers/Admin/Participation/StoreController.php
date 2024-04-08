@@ -64,9 +64,9 @@ class StoreController extends Controller
             ['candidate_id', '=', $candidateId],
         ]);
 
-        if ($isParticipationExists) {
-            return response('У кандидата уже есть заявка на этот проект', 400);
-        }
+        //if ($isParticipationExists) {
+        //    return response('У кандидата уже есть заявка на этот проект', 400);
+        //}
 
         Participation::create($data);
         return response([]);
