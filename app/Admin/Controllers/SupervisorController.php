@@ -40,12 +40,14 @@ class SupervisorController extends AdminController
         $grid->column('position', __('Должность'));        
         $grid->column('department_id', __('id кафедры')); 
         $grid->column('department.name', __('Кафедра')); 
+        $grid->column('can_review_projects', __('Директор'));
   
         $grid->filter(function ($filter) {
             // Add a column filter
            $filter->like('kampus_id', 'камус_id');
            $filter->like('fio', 'ФИО');
            $filter->like('department.name', 'Кафедра');
+           $filter->like('can_review_projects', 'Директор');
        });
 
         return $grid;
@@ -68,7 +70,7 @@ class SupervisorController extends AdminController
         $show->field('kampus_id', __('Номер кампус'));
         $show->field('fio', __('ФИО'));
         $show->field('department.name', __('Кафедра'));
-        
+        $show->field('can_review_projects', __('Директор'));
         return $show;
     }
 
@@ -87,7 +89,7 @@ class SupervisorController extends AdminController
         $form->text('position', __('Должность'));
         $form->text('kampus_id', __('Номер кампус'));
         $form->text('fio', __('ФИО'));
-        
+        $form->number('can_review_projects', __('Директор'));
         $form->select('department_id',__('Кафедра'))->options(Department::all()->pluck('name', 'id'))->rules('required');
              
   

@@ -18,7 +18,7 @@ class CandidateController extends AdminController
      *
      * @var string
      */
-    protected $title = 'Заявки на участие';
+    protected $title = 'Студенты';
 
     /**
      * Make a grid builder.
@@ -30,16 +30,17 @@ class CandidateController extends AdminController
    
 		$grid = new Grid(new Candidate());
         $grid->column('id', __('Id'));
-        $grid->column('created_at', __('Дата создания'));
+         $grid->column('mira_id', __('miraId'));
+        $grid->column('created_at', __('Дата создания'))->hide();
         $grid->column('updated_at', __('Дата обновления'))->sortable();
-        $grid->column('about', __('о студенте'));
+        $grid->column('about', __('о студенте'))->hide();
         $grid->column('email', __('Емейл'));        
         $grid->column('numz', __('Номер зачётки'));
         $grid->column('fio', __('Студент'));
-        $grid->column('training_group', __('Группа'));        
+        $grid->column('training_group', __('Группа'))->sortable();        
         $grid->column('course', __('Курс'));        
   //      $grid->column('groups.name', __('Группа название'));
-   //     $grid->column('canSendParticipations', __('может ли'));
+        $grid->column('can_send_participations', __('может ли'));
   
   
         $grid->filter(function ($filter) {
@@ -53,7 +54,7 @@ class CandidateController extends AdminController
            $filter->like('fio', 'ФИО');
            $filter->like('training_group', 'Группа');
            $filter->like('course', 'Курс');
-    //       $filter->like('canSendParticipations', 'может ли');
+    //       $filter->like('can_send_participations', 'может ли');
         });
 
         return $grid;
@@ -78,7 +79,7 @@ class CandidateController extends AdminController
         $show->field('training_group', __('Группа'));        
         $show->field('course', __('Курс'));        
      //   $show->field('groups.name', __('Группа название'));
-     //   $show->field('canSendParticipations', __('может ли'));
+        $show->field('can_send_participations', __('может ли'));
       
         return $show;
     }
@@ -101,7 +102,7 @@ class CandidateController extends AdminController
         $form->text('training_group', __('Группа'));        
         $form->number('course', __('Курс'));        
       //  $form->text('groups.name', __('Группа название'));
-      //  $form->number('canSendParticipations', __('Состояние'));
+        $form->number('can_send_participations', __('Может ли подавать заявку?'));
        //	$form->select('state_id',__('Cостояние'))->options(StateParticipation::all()->pluck('state', 'id'))->rules('required');
       //  $form->text('review', __('Отзыв рукля'));
        // $form->select('project_id',__('Проект'))->options(Project::all()->pluck('title', 'id'))->rules('required');
