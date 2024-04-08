@@ -20,7 +20,8 @@ class UpdateRequestAdminParticipation extends BaseRequest
     {
         return [
             'priority' => 'integer',
-            'state_id' => 'integer|min:1|max:4',
+            // 'review' => 'string',
+            'state_id' => 'integer',
             'candidate_id' => 'integer|exists:candidates,id',
             'project_id' => 'integer|exists:projects,id',
         ];
