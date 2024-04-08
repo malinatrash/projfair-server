@@ -21,6 +21,7 @@ class CandidateResource extends JsonResource
             'fio' => $this->fio,
             'about' => $this->about,
             'email' => $this->email,
+            // вроде это коментили
             'numz' => $this->numz,
             'phone' => $this->phone,
             'course' => $this->course,

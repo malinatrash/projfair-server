@@ -15,7 +15,7 @@ use App\Admin\Controllers\SkillCategoriesController;
 use App\Admin\Controllers\HarvestSettingsController;
 use App\Admin\Controllers\ActiveHarvestSettingsController;
 use Illuminate\Routing\Router;
-use Illuminate\Routing\Route;
+
 
 
 Admin::routes();

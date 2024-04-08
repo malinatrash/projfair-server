@@ -21,8 +21,6 @@ class ProjectResource extends JsonResource
         $participations = Participation::where('project_id', '=', $this->id)->get();
         $participations->load('candidate');
 
-        $filteredData = $this->getStateFilter();        
-
         return [
             'id' => $this->id,
             'prevProjectId' => $this->prev_project_id,
@@ -57,9 +55,6 @@ class ProjectResource extends JsonResource
 
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
-
-           // 'filtered_data' => new FilterResource::($this->getFilter())           
-            'stateFilter' => $filteredData,
         ];
     }
 }
