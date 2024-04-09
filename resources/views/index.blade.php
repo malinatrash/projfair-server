@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Ярмарка проектов</title>
+    <link rel="icon" href="/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Ярмарка проектов ИРНИТУ</title>
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -49,7 +52,6 @@
 </head>
 
 <body class="antialiased">
-
     <div id="app"></div>
 </body>
 
