@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
+//old seeder
 class DatabaseSeeder extends Seeder
 {
     /**
