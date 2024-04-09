@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Candidate;
 use App\Models\Project;
+use App\Models\StateParticipation;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,20 +17,6 @@ class ParticipationFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    /*
-    public function definition()
-    {
-        return [
-            'priority' => $this->faker->randomDigit,
-           // 'review' => $this->faker->sentence(),
-            'project_id' => Project::get()->random()->id,
-            'candidate_id' => Candidate::get()->random()->id,
-            'state_id' => '1',
-
-            'mark' => $this->faker->numberBetween(0, 5),
-            'review' => $this->faker->sentence(),
-        ];
-    }*/
     public function definition()
     {
         $project = Project::factory()->create();
@@ -43,5 +30,13 @@ class ParticipationFactory extends Factory
             'state_id' => '1',
             'mark' => $this->faker->numberBetween(0, 5),
         ];
+        /*
+        return [
+            'priority' => $this->faker->randomDigit,
+            'review' => $this->faker->sentence(),
+            'project_id' => Project::get()->random()->id,
+            'candidate_id' => Candidate::get()->random()->id,
+            'state_id' => StateParticipation::get()->random()->id,
+        ];*/
     }
 }
