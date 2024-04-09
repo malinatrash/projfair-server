@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\State;
+use App\Models\Supervisor;
 use App\Models\Type;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -21,23 +23,19 @@ class ProjectFactory extends Factory
             'title' => $this->faker->word,
             'places' => $this->faker->randomDigit,
             'goal' => $this->faker->word,
-            'description' => $this->faker->sentence(),
+            'idea' => $this->faker->sentence(),
             'difficulty' => $this->faker->randomDigit,
             'date_start' => $this->faker->date(),
             'date_end' => $this->faker->date(),
             'requirements' => $this->faker->sentence(),
             'customer' => $this->faker->name,
+            'expected_result' => $this->faker->sentence(),
             'additional_inf' => $this->faker->sentence(),
-            'product_result' => $this->faker->sentence(),
-            'study_result' => $this->faker->sentence(),
+            'result' => $this->faker->sentence(),
 
-            //'project_review' => $this->faker->sentence(),
-            'project_review' => 'Это отзыв о проекте',
-
-            'state_id' => '2',
-            //'type_id' => Type::get()->random()->id,
-            'type_id' => Type::factory()->create()->id,
-
+            'state_id' => State::get()->random()->id,
+            'supervisor_id' => Supervisor::get()->random()->id,
+            'type_id' => Type::get()->random()->id,
         ];
     }
 }

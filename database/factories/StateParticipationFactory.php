@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Supervisor>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\StateParticipation>
  */
-class SupervisorFactory extends Factory
+class StateParticipationFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,9 +17,7 @@ class SupervisorFactory extends Factory
     public function definition()
     {
         return [
-            'fio' => $this->faker->name,
-            'email' => $this->faker->email,
-            'position' => $this->faker->word,
+            'state' => $this->faker->word
         ];
     }
 }
