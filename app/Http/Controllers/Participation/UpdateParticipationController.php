@@ -13,20 +13,20 @@ class UpdateParticipationController extends Controller
 {
     public function update(UpdateRequestBySupervisorProject $request, Project $project, Candidate $candidate)
     {
-        // Поиск студента на проекте
-        $participation = Participation::where('project_id', $project->id)->where('candidate_id', $candidate->id)
+        
+        $participation = Participation::where('project_id', $project->id)->where('candidate_id', $candidate->id)->whereIn('state_id', [2, 3])
         ->first();
 
-        if (!$participation) {  // Студент не найден            
+        if (!$participation) {           
             return response()->json(['message' => 'Участие не найдено'], 404);
         }
 
-        // Получение данных mark и review из запроса
+        
         $mark = $request->input('mark');
         $review = $request->input('review');
 
         
-        // Обновление полей mark и review
+        
         $participation->update([
             'mark' => $mark,
             'review' => $review,

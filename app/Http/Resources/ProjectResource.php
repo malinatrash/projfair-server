@@ -33,7 +33,7 @@ class ProjectResource extends JsonResource
             'date_start' => $this->date_start,
             'date_end' => $this->date_end,
             'requirements' => $this->requirements,
-            'additional_inf' => $this->additional_inf,
+            'additional_inf' => $this->additional_inf,            
             'product_result' => $this->product_result,
             'customer' => $this->customer,
             'study_result' => $this->study_result,
@@ -42,6 +42,9 @@ class ProjectResource extends JsonResource
             'specialities' => SpecialityResource::collection($this->specialities),
             'project_specialities' => ProjectSpecialityResource::collection($this->projectSpecialities),
             'supervisorsNames' => $this->supervisorsNames,
+
+            'project_review' => $this->project_review,
+            'project_goal' => $this->project_goal,
 
             'rejection_reason' => $this->rejection_reason,
             'rejection_date' => $this->rejection_date,

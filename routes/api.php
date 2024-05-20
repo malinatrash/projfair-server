@@ -6,6 +6,8 @@ use App\Http\Middleware\SupervisorAuthProtected;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Participation\UpdateParticipationController;
 
+use App\Http\Controllers\Participation\GetTestController;
+
 Route::get('/kampus', App\Http\Controllers\Kampus\KampusController::class);
 
 //Route::get('/campus', App\Http\Controllers\Kampus\KampusController::class);
@@ -82,12 +84,15 @@ Route::group(['prefix' => 'supervisor'], function () {
     Route::post('/projects', App\Http\Controllers\Supervisor\Projects\StoreController::class)->middleware(SupervisorAuthProtected::class);
     Route::get('/projects', App\Http\Controllers\Supervisor\Projects\IndexController::class)->middleware(SupervisorAuthProtected::class);
     
-    Route::post('/projects/{project}/candidates/{candidate}', [UpdateParticipationController::class, 'update'])->middleware(SupervisorAuthProtected::class);
     Route::patch('/projects/{project}/candidates/{candidate}', [UpdateParticipationController::class, 'update'])->middleware(SupervisorAuthProtected::class);
-  
-    Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Projects\UpdateController::class)
-    ->middleware(SupervisorAuthProtected::class);
+   
+    Route::get('/projects/{project}/candidates', GetTestController::class);  
+    Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Projects\UpdateController::class)->middleware(SupervisorAuthProtected::class);
     Route::delete('/projects/{project}', App\Http\Controllers\Supervisor\Projects\DeleteController::class)->middleware(SupervisorAuthProtected::class);
+
+    Route::group(['prefix' => 'projectSupervisorRoles'], function () {
+        Route::get('/', App\Http\Controllers\ProjectSupervisorRole\IndexController::class)->middleware(SupervisorAuthProtected::class);
+    });
 });
 
 // --------- USER ROUTES ---------

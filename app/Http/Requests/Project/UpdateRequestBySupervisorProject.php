@@ -29,6 +29,7 @@ class UpdateRequestBySupervisorProject extends BaseRequest
             'additional_inf' => 'nullable|string',
 
             'project_review' => 'nullable|string',
+            'project_goal' => 'nullable|integer|min:1|max:4',
 
             /*---------------------------------------------------*/ 
             'priority' => 'nullable|integer',
