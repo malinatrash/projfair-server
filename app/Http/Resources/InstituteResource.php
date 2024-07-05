@@ -19,6 +19,8 @@ class InstituteResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'maxApprovedProjects' => $this->max_approved_projects,
+            'maxSpringApprovedProjects' => $this->max_spring_approved_projects,
+            'maxAutumnApprovedProjects' => $this->max_autumn_approved_projects,
         ];
     }
 }

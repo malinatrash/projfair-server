@@ -30,7 +30,13 @@ class DirectorCabinetService
         if ($data['state_id'] == ProjectStateEnum::approved->value) {
             $projectInstitute =  $project->department?->institute;
             if ($projectInstitute) {
-                $maxApprovedProjectsInInstitute = $projectInstitute->max_approved_projects;
+                $dateStart = $project['date_start'];
+
+                $maxApprovedProjectsInInstitute = (substr($dateStart, 5) == '02-01') ?
+                    $projectInstitute->max_spring_approved_projects : 
+                    $projectInstitute->max_autumn_approved_projects;
+
+                //$maxApprovedProjectsInInstitute = $projectInstitute->max_approved_projects;
                 $approvedProjectsInInstituteCount = count($this->projectService->filter(stateIds: [ProjectStateEnum::approved->value], nativeInstituteId: $projectInstitute->id));
                 if ($approvedProjectsInInstituteCount >= $maxApprovedProjectsInInstitute) {
                     return null;

@@ -80,7 +80,7 @@ Route::group(['prefix' => 'director'], function () {
 // --------- SUPERVISORS CABINET ROUTES ---------
 
 Route::group(['prefix' => 'supervisor'], function () {
-    Route::get('/', App\Http\Controllers\Supervisor\MeController::class)->middleware(SupervisorAuthProtected::class);; // Получить информацию об авторизованном преподе
+    Route::get('/', App\Http\Controllers\Supervisor\MeController::class)->middleware(SupervisorAuthProtected::class); // Получить информацию об авторизованном преподе
     Route::post('/projects', App\Http\Controllers\Supervisor\Projects\StoreController::class)->middleware(SupervisorAuthProtected::class);
     Route::get('/projects', App\Http\Controllers\Supervisor\Projects\IndexController::class)->middleware(SupervisorAuthProtected::class);
     
@@ -90,9 +90,12 @@ Route::group(['prefix' => 'supervisor'], function () {
     Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Projects\UpdateController::class)->middleware(SupervisorAuthProtected::class);
     Route::delete('/projects/{project}', App\Http\Controllers\Supervisor\Projects\DeleteController::class)->middleware(SupervisorAuthProtected::class);
 
-    Route::group(['prefix' => 'projectSupervisorRoles'], function () {
-        Route::get('/', App\Http\Controllers\ProjectSupervisorRole\IndexController::class)->middleware(SupervisorAuthProtected::class);
-    });
+    Route::get('/project/supervisors', App\Http\Controllers\Supervisor\Experts\IndexController::class)->middleware(SupervisorAuthProtected::class);
+
+    Route::get('/projects/report', App\Http\Controllers\Admin\Project\ReportController::class)
+   // ->middleware(SupervisorAuthProtected::class)
+    ;
+
 });
 
 // --------- USER ROUTES ---------

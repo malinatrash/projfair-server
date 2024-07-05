@@ -20,6 +20,8 @@ class HarvestSettingResource extends JsonResource
             'endDateParticipationHarvest' => $this->end_date_participation_harvest,
             'startDateProjectHarvest' => $this->start_date_project_harvest,
             'endDateProjectHarvest' => $this->end_date_project_harvest,
+            'max_project_points' => $this->max_project_points,
+            'max_expert_points' => $this->max_expert_points,
             'bannedSpecialities' => HarvestBannedSpecialityResource::collection($this->bannedSpecialities),
         ];
     }
