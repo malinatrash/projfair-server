@@ -75,6 +75,7 @@ Route::group(['prefix' => 'admin'], function () {
 Route::group(['prefix' => 'director'], function () {
     Route::patch('/projects/{project}', App\Http\Controllers\Supervisor\Director\Projects\UpdateController::class)->middleware(SupervisorAuthProtected::class);
     Route::get('/projects', App\Http\Controllers\Supervisor\Director\Projects\IndexController::class)->middleware(SupervisorAuthProtected::class);
+    Route::get('/projects/report', App\Http\Controllers\Admin\Project\ReportController::class);
 });
 
 // --------- SUPERVISORS CABINET ROUTES ---------
@@ -92,7 +93,7 @@ Route::group(['prefix' => 'supervisor'], function () {
 
     Route::get('/project/supervisors', App\Http\Controllers\Supervisor\Experts\IndexController::class)->middleware(SupervisorAuthProtected::class);
 
-    Route::get('/projects/report', App\Http\Controllers\Admin\Project\ReportController::class)
+  //  Route::get('/projects/report', App\Http\Controllers\Admin\Project\ReportController::class)
    // ->middleware(SupervisorAuthProtected::class)
     ;
 

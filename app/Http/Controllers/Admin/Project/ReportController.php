@@ -13,6 +13,7 @@ use Carbon\Carbon;
 
 class ReportController extends Controller
 {
+    
     public function __invoke(Request $request)
     {
         // получение активной настройки
@@ -27,14 +28,25 @@ class ReportController extends Controller
         // получаем конкретный год из endDate
         $year = substr($endDate, 0, 4);
 
-        // приводим в к виду год-01-01
+        // приводим к виду год-01-01
         $startDateString = $year . '-01-01';
 
         //получаем проекты 
         $projects = Project::with('supervisors')
             ->where('date_end', '>=', $startDateString)
             ->get();
-                                                   
+                        
+        $amount = count($projects);
+        
+        /*
+        $data = [
+            'amount' => $amount,
+            'projects' => ProjectReportResource::collection($projects),
+        ];*/
+       
+
         return ProjectReportResource::collection($projects);
+        //return response()->json($data);
     }
 }
+ 

@@ -18,12 +18,13 @@ class ProjectReportResource extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'description' => $this->description,
+            'goal' => $this->goal,
             'date_start' => $this->date_start,
             'date_end' => $this->date_end,
             'project_review'=> $this->project_review,
             'project_goal'=> $this->project_goal,
-            'supervisors' => SupervisorExpertResource::collection($this->whenLoaded('supervisors')),
-            
+            'department' => new DepartmentResource($this->department),
+            'supervisors' => SupervisorExpertResource::collection($this->whenLoaded('supervisors')),            
         ];
     }
 }
