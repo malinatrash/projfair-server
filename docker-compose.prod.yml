@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   nginx:
     image: nginx:latest
@@ -13,19 +11,22 @@ services:
     container_name: ${CONTAINER_PREFIX}_nginx
 
   app:
-    image: $REGISTRY/dev/app:$CI_COMMIT_SHA
+    build:
+      context: .
+      dockerfile: ./_docker/app/Dockerfile
+    # image: $REGISTRY/${CONTAINER_PREFIX}/app
     environment:
-      - APP_KEY=$PROD_APP_KEY
-      - APP_NAME=$PROD_APP_NAME
-      - APP_ENV=$PROD_APP_ENV
-      - APP_URL=$PROD_APP_URL
-      - DB_CONNECTION=$PROD_DB_CONNECTION
-      - DB_HOST=$PROD_DB_HOST
-      - DB_PORT=$PROD_DB_PORT
-      - DB_DATABASE=$PROD_DB_DATABASE
-      - DB_USERNAME=$PROD_DB_USERNAME
-      - DB_PASSWORD=$PROD_DB_PASSWORD
-      - APP_DEBUG=$PROD_APP_DEBUG
+      - APP_KEY=$APP_KEY
+      - APP_NAME=$APP_NAME
+      - APP_ENV=$APP_ENV
+      - APP_URL=$APP_URL
+      - DB_CONNECTION=$DB_CONNECTION
+      - DB_HOST=$DB_HOST
+      - DB_PORT=$DB_PORT
+      - DB_DATABASE=$DB_DATABASE
+      - DB_USERNAME=$DB_USERNAME
+      - DB_PASSWORD=$DB_PASSWORD
+      - APP_DEBUG=$APP_DEBUG
     volumes:
       - ./:/var/www
     container_name: ${CONTAINER_PREFIX}_app
@@ -38,9 +39,19 @@ services:
     volumes:
       - ./tmp/db:/var/lib/mysql
     environment:
-        MYSQL_DATABASE: projectfair
-        MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: projectfair
+      MYSQL_ROOT_PASSWORD: root
     ports:
       - 3306:3306
     command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
     container_name: ${CONTAINER_PREFIX}_db
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    platform: linux/amd64
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8080:80"
+    container_name: ${CONTAINER_PREFIX}_phpmyadmin

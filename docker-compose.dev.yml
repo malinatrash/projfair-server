@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   nginx:
     image: nginx:latest
@@ -13,7 +11,9 @@ services:
     container_name: ${CONTAINER_PREFIX}_nginx
 
   app:
-    image: $REGISTRY/dev/app:$CI_COMMIT_SHA
+    build:
+      context: .
+      dockerfile: ./_docker/app/Dockerfile
     environment:
       - APP_KEY=$APP_KEY
       - APP_NAME=$APP_NAME
@@ -31,6 +31,12 @@ services:
     container_name: ${CONTAINER_PREFIX}_app
     depends_on:
       - db
+    entrypoint: /bin/sh -c "
+      sleep 5 &&
+      php artisan key:generate &&
+      php artisan migrate --force &&
+      php-fpm
+      "
 
   db:
     image: mysql:8.0
@@ -38,9 +44,19 @@ services:
     volumes:
       - ./tmp/db:/var/lib/mysql
     environment:
-        MYSQL_DATABASE: projectfair
-        MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: projectfair
+      MYSQL_ROOT_PASSWORD: root
     ports:
       - 3306:3306
     command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
     container_name: ${CONTAINER_PREFIX}_db
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    platform: linux/amd64
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8080:80"
+    container_name: ${CONTAINER_PREFIX}_phpmyadmin

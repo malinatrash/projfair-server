@@ -1,16 +1,17 @@
-# Инструкция по локальному разворачиванию проекта у себя на компьютере:
+# Инструкция по запуску docker-compose для фронтов:
 
-1.	Скачайте и установите xampp https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.1.17/xampp-windows-x64-8.1.17-0-VS16-installer.exe/download?use_mirror=deac-riga&download=&failedmirror=kumisystems.dl.sourceforge.net;
-2.	После установки запустите mysql и apache;
-3.	Нажмите admin напротив mysql, откроется phpmyadmin;
-4.	Создайте базу данных projectfair;
-5.	Скачайте composer https://getcomposer.org/Composer-Setup.exe;
-6.	В установщике укажите путь до php.exe в папке xampp/php;
-7.	Склонируйте проект https://github.com/CoolSheff131/projectfair;
-8.	Скопируйте файл .env.example в папку с проектом и переименуйте его в  файл .env;
-9.	Запустите команду php artisan key:generate;
-10.	Запустите команду composer install для загрузки зависимостей
-11.	Запустите команду php artisan migrate для создания таблиц БД
-12.	Запустите команду php artisan db:seed для заполнения БД
-13.	Запустите команду php artisan serve для запуска сервера
-14.	Перейдите по адресу 127.0.0.1:8000 (localhost)
+1. Склонировать репу `https://github.com/malinatrash/projfair-server.git`
+2. Создать файл в корне проекта по аналогии с `.env.example`. Он необходим для хранения состояния окружения (пароли для бд, хосты итп)
+3. Запустить `composer update` в корне проекта для установки зависимостей
+4. Собрать и запустить все контейнеры Docker Compose: `docker-compose -f docker-compose.dev.yml up --build`
+5. Убедитесь, что все собралось и запустилось.
+   5.1. Попробуйте открыть PhpMyAdmin на `localhost:8080`.
+   5.1.1. Авторизация по `root` `root`.
+   5.1.2. Убедитесь, что БД projectfair существует и в ней есть пустые таблицы.
+   5.2. Запустите `localhost:80` Должна открытся ярмарка (старый фронт).
+6. Теперь накатим дамп бд, чтобы было с чем работать.
+   6.1. закинье файл дампа `.sql` в корень контейнера. (тут сами разберетесь).
+   6.2. Проникаем в bash контейнера mysql: `docker exec -it dev_db /bin/bash` пароль должен быть `root`. dev – CONTAINER_PREFIX из .env, если у Вас не так – поставьте то что надо.
+   6.3. Закиньте дамп в БД `mysql -u root -p projectfair < latest.sql` В этом случае будет запрашиваться пароль для пользователя `root`. Скорее всего пароль будет `root`.
+7. Попробуйте открыть `localhost:80`. Откроется ярмарка с данными.
+8. Теперь надо просто используя новый фронт слать запросы на ваш докер xD
